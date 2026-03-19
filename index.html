@@ -29,12 +29,12 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .legend-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;color:#ccc}
 .legend-dot{width:12px;height:12px;border-radius:50%;border:2px solid #fff}
 .controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:8px}
-.search-box{width:360px;max-width:85vw;position:relative}
+.search-box{width:360px;max-width:85vw;position:relative;z-index:100}
 .search-box input{width:100%;padding:10px 16px 10px 38px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;color:#fff;font-size:14px;font-family:-apple-system,sans-serif;outline:none}
 .search-box input:focus{border-color:#6d9eeb}
 .search-box input::placeholder{color:#555}
 .search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#555;font-size:16px}
-.search-results{position:absolute;top:44px;left:0;right:0;background:rgba(10,10,15,0.98);border:1px solid #2a2a3a;border-radius:10px;max-height:300px;overflow-y:auto;display:none}
+.search-results{position:absolute;top:44px;left:0;right:0;background:rgba(10,10,15,0.98);border:1px solid #2a2a3a;border-radius:10px;max-height:300px;overflow-y:auto;display:none;z-index:9999}
 .search-results.active{display:block}
 .search-result{padding:10px 16px;cursor:pointer;border-bottom:1px solid #1a1a2a;font-family:-apple-system,sans-serif;font-size:13px;color:#ccc}
 .search-result:hover{background:#1a1a2a}
@@ -212,7 +212,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 </div>
 <div class="subtitle">Click a marker to explore the story behind each site</div>
 </div>
-<div class="controls-bar" style="top:160px">
+<div class="controls-bar" style="top:200px">
 <div class="search-box">
 <span class="search-icon">&#128269;</span>
 <input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
