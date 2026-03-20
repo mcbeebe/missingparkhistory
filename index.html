@@ -234,9 +234,33 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .about-body{padding:18px 20px 24px}
 .about-modal-header{padding:18px 20px 14px}
 }
+/* === EMBED MODE === */
+body.embed-mode .title-banner{position:fixed;top:0;left:0;right:0;transform:none;max-width:100%;width:100%;border-radius:0;padding:8px 16px 6px;background:rgba(10,10,15,0.95)}
+body.embed-mode .title-banner h1{font-size:15px;margin-bottom:0}
+body.embed-mode .title-banner p{display:none}
+body.embed-mode .title-banner .subtitle{display:none}
+body.embed-mode .stats-bar{margin-top:4px;gap:8px}
+body.embed-mode .stat-item{font-size:9px}
+body.embed-mode .stat-item strong{font-size:11px}
+body.embed-mode .controls-bar{top:58px!important;gap:4px}
+body.embed-mode .search-box{width:280px}
+body.embed-mode .search-box input{padding:6px 12px 6px 32px;font-size:12px}
+body.embed-mode .search-icon{left:10px;font-size:14px}
+body.embed-mode .filter-bar{gap:4px}
+body.embed-mode .filter-btn{padding:4px 10px;font-size:11px}
+body.embed-mode #filterCount{font-size:9px}
+body.embed-mode .about-btn{display:none!important}
+body.embed-mode .legend{bottom:8px;right:8px;padding:8px 10px;font-size:10px;border-radius:8px}
+body.embed-mode .legend-title{font-size:8px;margin-bottom:4px}
+body.embed-mode .legend-item{gap:5px;margin-bottom:3px;font-size:10px}
+body.embed-mode .legend-dot{width:9px;height:9px;border-width:1.5px}
+body.embed-mode .embed-full-link{display:block!important}
+.embed-full-link{display:none!important;position:fixed;bottom:8px;left:8px;z-index:4001;background:rgba(10,10,15,0.95);color:#6d9eeb;border:1px solid #2a2a3a;padding:6px 14px;border-radius:20px;font-size:11px;font-family:-apple-system,sans-serif;text-decoration:none;font-weight:600;transition:all 0.2s}
+.embed-full-link:hover{background:rgba(20,20,30,0.98);color:#8bb3ff;border-color:#444}
 </style>
 </head>
 <body>
+<script>(function(){try{if(window.self!==window.top){document.body.classList.add('embed-mode')}}catch(e){document.body.classList.add('embed-mode')}})();</script>
 <div class="title-banner">
 <h1>The <span>Missing</span> History of Our National Parks</h1>
 <p>Every pin on this map is a piece of American history the current administration has flagged for removal. These are real exhibits, signs, and publications from our national parks. They are historically accurate and now targeted for censorship. Click any marker to learn more about the history and why it matters.</p>
@@ -267,6 +291,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 <div id="filterCount" style="font-size:11px;color:#666;font-family:-apple-system,sans-serif">874 entries shown</div>
 </div>
 <button class="about-btn" onclick="document.getElementById('aboutOverlay').classList.add('active')"><span class="about-btn-icon">&#9888;&#65039;</span> Why This Map Exists</button>
+<a class="embed-full-link" href="https://missingparkhistory.org/" target="_blank" rel="noopener">↗ View Full Map</a>
 <div id="map"></div>
 <div class="lb-overlay" id="lightbox">
 <div class="lb-hint" id="lb-hint">Scroll to zoom &middot; Double-click to magnify &middot; Drag to pan</div>
