@@ -250,6 +250,7 @@ body.embed-mode .filter-bar{gap:4px}
 body.embed-mode .filter-btn{padding:4px 10px;font-size:11px}
 body.embed-mode #filterCount{font-size:9px}
 body.embed-mode .about-btn{display:none!important}
+body.embed-mode .leaflet-top.leaflet-left{top:50px}
 body.embed-mode .legend{bottom:8px;right:8px;padding:8px 10px;font-size:10px;border-radius:8px}
 body.embed-mode .legend-title{font-size:8px;margin-bottom:4px}
 body.embed-mode .legend-item{gap:5px;margin-bottom:3px;font-size:10px}
@@ -609,7 +610,8 @@ function openPanel(id){
     document.getElementById('sidePanel').scrollTop=0;
 }
 function closePanel(){document.getElementById('sidePanel').classList.remove('active');document.getElementById('modalBackdrop').classList.remove('active');}
-var map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([37,-96],5);
+var isEmbed=document.body.classList.contains('embed-mode');
+var map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([39,-98],isEmbed?4:5);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains:'abcd',maxZoom:19
