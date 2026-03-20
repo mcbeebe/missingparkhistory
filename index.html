@@ -518,9 +518,13 @@ function openPanel(id){
         h+='</ul></div>';
     }
     if(d.sosPhotoUrls&&d.sosPhotoUrls.length>0){
+        var isFWS=d.agency==='FWS';
         var hasAfter=d.sosPhotoUrls.some(function(p){return p.after;});
-        var photoTitle=hasAfter?'Before &amp; After Photos':'Before Photos &mdash; What They Removed';
-        h+='<div class="panel-section"><div class="sos-section-title" style="color:#d97706">'+photoTitle+' <span class="sos-badge" style="background:#d97706">SOS Archive</span></div>';
+        var hasRestored=d.sosPhotoUrls.some(function(p){return p.restored;});
+        var photoTitle=isFWS?'Exhibit Documentation &mdash; Sierra Club FOIA':hasAfter?(hasRestored?'Before, After &amp; Restored Photos':'Before &amp; After Photos'):'Before Photos &mdash; What They Removed';
+        var badgeLabel=isFWS?'Sierra Club':'SOS Archive';
+        var badgeColor=isFWS?'#0d9488':'#d97706';
+        h+='<div class="panel-section"><div class="sos-section-title" style="color:'+badgeColor+'">'+photoTitle+' <span class="sos-badge" style="background:'+badgeColor+'">'+badgeLabel+'</span></div>';
         for(var pi=0;pi<d.sosPhotoUrls.length;pi++){
             var ph=d.sosPhotoUrls[pi];
             var safeTitle=ph.title.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
@@ -528,9 +532,11 @@ function openPanel(id){
             if(cols>0){
                 h+='<div class="sos-photo-pair"><div class="sos-photo-pair-title">'+ph.title+'</div><div class="sos-photo-pair-grid" style="grid-template-columns:repeat('+cols+',1fr)">';
                 if(ph.before){
-                    h+='<div class="sos-photo-card" data-photo-url="'+ph.before+'" data-photo-title="'+safeTitle+' (Before)">';
-                    h+='<img src="'+ph.before+'" alt="Before" loading="lazy"/>';
-                    h+='<div class="sos-photo-overlay"><div class="sos-photo-label-before">Before</div></div></div>';
+                    var beforeLabel=isFWS?'Exhibit':'Before';
+                    var beforeTitleSuffix=isFWS?' (Exhibit)':' (Before)';
+                    h+='<div class="sos-photo-card" data-photo-url="'+ph.before+'" data-photo-title="'+safeTitle+beforeTitleSuffix+'">';
+                    h+='<img src="'+ph.before+'" alt="'+beforeLabel+'" loading="lazy"/>';
+                    h+='<div class="sos-photo-overlay"><div class="sos-photo-label-before"'+(isFWS?' style="background:rgba(13,148,136,0.85)"':'')+'>'+beforeLabel+'</div></div></div>';
                 }
                 if(ph.after){
                     h+='<div class="sos-photo-card" data-photo-url="'+ph.after+'" data-photo-title="'+safeTitle+' (After Removal)">';
