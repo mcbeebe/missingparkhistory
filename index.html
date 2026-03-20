@@ -236,6 +236,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .about-modal-header{padding:18px 20px 14px}
 }
 /* === EMBED MODE === */
+.copy-link-wrap{margin-top:6px}.copy-link-btn{background:rgba(109,158,235,0.15);color:#6d9eeb;border:1px solid rgba(109,158,235,0.3);padding:8px 16px;border-radius:16px;font-size:12px;font-family:-apple-system,sans-serif;cursor:pointer;font-weight:600;transition:all 0.2s;min-height:36px}.copy-link-btn:hover{background:rgba(109,158,235,0.25)}.copy-link-btn.copied{background:rgba(5,150,105,0.15);color:#059669;border-color:rgba(5,150,105,0.3)}
 body.embed-mode .title-banner{position:fixed;top:0;left:0;right:0;transform:none;max-width:100%;width:100%;border-radius:0;padding:8px 16px 6px;background:rgba(10,10,15,0.95)}
 body.embed-mode .title-banner h1{font-size:15px;margin-bottom:0}
 body.embed-mode .title-banner p{display:none}
@@ -488,10 +489,12 @@ function buildCarouselHTML(id,imgs){
 }
 function openPanel(id){
     var d=parkData[id];if(!d)return;
+    if(!document.body.classList.contains('embed-mode')){try{var u=new URL(window.location);u.searchParams.set('id',id);u.searchParams.set('park',d.code);window.history.replaceState(null,'',u)}catch(e){}}
     var q="'";
     var h='';
     h+='<div class="panel-header"><h2>'+d.park+'</h2>';
     h+='<div class="park-meta">'+d.code+' &middot; '+d.state+' &middot; Entry #'+id+'</div>';
+    if(!document.body.classList.contains('embed-mode')){h+='<div class="copy-link-wrap"><button class="copy-link-btn" onclick="copyParkLink(\''+d.code+'\',\''+id+'\')">\u{1F517} Copy Link</button></div>';}
     h+='<div class="status-badge '+d.badgeClass+'">'+d.status+'</div></div>';
     var imgs=getImages(id);
     if(imgs.length>0){
@@ -639,6 +642,22 @@ Object.keys(parkData).forEach(function(id){
     clusterGroup.addLayer(marker);
 });
 map.addLayer(clusterGroup);
+// Deep linking: parse ?id=NUM or ?park=CODE from URL (id takes priority for multi-entry parks)
+(function(){
+    var params=new URLSearchParams(window.location.search);
+    var entryId=params.get('id');
+    var parkCode=params.get('park');
+    if(entryId&&parkData[entryId]){
+        setTimeout(function(){goToEntry(entryId)},800);
+    }else if(parkCode){
+        parkCode=parkCode.toUpperCase();
+        var found=null;
+        Object.keys(parkData).forEach(function(id){
+            if(parkData[id].code===parkCode&&!found)found=id;
+        });
+        if(found){setTimeout(function(){goToEntry(found)},800);}
+    }
+})();
 var currentFilter='all';
 function setFilter(filter){
     currentFilter=filter;
@@ -673,6 +692,18 @@ searchInput.addEventListener('input',function(){
     },200);
 });
 searchInput.addEventListener('blur',function(){setTimeout(function(){searchResults.classList.remove('active')},200)});
+
+function copyParkLink(code,id){
+    var url=window.location.origin+window.location.pathname+'?id='+encodeURIComponent(id)+'&park='+encodeURIComponent(code);
+    function showCopied(){var btn=document.querySelector('.copy-link-btn');if(btn){btn.textContent='\u2713 Copied!';btn.classList.add('copied');setTimeout(function(){btn.textContent='\u{1F517} Copy Link';btn.classList.remove('copied')},2000)}}
+    if(navigator.clipboard){
+        navigator.clipboard.writeText(url).then(showCopied).catch(function(){
+            var ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showCopied();
+        });
+    }else{
+        var ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showCopied();
+    }
+}
 function goToEntry(id){searchResults.classList.remove('active');searchInput.value='';var d=parkData[id];if(!d)return;map.setView([d.lat,d.lon],10);setTimeout(function(){openPanel(id)},400);}
 document.addEventListener('click',function(e){if(!e.target.closest('.controls-bar'))searchResults.classList.remove('active')});
 document.addEventListener('click',function(e){var card=e.target.closest('.sos-photo-card');if(card){var url=card.getAttribute('data-photo-url');var title=card.getAttribute('data-photo-title');if(url)openLightbox(url,title||'');}});
