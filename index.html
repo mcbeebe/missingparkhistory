@@ -38,12 +38,12 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e0e0}
 #map{width:100%;height:100vh}
-.title-banner{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:4000;background:linear-gradient(180deg,rgba(10,10,15,0.97) 0%,rgba(10,10,15,0.92) 100%);padding:18px 36px 16px;border-radius:0 0 16px 16px;text-align:center;max-width:820px;width:90vw;border:1px solid #2a2a3a;border-top:none;box-shadow:0 4px 30px rgba(0,0,0,0.5)}
-.title-banner h1{font-size:26px;color:#fff;font-weight:700;line-height:1.35;margin-bottom:10px;font-family:Georgia,serif}
+.title-banner{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:4000;background:linear-gradient(180deg,rgba(10,10,15,0.97) 0%,rgba(10,10,15,0.92) 100%);padding:14px 36px 10px;border-radius:0 0 16px 16px;text-align:center;max-width:820px;width:90vw;border:1px solid #2a2a3a;border-top:none;box-shadow:0 4px 30px rgba(0,0,0,0.5)}
+.title-banner h1{font-size:24px;color:#fff;font-weight:700;line-height:1.3;margin-bottom:6px;font-family:Georgia,serif}
 .title-banner h1 span{color:#dc2626}
-.title-banner p{font-size:14px;color:#999;line-height:1.6;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.title-banner p{font-size:13px;color:#999;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
 .title-banner .subtitle{font-size:12px;color:#555;margin-top:8px;font-family:-apple-system,sans-serif}
-.stats-bar{display:flex;gap:16px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.stats-bar{display:flex;gap:12px;justify-content:center;margin-top:6px;flex-wrap:wrap}
 .stat-item{font-size:11px;font-family:-apple-system,sans-serif;color:#888}
 .stat-item strong{color:#fff;font-size:14px}
 .stat-item.red strong{color:#dc2626}
@@ -53,7 +53,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .legend-title{color:#999;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;font-size:10px}
 .legend-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;color:#ccc}
 .legend-dot{width:12px;height:12px;border-radius:50%;border:2px solid #fff}
-.controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:8px}
+.controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:4px}
 .search-box{width:360px;max-width:85vw;position:relative;z-index:100}
 .search-box input{width:100%;padding:10px 16px 10px 38px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;color:#fff;font-size:14px;font-family:-apple-system,sans-serif;outline:none}
 .search-box input:focus{border-color:#6d9eeb}
@@ -65,8 +65,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .search-result:hover{background:#1a1a2a}
 .search-result .sr-park{font-weight:600;color:#fff}
 .search-result .sr-meta{font-size:11px;color:#666;margin-top:2px}
-.filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center}
-.filter-btn{background:rgba(20,20,40,0.95);color:#aaa;border:1px solid #444;padding:7px 16px;border-radius:20px;font-size:13px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:500}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center}
+.filter-btn{background:rgba(20,20,40,0.95);color:#aaa;border:1px solid #444;padding:5px 12px;border-radius:20px;font-size:12px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:500}
 .filter-btn:hover{border-color:#888;color:#fff;background:rgba(40,40,70,0.95)}
 .filter-btn.active{color:#fff;font-weight:600}
 .filter-btn.active[data-filter="badge-remove"]{background:rgba(120,20,20,0.95);border-color:#dc2626;color:#f87171}
@@ -101,11 +101,11 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ntr-tog .tog-lbl{font-size:11px;color:#888}
 .ntr-tog.on .tog-lbl{color:#8bb3ff}
 .filter-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px}
-.f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.12);border:1px solid rgba(109,158,235,0.2);color:#8bb3ff}
+.f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.25);border:1px solid rgba(109,158,235,0.45);color:#b4d0ff;font-weight:600}
 .f-chip .cx{cursor:pointer;opacity:0.6;font-size:12px;line-height:1}
 .f-chip .cx:hover{opacity:1}
-.clear-all-btn{background:rgba(220,38,38,0.1);border:1px solid rgba(220,38,38,0.3);color:#f87171;padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap}
-.clear-all-btn:hover{background:rgba(220,38,38,0.2)}
+.clear-all-btn{background:rgba(220,38,38,0.25);border:1px solid rgba(220,38,38,0.5);color:#fca5a5;padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:600}
+.clear-all-btn:hover{background:rgba(220,38,38,0.35)}
 .fdiv{width:1px;height:24px;background:#333}
 .badge-fws-flagged{background:#0d9488;color:white}
 .agency-fws{background:#115e59;color:#5eead4}
@@ -272,8 +272,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .title-banner h1{font-size:22px}
 .title-banner p{font-size:12px}
 .stats-bar{gap:10px}.stat-item{font-size:10px}.stat-item strong{font-size:12px}
-.filter-bar{gap:6px}
-.filter-btn{padding:6px 12px;font-size:12px}
+.filter-bar{gap:5px}
+.filter-btn{padding:5px 10px;font-size:11px}
 .side-panel{width:90vw;max-width:700px}
 .legend{padding:10px 14px;font-size:11px}
 }
@@ -317,6 +317,18 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .lb-nav{width:44px;height:44px;font-size:36px}
 .lb-close{width:44px;height:44px;font-size:32px;top:max(8px,env(safe-area-inset-top));right:8px}
 .thumb-item{flex:0 0 72px;height:54px}
+/* filter-bar: horizontal scroll on mobile */
+.filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:5px;justify-content:flex-start;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0}
+.filter-bar::-webkit-scrollbar{display:none}
+.fdiv{display:none}
+.ms-dd-trigger{font-size:11px;padding:6px 24px 6px 10px}
+.ms-dd-panel{bottom:100%;top:auto;border-radius:12px 12px 0 0;border-top:1px solid #444;border-bottom:none;max-height:50vh}
+.ms-dd-trigger.open{border-radius:4px 4px 20px 20px}
+.state-sel{font-size:11px;padding:6px 24px 6px 8px}
+.ntr-tog .tog-lbl{font-size:10px}
+.filter-chips{gap:4px;margin-top:2px}
+.f-chip{font-size:9px;padding:2px 8px}
+.clear-all-btn{font-size:10px;padding:3px 10px}
 /* About modal */
 .about-modal{width:100vw;max-height:100vh;border-radius:0}
 .about-body{padding:16px 18px 20px}
@@ -362,29 +374,20 @@ body.embed-mode .embed-full-link{display:block!important}
 <div class="stat-item" style="border-left:1px solid #333;padding-left:16px;margin-left:4px"><strong style="color:#0d9488">11</strong> FWS Sites</div>
 <div class="stat-item"><strong>874</strong> Total Entries</div>
 </div>
-<div class="subtitle">Click a marker to explore the story behind each site</div>
 </div>
-<div class="controls-bar" style="top:200px">
-<div class="search-box">
-<span class="search-icon">&#128269;</span>
-<input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
-<div class="search-results" id="searchResults"></div>
-</div>
+<div class="controls-bar" style="top:178px">
 <div class="filter-bar" id="statusBar">
-<div class="filter-btn active" data-filter="badge-remove" onclick="togStatus('badge-remove',this)">Replace/Remove <span class="bcnt">53</span></div>
+<div class="filter-btn active" data-filter="badge-remove" onclick="togStatus('badge-remove',this)">Remove <span class="bcnt">53</span></div>
 <div class="filter-btn" data-filter="badge-revise" onclick="togStatus('badge-revise',this)">Revise <span class="bcnt">67</span></div>
 <div class="filter-btn" data-filter="badge-flagged" onclick="togStatus('badge-flagged',this)">Flagged <span class="bcnt">734</span></div>
 <div class="filter-btn" data-filter="badge-restored" onclick="togStatus('badge-restored',this)">Restored <span class="bcnt">9</span></div>
 <div class="filter-btn" data-filter="badge-fws-flagged" onclick="togStatus('badge-fws-flagged',this)">FWS <span class="bcnt">11</span></div>
-</div>
-<div class="filter-row2">
-<select class="state-sel" id="stateSel" onchange="applyFilters()"><option value="">All States</option></select>
 <div class="fdiv"></div>
+<select class="state-sel" id="stateSel" onchange="applyFilters()"><option value="">All States</option></select>
 <div class="ms-dd" id="mediaDd">
 <div class="ms-dd-trigger" onclick="togDd('mediaDd')">All Media Types</div>
 <div class="ms-dd-panel" id="mediaPanel"></div>
 </div>
-<div class="fdiv"></div>
 <div class="ms-dd topic" id="topicDd">
 <div class="ms-dd-trigger" onclick="togDd('topicDd')">All Topics</div>
 <div class="ms-dd-panel" id="topicPanel"></div>
@@ -392,13 +395,17 @@ body.embed-mode .embed-full-link{display:block!important}
 <div class="fdiv"></div>
 <div class="ntr-tog on" id="ntrTog" onclick="togNtr()">
 <div class="tog-track"><div class="tog-knob"></div></div>
-<span class="tog-lbl">Show NTR (328)</span>
+<span class="tog-lbl">Nothing to Report (328)</span>
 </div>
-<div class="fdiv"></div>
 <button class="clear-all-btn" id="clearAllBtn" style="display:none" onclick="clearFilters()">✕ Clear All</button>
 </div>
 <div class="filter-chips" id="filterChips"></div>
-<div id="filterCount" style="font-size:11px;color:#666;font-family:-apple-system,sans-serif;margin-top:2px">874 entries shown</div>
+<div id="filterCount" style="font-size:12px;color:#ccc;font-family:-apple-system,sans-serif;margin-top:1px;font-weight:600">874 entries shown</div>
+<div class="search-box">
+<span class="search-icon">&#128269;</span>
+<input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
+<div class="search-results" id="searchResults"></div>
+</div>
 </div>
 <button class="about-btn" onclick="document.getElementById('aboutOverlay').classList.add('active')"><span class="about-btn-icon">&#9888;&#65039;</span> Why This Map Exists</button>
 <a class="embed-full-link" href="https://missingparkhistory.org/" target="_blank" rel="noopener">↗ View Full Map</a>
@@ -866,8 +873,8 @@ function applyFilters(){
     }
     if(fState)ch+='<div class="f-chip">State: '+fState+' <span class="cx" onclick="document.getElementById(\'stateSel\').value=\'\';applyFilters()">×</span></div>';
     fMedia.forEach(function(m){ch+='<div class="f-chip">'+m+' <span class="cx" onclick="remMedia(\''+m+'\')">×</span></div>';});
-    fTopics.forEach(function(t){ch+='<div class="f-chip" style="border-color:rgba(217,119,6,0.3);background:rgba(217,119,6,0.08);color:#fbbf24">'+t+' <span class="cx" onclick="remTopic(\''+t.replace(/'/g,"\\'")+'\')">×</span></div>';});
-    if(!fShowNtr)ch+='<div class="f-chip">NTR hidden <span class="cx" onclick="togNtr()">×</span></div>';
+    fTopics.forEach(function(t){ch+='<div class="f-chip" style="border-color:rgba(217,119,6,0.5);background:rgba(217,119,6,0.2);color:#fcd34d">'+t+' <span class="cx" onclick="remTopic(\''+t.replace(/'/g,"\\'")+'\')">×</span></div>';});
+    if(!fShowNtr)ch+='<div class="f-chip">Nothing to Report hidden <span class="cx" onclick="togNtr()">×</span></div>';
     document.getElementById('filterChips').innerHTML=ch;
     document.getElementById('clearAllBtn').style.display=isFiltered?'inline-block':'none';
 }
