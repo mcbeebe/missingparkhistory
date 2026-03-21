@@ -4,6 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Missing History of Our National Parks</title>
+<!-- Core SEO -->
+<meta name="description" content="Interactive map documenting 874 historical signs and exhibits flagged or removed from U.S. National Parks and Wildlife Refuges under Secretary's Order 3431.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://missingparkhistory.org/">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230a0a0f'/><text x='50' y='68' text-anchor='middle' font-size='52'>🏛</text></svg>">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://missingparkhistory.org/">
+<meta property="og:title" content="The Missing History of Our National Parks">
+<meta property="og:description" content="874 historical signs flagged or removed from National Parks. An interactive map tracking what's being erased from America's public lands.">
+<meta property="og:image" content="https://missingparkhistory.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Map of the United States showing 874 flagged park history entries">
+<meta property="og:site_name" content="Missing Park History">
+<meta property="og:locale" content="en_US">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Missing History of Our National Parks">
+<meta name="twitter:description" content="874 historical signs flagged or removed from National Parks. An interactive map tracking what's being erased.">
+<meta name="twitter:image" content="https://missingparkhistory.org/og-image.png">
+<meta name="twitter:image:alt" content="Map of the United States showing 874 flagged park history entries">
+<!-- Structured Data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"The Missing History of Our National Parks","url":"https://missingparkhistory.org/","description":"Interactive map documenting 874 historical signs and exhibits flagged or removed from U.S. National Parks and Wildlife Refuges.","applicationCategory":"Reference","operatingSystem":"Any","author":{"@type":"Organization","name":"Missing Park History Project"},"about":{"@type":"GovernmentService","name":"National Park Service","serviceType":"Historical Interpretation"}}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -229,6 +254,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .lb-close{width:40px;height:40px;font-size:32px;top:8px;right:8px}
 .thumb-item{flex:0 0 80px;height:60px}
 .panel-header{padding:16px 20px 14px}
+.panel-title-row h2{font-size:20px}
+.share-page-btn{padding:5px 10px 5px 8px;font-size:11px}
 .panel-section{padding:16px 20px}
 .meta-grid{grid-template-columns:1fr}
 .about-modal{width:100vw;max-height:100vh;border-radius:0}
@@ -236,7 +263,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .about-modal-header{padding:18px 20px 14px}
 }
 /* === EMBED MODE === */
-.copy-link-wrap{margin-top:6px}.copy-link-btn{background:rgba(109,158,235,0.15);color:#6d9eeb;border:1px solid rgba(109,158,235,0.3);padding:8px 16px;border-radius:16px;font-size:12px;font-family:-apple-system,sans-serif;cursor:pointer;font-weight:600;transition:all 0.2s;min-height:36px}.copy-link-btn:hover{background:rgba(109,158,235,0.25)}.copy-link-btn.copied{background:rgba(5,150,105,0.15);color:#059669;border-color:rgba(5,150,105,0.3)}
+.panel-title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:6px}.panel-title-row h2{font-size:24px;color:#fff;font-weight:700;line-height:1.3;flex:1;font-family:Georgia,serif}.share-page-btn{background:rgba(109,158,235,0.12);color:#6d9eeb;border:1px solid rgba(109,158,235,0.25);padding:6px 14px 6px 10px;border-radius:8px;font-size:12px;font-family:-apple-system,sans-serif;cursor:pointer;font-weight:600;display:flex;align-items:center;gap:6px;transition:all 0.2s;white-space:nowrap;flex-shrink:0;margin-top:4px}.share-page-btn:hover{background:rgba(109,158,235,0.22);border-color:rgba(109,158,235,0.4)}.share-page-btn.copied{background:rgba(5,150,105,0.15);color:#059669;border-color:rgba(5,150,105,0.3)}.share-page-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 body.embed-mode .title-banner{position:fixed;top:0;left:0;right:0;transform:none;max-width:100%;width:100%;border-radius:0;padding:8px 16px 6px;background:rgba(10,10,15,0.95)}
 body.embed-mode .title-banner h1{font-size:15px;margin-bottom:0}
 body.embed-mode .title-banner p{display:none}
@@ -490,11 +517,13 @@ function buildCarouselHTML(id,imgs){
 function openPanel(id){
     var d=parkData[id];if(!d)return;
     if(!document.body.classList.contains('embed-mode')){try{var u=new URL(window.location);u.searchParams.set('id',id);u.searchParams.set('park',d.code);window.history.replaceState(null,'',u)}catch(e){}}
+    document.title=d.park+' \u2014 Missing Park History';
     var q="'";
     var h='';
-    h+='<div class="panel-header"><h2>'+d.park+'</h2>';
+    h+='<div class="panel-header"><div class="panel-title-row"><h2>'+d.park+'</h2>';
+    if(!document.body.classList.contains('embed-mode')){h+='<button class="share-page-btn" onclick="copyParkLink(\''+d.code.replace(/'/g,"\\'")+'\',\''+id+'\')"><svg viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> Share Page</button>';}
+    h+='</div>';
     h+='<div class="park-meta">'+d.code+' &middot; '+d.state+' &middot; Entry #'+id+'</div>';
-    if(!document.body.classList.contains('embed-mode')){h+='<div class="copy-link-wrap"><button class="copy-link-btn" onclick="copyParkLink(\''+d.code+'\',\''+id+'\')">\u{1F517} Copy Link</button></div>';}
     h+='<div class="status-badge '+d.badgeClass+'">'+d.status+'</div></div>';
     var imgs=getImages(id);
     if(imgs.length>0){
@@ -615,7 +644,7 @@ function openPanel(id){
     document.getElementById('modalBackdrop').classList.add('active');
     document.getElementById('sidePanel').scrollTop=0;
 }
-function closePanel(){document.getElementById('sidePanel').classList.remove('active');document.getElementById('modalBackdrop').classList.remove('active');}
+function closePanel(){document.getElementById('sidePanel').classList.remove('active');document.getElementById('modalBackdrop').classList.remove('active');if(!document.body.classList.contains('embed-mode')){try{var u=new URL(window.location);u.searchParams.delete('park');u.searchParams.delete('id');window.history.replaceState(null,'',u.pathname)}catch(e){}}document.title='The Missing History of Our National Parks';}
 var isEmbed=document.body.classList.contains('embed-mode');
 var map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([39,-98],isEmbed?4:5);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
@@ -695,7 +724,7 @@ searchInput.addEventListener('blur',function(){setTimeout(function(){searchResul
 
 function copyParkLink(code,id){
     var url=window.location.origin+window.location.pathname+'?id='+encodeURIComponent(id)+'&park='+encodeURIComponent(code);
-    function showCopied(){var btn=document.querySelector('.copy-link-btn');if(btn){btn.textContent='\u2713 Copied!';btn.classList.add('copied');setTimeout(function(){btn.textContent='\u{1F517} Copy Link';btn.classList.remove('copied')},2000)}}
+    function showCopied(){var btn=document.querySelector('.share-page-btn');if(btn){btn.innerHTML='\u2713 Copied!';btn.classList.add('copied');setTimeout(function(){btn.innerHTML='<svg viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> Share Page';btn.classList.remove('copied')},2000)}}
     if(navigator.clipboard){
         navigator.clipboard.writeText(url).then(showCopied).catch(function(){
             var ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showCopied();
