@@ -54,7 +54,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .legend-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;color:#ccc}
 .legend-dot{width:12px;height:12px;border-radius:50%;border:2px solid #fff}
 .controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:0}
-.search-box{width:360px;max-width:85vw;position:relative;z-index:200}
+.search-box{width:360px;max-width:85vw;position:relative;z-index:100}
 .search-box input{width:100%;padding:8px 16px 8px 38px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;color:#fff;font-size:13px;font-family:-apple-system,sans-serif;outline:none}
 .search-box input:focus{border-color:#6d9eeb}
 .search-box input::placeholder{color:#555}
@@ -93,7 +93,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ntr-tog.on .tog-knob{background:#6d9eeb;left:16px}
 .ntr-tog .tog-lbl{font-size:11px;color:#888}
 .ntr-tog.on .tog-lbl{color:#8bb3ff}
-.filter-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;margin-top:2px;width:100%}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;margin-top:2px;width:100%;position:relative;z-index:300}
 .f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.85);border:1px solid rgba(109,158,235,0.9);color:#fff;font-weight:600}
 .f-chip .cx{cursor:pointer;opacity:0.6;font-size:12px;line-height:1}
 .f-chip .cx:hover{opacity:1}
@@ -278,7 +278,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .title-banner .subtitle{display:none}
 .stats-bar{gap:4px;margin-top:4px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:0 4px;-webkit-overflow-scrolling:touch}.stat-item{font-size:8px;white-space:nowrap;flex-shrink:0}.stat-item strong{font-size:10px}
 /* Controls: show on mobile with horizontal scroll filters */
-.controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;padding:8px 12px;padding-bottom:max(8px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);flex-direction:column;gap:6px;z-index:4500}
+.controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;padding:8px 12px;padding-bottom:max(8px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);flex-direction:column-reverse;gap:6px;z-index:4500;max-height:45vh;overflow-y:auto;overflow-x:hidden}
 .search-box{width:100%;max-width:100%}
 .search-box input{padding:10px 14px 10px 36px;font-size:13px;border-radius:12px}
 .filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:5px;justify-content:flex-start;-webkit-overflow-scrolling:touch;padding:2px 0;scrollbar-width:none}
@@ -317,8 +317,9 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ms-dd-trigger.open{border-radius:4px 4px 20px 20px}
 .state-sel{font-size:11px;padding:6px 24px 6px 8px}
 .ntr-tog .tog-lbl{font-size:10px}
-.filter-chips{gap:4px;margin-top:2px}
-.f-chip{font-size:9px;padding:2px 8px}
+.filter-chips{gap:4px;margin:0;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filter-chips::-webkit-scrollbar{display:none}
+.f-chip{font-size:9px;padding:2px 8px;flex-shrink:0}
 .clear-all-btn{font-size:10px;padding:3px 10px}
 /* About modal */
 .about-modal{width:100vw;max-height:100vh;border-radius:0}
@@ -340,6 +341,8 @@ body.embed-mode .search-box input{padding:6px 12px 6px 32px;font-size:12px}
 body.embed-mode .search-icon{left:10px;font-size:14px}
 body.embed-mode .filter-bar{gap:4px}
 body.embed-mode .filter-btn{padding:4px 10px;font-size:11px}
+body.embed-mode .filter-chips{gap:4px;margin-top:1px}
+body.embed-mode .f-chip{font-size:9px;padding:2px 8px}
 body.embed-mode #filterCount{font-size:9px}
 body.embed-mode .about-btn{display:none!important}
 body.embed-mode .leaflet-top.leaflet-left{top:50px}
@@ -350,6 +353,14 @@ body.embed-mode .legend-dot{width:9px;height:9px;border-width:1.5px}
 body.embed-mode .embed-full-link{display:block!important}
 .embed-full-link{display:none!important;position:fixed;bottom:8px;left:8px;z-index:4001;background:rgba(10,10,15,0.95);color:#6d9eeb;border:1px solid #2a2a3a;padding:6px 14px;border-radius:20px;font-size:11px;font-family:-apple-system,sans-serif;text-decoration:none;font-weight:600;transition:all 0.2s}
 .embed-full-link:hover{background:rgba(20,20,30,0.98);color:#8bb3ff;border-color:#444}
+/* === MOBILE + EMBED COMBINED === */
+@media(max-width:600px){
+body.embed-mode .controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;flex-direction:column-reverse;gap:4px;padding:6px 10px;padding-bottom:max(6px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);max-height:40vh;overflow-y:auto;overflow-x:hidden}
+body.embed-mode .search-box{width:100%;max-width:100%}
+body.embed-mode .filter-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+body.embed-mode .filter-chips::-webkit-scrollbar{display:none}
+body.embed-mode .embed-full-link{bottom:auto;top:8px;left:8px}
+}
 </style>
 </head>
 <body>
@@ -386,14 +397,19 @@ body.embed-mode .embed-full-link{display:block!important}
 <div class="ms-dd-trigger" onclick="togDd('topicDd')">All Topics</div>
 <div class="ms-dd-panel" id="topicPanel"></div>
 </div>
+<div class="ntr-tog on" id="ntrToggle" onclick="toggleNTR()">
+<div class="tog-track"><div class="tog-knob"></div></div>
+<span class="tog-lbl">NTR <span style="font-size:9px;opacity:0.7">(328)</span></span>
+</div>
 <button class="clear-all-btn" id="clearAllBtn" style="display:none" onclick="clearFilters()">✕ Clear All</button>
 </div>
+<div id="filterCount" style="font-size:10px;color:#ccc;font-family:-apple-system,sans-serif;font-weight:600;text-align:center"></div>
+<div class="filter-chips" id="filterChips"></div>
 <div class="search-box" style="margin-top:2px">
 <span class="search-icon">&#128269;</span>
 <input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
 <div class="search-results" id="searchResults"></div>
 </div>
-<div class="filter-chips" id="filterChips"></div>
 </div>
 <button class="about-btn" onclick="document.getElementById('aboutOverlay').classList.add('active')"><span class="about-btn-icon">&#9888;&#65039;</span> Why This Map Exists</button>
 <a class="embed-full-link" href="https://missingparkhistory.org/" target="_blank" rel="noopener">↗ View Full Map</a>
@@ -792,6 +808,13 @@ function togStatusOpt(el,val){
     applyFilters();
 }
 function remStatus(val){fStatuses.delete(val);if(fStatuses.size===0){fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){o.classList.add('sel');});}else{document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});}updDdLabel('statusDd',fStatuses,'All Statuses','Status');applyFilters();}
+var showNTR=true;
+function toggleNTR(){
+    showNTR=!showNTR;
+    var tog=document.getElementById('ntrToggle');
+    if(showNTR){tog.classList.add('on');}else{tog.classList.remove('on');}
+    applyFilters();
+}
 function togDd(id){
     var dd=document.getElementById(id);var panel=dd.querySelector('.ms-dd-panel');var trig=dd.querySelector('.ms-dd-trigger');
     var isOpen=panel.classList.contains('open');
@@ -812,15 +835,23 @@ function togTopicOpt(el,val){
     updDdLabel('topicDd',fTopics,'All Topics','Topic');
     applyFilters();
 }
+var statusLabels={'badge-remove':'Remove','badge-revise':'Revise','badge-flagged':'Flagged','badge-restored':'Restored'};
 function updDdLabel(ddId,activeSet,defLabel,prefix){
     var trig=document.querySelector('#'+ddId+' .ms-dd-trigger');
-    if(activeSet.size===0){trig.innerHTML=defLabel;}
-    else if(activeSet.size===1){trig.innerHTML=prefix+': '+Array.from(activeSet)[0]+' <span class="ms-count">1</span>';}
+    /* For status: size 0 OR size 4 (all selected) both mean "show all" */
+    var isAllStatuses=(ddId==='statusDd'&&activeSet.size===4);
+    if(activeSet.size===0||isAllStatuses){trig.innerHTML=defLabel;}
+    else if(activeSet.size===1){
+        var val=Array.from(activeSet)[0];
+        var label=(ddId==='statusDd'&&statusLabels[val])?statusLabels[val]:val;
+        trig.innerHTML=prefix+': '+label+' <span class="ms-count">1</span>';
+    }
     else{trig.innerHTML=activeSet.size+' '+prefix+' selected <span class="ms-count">'+activeSet.size+'</span>';}
 }
 function clearFilters(){
     fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);
     fMedia.clear();fTopics.clear();fState='';
+    showNTR=true;document.getElementById('ntrToggle').classList.add('on');
     document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){o.classList.add('sel');});
     document.querySelectorAll('#mediaPanel .ms-dd-opt.sel').forEach(function(o){o.classList.remove('sel');});
     document.querySelectorAll('#topicPanel .ms-dd-opt.sel').forEach(function(o){o.classList.remove('sel');});
@@ -836,12 +867,13 @@ function applyFilters(){
     var allStatuses=fStatuses.size===4;
     var anyMedia=fMedia.size>0;
     var anyTopic=fTopics.size>0;
-    var isFiltered=!allStatuses||fState||anyMedia||anyTopic;
+    var isFiltered=!allStatuses||fState||anyMedia||anyTopic||!showNTR;
     clusterGroup.clearLayers();
     var count=0;
     allMarkers.forEach(function(m){
         /* FWS entries always pass status filter */
         if(m._badge!=='badge-fws-flagged'&&!fStatuses.has(m._badge))return;
+        if(!showNTR&&m._ntr)return;
         if(fState&&m._state!==fState)return;
         if(anyMedia&&!fMedia.has(m._mediaGrp))return;
         if(anyTopic){var hit=false;for(var i=0;i<m._topics.length;i++){if(fTopics.has(m._topics[i])){hit=true;break;}}if(!hit)return;}
@@ -860,8 +892,11 @@ function applyFilters(){
     if(fState)ch+='<div class="f-chip">State: '+fState+' <span class="cx" onclick="document.getElementById(\'stateSel\').value=\'\';applyFilters()">×</span></div>';
     fMedia.forEach(function(m){ch+='<div class="f-chip">'+m+' <span class="cx" onclick="remMedia(\''+m+'\')">×</span></div>';});
     fTopics.forEach(function(t){ch+='<div class="f-chip" style="border-color:rgba(217,119,6,0.9);background:rgba(217,119,6,0.75);color:#fff">'+t+' <span class="cx" onclick="remTopic(\''+t.replace(/'/g,"\\'")+'\')">×</span></div>';});
+    if(!showNTR)ch+='<div class="f-chip" style="border-color:rgba(100,100,120,0.9);background:rgba(100,100,120,0.75);color:#fff">Hiding NTR <span class="cx" onclick="toggleNTR()">×</span></div>';
     document.getElementById('filterChips').innerHTML=ch;
     document.getElementById('clearAllBtn').style.display=isFiltered?'inline-block':'none';
+    /* Recalc mobile map height after chips change controls height */
+    if(window.innerWidth<=600)setTimeout(adjustMapForMobile,50);
 }
 function remMedia(val){fMedia.delete(val);document.querySelectorAll('#mediaPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});updDdLabel('mediaDd',fMedia,'All Media Types','Media');applyFilters();}
 function remTopic(val){fTopics.delete(val);document.querySelectorAll('#topicPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});updDdLabel('topicDd',fTopics,'All Topics','Topic');applyFilters();}
@@ -917,6 +952,8 @@ function adjustMapForMobile(){
     if(window.innerWidth<=600){
         var bannerH=banner.offsetHeight;
         var controlsH=controls?controls.offsetHeight:0;
+        /* Cap controls height so it never eats more than 45% of viewport */
+        if(controlsH>window.innerHeight*0.45)controlsH=Math.round(window.innerHeight*0.45);
         mapEl.style.height=(window.innerHeight-bannerH-controlsH)+'px';
         mapEl.style.marginTop=bannerH+'px';
     }else{
