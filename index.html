@@ -94,11 +94,11 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ntr-tog .tog-lbl{font-size:11px;color:#888}
 .ntr-tog.on .tog-lbl{color:#8bb3ff}
 .filter-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;margin-top:2px;width:100%}
-.f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.25);border:1px solid rgba(109,158,235,0.45);color:#b4d0ff;font-weight:600}
+.f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.4);border:1px solid rgba(109,158,235,0.6);color:#fff;font-weight:600}
 .f-chip .cx{cursor:pointer;opacity:0.6;font-size:12px;line-height:1}
 .f-chip .cx:hover{opacity:1}
-.clear-all-btn{background:rgba(220,38,38,0.25);border:1px solid rgba(220,38,38,0.5);color:#fca5a5;padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:600}
-.clear-all-btn:hover{background:rgba(220,38,38,0.35)}
+.clear-all-btn{background:rgba(220,38,38,0.5);border:1px solid rgba(220,38,38,0.7);color:#fff;padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:600}
+.clear-all-btn:hover{background:rgba(220,38,38,0.7)}
 .fdiv{width:1px;height:24px;background:#333}
 .badge-fws-flagged{background:#0d9488;color:white}
 .agency-fws{background:#115e59;color:#5eead4}
@@ -389,8 +389,7 @@ body.embed-mode .embed-full-link{display:block!important}
 <button class="clear-all-btn" id="clearAllBtn" style="display:none" onclick="clearFilters()">✕ Clear All</button>
 </div>
 <div class="filter-chips" id="filterChips"></div>
-<div id="filterCount" style="font-size:11px;color:#aaa;font-family:-apple-system,sans-serif;margin-top:0;font-weight:500">874 entries shown</div>
-<div class="search-box" style="margin-top:2px">
+<div class="search-box" style="margin-top:0">
 <span class="search-icon">&#128269;</span>
 <input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
 <div class="search-results" id="searchResults"></div>
@@ -770,7 +769,7 @@ function openPanel(id){
 }
 function closePanel(){document.getElementById('sidePanel').classList.remove('active');document.getElementById('modalBackdrop').classList.remove('active');if(!document.body.classList.contains('embed-mode')){try{var u=new URL(window.location);u.searchParams.delete('park');u.searchParams.delete('id');window.history.replaceState(null,'',u.pathname)}catch(e){}}document.title='The Missing History of Our National Parks';}
 var isEmbed=document.body.classList.contains('embed-mode');
-var map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([38,-96],isEmbed?4:4);
+var map=L.map('map',{zoomControl:true,preferCanvas:true,zoomSnap:0.5}).setView([38,-96],isEmbed?4:4.5);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains:'abcd',maxZoom:19
@@ -848,7 +847,7 @@ function applyFilters(){
         if(anyTopic){var hit=false;for(var i=0;i<m._topics.length;i++){if(fTopics.has(m._topics[i])){hit=true;break;}}if(!hit)return;}
         clusterGroup.addLayer(m);count++;
     });
-    document.getElementById('filterCount').textContent=count+' entries shown';
+    var fc=document.getElementById('filterCount');if(fc)fc.textContent=count+' entries shown';
     /* chips */
     var ch='';
     if(!allStatuses){
