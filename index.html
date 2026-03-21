@@ -475,7 +475,7 @@ Promise.all([
     document.getElementById('loadMsg').textContent='Initializing map...';
     setTimeout(function(){initApp();var ov=document.getElementById('loadOverlay');ov.style.opacity='0';setTimeout(function(){ov.remove();},400);},50);
 }).catch(function(err){
-    document.getElementById('loadMsg').textContent='Error loading data: '+err.message;
+    document.getElementById('loadMsg').innerHTML='Error loading data: '+err.message+'<br><button onclick="location.reload()" style="margin-top:12px;padding:8px 20px;background:#6d9eeb;color:#fff;border:none;border-radius:20px;cursor:pointer;font-size:13px">Retry</button>';
     document.getElementById('loadMsg').style.color='#f87171';
 });
 var imageCache={};
@@ -779,85 +779,17 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains:'abcd',maxZoom:19
 }).addTo(map);
-function initApp(){
 var ntrIds=new Set(["106","107","108","110","111","113","114","115","116","117","118","119","120","121","122","124","125","128","129","130","131","132","135","136","137","138","139","140","141","142","143","149","150","151","153","154","156","157","158","159","160","161","162","163","164","178","179","182","184","194","196","213","227","237","238","239","240","241","242","243","244","245","246","247","251","253","254","257","262","266","267","271","272","273","275","276","277","278","279","281","283","286","289","293","300","301","304","306","309","311","313","321","322","324","339","341","342","343","344","346","347","350","353","369","371","372","374","375","377","382","388","396","399","402","403","406","409","411","412","413","415","416","417","418","422","425","427","434","441","445","446","448","450","452","453","454","462","464","467","468","469","483","485","492","494","495","497","498","501","503","505","506","507","508","509","510","511","512","513","518","524","525","531","555","560","579","580","587","596","604","605","618","625","626","627","631","648","652","653","654","656","657","658","659","663","664","667","668","669","670","671","672","673","675","676","678","679","680","690","696","700","724","725","728","731","734","738","744","745","746","752","753","754","756","758","759","760","766","776","777","778","780","781","782","787","788","793","794","797","815","816","821","822","823","824","825","828","829","836","839","840","852","857","858","861","864","866","881","883","897","899","901","902","903","905","906","907","909","910","911","912","913","914","915","916","917","918","919","921","922","923","924","925","926","927","928","929","930","931","932","933","934","935","936","937","938","939","940","941","942","943","944","945","946","947","948","949","950","951","952","953","954","956","957","958","961","962","963","964","965","966","967","968","969","970","971","972","973","974","975","976","977","978","981","983","984","987","1038"]);
 var colors={'badge-remove':'#dc2626','badge-revise':'#d97706','badge-flagged':'#4b5563','badge-restored':'#059669','badge-fws-flagged':'#0d9488'};
 var markers={};
 var allMarkers=[];
 var clusterGroup=L.markerClusterGroup({maxClusterRadius:50,spiderfyOnMaxZoom:true,showCoverageOnHover:false,zoomToBoundsOnClick:true,disableClusteringAtZoom:10});
-Object.keys(parkData).forEach(function(id){
-    var d=parkData[id];
-    var color=colors[d.badgeClass]||'#4b5563';
-    var radius=d.confirmedRemoved?16:(d.badgeClass==='badge-remove'?15:(d.badgeClass==='badge-revise'?13:11));
-    var opts={radius:radius,fillColor:color,color:'#fff',weight:2,fillOpacity:0.85};
-    if(d.confirmedRemoved){opts.weight=3;}
-    var marker=L.circleMarker([d.lat,d.lon],opts);
-    marker.bindTooltip('<div style="font-size:14px;font-weight:700">'+d.park+'</div><div style="font-size:11px;color:#666;margin-top:2px">'+d.status+'</div>',{direction:'top',offset:[0,-12]});
-    marker.on('click',function(){openPanel(id)});
-    marker._parkId=id;
-    marker._badge=d.badgeClass;
-    marker._state=d.state||'';
-    marker._topics=d.topics||[];
-    var mv=(d.media||'').toLowerCase();
-    marker._mediaGrp=mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
-    marker._ntr=ntrIds.has(id);
-    markers[id]=marker;
-    allMarkers.push(marker);
-    clusterGroup.addLayer(marker);
-});
-map.addLayer(clusterGroup);
-// Deep linking: parse ?id=NUM or ?park=CODE from URL (id takes priority for multi-entry parks)
-(function(){
-    var params=new URLSearchParams(window.location.search);
-    var entryId=params.get('id');
-    var parkCode=params.get('park');
-    if(entryId&&parkData[entryId]){
-        setTimeout(function(){goToEntry(entryId)},800);
-    }else if(parkCode){
-        parkCode=parkCode.toUpperCase();
-        var found=null;
-        Object.keys(parkData).forEach(function(id){
-            if(parkData[id].code===parkCode&&!found)found=id;
-        });
-        if(found){setTimeout(function(){goToEntry(found)},800);}
-    }
-})();
 var fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored','badge-fws-flagged']);
 var fMedia=new Set();
 var fTopics=new Set();
 var fState='';
 var fShowNtr=true;
 function groupMedia(mv){mv=(mv||'').toLowerCase();if(mv.indexOf('interpretive')!==-1)return'Interpretive Materials';if(mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1)return'Exhibit Panels';if(mv.indexOf('publication')!==-1)return'Publications';if(mv.indexOf('film')!==-1||mv.indexOf('video')!==-1)return'Film/Video';if(mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1)return'Signs/Waysides';if(mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1)return'Monuments/Statues';return'Other';}
-/* Populate dropdowns from actual data */
-(function(){
-    var states={},mediaGrps={},topics={};
-    Object.keys(parkData).forEach(function(id){var d=parkData[id];
-        var s=d.state||'';if(s&&s.length<=3)states[s]=(states[s]||0)+1;
-        var mg=groupMedia(d.media);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
-        (d.topics||[]).forEach(function(t){t=t.trim();if(t)topics[t]=(topics[t]||0)+1;});
-    });
-    /* State dropdown */
-    var sel=document.getElementById('stateSel');
-    Object.keys(states).sort().forEach(function(s){
-        var o=document.createElement('option');o.value=s;o.textContent=s+' ('+states[s]+')';sel.appendChild(o);
-    });
-    /* Media picklist */
-    var mp=document.getElementById('mediaPanel');
-    var mSorted=Object.keys(mediaGrps).sort(function(a,b){return mediaGrps[b]-mediaGrps[a];});
-    mSorted.forEach(function(mg){
-        var el=document.createElement('div');el.className='ms-dd-opt';el.setAttribute('data-val',mg);
-        el.innerHTML='<div class="chk">&#10003;</div><span class="olbl">'+mg+'</span><span class="ocnt">'+mediaGrps[mg]+'</span>';
-        el.onclick=function(){togMediaOpt(this,mg);};mp.appendChild(el);
-    });
-    /* Topic picklist */
-    var tp=document.getElementById('topicPanel');
-    var tSorted=Object.keys(topics).sort(function(a,b){return topics[b]-topics[a];});
-    tSorted.forEach(function(t){
-        var el=document.createElement('div');el.className='ms-dd-opt';el.setAttribute('data-val',t);
-        el.innerHTML='<div class="chk">&#10003;</div><span class="olbl">'+t+'</span><span class="ocnt">'+topics[t]+'</span>';
-        el.onclick=function(){togTopicOpt(this,t);};tp.appendChild(el);
-    });
-})();
 function togStatus(badge,btn){
     if(fStatuses.has(badge)){fStatuses.delete(badge);btn.classList.remove('active');}
     else{fStatuses.add(badge);btn.classList.add('active');}
@@ -907,6 +839,7 @@ function clearFilters(){
     applyFilters();
 }
 function applyFilters(){
+    if(!allMarkers.length)return;
     fState=document.getElementById('stateSel').value;
     var allStatuses=fStatuses.size===5;
     var anyMedia=fMedia.size>0;
@@ -1002,6 +935,75 @@ function adjustMapForMobile(){
 }
 adjustMapForMobile();
 window.addEventListener('resize',adjustMapForMobile);
+function initApp(){
+Object.keys(parkData).forEach(function(id){
+    var d=parkData[id];
+    var color=colors[d.badgeClass]||'#4b5563';
+    var radius=d.confirmedRemoved?16:(d.badgeClass==='badge-remove'?15:(d.badgeClass==='badge-revise'?13:11));
+    var opts={radius:radius,fillColor:color,color:'#fff',weight:2,fillOpacity:0.85};
+    if(d.confirmedRemoved){opts.weight=3;}
+    var marker=L.circleMarker([d.lat,d.lon],opts);
+    marker.bindTooltip('<div style="font-size:14px;font-weight:700">'+d.park+'</div><div style="font-size:11px;color:#666;margin-top:2px">'+d.status+'</div>',{direction:'top',offset:[0,-12]});
+    marker.on('click',function(){openPanel(id)});
+    marker._parkId=id;
+    marker._badge=d.badgeClass;
+    marker._state=d.state||'';
+    marker._topics=d.topics||[];
+    var mv=(d.media||'').toLowerCase();
+    marker._mediaGrp=mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
+    marker._ntr=ntrIds.has(id);
+    markers[id]=marker;
+    allMarkers.push(marker);
+    clusterGroup.addLayer(marker);
+});
+map.addLayer(clusterGroup);
+// Deep linking: parse ?id=NUM or ?park=CODE from URL (id takes priority for multi-entry parks)
+(function(){
+    var params=new URLSearchParams(window.location.search);
+    var entryId=params.get('id');
+    var parkCode=params.get('park');
+    if(entryId&&parkData[entryId]){
+        setTimeout(function(){goToEntry(entryId)},800);
+    }else if(parkCode){
+        parkCode=parkCode.toUpperCase();
+        var found=null;
+        Object.keys(parkData).forEach(function(id){
+            if(parkData[id].code===parkCode&&!found)found=id;
+        });
+        if(found){setTimeout(function(){goToEntry(found)},800);}
+    }
+})();
+/* Populate dropdowns from actual data */
+(function(){
+    var states={},mediaGrps={},topics={};
+    Object.keys(parkData).forEach(function(id){var d=parkData[id];
+        var s=d.state||'';if(s&&s.length<=3)states[s]=(states[s]||0)+1;
+        var mg=groupMedia(d.media);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
+        (d.topics||[]).forEach(function(t){t=t.trim();if(t)topics[t]=(topics[t]||0)+1;});
+    });
+    /* State dropdown */
+    var sel=document.getElementById('stateSel');
+    Object.keys(states).sort().forEach(function(s){
+        var o=document.createElement('option');o.value=s;o.textContent=s+' ('+states[s]+')';sel.appendChild(o);
+    });
+    /* Media picklist */
+    var mp=document.getElementById('mediaPanel');
+    var mSorted=Object.keys(mediaGrps).sort(function(a,b){return mediaGrps[b]-mediaGrps[a];});
+    mSorted.forEach(function(mg){
+        var el=document.createElement('div');el.className='ms-dd-opt';el.setAttribute('data-val',mg);
+        el.innerHTML='<div class="chk">&#10003;</div><span class="olbl">'+mg+'</span><span class="ocnt">'+mediaGrps[mg]+'</span>';
+        el.onclick=function(){togMediaOpt(this,mg);};mp.appendChild(el);
+    });
+    /* Topic picklist */
+    var tp=document.getElementById('topicPanel');
+    var tSorted=Object.keys(topics).sort(function(a,b){return topics[b]-topics[a];});
+    tSorted.forEach(function(t){
+        var el=document.createElement('div');el.className='ms-dd-opt';el.setAttribute('data-val',t);
+        el.innerHTML='<div class="chk">&#10003;</div><span class="olbl">'+t+'</span><span class="ocnt">'+topics[t]+'</span>';
+        el.onclick=function(){togTopicOpt(this,t);};tp.appendChild(el);
+    });
+})();
+
 } /* end initApp */
 
 </script>
