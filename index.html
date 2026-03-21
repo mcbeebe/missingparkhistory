@@ -270,17 +270,16 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .title-banner p{display:none}
 .title-banner .subtitle{display:none}
 .stats-bar{gap:4px;margin-top:4px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:0 4px;-webkit-overflow-scrolling:touch}.stat-item{font-size:8px;white-space:nowrap;flex-shrink:0}.stat-item strong{font-size:10px}
-/* Controls: show on mobile with horizontal scroll filters */
-.controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;padding:8px 12px;padding-bottom:max(8px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);flex-direction:column-reverse;gap:6px;z-index:4500;max-height:45vh;overflow-y:auto;overflow-x:hidden}
-.search-box{width:100%;max-width:100%}
-.search-box input{padding:10px 14px 10px 36px;font-size:13px;border-radius:12px}
-.filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:5px;justify-content:flex-start;-webkit-overflow-scrolling:touch;padding:2px 0;scrollbar-width:none}
+/* Controls: top-positioned on mobile, matching web layout */
+.controls-bar{bottom:auto;left:50%;right:auto;transform:translateX(-50%);padding:4px 10px;background:none;flex-direction:column;gap:2px;z-index:4000;max-height:none;overflow:visible}
+.search-box{width:90vw;max-width:360px}
+.search-box input{padding:8px 14px 8px 34px;font-size:12px;border-radius:20px}
+.filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:4px;justify-content:flex-start;-webkit-overflow-scrolling:touch;padding:2px 0;scrollbar-width:none}
 .filter-bar::-webkit-scrollbar{display:none}
-#filterCount{font-size:10px;text-align:center}
 /* About/Why button */
 .about-btn{display:none!important}
-/* Legend: smaller, bottom-left to avoid overlap with controls */
-.legend{bottom:auto;top:8px;right:8px;left:auto;padding:6px 10px;font-size:9px;border-radius:6px;opacity:0.85}
+/* Legend: bottom-right like web */
+.legend{bottom:12px;top:auto;right:8px;left:auto;padding:6px 10px;font-size:9px;border-radius:6px;opacity:0.9}
 .legend-title{font-size:7px;margin-bottom:3px}
 .legend-item{gap:4px;margin-bottom:2px;font-size:9px}
 .legend-dot{width:8px;height:8px;border-width:1.5px}
@@ -306,8 +305,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .filter-bar::-webkit-scrollbar{display:none}
 .fdiv{display:none}
 .ms-dd-trigger{font-size:11px;padding:6px 24px 6px 10px}
-.ms-dd-panel{bottom:100%;top:auto;border-radius:12px 12px 0 0;border-top:1px solid #444;border-bottom:none;max-height:50vh}
-.ms-dd-trigger.open{border-radius:4px 4px 20px 20px}
+.ms-dd-panel{top:100%;bottom:auto;border-radius:0 0 12px 12px;border-top:none;border-bottom:1px solid #444;max-height:50vh}
+.ms-dd-trigger.open{border-radius:20px 20px 4px 4px}
 .state-sel{font-size:11px;padding:6px 24px 6px 8px}
 .filter-chips{gap:4px;margin:0;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .filter-chips::-webkit-scrollbar{display:none}
@@ -348,11 +347,11 @@ body.embed-mode .embed-full-link{display:block!important}
 .embed-full-link:hover{background:rgba(20,20,30,0.98);color:#8bb3ff;border-color:#444}
 /* === MOBILE + EMBED COMBINED === */
 @media(max-width:600px){
-body.embed-mode .controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;flex-direction:column-reverse;gap:4px;padding:6px 10px;padding-bottom:max(6px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);max-height:40vh;overflow-y:auto;overflow-x:hidden}
-body.embed-mode .search-box{width:100%;max-width:100%}
+body.embed-mode .controls-bar{bottom:auto;left:50%;right:auto;transform:translateX(-50%);flex-direction:column;gap:2px;padding:4px 8px;background:none;max-height:none;overflow:visible}
+body.embed-mode .search-box{width:85vw;max-width:300px}
 body.embed-mode .filter-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 body.embed-mode .filter-chips::-webkit-scrollbar{display:none}
-body.embed-mode .embed-full-link{bottom:auto;top:8px;left:8px}
+body.embed-mode .embed-full-link{bottom:8px;left:8px}
 }
 </style>
 </head>
@@ -930,11 +929,13 @@ function adjustMapForMobile(){
     if(window.innerWidth<=600){
         var bannerH=banner.offsetHeight;
         var controlsH=controls?controls.offsetHeight:0;
-        /* Cap controls height so it never eats more than 45% of viewport */
-        if(controlsH>window.innerHeight*0.45)controlsH=Math.round(window.innerHeight*0.45);
-        mapEl.style.height=(window.innerHeight-bannerH-controlsH)+'px';
-        mapEl.style.marginTop=bannerH+'px';
+        /* Controls are now at top below banner — set controls position and map offset */
+        controls.style.top=(bannerH+2)+'px';
+        var topOffset=bannerH+controlsH+4;
+        mapEl.style.height=(window.innerHeight-topOffset)+'px';
+        mapEl.style.marginTop=topOffset+'px';
     }else{
+        controls.style.top='148px';
         mapEl.style.height='100vh';
         mapEl.style.marginTop='0';
     }
