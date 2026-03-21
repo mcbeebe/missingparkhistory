@@ -853,7 +853,12 @@ function applyFilters(){
         /* FWS entries always pass status filter */
         if(m._badge!=='badge-fws-flagged'&&!fStatuses.has(m._badge))return;
         if(fState&&m._state!==fState)return;
-        if(anyMedia&&!fMedia.has(m._mediaGrp))return;
+        if(anyMedia){
+            var wantPhotos=fMedia.has('Has Photos');
+            var otherMedia=fMedia.size-(wantPhotos?1:0);
+            if(wantPhotos&&!m._hasPhotos)return;
+            if(otherMedia>0&&!fMedia.has(m._mediaGrp))return;
+        }
         if(anyTopic){var hit=false;for(var i=0;i<m._topics.length;i++){if(fTopics.has(m._topics[i])){hit=true;break;}}if(!hit)return;}
         clusterGroup.addLayer(m);count++;
     });
@@ -960,6 +965,7 @@ Object.keys(parkData).forEach(function(id){
     var mv=(d.media||'').toLowerCase();
     marker._ntr=ntrIds.has(id);
     marker._mediaGrp=marker._ntr?'Nothing to Report':mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
+    marker._hasPhotos=(d.imageCount||0)>=1;
     markers[id]=marker;
     allMarkers.push(marker);
     clusterGroup.addLayer(marker);
@@ -996,6 +1002,15 @@ map.addLayer(clusterGroup);
     });
     /* Media picklist */
     var mp=document.getElementById('mediaPanel');
+    /* "Has Photos" special option at top */
+    var photoCount=0;
+    Object.keys(parkData).forEach(function(id){if((parkData[id].imageCount||0)>=1)photoCount++;});
+    var hpEl=document.createElement('div');hpEl.className='ms-dd-opt';hpEl.setAttribute('data-val','Has Photos');
+    hpEl.innerHTML='<div class="chk">&#10003;</div><span class="olbl">📷 Has Photos</span><span class="ocnt">'+photoCount+'</span>';
+    hpEl.onclick=function(){togMediaOpt(this,'Has Photos');};mp.appendChild(hpEl);
+    /* Divider */
+    var divEl=document.createElement('div');divEl.style.cssText='height:1px;background:#333;margin:4px 8px';mp.appendChild(divEl);
+    /* Media type options */
     var mSorted=Object.keys(mediaGrps).sort(function(a,b){return mediaGrps[b]-mediaGrps[a];});
     mSorted.forEach(function(mg){
         var el=document.createElement('div');el.className='ms-dd-opt';el.setAttribute('data-val',mg);
