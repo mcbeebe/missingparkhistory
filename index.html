@@ -53,28 +53,19 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .legend-title{color:#999;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;font-size:10px}
 .legend-item{display:flex;align-items:center;gap:8px;margin-bottom:5px;color:#ccc}
 .legend-dot{width:12px;height:12px;border-radius:50%;border:2px solid #fff}
-.controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:4px}
+.controls-bar{position:fixed;left:50%;transform:translateX(-50%);z-index:4000;display:flex;flex-direction:column;align-items:center;gap:2px}
 .search-box{width:360px;max-width:85vw;position:relative;z-index:100}
-.search-box input{width:100%;padding:10px 16px 10px 38px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;color:#fff;font-size:14px;font-family:-apple-system,sans-serif;outline:none}
+.search-box input{width:100%;padding:8px 16px 8px 38px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;color:#fff;font-size:13px;font-family:-apple-system,sans-serif;outline:none}
 .search-box input:focus{border-color:#6d9eeb}
 .search-box input::placeholder{color:#555}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#555;font-size:16px}
-.search-results{position:absolute;top:44px;left:0;right:0;background:rgba(10,10,15,0.98);border:1px solid #2a2a3a;border-radius:10px;max-height:300px;overflow-y:auto;display:none;z-index:9999}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#555;font-size:14px}
+.search-results{position:absolute;top:40px;left:0;right:0;background:rgba(10,10,15,0.98);border:1px solid #2a2a3a;border-radius:10px;max-height:300px;overflow-y:auto;display:none;z-index:9999}
 .search-results.active{display:block}
 .search-result{padding:10px 16px;cursor:pointer;border-bottom:1px solid #1a1a2a;font-family:-apple-system,sans-serif;font-size:13px;color:#ccc}
 .search-result:hover{background:#1a1a2a}
 .search-result .sr-park{font-weight:600;color:#fff}
 .search-result .sr-meta{font-size:11px;color:#666;margin-top:2px}
 .filter-bar{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center}
-.filter-btn{background:rgba(20,20,40,0.95);color:#aaa;border:1px solid #444;padding:5px 12px;border-radius:20px;font-size:12px;cursor:pointer;font-family:-apple-system,sans-serif;transition:all 0.2s;white-space:nowrap;font-weight:500}
-.filter-btn:hover{border-color:#888;color:#fff;background:rgba(40,40,70,0.95)}
-.filter-btn.active{color:#fff;font-weight:600}
-.filter-btn.active[data-filter="badge-remove"]{background:rgba(120,20,20,0.95);border-color:#dc2626;color:#f87171}
-.filter-btn.active[data-filter="badge-revise"]{background:rgba(120,80,0,0.95);border-color:#d97706;color:#fbbf24}
-.filter-btn.active[data-filter="badge-flagged"]{background:rgba(50,55,70,0.95);border-color:#6b7280;color:#d1d5db}
-.filter-btn.active[data-filter="badge-restored"]{background:rgba(5,100,60,0.95);border-color:#059669;color:#34d399}
-.filter-btn.active[data-filter="badge-fws-flagged"]{background:rgba(13,148,136,0.95);border-color:#0d9488;color:#5eead4}
-.filter-row2{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:6px}
 .ms-dd{position:relative;display:inline-block;font-family:-apple-system,sans-serif}
 .ms-dd-trigger{background:rgba(20,20,40,0.95);border:1px solid #444;color:#aaa;padding:7px 30px 7px 12px;border-radius:20px;font-size:12px;cursor:pointer;transition:all 0.2s;white-space:nowrap;display:flex;align-items:center;gap:5px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
 .ms-dd-trigger:hover{border-color:#888;color:#ccc}
@@ -90,6 +81,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ms-dd-opt .ocnt{font-size:10px;color:#555}
 .ms-dd.topic .ms-dd-opt.sel .chk{background:#d97706;border-color:#d97706}
 .ms-dd.topic .ms-dd-trigger .ms-count{background:rgba(217,119,6,0.3);color:#fbbf24}
+.ms-dd.status .ms-dd-opt.sel .chk{background:#dc2626;border-color:#dc2626}
+.ms-dd.status .ms-dd-trigger .ms-count{background:rgba(220,38,38,0.3);color:#f87171}
 .state-sel{background:rgba(20,20,40,0.95);border:1px solid #444;color:#aaa;padding:7px 28px 7px 10px;border-radius:20px;font-size:12px;cursor:pointer;font-family:-apple-system,sans-serif;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;transition:all 0.2s}
 .state-sel:hover{border-color:#888;color:#ccc}
 .state-sel:focus{outline:none;border-color:#6d9eeb}
@@ -273,7 +266,6 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .title-banner p{font-size:12px}
 .stats-bar{gap:10px}.stat-item{font-size:10px}.stat-item strong{font-size:12px}
 .filter-bar{gap:5px}
-.filter-btn{padding:5px 10px;font-size:11px}
 .side-panel{width:90vw;max-width:700px}
 .legend{padding:10px 14px;font-size:11px}
 }
@@ -289,9 +281,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .controls-bar{top:auto!important;bottom:0;left:0;right:0;transform:none;padding:8px 12px;padding-bottom:max(8px,env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(10,10,15,0.95) 20%);flex-direction:column;gap:6px;z-index:4500}
 .search-box{width:100%;max-width:100%}
 .search-box input{padding:10px 14px 10px 36px;font-size:13px;border-radius:12px}
-.filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:6px;justify-content:flex-start;-webkit-overflow-scrolling:touch;padding:2px 0;scrollbar-width:none}
+.filter-bar{flex-wrap:nowrap;overflow-x:auto;gap:5px;justify-content:flex-start;-webkit-overflow-scrolling:touch;padding:2px 0;scrollbar-width:none}
 .filter-bar::-webkit-scrollbar{display:none}
-.filter-btn{padding:8px 14px;font-size:12px;flex-shrink:0;min-height:36px}
 #filterCount{font-size:10px;text-align:center}
 /* About/Why button */
 .about-btn{display:none!important}
@@ -376,13 +367,16 @@ body.embed-mode .embed-full-link{display:block!important}
 </div>
 </div>
 <div class="controls-bar" style="top:148px">
-<div class="filter-bar" id="statusBar">
-<div class="filter-btn active" data-filter="badge-remove" onclick="togStatus('badge-remove',this)">Remove <span class="bcnt">53</span></div>
-<div class="filter-btn" data-filter="badge-revise" onclick="togStatus('badge-revise',this)">Revise <span class="bcnt">67</span></div>
-<div class="filter-btn" data-filter="badge-flagged" onclick="togStatus('badge-flagged',this)">Flagged <span class="bcnt">734</span></div>
-<div class="filter-btn" data-filter="badge-restored" onclick="togStatus('badge-restored',this)">Restored <span class="bcnt">9</span></div>
-<div class="filter-btn" data-filter="badge-fws-flagged" onclick="togStatus('badge-fws-flagged',this)">FWS <span class="bcnt">11</span></div>
-<div class="fdiv"></div>
+<div class="filter-bar" id="filterBar">
+<div class="ms-dd status" id="statusDd">
+<div class="ms-dd-trigger" onclick="togDd('statusDd')">All Statuses</div>
+<div class="ms-dd-panel" id="statusPanel">
+<div class="ms-dd-opt sel" data-val="badge-remove" onclick="togStatusOpt(this,'badge-remove')"><div class="chk">&#10003;</div><span class="olbl">Replace/Remove</span><span class="ocnt">53</span></div>
+<div class="ms-dd-opt sel" data-val="badge-revise" onclick="togStatusOpt(this,'badge-revise')"><div class="chk">&#10003;</div><span class="olbl">Revise</span><span class="ocnt">67</span></div>
+<div class="ms-dd-opt sel" data-val="badge-flagged" onclick="togStatusOpt(this,'badge-flagged')"><div class="chk">&#10003;</div><span class="olbl">Flagged</span><span class="ocnt">734</span></div>
+<div class="ms-dd-opt sel" data-val="badge-restored" onclick="togStatusOpt(this,'badge-restored')"><div class="chk">&#10003;</div><span class="olbl">Restored</span><span class="ocnt">9</span></div>
+</div>
+</div>
 <select class="state-sel" id="stateSel" onchange="applyFilters()"><option value="">All States</option></select>
 <div class="ms-dd" id="mediaDd">
 <div class="ms-dd-trigger" onclick="togDd('mediaDd')">All Media Types</div>
@@ -391,11 +385,6 @@ body.embed-mode .embed-full-link{display:block!important}
 <div class="ms-dd topic" id="topicDd">
 <div class="ms-dd-trigger" onclick="togDd('topicDd')">All Topics</div>
 <div class="ms-dd-panel" id="topicPanel"></div>
-</div>
-<div class="fdiv"></div>
-<div class="ntr-tog on" id="ntrTog" onclick="togNtr()">
-<div class="tog-track"><div class="tog-knob"></div></div>
-<span class="tog-lbl">Nothing to Report (328)</span>
 </div>
 <button class="clear-all-btn" id="clearAllBtn" style="display:none" onclick="clearFilters()">✕ Clear All</button>
 </div>
@@ -791,18 +780,19 @@ var colors={'badge-remove':'#dc2626','badge-revise':'#d97706','badge-flagged':'#
 var markers={};
 var allMarkers=[];
 var clusterGroup=L.markerClusterGroup({maxClusterRadius:50,spiderfyOnMaxZoom:true,showCoverageOnHover:false,zoomToBoundsOnClick:true,disableClusteringAtZoom:10});
-var fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored','badge-fws-flagged']);
+var fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);
 var fMedia=new Set();
 var fTopics=new Set();
 var fState='';
-var fShowNtr=true;
-function groupMedia(mv){mv=(mv||'').toLowerCase();if(mv.indexOf('interpretive')!==-1)return'Interpretive Materials';if(mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1)return'Exhibit Panels';if(mv.indexOf('publication')!==-1)return'Publications';if(mv.indexOf('film')!==-1||mv.indexOf('video')!==-1)return'Film/Video';if(mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1)return'Signs/Waysides';if(mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1)return'Monuments/Statues';return'Other';}
-function togStatus(badge,btn){
-    if(fStatuses.has(badge)){fStatuses.delete(badge);btn.classList.remove('active');}
-    else{fStatuses.add(badge);btn.classList.add('active');}
-    if(fStatuses.size===0){fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored','badge-fws-flagged']);document.querySelectorAll('#statusBar .filter-btn').forEach(function(b){b.classList.add('active');});}
+function groupMedia(mv,id){if(id&&ntrIds.has(id))return'Nothing to Report';mv=(mv||'').toLowerCase();if(mv.indexOf('interpretive')!==-1)return'Interpretive Materials';if(mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1)return'Exhibit Panels';if(mv.indexOf('publication')!==-1)return'Publications';if(mv.indexOf('film')!==-1||mv.indexOf('video')!==-1)return'Film/Video';if(mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1)return'Signs/Waysides';if(mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1)return'Monuments/Statues';return'Other';}
+function togStatusOpt(el,val){
+    el.classList.toggle('sel');
+    if(fStatuses.has(val))fStatuses.delete(val);else fStatuses.add(val);
+    if(fStatuses.size===0){fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){o.classList.add('sel');});}
+    updDdLabel('statusDd',fStatuses,'All Statuses','Status');
     applyFilters();
 }
+function remStatus(val){fStatuses.delete(val);if(fStatuses.size===0){fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){o.classList.add('sel');});}else{document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});}updDdLabel('statusDd',fStatuses,'All Statuses','Status');applyFilters();}
 function togDd(id){
     var dd=document.getElementById(id);var panel=dd.querySelector('.ms-dd-panel');var trig=dd.querySelector('.ms-dd-trigger');
     var isOpen=panel.classList.contains('open');
@@ -829,35 +819,31 @@ function updDdLabel(ddId,activeSet,defLabel,prefix){
     else if(activeSet.size===1){trig.innerHTML=prefix+': '+Array.from(activeSet)[0]+' <span class="ms-count">1</span>';}
     else{trig.innerHTML=activeSet.size+' '+prefix+' selected <span class="ms-count">'+activeSet.size+'</span>';}
 }
-function togNtr(){
-    fShowNtr=!fShowNtr;
-    document.getElementById('ntrTog').classList.toggle('on',fShowNtr);
-    applyFilters();
-}
 function clearFilters(){
-    fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored','badge-fws-flagged']);
-    fMedia.clear();fTopics.clear();fState='';fShowNtr=true;
-    document.querySelectorAll('#statusBar .filter-btn').forEach(function(b){b.classList.add('active');});
+    fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-restored']);
+    fMedia.clear();fTopics.clear();fState='';
+    document.querySelectorAll('#statusPanel .ms-dd-opt').forEach(function(o){o.classList.add('sel');});
+    document.querySelectorAll('#mediaPanel .ms-dd-opt.sel').forEach(function(o){o.classList.remove('sel');});
+    document.querySelectorAll('#topicPanel .ms-dd-opt.sel').forEach(function(o){o.classList.remove('sel');});
     document.getElementById('stateSel').value='';
-    document.querySelectorAll('.ms-dd-opt.sel').forEach(function(o){o.classList.remove('sel');});
+    updDdLabel('statusDd',fStatuses,'All Statuses','Status');
     updDdLabel('mediaDd',fMedia,'All Media Types','Media');
     updDdLabel('topicDd',fTopics,'All Topics','Topic');
-    document.getElementById('ntrTog').classList.add('on');
     applyFilters();
 }
 function applyFilters(){
     if(!allMarkers.length)return;
     fState=document.getElementById('stateSel').value;
-    var allStatuses=fStatuses.size===5;
+    var allStatuses=fStatuses.size===4;
     var anyMedia=fMedia.size>0;
     var anyTopic=fTopics.size>0;
-    var isFiltered=!allStatuses||fState||anyMedia||anyTopic||!fShowNtr;
+    var isFiltered=!allStatuses||fState||anyMedia||anyTopic;
     clusterGroup.clearLayers();
     var count=0;
     allMarkers.forEach(function(m){
-        if(!fStatuses.has(m._badge))return;
+        /* FWS entries always pass status filter */
+        if(m._badge!=='badge-fws-flagged'&&!fStatuses.has(m._badge))return;
         if(fState&&m._state!==fState)return;
-        if(!fShowNtr&&m._ntr)return;
         if(anyMedia&&!fMedia.has(m._mediaGrp))return;
         if(anyTopic){var hit=false;for(var i=0;i<m._topics.length;i++){if(fTopics.has(m._topics[i])){hit=true;break;}}if(!hit)return;}
         clusterGroup.addLayer(m);count++;
@@ -866,22 +852,22 @@ function applyFilters(){
     /* chips */
     var ch='';
     if(!allStatuses){
-        var allBadges=['badge-remove','badge-revise','badge-flagged','badge-restored','badge-fws-flagged'];
+        var allBadges=['badge-remove','badge-revise','badge-flagged','badge-restored'];
         var missing=allBadges.filter(function(b){return!fStatuses.has(b);});
-        missing.forEach(function(b){var labels={'badge-remove':'Remove','badge-revise':'Revise','badge-flagged':'Flagged','badge-restored':'Restored','badge-fws-flagged':'FWS'};
-            ch+='<div class="f-chip">-'+labels[b]+' <span class="cx" onclick="var btn=document.querySelector(\'[data-filter='+b+']\');togStatus(\''+b+'\',btn)">×</span></div>';});
+        var labels={'badge-remove':'Remove','badge-revise':'Revise','badge-flagged':'Flagged','badge-restored':'Restored'};
+        missing.forEach(function(b){
+            ch+='<div class="f-chip" style="border-color:rgba(220,38,38,0.5);background:rgba(220,38,38,0.15);color:#fca5a5">-'+labels[b]+' <span class="cx" onclick="remStatus(\''+b+'\')">×</span></div>';});
     }
     if(fState)ch+='<div class="f-chip">State: '+fState+' <span class="cx" onclick="document.getElementById(\'stateSel\').value=\'\';applyFilters()">×</span></div>';
     fMedia.forEach(function(m){ch+='<div class="f-chip">'+m+' <span class="cx" onclick="remMedia(\''+m+'\')">×</span></div>';});
     fTopics.forEach(function(t){ch+='<div class="f-chip" style="border-color:rgba(217,119,6,0.5);background:rgba(217,119,6,0.2);color:#fcd34d">'+t+' <span class="cx" onclick="remTopic(\''+t.replace(/'/g,"\\'")+'\')">×</span></div>';});
-    if(!fShowNtr)ch+='<div class="f-chip">Nothing to Report hidden <span class="cx" onclick="togNtr()">×</span></div>';
     document.getElementById('filterChips').innerHTML=ch;
     document.getElementById('clearAllBtn').style.display=isFiltered?'inline-block':'none';
 }
 function remMedia(val){fMedia.delete(val);document.querySelectorAll('#mediaPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});updDdLabel('mediaDd',fMedia,'All Media Types','Media');applyFilters();}
 function remTopic(val){fTopics.delete(val);document.querySelectorAll('#topicPanel .ms-dd-opt').forEach(function(o){if(o.getAttribute('data-val')===val)o.classList.remove('sel');});updDdLabel('topicDd',fTopics,'All Topics','Topic');applyFilters();}
-/* Initialize: all status buttons active */
-(function(){document.querySelectorAll('#statusBar .filter-btn').forEach(function(b){b.classList.add('active');});})();
+/* Initialize: status dropdown label */
+(function(){updDdLabel('statusDd',fStatuses,'All Statuses','Status');})();
 var searchInput=document.getElementById('searchInput');
 var searchResults=document.getElementById('searchResults');
 var searchDebounce=null;
@@ -957,8 +943,8 @@ Object.keys(parkData).forEach(function(id){
     marker._state=d.state||'';
     marker._topics=d.topics||[];
     var mv=(d.media||'').toLowerCase();
-    marker._mediaGrp=mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
     marker._ntr=ntrIds.has(id);
+    marker._mediaGrp=marker._ntr?'Nothing to Report':mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
     markers[id]=marker;
     allMarkers.push(marker);
     clusterGroup.addLayer(marker);
@@ -985,7 +971,7 @@ map.addLayer(clusterGroup);
     var states={},mediaGrps={},topics={};
     Object.keys(parkData).forEach(function(id){var d=parkData[id];
         var s=d.state||'';if(s&&s.length<=3)states[s]=(states[s]||0)+1;
-        var mg=groupMedia(d.media);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
+        var mg=groupMedia(d.media,id);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
         (d.topics||[]).forEach(function(t){t=t.trim();if(t)topics[t]=(topics[t]||0)+1;});
     });
     /* State dropdown */
