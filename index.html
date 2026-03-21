@@ -65,7 +65,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .search-result:hover{background:#1a1a2a}
 .search-result .sr-park{font-weight:600;color:#fff}
 .search-result .sr-meta{font-size:11px;color:#666;margin-top:2px}
-.filter-bar{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center;position:relative}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center}
 .ms-dd{position:relative;display:inline-block;font-family:-apple-system,sans-serif}
 .ms-dd-trigger{background:rgba(20,20,40,0.95);border:1px solid #444;color:#aaa;padding:7px 30px 7px 12px;border-radius:20px;font-size:12px;cursor:pointer;transition:all 0.2s;white-space:nowrap;display:flex;align-items:center;gap:5px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
 .ms-dd-trigger:hover{border-color:#888;color:#ccc}
@@ -93,7 +93,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .ntr-tog.on .tog-knob{background:#6d9eeb;left:16px}
 .ntr-tog .tog-lbl{font-size:11px;color:#888}
 .ntr-tog.on .tog-lbl{color:#8bb3ff}
-.filter-chips{position:absolute;right:0;top:100%;display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;margin-top:2px;max-width:400px;z-index:50}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;margin-top:2px;width:100%}
 .f-chip{display:flex;align-items:center;gap:4px;padding:3px 10px;border-radius:12px;font-size:10px;font-family:-apple-system,sans-serif;background:rgba(109,158,235,0.85);border:1px solid rgba(109,158,235,0.9);color:#fff;font-weight:600}
 .f-chip .cx{cursor:pointer;opacity:0.6;font-size:12px;line-height:1}
 .f-chip .cx:hover{opacity:1}
@@ -387,13 +387,13 @@ body.embed-mode .embed-full-link{display:block!important}
 <div class="ms-dd-panel" id="topicPanel"></div>
 </div>
 <button class="clear-all-btn" id="clearAllBtn" style="display:none" onclick="clearFilters()">✕ Clear All</button>
-<div class="filter-chips" id="filterChips"></div>
 </div>
 <div class="search-box" style="margin-top:2px">
 <span class="search-icon">&#128269;</span>
 <input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
 <div class="search-results" id="searchResults"></div>
 </div>
+<div class="filter-chips" id="filterChips"></div>
 </div>
 <button class="about-btn" onclick="document.getElementById('aboutOverlay').classList.add('active')"><span class="about-btn-icon">&#9888;&#65039;</span> Why This Map Exists</button>
 <a class="embed-full-link" href="https://missingparkhistory.org/" target="_blank" rel="noopener">↗ View Full Map</a>
