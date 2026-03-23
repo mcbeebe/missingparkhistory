@@ -777,7 +777,9 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
     attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains:'abcd',maxZoom:19
 }).addTo(map);
-var ntrIds=new Set(["106","107","108","110","111","113","114","115","116","117","118","119","120","121","122","124","125","128","129","130","131","132","135","136","137","138","139","140","141","142","143","149","150","151","153","154","156","157","158","159","160","161","162","163","164","178","179","182","184","194","196","213","227","237","238","239","240","241","242","243","244","245","246","247","251","253","254","257","262","266","267","271","272","273","275","276","277","278","279","281","283","286","289","293","300","301","304","306","309","311","313","321","322","324","339","341","342","343","344","346","347","350","353","369","371","372","374","375","377","382","388","396","399","402","403","406","409","411","412","413","415","416","417","418","422","425","427","434","441","445","446","448","450","452","453","454","462","464","467","468","469","483","485","492","494","495","497","498","501","503","505","506","507","508","509","510","511","512","513","518","524","525","531","555","560","579","580","587","596","604","605","618","625","626","627","631","648","652","653","654","656","657","658","659","663","664","667","668","669","670","671","672","673","675","676","678","679","680","690","696","700","724","725","728","731","734","738","744","745","746","752","753","754","756","758","759","760","766","776","777","778","780","781","782","787","788","793","794","797","815","816","821","822","823","824","825","828","829","836","839","840","852","857","858","861","864","866","881","883","897","899","901","902","903","905","906","907","909","910","911","912","913","914","915","916","917","918","919","921","922","923","924","925","926","927","928","929","930","931","932","933","934","935","936","937","938","939","940","941","942","943","944","945","946","947","948","949","950","951","952","953","954","956","957","958","961","962","963","964","965","966","967","968","969","970","971","972","973","974","975","976","977","978","981","983","984","987","1038"]);
+/* NTR set from Censorship_Spreadsheet_Enhanced 2 MediaEnhancements column (pure NTR only), minus 5 entries enriched with real content */
+var ntrIds=new Set(["106","107","108","110","111","113","114","115","116","117","118","119","120","121","122","124","125","128","129","130","131","132","135","136","137","138","139","140","141","143","149","150","151","153","154","156","157","158","159","160","161","162","163","164","178","179","184","194","196","213","227","237","238","239","240","241","242","243","244","245","246","247","251","253","254","257","262","266","267","271","272","273","275","276","277","278","279","281","283","286","289","293","300","301","304","306","309","311","313","321","322","324","339","341","342","343","344","346","347","350","369","371","372","374","375","377","382","388","396","399","402","403","406","409","411","412","413","415","416","417","418","422","425","427","434","441","445","446","448","450","452","453","454","462","464","467","468","469","483","485","492","494","495","497","498","501","503","505","506","507","508","509","510","511","512","513","518","524","525","531","555","560","579","580","587","596","604","605","618","626","627","631","648","652","653","654","656","657","658","659","663","664","667","668","669","670","671","672","673","675","676","678","679","680","690","700","724","725","731","734","738","744","745","746","752","753","754","756","758","759","760","766","776","777","778","780","781","782","787","788","794","797","815","816","821","823","824","825","828","829","836","839","840","852","857","858","861","864","866","881","883","897","899","901","902","903","905","906","907","909","910","911","912","913","914","915","916","917","918","919","921","922","923","924","925","926","927","928","929","930","931","932","933","934","935","936","937","938","939","940","941","942","943","945","946","947","948","949","950","951","952","953","954","956","957","961","962","963","964","965","966","967","968","969","970","971","972","973","974","975","976","977","978","981","983","984","987"]);
+function isNTR(d,id){return ntrIds.has(id);}
 var colors={'badge-remove':'#dc2626','badge-revise':'#d97706','badge-flagged':'#4b5563','badge-restored':'#059669','badge-fws-flagged':'#0d9488'};
 var markers={};
 var allMarkers=[];
@@ -786,7 +788,7 @@ var fStatuses=new Set(['badge-remove','badge-revise','badge-flagged','badge-rest
 var fMedia=new Set();
 var fTopics=new Set();
 var fState='';
-function groupMedia(mv,id){if(id&&ntrIds.has(id))return'Nothing to Report';mv=(mv||'').toLowerCase();if(mv.indexOf('interpretive')!==-1)return'Interpretive Materials';if(mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1)return'Exhibit Panels';if(mv.indexOf('publication')!==-1)return'Publications';if(mv.indexOf('film')!==-1||mv.indexOf('video')!==-1)return'Film/Video';if(mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1)return'Signs/Waysides';if(mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1)return'Monuments/Statues';return'Other';}
+function groupMedia(mv,d,id){if(id&&isNTR(d,id))return'Nothing to Report';mv=(mv||'').toLowerCase();if(mv.indexOf('interpretive')!==-1)return'Interpretive Materials';if(mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1)return'Exhibit Panels';if(mv.indexOf('publication')!==-1)return'Publications';if(mv.indexOf('film')!==-1||mv.indexOf('video')!==-1)return'Film/Video';if(mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1)return'Signs/Waysides';if(mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1)return'Monuments/Statues';return'Other';}
 function togStatusOpt(el,val){
     el.classList.toggle('sel');
     if(fStatuses.has(val))fStatuses.delete(val);else fStatuses.add(val);
@@ -963,8 +965,8 @@ Object.keys(parkData).forEach(function(id){
     marker._state=d.state||'';
     marker._topics=d.topics||[];
     var mv=(d.media||'').toLowerCase();
-    marker._ntr=ntrIds.has(id);
-    marker._mediaGrp=marker._ntr?'Nothing to Report':mv.indexOf('interpretive')!==-1?'Interpretive Materials':mv.indexOf('exhibit')!==-1||mv.indexOf('interior')!==-1||mv.indexOf('exterior')!==-1?'Exhibit Panels':mv.indexOf('publication')!==-1?'Publications':mv.indexOf('film')!==-1||mv.indexOf('video')!==-1?'Film/Video':mv.indexOf('sign')!==-1||mv.indexOf('wayside')!==-1?'Signs/Waysides':mv.indexOf('monument')!==-1||mv.indexOf('statue')!==-1||mv.indexOf('marker')!==-1?'Monuments/Statues':'Other';
+    marker._ntr=isNTR(d,id);
+    marker._mediaGrp=groupMedia(d.media,d,id);
     marker._hasPhotos=(d.imageCount||0)>=1;
     markers[id]=marker;
     allMarkers.push(marker);
@@ -992,7 +994,7 @@ map.addLayer(clusterGroup);
     var states={},mediaGrps={},topics={};
     Object.keys(parkData).forEach(function(id){var d=parkData[id];
         var s=d.state||'';if(s&&s.length<=3)states[s]=(states[s]||0)+1;
-        var mg=groupMedia(d.media,id);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
+        var mg=groupMedia(d.media,d,id);mediaGrps[mg]=(mediaGrps[mg]||0)+1;
         (d.topics||[]).forEach(function(t){t=t.trim();if(t)topics[t]=(topics[t]||0)+1;});
     });
     /* State dropdown */
