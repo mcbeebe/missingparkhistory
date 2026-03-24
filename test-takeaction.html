@@ -133,10 +133,10 @@ function lookupZip(zip) {
   var result = { zip: zip, state: null, district: null, senators: [], representative: null, method: 'none' };
   var zip3 = zip.substring(0, 3);
 
-  // Tier 1: exact ZIP
+  // Tier 1: exact ZIP — handle both string and array formats
   if (congressData.zipToDistrict && congressData.zipToDistrict[zip]) {
-    var districts = congressData.zipToDistrict[zip];
-    result.district = districts[0];
+    var distVal = congressData.zipToDistrict[zip];
+    result.district = Array.isArray(distVal) ? distVal[0] : distVal;
     result.state = result.district.split('-')[0];
     result.method = 'exact';
   }

@@ -1253,8 +1253,8 @@ function taLookup(){
     var usedFallback=false;
     /* Tier 1: exact ZIP-to-district mapping */
     if(congressData.zipToDistrict&&congressData.zipToDistrict[zip]){
-        var districts=congressData.zipToDistrict[zip];
-        district=districts[0];
+        var distVal=congressData.zipToDistrict[zip];
+        district=Array.isArray(distVal)?distVal[0]:distVal;
         state=district.split('-')[0];
     }
     /* Tier 2: ZIP3-to-state fallback */
