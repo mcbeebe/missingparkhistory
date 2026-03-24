@@ -355,16 +355,16 @@ body.embed-mode .embed-full-link{bottom:8px;left:8px}
 }
 /* === TAKE ACTION BUTTON + MODAL === */
 .take-action-btn{
-  position:fixed;top:100px;left:16px;z-index:4500;
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:4500;
   background:linear-gradient(135deg,#b91c1c,#991b1b);
-  color:#fff;border:none;border-radius:12px;
-  padding:12px 20px;font-size:15px;font-weight:700;
+  color:#fff;border:none;border-radius:30px;
+  padding:12px 24px;font-size:15px;font-weight:700;
   cursor:pointer;display:flex;align-items:center;gap:8px;
   box-shadow:0 4px 20px rgba(185,28,28,0.4),0 0 0 0 rgba(185,28,28,0.4);
   transition:all 0.3s ease;font-family:-apple-system,BlinkMacSystemFont,sans-serif;
   animation:ta-pulse 2s ease-in-out 3;
 }
-.take-action-btn:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(185,28,28,0.5)}
+.take-action-btn:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 6px 28px rgba(185,28,28,0.5)}
 .take-action-btn .ta-icon{font-size:20px}
 @keyframes ta-pulse{
   0%,100%{box-shadow:0 4px 20px rgba(185,28,28,0.4),0 0 0 0 rgba(185,28,28,0.4)}
@@ -530,7 +530,7 @@ body.embed-mode .embed-full-link{bottom:8px;left:8px}
 .ta-fallback{display:none;margin-top:12px;padding:14px;background:#FEF3C7;border:1px solid #F59E0B;border-radius:10px;font-size:13px;color:#92400E;line-height:1.5}
 .ta-fallback a{color:#92400E;font-weight:600}
 @media(max-width:600px){
-  .take-action-btn{top:auto;bottom:20px;left:50%;transform:translateX(-50%);border-radius:25px;padding:14px 28px;font-size:17px;font-weight:800}
+  .take-action-btn{top:auto;bottom:20px;left:50%;transform:translateX(-50%);border-radius:30px;padding:14px 28px;font-size:17px;font-weight:800}
   .ta-card{border-radius:0;max-height:100vh;height:100vh}
   .ta-header{border-radius:0;padding:24px 20px 20px}
   .ta-header h2{font-size:22px}
@@ -663,6 +663,9 @@ body.embed-mode .take-action-btn{display:none!important}
       </div>
       <div class="ta-momentum">
         <strong style="color:#fbbf24">Momentum is building.</strong> On March 19, the NPCA and a coalition of historians, scientists, and park advocates filed for a <strong>preliminary injunction</strong> in federal court to halt the censorship. <strong>53 House Democrats</strong> led by Rep. Jared Huffman are pushing to block funding for SO 3431. Add your voice to the pressure.
+      </div>
+      <div class="ta-counter" id="taLookupTracker" style="margin-top:8px">
+        &#x1F4CA; <strong id="taLookupCount" style="color:#fbbf24">0</strong> people have looked up their representatives using this tool.
       </div>
     </div>
     <div class="ta-body">
@@ -1217,6 +1220,33 @@ var congressData=null;
 (function(){
     fetch('data/congress.json').then(function(r){return r.json();}).then(function(d){congressData=d;}).catch(function(){congressData=null;});
 })();
+/* ZIP Lookup Tracker — tracks total lookups across all visitors */
+var taLookupTotal=0;
+var TA_COUNTER_KEY='ta_zip_lookups';
+(function(){
+    /* Try shared counter service first, fallback to localStorage */
+    fetch('https://countapi.mileshilliard.com/get/missingparkhistory/zip-lookups')
+        .then(function(r){return r.json();})
+        .then(function(d){
+            if(d&&typeof d.value==='number'&&d.value>0){taLookupTotal=d.value;}
+            else{taLookupTotal=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);}
+            var el=document.getElementById('taLookupCount');
+            if(el)el.textContent=taLookupTotal.toLocaleString();
+        })
+        .catch(function(){
+            taLookupTotal=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);
+            var el=document.getElementById('taLookupCount');
+            if(el)el.textContent=taLookupTotal.toLocaleString();
+        });
+})();
+function taTrackLookup(){
+    taLookupTotal++;
+    var el=document.getElementById('taLookupCount');
+    if(el)el.textContent=taLookupTotal.toLocaleString();
+    try{localStorage.setItem(TA_COUNTER_KEY,String(taLookupTotal));}catch(e){}
+    /* Increment shared counter (fire-and-forget) */
+    fetch('https://countapi.mileshilliard.com/hit/missingparkhistory/zip-lookups').catch(function(){});
+}
 var taCurrentReps=[];
 function taOpen(){
     document.getElementById('taOverlay').classList.add('active');
@@ -1293,6 +1323,8 @@ function taLookup(){
         });
     }
     taCurrentReps=reps;
+    /* Track this ZIP lookup */
+    taTrackLookup();
     /* Render rep cards */
     var grid=document.getElementById('taRepsGrid');
     grid.innerHTML='';
