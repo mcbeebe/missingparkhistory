@@ -353,6 +353,197 @@ body.embed-mode .filter-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:n
 body.embed-mode .filter-chips::-webkit-scrollbar{display:none}
 body.embed-mode .embed-full-link{bottom:8px;left:8px}
 }
+/* === TAKE ACTION BUTTON + MODAL === */
+.take-action-btn{
+  position:fixed;top:100px;left:16px;z-index:4500;
+  background:linear-gradient(135deg,#b91c1c,#991b1b);
+  color:#fff;border:none;border-radius:12px;
+  padding:12px 20px;font-size:15px;font-weight:700;
+  cursor:pointer;display:flex;align-items:center;gap:8px;
+  box-shadow:0 4px 20px rgba(185,28,28,0.4),0 0 0 0 rgba(185,28,28,0.4);
+  transition:all 0.3s ease;font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  animation:ta-pulse 2s ease-in-out 3;
+}
+.take-action-btn:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(185,28,28,0.5)}
+.take-action-btn .ta-icon{font-size:20px}
+@keyframes ta-pulse{
+  0%,100%{box-shadow:0 4px 20px rgba(185,28,28,0.4),0 0 0 0 rgba(185,28,28,0.4)}
+  50%{box-shadow:0 4px 20px rgba(185,28,28,0.4),0 0 0 14px rgba(185,28,28,0)}
+}
+.ta-overlay{
+  position:fixed;inset:0;z-index:9500;
+  background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;overflow-y:auto;
+}
+.ta-overlay.active{display:flex}
+.ta-card{
+  background:#fff;border-radius:20px;max-width:660px;width:100%;
+  max-height:90vh;overflow-y:auto;position:relative;
+  box-shadow:0 25px 80px rgba(0,0,0,0.3);
+}
+.ta-close{
+  position:absolute;top:12px;right:12px;
+  background:rgba(255,255,255,0.2);border:none;border-radius:50%;
+  width:36px;height:36px;font-size:20px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  z-index:2;color:#fff;transition:background 0.2s;
+}
+.ta-close:hover{background:rgba(255,255,255,0.35)}
+.ta-header{
+  background:linear-gradient(135deg,#1B4332,#2D6A4F);
+  color:#fff;padding:32px 32px 24px;border-radius:20px 20px 0 0;position:relative;
+}
+.ta-header h2{font-size:28px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:10px;font-family:Georgia,serif}
+.ta-header .ta-subtitle{font-size:15px;opacity:0.9;line-height:1.5;font-family:-apple-system,sans-serif}
+.ta-header .ta-counter{
+  margin-top:12px;background:rgba(255,255,255,0.15);
+  border-radius:10px;padding:10px 16px;font-size:14px;
+  display:flex;align-items:center;gap:8px;font-family:-apple-system,sans-serif;
+}
+.ta-header .ta-counter strong{font-size:22px;color:#fbbf24}
+.ta-header .ta-momentum{
+  margin-top:10px;background:rgba(255,255,255,0.12);
+  border-radius:10px;padding:10px 16px;font-size:13px;line-height:1.6;font-family:-apple-system,sans-serif;
+}
+.ta-body{padding:24px 32px 32px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.ta-steps{display:flex;gap:8px;margin-bottom:24px}
+.ta-step{
+  flex:1;padding:8px 12px;border-radius:8px;
+  font-size:12px;font-weight:600;text-align:center;
+  background:#f0f0f0;color:#999;transition:all 0.3s;
+}
+.ta-step.active{background:#2D6A4F;color:#fff}
+.ta-step.done{background:#D1FAE5;color:#059669}
+.ta-zip-section{margin-bottom:24px}
+.ta-zip-section label{font-size:14px;font-weight:600;color:#555;display:block;margin-bottom:6px}
+.ta-zip-row{display:flex;gap:8px}
+.ta-zip-input{
+  flex:1;padding:12px 16px;border:2px solid #ddd;border-radius:10px;
+  font-size:16px;outline:none;transition:border 0.2s;font-family:inherit;
+}
+.ta-zip-input:focus{border-color:#2D6A4F}
+.ta-zip-btn{
+  background:#2D6A4F;color:#fff;border:none;border-radius:10px;
+  padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer;
+  white-space:nowrap;transition:background 0.2s;
+}
+.ta-zip-btn:hover{background:#1B4332}
+.ta-zip-error{color:#dc2626;font-size:13px;margin-top:6px;display:none}
+.ta-reps{display:none;margin-bottom:24px}
+.ta-reps.active{display:block}
+.ta-reps-grid{display:flex;flex-direction:column;gap:10px}
+.ta-rep-card{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 16px;border-radius:12px;
+  border:2px solid #e5e7eb;transition:all 0.2s;
+}
+.ta-rep-card:hover{border-color:#2D6A4F;background:#f0fdf4}
+.ta-rep-avatar{
+  width:52px;height:52px;border-radius:50%;
+  background:#e5e7eb;display:flex;align-items:center;
+  justify-content:center;font-size:22px;font-weight:700;color:#666;flex-shrink:0;
+}
+.ta-rep-info{flex:1;min-width:0}
+.ta-rep-name{font-size:15px;font-weight:700;color:#1a1a1a}
+.ta-rep-title{font-size:12px;color:#666;margin-top:2px}
+.ta-rep-party{font-size:11px;font-weight:600;margin-top:3px;display:inline-block;padding:2px 8px;border-radius:4px}
+.ta-rep-party.dem{background:#DBEAFE;color:#1D4ED8}
+.ta-rep-party.rep{background:#FEE2E2;color:#DC2626}
+.ta-rep-party.ind{background:#F3E8FF;color:#7C3AED}
+.ta-rep-actions{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end}
+.ta-rep-copy-btn,.ta-rep-form-btn{
+  border:none;border-radius:8px;
+  padding:8px 12px;font-size:11px;font-weight:600;cursor:pointer;
+  white-space:nowrap;transition:all 0.2s;
+}
+.ta-rep-copy-btn{background:#2D6A4F;color:#fff}
+.ta-rep-copy-btn:hover{background:#1B4332}
+.ta-rep-copy-btn.copied{background:#059669}
+.ta-rep-form-btn{background:#e5e7eb;color:#333;border:1px solid #d1d5db}
+.ta-rep-form-btn:hover{background:#d1d5db}
+.ta-letter{margin-bottom:24px}
+.ta-letter h3{font-size:16px;font-weight:700;color:#333;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.ta-letter-subject{
+  width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:8px;
+  font-size:14px;font-weight:600;margin-bottom:8px;outline:none;font-family:inherit;
+}
+.ta-letter-subject:focus{border-color:#2D6A4F}
+.ta-letter-body{
+  width:100%;min-height:280px;padding:14px;border:2px solid #ddd;
+  border-radius:10px;font-size:13px;line-height:1.6;
+  font-family:inherit;resize:vertical;outline:none;
+}
+.ta-letter-body:focus{border-color:#2D6A4F}
+.ta-letter-hint{font-size:11px;color:#999;margin-top:4px}
+.ta-send{display:none}
+.ta-send.active{display:block}
+.ta-send-actions{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.ta-copy-all{
+  width:100%;padding:16px;background:linear-gradient(135deg,#2D6A4F,#1B4332);
+  color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:800;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:all 0.2s;font-family:inherit;
+}
+.ta-copy-all:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(27,67,50,0.3)}
+.ta-copy-all.copied{background:linear-gradient(135deg,#059669,#047857)}
+.ta-contact-links{display:flex;flex-direction:column;gap:6px}
+.ta-contact-link{
+  display:flex;align-items:center;gap:10px;padding:10px 14px;
+  background:#f0fdf4;border:1px solid #BBF7D0;border-radius:10px;
+  text-decoration:none;color:#1B4332;font-size:13px;font-weight:600;
+  transition:all 0.2s;
+}
+.ta-contact-link:hover{background:#d1fae5;border-color:#6EE7B7;transform:translateX(4px)}
+.ta-contact-link .ta-cl-icon{font-size:18px;flex-shrink:0}
+.ta-contact-link .ta-cl-name{flex:1}
+.ta-contact-link .ta-cl-arrow{color:#059669;font-size:16px}
+.ta-resistbot{
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
+  background:#1a1a2e;border:1px solid #2a2a3a;border-radius:12px;
+  margin-top:4px;
+}
+.ta-resistbot-info{flex:1;font-size:13px;color:#ccc;line-height:1.5}
+.ta-resistbot-info strong{color:#fff}
+.ta-resistbot-btn{
+  background:#6366f1;color:#fff;border:none;border-radius:8px;
+  padding:10px 16px;font-size:13px;font-weight:700;cursor:pointer;
+  white-space:nowrap;transition:background 0.2s;text-decoration:none;display:inline-block;
+}
+.ta-resistbot-btn:hover{background:#4f46e5}
+.ta-send-note{font-size:12px;color:#999;text-align:center;line-height:1.5;margin-top:8px}
+.ta-toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);
+  background:#059669;color:#fff;padding:12px 24px;border-radius:12px;
+  font-size:14px;font-weight:700;font-family:-apple-system,sans-serif;
+  box-shadow:0 8px 30px rgba(0,0,0,0.3);z-index:99999;
+  opacity:0;transition:all 0.3s ease;pointer-events:none;
+}
+.ta-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.ta-footer{
+  border-top:1px solid #eee;padding:16px 32px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;color:#999;font-family:-apple-system,sans-serif;
+}
+.ta-footer a{color:#2D6A4F;text-decoration:none;font-weight:600}
+.ta-footer a:hover{text-decoration:underline}
+.ta-fallback{display:none;margin-top:12px;padding:14px;background:#FEF3C7;border:1px solid #F59E0B;border-radius:10px;font-size:13px;color:#92400E;line-height:1.5}
+.ta-fallback a{color:#92400E;font-weight:600}
+@media(max-width:600px){
+  .take-action-btn{top:auto;bottom:20px;left:50%;transform:translateX(-50%);border-radius:25px;padding:14px 28px;font-size:17px;font-weight:800}
+  .ta-card{border-radius:0;max-height:100vh;height:100vh}
+  .ta-header{border-radius:0;padding:24px 20px 20px}
+  .ta-header h2{font-size:22px}
+  .ta-body{padding:16px 20px 24px}
+  .ta-footer{padding:12px 20px}
+  .ta-rep-card{flex-wrap:wrap}
+  .ta-rep-actions{width:100%;justify-content:stretch}
+  .ta-rep-copy-btn,.ta-rep-form-btn{flex:1;text-align:center}
+  .ta-zip-row{flex-direction:column}
+  .ta-resistbot{flex-direction:column;text-align:center}
+  .ta-resistbot-info{text-align:center}
+}
+body.embed-mode .take-action-btn{display:none!important}
 </style>
 </head>
 <body>
@@ -454,6 +645,99 @@ body.embed-mode .embed-full-link{bottom:8px;left:8px}
 </div>
 </div>
 </div>
+<!-- TAKE ACTION BUTTON -->
+<button class="take-action-btn" onclick="taOpen()">
+  <span class="ta-icon">&#x1F4E2;</span> Take Action
+</button>
+<!-- TAKE ACTION MODAL -->
+<div class="ta-overlay" id="taOverlay" onclick="if(event.target===this)taClose()">
+  <div class="ta-card">
+    <button class="ta-close" onclick="taClose()">&times;</button>
+    <div class="ta-header">
+      <h2>Our Parks Need Your Voice</h2>
+      <div class="ta-subtitle">
+        The Department of the Interior is removing and revising historical materials across the National Park System under Secretary's Order 3431. Congress has the power to stop this — but they need to hear from you.
+      </div>
+      <div class="ta-counter">
+        <strong style="color:#fbbf24">558</strong> park history entries with documented artifacts have been flagged, revised, or removed.
+      </div>
+      <div class="ta-momentum">
+        <strong style="color:#fbbf24">Momentum is building.</strong> On March 19, the NPCA and a coalition of historians, scientists, and park advocates filed for a <strong>preliminary injunction</strong> in federal court to halt the censorship. <strong>53 House Democrats</strong> led by Rep. Jared Huffman are pushing to block funding for SO 3431. Add your voice to the pressure.
+      </div>
+    </div>
+    <div class="ta-body">
+      <div class="ta-steps">
+        <div class="ta-step active" id="taStep1">1. Find Your Reps</div>
+        <div class="ta-step" id="taStep2">2. Review Letter</div>
+        <div class="ta-step" id="taStep3">3. Send</div>
+      </div>
+      <div class="ta-zip-section">
+        <label for="taZipInput">Enter your ZIP code to find your representatives:</label>
+        <div class="ta-zip-row">
+          <input type="text" id="taZipInput" class="ta-zip-input" placeholder="e.g. 19106" maxlength="5" pattern="[0-9]*" inputmode="numeric">
+          <button class="ta-zip-btn" onclick="taLookup()">&#x1F50D; Find My Reps</button>
+        </div>
+        <div class="ta-zip-error" id="taZipError"></div>
+        <div class="ta-fallback" id="taFallback"></div>
+      </div>
+      <div class="ta-reps" id="taReps">
+        <h3 style="font-size:15px;font-weight:700;color:#333;margin-bottom:10px">Your Representatives:</h3>
+        <div class="ta-reps-grid" id="taRepsGrid"></div>
+      </div>
+      <div class="ta-letter">
+        <h3>Your Message to Congress</h3>
+        <input type="text" class="ta-letter-subject" id="taSubject" value="Protect Our National Park History — Oppose SO 3431">
+        <textarea class="ta-letter-body" id="taBody">Dear [Representative/Senator],
+
+I am writing as your constituent to express my deep concern about Secretary's Order 3431 and its impact on the National Park Service's ability to tell the full story of American history.
+
+As of today, 558 park history entries with documented artifacts across the country have been flagged for review, revised, or removed entirely. This includes interpretive materials, exhibit panels, films, publications, and waysides at parks from Gettysburg to Selma to Independence Hall.
+
+Our national parks are America's classrooms. They preserve the stories of war, sacrifice, civil rights, and the complex journey that shaped our nation. Erasing or sanitizing this history does a disservice to every American who visits these sites seeking truth.
+
+This fight is gaining momentum. On March 19, 2026, the National Parks Conservation Association and a broad coalition of historians, scientists, and advocates filed for a preliminary injunction in federal court to halt the censorship and restore removed materials. And 53 of your House colleagues, led by Rep. Jared Huffman, have already called on the Appropriations Committee to block funding for SO 3431's implementation. I am asking you to join them.
+
+I urge you to act immediately:
+
+1. Support legislation to defund and reverse Secretary's Order 3431
+2. Demand full transparency from the Department of the Interior on every content change, removal, and revision
+3. Protect the National Park Service's mandate to preserve and interpret our nation's heritage — free from political censorship
+
+You can see the full, documented scope of what is being changed at MissingParkHistory.org.
+
+This is not a partisan issue — it is about the integrity of our national heritage. Our parks' stories belong to all Americans, and your constituents are paying attention.
+
+Sincerely,
+[Your Name]
+[Your Address]</textarea>
+        <div class="ta-letter-hint"><strong>Tip:</strong> Personalize your message — letters with personal stories are far more impactful. Mention a park you've visited or a story that matters to you.</div>
+      </div>
+      <div class="ta-send" id="taSend">
+        <div class="ta-send-actions">
+          <button class="ta-copy-all" id="taCopyAll" onclick="taCopyLetter()">
+            &#x1F4CB; Copy Letter to Clipboard
+          </button>
+          <div style="font-size:13px;font-weight:700;color:#333;margin-top:4px">Then paste it into each rep's contact form:</div>
+          <div class="ta-contact-links" id="taContactLinks"></div>
+        </div>
+        <div class="ta-resistbot">
+          <div class="ta-resistbot-info">
+            <strong>Or send via Resistbot</strong> — a free service that delivers your letter as a fax, email, or postal mail directly to your reps. Text <strong>RESIST</strong> to <strong>50409</strong> or:
+          </div>
+          <a class="ta-resistbot-btn" href="https://resist.bot/" target="_blank" rel="noopener">Open Resistbot</a>
+        </div>
+        <div class="ta-send-note">
+          Your letter is not stored or tracked. All delivery happens through official channels.
+        </div>
+      </div>
+    </div>
+    <div class="ta-footer">
+      <span>Data from <a href="https://missingparkhistory.org" target="_blank">MissingParkHistory.org</a></span>
+      <a href="https://www.house.gov/representatives/find-your-representative" target="_blank">Find your rep &rarr;</a>
+    </div>
+  </div>
+</div>
+<div class="ta-toast" id="taToast">Copied to clipboard!</div>
 <script>
 var parkData={};
 var manifestData={};
@@ -927,6 +1211,202 @@ function goToEntry(id){searchResults.classList.remove('active');searchInput.valu
 document.addEventListener('click',function(e){if(!e.target.closest('.controls-bar'))searchResults.classList.remove('active')});
 document.addEventListener('click',function(e){var card=e.target.closest('.sos-photo-card');if(card){var url=card.getAttribute('data-photo-url');var title=card.getAttribute('data-photo-title');if(url)openLightbox(url,title||'');}});
 
+
+/* === TAKE ACTION: Congress data + ZIP lookup + mailto === */
+var congressData=null;
+(function(){
+    fetch('data/congress.json').then(function(r){return r.json();}).then(function(d){congressData=d;}).catch(function(){congressData=null;});
+})();
+var taCurrentReps=[];
+function taOpen(){
+    document.getElementById('taOverlay').classList.add('active');
+    document.body.style.overflow='hidden';
+    setTimeout(function(){document.getElementById('taZipInput').focus();},300);
+}
+function taClose(){
+    document.getElementById('taOverlay').classList.remove('active');
+    document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&document.getElementById('taOverlay').classList.contains('active'))taClose();
+});
+function taLookup(){
+    var zip=document.getElementById('taZipInput').value.trim();
+    var errEl=document.getElementById('taZipError');
+    var fallbackEl=document.getElementById('taFallback');
+    errEl.style.display='none';
+    fallbackEl.style.display='none';
+    if(!/^\d{5}$/.test(zip)){
+        errEl.textContent='Please enter a valid 5-digit ZIP code.';
+        errEl.style.display='block';
+        return;
+    }
+    if(!congressData){
+        errEl.textContent='Representative data is still loading. Please try again in a moment.';
+        errEl.style.display='block';
+        return;
+    }
+    var reps=[];
+    var zip3=zip.substring(0,3);
+    var state=null;
+    var district=null;
+    var usedFallback=false;
+    /* Tier 1: exact ZIP-to-district mapping */
+    if(congressData.zipToDistrict&&congressData.zipToDistrict[zip]){
+        var districts=congressData.zipToDistrict[zip];
+        district=districts[0];
+        state=district.split('-')[0];
+    }
+    /* Tier 2: ZIP3-to-state fallback */
+    if(!state&&congressData.zip3ToState&&congressData.zip3ToState[zip3]){
+        state=congressData.zip3ToState[zip3];
+        usedFallback=true;
+    }
+    if(!state){
+        errEl.innerHTML='We couldn\'t identify your state from ZIP code '+zip+'. Please try a different ZIP or <a href="https://www.house.gov/representatives/find-your-representative" target="_blank" style="color:#dc2626;font-weight:600">find your rep on house.gov</a>.';
+        errEl.style.display='block';
+        return;
+    }
+    /* Get senators for the state */
+    if(congressData.senators&&congressData.senators[state]){
+        congressData.senators[state].forEach(function(s){
+            reps.push({
+                name:s.name,
+                title:'U.S. Senator, '+stateFullName(state),
+                party:s.party,
+                contact:s.contact||s.website||'',
+                initials:getInitials(s.name),
+                chamber:'senate'
+            });
+        });
+    }
+    /* Get representative for the district */
+    if(district&&congressData.representatives&&congressData.representatives[district]){
+        var r=congressData.representatives[district];
+        reps.push({
+            name:r.name,
+            title:'U.S. Representative, '+district,
+            party:r.party,
+            contact:r.contact||r.website||'',
+            initials:getInitials(r.name),
+            chamber:'house'
+        });
+    }
+    taCurrentReps=reps;
+    /* Render rep cards */
+    var grid=document.getElementById('taRepsGrid');
+    grid.innerHTML='';
+    reps.forEach(function(r,i){
+        var partyClass=r.party==='D'?'dem':r.party==='R'?'rep':'ind';
+        var partyLabel=r.party==='D'?'Democrat':r.party==='R'?'Republican':'Independent';
+        var card=document.createElement('div');
+        card.className='ta-rep-card';
+        card.innerHTML=
+            '<div class="ta-rep-avatar">'+r.initials+'</div>'+
+            '<div class="ta-rep-info">'+
+                '<div class="ta-rep-name">'+r.name+'</div>'+
+                '<div class="ta-rep-title">'+r.title+'</div>'+
+                '<span class="ta-rep-party '+partyClass+'">'+partyLabel+'</span>'+
+            '</div>'+
+            '<div class="ta-rep-actions">'+
+                '<button class="ta-rep-copy-btn" onclick="taCopyForRep('+i+')">&#x1F4CB; Copy</button>'+
+                (r.contact?'<a class="ta-rep-form-btn" href="'+r.contact+'" target="_blank" rel="noopener">&#x1F4E8; Contact Form</a>':'')+
+            '</div>';
+        grid.appendChild(card);
+    });
+    if(reps.length>0){
+        document.getElementById('taReps').classList.add('active');
+        document.getElementById('taSend').classList.add('active');
+        /* Populate contact links in the send section */
+        var linksContainer=document.getElementById('taContactLinks');
+        linksContainer.innerHTML='';
+        reps.forEach(function(r){
+            if(r.contact){
+                var a=document.createElement('a');
+                a.className='ta-contact-link';
+                a.href=r.contact;
+                a.target='_blank';
+                a.rel='noopener';
+                var label=r.chamber==='senate'?'Sen. ':'Rep. ';
+                label+=r.name.split(' ').pop();
+                var icon=r.chamber==='senate'?'🏛️':'🏠';
+                a.innerHTML='<span class="ta-cl-icon">'+icon+'</span><span class="ta-cl-name">'+label+'</span><span class="ta-cl-arrow">→</span>';
+                linksContainer.appendChild(a);
+            }
+        });
+        /* Update steps */
+        document.getElementById('taStep1').classList.remove('active');
+        document.getElementById('taStep1').classList.add('done');
+        document.getElementById('taStep2').classList.add('active');
+        setTimeout(function(){
+            document.getElementById('taStep2').classList.remove('active');
+            document.getElementById('taStep2').classList.add('done');
+            document.getElementById('taStep3').classList.add('active');
+        },500);
+    }
+    /* Show fallback note if we only matched state (no district) */
+    if(usedFallback){
+        fallbackEl.innerHTML='We identified your <strong>senators</strong> from your ZIP code, but couldn\'t determine your exact congressional district. To find your House representative, visit <a href="https://www.house.gov/representatives/find-your-representative" target="_blank">house.gov</a>.';
+        fallbackEl.style.display='block';
+    }
+}
+/* Enter key in ZIP field triggers lookup */
+document.getElementById('taZipInput').addEventListener('keydown',function(e){if(e.key==='Enter')taLookup();});
+function taGetLetterForRep(rep){
+    var body=document.getElementById('taBody').value;
+    var repLabel=rep.chamber==='senate'?'Senator '+rep.name.split(' ').pop():'Representative '+rep.name.split(' ').pop();
+    return body.replace('[Representative/Senator]',repLabel);
+}
+function taShowToast(msg){
+    var toast=document.getElementById('taToast');
+    if(!toast)return;
+    toast.textContent=msg||'Copied to clipboard!';
+    toast.classList.add('show');
+    clearTimeout(toast._tid);
+    toast._tid=setTimeout(function(){toast.classList.remove('show');},2500);
+}
+function taCopyLetter(){
+    var subject=document.getElementById('taSubject').value;
+    var body=document.getElementById('taBody').value.replace('[Representative/Senator]','Members of Congress');
+    var text='Subject: '+subject+'\n\n'+body;
+    navigator.clipboard.writeText(text).then(function(){
+        taShowToast('Letter copied! Now paste it into each rep\'s contact form.');
+    }).catch(function(){
+        /* Fallback for older browsers */
+        var ta=document.createElement('textarea');
+        ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy');taShowToast('Letter copied!');}catch(e){taShowToast('Copy failed — please select and copy manually.');}
+        document.body.removeChild(ta);
+    });
+}
+function taCopyForRep(idx){
+    var rep=taCurrentReps[idx];
+    if(!rep)return;
+    var subject=document.getElementById('taSubject').value;
+    var letter=taGetLetterForRep(rep);
+    var text='Subject: '+subject+'\n\n'+letter;
+    var btn=document.querySelectorAll('.ta-rep-copy-btn')[idx];
+    navigator.clipboard.writeText(text).then(function(){
+        if(btn){btn.classList.add('copied');btn.innerHTML='&#x2705; Copied';}
+        taShowToast('Letter for '+rep.name+' copied!');
+        setTimeout(function(){if(btn){btn.classList.remove('copied');btn.innerHTML='&#x1F4CB; Copy';}},2500);
+    }).catch(function(){
+        var ta=document.createElement('textarea');
+        ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+        document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy');taShowToast('Letter copied!');}catch(e){taShowToast('Copy failed — please select and copy manually.');}
+        document.body.removeChild(ta);
+    });
+}
+function getInitials(name){
+    var parts=name.split(/\s+/);
+    if(parts.length>=2)return(parts[0][0]+parts[parts.length-1][0]).toUpperCase();
+    return name.substring(0,2).toUpperCase();
+}
+var stateNames={"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","DC":"District of Columbia","AS":"American Samoa","GU":"Guam","MP":"Northern Mariana Islands","PR":"Puerto Rico","VI":"Virgin Islands"};
+function stateFullName(abbr){return stateNames[abbr]||abbr;}
+/* === END TAKE ACTION === */
 
 function adjustMapForMobile(){
     var banner=document.querySelector('.title-banner');
