@@ -768,6 +768,7 @@ Sincerely,
 <script>
 var parkData={};
 var manifestData={};
+var parksWithPages={"EVER":{"name":"Everglades NP","entries":5,"photos":132,"slug":"everglades-np"},"CARI":{"name":"Cane River Creole National Historical Park","entries":17,"photos":82,"slug":"cane-river-creole-nhp"},"SEMO":{"name":"Selma to Montgomery NHT","entries":17,"photos":67,"slug":"selma-to-montgomery-nht"},"MACA":{"name":"Mammoth Cave National Park","entries":3,"photos":62,"slug":"mammoth-cave-np"},"CAHA":{"name":"Cape Hatteras National Seashore","entries":14,"photos":61,"slug":"cape-hatteras-ns"},"CHOH":{"name":"C&O Canal NHP","entries":18,"photos":60,"slug":"cando-canal-nhp"},"ANTI":{"name":"Antietam National Battlefield","entries":6,"photos":56,"slug":"antietam-nb"},"NATR":{"name":"Natchez Trace Parkway","entries":39,"photos":54,"slug":"natchez-trace-parkway"},"CHPI":{"name":"Charles Pinckney NHS","entries":3,"photos":50,"slug":"charles-pinckney-nhs"},"FOSU":{"name":"Fort Sumter and Fort Moultrie NHP","entries":7,"photos":44,"slug":"fort-sumter-and-fort-moultrie-nhp"},"FRRI":{"name":"Fire Island National Seashore","entries":6,"photos":42,"slug":"fire-island-ns"},"LOWE":{"name":"Lower Delaware Wild and Scenic River","entries":3,"photos":40,"slug":"lower-delaware-wsr"},"INDE":{"name":"Independence National Historical Park","entries":9,"photos":35,"slug":"independence-nhp"},"NAMA":{"name":"National Mall","entries":11,"photos":24,"slug":"national-mall"},"BLRI":{"name":"Blue Ridge Parkway","entries":3,"photos":24,"slug":"blue-ridge-parkway"},"CUGA":{"name":"Cumberland Gap NHP","entries":14,"photos":24,"slug":"cumberland-gap-nhp"},"YOSE":{"name":"Yosemite NP","entries":6,"photos":24,"slug":"yosemite-np"},"FORA":{"name":"Fort Raleigh NHS","entries":4,"photos":21,"slug":"fort-raleigh-nhs"},"STRI":{"name":"Stones River NB","entries":11,"photos":20,"slug":"stones-river-nb"},"ANDE":{"name":"Andersonville NHS","entries":1,"photos":20,"slug":"andersonville-nhs"}};
 /* Loading overlay */
 (function(){
     var ov=document.createElement('div');
@@ -1548,7 +1549,6 @@ Object.keys(parkData).forEach(function(id){
 });
 map.addLayer(clusterGroup);
 // ─── Hub Pins for Top 20 Parks with Dedicated Pages ───
-var parksWithPages={"EVER":{"name":"Everglades NP","entries":5,"photos":132,"slug":"everglades-np"},"CARI":{"name":"Cane River Creole National Historical Park","entries":17,"photos":82,"slug":"cane-river-creole-nhp"},"SEMO":{"name":"Selma to Montgomery NHT","entries":17,"photos":67,"slug":"selma-to-montgomery-nht"},"MACA":{"name":"Mammoth Cave National Park","entries":3,"photos":62,"slug":"mammoth-cave-np"},"CAHA":{"name":"Cape Hatteras National Seashore","entries":14,"photos":61,"slug":"cape-hatteras-ns"},"CHOH":{"name":"C&O Canal NHP","entries":18,"photos":60,"slug":"cando-canal-nhp"},"ANTI":{"name":"Antietam National Battlefield","entries":6,"photos":56,"slug":"antietam-nb"},"NATR":{"name":"Natchez Trace Parkway","entries":39,"photos":54,"slug":"natchez-trace-parkway"},"CHPI":{"name":"Charles Pinckney NHS","entries":3,"photos":50,"slug":"charles-pinckney-nhs"},"FOSU":{"name":"Fort Sumter and Fort Moultrie NHP","entries":7,"photos":44,"slug":"fort-sumter-and-fort-moultrie-nhp"},"FRRI":{"name":"Fire Island National Seashore","entries":6,"photos":42,"slug":"fire-island-ns"},"LOWE":{"name":"Lower Delaware Wild and Scenic River","entries":3,"photos":40,"slug":"lower-delaware-wsr"},"INDE":{"name":"Independence National Historical Park","entries":9,"photos":35,"slug":"independence-nhp"},"NAMA":{"name":"National Mall","entries":11,"photos":24,"slug":"national-mall"},"BLRI":{"name":"Blue Ridge Parkway","entries":3,"photos":24,"slug":"blue-ridge-parkway"},"CUGA":{"name":"Cumberland Gap NHP","entries":14,"photos":24,"slug":"cumberland-gap-nhp"},"YOSE":{"name":"Yosemite NP","entries":6,"photos":24,"slug":"yosemite-np"},"FORA":{"name":"Fort Raleigh NHS","entries":4,"photos":21,"slug":"fort-raleigh-nhs"},"STRI":{"name":"Stones River NB","entries":11,"photos":20,"slug":"stones-river-nb"},"ANDE":{"name":"Andersonville NHS","entries":1,"photos":20,"slug":"andersonville-nhs"}};
 var hubLayer=L.layerGroup();
 (function(){
   var parkCentroids={};
@@ -1571,7 +1571,7 @@ var hubLayer=L.layerGroup();
     hubLayer.addLayer(hubMarker);
   });
   map.addLayer(hubLayer);
-  function toggleHubPins(){var z=map.getZoom();if(z>=10){if(!map.hasLayer(hubLayer))map.addLayer(hubLayer)}else{if(map.hasLayer(hubLayer))map.removeLayer(hubLayer)}}
+  function toggleHubPins(){var z=map.getZoom();if(z<10){if(!map.hasLayer(hubLayer))map.addLayer(hubLayer)}else{if(map.hasLayer(hubLayer))map.removeLayer(hubLayer)}}
   map.on('zoomend',toggleHubPins);
   toggleHubPins();
 })();
