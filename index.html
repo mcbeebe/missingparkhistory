@@ -664,9 +664,6 @@ body.embed-mode .take-action-btn{display:none!important}
       <div class="ta-momentum">
         <strong style="color:#fbbf24">Momentum is building.</strong> On March 19, the NPCA and a coalition of historians, scientists, and park advocates filed for a <strong>preliminary injunction</strong> in federal court to halt the censorship. <strong>53 House Democrats</strong> led by Rep. Jared Huffman are pushing to block funding for SO 3431. Add your voice to the pressure.
       </div>
-      <div class="ta-counter" id="taLookupTracker" style="margin-top:8px">
-        &#x1F4CA; <strong id="taLookupCount" style="color:#fbbf24">0</strong> people have looked up their representatives using this tool.
-      </div>
     </div>
     <div class="ta-body">
       <div class="ta-steps">
@@ -1220,33 +1217,42 @@ var congressData=null;
 (function(){
     fetch('data/congress.json').then(function(r){return r.json();}).then(function(d){congressData=d;}).catch(function(){congressData=null;});
 })();
-/* ZIP Lookup Tracker — tracks total lookups across all visitors */
+/* ZIP Lookup Tracker — hidden admin-only (Ctrl+Shift+Z to view) */
 var taLookupTotal=0;
 var TA_COUNTER_KEY='ta_zip_lookups';
+var taLookupLog=JSON.parse(localStorage.getItem('ta_zip_log')||'[]');
 (function(){
-    /* Try shared counter service first, fallback to localStorage */
-    fetch('https://countapi.mileshilliard.com/get/missingparkhistory/zip-lookups')
-        .then(function(r){return r.json();})
-        .then(function(d){
-            if(d&&typeof d.value==='number'&&d.value>0){taLookupTotal=d.value;}
-            else{taLookupTotal=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);}
-            var el=document.getElementById('taLookupCount');
-            if(el)el.textContent=taLookupTotal.toLocaleString();
-        })
-        .catch(function(){
-            taLookupTotal=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);
-            var el=document.getElementById('taLookupCount');
-            if(el)el.textContent=taLookupTotal.toLocaleString();
-        });
+    taLookupTotal=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);
 })();
-function taTrackLookup(){
+function taTrackLookup(zip){
     taLookupTotal++;
-    var el=document.getElementById('taLookupCount');
-    if(el)el.textContent=taLookupTotal.toLocaleString();
-    try{localStorage.setItem(TA_COUNTER_KEY,String(taLookupTotal));}catch(e){}
-    /* Increment shared counter (fire-and-forget) */
-    fetch('https://countapi.mileshilliard.com/hit/missingparkhistory/zip-lookups').catch(function(){});
+    try{
+        localStorage.setItem(TA_COUNTER_KEY,String(taLookupTotal));
+        taLookupLog.push({zip:zip,ts:new Date().toISOString()});
+        if(taLookupLog.length>500)taLookupLog=taLookupLog.slice(-500);
+        localStorage.setItem('ta_zip_log',JSON.stringify(taLookupLog));
+    }catch(e){}
 }
+/* Admin overlay: Ctrl+Shift+Z */
+document.addEventListener('keydown',function(e){
+    if(e.ctrlKey&&e.shiftKey&&e.key==='Z'){
+        var existing=document.getElementById('taAdminOverlay');
+        if(existing){existing.remove();return;}
+        var total=parseInt(localStorage.getItem(TA_COUNTER_KEY)||'0',10);
+        var log=JSON.parse(localStorage.getItem('ta_zip_log')||'[]');
+        var recent=log.slice(-20).reverse().map(function(l){
+            return '<tr><td style="padding:4px 12px 4px 0;color:#fbbf24">'+l.zip+'</td><td style="padding:4px 0;color:#aaa;font-size:12px">'+new Date(l.ts).toLocaleString()+'</td></tr>';
+        }).join('');
+        var ov=document.createElement('div');
+        ov.id='taAdminOverlay';
+        ov.style.cssText='position:fixed;top:60px;right:20px;z-index:99999;background:rgba(10,10,20,0.95);color:#fff;padding:20px 24px;border-radius:12px;font-family:-apple-system,sans-serif;max-height:70vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,0.5);min-width:280px';
+        ov.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><strong style="font-size:16px">ZIP Lookup Stats</strong><button onclick="this.parentElement.parentElement.remove()" style="background:none;border:none;color:#999;font-size:18px;cursor:pointer">&times;</button></div>'
+            +'<div style="font-size:28px;font-weight:800;color:#fbbf24;margin-bottom:4px">'+total.toLocaleString()+'</div>'
+            +'<div style="font-size:13px;color:#aaa;margin-bottom:16px">total lookups (this browser)</div>'
+            +(recent?'<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#ccc">Recent lookups:</div><table style="width:100%">'+recent+'</table>':'<div style="color:#666;font-size:13px">No lookups recorded yet.</div>');
+        document.body.appendChild(ov);
+    }
+});
 var taCurrentReps=[];
 function taOpen(){
     document.getElementById('taOverlay').classList.add('active');
@@ -1324,7 +1330,7 @@ function taLookup(){
     }
     taCurrentReps=reps;
     /* Track this ZIP lookup */
-    taTrackLookup();
+    taTrackLookup(zip);
     /* Render rep cards */
     var grid=document.getElementById('taRepsGrid');
     grid.innerHTML='';
