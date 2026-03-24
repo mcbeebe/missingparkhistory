@@ -680,6 +680,13 @@ body.embed-mode .take-action-btn{display:none!important}
         <div class="ta-zip-error" id="taZipError"></div>
         <div class="ta-fallback" id="taFallback"></div>
       </div>
+      <div class="ta-signer-banner" id="taSignerBanner" style="display:none;margin-bottom:16px;padding:16px 20px;border-radius:12px;background:linear-gradient(135deg,#D1FAE5,#A7F3D0);border:2px solid #059669;color:#065F46">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+          <span style="font-size:22px">&#x2705;</span>
+          <strong style="font-size:16px">Good News!</strong>
+        </div>
+        <div id="taSignerMsg" style="font-size:14px;line-height:1.6"></div>
+      </div>
       <div class="ta-reps" id="taReps">
         <h3 style="font-size:15px;font-weight:700;color:#333;margin-bottom:10px">Your Representatives:</h3>
         <div class="ta-reps-grid" id="taRepsGrid"></div>
@@ -1253,6 +1260,20 @@ document.addEventListener('keydown',function(e){
         document.body.appendChild(ov);
     }
 });
+/* Huffman letter signers — 53 House Democrats who signed the March 19, 2026 letter
+   to Appropriations to defund SO 3431 */
+var taHuffmanSigners={
+'AL-7':1,'AZ-3':1,'AZ-7':1,'CA-2':1,'CA-10':1,'CA-18':1,'CA-26':1,'CA-29':1,
+'CA-31':1,'CA-37':1,'CA-44':1,'CA-51':1,'CO-1':1,'CO-2':1,'DC-0':1,'FL-9':1,
+'FL-10':1,'FL-24':1,'GA-6':1,'HI-2':1,'IL-4':1,'IL-6':1,'IL-7':1,'IL-8':1,
+'IL-9':1,'KY-3':1,'MD-3':1,'MD-6':1,'MI-6':1,'MI-12':1,'MO-1':1,'NH-2':1,
+'NM-1':1,'NM-3':1,'NY-10':1,'NY-15':1,'NY-20':1,'OR-3':1,'OR-4':1,'PA-3':1,
+'PA-17':1,'RI-1':1,'RI-2':1,'TX-20':1,'TX-29':1,'TX-30':1,'TX-33':1,'VA-3':1,
+'VA-4':1,'VA-8':1,'WA-6':1,'WI-4':1
+};
+/* Original and signer-variant letter paragraphs */
+var taLetterDefault='And 53 of your House colleagues, led by Rep. Jared Huffman, have already called on the Appropriations Committee to block funding for SO 3431\'s implementation. I am asking you to join them.';
+var taLetterSigner='Thank you for joining Rep. Jared Huffman and 52 of your colleagues in demanding the Appropriations Committee block funding for SO 3431. However, a letter alone is not enough. We need you to continue pushing — cosponsor legislation to permanently defund SO 3431, demand oversight hearings, and use every tool at your disposal to stop this censorship.';
 var taCurrentReps=[];
 function taOpen(){
     document.getElementById('taOverlay').classList.add('active');
@@ -1381,6 +1402,20 @@ function taLookup(){
             document.getElementById('taStep2').classList.add('done');
             document.getElementById('taStep3').classList.add('active');
         },500);
+    }
+    /* Check if the user's House rep signed the Huffman letter */
+    var signerBanner=document.getElementById('taSignerBanner');
+    var signerMsg=document.getElementById('taSignerMsg');
+    var bodyEl=document.getElementById('taBody');
+    signerBanner.style.display='none';
+    /* Reset letter to default version first */
+    bodyEl.value=bodyEl.value.replace(taLetterSigner,taLetterDefault);
+    if(district&&taHuffmanSigners[district]){
+        var repName=congressData.representatives[district]?congressData.representatives[district].name:'Your representative';
+        signerMsg.innerHTML='<strong>'+repName+'</strong> has already signed Rep. Jared Huffman\'s letter demanding the Appropriations Committee block funding for SO 3431. Your letter has been updated to thank them and push for even stronger action.';
+        signerBanner.style.display='block';
+        /* Swap the letter paragraph */
+        bodyEl.value=bodyEl.value.replace(taLetterDefault,taLetterSigner);
     }
     /* Show fallback note if we only matched state (no district) */
     if(usedFallback){
