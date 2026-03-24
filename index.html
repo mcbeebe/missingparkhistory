@@ -228,6 +228,19 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .marker-cluster-large{background-color:rgba(220,38,38,0.6)}
 .marker-cluster-large div{background-color:rgba(220,38,38,0.9)}
 .marker-cluster div{color:#fff;font-weight:700;font-size:13px}
+@keyframes hub-pulse{0%{box-shadow:0 0 0 0 rgba(109,158,235,0.5)}70%{box-shadow:0 0 0 12px rgba(109,158,235,0)}100%{box-shadow:0 0 0 0 rgba(109,158,235,0)}}
+.hub-pin{width:28px;height:28px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#8bb3ff,#4a7fd4);border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;font-family:-apple-system,sans-serif;animation:hub-pulse 2s infinite;cursor:pointer;box-shadow:0 2px 12px rgba(109,158,235,0.6);text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.hub-tooltip .ht-name{font-size:15px;font-weight:700;color:#1a1a2e;margin-bottom:4px}
+.hub-tooltip .ht-stats{font-size:12px;color:#555;margin-bottom:6px}
+.hub-tooltip .ht-link{display:inline-block;background:#4a7fd4;color:#fff;padding:4px 12px;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;margin-top:4px}
+.hub-tooltip .ht-link:hover{background:#3a6fc4}
+.park-page-link{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(109,158,235,0.12),rgba(109,158,235,0.06));border:1px solid rgba(109,158,235,0.3);border-radius:12px;padding:14px 20px;margin:16px 28px;text-decoration:none;transition:all 0.3s;cursor:pointer}
+.park-page-link:hover{background:linear-gradient(135deg,rgba(109,158,235,0.2),rgba(109,158,235,0.1));border-color:rgba(109,158,235,0.5);transform:translateY(-1px)}
+.park-page-link .ppl-icon{width:40px;height:40px;border-radius:10px;background:rgba(109,158,235,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.park-page-link .ppl-text{flex:1}
+.park-page-link .ppl-title{font-size:14px;color:#6d9eeb;font-weight:600;font-family:-apple-system,sans-serif}
+.park-page-link .ppl-desc{font-size:12px;color:#888;font-family:-apple-system,sans-serif;margin-top:2px}
+.park-page-link .ppl-arrow{color:#6d9eeb;font-size:18px;font-weight:700}
 .about-btn{position:fixed;top:16px;right:50px;z-index:4001;display:flex;align-items:center;gap:9px;background:rgba(10,10,15,0.95);color:#f87171;border:1px solid #2a2a3a;padding:12px 24px;border-radius:30px;font-size:14px;cursor:pointer;font-family:-apple-system,sans-serif;font-weight:600;letter-spacing:0.3px;transition:all 0.3s;text-transform:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
 .about-btn:hover{background:rgba(20,20,30,0.98);color:#fbbf24;border-color:#444;transform:scale(1.03);box-shadow:0 6px 28px rgba(0,0,0,0.5)}
 .about-btn .about-btn-icon{font-size:16px;line-height:1}
@@ -625,6 +638,7 @@ body.embed-mode .take-action-btn{display:none!important}
 <div class="legend-item"><div class="legend-dot" style="background:#d97706"></div> Revise</div>
 <div class="legend-item"><div class="legend-dot" style="background:#4b5563"></div> Flagged for Review</div>
 <div class="legend-item"><div class="legend-dot" style="background:#059669"></div> Court-Ordered Restored</div>
+<div class="legend-item" style="margin-top:6px;padding-top:6px;border-top:1px solid #2a2a3a"><div class="legend-dot" style="background:radial-gradient(circle at 40% 40%,#8bb3ff,#4a7fd4);border-width:3px"></div> <span style="color:#6d9eeb;font-weight:600">Park Page</span></div>
 </div>
 <div class="about-overlay" id="aboutOverlay" onclick="if(event.target===this)this.classList.remove('active')">
 <div class="about-modal">
@@ -947,6 +961,7 @@ function openPanel(id){
     h+='</div>';
     h+='<div class="park-meta">'+d.code+' &middot; '+d.state+' &middot; Entry #'+id+'</div>';
     h+='<div class="status-badge '+d.badgeClass+'">'+d.status+'</div></div>';
+    if(parksWithPages[d.code]){var pInfo=parksWithPages[d.code];h+='<a class="park-page-link" href="/parks/'+pInfo.slug+'.html"><div class="ppl-icon">&#127961;</div><div class="ppl-text"><div class="ppl-title">See all '+pInfo.entries+' entries for '+pInfo.name+'</div><div class="ppl-desc">'+pInfo.photos+' photos &middot; Full park page with all flagged materials</div></div><div class="ppl-arrow">&rarr;</div></a>';}
     var imgs=getImages(id);
     curCar={fid:id,idx:0};
     if(imgs.length>0){
@@ -1532,6 +1547,29 @@ Object.keys(parkData).forEach(function(id){
     clusterGroup.addLayer(marker);
 });
 map.addLayer(clusterGroup);
+// ─── Hub Pins for Top 20 Parks with Dedicated Pages ───
+var parksWithPages={"EVER":{"name":"Everglades NP","entries":5,"photos":132,"slug":"everglades-np"},"CARI":{"name":"Cane River Creole National Historical Park","entries":17,"photos":82,"slug":"cane-river-creole-nhp"},"SEMO":{"name":"Selma to Montgomery NHT","entries":17,"photos":67,"slug":"selma-to-montgomery-nht"},"MACA":{"name":"Mammoth Cave National Park","entries":3,"photos":62,"slug":"mammoth-cave-np"},"CAHA":{"name":"Cape Hatteras National Seashore","entries":14,"photos":61,"slug":"cape-hatteras-ns"},"CHOH":{"name":"C&O Canal NHP","entries":18,"photos":60,"slug":"cando-canal-nhp"},"ANTI":{"name":"Antietam National Battlefield","entries":6,"photos":56,"slug":"antietam-nb"},"NATR":{"name":"Natchez Trace Parkway","entries":39,"photos":54,"slug":"natchez-trace-parkway"},"CHPI":{"name":"Charles Pinckney NHS","entries":3,"photos":50,"slug":"charles-pinckney-nhs"},"FOSU":{"name":"Fort Sumter and Fort Moultrie NHP","entries":7,"photos":44,"slug":"fort-sumter-and-fort-moultrie-nhp"},"FRRI":{"name":"Fire Island National Seashore","entries":6,"photos":42,"slug":"fire-island-ns"},"LOWE":{"name":"Lower Delaware Wild and Scenic River","entries":3,"photos":40,"slug":"lower-delaware-wsr"},"INDE":{"name":"Independence National Historical Park","entries":9,"photos":35,"slug":"independence-nhp"},"NAMA":{"name":"National Mall","entries":11,"photos":24,"slug":"national-mall"},"BLRI":{"name":"Blue Ridge Parkway","entries":3,"photos":24,"slug":"blue-ridge-parkway"},"CUGA":{"name":"Cumberland Gap NHP","entries":14,"photos":24,"slug":"cumberland-gap-nhp"},"YOSE":{"name":"Yosemite NP","entries":6,"photos":24,"slug":"yosemite-np"},"FORA":{"name":"Fort Raleigh NHS","entries":4,"photos":21,"slug":"fort-raleigh-nhs"},"STRI":{"name":"Stones River NB","entries":11,"photos":20,"slug":"stones-river-nb"},"ANDE":{"name":"Andersonville NHS","entries":1,"photos":20,"slug":"andersonville-nhs"}};
+(function(){
+  var parkCentroids={};
+  Object.keys(parkData).forEach(function(id){
+    var d=parkData[id];
+    if(!parksWithPages[d.code])return;
+    if(!parkCentroids[d.code]){parkCentroids[d.code]={latSum:0,lonSum:0,count:0}}
+    parkCentroids[d.code].latSum+=d.lat;
+    parkCentroids[d.code].lonSum+=d.lon;
+    parkCentroids[d.code].count++;
+  });
+  Object.keys(parkCentroids).forEach(function(code){
+    var c=parkCentroids[code];
+    var lat=c.latSum/c.count;
+    var lon=c.lonSum/c.count;
+    var info=parksWithPages[code];
+    var hubIcon=L.divIcon({className:'',html:'<div class="hub-pin">'+info.entries+'</div>',iconSize:[28,28],iconAnchor:[14,14]});
+    var hubMarker=L.marker([lat,lon],{icon:hubIcon,zIndexOffset:1000});
+    hubMarker.bindPopup('<div class="hub-tooltip"><div class="ht-name">'+info.name+'</div><div class="ht-stats">'+info.entries+' entries &middot; '+info.photos+' photos</div><a class="ht-link" href="/parks/'+info.slug+'.html">View Full Park Page &rarr;</a></div>',{offset:[0,-8]});
+    clusterGroup.addLayer(hubMarker);
+  });
+})();
 // Deep linking: parse ?id=NUM or ?park=CODE from URL (id takes priority for multi-entry parks)
 (function(){
     var params=new URLSearchParams(window.location.search);
