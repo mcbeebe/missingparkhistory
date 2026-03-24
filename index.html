@@ -231,6 +231,8 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .about-btn{position:fixed;top:16px;right:50px;z-index:4001;display:flex;align-items:center;gap:9px;background:rgba(10,10,15,0.95);color:#f87171;border:1px solid #2a2a3a;padding:12px 24px;border-radius:30px;font-size:14px;cursor:pointer;font-family:-apple-system,sans-serif;font-weight:600;letter-spacing:0.3px;transition:all 0.3s;text-transform:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
 .about-btn:hover{background:rgba(20,20,30,0.98);color:#fbbf24;border-color:#444;transform:scale(1.03);box-shadow:0 6px 28px rgba(0,0,0,0.5)}
 .about-btn .about-btn-icon{font-size:16px;line-height:1}
+.about-page-btn{position:fixed;top:68px;right:50px;z-index:4001;display:flex;align-items:center;gap:8px;background:rgba(10,10,15,0.95);color:#6d9eeb;border:1px solid #2a2a3a;padding:9px 20px;border-radius:30px;font-size:13px;cursor:pointer;font-family:-apple-system,sans-serif;font-weight:600;letter-spacing:0.3px;transition:all 0.3s;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.about-page-btn:hover{background:rgba(20,20,30,0.98);color:#fff;border-color:#444;transform:scale(1.03);box-shadow:0 6px 28px rgba(0,0,0,0.5)}
 .about-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9000;backdrop-filter:blur(6px);overflow-y:auto}
 .about-overlay.active{display:flex;align-items:center;justify-content:center}
 .about-modal{background:linear-gradient(180deg,#111118 0%,#0d0d14 100%);max-width:680px;width:92vw;max-height:88vh;overflow-y:auto;border-radius:16px;border:1px solid #2a2a3a;box-shadow:0 20px 80px rgba(0,0,0,0.7);padding:0}
@@ -278,6 +280,7 @@ body{font-family:'Georgia','Times New Roman',serif;background:#e6e5e1;color:#e0e
 .filter-bar::-webkit-scrollbar{display:none}
 /* About/Why button */
 .about-btn{display:none!important}
+.about-page-btn{display:none!important}
 /* Legend: bottom-right like web */
 .legend{bottom:12px;top:auto;right:8px;left:auto;padding:6px 10px;font-size:9px;border-radius:6px;opacity:0.9}
 .legend-title{font-size:7px;margin-bottom:3px}
@@ -337,6 +340,7 @@ body.embed-mode .search-icon{left:8px;font-size:12px}
 body.embed-mode .filter-chips{gap:3px;margin-top:0}
 body.embed-mode .f-chip{font-size:8px;padding:2px 6px}
 body.embed-mode .about-btn{display:none!important}
+body.embed-mode .about-page-btn{display:none!important}
 body.embed-mode .leaflet-top.leaflet-left{top:44px}
 body.embed-mode .legend{bottom:8px;right:8px;padding:8px 10px;font-size:10px;border-radius:8px}
 body.embed-mode .legend-title{font-size:8px;margin-bottom:4px}
@@ -590,6 +594,7 @@ body.embed-mode .take-action-btn{display:none!important}
 </div>
 </div>
 <button class="about-btn" onclick="document.getElementById('aboutOverlay').classList.add('active')"><span class="about-btn-icon">&#9888;&#65039;</span> Why This Map Exists</button>
+<a class="about-page-btn" href="/about.html">&#x1F4D6; About This Project</a>
 <a class="embed-full-link" href="https://missingparkhistory.org/" target="_blank" rel="noopener">↗ View Full Map</a>
 <div id="map"></div>
 <div class="lb-overlay" id="lightbox">
