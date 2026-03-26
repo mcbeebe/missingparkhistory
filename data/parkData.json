@@ -7405,7 +7405,8 @@
       {
         "title": "\"The President's House Site\"",
         "before": "https://sos-sandbox.s3.us-east-2.amazonaws.com/images/R_6DtIy0rsEoAB0AW_IMG_4280.jpg",
-        "after": "images/sos-after/after_row8.png"
+        "after": "images/sos-after/after_row8.png",
+        "restored": "images/sos-restored/restored_row9.png"
       },
       {
         "title": "\"The Executive Branch\" (two panels that go together as one display)",
