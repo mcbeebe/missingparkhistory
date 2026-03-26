@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data & Methodology — The Missing History of Our National Parks</title>
+<meta name="description" content="How we sourced, verified, and classified 874+ flagged or removed National Park signs and exhibits. Plain-language explanation of our data pipeline, status logic, and known limitations.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://missingparkhistory.org/data-methodology.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%23ffffff'/><text x='50' y='68' text-anchor='middle' font-size='52'>🏛</text></svg>">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://missingparkhistory.org/data-methodology.html">
+<meta property="og:title" content="Data & Methodology — The Missing History of Our National Parks">
+<meta property="og:description" content="How we sourced, verified, and classified 874+ flagged or removed National Park signs and exhibits.">
+<meta property="og:image" content="https://missingparkhistory.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Missing Park History">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data & Methodology — The Missing History of Our National Parks">
+<meta name="twitter:description" content="How we sourced, verified, and classified 874+ flagged or removed National Park signs and exhibits.">
+<meta name="twitter:image" content="https://missingparkhistory.org/og-image.png">
+<!-- Structured Data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"Data & Methodology — The Missing History of Our National Parks","url":"https://missingparkhistory.org/data-methodology.html","description":"Plain-language explanation of how the Missing Park History project sources, verifies, and classifies its data.","isPartOf":{"@type":"WebSite","name":"Missing Park History","url":"https://missingparkhistory.org/"}}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2d;line-height:1.8}
+
+/* ─── Top Nav Bar ─── */
+.topnav{position:fixed;top:0;left:0;right:0;z-index:5000;background:rgba(255,255,255,0.97);border-bottom:1px solid #e0e0e0;backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.topnav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1a1a1a;font-family:Georgia,serif;font-size:17px;font-weight:700}
+.topnav-brand span{color:#b91c1c}
+.topnav-links{display:flex;gap:6px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px}
+.topnav-links a{color:#666;text-decoration:none;padding:8px 16px;border-radius:20px;transition:all 0.2s;font-weight:500}
+.topnav-links a:hover{color:#1a1a1a;background:rgba(0,0,0,0.04)}
+.topnav-links a.active{color:#1a1a1a;background:rgba(37,99,180,0.08);border:1px solid rgba(37,99,180,0.2)}
+.topnav-links a.map-link{color:#b91c1c;border:1px solid rgba(185,28,28,0.25);background:rgba(185,28,28,0.05)}
+.topnav-links a.map-link:hover{background:rgba(185,28,28,0.1);color:#991b1b}
+
+/* ─── Page Content ─── */
+.page-wrapper{max-width:760px;margin:0 auto;padding:100px 28px 80px}
+
+/* ─── Hero ─── */
+.hero{text-align:center;margin-bottom:56px}
+.hero h1{font-size:36px;color:#1a1a1a;font-weight:700;line-height:1.3;margin-bottom:12px}
+.hero h1 span{color:#2563b4}
+.hero .subtitle{font-size:17px;color:#777;font-family:-apple-system,sans-serif;line-height:1.6;max-width:600px;margin:0 auto}
+
+/* ─── Section Headings ─── */
+.section-heading{font-size:12px;font-weight:700;color:#2563b4;text-transform:uppercase;letter-spacing:2px;margin:56px 0 18px;font-family:-apple-system,sans-serif;display:flex;align-items:center;gap:10px}
+.section-heading::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563b4;flex-shrink:0}
+
+/* ─── Prose ─── */
+.prose{font-size:18px;line-height:1.9;color:#2d2d2d;margin-bottom:22px}
+.prose strong{color:#1a1a1a}
+.prose em{color:#b45309;font-style:normal;font-weight:600}
+.prose a{color:#2563b4;text-decoration:none;border-bottom:1px solid rgba(37,99,180,0.3);transition:border-color 0.2s}
+.prose a:hover{border-color:#2563b4}
+
+/* ─── Info Box ─── */
+.info-box{background:#eef4fc;border:1px solid rgba(37,99,180,0.15);border-left:4px solid #2563b4;border-radius:8px;padding:22px 26px;margin:28px 0}
+.info-box p{font-size:16px;color:#2d4a7c;margin-bottom:12px;line-height:1.8}
+.info-box p:last-child{margin-bottom:0}
+.info-box strong{color:#1a3a6c}
+
+/* ─── Warning Box ─── */
+.warn-box{background:#fef8ee;border:1px solid rgba(180,83,9,0.15);border-left:4px solid #b45309;border-radius:8px;padding:22px 26px;margin:28px 0}
+.warn-box p{font-size:16px;color:#7c4a10;margin-bottom:12px;line-height:1.8}
+.warn-box p:last-child{margin-bottom:0}
+.warn-box strong{color:#92400e}
+
+/* ─── Green Box ─── */
+.green-box{background:#eefbf4;border:1px solid rgba(5,150,105,0.15);border-left:4px solid #059669;border-radius:8px;padding:22px 26px;margin:28px 0}
+.green-box p{font-size:16px;color:#276749;margin-bottom:12px;line-height:1.8}
+.green-box p:last-child{margin-bottom:0}
+.green-box strong{color:#065f46}
+
+/* ─── Example Card ─── */
+.example{background:#f5f5f5;border:1px solid #e0e0e0;border-radius:12px;padding:28px;margin:28px 0}
+.example-label{font-size:11px;font-weight:700;color:#2563b4;text-transform:uppercase;letter-spacing:1.5px;font-family:-apple-system,sans-serif;margin-bottom:14px}
+.example p{font-size:16px;color:#2d2d2d;margin-bottom:14px;line-height:1.8}
+.example p:last-child{margin-bottom:0}
+.example strong{color:#1a1a1a}
+.example em{color:#b45309;font-style:normal;font-weight:600}
+
+/* ─── Mini Data Table ─── */
+.mini-table{width:100%;border-collapse:collapse;margin:20px 0;font-family:-apple-system,sans-serif;font-size:14px}
+.mini-table th{text-align:left;padding:12px 14px;background:#f0f4f8;color:#2563b4;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #d0d8e4}
+.mini-table td{padding:10px 14px;border-bottom:1px solid #e8e8e8;color:#2d2d2d;vertical-align:top}
+.mini-table tr:hover td{background:rgba(37,99,180,0.03)}
+.badge{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:600;font-family:-apple-system,sans-serif}
+.badge-red{background:rgba(185,28,28,0.08);color:#b91c1c;border:1px solid rgba(185,28,28,0.2)}
+.badge-orange{background:rgba(180,83,9,0.08);color:#b45309;border:1px solid rgba(180,83,9,0.2)}
+.badge-yellow{background:rgba(161,128,0,0.08);color:#92700a;border:1px solid rgba(161,128,0,0.2)}
+.badge-green{background:rgba(5,150,105,0.08);color:#047857;border:1px solid rgba(5,150,105,0.2)}
+.badge-blue{background:rgba(37,99,180,0.08);color:#1d4e89;border:1px solid rgba(37,99,180,0.2)}
+
+/* ─── Pipeline Diagram ─── */
+.pipeline{display:flex;align-items:center;gap:8px;margin:32px 0;flex-wrap:wrap;justify-content:center}
+.pipe-step{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:14px 20px;text-align:center;flex:1;min-width:120px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.pipe-step .pipe-icon{font-size:24px;margin-bottom:4px}
+.pipe-step .pipe-label{font-size:11px;color:#1a1a1a;font-family:-apple-system,sans-serif;font-weight:600}
+.pipe-step .pipe-desc{font-size:10px;color:#888;font-family:-apple-system,sans-serif;margin-top:2px}
+.pipe-arrow{color:#bbb;font-size:24px;flex-shrink:0}
+
+/* ─── Footer ─── */
+.page-footer{text-align:center;padding:40px 20px;margin-top:48px;border-top:1px solid #e0e0e0;font-family:-apple-system,sans-serif;font-size:12px;color:#999}
+.page-footer a{color:#2563b4;text-decoration:none}
+
+/* ─── Mobile ─── */
+@media(max-width:600px){
+  .topnav{padding:0 16px;height:50px}
+  .topnav-brand{font-size:14px}
+  .topnav-links a{padding:6px 10px;font-size:12px}
+  .page-wrapper{padding:80px 18px 60px}
+  .hero h1{font-size:26px}
+  .pipeline{flex-direction:column;gap:4px}
+  .pipe-arrow{transform:rotate(90deg)}
+  .mini-table{font-size:12px}
+  .mini-table th,.mini-table td{padding:8px 10px}
+}
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a"></script>
+</head>
+<body>
+
+<!-- ═══ TOP NAVIGATION BAR ═══ -->
+<nav class="topnav">
+  <a class="topnav-brand" href="/" aria-label="Missing Park History home">&#x1F3DB; <span>Missing</span> Park History</a>
+  <div class="topnav-links">
+    <a href="/" class="map-link" aria-label="Interactive map">&#x1F5FA; Map</a>
+    <a href="/about.html">About</a>
+    <a href="/data-methodology.html" class="active" aria-current="page">Data</a>
+    <a href="/nps-censorship.html">Censorship</a>
+    <a href="/secretarial-order-3431.html">SO 3431</a>
+  </div>
+</nav>
+
+<!-- ═══ PAGE CONTENT ═══ -->
+<div class="page-wrapper">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1><span>Data</span> & Methodology</h1>
+    <p class="subtitle">Where the data comes from, what we did with it, what each label means, and where we might be wrong. In plain language.</p>
+  </div>
+
+  <!-- ─── STARTING POINT ─── -->
+  <div class="section-heading">Where the data starts</div>
+
+  <p class="prose">Everything on this map traces back to one document: an internal NPS review database that was leaked to the public in early March 2026. The review itself was conducted between June and September 2025, after Secretary&rsquo;s Order 3431 directed every park in the system to inspect its signs, exhibits, films, and publications. Park staff filled out a survey for each item they reviewed. That survey &mdash; available for download at the <a href="https://archive.org/details/nps-removal-targets" target="_blank" rel="noopener">Internet Archive</a> &mdash; is our starting point.</p>
+
+  <p class="prose">The database has 879 entries. Each one represents a single item &mdash; an exhibit panel, a wayside marker, a film, a kiosk, a brochure &mdash; that a park identified as needing review. For each entry, we know the park name, the region, and what kind of media it was. We also know what the park staff wrote about the item: what they thought needed to change, and what action they recommended.</p>
+
+  <p class="prose">The leaked documents also include screenshots of the actual survey form, which helps explain the data. The form asked staff to select one or more media types &mdash; Interior/Exterior Exhibits, Signs and Waysides, Publications, Monuments/Statues/Markers, Film, or NothingToReport. For each media type, they could choose whether the item &ldquo;Needs Repair/Replacement,&rdquo; &ldquo;Needs Review: Contains content that may conflict with SO 3431 or EO 14253,&rdquo; or &ldquo;Other.&rdquo; A description field asked them to &ldquo;include thoughts on how to make the change.&rdquo;</p>
+
+  <p class="prose">That last point matters, because it means some park staff described potential revisions even while asserting that nothing actually needed changing. The survey was designed to collect flagged content, but with little guidance on how to interpret the order, parks took very different approaches. As <a href="https://saveoursigns.org" target="_blank" rel="noopener">Save Our Signs</a> noted in their excellent <a href="https://storymaps.arcgis.com/stories/3cf899e25b3240809f54de27449653dc" target="_blank" rel="noopener">analysis of the leaked data</a>, some parks submitted entire exhibits for review, some flagged individual passages on a few signs, some used it to report signs that were physically deteriorating, and some even submitted planned exhibits that hadn&rsquo;t been built yet. The data is messy, and we try to be transparent about that.</p>
+
+  <div class="warn-box">
+    <p><strong>The actions in this database are self-reported by park staff.</strong> When an entry says &ldquo;Revise&rdquo; or &ldquo;Remove,&rdquo; that means the park&rsquo;s own employees looked at the sign and decided it needed revision or removal to comply with SO 3431. It does not mean someone in Washington told them to revise or remove that specific sign. The directive came from the top. The implementation happened at each park.</p>
+    <p>We think this distinction matters. The data shows what park staff believed they were being asked to do. That&rsquo;s the story the database tells.</p>
+  </div>
+
+  <p class="prose">It&rsquo;s also worth noting that the survey was not the only way content was flagged. The leaked documentation shows at least three other methods: QR code signs posted at parks asking for public feedback (sometimes called &ldquo;snitch signs&rdquo;), an internal survey flagging retail items, and a separate survey about materials that had been changed under the previous administration. Our map focuses on the main review database, but the full picture is broader than any single document.</p>
+
+
+  <!-- ─── REPAIR VS REVIEW ─── -->
+  <div class="section-heading">Not everything in the database is censorship</div>
+
+  <p class="prose">This is important to get right: the NPS survey had two different reasons a park could flag an item. One was &ldquo;Needs Review: Contains content that may conflict with SO 3431 or EO 14253.&rdquo; The other was &ldquo;Needs Repair/Replacement&rdquo; &mdash; meaning the sign was physically damaged, sun-faded, or illegible, with no content issue at all.</p>
+
+  <p class="prose">Both types of flags ended up in the same spreadsheet. A wayside that&rsquo;s deteriorating and impossible to read is a different situation from a wayside that was pulled down because it mentions slavery. But in the raw data, they can look similar.</p>
+
+  <p class="prose">We do our best to distinguish these. When the description clearly indicates physical damage rather than a content concern, we note that. But the survey form made this field optional and it was filled out inconsistently, so in some cases we can&rsquo;t tell. If you see an entry that looks like it&rsquo;s about maintenance rather than censorship, it may be &mdash; and we&rsquo;d rather include it with a caveat than silently exclude it.</p>
+
+  <!-- ─── STATUS LOGIC ─── -->
+  <div class="section-heading">How we assign statuses</div>
+
+  <p class="prose">The leaked database doesn&rsquo;t have a neat &ldquo;status&rdquo; column we can just copy. Every entry in the original is marked <em>Submitted</em> &mdash; all 879 of them. That tells us the park sent in its survey. It doesn&rsquo;t tell us what actually happened.</p>
+
+  <p class="prose">So we built the status ourselves, using a layered process. Here&rsquo;s how it works, step by step.</p>
+
+  <p class="prose"><strong>Step 1: Read the action columns.</strong> The database has separate action fields for different media types &mdash; films, exhibits, signs, publications, waysides. If a park wrote &ldquo;Remove&rdquo; in the exhibit action column, that entry starts as <em>Replace/Remove</em>. If they wrote &ldquo;Revise,&rdquo; it starts as <em>Revise</em>. If no action was specified at all, it starts as <em>Flagged for Review</em> &mdash; meaning the park identified the item but didn&rsquo;t say what to do with it.</p>
+
+  <p class="prose"><strong>Step 2: Check for independent confirmation.</strong> We cross-reference every entry against outside sources: the <a href="https://saveoursigns.org" target="_blank" rel="noopener">Save Our Signs Removal Tracker</a>, news reporting, court filings, and FOIA data. If a newspaper reported that a sign was physically taken down, or if SOS volunteers photographed the empty spot where it used to hang, the entry moves to <em>Confirmed Removed</em>. This is a higher bar than what the park wrote in a survey &mdash; it means someone on the ground verified the sign is gone.</p>
+
+  <p class="prose"><strong>Step 3: Check for restoration.</strong> Some signs have come back. In a few cases, federal courts ordered them restored. If we have evidence that an entry has been put back in place, it gets marked accordingly. But &ldquo;restored&rdquo; doesn&rsquo;t always mean &ldquo;fully restored&rdquo; &mdash; sometimes only some of the signs at a site came back. We track that too.</p>
+
+  <p class="prose">Here&rsquo;s what the statuses mean:</p>
+
+  <table class="mini-table">
+    <thead><tr><th>Status</th><th>What it means</th><th>How we know</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="badge badge-yellow">Flagged for Review</span></td>
+        <td>Park staff identified this item for review under SO 3431, but either didn&rsquo;t specify an action or the action wasn&rsquo;t &ldquo;Remove&rdquo; or &ldquo;Revise.&rdquo;</td>
+        <td>NPS internal review database &mdash; the default status for entries without a clear removal/revision directive.</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-orange">Revise</span></td>
+        <td>Park staff recommended revising the content &mdash; changing wording, removing a sentence, or altering the interpretation.</td>
+        <td>NPS internal review database action columns.</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-red">Replace / Remove</span></td>
+        <td>Park staff recommended full removal or replacement of the item.</td>
+        <td>NPS internal review database action columns.</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-red">Confirmed Removed</span></td>
+        <td>The item has been independently confirmed as physically removed from the park.</td>
+        <td>Press reporting, SOS on-the-ground verification, court filings, or FOIA documents.</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-green">Court-Ordered Restored</span></td>
+        <td>A federal court ordered the item restored, and restoration has been confirmed.</td>
+        <td>Court orders plus SOS or press confirmation of physical restoration.</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-green">Partially Restored</span></td>
+        <td>A court ordered restoration, but only some items at the site have been confirmed back in place.</td>
+        <td>Court orders plus SOS restoration tracking showing incomplete restoration.</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- ─── WORKED EXAMPLE ─── -->
+  <div class="section-heading">A worked example: Independence Hall</div>
+
+  <p class="prose">Independence National Historical Park in Philadelphia is a good example of why this process matters, and why you can&rsquo;t just take the database at face value.</p>
+
+  <p class="prose">The NPS database has 9 separate entries for Independence. Each one covers a different exhibit at the park &mdash; different buildings, different topics, different media types. Here are a few of them:</p>
+
+  <table class="mini-table">
+    <thead><tr><th>Entry</th><th>What it covers</th><th>NPS action</th></tr></thead>
+    <tbody>
+      <tr><td>439</td><td>President&rsquo;s House &mdash; 15 panels on slavery and the enslaved people who lived there</td><td>Physically removed</td></tr>
+      <tr><td>442</td><td>Liberty Bell Center &mdash; panels on abolitionists adopting the bell as a symbol</td><td>Revise</td></tr>
+      <tr><td>674</td><td>Benjamin Franklin Court &mdash; touchscreen interactive on Franklin&rsquo;s relationship with slavery</td><td>Flagged for Review</td></tr>
+      <tr><td>734</td><td>West Wing of Independence Hall &mdash; design document for an exhibit not yet built</td><td>Flagged for Review</td></tr>
+    </tbody>
+  </table>
+
+  <p class="prose">Now here&rsquo;s where it gets complicated. The Save Our Signs Tracker has detailed, sign-by-sign data for Independence &mdash; 30 individual signs, each with a name, a before photo, and a restoration status. But all 30 of those signs are from one specific exhibit: the President&rsquo;s House.</p>
+
+  <p class="prose">SOS doesn&rsquo;t track the Liberty Bell panels. It doesn&rsquo;t track the Franklin interactive. It doesn&rsquo;t track the West Wing design document. Those items were flagged in the NPS internal review, but no one on the ground has independently confirmed whether they were actually removed.</p>
+
+  <p class="prose">So what do we do?</p>
+
+  <div class="example">
+    <div class="example-label">Our decision</div>
+    <p><strong>Entry 439 (President&rsquo;s House)</strong> gets the full SOS data: 30 sign names, before-and-after photos, and restoration tracking. We know from the <a href="https://www.inquirer.com/news/philadelphia/inq2/independence-park-trump-signage-remove-presidential-house-20260122.html" target="_blank" rel="noopener">Philadelphia Inquirer</a> and from <a href="https://storage.courtlistener.com/recap/gov.uscourts.paed.648842/gov.uscourts.paed.648842.1.0.pdf" target="_blank" rel="noopener">federal court proceedings</a> that these panels were physically torn down in January 2025 and partially restored by court order in February 2026. Of the 30 signs, SOS confirms 12 are back in place, 1 is confirmed still missing, and 17 have no restoration data yet. We label this entry <em>Partially Restored &mdash; Court-Ordered</em>.</p>
+    <p><strong>Entries 442, 443, 444</strong> (Liberty Bell, Independence Hall) had NPS actions of &ldquo;Revise.&rdquo; We have no press reporting, no SOS confirmation, and no court evidence that these exhibits were physically removed. So we label them <em>Flagged for Review</em> &mdash; because that&rsquo;s all we can honestly say. The park flagged them. We don&rsquo;t know what happened next.</p>
+    <p><strong>Entry 734</strong> (West Wing design) is for an exhibit that hadn&rsquo;t even been installed yet &mdash; it was scheduled to open in spring 2026. You can&rsquo;t remove something that doesn&rsquo;t exist. We label it <em>Flagged for Review</em> because the design was sent for pre-installation vetting, not because a physical sign was taken down.</p>
+  </div>
+
+  <p class="prose">The earlier version of this map treated all 9 Independence entries the same way: all labeled &ldquo;Removed &mdash; Court-Ordered Restored,&rdquo; all sharing the same 30 sign names, all sharing the same photos. That was wrong. It overstated what we know about 8 of the 9 entries and obscured the real story, which is that the President&rsquo;s House was the confirmed target, and the other exhibits were flagged but may never have been touched.</p>
+
+  <p class="prose">We fixed it. We documented every decision. If you want the full detail, it&rsquo;s in <a href="https://github.com/BULLMOOSE1872/missingparkhistory" target="_blank" rel="noopener">the project&rsquo;s git history</a>.</p>
+
+
+  <!-- ─── NOTHING TO REPORT ─── -->
+  <div class="section-heading">The &ldquo;Nothing to Report&rdquo; problem</div>
+
+  <p class="prose">Here&rsquo;s something you might not expect: out of 874 entries on this map, 324 of them have a park staff notation that says <em>Nothing to Report</em>.</p>
+
+  <p class="prose">That means the park reviewed the item, decided there was nothing that needed changing, and submitted the survey saying so. But because they submitted the survey at all, the item still appears in the database. And because the database is our starting point, those entries are on the map.</p>
+
+  <p class="prose">We flag these entries with a &ldquo;Nothing to Report&rdquo; label so you can see them for what they are. They&rsquo;re still worth tracking &mdash; the fact that a park had to formally review a sign about, say, the history of a Civil War battlefield and certify it was &ldquo;compliant&rdquo; with SO 3431 is itself a story. But we don&rsquo;t want anyone to mistake these for confirmed removals. They&rsquo;re not.</p>
+
+  <div class="info-box">
+    <p><strong>324 of 734 &ldquo;Flagged for Review&rdquo; entries are self-reported as Nothing to Report.</strong> That&rsquo;s almost half. The map shows them, but distinguishes them clearly. If you&rsquo;re looking at the total count and thinking &ldquo;874 signs were removed,&rdquo; that&rsquo;s not what the data says. The honest number of confirmed physical removals is much smaller.</p>
+  </div>
+
+
+  <!-- ─── TOPICS ─── -->
+  <div class="section-heading">How we assign topics</div>
+
+  <p class="prose">Each entry on the map has one or more topic labels &mdash; things like &ldquo;Slavery,&rdquo; &ldquo;Climate &amp; Environment,&rdquo; or &ldquo;Indigenous History.&rdquo; These are <strong>our labels, not the government&rsquo;s.</strong> The NPS database doesn&rsquo;t categorize entries by topic. We added them so you could filter the map and see patterns.</p>
+
+  <p class="prose">Most topics were assigned by keyword matching. We searched the text of what each park wrote about the item &mdash; their description of what needed to change &mdash; and looked for specific words. If the description mentions &ldquo;enslaved,&rdquo; &ldquo;slavery,&rdquo; or &ldquo;plantation,&rdquo; it gets the Slavery topic. If it mentions &ldquo;glacier,&rdquo; &ldquo;sea level,&rdquo; or &ldquo;climate,&rdquo; it gets Climate.</p>
+
+  <p class="prose">This works well for clear-cut cases, but it&rsquo;s not perfect. Some entries needed manual review. About 24 out of 874 were assigned topics by hand because the keywords were ambiguous or missing. We also spot-checked a sample of the keyword matches to make sure they made sense.</p>
+
+  <div class="example">
+    <div class="example-label">Example: keyword matching</div>
+    <p>An entry at Cane River Creole National Heritage Area in Louisiana describes panels about &ldquo;enslaved workers who built and maintained the plantation.&rdquo; The words <strong>&ldquo;enslaved&rdquo;</strong> and <strong>&ldquo;plantation&rdquo;</strong> match our Slavery keyword list. The word <strong>&ldquo;workers&rdquo;</strong> in context with &ldquo;plantation&rdquo; also matches. This entry gets the <em>Slavery &amp; Enslaved People</em> topic automatically.</p>
+    <p>An entry at Glacier National Park describes changes to a sign about &ldquo;projected glacier loss by 2030.&rdquo; The word <strong>&ldquo;glacier&rdquo;</strong> combined with <strong>&ldquo;projected&rdquo;</strong> and <strong>&ldquo;loss&rdquo;</strong> matches our Climate keyword list. This one gets <em>Climate &amp; Environment</em>.</p>
+    <p>An entry at a historical park describes removing the word &ldquo;ironic&rdquo; from a kiosk. No topic keywords match. This one gets reviewed by hand.</p>
+  </div>
+
+  <p class="prose">We&rsquo;re transparent about the confidence level. Some topics, like Slavery, match their keywords correctly about 99% of the time &mdash; the language is specific enough that false positives are rare. Others, like Colonization, are right only about a quarter of the time, because the keywords overlap with general historical language. We&rsquo;re working on improving those.</p>
+
+
+  <!-- ─── DATA SOURCES ─── -->
+  <div class="section-heading">Our sources</div>
+
+  <p class="prose">Four primary sources feed into this map. Each one fills a different gap.</p>
+
+  <p class="prose"><strong>The internal NPS review database</strong> is the foundation. It tells us which items were flagged, at which parks, and what park staff recommended doing about them. It covers 879 entries across the entire National Park System. This is a leaked government document &mdash; available at the <a href="https://archive.org/details/nps-removal-targets" target="_blank" rel="noopener">Internet Archive</a> &mdash; and every entry on the map traces back to it.</p>
+
+  <p class="prose"><strong>The <a href="https://saveoursigns.org" target="_blank" rel="noopener">Save Our Signs</a> Removal Tracker</strong> has been indispensable to this project. SOS is a volunteer-driven effort doing extraordinary work: visiting parks across the country, photographing signs before and after removal, documenting what&rsquo;s been taken down, tracking what&rsquo;s been restored, and making all of that data publicly available. Their <a href="https://storymaps.arcgis.com/stories/3cf899e25b3240809f54de27449653dc" target="_blank" rel="noopener">StoryMap analysis</a> of the leaked NPS data is the most thorough public walkthrough of the survey and its quirks. We rely on SOS to move entries from &ldquo;flagged&rdquo; to &ldquo;confirmed removed&rdquo; or &ldquo;restored,&rdquo; and we label SOS-sourced data as <em>Data: SOS Removal Tracker</em>. This project would not be possible without their groundwork.</p>
+
+  <p class="prose"><strong>Press reporting and court filings</strong> provide independent confirmation. When the Philadelphia Inquirer reports that panels were removed from the President&rsquo;s House, or when a federal judge orders them restored, we update the map accordingly. These sources override the database when they conflict &mdash; the database might say &ldquo;Revise,&rdquo; but if a reporter confirms the sign is gone, we call it removed.</p>
+
+  <p class="prose"><strong>FOIA data from the U.S. Fish &amp; Wildlife Service,</strong> obtained through the persistent work of the <strong><a href="https://www.sierraclub.org" target="_blank" rel="noopener">Sierra Club</a></strong>, extends the map beyond the National Park System. The Sierra Club filed Freedom of Information Act requests that uncovered records documenting interpretive exhibits flagged or removed at National Wildlife Refuges &mdash; extending public visibility into censorship that would otherwise have gone unnoticed. These entries are labeled with an &ldquo;FWS&rdquo; prefix to distinguish them from NPS entries. We&rsquo;re grateful for the Sierra Club&rsquo;s ongoing commitment to government transparency and public lands advocacy.</p>
+
+
+  <!-- ─── PIPELINE ─── -->
+  <div class="section-heading">The pipeline</div>
+
+  <p class="prose">Here&rsquo;s the path each entry takes from raw data to the map:</p>
+
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="pipe-icon">&#x1F5C4;&#xFE0F;</div>
+      <div class="pipe-label">NPS Database</div>
+      <div class="pipe-desc">879 raw entries</div>
+    </div>
+    <div class="pipe-arrow">&rarr;</div>
+    <div class="pipe-step">
+      <div class="pipe-icon">&#x1F50D;</div>
+      <div class="pipe-label">Action Parsing</div>
+      <div class="pipe-desc">Read action columns</div>
+    </div>
+    <div class="pipe-arrow">&rarr;</div>
+    <div class="pipe-step">
+      <div class="pipe-icon">&#x1F4CB;</div>
+      <div class="pipe-label">SOS Cross-Ref</div>
+      <div class="pipe-desc">Confirm removals</div>
+    </div>
+    <div class="pipe-arrow">&rarr;</div>
+    <div class="pipe-step">
+      <div class="pipe-icon">&#x1F4F8;</div>
+      <div class="pipe-label">Photo Match</div>
+      <div class="pipe-desc">Before / after</div>
+    </div>
+    <div class="pipe-arrow">&rarr;</div>
+    <div class="pipe-step">
+      <div class="pipe-icon">&#x2705;</div>
+      <div class="pipe-label">Published</div>
+      <div class="pipe-desc">874 entries live</div>
+    </div>
+  </div>
+
+  <p class="prose">Five entries from the original 879 were dropped &mdash; duplicate submissions or entries with no usable data. Eleven entries from outside the NPS database were added from FWS FOIA data. The final count is 874.</p>
+
+
+  <!-- ─── LIMITATIONS ─── -->
+  <div class="section-heading">What we might have wrong</div>
+
+  <p class="prose">We want to be honest about the limits of this data.</p>
+
+  <p class="prose"><strong>We don&rsquo;t know what happened at most parks.</strong> The database tells us what park staff recommended. It doesn&rsquo;t tell us whether those recommendations were carried out. For the majority of entries, we have no independent confirmation either way. &ldquo;Flagged for Review&rdquo; might mean the sign is still hanging on the wall untouched. Or it might mean it was quietly taken down and nobody reported it. We don&rsquo;t know.</p>
+
+  <p class="prose"><strong>GPS coordinates are park-level, not sign-level.</strong> When you see a pin on the map, it points to the center of the park, not the specific trail or building where the sign was. Multiple entries at the same park share the same pin.</p>
+
+  <p class="prose"><strong>Topic labels are imperfect.</strong> Keyword matching catches most cases, but it misses nuance. An entry about a Confederate monument might get tagged &ldquo;Civil War&rdquo; but miss the &ldquo;Civil Rights&rdquo; dimension. We&rsquo;re improving this over time.</p>
+
+  <p class="prose"><strong>The database itself may be incomplete.</strong> It captures what parks submitted through one specific survey instrument. Removals that happened outside that process, or at parks that didn&rsquo;t submit surveys, won&rsquo;t appear here.</p>
+
+  <p class="prose"><strong>Restoration status lags reality.</strong> We rely on SOS volunteers and press coverage to confirm restorations. A sign might be back on the wall right now, but if nobody&rsquo;s reported it, our map still shows it as removed.</p>
+
+  <div class="green-box">
+    <p><strong>We correct errors when we find them.</strong> If you spot something wrong &mdash; a misidentified park, a sign we say is removed that&rsquo;s actually been restored, a topic label that doesn&rsquo;t fit &mdash; please tell us. Every correction is committed to the project&rsquo;s <a href="https://github.com/BULLMOOSE1872/missingparkhistory" target="_blank" rel="noopener" style="color:#34d399">git repository</a> with a description of what changed and why.</p>
+    <p>Contact: <strong style="color:#34d399">bullmoose1872@protonmail.com</strong></p>
+  </div>
+
+
+  <!-- ─── LAST UPDATED ─── -->
+  <div class="section-heading">Last updated</div>
+  <p class="prose">This methodology page was last revised on <strong>March 25, 2026</strong>. The dataset is updated on a rolling basis as new removals are confirmed, court orders take effect, or community members submit corrections.</p>
+
+
+  <!-- Footer -->
+  <div class="page-footer">
+    <p>Missing Park History Project &middot; <a href="/">Map</a> &middot; <a href="/about.html">About</a> &middot; <a href="/data-methodology.html">Data & Methodology</a> &middot; <a href="/nps-censorship.html">Censorship</a> &middot; <a href="/secretarial-order-3431.html">SO 3431</a></p>
+    <p style="margin-top:8px">This data belongs to the American people.</p>
+  </div>
+
+</div>
+</body>
+</html>
