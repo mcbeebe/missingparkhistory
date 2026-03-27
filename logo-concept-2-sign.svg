@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280">
+  <!-- Broken/Missing Park Sign -->
+  <!-- Sign board -->
+  <rect x="30" y="30" width="180" height="140" rx="6" fill="#fafafa" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Top bar (like NPS brown sign header) -->
+  <rect x="30" y="30" width="180" height="35" rx="6" fill="#1a1a1a"/>
+  <rect x="30" y="50" width="180" height="15" fill="#1a1a1a"/>
+  <!-- Header text -->
+  <text x="120" y="55" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="16" font-weight="700">PARK HISTORY</text>
+  <!-- Redacted/removed lines representing missing content -->
+  <rect x="50" y="82" width="140" height="8" rx="2" fill="#e0e0e0"/>
+  <rect x="50" y="100" width="120" height="8" rx="2" fill="#e0e0e0"/>
+  <rect x="50" y="118" width="140" height="8" rx="2" fill="#e0e0e0"/>
+  <rect x="50" y="136" width="90" height="8" rx="2" fill="#e0e0e0"/>
+  <!-- Red diagonal strike-through / removal mark -->
+  <line x1="45" y1="75" x2="195" y2="155" stroke="#b91c1c" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <line x1="195" y1="75" x2="45" y2="155" stroke="#b91c1c" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <!-- Post -->
+  <rect x="112" y="170" width="16" height="80" fill="#1a1a1a" rx="2"/>
+  <!-- Ground line -->
+  <line x1="80" y1="250" x2="160" y2="250" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+</svg>

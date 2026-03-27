@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- NPS Arrowhead Outline - Simplified -->
+  <!-- Arrowhead shape -->
+  <path d="M100 20 L175 200 C175 210 160 220 100 220 C40 220 25 210 25 200Z" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Mountain inside -->
+  <path d="M65 165 L95 100 L110 125 L130 90 L160 165" fill="none" stroke="#2563b4" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Tree -->
+  <path d="M80 165 L80 145" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M80 145 L72 158 L88 158Z" fill="#1a1a1a"/>
+  <path d="M80 150 L73 161 L87 161Z" fill="#1a1a1a"/>
+  <!-- Horizontal line through middle suggesting redaction/removal -->
+  <line x1="55" y1="140" x2="145" y2="140" stroke="#b91c1c" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Small gap/break in the arrowhead outline on one side -->
+  <line x1="52" y1="155" x2="52" y2="175" stroke="#fafafa" stroke-width="5"/>
+  <line x1="52" y1="155" x2="52" y2="175" stroke="#b91c1c" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120">
+  <!-- Negative Space Gap: M_SSING with columns -->
+  <!-- Row of pillars/columns with one missing -->
+  <rect x="20" y="40" width="16" height="60" rx="2" fill="#1a1a1a"/>
+  <rect x="46" y="40" width="16" height="60" rx="2" fill="#1a1a1a"/>
+  <rect x="72" y="40" width="16" height="60" rx="2" fill="#1a1a1a"/>
+  <!-- Missing column - just a dashed outline -->
+  <rect x="98" y="40" width="16" height="60" rx="2" fill="none" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="124" y="40" width="16" height="60" rx="2" fill="#1a1a1a"/>
+  <rect x="150" y="40" width="16" height="60" rx="2" fill="#1a1a1a"/>
+  <!-- Base line -->
+  <line x1="15" y1="102" x2="171" y2="102" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Text to the right -->
+  <text x="190" y="72" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#1a1a1a">M</text>
+  <text x="214" y="72" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#b91c1c" opacity="0.3">I</text>
+  <text x="222" y="72" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#1a1a1a">SSING</text>
+  <text x="190" y="100" font-family="Georgia, serif" font-size="14" font-weight="400" fill="#666" letter-spacing="3">PARK HISTORY</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260">
+  <!-- Map Pin + Mountain/Tree -->
+  <!-- Outer pin shape -->
+  <path d="M100 250 C100 250 30 160 30 100 C30 61.3 61.3 30 100 30 C138.7 30 170 61.3 170 100 C170 160 100 250 100 250Z" fill="#b91c1c" opacity="0.1" stroke="#b91c1c" stroke-width="3"/>
+  <!-- Mountain silhouette inside pin -->
+  <path d="M60 145 L90 85 L105 110 L120 80 L155 145Z" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Tree on left slope -->
+  <line x1="75" y1="145" x2="75" y2="120" stroke="#2563b4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M75 120 L68 132 L82 132Z" fill="#2563b4"/>
+  <path d="M75 126 L69 136 L81 136Z" fill="#2563b4"/>
+  <!-- Small dot at pin center top -->
+  <circle cx="100" cy="65" r="4" fill="#b91c1c"/>
+</svg>
