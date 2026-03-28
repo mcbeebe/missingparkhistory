@@ -103,6 +103,22 @@ body{font-family:Georgia,'Times New Roman',serif;background:#0a0a0f;color:#c8c8d
 .news-source-pub{font-size:14px;font-weight:700;color:#6d9eeb;font-family:-apple-system,sans-serif}
 .news-source-title{font-size:14px;color:#c8c8d0;font-family:Georgia,serif;line-height:1.5}
 .news-source-date{font-size:12px;color:#666;font-family:-apple-system,sans-serif}
+
+.share-bar{display:flex;gap:10px;flex-wrap:wrap;margin:32px 0 8px}
+.share-bar-label{font-size:13px;color:#888;font-family:-apple-system,sans-serif;margin-bottom:4px}
+.share-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;font-family:-apple-system,sans-serif;text-decoration:none;transition:all 0.2s;border:none;cursor:pointer}
+.share-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.share-btn.tw{background:#0f1419;color:#fff;border:1px solid #333}
+.share-btn.tw:hover{background:#1a2430}
+.share-btn.bs{background:#0085ff;color:#fff}
+.share-btn.bs:hover{background:#006ed4}
+.share-btn.fb{background:#1877f2;color:#fff}
+.share-btn.fb:hover{background:#0d65d9}
+.share-btn.rd{background:#ff4500;color:#fff}
+.share-btn.rd:hover{background:#e63e00}
+.share-btn.cl{background:rgba(255,255,255,0.06);color:#999;border:1px solid #333}
+.share-btn.cl:hover{background:rgba(255,255,255,0.1);color:#ccc}
+.share-btn svg{width:16px;height:16px;fill:currentColor}
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a"></script>
 </head>
@@ -218,13 +234,21 @@ body{font-family:Georgia,'Times New Roman',serif;background:#0a0a0f;color:#c8c8d
 <div class="entry-flagged"><strong>Exact Text Targeted for Removal</strong><div class="flagged-text-section"><div class="flagged-header">What the Administration Ordered Removed</div><div class="flagged-item"><p>This section of the exhibit is supposed to mimic a trade and balencing scales to reach a fair deal. However, all the pieces are broken and non-functional. This exhibit poorly communicates the fur trade history at Scotts Bluff. The park would like to replace this exhibit section along with the entire exhibit in this room.</p></div></div></div>
 <a class="view-map-link" href="/?id=1052&park=SCBL">View on map &rarr;</a>
 </div>
+<p class="share-bar-label">Share this page</p>
+<div class="share-bar">
+<a class="share-btn tw" href="#" onclick="window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(document.title)+' '+encodeURIComponent(location.href),'_blank','width=550,height=420');return false"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Post</a>
+<a class="share-btn bs" href="#" onclick="window.open('https://bsky.app/intent/compose?text='+encodeURIComponent(document.title+' '+location.href),'_blank','width=550,height=420');return false"><svg viewBox="0 0 24 24"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.6 3.476 6.153 3.226-4.466.756-8.393 2.588-4.845 8.358C4.858 26.005 11.13 21.31 12 16.762c.87 4.548 7.028 9.136 10.068 5.069 3.548-5.77-.38-7.602-4.845-8.358 2.553.25 5.369-.599 6.153-3.226.246-.828.624-5.788.624-6.479 0-.688-.139-1.86-.902-2.203-.659-.3-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>Share</a>
+<a class="share-btn fb" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank','width=550,height=420');return false"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Share</a>
+<a class="share-btn rd" href="#" onclick="window.open('https://reddit.com/submit?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'_blank','width=550,height=420');return false"><svg viewBox="0 0 24 24"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>Post</a>
+<button class="share-btn cl" onclick="navigator.clipboard.writeText(location.href);this.innerHTML='Copied!';setTimeout(()=>this.innerHTML='&#x1F517; Copy Link',2000)">&#x1F517; Copy Link</button>
+</div>
 <div class="cta-section">
 <h2>Explore the Full Map</h2>
 <p>See all 874+ entries across every national park and wildlife refuge.</p>
 <a class="cta-btn" href="/">Open Interactive Map &rarr;</a>
 </div>
 <div class="page-footer">
-<p>Missing Park History Project &middot; <a href="/">Map</a> &middot; <a href="/about.html">About</a> &middot; <a href="/nps-censorship.html">Censorship</a> &middot; <a href="/secretarial-order-3431.html">SO 3431</a></p>
+<p>Missing Park History Project &middot; <a href="/">Map</a> &middot; <a href="/about.html">About</a> &middot; <a href="/nps-censorship.html">Censorship</a> &middot; <a href="/secretarial-order-3431.html">SO 3431</a> &middot; <a href="https://ko-fi.com/missingparkhistory" target="_blank" rel="noopener" style="color:#ff5e5b;font-weight:600">&#9749; Support</a></p>
 <p style="margin-top:8px">This data belongs to the American people.</p>
 </div>
 </div>
