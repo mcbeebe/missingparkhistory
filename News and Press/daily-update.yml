@@ -1,0 +1,54 @@
+name: Daily NPS News Update
+
+on:
+  schedule:
+    # Run daily at 8:00 AM Pacific (15:00 UTC)
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    # Allow manual triggering from GitHub UI
+    inputs:
+      force:
+        description: 'Force update even if already run today'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic requests beautifulsoup4
+
+      - name: Run daily updater
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python daily_updater.py --force
+          else
+            python daily_updater.py
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "NPS News Bot"
+          git config user.email "bot@missingparkhistory.org"
+          git add -A
+          # Only commit if there are changes
+          git diff --cached --quiet || git commit -m "auto: daily news update $(date +%Y-%m-%d)"
+          git push

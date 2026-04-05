@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light only" />
+  <title>News & Press — MissingParkHistory.org</title>
+  <meta name="description" content="Comprehensive timeline of news coverage on NPS sign censorship under Executive Order 14253 and Secretary's Order 3431." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#1a1a1a; --accent:#b83230; --accent-dark:#8a2422; --muted:#6b6259; --border:#e2e2e2; --highlight:#fff3cd; --tag-lawsuit:#2d5f8a; --tag-removal:#b83230; --tag-leak:#7b5ea7; --tag-resistance:#3a7d44; --tag-order:#c07a28; --tag-court:#2d5f8a; color-scheme:light only; }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{background:#ffffff!important}
+    body{font-family:'Source Sans 3',Georgia,serif;background:#ffffff!important;color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+    .site-header{background:#ffffff;color:var(--ink);position:sticky;top:0;z-index:100;border-bottom:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+    .header-inner{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .site-logo{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500;letter-spacing:.5px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+    .site-logo .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block;animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .header-nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:color .2s}
+    .header-nav a:hover{color:var(--ink)} .header-nav a.active{color:var(--accent)}
+    .hero{max-width:1100px;margin:0 auto;padding:60px 24px 40px;border-bottom:1px solid var(--border)}
+    .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:500}
+    .hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900;line-height:1.1;margin-bottom:20px;max-width:800px}
+    .hero-subtitle{font-size:1.15rem;color:var(--muted);max-width:680px;line-height:1.6;font-weight:300}
+    .hero-stats{display:flex;gap:32px;margin-top:28px;flex-wrap:wrap}
+    .stat{display:flex;flex-direction:column} .stat-number{font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:900;color:var(--accent);line-height:1} .stat-label{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:4px;font-weight:600}
+    .filter-bar{max-width:1100px;margin:0 auto;padding:16px 24px;border-bottom:1px solid var(--border)}
+    .filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap} .filter-row+.filter-row{margin-top:10px}
+    .filter-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted);min-width:62px}
+    .filter-btn{padding:5px 14px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;color:var(--muted)}
+    .filter-btn:hover{border-color:var(--ink);color:var(--ink)} .filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .filter-select{padding:5px 28px 5px 12px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6259'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:all .2s}
+    .filter-select:hover{border-color:var(--ink);color:var(--ink)} .filter-select:focus{outline:2px solid var(--accent);outline-offset:1px}
+    .filter-active{border-color:var(--ink)!important;color:var(--ink)!important;font-weight:700}
+    .filter-clear{padding:5px 12px;border:none;background:none;font-family:'Source Sans 3',sans-serif;font-size:12px;font-weight:600;color:var(--accent);cursor:pointer;text-decoration:underline;display:none} .filter-clear.visible{display:inline-block}
+    .results-count{font-size:.82rem;color:var(--muted);padding:8px 0 0;font-weight:600}
+    .timeline-section{max-width:1100px;margin:0 auto;padding:0 24px 80px}
+    .year-marker{position:sticky;top:52px;z-index:10;background:#ffffff;padding:20px 0 12px;border-bottom:1px solid var(--border)}
+    .year-marker h2{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:900;color:var(--accent-dark)}
+    .article-card{padding:28px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:120px 1fr;gap:24px;transition:background .2s}
+    .article-card:hover{background:#f7f7f7;margin:0 -12px;padding-left:12px;padding-right:12px;border-radius:6px}
+    .article-card.hidden{display:none}
+    .article-date{text-align:right;padding-top:4px} .article-date .month-day{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:700;line-height:1.2} .article-date .date-detail{font-size:.75rem;color:var(--muted);margin-top:2px}
+    .article-body h3{font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:700;line-height:1.3;margin-bottom:6px}
+    .article-body h3 a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s} .article-body h3 a:hover{border-color:var(--accent)}
+    .article-meta{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+    .article-source{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+    .article-tag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;padding:2px 8px;border-radius:3px;color:#fff}
+    .tag-order{background:var(--tag-order)} .tag-removal{background:var(--tag-removal)} .tag-resistance{background:var(--tag-resistance)} .tag-lawsuit{background:var(--tag-lawsuit)} .tag-leak{background:var(--tag-leak)} .tag-court{background:var(--tag-court)}
+    .article-summary{font-size:.95rem;color:#444;line-height:1.6;max-width:700px} .article-summary strong{color:var(--ink);font-weight:600}
+    .read-more{display:inline-block;margin-top:8px;font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.3px} .read-more:hover{text-decoration:underline}
+    .key-facts{max-width:1100px;margin:0 auto;padding:40px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .key-facts h2{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;font-weight:900;margin-bottom:20px}
+    .facts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .fact-card{background:#f9f9f9;border:1px solid var(--border);padding:20px;border-radius:4px} .fact-card h4{font-family:'JetBrains Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px} .fact-card p{font-size:.9rem;color:#555;line-height:1.5}
+    .site-footer{background:#ffffff;color:var(--muted);padding:40px 24px;text-align:center;font-size:.85rem;line-height:1.7;border-top:1px solid var(--border)} .site-footer a{color:var(--accent);text-decoration:none} .site-footer a:hover{text-decoration:underline} .footer-inner{max-width:600px;margin:0 auto} .footer-logo{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink);margin-bottom:12px}
+    @media(max-width:640px){.article-card{grid-template-columns:1fr;gap:6px} .article-date{text-align:left;display:flex;gap:8px;align-items:baseline} .hero-stats{gap:20px} .header-nav{display:none}}
+    .article-card{opacity:0;transform:translateY(12px);animation:fadeUp .4s ease forwards} @keyframes fadeUp{to{opacity:1;transform:translateY(0)}} .article-card:nth-child(2){animation-delay:.04s} .article-card:nth-child(3){animation-delay:.08s} .article-card:nth-child(4){animation-delay:.12s} .article-card:nth-child(5){animation-delay:.16s}
+    .progress-bar{position:fixed;top:0;left:0;height:2px;background:var(--accent);z-index:200;width:0%;transition:width .1s;opacity:0.6}
+    .update-banner{background:#ffffff;border-bottom:1px solid var(--border);padding:8px 24px;text-align:center;font-size:.82rem;color:var(--muted);font-weight:600} .update-banner time{font-family:'JetBrains Mono',monospace;font-size:.75rem}
+  </style>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="update-banner">Last updated: <time datetime="2026-04-04">April 4, 2026</time> &mdash; 56 articles tracked &mdash; Litigation ongoing</div>
+<header class="site-header"><div class="header-inner"><a href="/" class="site-logo"><span class="dot"></span> MissingParkHistory.org</a><nav class="header-nav"><a href="/">Map</a>&nbsp;&nbsp;<a href="/about.html">About</a>&nbsp;&nbsp;<a href="/data-methodology.html">Data</a>&nbsp;&nbsp;<a href="/nps-censorship.html">Censorship</a>&nbsp;&nbsp;<a href="/secretarial-order-3431.html">SO 3431</a>&nbsp;&nbsp;<a href="/nps-censorship.html">Topics</a>&nbsp;&nbsp;<a href="/timeline.html">Timeline</a>&nbsp;&nbsp;<a href="/legal-analysis.html">Legal</a>&nbsp;&nbsp;<a href="/presidents-house.html">President's House</a>&nbsp;&nbsp;<a href="/news-and-press.html" class="active">News &amp; Press</a></nav></div></header>
+<section class="hero">
+  <div class="hero-eyebrow">News &amp; Press Coverage</div>
+  <h1>Tracking the Censorship of America's National Parks</h1>
+  <p class="hero-subtitle">A chronological record of reporting on Executive Order 14253, Secretary's Order 3431, and the ongoing campaign to remove signs, exhibits, and publications from National Park Service sites.</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-number">874</span><span class="stat-label">Items Flagged</span></div>
+    <div class="stat"><span class="stat-number">100+</span><span class="stat-label">Parks Affected</span></div>
+    <div class="stat"><span class="stat-number">4</span><span class="stat-label">Active Lawsuits</span></div>
+    <div class="stat"><span class="stat-number">1</span><span class="stat-label">Court-Ordered Restoration</span></div>
+  </div>
+</section>
+<section class="key-facts"><h2>Key Background</h2><div class="facts-grid">
+  <div class="fact-card"><h4>Executive Order 14253</h4><p>Signed March 27, 2025, directing the DOI to ensure park sites do not contain content that "inappropriately disparages Americans past or living, including persons living in colonial times."</p></div>
+  <div class="fact-card"><h4>Secretary's Order 3431</h4><p>Issued May 20, 2025 by Interior Secretary Doug Burgum, implementing the EO by requiring park staff to review all interpretive content and post feedback signs asking visitors to report "negative" information.</p></div>
+  <div class="fact-card"><h4>The Leaked Database</h4><p>On March 2, 2026, a whistleblower published the internal NPS database — 879 entries of flagged signs, films, brochures, and exhibits across hundreds of parks.</p></div>
+  <div class="fact-card"><h4>Lawsuits</h4><p>Four active federal lawsuits: NPCA coalition (SO 3431), City of Philadelphia (Independence Hall), Gilbert Baker Foundation (Stonewall Pride flag), and Sierra Club (FOIA).</p></div>
+</div></section>
+<div class="filter-bar">
+  <div class="filter-row">
+    <span class="filter-label">Topic:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="order">Orders</button>
+    <button class="filter-btn" data-filter="removal">Removals</button>
+    <button class="filter-btn" data-filter="resistance">Resistance</button>
+    <button class="filter-btn" data-filter="lawsuit">Lawsuits</button>
+    <button class="filter-btn" data-filter="leak">Leaks</button>
+    <button class="filter-btn" data-filter="court">Court Rulings</button>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">Month:</span>
+    <select class="filter-select" id="filterMonth">
+      <option value="all">All Months</option>
+      <option value="2026-03">Mar 2026</option><option value="2026-02">Feb 2026</option><option value="2026-01">Jan 2026</option>
+      <option value="2025-12">Dec 2025</option><option value="2025-11">Nov 2025</option><option value="2025-10">Oct 2025</option>
+      <option value="2025-09">Sep 2025</option><option value="2025-08">Aug 2025</option><option value="2025-07">Jul 2025</option>
+      <option value="2025-06">Jun 2025</option><option value="2025-05">May 2025</option>
+      <option value="2025-03">Mar 2025</option><option value="2025-02">Feb 2025</option>
+    </select>
+    <span class="filter-label">Source:</span>
+    <select class="filter-select" id="filterSource">
+      <option value="all">All Publications</option>
+      <option value="wapo">Washington Post</option>
+      <option value="npr">NPR / KQED</option>
+      <option value="nbc">NBC News</option>
+      <option value="pbs">PBS</option>
+      <option value="newsweek">Newsweek</option>
+      <option value="thehill">The Hill</option>
+      <option value="outside">Outside Magazine</option>
+      <option value="sfgate">SFGate / SF Chronicle</option>
+      <option value="inquirer">Philadelphia Inquirer</option>
+      <option value="bostonglobe">Boston Globe</option>
+      <option value="npca">NPCA</option>
+      <option value="demforward">Democracy Forward</option>
+      <option value="sierraclub">Sierra Club</option>
+      <option value="oah">Org. of American Historians</option>
+      <option value="govexec">Government Executive</option>
+      <option value="notus">NOTUS</option>
+      <option value="other">Other / Regional</option>
+    </select>
+    <button class="filter-clear" id="clearFilters">Clear all filters</button>
+  </div>
+  <div class="results-count" id="resultsCount"></div>
+</div>
+<section class="timeline-section">
+<div class="year-marker"><h2>2026</h2></div>
+  <article class="article-card" data-tags="lawsuit" data-month="2026-03" data-source="other">
+    <div class="article-date"><div class="month-day">Mar 28</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">The Travel</span><span class="article-tag tag-lawsuit">Legal</span></div>
+      <h3><a href="https://www.thetravel.com/us-interior-department-says-national-park-sign-ban-opponents-are-ignoring-the-facts/" target="_blank">Interior Department Says Opponents Are 'Ignoring the Facts'</a></h3>
+      <p class="article-summary">The Interior Department pushes back on all litigation. NPCA's Alan Spears responds that Americans deserve the truth. The litigation landscape now spans four major federal lawsuits.</p>
+      <a href="https://www.thetravel.com/us-interior-department-says-national-park-sign-ban-opponents-are-ignoring-the-facts/" class="read-more" target="_blank">Read at The Travel &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-03" data-source="other">
+    <div class="article-date"><div class="month-day">Mar 23</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">CBS News</span><span class="article-tag tag-resistance">TV Feature</span></div>
+      <h3><a href="https://www.cbsnews.com/news/signs-of-the-times-removing-stories-of-americas-past-from-our-national-parks/" target="_blank">CBS Sunday Morning: 'Signs of the Times' — National Feature on NPS Censorship</a></h3>
+      <p class="article-summary">CBS Sunday Morning airs a national segment featuring retired ranger Lucy Scott at Muir Woods and NPCA's Alan Spears at Independence Hall. Scott describes how her climate science sign was removed despite being factually accurate.</p>
+      <a href="https://www.cbsnews.com/news/signs-of-the-times-removing-stories-of-americas-past-from-our-national-parks/" class="read-more" target="_blank">Read at CBS News &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-03" data-source="outside">
+    <div class="article-date"><div class="month-day">Mar 19</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-resistance">Project</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-sign-removal-map/" target="_blank">MissingParkHistory.org Launches — Interactive Map Documents 798+ Flagged Items</a></h3>
+      <p class="article-summary">Outside profiles MissingParkHistory.org, an interactive map built from the leaked database. Each of 798+ entries includes the original exhibit, the reason it was flagged, and removal status.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-sign-removal-map/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-03" data-source="npca">
+    <div class="article-date"><div class="month-day">Mar 19</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Rep. Huffman / NPCA</span><span class="article-tag tag-resistance">Congress</span></div>
+      <h3><a href="https://huffman.house.gov/media-center/press-releases/huffman-52-house-democrats-call-on-appropriators-to-defund-trumps-censorship-of-american-history-at-national-parks" target="_blank">53 House Democrats Push to Block Funding for SO 3431</a></h3>
+      <p class="article-summary">Led by Rep. Jared Huffman, 53 House Democrats urge appropriators to block all funding for SO 3431 in the FY2027 spending bill. Burgum has failed to respond to any prior congressional inquiries.</p>
+      <a href="https://huffman.house.gov/media-center/press-releases/huffman-52-house-democrats-call-on-appropriators-to-defund-trumps-censorship-of-american-history-at-national-parks" class="read-more" target="_blank">Read at Rep. Huffman &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-03" data-source="npca">
+    <div class="article-date"><div class="month-day">Mar 18</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NPCA / Newsweek</span><span class="article-tag tag-lawsuit">Injunction</span></div>
+      <h3><a href="https://www.npca.org/articles/11364-coalition-files-for-preliminary-injunction-to-halt-reverse-park-censorship" target="_blank">Coalition Files for Preliminary Injunction to Halt All Removals</a></h3>
+      <p class="article-summary">The NPCA coalition asks a federal judge to halt all sign removals nationwide and require restoration of everything taken down so far.</p>
+      <a href="https://www.npca.org/articles/11364-coalition-files-for-preliminary-injunction-to-halt-reverse-park-censorship" class="read-more" target="_blank">Read at NPCA &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-03" data-source="other">
+    <div class="article-date"><div class="month-day">Mar 18</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">U.S. Press Freedom Tracker</span><span class="article-tag tag-resistance">Press Freedom</span></div>
+      <h3><a href="https://pressfreedomtracker.us/all-incidents/interior-department-orders-park-service-to-cut-off-sfgate-after-critical-coverage/" target="_blank">Interior Department Blacklists SFGate After Critical NPS Coverage</a></h3>
+      <p class="article-summary">SFGate reveals it has been blacklisted by the DOI after publishing critical coverage of NPS media rules. NPS employees were instructed not to respond to the outlet's inquiries. U.S. Press Freedom Tracker documents the incident.</p>
+      <a href="https://pressfreedomtracker.us/all-incidents/interior-department-orders-park-service-to-cut-off-sfgate-after-critical-coverage/" class="read-more" target="_blank">Read at Press Freedom Tracker &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-03" data-source="other">
+    <div class="article-date"><div class="month-day">Mar 11</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">KUER (Utah)</span><span class="article-tag tag-resistance">Regional</span></div>
+      <h3><a href="https://www.kuer.org/politics-government/2026-03-11/utah-national-parks-flagged-37-items-for-potential-removal-under-trump-order" target="_blank">Utah Parks Flagged 37 Items; 78% of Public Opposes Removals</a></h3>
+      <p class="article-summary">Utah parks alone flagged 37 items. Gulf Islands NPS estimates $42,000+ just to replace signs mentioning 'Gulf of Mexico.'</p>
+      <a href="https://www.kuer.org/politics-government/2026-03-11/utah-national-parks-flagged-37-items-for-potential-removal-under-trump-order" class="read-more" target="_blank">Read at KUER &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="leak" data-month="2026-03" data-source="outside">
+    <div class="article-date"><div class="month-day">Mar 5</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-leak">Analysis</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-removing-history-climate-change/" target="_blank">The Sensitive Topics Being Flagged for Removal from National Parks</a></h3>
+      <p class="article-summary">Outside reviews the full 879-entry leaked database, breaking down flagged content by topic: slavery, climate change, Indigenous history, LGBTQ+ rights, pollution, and women's history.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-removing-history-climate-change/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="leak" data-month="2026-03" data-source="thehill">
+    <div class="article-date"><div class="month-day">Mar 3</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">The Hill / NPS Traveler</span><span class="article-tag tag-leak">Coverage</span></div>
+      <h3><a href="https://thehill.com/policy/energy-environment/5765673-trump-national-parks-nps/" target="_blank">Leaked Documents Reveal Emmett Till, Climate Science, Children's Booklets Flagged</a></h3>
+      <p class="article-summary">The Hill and National Parks Traveler detail the leaked database. Flagged items include Emmett Till materials and a children's booklet about Robert E. Lee.</p>
+      <a href="https://thehill.com/policy/energy-environment/5765673-trump-national-parks-nps/" class="read-more" target="_blank">Read at The Hill &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="leak" data-month="2026-03" data-source="wapo">
+    <div class="article-date"><div class="month-day">Mar 2</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Washington Post</span><span class="article-tag tag-leak">Leak</span></div>
+      <h3><a href="https://dnyuz.com/2026/03/02/confidential-database-reveals-which-items-nps-thinks-may-disparage-america/" target="_blank">Confidential NPS Database Leaked — Hundreds of Flagged Items Revealed</a></h3>
+      <p class="article-summary">A whistleblower publishes the full internal NPS censorship database. The Washington Post confirms its authenticity. Staff comments reveal agonized confusion over what constitutes 'disparaging' content.</p>
+      <a href="https://dnyuz.com/2026/03/02/confidential-database-reveals-which-items-nps-thinks-may-disparage-america/" class="read-more" target="_blank">Read at Washington Post &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-03" data-source="bostonglobe">
+    <div class="article-date"><div class="month-day">Mar 2</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Boston Globe</span><span class="article-tag tag-lawsuit">Regional</span></div>
+      <h3><a href="https://www.boston.com/news/local-news/2026/03/02/lawsuit-challenges-national-park-service-over-content-removal-including-at-a-mass-site/" target="_blank">Lawsuit Challenges NPS Over Content Removal, Including at Lowell</a></h3>
+      <p class="article-summary">The Boston Globe reports on the coalition lawsuit's impact on New England sites. Lowell NHP stopped showing labor history films. Acadia removed climate and Wabanaki signs. Local museums say they are 'more vulnerable than ever.'</p>
+      <a href="https://www.boston.com/news/local-news/2026/03/02/lawsuit-challenges-national-park-service-over-content-removal-including-at-a-mass-site/" class="read-more" target="_blank">Read at Boston Globe &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-02" data-source="other">
+    <div class="article-date"><div class="month-day">Feb 27</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NBC Philadelphia</span><span class="article-tag tag-resistance">Legislation</span></div>
+      <h3><a href="https://www.nbcphiladelphia.com/news/local/new-legislation-protecting-american-history-slavery-exhibit-reinstalled-presidents-house-philadelphia/4360584/" target="_blank">Rep. Boyle Introduces Protecting American History Act</a></h3>
+      <p class="article-summary">Following the court-ordered exhibit restoration, Rep. Brendan Boyle introduces legislation requiring NPS to restore Independence NHP exactly as it existed on Jan. 21, 2026, and prohibiting changes without Congressional approval.</p>
+      <a href="https://www.nbcphiladelphia.com/news/local/new-legislation-protecting-american-history-slavery-exhibit-reinstalled-presidents-house-philadelphia/4360584/" class="read-more" target="_blank">Read at NBC Philadelphia &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-02" data-source="outside">
+    <div class="article-date"><div class="month-day">Feb 24</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-resistance">Congress</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/senators-letter-trump-nps/" target="_blank">17 Democratic Senators Demand Interior Explain NPS Sign Removals</a></h3>
+      <p class="article-summary">Seventeen senators including Bernie Sanders and Cory Booker demand a full accounting of every sign removed. They set a March 10 response deadline. Interior does not respond.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/senators-letter-trump-nps/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-02" data-source="other">
+    <div class="article-date"><div class="month-day">Feb 23</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Seattle's Child</span><span class="article-tag tag-resistance">Families</span></div>
+      <h3><a href="https://www.seattleschild.com/national-park-history-signs-removed/" target="_blank">National Park History Signs Removed: Why It Matters for Families</a></h3>
+      <p class="article-summary">Seattle's Child magazine publishes an editorial on why NPS sign removals affect how families teach history. No confirmed removals at Washington State parks yet, but the national pattern is alarming.</p>
+      <a href="https://www.seattleschild.com/national-park-history-signs-removed/" class="read-more" target="_blank">Read at Seattle's Child &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-02" data-source="newsweek">
+    <div class="article-date"><div class="month-day">Feb 20</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Newsweek</span><span class="article-tag tag-lawsuit">Legal</span></div>
+      <h3><a href="https://www.newsweek.com/interior-department-hits-back-after-national-parks-lawsuit-11546275" target="_blank">Interior Department Hits Back: 'NPCA Isn't Nonpartisan'</a></h3>
+      <p class="article-summary">DOI fires back, calling Democracy Forward 'funded and run by far-left extremists.' Democracy Forward's CEO responds that erasing history violates federal law.</p>
+      <a href="https://www.newsweek.com/interior-department-hits-back-after-national-parks-lawsuit-11546275" class="read-more" target="_blank">Read at Newsweek &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2026-02" data-source="outside">
+    <div class="article-date"><div class="month-day">Feb 19</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-removal">Tracker</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/removed-national-park-service-signs/" target="_blank">The Comprehensive List: Every NPS Sign Taken Down or Flagged So Far</a></h3>
+      <p class="article-summary">Outside publishes the most comprehensive public list of confirmed removals and flagged items across dozens of NPS sites nationwide.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/removed-national-park-service-signs/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="court" data-month="2026-02" data-source="pbs">
+    <div class="article-date"><div class="month-day">Feb 19</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">PBS NewsHour / AP</span><span class="article-tag tag-court">Restoration</span></div>
+      <h3><a href="https://www.pbs.org/newshour/politics/slavery-exhibit-returns-to-philadelphias-independence-mall-after-trump-administration-ordered-its-removal" target="_blank">Slavery Exhibit Restored at Independence Mall as Crowds Cheer</a></h3>
+      <p class="article-summary">NPS workers reinstall the President's House exhibit panels as onlookers applaud. Mayor Parker visits. The administration files for a stay pending appeal.</p>
+      <a href="https://www.pbs.org/newshour/politics/slavery-exhibit-returns-to-philadelphias-independence-mall-after-trump-administration-ordered-its-removal" class="read-more" target="_blank">Read at PBS NewsHour &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-02" data-source="other">
+    <div class="article-date"><div class="month-day">Feb 17</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Lambda Legal</span><span class="article-tag tag-lawsuit">Stonewall Suit</span></div>
+      <h3><a href="https://lambdalegal.org/newsroom/gilbert_us_20260217_ll-washington-litigation-group-sue-trump-admin-over-removal-of-pride-flag-at-stonewall/" target="_blank">Gilbert Baker Foundation Sues Over Stonewall Pride Flag Removal</a></h3>
+      <p class="article-summary">Lambda Legal sues on behalf of the Gilbert Baker Foundation, noting NPS allows Confederate flags at Gettysburg but bars the Pride flag at Stonewall.</p>
+      <a href="https://lambdalegal.org/newsroom/gilbert_us_20260217_ll-washington-litigation-group-sue-trump-admin-over-removal-of-pride-flag-at-stonewall/" class="read-more" target="_blank">Read at Lambda Legal &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="court" data-month="2026-02" data-source="pbs">
+    <div class="article-date"><div class="month-day">Feb 17</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">PBS / WHYY</span><span class="article-tag tag-court">Court Order</span></div>
+      <h3><a href="https://whyy.org/articles/philadelphia-presidents-house-slavery-exhibit-restored/" target="_blank">Judge Rufe Orders Slavery Exhibit Restored; Cites Orwell's 1984</a></h3>
+      <p class="article-summary">Judge Cynthia Rufe (George W. Bush appointee) orders restoration of the President's House exhibit. Her 40-page opinion compares the administration to the 'Ministry of Truth' in Orwell's 1984.</p>
+      <a href="https://whyy.org/articles/philadelphia-presidents-house-slavery-exhibit-restored/" class="read-more" target="_blank">Read at PBS &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-02" data-source="npca">
+    <div class="article-date"><div class="month-day">Feb 17</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Democracy Forward / NPCA</span><span class="article-tag tag-lawsuit">Major Lawsuit</span></div>
+      <h3><a href="https://www.npca.org/articles/11336-national-parks-conservation-association-joins-coalition-lawsuit-to-stop" target="_blank">NPCA Coalition Files Federal Lawsuit to Declare SO 3431 Unlawful</a></h3>
+      <p class="article-summary">NPCA, Association of National Park Rangers, Union of Concerned Scientists, and others sue to have SO 3431 declared 'arbitrary and capricious' under the APA.</p>
+      <a href="https://www.npca.org/articles/11336-national-parks-conservation-association-joins-coalition-lawsuit-to-stop" class="read-more" target="_blank">Read at Democracy Forward &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="leak" data-month="2026-02" data-source="demforward">
+    <div class="article-date"><div class="month-day">Feb 17</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Democracy Forward</span><span class="article-tag tag-leak">Evidence</span></div>
+      <h3><a href="https://democracyforward.org/news/press-releases/examples-of-censorship-from-national-parks-conservation-association-et-al-v-department-of-the-interior-et-al/" target="_blank">Democracy Forward Publishes Detailed Examples of Park Censorship</a></h3>
+      <p class="article-summary">Detailed accounting of censorship examples accompanying the lawsuit. Includes Independence Hall, Muir Woods, Lowell labor films, Acadia Wabanaki signs, and Death Valley Timbisha Shoshone exhibit.</p>
+      <a href="https://democracyforward.org/news/press-releases/examples-of-censorship-from-national-parks-conservation-association-et-al-v-department-of-the-interior-et-al/" class="read-more" target="_blank">Read at Democracy Forward &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2026-02" data-source="other">
+    <div class="article-date"><div class="month-day">Feb 10</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Washington Blade</span><span class="article-tag tag-removal">Pride Flag</span></div>
+      <h3><a href="https://www.washingtonblade.com/2026/02/10/pride-flag-removed-from-stonewall-monument-as-trump-targets-lgbtq-landmarks/" target="_blank">Pride Flag Removed from Stonewall National Monument</a></h3>
+      <p class="article-summary">NPS removes the Pride flag from Stonewall under a directive from acting Director Bowron. The flag had flown since 2022. Over 20 LGBTQ+ organizations demand restoration. Activists re-raise it on Feb. 13.</p>
+      <a href="https://www.washingtonblade.com/2026/02/10/pride-flag-removed-from-stonewall-monument-as-trump-targets-lgbtq-landmarks/" class="read-more" target="_blank">Read at Washington Blade &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="order" data-month="2026-02" data-source="newsweek">
+    <div class="article-date"><div class="month-day">Feb 10</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Newsweek (via SFGate)</span><span class="article-tag tag-order">Media Control</span></div>
+      <h3><a href="https://www.newsweek.com/doi-hits-back-criticism-trumps-national-parks-move-11510199" target="_blank">SFGate Reveals New NPS Media Censorship Tool; Former Director Calls It 'Idiotic'</a></h3>
+      <p class="article-summary">SFGate reports NPS employees must get Washington approval before all communications. Former NPS Director Jonathan Jarvis calls it 'just idiotic' and 'unprecedented.' DOI accuses SFGate of ignoring facts.</p>
+      <a href="https://www.newsweek.com/doi-hits-back-criticism-trumps-national-parks-move-11510199" class="read-more" target="_blank">Read at Newsweek &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2026-01" data-source="outside">
+    <div class="article-date"><div class="month-day">Jan 29</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-removal">Expansion</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/nps-removes-historical-signs/" target="_blank">NPS Removes Signs at Grand Canyon, Glacier National Parks</a></h3>
+      <p class="article-summary">Removal orders sent to at least 17 NPS sites in six states. Grand Canyon, Glacier, Little Bighorn, Big Bend, Grand Teton all affected.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/nps-removes-historical-signs/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-01" data-source="oah">
+    <div class="article-date"><div class="month-day">Jan 24</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Org. of American Historians</span><span class="article-tag tag-resistance">Statement</span></div>
+      <h3><a href="https://www.oah.org/2026/01/24/statement-on-the-freedom-and-slavery-exhibit-removal-at-independence-national-historical-park/" target="_blank">OAH Condemns Independence Hall Exhibit Removal</a></h3>
+      <p class="article-summary">The OAH reveals it conducted the 2005 site review that led to the exhibit's creation. Calls the removal a 'fundamental misrepresentation' of the founding era.</p>
+      <a href="https://www.oah.org/2026/01/24/statement-on-the-freedom-and-slavery-exhibit-removal-at-independence-national-historical-park/" class="read-more" target="_blank">Read at Org. of American Historians &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-01" data-source="nbc">
+    <div class="article-date"><div class="month-day">Jan 23</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NBC News</span><span class="article-tag tag-lawsuit">Lawsuit</span></div>
+      <h3><a href="https://www.nbcnews.com/news/us-news/philadelphia-sues-slavery-exhibits-taken-presidents-house-site-rcna255535" target="_blank">City of Philadelphia Sues the Department of the Interior</a></h3>
+      <p class="article-summary">Mayor Cherelle Parker files suit the same day the panels come down. Gov. Shapiro says Trump 'picked the wrong city.'</p>
+      <a href="https://www.nbcnews.com/news/us-news/philadelphia-sues-slavery-exhibits-taken-presidents-house-site-rcna255535" class="read-more" target="_blank">Read at NBC News &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2026-01" data-source="inquirer">
+    <div class="article-date"><div class="month-day">Jan 22</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Phila. Inquirer / WaPo / NPR</span><span class="article-tag tag-removal">Major Removal</span></div>
+      <h3><a href="https://www.inquirer.com/politics/nation/presidents-house-independence-park-exhibits-removed-20260122.html" target="_blank">Slavery Exhibit Torn Down at Independence Hall; Panels Ripped Off with Crowbars</a></h3>
+      <p class="article-summary">NPS staff dismantle the 'Freedom and Slavery' exhibit at the President's House — the story of nine people enslaved by George Washington. An employee tells the Inquirer he was 'just following my orders.' National and international coverage follows.</p>
+      <a href="https://www.inquirer.com/politics/nation/presidents-house-independence-park-exhibits-removed-20260122.html" class="read-more" target="_blank">Read at Phila. Inquirer &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2026-01" data-source="other">
+    <div class="article-date"><div class="month-day">Jan 18</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Resistance Rangers</span><span class="article-tag tag-resistance">Analysis</span></div>
+      <h3><a href="https://www.resistancerangers.org/blog/censorship-and-trust-in-the-national-parks" target="_blank">Former Rangers Speak Out on Censorship and Public Trust</a></h3>
+      <p class="article-summary">Resistance Rangers analyzes how SO 3431 and SO 3416 are eroding decades of historical interpretation, citing research showing Americans trust museums more than any other history source.</p>
+      <a href="https://www.resistancerangers.org/blog/censorship-and-trust-in-the-national-parks" class="read-more" target="_blank">Read at Resistance Rangers &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2026-01" data-source="outside">
+    <div class="article-date"><div class="month-day">Jan 16</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-removal">Policy</span></div>
+      <h3><a href="https://www.outsideonline.com/culture/opinion/national-parks-mlk-day/" target="_blank">MLK Day Removed from National Parks' Fee-Free Days</a></h3>
+      <p class="article-summary">Outside contributor James Edward Mills writes about the removal of MLK Day and Juneteenth from NPS fee-free days, connecting it to a broader pattern of exclusion.</p>
+      <a href="https://www.outsideonline.com/culture/opinion/national-parks-mlk-day/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2026-01" data-source="sierraclub">
+    <div class="article-date"><div class="month-day">Jan 15</div><div class="date-detail">2026</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Sierra Club</span><span class="article-tag tag-lawsuit">Lawsuit</span></div>
+      <h3><a href="https://www.sierraclub.org/press-releases/2026/01/trump-administration-orders-removal-more-signage-climate-change-native" target="_blank">Sierra Club Sues Over Sign Removal Secrecy</a></h3>
+      <p class="article-summary">Sierra Club sues over the administration's refusal to disclose how sign removals are carried out.</p>
+      <a href="https://www.sierraclub.org/press-releases/2026/01/trump-administration-orders-removal-more-signage-climate-change-native" class="read-more" target="_blank">Read at Sierra Club &rarr;</a>
+    </div>
+  </article>
+<div class="year-marker"><h2>2025</h2></div>
+  <article class="article-card" data-tags="resistance" data-month="2025-12" data-source="outside">
+    <div class="article-date"><div class="month-day">Dec 17</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-resistance">Creative</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-pass-sticker" target="_blank">Artist Creates National Parks Pass Stickers to Cover Up Trump's Face</a></h3>
+      <p class="article-summary">After the 2026 America the Beautiful Pass features Trump's face, a Colorado artist sells stickers to cover it. Center for Biological Diversity sues over the design.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-pass-sticker" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-12" data-source="other">
+    <div class="article-date"><div class="month-day">Dec 5</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Razorback Reporter</span><span class="article-tag tag-removal">Regional</span></div>
+      <h3><a href="https://razorbackreporter.uark.edu/2025/12/05/the-race-to-retain-history-at-national-parks-amid-new-federal-directives/" target="_blank">Fort Smith Flagged for 'Gulf of America' Rename; NPS Visitation Declines</a></h3>
+      <p class="article-summary">Fort Smith asked to rename Gulf of Mexico on a map. NPS visitation declined in 2025 for the first time in five years.</p>
+      <a href="https://razorbackreporter.uark.edu/2025/12/05/the-race-to-retain-history-at-national-parks-amid-new-federal-directives/" class="read-more" target="_blank">Read at Razorback Reporter &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-11" data-source="outside">
+    <div class="article-date"><div class="month-day">Nov 26</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-resistance">Opinion</span></div>
+      <h3><a href="https://www.outsideonline.com/culture/opinion/thanksgiving-national-parks-cuts/" target="_blank">For Thanksgiving, I Plan to Bring Up the National Park Service Cuts</a></h3>
+      <p class="article-summary">Outside's articles editor outlines how to discuss NPS cuts at Thanksgiving. NPCA's Brengel notes the proposed $1B cut would mean losing three-quarters of all NPS units.</p>
+      <a href="https://www.outsideonline.com/culture/opinion/thanksgiving-national-parks-cuts/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-11" data-source="other">
+    <div class="article-date"><div class="month-day">Nov 19</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Panorama</span><span class="article-tag tag-resistance">Archival</span></div>
+      <h3><a href="https://journalpanorama.org/article/save-our-signs/" target="_blank">Save Our Signs Publishes Academic Paper on Crowdsourced Preservation</a></h3>
+      <p class="article-summary">The Save Our Signs project publishes in the academic journal Panorama, documenting their methodology for preserving NPS signs before removal.</p>
+      <a href="https://journalpanorama.org/article/save-our-signs/" class="read-more" target="_blank">Read at Panorama &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-11" data-source="outside">
+    <div class="article-date"><div class="month-day">Nov 14</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-resistance">Poll</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-cuts-poll/" target="_blank">Americans Overwhelmingly Dislike NPS Cuts, New Data Shows</a></h3>
+      <p class="article-summary">NPCA/YouGov poll of 3,000 adults: 78% oppose removing factual materials, 69% oppose the $1B budget cut, 62% oppose further staff cuts, 60% oppose adjacent drilling.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-cuts-poll/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-10" data-source="bostonglobe">
+    <div class="article-date"><div class="month-day">Oct 21</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Boston Globe</span><span class="article-tag tag-resistance">Preservation</span></div>
+      <h3><a href="https://www.bostonglobe.com/2025/10/21/data/national-park-signs/" target="_blank">Historians and Librarians Race to Save National Park Signs</a></h3>
+      <p class="article-summary">The Globe profiles the Save Our Signs project and documents removals across New England — Acadia, Cape Cod, and Saugus Iron Works. Shows photos of signs at risk on Cape Cod National Seashore and Roger Williams Memorial.</p>
+      <a href="https://www.bostonglobe.com/2025/10/21/data/national-park-signs/" class="read-more" target="_blank">Read at Boston Globe &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-09" data-source="outside">
+    <div class="article-date"><div class="month-day">Sep 23</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-removal">Confirmed</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-service-signs-removed/" target="_blank">Signs on Climate Change, Slavery Among First Confirmed Removals</a></h3>
+      <p class="article-summary">Outside confirms the first wave of sign removals at multiple parks. The Save Our Signs project races to archive signs before they disappear.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-park-service-signs-removed/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-09" data-source="npca">
+    <div class="article-date"><div class="month-day">Sep 22</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NPCA</span><span class="article-tag tag-removal">Expansion</span></div>
+      <h3><a href="https://www.npca.org/articles/10805-administration-doubles-down-on-erasing-history-and-silencing-science-in" target="_blank">NPCA: 'Erasure of History and Science Spreads' Across Parks</a></h3>
+      <p class="article-summary">NPCA documents spreading removals: Acadia climate signs, Jamaica Bay exhibit, NPS climate webpages for Hawai'i Volcanoes, Lake Mead, and George Washington Parkway all taken down.</p>
+      <a href="https://www.npca.org/articles/10805-administration-doubles-down-on-erasing-history-and-silencing-science-in" class="read-more" target="_blank">Read at NPCA &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-09" data-source="bostonglobe">
+    <div class="article-date"><div class="month-day">Sep 20</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Boston Globe / Washington Post</span><span class="article-tag tag-removal">National</span></div>
+      <h3><a href="https://www.bostonglobe.com/2025/09/20/nation/national-parks-trump/" target="_blank">National Parks Remove Signs About Climate, Slavery and Japanese Internment</a></h3>
+      <p class="article-summary">The Boston Globe and Washington Post jointly report the first major wave of confirmed sign removals — climate change at Acadia, enslaved man's photo at Fort Pulaski, and a Jamaica Bay display referencing slavery and Native American massacres.</p>
+      <a href="https://www.bostonglobe.com/2025/09/20/nation/national-parks-trump/" class="read-more" target="_blank">Read at Boston Globe &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-09" data-source="other">
+    <div class="article-date"><div class="month-day">Sep 15</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">LAist / KQED</span><span class="article-tag tag-resistance">California</span></div>
+      <h3><a href="https://laist.com/news/trump-targets-national-parks-california-history-at-stake" target="_blank">As Trump Targets Parks, Advocates Warn California History Is at Stake</a></h3>
+      <p class="article-summary">LAist and KQED publish an in-depth investigation on California's nine national parks. Manzanar advocates call the review 'a white nationalist effort to erase our history.' Public comments overwhelmingly oppose the removals.</p>
+      <a href="https://laist.com/news/trump-targets-national-parks-california-history-at-stake" class="read-more" target="_blank">Read at LAist &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-09" data-source="inquirer">
+    <div class="article-date"><div class="month-day">Sep 8</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Phila. Inquirer</span><span class="article-tag tag-resistance">Coalition</span></div>
+      <h3><a href="https://www.inquirer.com/politics/nation/independence-park-slavery-exhibits-letter-doug-burgum-20250908.html" target="_blank">45 Philadelphia Organizations Send Letter Opposing Exhibit Changes</a></h3>
+      <p class="article-summary">The Preservation Alliance leads 45 Philadelphia organizations — including the Betsy Ross House and PA Abolition Society — in a letter to Burgum opposing changes to Independence Park slavery exhibits.</p>
+      <a href="https://www.inquirer.com/politics/nation/independence-park-slavery-exhibits-letter-doug-burgum-20250908.html" class="read-more" target="_blank">Read at Phila. Inquirer &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-09" data-source="notus">
+    <div class="article-date"><div class="month-day">Sep–Dec</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Various / NOTUS</span><span class="article-tag tag-removal">Ongoing</span></div>
+      <h3><a href="https://www.notus.org/trump-white-house/national-park-service-removing-signs-staff-reported-factually-accurate" target="_blank">Signs Removed at Acadia, Fort Sumter, Rock Creek — Staff Flagged as 'Factually Accurate'</a></h3>
+      <p class="article-summary">NOTUS reports confirmed removals at parks where staff explicitly noted the content was historically accurate.</p>
+      <a href="https://www.notus.org/trump-white-house/national-park-service-removing-signs-staff-reported-factually-accurate" class="read-more" target="_blank">Read at Various &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-09" data-source="other">
+    <div class="article-date"><div class="month-day">Jun–Sep</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Multiple Sources</span><span class="article-tag tag-removal">Internal</span></div>
+      <h3>NPS Staff Submit 500+ Items for Review; Removals Begin</h3>
+      <p class="article-summary">Between June and September, park staff submit 500+ items to an internal database. A leaked presentation sets deadlines for 'all inappropriate content' to be 'removed or covered.'</p>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-08" data-source="inquirer">
+    <div class="article-date"><div class="month-day">Aug 1</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Phila. Inquirer</span><span class="article-tag tag-resistance">Preservation</span></div>
+      <h3><a href="https://www.inquirer.com/politics/nation/independence-national-historical-park-philadelphia-exhibit-preservation-20250801.html" target="_blank">Philadelphians Race to Preserve Independence Park Exhibits Before It's Too Late</a></h3>
+      <p class="article-summary">The Inquirer profiles efforts to archive and preserve exhibits — including Faye Anderson's 'President's House.ai' 3D recreation with AI characters of the nine enslaved people. Save Our Signs has collected 3,000+ photos in one month.</p>
+      <a href="https://www.inquirer.com/politics/nation/independence-national-historical-park-philadelphia-exhibit-preservation-20250801.html" class="read-more" target="_blank">Read at Phila. Inquirer &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-07" data-source="inquirer">
+    <div class="article-date"><div class="month-day">Jul 28</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Phila. Inquirer</span><span class="article-tag tag-removal">Flagged</span></div>
+      <h3><a href="https://www.inquirer.com/news/philadelphia/independence-national-historic-park-philadelphia-slavery-exhibits-trump-review-20250728.html" target="_blank">Slavery Displays at Independence Park Flagged for Trump Admin's Review</a></h3>
+      <p class="article-summary">The Inquirer breaks the news that 13 items across six exhibits at the President's House have been flagged. An employee prefaced submissions noting the displays should remain unchanged.</p>
+      <a href="https://www.inquirer.com/news/philadelphia/independence-national-historic-park-philadelphia-slavery-exhibits-trump-review-20250728.html" class="read-more" target="_blank">Read at Phila. Inquirer &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-07" data-source="sfgate">
+    <div class="article-date"><div class="month-day">Jul 22</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">SFGate</span><span class="article-tag tag-removal">Bay Area</span></div>
+      <h3><a href="https://www.sfgate.com/california-parks/article/muir-woods-national-monument-history-erased-20781301.php" target="_blank">SFGate Breaks: Muir Woods Exhibit Removed Under White House Directive</a></h3>
+      <p class="article-summary">SFGate is first to report the removal of the 'History Under Construction' exhibit at Muir Woods, which highlighted Indigenous history, women's roles, and NPS involvement in eugenics.</p>
+      <a href="https://www.sfgate.com/california-parks/article/muir-woods-national-monument-history-erased-20781301.php" class="read-more" target="_blank">Read at SFGate &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-07" data-source="other">
+    <div class="article-date"><div class="month-day">Jul 3</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Save Our Signs</span><span class="article-tag tag-resistance">Resistance</span></div>
+      <h3><a href="https://saveoursigns.org" target="_blank">'Save Our Signs' Crowdsourced Preservation Project Launches</a></h3>
+      <p class="article-summary">Librarians and data preservation groups launch SaveOurSigns.org on the eve of July 4th, crowdsourcing photos of NPS signs to create a 'people's archive.'</p>
+      <a href="https://saveoursigns.org" class="read-more" target="_blank">Read at Save Our Signs &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="lawsuit" data-month="2025-06" data-source="sierraclub">
+    <div class="article-date"><div class="month-day">Jun 27</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Sierra Club</span><span class="article-tag tag-lawsuit">FOIA</span></div>
+      <h3><a href="https://www.sierraclub.org/press-releases/2025/06/another-lawsuit-filed-sierra-club-foia-requests-again-unlawfully-ignored" target="_blank">Sierra Club Sues Interior Over Stonewalled FOIA Requests</a></h3>
+      <p class="article-summary">Sierra Club sues DOI for refusing FOIA requests seeking communications from Burgum and DOGE staff about public lands decisions.</p>
+      <a href="https://www.sierraclub.org/press-releases/2025/06/another-lawsuit-filed-sierra-club-foia-requests-again-unlawfully-ignored" class="read-more" target="_blank">Read at Sierra Club &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-06" data-source="govexec">
+    <div class="article-date"><div class="month-day">Jun 19</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Government Executive</span><span class="article-tag tag-resistance">Resistance</span></div>
+      <h3><a href="https://www.govexec.com/management/2025/06/censorship-see-national-park-visitor-responses-after-trump-requested-help-deleting-negative-signage/406176/" target="_blank">Park Visitors Overwhelmingly Oppose Sign Removals; Zero Flag 'Negative' Content</a></h3>
+      <p class="article-summary">In nearly 200 visitor submissions, not a single person flagged 'negative' content. Visitors implored the administration not to erase history.</p>
+      <a href="https://www.govexec.com/management/2025/06/censorship-see-national-park-visitor-responses-after-trump-requested-help-deleting-negative-signage/406176/" class="read-more" target="_blank">Read at Government Executive &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="order" data-month="2025-06" data-source="outside">
+    <div class="article-date"><div class="month-day">Jun 18</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Outside Magazine</span><span class="article-tag tag-order">Implementation</span></div>
+      <h3><a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-negative-history/" target="_blank">National Parks Told: No Negative Stories About American History</a></h3>
+      <p class="article-summary">Outside reports on the new feedback signs appearing at NPS sites asking visitors to report 'negative' content about past or present Americans. Coverage highlights the chilling effect on rangers.</p>
+      <a href="https://www.outsideonline.com/outdoor-adventure/environment/national-parks-negative-history/" class="read-more" target="_blank">Read at Outside Magazine &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="resistance" data-month="2025-06" data-source="oah">
+    <div class="article-date"><div class="month-day">Jun 18</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Org. of American Historians</span><span class="article-tag tag-resistance">Statement</span></div>
+      <h3><a href="https://www.oah.org/2025/06/18/statement-in-response-to-secretary-order-3431-and-censorship-of-history-in-the-national-park-service/" target="_blank">Organization of American Historians Condemns SO 3431</a></h3>
+      <p class="article-summary">The OAH calls SO 3431 a 'clear and troubling intrusion into historical integrity' and compares the visitor feedback mechanism to authoritarian tactics.</p>
+      <a href="https://www.oah.org/2025/06/18/statement-in-response-to-secretary-order-3431-and-censorship-of-history-in-the-national-park-service/" class="read-more" target="_blank">Read at Org. of American Historians &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-06" data-source="other">
+    <div class="article-date"><div class="month-day">Jun</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">Rafu Shimpo</span><span class="article-tag tag-removal">Community</span></div>
+      <h3><a href="https://rafu.com/2025/06/new-signs-posted-at-manzanar-under-trumps-directive-against-negative-historical-information/" target="_blank">Feedback Signs Posted at Manzanar; Japanese American Community Sounds Alarm</a></h3>
+      <p class="article-summary">Feedback signs appear at Manzanar, where 10,000 Japanese Americans were incarcerated. The Japanese American National Museum calls it a campaign to 'suppress historical narratives.'</p>
+      <a href="https://rafu.com/2025/06/new-signs-posted-at-manzanar-under-trumps-directive-against-negative-historical-information/" class="read-more" target="_blank">Read at Rafu Shimpo &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="order" data-month="2025-06" data-source="npr">
+    <div class="article-date"><div class="month-day">Jun 10</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NPR</span><span class="article-tag tag-order">Implementation</span></div>
+      <h3><a href="https://www.npr.org/2025/06/10/nx-s1-5429773/national-park-service-signs" target="_blank">Leaked Memo: All NPS Sites Must Post Feedback Signs by June 13</a></h3>
+      <p class="article-summary">Internal memo leaked to NPR requires all park units to post QR code signage encouraging visitors to flag 'negative' content.</p>
+      <a href="https://www.npr.org/2025/06/10/nx-s1-5429773/national-park-service-signs" class="read-more" target="_blank">Read at NPR &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="order" data-month="2025-05" data-source="npca">
+    <div class="article-date"><div class="month-day">May 20</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NPCA</span><span class="article-tag tag-order">Secretary's Order</span></div>
+      <h3><a href="https://www.npca.org/articles/8858-new-order-threatens-park-service-s-efforts-to-protect-and-explore-american" target="_blank">Interior Secretary Burgum Issues Secretary's Order 3431</a></h3>
+      <p class="article-summary">SO 3431 directs all NPS units to post feedback signs, review all interpretive content, and set deadlines for flagging materials.</p>
+      <a href="https://www.npca.org/articles/8858-new-order-threatens-park-service-s-efforts-to-protect-and-explore-american" class="read-more" target="_blank">Read at NPCA &rarr;</a>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="order" data-month="2025-03" data-source="other">
+    <div class="article-date"><div class="month-day">Mar 27</div><div class="date-detail">2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">White House</span><span class="article-tag tag-order">Executive Order</span></div>
+      <h3>Trump Signs EO 14253: 'Restoring Truth and Sanity to American History'</h3>
+      <p class="article-summary">The President directs DOI to review all NPS interpretive materials, targeting content that 'inappropriately disparages Americans past or living.' Singles out Independence Hall ahead of 250th anniversary.</p>
+    </div>
+  </article>
+
+  <article class="article-card" data-tags="removal" data-month="2025-02" data-source="nbc">
+    <div class="article-date"><div class="month-day">Feb</div><div class="date-detail">Early 2025</div></div>
+    <div class="article-body">
+      <div class="article-meta"><span class="article-source">NBC News</span><span class="article-tag tag-removal">Removal</span></div>
+      <h3>Stonewall Website Quietly Scrubbed of LGBTQ+ References</h3>
+      <p class="article-summary">Before the executive order is signed, the NPS website for Stonewall is altered to remove references to transgender and queer people.</p>
+    </div>
+  </article>
+</section>
+<footer class="site-footer"><div class="footer-inner"><div class="footer-logo">MissingParkHistory.org</div><p>An independent project documenting NPS interpretive materials flagged for removal under EO 14253 and SO 3431.<br />Not affiliated with the National Park Service or any government agency.<br /><br /><a href="/">Map</a> &nbsp;|&nbsp; <a href="/about.html">About</a> &nbsp;|&nbsp; <a href="/data-methodology.html">Data</a> &nbsp;|&nbsp; <a href="/nps-censorship.html">Censorship</a> &nbsp;|&nbsp; <a href="/secretarial-order-3431.html">SO 3431</a> &nbsp;|&nbsp; <a href="/timeline.html">Timeline</a> &nbsp;|&nbsp; <a href="/legal-analysis.html">Legal</a> &nbsp;|&nbsp; <a href="/presidents-house.html">President's House</a> &nbsp;|&nbsp; <a href="/news-and-press.html">News &amp; Press</a> &nbsp;|&nbsp; <a href="mailto:info@missingparkhistory.org">Contact / Tips</a></p></div></footer>
+<script>
+window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progressBar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';});
+const cards=document.querySelectorAll('.article-card'),yearMarkers=document.querySelectorAll('.year-marker'),topicBtns=document.querySelectorAll('.filter-btn'),monthSel=document.getElementById('filterMonth'),sourceSel=document.getElementById('filterSource'),clearBtn=document.getElementById('clearFilters'),countEl=document.getElementById('resultsCount');
+let activeTopic='all';
+function applyFilters(){const m=monthSel.value,s=sourceSel.value;let v=0;cards.forEach(c=>{const mt=activeTopic==='all'||c.dataset.tags.includes(activeTopic),mm=m==='all'||c.dataset.month===m,ms=s==='all'||c.dataset.source===s;const show=mt&&mm&&ms;c.classList.toggle('hidden',!show);if(show)v++;});yearMarkers.forEach(ym=>{let n=ym.nextElementSibling,has=false;while(n&&!n.classList.contains('year-marker')){if(n.classList.contains('article-card')&&!n.classList.contains('hidden')){has=true;break;}n=n.nextElementSibling;}ym.style.display=has?'':'none';});const any=activeTopic!=='all'||m!=='all'||s!=='all';countEl.textContent=any?'Showing '+v+' of '+cards.length+' articles':'';clearBtn.classList.toggle('visible',any);monthSel.classList.toggle('filter-active',m!=='all');sourceSel.classList.toggle('filter-active',s!=='all');}
+topicBtns.forEach(b=>b.addEventListener('click',()=>{topicBtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');activeTopic=b.dataset.filter;applyFilters();}));
+monthSel.addEventListener('change',applyFilters);sourceSel.addEventListener('change',applyFilters);
+clearBtn.addEventListener('click',()=>{activeTopic='all';topicBtns.forEach(b=>b.classList.remove('active'));topicBtns[0].classList.add('active');monthSel.value='all';sourceSel.value='all';applyFilters();});
+</script>
+</body>
+</html>
