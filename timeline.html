@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeline of NPS Sign Removals | Missing Park History</title>
+<meta name="description" content="Chronological tracking of NPS sign removals, legal actions, and restorations across America's national parks. Interactive timeline of flagged exhibits.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://missingparkhistory.org/timeline.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://missingparkhistory.org/timeline.html">
+<meta property="og:title" content="Timeline of NPS Sign Removals | Missing Park History">
+<meta property="og:description" content="444 exhibits flagged. 36 confirmed removed. 13 restored. Track the chronological history of NPS exhibit removals and legal actions since March 2025.">
+<meta property="og:image" content="https://missingparkhistory.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Missing Park History">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Timeline of NPS Sign Removals | Missing Park History">
+<meta name="twitter:description" content="444 exhibits flagged. 36 confirmed removed. 13 restored. Interactive timeline of NPS exhibit removals.">
+<meta name="twitter:image" content="https://missingparkhistory.org/og-image.png">
+<script type="application/ld+json">{
+"@context":"https://schema.org",
+"@type":"Article",
+"headline":"Timeline of NPS Sign Removals",
+"description":"Chronological tracking of NPS sign removals, legal actions, and restorations across America's national parks since March 2025.",
+"url":"https://missingparkhistory.org/timeline.html",
+"datePublished":"2026-03-31",
+"dateModified":"2026-04-04",
+"author":{"@type":"Organization","name":"Missing Park History Project"},
+"publisher":{"@type":"Organization","name":"Missing Park History","url":"https://missingparkhistory.org"},
+"isPartOf":{"@type":"WebSite","name":"Missing Park History","url":"https://missingparkhistory.org/"}
+}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2d;line-height:1.8}
+.topnav{position:fixed;top:0;left:0;right:0;z-index:5000;background:rgba(255,255,255,0.97);border-bottom:1px solid #e0e0e0;backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.topnav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1a1a1a;font-family:Georgia,serif;font-size:17px;font-weight:700}
+.topnav-brand span{color:#b91c1c}
+.topnav-links{display:flex;gap:6px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px}
+.topnav-links a{color:#666;text-decoration:none;padding:8px 16px;border-radius:20px;transition:all 0.2s;font-weight:500}
+.topnav-links a:hover{color:#1a1a1a;background:rgba(0,0,0,0.04)}
+.topnav-links a.active{color:#1a1a1a;background:rgba(37,99,180,0.08);border:1px solid rgba(37,99,180,0.2)}
+.topnav-links a.map-link{color:#b91c1c;border:1px solid rgba(185,28,28,0.25);background:rgba(185,28,28,0.05)}
+.topnav-links a.map-link:hover{background:rgba(185,28,28,0.1);color:#991b1b}
+.page-wrapper{max-width:900px;margin:0 auto;padding:100px 28px 80px}
+.hero{text-align:center;margin-bottom:48px}
+.hero h1{font-size:42px;color:#1a1a1a;font-weight:700;line-height:1.3;margin-bottom:16px}
+.hero h1 span{color:#b91c1c}
+.hero .subtitle{font-size:18px;color:#777;font-family:-apple-system,sans-serif;line-height:1.6;max-width:700px;margin:0 auto}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:48px 0}
+.stat-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:24px;text-align:center;transition:all 0.3s}
+.stat-card:hover{border-color:#d0d0d0;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.stat-card .stat-num{font-size:36px;font-weight:700;font-family:Georgia,serif;line-height:1;margin-bottom:8px}
+.stat-card .stat-label{font-size:12px;color:#999;font-family:-apple-system,sans-serif;text-transform:uppercase;letter-spacing:0.5px;font-weight:600}
+.stat-num.blue{color:#6d9eeb}
+.stat-num.red{color:#e74c3c}
+.stat-num.green{color:#27ae60}
+.stat-num.orange{color:#f39c12}
+.filter-bar{display:flex;gap:10px;margin:40px 0;justify-content:center;flex-wrap:wrap}
+.filter-btn{background:#fff;border:1px solid #e0e0e0;border-radius:24px;padding:10px 20px;cursor:pointer;font-size:14px;font-weight:500;font-family:-apple-system,sans-serif;color:#666;transition:all 0.3s}
+.filter-btn:hover{border-color:#2563b4;color:#2563b4;background:rgba(37,99,180,0.04)}
+.filter-btn.active{background:#2563b4;color:#fff;border-color:#2563b4}
+.filter-btn[data-umami-event]{cursor:pointer}
+.timeline-container{position:relative;margin:60px 0}
+.timeline-center{position:absolute;left:50%;top:0;bottom:0;width:2px;background:#e0e0e0;transform:translateX(-1px)}
+.timeline-events{display:flex;flex-direction:column;gap:0}
+.timeline-event{display:flex;margin-bottom:40px;opacity:0;animation:fadeInUp 0.6s ease-out forwards}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.timeline-event.hidden{display:none}
+.timeline-event:nth-child(odd) .event-content{margin-left:0;margin-right:calc(50% + 20px);text-align:right}
+.timeline-event:nth-child(even) .event-content{margin-left:calc(50% + 20px);margin-right:0;text-align:left}
+.timeline-event:nth-child(1){animation-delay:0.1s}
+.timeline-event:nth-child(2){animation-delay:0.2s}
+.timeline-event:nth-child(3){animation-delay:0.3s}
+.timeline-event:nth-child(4){animation-delay:0.4s}
+.timeline-event:nth-child(5){animation-delay:0.5s}
+.timeline-event:nth-child(6){animation-delay:0.6s}
+.timeline-event:nth-child(7){animation-delay:0.7s}
+.timeline-event:nth-child(8){animation-delay:0.8s}
+.timeline-event:nth-child(9){animation-delay:0.9s}
+.timeline-event:nth-child(10){animation-delay:1s}
+.timeline-event:nth-child(11){animation-delay:1.1s}
+.timeline-event:nth-child(12){animation-delay:1.2s}
+.timeline-event:nth-child(13){animation-delay:1.3s}
+.timeline-event:nth-child(14){animation-delay:1.4s}
+.timeline-event:nth-child(15){animation-delay:1.5s}
+.timeline-event:nth-child(16){animation-delay:1.6s}
+.timeline-event:nth-child(17){animation-delay:1.7s}
+.timeline-event:nth-child(18){animation-delay:1.8s}
+.event-dot{position:absolute;left:50%;top:20px;width:16px;height:16px;border-radius:50%;border:3px solid #fff;background:#6d9eeb;transform:translateX(-8px);z-index:10}
+.timeline-event.removal .event-dot{background:#e74c3c}
+.timeline-event.restoration .event-dot{background:#27ae60}
+.timeline-event.legal .event-dot{background:#f39c12}
+.timeline-event.info .event-dot{background:#6d9eeb}
+.event-content{position:relative;background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:24px;transition:all 0.3s;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+.event-content:hover{border-color:#d0d0d0;box-shadow:0 6px 16px rgba(0,0,0,0.1)}
+.event-date{font-size:12px;font-weight:700;color:#f39c12;text-transform:uppercase;letter-spacing:1px;font-family:-apple-system,sans-serif;margin-bottom:8px}
+.event-type{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:4px;margin-bottom:12px;font-family:-apple-system,sans-serif}
+.event-type.removal{background:#ffe6e6;color:#b91c1c}
+.event-type.restoration{background:#e6f5ed;color:#047857}
+.event-type.legal{background:#fff3e0;color:#b45309}
+.event-type.info{background:#eef4fc;color:#2563b4}
+.event-title{font-size:18px;font-weight:700;color:#1a1a1a;margin-bottom:12px;line-height:1.4}
+.event-description{font-size:16px;color:#555;line-height:1.7;margin-bottom:14px}
+.event-link{display:inline-block;color:#2563b4;text-decoration:none;font-size:14px;font-weight:600;font-family:-apple-system,sans-serif;border-bottom:1px solid rgba(37,99,180,0.3);transition:all 0.2s}
+.event-link:hover{border-color:#2563b4}
+@media(max-width:768px){
+.timeline-center{display:none}
+.timeline-event:nth-child(odd) .event-content,
+.timeline-event:nth-child(even) .event-content{margin-left:0;margin-right:0;text-align:left;margin-left:32px}
+.event-dot{position:static;width:12px;height:12px;border-width:2px;margin-bottom:20px;display:inline-block;transform:none;vertical-align:top;margin-right:16px}
+.timeline-event{margin-bottom:32px}
+.stats-grid{grid-template-columns:repeat(2,1fr)}
+.hero h1{font-size:32px}
+.hero .subtitle{font-size:16px}
+}
+@media(max-width:480px){
+.page-wrapper{padding:80px 20px 60px}
+.hero h1{font-size:26px}
+.stats-grid{grid-template-columns:1fr}
+.filter-bar{flex-direction:column}
+.filter-btn{width:100%}
+.event-content{margin-left:28px!important;margin-right:0!important}
+}
+.section-heading{font-size:12px;font-weight:700;color:#2563b4;text-transform:uppercase;letter-spacing:2px;margin:48px 0 28px;font-family:-apple-system,sans-serif;display:flex;align-items:center;gap:10px}
+.section-heading::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563b4;flex-shrink:0}
+.sources{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:32px;margin:56px 0}
+.sources h3{font-size:18px;font-weight:700;color:#1a1a1a;margin-bottom:20px}
+.sources ul{list-style:none;columns:2;column-gap:32px}
+.sources li{margin-bottom:12px;break-inside:avoid}
+.sources a{color:#2563b4;text-decoration:none;border-bottom:1px solid rgba(37,99,180,0.3);transition:all 0.2s;font-family:-apple-system,sans-serif;font-size:15px}
+.sources a:hover{border-color:#2563b4}
+@media(max-width:768px){
+.sources ul{columns:1}
+}
+.footer{text-align:center;margin-top:80px;padding-top:40px;border-top:1px solid #e0e0e0;font-size:13px;color:#999;font-family:-apple-system,sans-serif}
+.footer a{color:#2563b4;text-decoration:none;border-bottom:1px solid rgba(37,99,180,0.3)}
+.footer a:hover{border-color:#2563b4}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="topnav-brand" href="/" aria-label="Missing Park History home">Missing<span>Park</span>History</a>
+  <div class="topnav-links">
+    <a href="/" class="map-link" aria-label="Interactive map">&#x1F5FA; Map</a>
+    <a href="/about.html">About</a>
+    <a href="/data-methodology.html">Data</a>
+    <a href="/nps-censorship.html">Censorship</a>
+    <a href="/secretarial-order-3431.html">SO 3431</a>
+    <a href="/nps-censorship.html">Topics</a>
+    <a href="/timeline.html" class="active">Timeline</a>
+    <a href="/legal-analysis.html">Legal</a>
+    <a href="/presidents-house.html">President's House</a>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+<div class="hero">
+  <h1>Timeline: NPS Sign <span>Removals</span></h1>
+  <p class="subtitle">A chronological view of what's been removed, flagged, and restored across America's national parks</p>
+</div>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-num blue">874</div>
+    <div class="stat-label">Flagged Items</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num red">36</div>
+    <div class="stat-label">Confirmed Removed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num green">13</div>
+    <div class="stat-label">Restored</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num orange">5+</div>
+    <div class="stat-label">Legal Actions</div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all" data-umami-event="timeline-filter" data-umami-event-type="all">All Events</button>
+  <button class="filter-btn" data-filter="removal" data-umami-event="timeline-filter" data-umami-event-type="removal">Removals</button>
+  <button class="filter-btn" data-filter="restoration" data-umami-event="timeline-filter" data-umami-event-type="restoration">Restorations</button>
+  <button class="filter-btn" data-filter="legal" data-umami-event="timeline-filter" data-umami-event-type="legal">Legal Actions</button>
+</div>
+
+<h2 class="section-heading">Events</h2>
+
+<div class="timeline-container">
+  <div class="timeline-center"></div>
+  <div class="timeline-events">
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Mar 14, 2025</div>
+        <span class="event-type info">Legal</span>
+        <div class="event-title">Executive Order 14253 Signed</div>
+        <div class="event-description">"Restoring Truth and Sanity to American History" directs removal of interpretive materials deemed inappropriate.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">May 20, 2025</div>
+        <span class="event-type legal">Legal</span>
+        <div class="event-title">Secretary's Order 3431 Implemented</div>
+        <div class="event-description">Interior Secretary Burgum implements removal directive within NPS.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Jul 2025</div>
+        <span class="event-type info">Initiative</span>
+        <div class="event-title">Save Our Signs Project Launched</div>
+        <div class="event-description">UMN librarians begin crowdsourcing archive of NPS signs to preserve documentation.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Sep 2025</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Glacier NP: Climate Descriptions Removed</div>
+        <div class="event-description">Five climate signs and podcast episodes removed, including "Climate Change Affects National Parks," "Blame It on the Grain," and the <em>Headwaters</em> podcast. Brochures showing glaciers retreating and a video about glacier disappearance also pulled.</div>
+        <a href="/climate-censorship.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Sep 2025</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Muir Woods NM: History Sticky Notes Removed</div>
+        <div class="event-description">Annotations covering Indigenous history, women in conservation, and eugenics history removed from "Saving Muir Woods" display. A separate climate sign, "Are We Protecting Redwoods?", was also removed.</div>
+        <a href="/parks/muir-woods-nm.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Oct 2025</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Grand Canyon NP: Settler Exploitation Text Excised</div>
+        <div class="event-description">Passages about settlers exploiting land for mining while pushing tribes off removed from visitor center materials. References to cattle ranchers "carelessly overgrazing" and entrepreneurs profiting excessively also removed.</div>
+        <a href="/parks/grand-canyon-np.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Oct 2025</div>
+        <span class="event-type info">Archive</span>
+        <div class="event-title">SOS Archive Goes Public</div>
+        <div class="event-description">10,000+ photos of NPS signs released to public domain for preservation and research.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Nov 2025</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Acadia NP: 10 Climate Signs Removed</div>
+        <div class="event-description">Signs at Cadillac Mountain and Great Meadow, including "Is There Refuge From A Changing Climate?" removed from park displays.</div>
+        <a href="/parks/acadia-np.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Nov 2025</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Rock Creek Park: "What's in a Name?" Sign Removed</div>
+        <div class="event-description">Sign at Senator Newlands Memorial addressing the white supremacist legacy of the senator who created the park was removed during the government shutdown.</div>
+        <a href="/parks/rock-creek-park.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Jan 22, 2026</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">President's House: 30 Panels Removed Overnight</div>
+        <div class="event-description">All interpretive panels about slavery and America's founding removed from Independence NHP in Philadelphia.</div>
+        <a href="/presidents-house.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Jan 27, 2026</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Fort Sumter: Climate Exhibit Removed</div>
+        <div class="event-description">"Climate Change" exhibit at pier and "Bottle Filling Station" climate sign removed from this historic site.</div>
+        <a href="/parks/fort-sumter-and-fort-moultrie-nhp.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Jan 27, 2026</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Grand Teton NP: Doane Massacre Exhibit Removed</div>
+        <div class="event-description">Sign at Craig Thomas Discovery Center asking "How do we acknowledge the good and bad of a historic figure?" &mdash; about explorer Gustavus Doane's role in the Piegan Blackfeet massacre &mdash; confirmed removed.</div>
+        <a href="/indigenous-history-censorship.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Jan 27, 2026</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Gateway NRA: Jamaica Bay Exhibition Stripped</div>
+        <div class="event-description">Display at Jamaica Bay Wildlife Refuge removed for referencing slavery, Japanese internment camps, and conflicts with Native Americans.</div>
+        <a href="/slavery-history-censorship.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event removal" data-type="removal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Feb 4, 2026</div>
+        <span class="event-type removal">Removal</span>
+        <div class="event-title">Virgin Islands NP: Annaberg Plantation Signs Removed</div>
+        <div class="event-description">Four slavery-related signs at Annaberg Plantation removed, including the story of Carl Francis and the 1733 Akwamu slave rebellion. Signs had been installed in 2023 after extensive community engagement.</div>
+        <a href="/slavery-history-censorship.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event legal" data-type="legal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Feb 2026</div>
+        <span class="event-type legal">Legal</span>
+        <div class="event-title">Democracy Forward Files Lawsuit</div>
+        <div class="event-description">Coalition of 6 advocacy groups (NPCA, Association of National Park Rangers, Coalition to Protect America's National Parks, AASLH, Union of Concerned Scientists, SEGD) sues Department of Interior.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event legal" data-type="legal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Feb 16, 2026</div>
+        <span class="event-type legal">Legal</span>
+        <div class="event-title">Court Orders Restoration</div>
+        <div class="event-description">Judge Rufe orders President's House panels restored and bars further removal without court approval.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event restoration" data-type="restoration">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Feb 19, 2026</div>
+        <span class="event-type restoration">Restoration</span>
+        <div class="event-title">13 Panels Restored at President's House</div>
+        <div class="event-description">Partial restoration per court order; 17 panels remain missing pending further legal action.</div>
+        <a href="/presidents-house.html" class="event-link">View details →</a>
+      </div>
+    </div>
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Mar 2, 2026</div>
+        <span class="event-type info">Data Release</span>
+        <div class="event-title">Internal NPS Dataset Leaked</div>
+        <div class="event-description">Whistleblower publishes full list of 874+ flagged items. Washington Post first to report the story.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event info" data-type="info">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Mar 2, 2026</div>
+        <span class="event-type info">Launch</span>
+        <div class="event-title">MissingParkHistory.org Launches</div>
+        <div class="event-description">Interactive map tracking all flagged exhibits goes live, providing public access to removal and restoration data.</div>
+      </div>
+    </div>
+
+    <div class="timeline-event legal" data-type="legal">
+      <div class="event-dot"></div>
+      <div class="event-content">
+        <div class="event-date">Mar 19, 2026</div>
+        <span class="event-type legal">Legal</span>
+        <div class="event-title">NPCA Files for Preliminary Injunction</div>
+        <div class="event-description">Coalition seeks nationwide halt to all NPS exhibit removals pending resolution of legal challenges.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="sources">
+  <h3>Sources &amp; References</h3>
+  <ul>
+    <li><a href="https://www.washingtonpost.com/national/" target="_blank">The Washington Post</a></li>
+    <li><a href="https://www.outsideonline.com/" target="_blank">Outside Online</a></li>
+    <li><a href="https://democracyforward.org/" target="_blank">Democracy Forward</a></li>
+    <li><a href="https://www.npca.org/" target="_blank">National Parks Conservation Association</a></li>
+    <li><a href="https://www.nps.gov/" target="_blank">National Park Service Official</a></li>
+    <li><a href="https://www.nparks.org/" target="_blank">Association of National Park Rangers</a></li>
+    <li><a href="https://aaslh.org/" target="_blank">American Assoc. for State &amp; Local History</a></li>
+    <li><a href="https://www.ucsusa.org/" target="_blank">Union of Concerned Scientists</a></li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>Missing Park History is a collaborative project documenting the removal and restoration of interpretive materials in America's national parks. Last updated: March 2026.</p>
+  <p><a href="/">Map</a> • <a href="/about.html">About</a> • <a href="/data-methodology.html">Data</a> • <a href="/nps-censorship.html">Censorship</a> • <a href="/secretarial-order-3431.html">SO 3431</a> • <a href="/timeline.html">Timeline</a> • <a href="/legal-analysis.html">Legal</a> • <a href="/presidents-house.html">President's House</a></p>
+</div>
+
+</div>
+
+<script>
+// Timeline filter functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const timelineEvents = document.querySelectorAll('.timeline-event');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const filter = this.dataset.filter;
+
+    // Update active button
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+
+    // Filter events
+    timelineEvents.forEach(event => {
+      if (filter === 'all') {
+        event.classList.remove('hidden');
+      } else {
+        if (event.dataset.type === filter) {
+          event.classList.remove('hidden');
+        } else {
+          event.classList.add('hidden');
+        }
+      }
+    });
+  });
+});
+
+// Intersection Observer for fade-in animation on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+timelineEvents.forEach(event => {
+  observer.observe(event);
+});
+
+// Track filter interactions with Umami
+filterButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    if (typeof umami !== 'undefined') {
+      umami.track('timeline-filter', {
+        'filter_type': this.dataset.filter
+      });
+    }
+  });
+});
+</script>
+
+<!-- Umami Analytics -->
+<script async src="https://analytics.missingparkhistory.org/script.js" data-website-id="your-umami-id"></script>
+
+</body>
+</html>
