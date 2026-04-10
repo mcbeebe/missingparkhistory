@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPDATE: Sanitized Replacement Panels Revealed at President's House | Missing Park History</title>
+  <meta name="description" content="On April 8, 2026, the administration's proposed replacement panels for the President's House were revealed. Historians say they whitewash Washington's role as an enslaver.">
+  <style>
+    /* ===== SHARED RESET ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.8;
+      font-size: 16px;
+      color: rgb(45, 45, 45);
+    }
+
+    /* ===== STANDALONE (WHITE) MODE ===== */
+    body.standalone {
+      background: #fff;
+      color: rgb(45, 45, 45);
+    }
+
+    /* NAV — matches missingparkhistory.org About page */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 2rem;
+      font-size: 0.9rem;
+    }
+    .site-nav .logo {
+      font-family: Georgia, serif;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+      color: #222;
+    }
+    .site-nav .logo .red { color: #c0392b; }
+    .site-nav .nav-links { display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap; }
+    .site-nav .nav-links a {
+      font-family: Georgia, serif;
+      color: #555;
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+      font-size: 15px;
+    }
+    .site-nav .nav-links a:hover { background: #f0f0f0; color: #222; }
+    .site-nav .nav-links a.active {
+      font-weight: 600;
+      color: #222;
+      border-bottom: 2px solid #c0392b;
+      border-radius: 0;
+    }
+    .site-nav .nav-links a.map-btn {
+      background: #c0392b;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 18px;
+      padding: 0.3rem 1rem;
+    }
+    .site-nav .nav-links a.map-btn:hover { background: #a5311f; }
+
+    /* PAGE CONTAINER */
+    .page { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 3rem; }
+
+    /* HERO */
+    .page-hero { text-align: center; margin-bottom: 2.5rem; }
+    .page-hero h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: rgb(26, 26, 26);
+      margin-bottom: 0.8rem;
+    }
+    .page-hero h1 .red { color: #c0392b; }
+    .page-hero .subtitle {
+      font-family: -apple-system, sans-serif;
+      color: rgb(119, 119, 119);
+      font-size: 17px;
+      max-width: 640px;
+      margin: 0 auto 1rem;
+      line-height: 1.6;
+    }
+    .page-hero .dateline { font-family: -apple-system, sans-serif; color: #999; font-size: 14px; }
+
+    /* STAT CARDS — matches About page green numbers with bordered boxes */
+    .stat-row {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .stat-card {
+      border: 1.5px solid #ddd;
+      border-radius: 10px;
+      padding: 0.9rem 1.3rem;
+      text-align: center;
+      min-width: 140px;
+      flex: 1;
+    }
+    .stat-card .num { font-size: 1.7rem; font-weight: 800; }
+    .stat-card .num.red { color: #c0392b; }
+    .stat-card .num.amber { color: #e67e22; }
+    .stat-card .num.green { color: #1a8a6e; }
+    .stat-card .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #888;
+      margin-top: 0.15rem;
+      font-weight: 600;
+    }
+
+    /* SECTION HEADERS — dot + uppercase, matches About page exactly */
+    .section-header {
+      font-family: -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: rgb(37, 99, 180);
+      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+    }
+    .section-header::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: rgb(37, 99, 180);
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* BODY TEXT — matches About page Georgia 18px */
+    .page p {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 34.2px;
+      color: rgb(45, 45, 45);
+      margin-bottom: 1rem;
+    }
+    .page a { color: #2a6fc9; text-decoration: none; }
+    .page a:hover { text-decoration: underline; }
+
+    /* CALLOUT — peach background with left border, matches About page */
+    .callout {
+      background: #fdf5ee;
+      border-left: 4px solid #c0392b;
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+      color: #5a3e2b;
+    }
+    .callout strong { color: #8b2500; }
+
+    /* QUOTE BLOCK */
+    .quote-block {
+      background: #f8f4f0;
+      border-left: 4px solid #d4a76a;
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.2rem 0;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #4a3728;
+    }
+    .quote-block cite {
+      display: block;
+      font-style: normal;
+      color: #888;
+      font-size: 0.82rem;
+      margin-top: 0.4rem;
+    }
+
+    /* CITATION LINKS */
+    a.cite-link { text-decoration: none; color: rgb(37, 99, 180); }
+    a.cite-link:hover { text-decoration: underline; }
+    /* INLINE CITATIONS */
+    sup.cite {
+      font-size: 0.7em;
+      color: rgb(37, 99, 180);
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* COMPARISON TABLE */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+    .compare-table th {
+      text-align: left;
+      padding: 0.55rem 0.7rem;
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #777;
+      font-weight: 700;
+    }
+    .compare-table td {
+      padding: 0.65rem 0.7rem;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    /* TIMELINE */
+    .timeline { list-style: none; padding-left: 1.2rem; border-left: 2px solid #ddd; margin: 1rem 0; }
+    .timeline li { position: relative; padding: 0 0 1.1rem 1.6rem; }
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: #c0392b;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .timeline .date { font-weight: 700; font-size: 0.82rem; color: #c0392b; display: block; }
+    .timeline .event { font-size: 0.92rem; color: #444; }
+
+    /* SOURCES */
+    .sources-list { list-style: none; padding: 0; }
+    .sources-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.88rem;
+      color: #444;
+    }
+    .sources-list li:last-child { border-bottom: none; }
+
+    /* CTA SECTION — matches About page footer CTA */
+    .cta-section {
+      background: #f8f4f0;
+      border: 1px solid #e0d6cc;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta-section h3 { font-size: 1.25rem; font-weight: 700; color: #222; margin-bottom: 0.6rem; }
+    .cta-section p { color: #666; margin-bottom: 1.2rem; }
+    .cta-buttons { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.3rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+    .btn-primary { background: #c0392b; color: #fff !important; }
+    .btn-secondary { background: #c0392b; color: #fff !important; border: none; }
+
+    /* PHOTO COMPARISON */
+    .photo-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .photo-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+    }
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+      transition: opacity 0.15s;
+    }
+    .photo-card img:hover { opacity: 0.9; }
+    .photo-card .photo-label {
+      font-family: -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.6rem 0.8rem;
+      text-align: center;
+    }
+    .photo-card .photo-label.before { background: #c0392b; color: #fff; }
+    .photo-card .photo-label.proposed { background: #e67e22; color: #fff; }
+    .photo-card .photo-caption {
+      font-family: -apple-system, sans-serif;
+      font-size: 13px;
+      color: #666;
+      padding: 0.5rem 0.8rem 0.7rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 640px) {
+      .photo-compare { grid-template-columns: 1fr; }
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 5000;
+      background: rgba(0, 0, 0, 0.88);
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      cursor: zoom-out;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 92vw;
+      max-height: 90vh;
+      border-radius: 6px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 1.3rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.25); }
+    .lightbox-caption {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.7);
+      color: #ddd;
+      font-family: -apple-system, sans-serif;
+      font-size: 13px;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      max-width: 80vw;
+      text-align: center;
+    }
+
+    /* ENDNOTES */
+    .endnotes {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.8rem;
+      color: #666;
+      line-height: 1.65;
+    }
+    .endnotes h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #999; margin-bottom: 0.8rem; }
+    .endnotes ol { padding-left: 1.5rem; }
+    .endnotes li { margin-bottom: 0.3rem; }
+    .endnotes a { color: #2a6fc9; }
+
+    /* FOOTER */
+    .site-footer {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.78rem;
+      border-top: 1px solid #eee;
+    }
+    .site-footer a { color: #2a6fc9; text-decoration: none; }
+
+    /* ===== POPUP OVERLAY MODE ===== */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(3px);
+      overflow-y: auto;
+      padding: 2rem;
+    }
+    .popup-overlay.active { display: flex; justify-content: center; align-items: flex-start; }
+
+    .popup-window {
+      background: #14171f;
+      color: #e0e0e5;
+      border-radius: 12px;
+      max-width: 780px;
+      width: 100%;
+      margin: 1rem auto;
+      padding: 2rem 2.2rem 2.5rem;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      border: 1px solid #2a2e3a;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.2rem;
+      background: none;
+      border: 1px solid #444;
+      color: #aaa;
+      font-size: 1.1rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, color 0.15s;
+    }
+    .popup-close:hover { background: #333; color: #fff; }
+
+    /* Popup internal styles */
+    .popup-window .popup-badge {
+      display: inline-block;
+      background: rgba(192, 57, 43, 0.15);
+      color: #e74c3c;
+      border: 1px solid rgba(192, 57, 43, 0.4);
+      border-radius: 4px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.8rem;
+    }
+    .popup-window h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #f0f0f3;
+      margin-bottom: 0.8rem;
+    }
+    .popup-window .popup-subtitle {
+      color: #9a9ab0;
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .popup-window .popup-dateline {
+      color: #666;
+      font-size: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Popup stat row */
+    .popup-stats {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .popup-stat {
+      background: #1c2030;
+      border: 1px solid #2a2e3a;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      text-align: center;
+      flex: 1;
+      min-width: 120px;
+    }
+    .popup-stat .pnum { font-size: 1.4rem; font-weight: 800; }
+    .popup-stat .pnum.pred { color: #e74c3c; }
+    .popup-stat .pnum.pamber { color: #f39c12; }
+    .popup-stat .pnum.pgreen { color: #2ecc71; }
+    .popup-stat .plabel { font-size: 0.68rem; color: #777; text-transform: uppercase; letter-spacing: 0.03em; margin-top: 0.1rem; }
+
+    /* Popup sections */
+    .popup-section { margin-bottom: 1.3rem; }
+    .popup-section h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ccc;
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #2a2e3a;
+    }
+    .popup-section p { font-size: 0.9rem; color: #b0b0c0; margin-bottom: 0.6rem; line-height: 1.65; }
+
+    .popup-highlight {
+      background: rgba(192, 57, 43, 0.1);
+      border-left: 3px solid #e74c3c;
+      padding: 0.7rem 0.9rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.88rem;
+      color: #d0d0d8;
+      margin: 0.8rem 0;
+    }
+
+    .popup-cta {
+      display: flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #2a2e3a;
+    }
+    .popup-btn {
+      padding: 0.55rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .popup-btn-primary { background: #c0392b; color: #fff; border: none; }
+    .popup-btn-secondary { background: transparent; color: #8ab4f8; border: 1px solid #3a4060; }
+    .popup-btn:hover { opacity: 0.9; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .site-nav { flex-direction: column; gap: 0.5rem; }
+      .site-nav .nav-links { justify-content: center; }
+      .page-hero h1 { font-size: 1.5rem; }
+      .stat-row { flex-direction: column; }
+      .popup-window { padding: 1.2rem; margin: 0.5rem; }
+      .popup-stats { flex-direction: column; }
+      .compare-table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body class="standalone">
+
+<!-- ============================================================== -->
+<!-- POPUP OVERLAY (dark, appears over map on first visit)          -->
+<!-- ============================================================== -->
+<div class="popup-overlay active" id="popupOverlay">
+  <!-- Map background is the actual site behind this overlay -->
+  <div class="popup-window">
+    <button class="popup-close" id="popupClose" title="Close and view full page">&times;</button>
+
+    <div class="popup-badge">Important Update: April 9, 2026</div>
+    <h2>The Administration Just Revealed Its Replacement Panels for the President's House</h2>
+    <p class="popup-subtitle">
+      On April 7, the NPS quietly uploaded 11 proposed replacement panels to the official President's House web page.
+      They reframe slavery at the nation's first executive residence in language that contradicts the scholarly record.
+    </p>
+    <p class="popup-dateline">Sources: Philadelphia Inquirer, Seattle Times &middot; April 8, 2026</p>
+
+    <div class="popup-stats">
+      <div class="popup-stat"><div class="pnum pred">15</div><div class="plabel">Panels Still Missing</div></div>
+      <div class="popup-stat"><div class="pnum pamber">11</div><div class="plabel">Replacement Panels Posted</div></div>
+      <div class="popup-stat"><div class="pnum pgreen">670</div><div class="plabel">People Washington Enslaved</div></div>
+      <div class="popup-stat"><div class="pnum pred">0</div><div class="plabel">Historians Consulted</div></div>
+    </div>
+
+    <div class="popup-section">
+      <h3>What Changed</h3>
+      <p>The original panels, titled "The Dirty Business of Slavery" and "Life Under Slavery," have been eliminated entirely. In their place, the proposed text describes enslaved people at the President's House as having experienced "a greater modicum of autonomy" and notes that Washington bought them theater tickets.</p>
+      <p>The "History Lost &amp; Found" panel keeps its title but removes all references to slavery. Standalone panels on Ona Judge and Hercules have been collapsed into brief list entries.</p>
+    </div>
+
+    <div class="popup-section">
+      <h3>Why It Matters</h3>
+      <p>These panels were posted without historian input, without notifying the City of Philadelphia, and in apparent violation of the federal injunction that bars changes "without mutual agreement of the City." The scholarly consensus, documented by Lepore, Thompson, Wiencek, Dunbar, Morgan, and the NPS's own archives, directly contradicts the proposed framing.</p>
+      <div class="popup-highlight">
+        <strong>The 250th anniversary is this summer.</strong> If installed, millions of visitors will encounter a version of history that respected historians have called misleading. The nine enslaved people who lived in this house deserve an honest account.
+      </div>
+    </div>
+
+    <div class="popup-cta">
+      <a href="#" class="popup-btn popup-btn-primary" onclick="document.getElementById('popupOverlay').classList.remove('active'); return false;">Read the Full Analysis</a>
+      <a href="#" class="popup-btn popup-btn-secondary" onclick="openTakeAction(); return false;">Take Action</a>
+      <a href="https://ko-fi.com/missingparkhistory" target="_blank" class="popup-btn popup-btn-secondary">Support This Project</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- STANDALONE PAGE (white, About-page format)                     -->
+<!-- ============================================================== -->
+
+<nav class="site-nav">
+  <a href="https://missingparkhistory.org" class="logo"><span class="red">Missing</span> Park History</a>
+  <div class="nav-links">
+    <a href="https://missingparkhistory.org" class="map-btn">Map</a>
+    <a href="https://missingparkhistory.org/about">About</a>
+    <a href="https://missingparkhistory.org/data">Data</a>
+    <a href="https://missingparkhistory.org/censorship">Censorship</a>
+    <a href="https://missingparkhistory.org/so-3431">SO 3431</a>
+    <a href="https://missingparkhistory.org/topics">Topics</a>
+    <a href="https://missingparkhistory.org/timeline">Timeline</a>
+    <a href="https://missingparkhistory.org/legal">Legal</a>
+    <a href="https://missingparkhistory.org/presidents-house">President's House</a>
+    <a href="#" class="active" onclick="return false;">Update</a>
+    <a href="https://missingparkhistory.org/news">News &amp; Press</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <h1>The Administration's <span class="red">Sanitized</span> Replacement Panels, Revealed</h1>
+    <p class="subtitle">
+      On April 7, 2026, the NPS uploaded 11 proposed replacement panels to the official President's House web page.
+      They reframe Washington's relationship with slavery in language that contradicts the documented scholarly consensus.
+    </p>
+    <p class="dateline">Updated April 9, 2026 &middot; Compiled from the Philadelphia Inquirer, Seattle Times, NPS, and the historical record</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="stat-row">
+    <div class="stat-card"><div class="num red">15</div><div class="label">Panels Still Missing</div></div>
+    <div class="stat-card"><div class="num amber">11</div><div class="label">Replacement Panels Posted</div></div>
+    <div class="stat-card"><div class="num green">670</div><div class="label">People Washington Enslaved</div></div>
+    <div class="stat-card"><div class="num red">0</div><div class="label">Historians Consulted</div></div>
+  </div>
+
+  <!-- SECTION: WHAT HAPPENED -->
+  <div class="section-header">What Happened</div>
+
+  <p>On April 7, 2026, the National Park Service uploaded digital renderings of 11 replacement panels to the official President's House web page.<a href="#fn1" class="cite-link"><sup class="cite">[1]</sup></a> These panels are intended to replace the original 30-panel exhibition, 15 of which remain missing after being removed overnight on January 22, 2026.<a href="#fn2" class="cite-link"><sup class="cite">[2]</sup></a></p>
+
+  <p>The new panels were designed and posted without the input of historians specializing in slavery, without consultation with the City of Philadelphia (as required by a federal injunction), and without any public comment period. City Solicitor Renee Garcia confirmed the federal government did not approach the city about the panels.<a href="#fn1" class="cite-link"><sup class="cite">[1]</sup></a></p>
+
+  <div class="callout">
+    <strong>This appears to defy a federal court order.</strong> Judge Cynthia Rufe's injunction prohibits the administration from "making any and all changes to the President's House Site, including the installation of replacement materials, without mutual agreement of the City of Philadelphia."<a href="#fn3" class="cite-link"><sup class="cite">[3]</sup></a> The Third Circuit has not overturned this prohibition.
+  </div>
+
+  <!-- SECTION: WHAT THE PANELS ERASE AND DISTORT -->
+  <div class="section-header">What the Panels Erase and Distort</div>
+
+  <p>The replacement panels present Washington as a conflicted figure caught between ideals and circumstance. Historians who have spent decades studying Washington and slavery say this framing omits critical, well-documented facts and redirects attention away from the experience of enslaved people. Below are the most consequential changes.<a href="#fn4" class="cite-link"><sup class="cite">[4]</sup></a></p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th style="width:50%">Original Panels (Removed)</th>
+        <th style="width:50%">Proposed Replacement Panels</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>"The Dirty Business of Slavery"</strong> Documented the economics of enslavement at the President's House: the buying and selling of human beings and the labor that built Washington's wealth.</td>
+        <td><strong>Eliminated entirely.</strong> No replacement addresses Washington's direct financial dependence on enslaved labor. Morgan and Nicholls estimate Washington owned or managed ~670 people over his lifetime.<a href="#fn5" class="cite-link"><sup class="cite">[5]</sup></a></td>
+      </tr>
+      <tr>
+        <td><strong>"Life Under Slavery"</strong> Detailed the lived conditions of the nine enslaved people: rations, housing, punishment, and daily bondage in the President's House.</td>
+        <td><strong>Eliminated entirely.</strong> The proposed panel instead states enslaved people "experienced a greater modicum of autonomy" and notes Washington bought them theater tickets.<a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></td>
+      </tr>
+      <tr>
+        <td><strong>"History Lost &amp; Found"</strong> Described the archaeological significance of the site, including how slavery there "undermined the meaning of freedom and mocked the nation's pretense to be a beacon of liberty."<a href="#fn7" class="cite-link"><sup class="cite">[7]</sup></a></td>
+        <td><strong>Title kept, content gutted.</strong> Slavery goes unmentioned. The replacement focuses on how archaeology works and the discovery of Washington's letters. The basement where enslaved people carried out daily labor is not acknowledged.<a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></td>
+      </tr>
+      <tr>
+        <td><strong>"Oney Escapes!"</strong> Told the story of Ona Judge, Martha Washington's personal maid, who fled to freedom in 1796 because of her "thirst for compleat freedom."<a href="#fn8" class="cite-link"><sup class="cite">[8]</sup></a></td>
+        <td><strong>Reduced to a brief mention</strong> within a broader "Enslaved Members" list. The courage, drama, and historical significance of her escape are stripped away.</td>
+      </tr>
+      <tr>
+        <td><strong>"Chef Hercules"</strong> Celebrated Hercules' extraordinary culinary talent and his decision to escape to freedom, one of the most powerful stories in the original exhibition.</td>
+        <td><strong>Collapsed to a single line.</strong> Hercules is described as a chef who "ran away" in 1797. His story is no longer a standalone panel.<a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>The framing shift is clear.</strong> The original exhibition centered the experiences of enslaved people at the President's House. The replacement panels center Washington's reputation. Entire categories of content, including the economics of slavery, the conditions of bondage, and the NPS's own long struggle to tell this story honestly, have been deleted.
+  </div>
+
+  <!-- PHOTO COMPARISON: Before vs. Proposed -->
+  <div class="section-header">Before and Proposed: Side by Side</div>
+
+  <p>Below are examples of what the administration proposes to replace. On the left, original panels. On the right, the proposed replacements now posted on the NPS website. Click any image to enlarge.</p>
+
+  <div class="photo-compare">
+    <div class="photo-card">
+      <div class="photo-label before">Original Panel (Removed Jan 2026)</div>
+      <img src="https://missingparkhistory.org/images/sos-before/ph-life-under-slavery.png" alt="Original panel: Life Under Slavery, documenting the daily conditions of enslaved people at the President's House" loading="lazy">
+      <div class="photo-caption">"Life Under Slavery" documented the daily conditions of the nine enslaved people at the President's House: their rations, housing, labor, and the reality of bondage. This panel has been eliminated entirely. Photo: Save Our Signs.</div>
+    </div>
+    <div class="photo-card">
+      <div class="photo-label proposed">Proposed Replacement (Posted Apr 2026)</div>
+      <img src="https://www.nps.gov/inde/planyourvisit/images/9-presidents-washington-and-adams.jpg" alt="Proposed NPS panel: Presidents Washington and Adams on Slavery, reframing Washington as caught between doubts and duties" loading="lazy">
+      <div class="photo-caption">"Presidents Washington and Adams on Slavery" reframes Washington as "caught between his private doubts" and describes enslaved people as having "a greater modicum of autonomy." Source: NPS.</div>
+    </div>
+  </div>
+
+  <div class="photo-compare">
+    <div class="photo-card">
+      <div class="photo-label before">Original Panel (Removed Jan 2026)</div>
+      <img src="https://missingparkhistory.org/images/sos-before/ph-oney-escapes.png" alt="Original panel: Oney Escapes!, telling the story of Ona Judge's flight to freedom in 1796" loading="lazy">
+      <div class="photo-caption">"Oney Escapes!" was a standalone panel celebrating Ona Judge's courageous flight from Martha Washington in 1796. It has been collapsed to a brief mention in a list. Photo: Save Our Signs.</div>
+    </div>
+    <div class="photo-card">
+      <div class="photo-label proposed">Proposed Replacement (Posted Apr 2026)</div>
+      <img src="https://www.nps.gov/inde/planyourvisit/images/5-archeology.jpg" alt="Proposed NPS panel: History Lost and Found: Archeology, replacing slavery content with a general explanation of how archaeology works" loading="lazy">
+      <div class="photo-caption">"History Lost &amp; Found: Archeology" replaces a panel that described how slavery at the President's House "undermined the meaning of freedom." The new version focuses on how archaeology works. Slavery is not mentioned. Source: NPS.</div>
+    </div>
+  </div>
+
+  <div class="photo-compare">
+    <div class="photo-card">
+      <div class="photo-label before">Original Panel (Removed Jan 2026)</div>
+      <img src="https://missingparkhistory.org/images/sos-before/ph-chef-hercules.png" alt="Original panel: Chef Hercules, celebrating his culinary talent and escape to freedom" loading="lazy">
+      <div class="photo-caption">"Chef Hercules" was a standalone panel celebrating Hercules' extraordinary talent and his escape from enslavement. He has been reduced to a single line in a list. Photo: Save Our Signs.</div>
+    </div>
+    <div class="photo-card">
+      <div class="photo-label proposed">Proposed Replacement (Posted Apr 2026)</div>
+      <img src="https://www.nps.gov/inde/planyourvisit/images/4-executive-mansion.jpg" alt="Proposed NPS panel: The Executive Mansion, focusing on presidential history with minimal mention of enslaved people" loading="lazy">
+      <div class="photo-caption">"The Executive Mansion" discusses the house's presidential history. Enslaved people are mentioned briefly as part of the "household." The conditions they endured and the resistance they mounted are absent. Source: NPS.</div>
+    </div>
+  </div>
+
+  <div class="photo-compare">
+    <div class="photo-card">
+      <div class="photo-label before">Original Panel (Removed Jan 2026)</div>
+      <img src="https://missingparkhistory.org/images/sos-before/presidents-house-mount-vernon.png" alt="Original panel: Mount Vernon to Philadelphia, documenting the transport of enslaved people to serve the president" loading="lazy">
+      <div class="photo-caption">"Mount Vernon to Philadelphia" documented how Washington transported nine enslaved people to serve him at the President's House and how he rotated them to evade Pennsylvania's abolition law. This panel remains missing. Photo: Save Our Signs.</div>
+    </div>
+    <div class="photo-card">
+      <div class="photo-label proposed">Proposed Replacement (Posted Apr 2026)</div>
+      <img src="https://www.nps.gov/inde/planyourvisit/images/1-celebrating-independence_Page_1.jpg" alt="Proposed NPS panel: Celebrating Independence Throughout the Years, a new panel focusing on patriotic celebrations" loading="lazy">
+      <div class="photo-caption">"Celebrating Independence Throughout the Years" is an entirely new panel with no equivalent in the original exhibition. It documents patriotic celebrations from 1876, 1926, and 1976. It does not address slavery. Source: NPS.</div>
+    </div>
+  </div>
+
+  <!-- SECTION: THE SANITIZED LANGUAGE -->
+  <div class="section-header">The Sanitized Language, Decoded</div>
+
+  <p>The proposed panels introduce carefully softened language that scholars say is designed to generate sympathy for Washington and minimize the realities of slavery. Below are direct excerpts from the NPS's proposed text, alongside what the documented historical record shows.</p>
+
+  <div class="quote-block">
+    "Caught between his private doubts about slavery and his public responsibilities as president, George Washington navigated a nation deeply divided over slavery."
+    <cite>Proposed NPS panel, "Presidents Washington and Adams on Slavery" <a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></cite>
+  </div>
+
+  <p><strong>What the record shows:</strong> Washington did not simply "navigate" the slavery question. He actively circumvented Pennsylvania's gradual abolition law by rotating enslaved people out of the state before the six-month residency threshold, deliberately evading the law to maintain ownership of human beings.<a href="#fn9" class="cite-link"><sup class="cite">[9]</sup></a> He pursued Ona Judge for three years after her escape.<a href="#fn8" class="cite-link"><sup class="cite">[8]</sup></a> In 1766, he sold an enslaved foreman named Tom to a sugar plantation in Saint Kitts, effectively a death sentence given the brutal conditions of Caribbean sugar production.<a href="#fn10" class="cite-link"><sup class="cite">[10]</sup></a> The NPS's own archived documents acknowledge that Washington "knowingly acted to prevent these people of color from ever realizing or achieving the blessings of liberty."<a href="#fn7" class="cite-link"><sup class="cite">[7]</sup></a></p>
+
+  <div class="quote-block">
+    "Slaves living in the President's House experienced a greater modicum of autonomy than elsewhere in the South such as to explore the city and sometimes even attend the theater, with Washington buying the tickets."
+    <cite>Proposed NPS panel <a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></cite>
+  </div>
+
+  <p><strong>What the record shows:</strong> The argument that enslaved people at the President's House had it "better" than others is a classic minimization tactic that historians have consistently rejected. Erica Armstrong Dunbar's research on Ona Judge demonstrates that even the most "privileged" household servants fled at the first opportunity. Judge herself said she escaped because of her "thirst for compleat freedom."<a href="#fn8" class="cite-link"><sup class="cite">[8]</sup></a> Hercules, the celebrated chef described in the new panels as merely having "ran away," escaped from the most elite position an enslaved person could hold in Washington's household.<a href="#fn11" class="cite-link"><sup class="cite">[11]</sup></a> No theater ticket compensates for the absence of liberty.</p>
+
+  <div class="quote-block">
+    "Among all of the Founders, Washington carried out the largest manumission of enslaved people."
+    <cite>Proposed NPS panel <a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a></cite>
+  </div>
+
+  <p><strong>What the record shows:</strong> Washington freed 123 people he legally owned. The 153 Custis dower enslaved people were divided among Martha's four grandchildren.<a href="#fn12" class="cite-link"><sup class="cite">[12]</sup></a> Many families had married across these ownership lines, so emancipation brought devastating separations alongside long-awaited freedom. Historian Marie Jenkins Schwartz has documented that none of Martha's descendants freed more than a handful of the Custis enslaved workers during their lifetimes.<a href="#fn13" class="cite-link"><sup class="cite">[13]</sup></a> The will was a genuine act, but presenting it as the whole story omits the consequences for those it could not reach.</p>
+
+  <!-- SECTION: WHAT THE HISTORICAL RECORD SHOWS -->
+  <div class="section-header">What the Scholarly Consensus Actually Documents</div>
+
+  <p>The following synthesis draws on the work of the most respected historians in this field: Jill Lepore (Harvard), Mary V. Thompson (Mount Vernon Research Historian), Henry Wiencek, Philip D. Morgan (Johns Hopkins), Erica Armstrong Dunbar (Rutgers, then Duke), Edward Lawler Jr., Gary Nash (UCLA), Edmund S. Morgan (Yale), the research teams at Mount Vernon, and the NPS's own published scholarship. The proposed panels contradict this consensus at multiple points.</p>
+
+  <p><strong>Scale of enslavement.</strong> Washington inherited his first ten enslaved people at age eleven, when his father Augustine died in 1743.<a href="#fn10" class="cite-link"><sup class="cite">[10]</sup></a> His marriage to Martha Dandridge Custis in 1759 brought approximately 84 more under his control as "dower" property.<a href="#fn14" class="cite-link"><sup class="cite">[14]</sup></a> Over his lifetime, historians Philip D. Morgan and Michael L. Nicholls estimate he owned or managed approximately 670 people.<a href="#fn5" class="cite-link"><sup class="cite">[5]</sup></a> At his death on December 14, 1799, 317 enslaved people lived at Mount Vernon: 124 owned by Washington, 153 belonging to the Custis dower estate, and 40 rented from neighboring planters.<a href="#fn12" class="cite-link"><sup class="cite">[12]</sup></a> Enslaved people made up roughly 90 percent of the estate's population.<a href="#fn15" class="cite-link"><sup class="cite">[15]</sup></a></p>
+
+  <p><strong>Conditions were harsh.</strong> Standard rations consisted of cornmeal and salted fish.<a href="#fn16" class="cite-link"><sup class="cite">[16]</sup></a> Housing on outlying farms was a rough one-room log cabin with mud-daubed walls and a wooden chimney; a visitor in 1797 described the quarters as deplorable.<a href="#fn17" class="cite-link"><sup class="cite">[17]</sup></a> Mary V. Thompson, Mount Vernon's own research historian, found that Washington was "remarkably strict and distrustful of virtually everyone who worked for him."<a href="#fn18" class="cite-link"><sup class="cite">[18]</sup></a> Of 96 married enslaved people at Mount Vernon in 1799, only 36 lived together. Thirty-eight had spouses on separate farms within the estate, and 22 had spouses on entirely different plantations. Wiencek concluded that Washington "institutionalized an indifference to the stability of enslaved families."<a href="#fn19" class="cite-link"><sup class="cite">[19]</sup></a></p>
+
+  <p><strong>Punishment was real.</strong> Washington approved of physical punishment when he judged other methods had failed.<a href="#fn12" class="cite-link"><sup class="cite">[12]</sup></a> In 1793, when an enslaved seamstress named Charlotte refused to work, farm manager Anthony Whitting whipped her with a hickory switch, a punishment Washington did not condemn.<a href="#fn12" class="cite-link"><sup class="cite">[12]</sup></a> An English neighbor, Richard Parkinson, reported that it was "the sense of all his neighbors that he treated his slaves with more severity than any other man." A Polish visitor, Count Julian Niemcewicz, who spent twelve days at Mount Vernon, said Washington treated them "far more humanely than do his fellow citizens of Virginia."<a href="#fn14" class="cite-link"><sup class="cite">[14]</sup></a><a href="#fn15" class="cite-link"><sup class="cite">[15]</sup></a> These divergent accounts illustrate that conditions varied, but they do not support the benign picture presented in the proposed panels.</p>
+
+  <p><strong>Resistance was constant.</strong> At least 47 enslaved people fled Mount Vernon during Washington's lifetime, according to Jill Lepore's review of Washington's correspondence.<a href="#fn20" class="cite-link"><sup class="cite">[20]</sup></a> Among the most significant was Harry Washington, born in Gambia around 1740, purchased by George Washington and sent to drain the Great Dismal Swamp. Harry escaped in 1775 to join Lord Dunmore's British forces, was resettled in Nova Scotia, and eventually helped lead a rebellion in Sierra Leone. Lepore uses Harry's story as a structural counterpoint throughout <em>These Truths</em>, elevating him to the status of a "Founder, too."<a href="#fn20" class="cite-link"><sup class="cite">[20]</sup></a><a href="#fn21" class="cite-link"><sup class="cite">[21]</sup></a> Lepore argues that fear of British abolitionism, catalyzed by Dunmore's 1775 proclamation offering freedom to enslaved people who joined the British, was itself a driving force behind American independence.<a href="#fn20" class="cite-link"><sup class="cite">[20]</sup></a><a href="#fn22" class="cite-link"><sup class="cite">[22]</sup></a></p>
+
+  <p><strong>The Pennsylvania loophole is among the most damning episodes.</strong> While serving as president in Philadelphia, Washington was subject to Pennsylvania's gradual abolition law, which would have automatically freed any enslaved person residing in the state for six continuous months. Rather than accept this, Washington systematically rotated his enslaved household servants back to Virginia before the deadline.<a href="#fn9" class="cite-link"><sup class="cite">[9]</sup></a><a href="#fn14" class="cite-link"><sup class="cite">[14]</sup></a> The NPS's own archived analysis called the President's House "the living incarnation of the essential and inescapable contradiction of American history: that ours is a nation established around the keystone principles of individual freedom and equality for all, but one that is built on a foundation of slavery."<a href="#fn7" class="cite-link"><sup class="cite">[7]</sup></a></p>
+
+  <p><strong>The will was significant but incomplete.</strong> Washington ordered the 123 enslaved people he owned outright to be freed upon Martha's death, making him the only slaveholding Founding Father from the South to free all of his own enslaved people.<a href="#fn12" class="cite-link"><sup class="cite">[12]</sup></a><a href="#fn15" class="cite-link"><sup class="cite">[15]</sup></a> He also stipulated that elderly or infirm formerly enslaved people be supported by his estate, and that children without parents be educated in reading, writing, and a useful trade.<a href="#fn14" class="cite-link"><sup class="cite">[14]</sup></a> But he could not legally free the 153 Custis dower enslaved people, and many families were split apart when freedom came for some but not others. As historian Henry Wiencek wrote, Washington's contradictory attitudes remain "one of the mysteries of his life."<a href="#fn19" class="cite-link"><sup class="cite">[19]</sup></a></p>
+
+  <!-- SECTION: CONTEXT -->
+  <div class="section-header">How This Site Came to Exist</div>
+
+  <p>The President's House Site exists because of a decade-long, Black-led advocacy campaign that forced the National Park Service to confront slavery at Independence Mall. Historian Edward Lawler Jr.'s 2002 article about the President's House ignited a public controversy that lasted over eight years, as Black activists, historians, and eventually NPS leadership fought to acknowledge slavery at a site previously presented only as a story of presidential power.<a href="#fn23" class="cite-link"><sup class="cite">[23]</sup></a> The project cost $10.5 million. Archaeological excavations in 2007 revealed physical remains of the building just five feet from the entrance to the Liberty Bell Center, a visceral juxtaposition of America's symbol of freedom with the infrastructure of enslavement.<a href="#fn7" class="cite-link"><sup class="cite">[7]</sup></a><a href="#fn23" class="cite-link"><sup class="cite">[23]</sup></a></p>
+
+  <p>The original panels were not opinion. They were the product of archaeological research, archival scholarship, and professional historical practice, vetted by the NPS's own historians. They were removed under an executive order directing the Park Service to flag content that "inappropriately disparages Americans past or living."<a href="#fn24" class="cite-link"><sup class="cite">[24]</sup></a> That language is now being used to replace documented history with sympathetic framing.</p>
+
+  <!-- SECTION: TIMELINE -->
+  <div class="section-header">Timeline of Events</div>
+
+  <ul class="timeline">
+    <li>
+      <span class="date">Jan 22, 2026</span>
+      <span class="event">All 30 original panels removed overnight from the President's House Site.<a href="#fn2" class="cite-link"><sup class="cite">[2]</sup></a></span>
+    </li>
+    <li>
+      <span class="date">Feb 16, 2026</span>
+      <span class="event">Judge Cynthia Rufe orders restoration of panels, citing Orwell's <em>1984</em> in a blistering opinion.<a href="#fn3" class="cite-link"><sup class="cite">[3]</sup></a></span>
+    </li>
+    <li>
+      <span class="date">Feb 19, 2026</span>
+      <span class="event">14 panels partially restored. 15 remain missing. Third Circuit issues administrative stay on further restoration.<a href="#fn2" class="cite-link"><sup class="cite">[2]</sup></a></span>
+    </li>
+    <li>
+      <span class="date">Mar 19, 2026</span>
+      <span class="event">NPCA coalition files for preliminary injunction to halt NPS censorship system-wide.<a href="#fn2" class="cite-link"><sup class="cite">[2]</sup></a></span>
+    </li>
+    <li>
+      <span class="date">Apr 7, 2026</span>
+      <span class="event">NPS quietly uploads 11 sanitized replacement panel renderings to the President's House web page. No historian consultation. No city notification.<a href="#fn1" class="cite-link"><sup class="cite">[1]</sup></a></span>
+    </li>
+    <li>
+      <span class="date">Apr 8, 2026</span>
+      <span class="event">Philadelphia Inquirer and Seattle Times report on the proposed panels.<a href="#fn1" class="cite-link"><sup class="cite">[1]</sup></a><a href="#fn25" class="cite-link"><sup class="cite">[25]</sup></a></span>
+    </li>
+  </ul>
+
+  <!-- SECTION: WHY IT MATTERS -->
+  <div class="section-header">Why This Matters</div>
+
+  <p>This is not a disagreement about historical interpretation. The proposed replacement panels contradict a documented, peer-reviewed, multi-institutional scholarly consensus on Washington and slavery. They remove the voices of enslaved people from a memorial that was built specifically to honor them. They replace documented fact with sympathetic framing in service of a political narrative.</p>
+
+  <p>The nine enslaved people who lived in the President's House during Washington's presidency were Ona Judge, Hercules, Christopher Sheels, Richmond, Moll, Austin, Joe Richardson, Paris, and Giles.<a href="#fn6" class="cite-link"><sup class="cite">[6]</sup></a><a href="#fn14" class="cite-link"><sup class="cite">[14]</sup></a> Their stories were told in the original exhibition. In the proposed replacement, their individual stories are largely gone.</p>
+
+  <div class="callout">
+    <strong>The 250th anniversary of American independence is this summer.</strong> If these panels are installed, millions of visitors will encounter a version of history that the most respected scholars in this field have called misleading. The Third Circuit has not yet ruled. The legal fight continues. Public pressure matters.
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h3>Help Restore America's History</h3>
+    <p>The President's House case shows how legal action and public attention can restore historical truth. Support efforts to bring back the remaining 15 panels and challenge similar removals across the national park system.</p>
+    <div class="cta-buttons">
+      <a href="https://www.npca.org/" class="btn btn-primary" target="_blank">Support NPCA's Legal Fight</a>
+      <a href="#" class="btn btn-secondary" onclick="openTakeAction(); return false;">Take Action</a>
+      <a href="https://ko-fi.com/missingparkhistory" class="btn btn-secondary" target="_blank">Support This Project</a>
+    </div>
+  </div>
+
+  <!-- ENDNOTES -->
+  <div class="endnotes">
+    <h3>Sources &amp; Endnotes</h3>
+    <ol>
+      <li id="fn1">Roth, Fallon, and Abraham Gutman. <a href="https://www.inquirer.com/politics/nation/presidents-house-panels-philadelphia-slavery-george-washington-history-20260408.html" target="_blank">"George Washington's role as an enslaver is sanitized in proposed President's House panels posted online."</a> <em>Philadelphia Inquirer</em>, April 8, 2026.</li>
+      <li id="fn2"><a href="https://saveoursigns.org" target="_blank">Save Our Signs Removal Tracker.</a> Comprehensive database of removed, restored, and missing panels at the President's House Site. See also: PBS NewsHour, "Citing Orwell's 1984, judge orders restoration of slavery exhibit," Feb 16, 2026.</li>
+      <li id="fn3"><em>City of Philadelphia v. Doug Bergum</em>, No. 2:26-cv-00434 (E.D. Pa. Feb. 16, 2026). <a href="https://clearinghouse.net/case/47741/" target="_blank">Civil Rights Litigation Clearinghouse</a>.</li>
+      <li id="fn4">Comparison based on original panels documented by <a href="https://saveoursigns.org" target="_blank">Save Our Signs Removal Tracker</a> and proposed panel renderings posted to <a href="https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm" target="_blank">NPS President's House page</a>, April 7, 2026.</li>
+      <li id="fn5">Morgan, Philip D., and Michael L. Nicholls. "Slave Flight: Mount Vernon, Virginia, and the Wider Atlantic World." In <em>George Washington's South</em>, eds. Tamara Harvey and Greg O'Brien. University Press of Florida, 2004.</li>
+      <li id="fn6">National Park Service, proposed replacement panels for the President's House Site, posted to <a href="https://www.nps.gov/inde/planyourvisit/presidentshousesite.htm" target="_blank">nps.gov</a>, April 7, 2026.</li>
+      <li id="fn7">National Park Service. <em>The Archeology of Freedom and Slavery: President's House Excavations.</em> Archived at <a href="https://npshistory.com/publications/inde/pres-house-excavations.pdf" target="_blank">npshistory.com</a>.</li>
+      <li id="fn8">Dunbar, Erica Armstrong. <em>Never Caught: The Washingtons' Relentless Pursuit of Their Runaway Slave, Ona Judge.</em> New York: 37 Ink/Atria, 2017. See also <a href="https://encyclopediavirginia.org" target="_blank">Encyclopedia Virginia</a>, "George Washington and Slavery."</li>
+      <li id="fn9">White House Historical Association. <a href="https://www.whitehousehistory.org" target="_blank">"The Enslaved Household of President George Washington."</a> See also Encyclopedia Virginia; Mount Vernon Digital Encyclopedia.</li>
+      <li id="fn10">Mount Vernon. <a href="https://www.mountvernon.org" target="_blank">"The Growth of Mount Vernon's Enslaved Community."</a> mountvernon.org.</li>
+      <li id="fn11"><a href="https://encyclopediavirginia.org" target="_blank">Encyclopedia Virginia</a>, "George Washington and Slavery," updated November 7, 2024. Mount Vernon Digital Encyclopedia, "George Washington and Slavery."</li>
+      <li id="fn12">Mount Vernon. <a href="https://www.mountvernon.org" target="_blank">"Ten Facts About Washington &amp; Slavery."</a> mountvernon.org.</li>
+      <li id="fn13">Schwartz, Marie Jenkins. Cited in HISTORY.com, <a href="https://www.history.com" target="_blank">"Did George Washington Really Free Mount Vernon's Enslaved Workers?"</a> Updated January 31, 2025.</li>
+      <li id="fn14">Mount Vernon. <a href="https://www.mountvernon.org/george-washington/slavery/" target="_blank">"George Washington and Slavery."</a> Digital Encyclopedia, mountvernon.org. Research by Mary V. Thompson.</li>
+      <li id="fn15"><a href="https://encyclopediavirginia.org" target="_blank">Encyclopedia Virginia</a>, "Enslaved Community at Mount Vernon." Mary Thompson, updated August 26, 2024.</li>
+      <li id="fn16">Mount Vernon. <a href="https://www.mountvernon.org" target="_blank">"Slavery at Mount Vernon."</a> mountvernon.org.</li>
+      <li id="fn17">Mount Vernon. "Quarters for Enslaved People." Digital Encyclopedia, mountvernon.org.</li>
+      <li id="fn18">Thompson, Mary V. <em>"The Only Unavoidable Subject of Regret": George Washington, Slavery, and the Enslaved Community at Mount Vernon.</em> Charlottesville: University of Virginia Press, 2019.</li>
+      <li id="fn19">Wiencek, Henry. <em>An Imperfect God: George Washington, His Slaves, and the Creation of America.</em> New York: Farrar, Straus and Giroux, 2003.</li>
+      <li id="fn20">Lepore, Jill. <em>These Truths: A History of the United States.</em> New York: W.W. Norton, 2018. See also Dan Kennedy, <a href="https://dankennedy.net" target="_blank">"Looking back at Jill Lepore,"</a> dankennedy.net, September 30, 2025.</li>
+      <li id="fn21"><a href="https://journals.openedition.org/ejas/16087" target="_blank">"Only Dead Metaphors Can Be Resurrected: A Review of Jill Lepore."</a> <em>European Journal of American Studies</em>.</li>
+      <li id="fn22">Wilentz, Sean. "The American Revolutions." <em>The New York Review of Books</em>, November 8, 2018. Cep, Casey. Review of <em>These Truths.</em> <em>Harvard Magazine</em>, September 2018. <em>The Guardian</em>, "These Truths review," January 26, 2019.</li>
+      <li id="fn23">Murphy, Jim. <a href="https://realphillyhistory.com" target="_blank">"George Washington."</a> Real Philly History, February 2, 2024. Citing NPS sources, the New York Times, and historians Edward Lawler Jr. and Gary Nash.</li>
+      <li id="fn24">Executive Order 14253, "Restoring Truth and Sanity to American History," signed March 27, 2025. Secretary's Order 3431, issued May 20, 2025 by Interior Secretary Doug Burgum.</li>
+      <li id="fn25">Roth, Fallon, and Abraham Gutman. <a href="https://www.seattletimes.com/nation-world/nation-politics/trump-administrations-panels-for-historical-site-altered-washingtons-role-in-slavery/" target="_blank">"Trump administration's panels for historical site altered Washington's role in slavery."</a> <em>Seattle Times</em> / Tribune Content Agency, April 8, 2026.</li>
+    </ol>
+
+    <h3 style="margin-top:1.5rem;">Selected Bibliography</h3>
+    <ol start="26">
+      <li>Morgan, Edmund S. <em>American Slavery, American Freedom: The Ordeal of Colonial Virginia.</em> New York: Norton, 1975.</li>
+      <li>Nash, Gary B. <em>The Forgotten Fifth: African Americans in the Age of Revolution.</em> Cambridge: Harvard University Press, 2006.</li>
+      <li>Berlin, Ira. <em>Many Thousands Gone: The First Two Centuries of Slavery in North America.</em> Cambridge: Harvard University Press, 1998.</li>
+      <li>Baptist, Edward E. <em>The Half Has Never Been Told: Slavery and the Making of American Capitalism.</em> New York: Basic Books, 2014.</li>
+      <li>Finkelman, Paul. <em>Slavery and the Founders: Race and Liberty in the Age of Jefferson.</em> 3rd ed. New York: Routledge, 2014.</li>
+      <li>Furstenberg, François. "Atlantic Slavery, Atlantic Freedom: George Washington, Slavery, and Transatlantic Abolitionist Networks." <em>William and Mary Quarterly</em>, Vol. 68, No. 2 (April 2011).</li>
+      <li>Lawler, Edward Jr. "The President's House in Philadelphia: The Rediscovery of a Lost Landmark." <em>Pennsylvania Magazine of History and Biography</em>, Vol. 126, No. 1 (January 2002).</li>
+      <li>Hannah-Jones, Nikole, ed. <em>The 1619 Project: A New Origin Story.</em> New York: One World, 2021.</li>
+      <li>NPS. <em>George Washington Birthplace National Monument Historic Resource Study.</em> Archived at <a href="https://npshistory.com/publications/gewa/hrs.pdf" target="_blank">npshistory.com</a>.</li>
+    </ol>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>This page is an independent analysis compiled from public sources and peer-reviewed scholarship. It is not affiliated with the National Park Service.</p>
+  <p style="margin-top:0.4rem;">
+    <a href="https://missingparkhistory.org">Missing Park History Project</a> &middot;
+    <a href="https://missingparkhistory.org/about">About</a> &middot;
+    <a href="https://missingparkhistory.org/presidents-house">President's House</a> &middot;
+    <a href="https://buymeacoffee.com" target="_blank">Support</a>
+  </p>
+  <p style="margin-top:0.4rem;">This data belongs to the American people.</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script>
+  // === Popup overlay ===
+  document.getElementById('popupClose').addEventListener('click', function() {
+    document.getElementById('popupOverlay').classList.remove('active');
+  });
+  document.getElementById('popupOverlay').addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('active');
+  });
+
+  // === Lightbox for photo cards ===
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+
+  document.querySelectorAll('.photo-card img').forEach(function(img) {
+    img.addEventListener('click', function() {
+      lightboxImg.src = this.src;
+      lightboxImg.alt = this.alt;
+      var caption = this.closest('.photo-card').querySelector('.photo-caption');
+      lightboxCaption.textContent = caption ? caption.textContent : '';
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  // === Escape key closes whichever is open ===
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      if (lightbox.classList.contains('active')) {
+        closeLightbox();
+      } else {
+        document.getElementById('popupOverlay').classList.remove('active');
+      }
+    }
+  });
+
+  // === Skip popup if ?standalone ===
+  if (new URLSearchParams(window.location.search).has('standalone')) {
+    document.getElementById('popupOverlay').classList.remove('active');
+  }
+
+  // === Take Action — opens "Our Parks Need Your Voice" popup ===
+  // If taOpen() exists (on the main map page), call it directly.
+  // Otherwise, navigate to the map page with #take-action hash, which
+  // triggers the popup automatically via a hashchange listener on index.html.
+  function openTakeAction() {
+    if (typeof taOpen === 'function') {
+      // Close the update popup first so the Take Action modal is visible
+      document.getElementById('popupOverlay').classList.remove('active');
+      taOpen();
+    } else {
+      // Standalone mode: navigate to the map page and trigger the popup.
+      // Use relative path for local/deployed compatibility; falls back to absolute.
+      var base = window.location.pathname.replace(/[^\/]*$/, '');
+      var localIndex = base + 'index.html#take-action';
+      window.location.href = localIndex;
+    }
+  }
+</script>
+
+</body>
+</html>
