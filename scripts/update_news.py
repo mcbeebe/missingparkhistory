@@ -49,7 +49,7 @@ MODEL_CANDIDATES = [
     "claude-sonnet-4-20250514",
 ]
 
-MAX_TOOL_USES = 12
+MAX_TOOL_USES = 25
 MAX_TOKENS = 8000
 
 VALID_TAGS = {"order", "removal", "resistance", "lawsuit", "leak", "court"}
@@ -136,6 +136,15 @@ Order 14253 and Secretary's Order 3431, and return them as strict JSON.
   Sierra Club FOIA suit, Stonewall Pride flag suit)
 - Preservation / resistance efforts (Save Our Signs, MissingParkHistory.org,
   legislative responses, advocacy coalitions)
+- Congressional action: bills, resolutions, floor statements, press releases,
+  committee hearings, and appropriations language related to NPS censorship,
+  national park funding cuts, or NPS staffing reductions
+- NPS budget cuts, staffing freezes, visitor center closures, or fee-free day
+  changes tied to the current administration
+- Books, commentary, or op-eds about national park history censorship,
+  Indigenous erasure in parks, or climate science removal from parks
+- State-level resistance or co-management pushback against federal NPS
+  censorship directives
 
 **Novelty**: skip articles whose URLs appear in EXISTING_URLS below. Skip
 articles that merely rehash prior coverage without new facts, quotes, or
@@ -143,22 +152,58 @@ developments.
 
 **Source quality**: prioritize original reporting from major outlets (WaPo,
 NYT, NPR, AP, PBS, CBS, CNN) and domain-specific sources (NPCA, Outside, NPS
-Traveler, Democracy Forward, Sierra Club). Regional reporting is welcome when
-it adds local context.
+Traveler, Democracy Forward, Sierra Club). Congressional press releases from
+senate.gov and house.gov are high-priority primary sources. Regional reporting
+and opinion/commentary are welcome when they add local context or substantive
+analysis.
 
 **Time window**: only articles published on or after {since_date}.
 
-**Searches to run** (use the web_search tool — run several; vary queries):
+**Searches to run** (use the web_search tool — run ALL of these; cast a wide
+net and vary your queries):
+
+Core NPS censorship:
 - "NPS sign removal" OR "national park censorship" {current_month_year}
 - "SO 3431" OR "Secretary Order 3431" {current_month_year}
+- national park exhibit removed signs {current_month_year}
+- "national park" "history removed" OR "history censored" {current_year}
+
+Litigation:
 - NPCA Democracy Forward national parks lawsuit {current_year}
 - "President's House" Philadelphia slavery exhibit {current_month_year}
 - Stonewall Pride flag national monument {current_month_year}
 - Sierra Club national park FOIA {current_year}
-- national park exhibit removed signs {current_month_year}
 
-Also search the domains npca.org, nationalparkstraveler.org,
-democracyforward.org, sierraclub.org, outsideonline.com for recent pieces.
+Congressional / legislative:
+- site:senate.gov national park censorship {current_year}
+- site:house.gov national park censorship OR "national park service" {current_year}
+- Congress "national park" bill censorship OR funding cuts {current_month_year}
+- "national park service" appropriations amendment {current_year}
+
+Indigenous, climate, and themed coverage:
+- "national park" Indigenous history censorship OR erasure {current_month_year}
+- "national park" climate change signs removed {current_month_year}
+- "national park" slavery history removed OR censored {current_month_year}
+- national park books censored OR flagged {current_month_year}
+
+Budget and staffing:
+- "national park service" budget cuts staffing {current_month_year}
+- "national park service" visitor center closed OR closure {current_month_year}
+- NPS fee-free days changed OR eliminated {current_year}
+
+Opinion and regional:
+- "national park censorship" opinion OR commentary {current_month_year}
+- "national park" history censorship California OR Pennsylvania OR Massachusetts {current_month_year}
+
+Also search these specific domains for recent pieces:
+npca.org, nationalparkstraveler.org, democracyforward.org, sierraclub.org,
+outsideonline.com, calmatters.org, hcn.org (High Country News),
+markey.senate.gov, merkley.senate.gov, grijalva.house.gov
+
+**Filtering**: Do NOT include articles about:
+- Big Tech censorship, Section 230, social media content moderation
+- State or city parks (only National Park Service)
+- General conservation topics unrelated to NPS interpretive censorship
 
 **Output**: return ONLY valid JSON matching this schema — no prose, no
 markdown fences:
@@ -168,7 +213,7 @@ markdown fences:
     {{
       "date": "YYYY-MM-DD",
       "source_name": "Display name (e.g. 'Washington Blade')",
-      "source_key": "one of: wapo|npr|nbc|pbs|newsweek|thehill|outside|sfgate|inquirer|bostonglobe|npca|demforward|sierraclub|oah|govexec|notus|other",
+      "source_key": "one of: wapo|npr|nbc|pbs|newsweek|thehill|outside|sfgate|inquirer|bostonglobe|npca|demforward|sierraclub|oah|govexec|notus|calmatters|hcn|senate|house|congress|other",
       "tag": "one of: order|removal|resistance|lawsuit|leak|court",
       "tag_label": "Short display label (e.g. 'Court Victory', 'Removal', 'State Coalition')",
       "url": "https://...",
@@ -394,8 +439,9 @@ def main() -> int:
         return 0
 
     # Call Claude
-    # Search for articles from the last 14 days so we catch anything missed.
-    since = (datetime.now().date().toordinal() - 14)
+    # Search for articles from the last 21 days so we catch anything missed,
+    # including articles that are slow to appear in search indexes.
+    since = (datetime.now().date().toordinal() - 21)
     since_date = datetime.fromordinal(since).strftime("%Y-%m-%d")
     articles = call_claude(since_date, existing_urls(html))
     articles = [a for a in articles if a.url.rstrip("/") not in existing_urls(html)]
