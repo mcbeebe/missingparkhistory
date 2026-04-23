@@ -361,6 +361,8 @@ Sincerely,
 .nd-cta-primary:hover{background:linear-gradient(135deg,#3b82f6,#2563eb);transform:translateY(-1px)}
 .nd-cta-secondary{background:rgba(255,255,255,0.08);color:#ccc;border:1px solid #2a2a3a}
 .nd-cta-secondary:hover{background:rgba(255,255,255,0.12);color:#fff}
+.nd-cta-support{background:linear-gradient(135deg,#d97706,#b45309);color:#fff;flex:1 1 100%;margin-top:2px}
+.nd-cta-support:hover{background:linear-gradient(135deg,#f59e0b,#d97706);transform:translateY(-1px)}
 .nd-dismiss{text-align:center;padding:0 24px 16px}
 .nd-dismiss button{background:0;border:0;color:#555;font-size:12px;cursor:pointer;font-family:-apple-system,sans-serif;transition:color .2s}
 .nd-dismiss button:hover{color:#888}
@@ -441,6 +443,7 @@ Sincerely,
     <div class="nd-footer">
       <a class="nd-cta nd-cta-primary" href="/news-and-press.html">&#128240; Read All Coverage</a>
       <button class="nd-cta nd-cta-secondary" onclick="ndClose()">&#x1F5FA;&#xFE0F; Explore the Map</button>
+      <a class="nd-cta nd-cta-support" href="https://ko-fi.com/missingparkhistory" target="_blank" rel="noopener">&#x2615; Support This Project</a>
     </div>
     <div class="nd-dismiss">
       <button onclick="ndDismissToday()">Don&rsquo;t show again today</button>
@@ -454,12 +457,10 @@ Sincerely,
   var today=new Date().toISOString().slice(0,10);
   var last=null;
   try{last=localStorage.getItem(ND_KEY)}catch(e){}
-  // Show once per calendar day, after a 3-second delay
+  // Show once per calendar day, immediately on page load
   if(last!==today && !document.body.classList.contains('embed-mode')){
-    setTimeout(function(){
-      document.getElementById('ndOverlay').classList.add('active');
-      try{localStorage.setItem(ND_KEY,today)}catch(e){}
-    },3000);
+    document.getElementById('ndOverlay').classList.add('active');
+    try{localStorage.setItem(ND_KEY,today)}catch(e){}
   }
   window.ndClose=function(){
     document.getElementById('ndOverlay').classList.remove('active');
