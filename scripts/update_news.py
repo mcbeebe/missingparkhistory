@@ -394,6 +394,128 @@ def update_banner(html: str, today_iso: str, new_count: int) -> str:
 # ---------------------------------------------------------------------------
 
 
+INDEX_FILE = REPO_ROOT / "index.html"
+
+TAG_LABELS = {
+    "order": "The Order",
+    "removal": "Removals",
+    "resistance": "Resistance",
+    "lawsuit": "Lawsuit",
+    "leak": "Leaks",
+    "court": "Court Victory",
+}
+
+
+def _recent_articles_from_html(html: str, limit: int = 5) -> list[dict]:
+    """Extract the N most recent articles from news-and-press.html for the
+    digest pop-up.  Returns dicts with keys: day, month, source, tag,
+    tag_label, headline, url."""
+    pattern = re.compile(
+        r'<article class="article-card"[^>]*data-tags="([^"]*)"[^>]*>'
+        r'.*?<div class="month-day">([^<]+)</div>'
+        r'.*?<div class="date-detail">([^<]+)</div>'
+        r'.*?<span class="article-source">([^<]+)</span>'
+        r'.*?<h3><a href="([^"]+)"[^>]*>([^<]+)</a></h3>',
+        re.DOTALL,
+    )
+    results = []
+    for m in pattern.finditer(html):
+        tag = m.group(1).strip()
+        month_day = m.group(2).strip()          # e.g. "Apr 20"
+        year = m.group(3).strip()               # e.g. "2026"
+        parts = month_day.split()
+        mon = parts[0] if parts else ""
+        day = parts[1] if len(parts) > 1 else ""
+        results.append({
+            "day": day,
+            "mon": mon,
+            "year": year,
+            "source": m.group(4).strip(),
+            "tag": tag,
+            "tag_label": TAG_LABELS.get(tag, tag.title()),
+            "url": m.group(5).strip(),
+            "headline": m.group(6).strip(),
+        })
+        if len(results) >= limit:
+            break
+    return results
+
+
+def _tag_css_class(tag: str) -> str:
+    return f"nd-tag-{tag}" if tag in TAG_LABELS else "nd-tag-order"
+
+
+def update_news_digest(news_html: str, today_iso: str) -> None:
+    """Regenerate the news digest pop-up inside index.html using the latest
+    articles from the news page."""
+    if not INDEX_FILE.exists():
+        log.warning("index.html not found; skipping digest update")
+        return
+
+    articles = _recent_articles_from_html(news_html, limit=5)
+    if not articles:
+        log.info("No articles found for digest pop-up; skipping")
+        return
+
+    idx_html = INDEX_FILE.read_text(encoding="utf-8")
+
+    # Build the articles block
+    art_lines = []
+    for a in articles:
+        art_lines.append(
+            f'      <div class="nd-article">\n'
+            f'        <div class="nd-art-date"><div class="nd-day">{a["day"]}</div>'
+            f'<div class="nd-mon">{a["mon"]}</div></div>\n'
+            f'        <div class="nd-art-body">\n'
+            f'          <div class="nd-art-meta"><span class="nd-art-source">{a["source"]}</span>'
+            f'<span class="nd-art-tag {_tag_css_class(a["tag"])}">{a["tag_label"]}</span></div>\n'
+            f'          <div class="nd-art-title"><a href="{a["url"]}" target="_blank" '
+            f'rel="noopener">{a["headline"]}</a></div>\n'
+            f'        </div>\n'
+            f'      </div>\n'
+        )
+    articles_block = "\n".join(art_lines)
+
+    # Build date range string
+    if articles:
+        first = articles[-1]
+        last_art = articles[0]
+        date_range = f'{first["mon"]} {first["day"]} &ndash; {last_art["mon"]} {last_art["day"]}, {last_art["year"]}'
+    else:
+        date_range = today_iso
+
+    # Replace the articles section between markers
+    start_marker = '<div class="nd-articles">'
+    end_marker = '</div>\n\n    <div class="nd-footer">'
+
+    start_idx = idx_html.find(start_marker)
+    end_idx = idx_html.find(end_marker)
+
+    if start_idx == -1 or end_idx == -1:
+        log.warning("Could not find digest markers in index.html; skipping")
+        return
+
+    new_articles_section = (
+        f'<div class="nd-articles">\n'
+        f'      <h3>Latest Coverage</h3>\n\n'
+        f'{articles_block}'
+        f'    '
+    )
+
+    new_idx = idx_html[:start_idx] + new_articles_section + idx_html[end_idx:]
+
+    # Update date range in header
+    new_idx = re.sub(
+        r'(<div class="nd-daterange">)[^<]+(</div>)',
+        rf'\g<1>{date_range} &middot; {len(articles)} new developments\2',
+        new_idx,
+        count=1,
+    )
+
+    INDEX_FILE.write_text(new_idx, encoding="utf-8")
+    log.info("Updated news digest pop-up in index.html with %d articles", len(articles))
+
+
 def archive(today_iso: str) -> None:
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     dst = ARCHIVE_DIR / f"news-and-press_{today_iso.replace('-', '')}.html"
@@ -456,6 +578,7 @@ def main() -> int:
         else:
             archive(today_iso)
             write_html(new_html)
+            update_news_digest(new_html, today_iso)
             log.info("No new articles. Banner date bumped.")
         emit_github_summary([
             "## NPS News Daily Update",
@@ -480,6 +603,7 @@ def main() -> int:
 
     archive(today_iso)
     write_html(new_html)
+    update_news_digest(new_html, today_iso)
     log.info("Wrote %s with %d new article(s)", HTML_FILE.name, len(articles))
 
     lines = [

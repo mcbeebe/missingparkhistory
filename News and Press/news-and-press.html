@@ -52,10 +52,23 @@
     .tag-order{background:var(--tag-order)} .tag-removal{background:var(--tag-removal)} .tag-resistance{background:var(--tag-resistance)} .tag-lawsuit{background:var(--tag-lawsuit)} .tag-leak{background:var(--tag-leak)} .tag-court{background:var(--tag-court)}
     .article-summary{font-size:.95rem;color:#444;line-height:1.6;max-width:700px} .article-summary strong{color:var(--ink);font-weight:600}
     .read-more{display:inline-block;margin-top:8px;font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.3px} .read-more:hover{text-decoration:underline}
+    .synthesis{max-width:1100px;margin:0 auto;padding:48px 24px 40px;border-bottom:1px solid var(--border)}
+    .synthesis-inner{max-width:780px}
+    .synthesis-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px;font-weight:500}
+    .synthesis h2{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;font-weight:900;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+    .synthesis p{font-size:1.02rem;color:#333;line-height:1.72;margin-bottom:16px}
+    .synthesis p:last-child{margin-bottom:0}
+    .synthesis strong{color:var(--ink);font-weight:700}
+    .synthesis .phase-marker{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);background:rgba(184,50,48,0.06);padding:3px 10px;border-radius:3px;margin:20px 0 10px;border-left:3px solid var(--accent)}
+    .synthesis .synthesis-updated{font-size:.78rem;color:var(--muted);font-style:italic;margin-top:20px;padding-top:14px;border-top:1px solid var(--border)}
     .key-facts{max-width:1100px;margin:0 auto;padding:40px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
     .key-facts h2{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;font-weight:900;margin-bottom:20px}
     .facts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
     .fact-card{background:#f9f9f9;border:1px solid var(--border);padding:20px;border-radius:4px} .fact-card h4{font-family:'JetBrains Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px} .fact-card p{font-size:.9rem;color:#555;line-height:1.5}
+    .support-cta{text-align:center;padding:40px 24px 36px;max-width:1100px;margin:0 auto}
+    .support-text{font-size:.9rem;color:var(--muted);margin-bottom:12px;font-weight:400}
+    .support-btn{display:inline-block;padding:10px 28px;background:linear-gradient(135deg,#1B4332,#2D6A4F);color:#fff;border-radius:24px;font-family:'Source Sans 3',sans-serif;font-size:.88rem;font-weight:700;text-decoration:none;letter-spacing:.3px;transition:all .25s;box-shadow:0 2px 8px rgba(27,67,50,0.25)}
+    .support-btn:hover{background:linear-gradient(135deg,#2D6A4F,#40916C);transform:translateY(-1px);box-shadow:0 4px 14px rgba(27,67,50,0.35)}
     .site-footer{background:#ffffff;color:var(--muted);padding:40px 24px;text-align:center;font-size:.85rem;line-height:1.7;border-top:1px solid var(--border)} .site-footer a{color:var(--accent);text-decoration:none} .site-footer a:hover{text-decoration:underline} .footer-inner{max-width:600px;margin:0 auto} .footer-logo{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink);margin-bottom:12px}
     @media(max-width:640px){.article-card{grid-template-columns:1fr;gap:6px} .article-date{text-align:left;display:flex;gap:8px;align-items:baseline} .hero-stats{gap:20px} .header-nav{display:none}}
     .article-card{opacity:0;transform:translateY(12px);animation:fadeUp .4s ease forwards} @keyframes fadeUp{to{opacity:1;transform:translateY(0)}} .article-card:nth-child(2){animation-delay:.04s} .article-card:nth-child(3){animation-delay:.08s} .article-card:nth-child(4){animation-delay:.12s} .article-card:nth-child(5){animation-delay:.16s}
@@ -689,6 +702,12 @@
     </div>
   </article>
 </section>
+
+<div class="support-cta">
+  <p class="support-text">This project is 100% independent and unfunded.</p>
+  <a href="https://shop.missingparkhistory.org" target="_blank" rel="noopener" class="support-btn">&#x1F6D2; Support the Project</a>
+</div>
+
 <footer class="site-footer"><div class="footer-inner"><div class="footer-logo">MissingParkHistory.org</div><p>An independent project documenting NPS interpretive materials flagged for removal under EO 14253 and SO 3431.<br />Not affiliated with the National Park Service or any government agency.<br /><br /><a href="https://missingparkhistory.org">Explore the Interactive Map</a> &nbsp;|&nbsp; <a href="https://missingparkhistory.org/about.html">About</a> &nbsp;|&nbsp; <a href="mailto:info@missingparkhistory.org">Contact / Tips</a></p></div></footer>
 <script>
 window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progressBar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';});

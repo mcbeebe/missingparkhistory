@@ -62,12 +62,12 @@ jobs:
           git config user.name "NPS News Bot"
           git config user.email "bot@missingparkhistory.org"
 
-          if git diff --quiet -- news-and-press.html "News and Press/Archive"; then
+          if git diff --quiet -- news-and-press.html index.html "News and Press/Archive"; then
             echo "No changes to commit."
             exit 0
           fi
 
-          git add news-and-press.html "News and Press/Archive"
+          git add news-and-press.html index.html "News and Press/Archive"
           TODAY=$(date +%Y-%m-%d)
           git commit -m "news: auto-update ${TODAY}"
           git push origin HEAD:${GITHUB_REF_NAME}
