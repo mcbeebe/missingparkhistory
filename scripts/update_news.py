@@ -49,7 +49,7 @@ MODEL_CANDIDATES = [
     "claude-sonnet-4-20250514",
 ]
 
-MAX_TOOL_USES = 25
+MAX_TOOL_USES = 15
 MAX_TOKENS = 8000
 
 VALID_TAGS = {"order", "removal", "resistance", "lawsuit", "leak", "court"}
@@ -242,25 +242,48 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         existing_urls_list="\n".join(sorted(urls)),
     )
 
+    def _create(model: str, max_uses: int):
+        log.info("Calling Anthropic API with model=%s (max_uses=%d)", model, max_uses)
+        return client.messages.create(
+            model=model,
+            max_tokens=MAX_TOKENS,
+            tools=[{
+                "type": "web_search_20250305",
+                "name": "web_search",
+                "max_uses": max_uses,
+            }],
+            messages=[{"role": "user", "content": prompt}],
+        )
+
     last_err: Exception | None = None
+    resp = None
     for model in MODEL_CANDIDATES:
         try:
-            log.info("Calling Anthropic API with model=%s", model)
-            resp = client.messages.create(
-                model=model,
-                max_tokens=MAX_TOKENS,
-                tools=[{
-                    "type": "web_search_20250305",
-                    "name": "web_search",
-                    "max_uses": MAX_TOOL_USES,
-                }],
-                messages=[{"role": "user", "content": prompt}],
-            )
+            resp = _create(model, MAX_TOOL_USES)
             break
         except anthropic.NotFoundError as e:
             log.warning("Model %s not available: %s", model, e)
             last_err = e
             continue
+        except anthropic.BadRequestError as e:
+            if "prompt is too long" not in str(e):
+                raise
+            retry_uses = max(1, MAX_TOOL_USES // 2)
+            log.warning(
+                "Prompt too long with max_uses=%d; retrying once with max_uses=%d",
+                MAX_TOOL_USES, retry_uses,
+            )
+            try:
+                resp = _create(model, retry_uses)
+                break
+            except anthropic.BadRequestError as e2:
+                log.error("Prompt still too long on retry; aborting run: %s", e2)
+                emit_github_summary([
+                    "## NPS News Daily Update",
+                    "- Status: **Failed** — Anthropic API rejected the prompt as too long even after halving max_uses.",
+                    "- Action: lower `MAX_TOOL_USES` further or trim queries in `CURATION_PROMPT`.",
+                ])
+                sys.exit(1)
     else:
         log.error("All candidate models failed; last error: %s", last_err)
         sys.exit(1)
