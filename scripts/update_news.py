@@ -205,8 +205,10 @@ markey.senate.gov, merkley.senate.gov, grijalva.house.gov
 - State or city parks (only National Park Service)
 - General conservation topics unrelated to NPS interpretive censorship
 
-**Output**: return ONLY valid JSON matching this schema — no prose, no
-markdown fences:
+**Output**: return ONLY valid JSON matching this schema. Your response MUST
+begin with the `{{` character — no prose intro ("Based on my searches..."),
+no preamble, no markdown fences, no commentary after the JSON. The very
+first character of your output must be `{{` and the last must be `}}`.
 
 {{
   "articles": [
@@ -304,11 +306,18 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
     final_text = re.sub(r"^```(?:json)?\s*", "", final_text)
     final_text = re.sub(r"\s*```$", "", final_text)
 
+    # Claude sometimes prefaces the JSON with prose ("Based on my searches...").
+    # Extract the outermost JSON object — first '{' to last '}' — before parsing.
+    first_brace = final_text.find("{")
+    last_brace = final_text.rfind("}")
+    if first_brace != -1 and last_brace > first_brace:
+        final_text = final_text[first_brace : last_brace + 1]
+
     try:
         data = json.loads(final_text)
     except json.JSONDecodeError as e:
         log.error("Claude returned non-JSON output: %s", e)
-        log.error("Raw output (first 500 chars): %s", final_text[:500])
+        log.error("Raw output (first 1000 chars): %s", final_text[:1000])
         return []
 
     return [parse_article(a) for a in data.get("articles", []) if a]
