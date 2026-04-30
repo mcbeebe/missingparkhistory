@@ -17,6 +17,11 @@ on:
         required: false
         default: "false"
         type: boolean
+      force_synthesis:
+        description: "Refresh the weekly 'Where the Fight Stands' narrative even on non-Mondays"
+        required: false
+        default: "false"
+        type: boolean
 
 permissions:
   contents: write
@@ -52,8 +57,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           ARGS=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
-          if [ "${{ inputs.force  }}" = "true" ]; then ARGS="$ARGS --force";  fi
+          if [ "${{ inputs.dry_run         }}" = "true" ]; then ARGS="$ARGS --dry-run";         fi
+          if [ "${{ inputs.force           }}" = "true" ]; then ARGS="$ARGS --force";           fi
+          if [ "${{ inputs.force_synthesis }}" = "true" ]; then ARGS="$ARGS --force-synthesis"; fi
           python scripts/update_news.py $ARGS
 
       - name: Commit and push changes
