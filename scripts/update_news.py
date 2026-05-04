@@ -105,8 +105,30 @@ def write_html(content: str) -> None:
     HTML_FILE.write_text(content, encoding="utf-8")
 
 
+_HOST_PREFIXES = ("www.", "us.", "uk.", "m.", "mobile.", "amp.")
+
+
+def canonical_url(url: str) -> str:
+    """Normalize a URL for dedup. Lowercases the host, strips common host
+    prefixes (www., us., uk., m., mobile., amp.), drops query string and
+    fragment, and trims a trailing slash. Catches near-duplicates like
+    `www.cnn.com/X` vs `us.cnn.com/X` (same article, different mirror)."""
+    try:
+        from urllib.parse import urlparse, urlunparse
+        p = urlparse(url.strip())
+        host = p.netloc.lower()
+        for pref in _HOST_PREFIXES:
+            if host.startswith(pref):
+                host = host[len(pref):]
+                break
+        path = p.path.rstrip("/")
+        return urlunparse((p.scheme.lower() or "https", host, path, "", "", ""))
+    except Exception:
+        return url.rstrip("/")
+
+
 def existing_urls(html: str) -> set[str]:
-    return {m.rstrip("/") for m in re.findall(r'href="(https?://[^"]+)"', html)}
+    return {canonical_url(m) for m in re.findall(r'href="(https?://[^"]+)"', html)}
 
 
 def banner_date(html: str) -> str | None:
@@ -843,9 +865,19 @@ def main() -> int:
     # including articles that are slow to appear in search indexes.
     since = (datetime.now().date().toordinal() - 21)
     since_date = datetime.fromordinal(since).strftime("%Y-%m-%d")
-    articles = call_claude(since_date, existing_urls(html))
-    articles = [a for a in articles if a.url.rstrip("/") not in existing_urls(html)]
-    articles = sort_articles_desc(articles)
+    existing = existing_urls(html)
+    articles = call_claude(since_date, existing)
+    # Dedup any returned-but-already-present URLs, AND any duplicates within
+    # the same response (e.g. canonical + mirror of one CNN article).
+    seen: set[str] = set()
+    deduped = []
+    for a in articles:
+        c = canonical_url(a.url)
+        if c in existing or c in seen:
+            continue
+        seen.add(c)
+        deduped.append(a)
+    articles = sort_articles_desc(deduped)
     log.info("Claude returned %d qualifying new article(s)", len(articles))
 
     if not articles:
