@@ -342,10 +342,21 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         log.error("Raw output (first 1000 chars): %s", final_text[:1000])
         return []
 
-    return [parse_article(a) for a in data.get("articles", []) if a]
+    parsed = [parse_article(a) for a in data.get("articles", []) if a]
+    return [a for a in parsed if a is not None]
 
 
-def parse_article(raw: dict) -> Article:
+REQUIRED_ARTICLE_FIELDS = ("date", "source_name", "url", "headline", "summary_html")
+
+
+def parse_article(raw: dict) -> Article | None:
+    missing = [k for k in REQUIRED_ARTICLE_FIELDS if not raw.get(k)]
+    if missing:
+        log.warning(
+            "Skipping article missing required field(s) %s: %s",
+            missing, {k: raw.get(k) for k in ("url", "headline", "date") if raw.get(k)},
+        )
+        return None
     tag = raw.get("tag", "").strip().lower()
     if tag not in VALID_TAGS:
         log.warning("Invalid tag %r; coercing to 'removal'", tag)
