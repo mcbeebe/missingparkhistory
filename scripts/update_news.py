@@ -449,7 +449,34 @@ def update_banner(html: str, today_iso: str, new_count: int) -> str:
         html,
         count=1,
     )
-    return html
+    # Both write paths call update_banner, so keep the month filter in sync here.
+    return ensure_month_options(html)
+
+
+def ensure_month_options(html: str) -> str:
+    """Add a #filterMonth <option> for every month that has article cards but
+    no option yet, so new months stay filterable. Existing options are kept;
+    new ones are inserted in newest-first order."""
+    m = re.search(r'(<select[^>]*id="filterMonth"[^>]*>)(.*?)(</select>)', html, re.DOTALL)
+    if not m:
+        log.warning("Month filter (#filterMonth) not found; skipping month sync")
+        return html
+    body = m.group(2)
+    have = set(re.findall(r'<option value="(\d{4}-\d{2})"', body))
+    missing = set(re.findall(r'data-month="(\d{4}-\d{2})"', html)) - have
+    if not missing:
+        return html
+    for ym in sorted(missing, reverse=True):
+        label = datetime.strptime(ym, "%Y-%m").strftime("%b %Y")
+        opt = f'<option value="{ym}">{label}</option>'
+        # Insert before the first existing option that is older than ym.
+        older = next(
+            (o for o in re.finditer(r'<option value="(\d{4}-\d{2})"', body) if o.group(1) < ym),
+            None,
+        )
+        body = body[: older.start()] + opt + body[older.start():] if older else body.rstrip() + opt + "\n    "
+    log.info("Added month filter option(s): %s", ", ".join(sorted(missing, reverse=True)))
+    return html[: m.start(2)] + body + html[m.end(2):]
 
 
 # ---------------------------------------------------------------------------
