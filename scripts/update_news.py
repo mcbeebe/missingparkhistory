@@ -469,6 +469,42 @@ TAG_LABELS = {
 }
 
 
+def _is_frozen(idx_html: str, section: str) -> bool:
+    """True if index.html carries a freeze marker for this section, so the bot
+    should leave hand-edited content alone.
+
+    Place any of these HTML comments anywhere in index.html:
+      <!-- news-bot:freeze -->            freeze BOTH synthesis and digest
+      <!-- news-bot:freeze-synthesis -->  freeze the 'Where the Fight Stands' text + badges
+      <!-- news-bot:freeze-digest -->     freeze the 'Latest Coverage' list + date range
+    Remove the marker to let the daily bot resume updating that section.
+    """
+    if re.search(r"<!--\s*news-bot:freeze\s*-->", idx_html):
+        return True
+    return bool(re.search(rf"<!--\s*news-bot:freeze-{section}\s*-->", idx_html))
+
+
+def update_index_last_updated(today_iso: str) -> None:
+    """Bump the 'Last Updated: <date>' footer stamp in index.html so it tracks
+    the bot's most recent real run instead of going stale."""
+    if not INDEX_FILE.exists():
+        return
+    dt = datetime.strptime(today_iso, "%Y-%m-%d")
+    pretty = dt.strftime("%B %-d, %Y") if sys.platform != "win32" else dt.strftime("%B %#d, %Y")
+    idx_html = INDEX_FILE.read_text(encoding="utf-8")
+    new_idx, n = re.subn(
+        r'(class="desktop-last-updated">\s*Last Updated:\s*)[^<]*(</div>)',
+        lambda m: f"{m.group(1)}{pretty}{m.group(2)}",
+        idx_html,
+        count=1,
+    )
+    if n:
+        INDEX_FILE.write_text(new_idx, encoding="utf-8")
+        log.info("Updated index 'Last Updated' footer to %s", pretty)
+    else:
+        log.warning("Could not find 'Last Updated' footer in index.html")
+
+
 def _recent_articles_from_html(html: str, limit: int = 5) -> list[dict]:
     """Extract the N most recent articles from news-and-press.html for the
     digest pop-up.  Returns dicts with keys: day, month, source, tag,
@@ -568,6 +604,10 @@ def update_news_digest(news_html: str, today_iso: str) -> None:
         return
 
     idx_html = INDEX_FILE.read_text(encoding="utf-8")
+
+    if _is_frozen(idx_html, "digest"):
+        log.info("News digest is frozen by a news-bot:freeze marker; leaving it unchanged")
+        return
 
     # Build the articles block
     art_lines = []
@@ -697,6 +737,11 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
         return False
 
     idx_html = INDEX_FILE.read_text(encoding="utf-8")
+
+    if _is_frozen(idx_html, "synthesis"):
+        log.info("Synthesis is frozen by a news-bot:freeze marker; leaving it unchanged")
+        return False
+
     syn_re = re.compile(
         r'<div class="nd-synthesis">.*?</div>(\s*\n\s*<div class="nd-articles">)',
         re.DOTALL,
@@ -901,6 +946,7 @@ def main() -> int:
             if do_synthesis:
                 log.info("Refreshing weekly synthesis narrative.")
                 update_synthesis(new_html, today_iso)
+            update_index_last_updated(today_iso)
             log.info("No new articles. Banner date bumped.")
         emit_github_summary([
             "## NPS News Daily Update",
@@ -930,6 +976,7 @@ def main() -> int:
     if do_synthesis:
         log.info("Refreshing weekly synthesis narrative.")
         update_synthesis(new_html, today_iso)
+    update_index_last_updated(today_iso)
     log.info("Wrote %s with %d new article(s)", HTML_FILE.name, len(articles))
 
     lines = [
