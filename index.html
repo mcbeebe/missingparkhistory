@@ -371,6 +371,17 @@ Sincerely,
 .nd-cta-secondary:hover{background:rgba(255,255,255,0.12);color:#fff}
 .nd-cta-support{background:linear-gradient(135deg,#d97706,#b45309);color:#fff;flex:1 1 100%;margin-top:2px}
 .nd-cta-support:hover{background:linear-gradient(135deg,#f59e0b,#d97706);transform:translateY(-1px)}
+.nd-sub{margin:0 24px 4px;background:linear-gradient(135deg,rgba(5,150,105,0.16),rgba(5,150,105,0.06));border:1px solid rgba(5,150,105,0.4);border-radius:12px;padding:14px 16px;font-family:-apple-system,sans-serif}
+.nd-sub-head{font-size:14px;font-weight:800;color:#fff;display:flex;align-items:center;gap:7px}
+.nd-sub-sub{font-size:12px;color:#aeb6b0;margin:3px 0 10px}
+.nd-sub-form{display:flex;gap:8px}
+.nd-sub-form input{flex:1;min-width:0;background:#0c0c12;border:1px solid #33415a;border-radius:8px;color:#e7eae6;font-size:13px;padding:9px 11px;font-family:inherit}
+.nd-sub-form input::placeholder{color:#6b7280}
+.nd-sub-form input:focus{outline:0;border-color:#059669}
+.nd-sub-form button{background:linear-gradient(135deg,#059669,#047857);color:#fff;border:0;border-radius:8px;font-weight:700;font-size:13px;padding:9px 16px;cursor:pointer;white-space:nowrap}
+.nd-sub-form button:hover{background:linear-gradient(135deg,#10b981,#059669)}
+.nd-sub-ok{font-size:12px;color:#34d399;margin-top:8px;font-weight:600}
+@media(max-width:600px){.nd-sub{margin:0 18px 4px}.nd-sub-form{flex-direction:column}.nd-sub-form button{width:100%}}
 .nd-dismiss{text-align:center;padding:0 24px 16px}
 .nd-dismiss button{background:0;border:0;color:#555;font-size:12px;cursor:pointer;font-family:-apple-system,sans-serif;transition:color .2s}
 .nd-dismiss button:hover{color:#888}
@@ -456,6 +467,15 @@ Sincerely,
       </div>
     </div>
 
+    <div class="nd-sub">
+      <div class="nd-sub-head">&#128236; Get the Weekly Watch</div>
+      <div class="nd-sub-sub">Park-history news in your inbox every Monday.</div>
+      <form class="nd-sub-form" id="ndSubForm" action="https://buttondown.com/api/emails/embed-subscribe/missingparkhistory" method="post" target="_blank">
+        <input type="email" name="email" id="ndSubEmail" placeholder="you@email.com" aria-label="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="nd-sub-ok" id="ndSubOk" hidden>&#10003; Thanks! Check your inbox to confirm.</div>
+    </div>
     <div class="nd-footer">
       <a class="nd-cta nd-cta-primary" href="/news-and-press.html">&#128240; Read All Coverage</a>
       <button class="nd-cta nd-cta-secondary" onclick="ndClose()">&#x1F5FA;&#xFE0F; Explore the Map</button>
@@ -475,6 +495,40 @@ Sincerely,
   };
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape'&&document.getElementById('ndOverlay').classList.contains('active'))ndClose();
+  });
+})();
+</script>
+
+<script>
+(function(){
+  // Newsletter subscribe (Buttondown): submit without leaving the page, then confirm.
+  var f=document.getElementById('ndSubForm');
+  if(f){
+    f.addEventListener('submit',function(e){
+      var inp=document.getElementById('ndSubEmail');
+      if(inp&&!inp.checkValidity())return; // let native validation show
+      e.preventDefault();
+      var email=inp?inp.value:'';
+      try{
+        fetch(f.action,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'email='+encodeURIComponent(email)});
+      }catch(err){ f.submit(); return; }
+      var ok=document.getElementById('ndSubOk');
+      if(ok)ok.hidden=false;
+      f.hidden=true;
+    });
+  }
+  // Deep links from the weekly email: ?action=1 opens Take Action; ?subscribe=1 focuses the subscribe box.
+  window.addEventListener('load',function(){
+    try{
+      var p=new URLSearchParams(location.search);
+      if(p.get('action')==='1'&&typeof window.taOpen==='function'){window.taOpen();}
+      if(p.get('subscribe')==='1'){
+        var ov=document.getElementById('ndOverlay');
+        if(ov&&!document.body.classList.contains('embed-mode'))ov.classList.add('active');
+        var el=document.getElementById('ndSubEmail');
+        if(el){el.focus();el.scrollIntoView({block:'center'});}
+      }
+    }catch(e){}
   });
 })();
 </script>
