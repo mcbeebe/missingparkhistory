@@ -376,10 +376,12 @@ def parse_article(raw: dict) -> Article | None:
 # ---------------------------------------------------------------------------
 
 
-def render_card(a: Article) -> str:
+def render_card(a: Article, added_iso: str) -> str:
+    # data-added records when the bot added the card (not the publish date), so the
+    # weekly newsletter can list everything added in the past 7 days.
     return (
         f'  <article class="article-card" data-tags="{a.tag}" '
-        f'data-month="{a.iso_month}" data-source="{a.source_key}">\n'
+        f'data-month="{a.iso_month}" data-source="{a.source_key}" data-added="{added_iso}">\n'
         f'    <div class="article-date">'
         f'<div class="month-day">{a.display_month_day}</div>'
         f'<div class="date-detail">{a.year}</div></div>\n'
@@ -986,7 +988,7 @@ def main() -> int:
     # Insert newest-last so each insertion still lands at the top of the year.
     new_html = html
     for a in reversed(articles):
-        card = render_card(a)
+        card = render_card(a, today_iso)
         new_html = insert_card(new_html, card, a.year)
 
     new_html = update_banner(new_html, today_iso, article_count(new_html))
