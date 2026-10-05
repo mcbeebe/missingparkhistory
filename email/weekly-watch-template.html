@@ -1,0 +1,120 @@
+<!--
+  Weekly Watch email template (sent by the "Weekly nps news digest" Routine via the Gmail connector).
+
+  How to use: copy everything from the first <table> down, replace each {{PLACEHOLDER}}, and send it
+  as the HTML body. Do not change the styles.
+
+  Gmail-connector rules (verified by test drafts on 2026-10-05):
+    - KEEPS: bgcolor="..." attributes, background-color:..., borders, border-radius, colors, fonts.
+    - STRIPS: the `background:` shorthand, gradients, and every <img> (linked or inline CID).
+    So: colors only via bgcolor + background-color; the logo is drawn with table cells, not an image.
+
+  Placeholders:
+    {{DATE_RANGE}}        e.g. Sep 28 &ndash; Oct 5, 2026
+    {{BRIEF_HTML}}        2-3 sentences; <strong> for key names and numbers
+    {{ARTICLES_HTML}}     one ARTICLE ITEM per new article (pattern below), or the EMPTY STATE
+    {{TAKE_ACTION_HTML}}  one sentence with the concrete ask; <strong> allowed
+    {{EDITOR_NOTES_HTML}} "your call" items, backup path, digest path, separated by <br>.
+                          For a subscriber send, delete the whole EDITOR NOTES row.
+
+  ARTICLE ITEM:
+    <div style="padding:14px 0;border-bottom:1px solid #eceae2">
+      <div style="font-size:11px;color:#8a938a;font-weight:bold;letter-spacing:.4px">SOURCE &middot; Mon D</div>
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.35;margin-top:4px"><a href="URL" style="color:#1b2a4a;text-decoration:none">HEADLINE</a></div>
+      <div style="font-size:13px;line-height:1.55;color:#4a5248;margin-top:5px">ONE-LINE PARAPHRASED SUMMARY</div>
+      <div style="margin-top:6px"><a href="URL" style="font-size:12px;font-weight:bold;color:#2D6A4F;text-decoration:none">Read at SOURCE &rarr;</a></div>
+    </div>
+
+  EMPTY STATE:
+    <div style="padding:14px 0;font-size:14px;color:#4a5248">No new qualifying articles this week.</div>
+-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ece9e2" style="background-color:#ece9e2;padding:20px 0">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;max-width:600px;width:100%;font-family:Arial,Helvetica,sans-serif;color:#23281f">
+
+<!-- HEADER: table-drawn wayside-sign logo + wordmark -->
+<tr><td bgcolor="#1B4332" style="background-color:#1B4332;padding:20px 24px">
+  <table cellpadding="0" cellspacing="0" border="0"><tr>
+    <td valign="middle" style="padding-right:16px">
+      <table width="96" cellpadding="0" cellspacing="0" border="0" bgcolor="#3b2a14" style="background-color:#3b2a14;border-radius:4px">
+        <tr><td align="center" style="padding:6px 4px 4px;font-family:Georgia,'Times New Roman',serif;font-size:9px;font-weight:bold;letter-spacing:.6px;color:#f5f0e6">PARK HISTORY</td></tr>
+        <tr><td style="padding:0 5px 5px">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f5f0e6" style="background-color:#f5f0e6">
+            <tr><td style="padding:6px 6px 0"><div style="height:4px;border:1px dashed #d79a9a;font-size:0;line-height:0">&nbsp;</div></td></tr>
+            <tr><td style="padding:5px 4px">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#b91c1c" style="background-color:#b91c1c">
+                <tr><td align="center" style="padding:3px 0;font-family:Arial,Helvetica,sans-serif;font-size:8px;font-weight:bold;letter-spacing:1.6px;color:#ffffff">CENSORED</td></tr>
+              </table>
+            </td></tr>
+            <tr><td style="padding:0 30px 6px 6px"><div style="height:4px;border:1px dashed #e3b9b9;font-size:0;line-height:0">&nbsp;</div></td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td>
+    <td valign="middle">
+      <div style="font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.25;font-weight:bold;color:#ffffff">The Missing History of Our National Parks</div>
+      <div style="font-size:11px;letter-spacing:3px;font-weight:bold;color:#d8c58f;margin-top:6px">WEEKLY WATCH</div>
+    </td>
+  </tr></table>
+</td></tr>
+
+<!-- DATE -->
+<tr><td style="padding:20px 24px 0;font-size:13px;font-weight:bold;color:#8a7f66">{{DATE_RANGE}}</td></tr>
+
+<!-- THIS WEEK IN BRIEF -->
+<tr><td style="padding:14px 24px 0">
+  <div style="font-size:11px;letter-spacing:1.5px;font-weight:bold;color:#2D6A4F">THIS WEEK IN BRIEF</div>
+  <div style="font-size:15px;line-height:1.6;color:#33392f;margin-top:8px">{{BRIEF_HTML}}</div>
+</td></tr>
+
+<!-- LATEST COVERAGE -->
+<tr><td style="padding:22px 24px 0">
+  <div style="font-size:11px;letter-spacing:1.5px;font-weight:bold;color:#2D6A4F;border-bottom:1px solid #e6e2d8;padding-bottom:8px">LATEST COVERAGE</div>
+  {{ARTICLES_HTML}}
+</td></tr>
+
+<!-- RECOMMENDED TAKE ACTION -->
+<tr><td style="padding:22px 24px 0">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f6f1e4" style="background-color:#f6f1e4;border-left:4px solid #b9821f">
+    <tr><td style="padding:16px 18px">
+      <div style="font-size:11px;letter-spacing:1.2px;font-weight:bold;color:#9a6b12">&#9994; RECOMMENDED TAKE ACTION</div>
+      <div style="font-size:14px;line-height:1.55;color:#4a3f27;margin:8px 0 14px">{{TAKE_ACTION_HTML}}</div>
+      <table cellpadding="0" cellspacing="0" border="0"><tr>
+        <td bgcolor="#1B4332" style="background-color:#1B4332;border-radius:8px">
+          <a href="https://missingparkhistory.org/?action=1" style="display:inline-block;padding:12px 22px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none">Contact your representatives &rarr;</a>
+        </td>
+      </tr></table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- SUBSCRIBE -->
+<tr><td style="padding:22px 24px 0">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#eef4ef" style="background-color:#eef4ef;border:1px solid #d7e5db">
+    <tr>
+      <td style="padding:12px 14px;font-size:13px;font-weight:bold;color:#2a3129">Forwarded this? Get the Weekly Watch every Monday.</td>
+      <td align="right" style="padding:10px 14px">
+        <table cellpadding="0" cellspacing="0" border="0"><tr>
+          <td bgcolor="#2D6A4F" style="background-color:#2D6A4F;border-radius:6px">
+            <a href="https://missingparkhistory.org/?subscribe=1" style="display:inline-block;padding:8px 14px;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;white-space:nowrap">Subscribe &rarr;</a>
+          </td>
+        </tr></table>
+      </td>
+    </tr>
+  </table>
+</td></tr>
+
+<!-- FOOTER LINKS -->
+<tr><td align="center" style="padding:16px 24px 22px;font-size:12px;color:#8a938a">
+  <a href="https://missingparkhistory.org/" style="color:#2D6A4F;text-decoration:none">Explore the map</a> &middot;
+  <a href="https://missingparkhistory.org/news-and-press.html" style="color:#2D6A4F;text-decoration:none">All coverage</a> &middot;
+  <a href="https://ko-fi.com/missingparkhistory" style="color:#2D6A4F;text-decoration:none">Support on Ko-fi</a>
+</td></tr>
+
+<!-- EDITOR NOTES: delete this row for any subscriber send -->
+<tr><td bgcolor="#f7f6f1" style="background-color:#f7f6f1;border-top:2px dashed #d8d5cc;padding:12px 24px 18px;font-size:11px;line-height:1.5;color:#8a8574">
+  <b style="font-size:10px;letter-spacing:.8px;color:#6f6a59">EDITOR NOTES &mdash; NOT FOR SUBSCRIBERS</b><br>{{EDITOR_NOTES_HTML}}
+</td></tr>
+
+</table>
+</td></tr></table>
