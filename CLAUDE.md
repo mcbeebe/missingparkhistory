@@ -14,7 +14,10 @@
 
 Most content pages share the same top navigation (`.topnav` / `.topnav-links`).
 When changing nav links or header behavior, update all pages that contain
-`<div class="topnav-links">` so the header stays consistent. `index.html` (the
+`<div class="topnav-links">` so the header stays consistent. Every header page
+carries the same link list, in the same order; the canonical list lives in
+`tests/nav-consistency.spec.ts` and the test fails if any page drifts. The
+current page's link gets `class="active" aria-current="page"`. `index.html` (the
 map/home page) uses a different banner design and does not share this header.
 
 Responsive/menu behavior lives in two shared files, not in each page:
