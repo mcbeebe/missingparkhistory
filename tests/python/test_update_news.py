@@ -313,6 +313,28 @@ class DigestTest(unittest.TestCase):
         self.assertEqual(out.count('<div class="nd-article">'), 5)
 
 
+class RealNewsPageTest(unittest.TestCase):
+    """The committed news-and-press.html must stay writable by the daily bot."""
+
+    def setUp(self):
+        self.html = (ROOT / "news-and-press.html").read_text(encoding="utf-8")
+
+    def test_updated_line_and_count_are_bot_editable(self):
+        self.assertIsNotNone(un.banner_date(self.html))
+        out = un.update_banner(self.html, "2031-01-02", 999)
+        self.assertEqual(un.banner_date(out), "2031-01-02")
+        self.assertIn('<time datetime="2031-01-02">January 2, 2031</time>', out)
+        self.assertIn("999 articles tracked", out)
+
+    def test_new_card_lands_at_top_of_its_year(self):
+        a = un.Article(date="2026-12-31", source_name="Src", source_key="other", url="https://t.example/x",
+                       headline="Headline", summary_html="Summary.", tag="court", tag_label="Court Ruling")
+        out = un.insert_card(self.html, un.render_card(a, "2026-12-31"), "2026")
+        first = out.index('<article class="article-card"')
+        self.assertIn("https://t.example/x", out[first:first + 1000])
+        self.assertEqual(un.article_count(out), un.article_count(self.html) + 1)
+
+
 class RealTimelineTest(unittest.TestCase):
     """The committed timeline.html must be parseable by the bot."""
 

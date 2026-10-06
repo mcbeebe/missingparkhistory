@@ -9,11 +9,13 @@
   <meta name="description" content="Comprehensive timeline of news coverage on NPS sign censorship under Executive Order 14253 and Secretary's Order 3431." />
   <!-- Using system fonts to match site-wide About page style -->
   <style>
-    :root { --ink:#1a1a1a; --accent:#b83230; --accent-dark:#8a2422; --muted:#6b6259; --border:#e2e2e2; --highlight:#fff3cd; --tag-lawsuit:#2d5f8a; --tag-removal:#b83230; --tag-leak:#7b5ea7; --tag-resistance:#3a7d44; --tag-order:#c07a28; --tag-court:#2d5f8a; color-scheme:light only; }
+    /* Shared site look (matches About / Legal / Timeline): fixed top nav, centered hero,
+       white stat cards and article cards, blue dot section headings, 900px column. */
+    :root { color-scheme:light only; }
     *{margin:0;padding:0;box-sizing:border-box}
     html{background:#fafafa}
     body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2d;line-height:1.8;-webkit-font-smoothing:antialiased}
-    .topnav{position:sticky;top:0;z-index:100;background:rgba(250,250,250,0.97);border-bottom:1px solid #e0e0e0;backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+    .topnav{position:fixed;top:0;left:0;right:0;z-index:5000;background:rgba(255,255,255,0.97);border-bottom:1px solid #e0e0e0;backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
     .topnav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1a1a1a;font-family:Georgia,serif;font-size:17px;font-weight:700}
     .topnav-brand span{color:#b91c1c}
     .topnav-links{display:flex;gap:6px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;line-height:1.5}
@@ -22,52 +24,72 @@
     .topnav-links a.active{color:#1a1a1a;background:rgba(37,99,180,0.08);border:1px solid rgba(37,99,180,0.2)}
     .topnav-links a.map-link{color:#b91c1c;border:1px solid rgba(185,28,28,0.25);background:rgba(185,28,28,0.05)}
     .topnav-links a.map-link:hover{background:rgba(185,28,28,0.1);color:#991b1b}
-    .hero{max-width:1100px;margin:0 auto;padding:60px 24px 40px;border-bottom:1px solid var(--border)}
-    .hero-eyebrow{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;font-weight:500}
-    .hero h1{font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:700;line-height:1.3;margin-bottom:12px;max-width:800px}
-    .hero-subtitle{font-size:17px;color:#777;font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:600px;line-height:1.6;margin:0 auto}
-    .hero-stats{display:flex;gap:32px;margin-top:28px;flex-wrap:wrap}
-    .stat{display:flex;flex-direction:column} .stat-number{font-family:Georgia,'Times New Roman',serif;font-size:2rem;font-weight:900;color:var(--accent);line-height:1} .stat-label{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:4px;font-weight:600}
-    .filter-bar{max-width:1100px;margin:0 auto;padding:16px 24px;border-bottom:1px solid var(--border)}
-    .filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap} .filter-row+.filter-row{margin-top:10px}
-    .filter-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted);min-width:62px}
-    .filter-btn{padding:5px 14px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;color:var(--muted)}
-    .filter-btn:hover{border-color:var(--ink);color:var(--ink)} .filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .filter-select{padding:5px 28px 5px 12px;border-radius:20px;border:1.5px solid var(--border);background:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236b6259'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:all .2s}
-    .filter-select:hover{border-color:var(--ink);color:var(--ink)} .filter-select:focus{outline:2px solid var(--accent);outline-offset:1px}
-    .filter-active{border-color:var(--ink)!important;color:var(--ink)!important;font-weight:700}
-    .filter-clear{padding:5px 12px;border:none;background:none;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:600;color:var(--accent);cursor:pointer;text-decoration:underline;display:none} .filter-clear.visible{display:inline-block}
-    .results-count{font-size:.82rem;color:var(--muted);padding:8px 0 0;font-weight:600}
-    .timeline-section{max-width:1100px;margin:0 auto;padding:0 24px 80px}
-    .year-marker{position:sticky;top:56px;z-index:10;background:#fafafa;padding:20px 0 12px;border-bottom:1px solid #e0e0e0}
-    .year-marker h2{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;font-weight:900;color:var(--accent-dark)}
-    .article-card{padding:28px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:120px 1fr;gap:24px;transition:background .2s}
-    .article-card:hover{background:#f7f7f7;margin:0 -12px;padding-left:12px;padding-right:12px;border-radius:6px}
+    .progress-bar{position:fixed;top:0;left:0;height:2px;background:#b91c1c;z-index:5001;width:0%;transition:width .1s;opacity:0.6}
+
+    .hero,.key-facts,.filter-bar,.timeline-section{max-width:900px;margin:0 auto;padding-left:28px;padding-right:28px}
+    .hero{padding-top:100px;text-align:center}
+    .hero h1{font-size:36px;color:#1a1a1a;font-weight:700;line-height:1.3;margin-bottom:12px}
+    .hero h1 span{color:#b91c1c}
+    .hero-subtitle{font-size:17px;color:#777;font-family:-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;max-width:600px;margin:0 auto}
+    .publish-date{font-size:12px;color:#999;font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin-top:14px;text-transform:uppercase;letter-spacing:1px;text-wrap:balance}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:40px 0 0}
+    .stat-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:24px 20px;text-align:center}
+    .stat-card .stat-num{font-size:32px;font-weight:700;font-family:Georgia,serif;line-height:1}
+    .stat-card .stat-label{font-size:12px;color:#777;margin-top:8px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;text-transform:uppercase;letter-spacing:0.5px;line-height:1.4}
+    .stat-num.blue{color:#2563b4} .stat-num.red{color:#b91c1c} .stat-num.orange{color:#b45309} .stat-num.green{color:#047857}
+
+    .section-heading{font-size:12px;font-weight:700;color:#2563b4;text-transform:uppercase;letter-spacing:2px;margin:56px 0 18px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;display:flex;align-items:center;gap:10px;line-height:1.4}
+    .section-heading::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563b4;flex-shrink:0}
+    .facts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .fact-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:20px}
+    .fact-card h4{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#b91c1c;margin-bottom:8px}
+    .fact-card p{font-size:15px;color:#555;line-height:1.6}
+
+    .filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap} .filter-group{display:inline-flex;align-items:center;gap:8px;margin-right:8px} .filter-row+.filter-row{margin-top:12px}
+    .filter-label{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#777;min-width:62px}
+    .filter-btn{background:#fff;border:1px solid #e0e0e0;border-radius:24px;padding:7px 16px;cursor:pointer;font-size:13px;font-weight:500;font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#666;transition:all .2s}
+    .filter-btn:hover{border-color:#2563b4;color:#2563b4;background:rgba(37,99,180,0.04)} .filter-btn.active{background:#2563b4;color:#fff;border-color:#2563b4}
+    .filter-select{padding:7px 30px 7px 14px;border-radius:24px;border:1px solid #e0e0e0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:500;color:#666;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23777777'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;transition:all .2s}
+    .filter-select:hover{border-color:#2563b4;color:#2563b4} .filter-select:focus{outline:2px solid #2563b4;outline-offset:1px}
+    .filter-active{border-color:#2563b4!important;color:#2563b4!important;font-weight:600}
+    .filter-clear{padding:5px 12px;border:none;background:none;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:600;color:#2563b4;cursor:pointer;text-decoration:underline;display:none} .filter-clear.visible{display:inline-block}
+    .results-count{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;color:#777;padding:10px 0 0;font-weight:600}
+
+    .timeline-section{padding-bottom:40px}
+    .year-marker{position:sticky;top:56px;z-index:10;background:#fafafa;padding:24px 0 14px}
+    .year-marker h2{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:700;color:#2563b4;text-transform:uppercase;letter-spacing:2px;display:flex;align-items:center;gap:10px;line-height:1.4}
+    .year-marker h2::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563b4;flex-shrink:0}
+    .article-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:24px;margin-bottom:16px;display:grid;grid-template-columns:84px 1fr;gap:20px;box-shadow:0 2px 6px rgba(0,0,0,0.04);transition:border-color .2s,box-shadow .2s}
+    .article-card:hover{border-color:#d0d0d0;box-shadow:0 6px 16px rgba(0,0,0,0.08)}
     .article-card.hidden{display:none}
-    .article-date{text-align:right;padding-top:4px} .article-date .month-day{font-family:Georgia,'Times New Roman',serif;font-size:1.1rem;font-weight:700;line-height:1.2} .article-date .date-detail{font-size:.75rem;color:var(--muted);margin-top:2px}
-    .article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;font-weight:700;line-height:1.3;margin-bottom:6px}
-    .article-body h3 a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s} .article-body h3 a:hover{border-color:var(--accent)}
-    .article-meta{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
-    .article-source{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
-    .article-tag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;padding:2px 8px;border-radius:3px;color:#fff}
-    .tag-order{background:var(--tag-order)} .tag-removal{background:var(--tag-removal)} .tag-resistance{background:var(--tag-resistance)} .tag-lawsuit{background:var(--tag-lawsuit)} .tag-leak{background:var(--tag-leak)} .tag-court{background:var(--tag-court)}
-    .article-summary{font-size:16px;color:#2d2d2d;line-height:1.8;max-width:700px} .article-summary strong{color:#1a1a1a;font-weight:600}
-    .read-more{display:inline-block;margin-top:8px;font-size:.82rem;font-weight:600;color:var(--accent);text-decoration:none;letter-spacing:.3px} .read-more:hover{text-decoration:underline}
-    .key-facts{max-width:1100px;margin:0 auto;padding:40px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .key-facts h2{font-family:Georgia,'Times New Roman',serif;font-size:1.3rem;font-weight:900;margin-bottom:20px}
-    .facts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-    .fact-card{background:#f9f9f9;border:1px solid var(--border);padding:20px;border-radius:4px} .fact-card h4{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:8px} .fact-card p{font-size:.9rem;color:#555;line-height:1.5}
-    .site-footer{background:#fafafa;color:#999;padding:40px 24px;text-align:center;font-size:.85rem;line-height:1.7;border-top:1px solid var(--border)} .site-footer a{color:var(--accent);text-decoration:none} .site-footer a:hover{text-decoration:underline} .footer-inner{max-width:600px;margin:0 auto} .footer-logo{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;color:var(--ink);margin-bottom:12px}
-    @media(max-width:640px){.article-card{grid-template-columns:1fr;gap:6px} .article-date{text-align:left;display:flex;gap:8px;align-items:baseline} .hero-stats{gap:20px}}
+    .article-date{padding-top:3px;font-family:-apple-system,BlinkMacSystemFont,sans-serif} .article-date .month-day{font-size:13px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:1px;line-height:1.3} .article-date .date-detail{font-size:12px;color:#999;margin-top:2px;letter-spacing:.5px}
+    .article-body h3{font-family:Georgia,'Times New Roman',serif;font-size:19px;font-weight:700;line-height:1.4;margin-bottom:8px}
+    .article-body h3 a{color:#1a1a1a;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s,color .2s} .article-body h3 a:hover{color:#2563b4;border-color:rgba(37,99,180,0.4)}
+    .article-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+    .article-source{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:#777}
+    .article-tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:11px;font-weight:700;padding:3px 10px;border-radius:4px;line-height:1.5}
+    .tag-removal{background:#ffe6e6;color:#b91c1c} .tag-court,.tag-lawsuit{background:#fff3e0;color:#b45309} .tag-resistance{background:#e6f5ed;color:#047857} .tag-order{background:#eef4fc;color:#2563b4} .tag-leak{background:#f3e8ff;color:#6b21a8}
+    .article-summary{font-size:16px;color:#555;line-height:1.7} .article-summary strong{color:#1a1a1a;font-weight:600}
+    .read-more{display:inline-block;margin-top:10px;color:#2563b4;text-decoration:none;font-size:14px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,sans-serif;border-bottom:1px solid rgba(37,99,180,0.3);transition:border-color .2s} .read-more:hover{border-color:#2563b4}
+
+    .site-footer{text-align:center;margin-top:40px;padding:40px 28px;border-top:1px solid #e0e0e0;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;color:#999;line-height:1.7} .site-footer a{color:#2563b4;text-decoration:none} .site-footer a:hover{text-decoration:underline} .footer-inner{max-width:640px;margin:0 auto} .footer-logo{font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:12px}
+
+    @media(max-width:640px){
+      .hero,.key-facts,.filter-bar,.timeline-section{padding-left:18px;padding-right:18px}
+      .hero{padding-top:80px} .hero h1{font-size:26px} .hero-subtitle{font-size:16px}
+      .stats-grid{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px} .stat-card{padding:18px 12px} .stat-card .stat-num{font-size:26px}
+      .section-heading{margin-top:40px}
+      .facts-grid{grid-template-columns:1fr}
+      .article-card{grid-template-columns:1fr;gap:6px;padding:18px} .article-date{display:flex;gap:8px;align-items:baseline}
+      .article-body h3{font-size:17px}
+    }
     .article-card{opacity:0;transform:translateY(12px);animation:fadeUp .4s ease forwards} @keyframes fadeUp{to{opacity:1;transform:translateY(0)}} .article-card:nth-child(2){animation-delay:.04s} .article-card:nth-child(3){animation-delay:.08s} .article-card:nth-child(4){animation-delay:.12s} .article-card:nth-child(5){animation-delay:.16s}
-    .progress-bar{position:fixed;top:0;left:0;height:2px;background:var(--accent);z-index:200;width:0%;transition:width .1s;opacity:0.6}
-    .update-banner{background:#ffffff;border-bottom:1px solid var(--border);padding:8px 24px;text-align:center;font-size:.82rem;color:var(--muted);font-weight:600} .update-banner time{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:.75rem}
-  </style>
+    @media(prefers-reduced-motion:reduce){.article-card{animation:none;opacity:1;transform:none}}
+</style>
 <link rel="stylesheet" href="/site-nav.css">
 </head>
 <body>
 <div class="progress-bar" id="progressBar"></div>
-<div class="update-banner">Last updated: <time datetime="2026-10-06">October 6, 2026</time> &mdash; 226 articles tracked &mdash; Litigation ongoing &mdash; Stonewall Pride flag settlement secured &mdash; Third Circuit stay on President's House changes in effect</div>
 <nav class="topnav" aria-label="Site navigation">
   <a class="topnav-brand" href="/" aria-label="Missing Park History home"><img src="/logo.svg" alt="" style="height:24px;width:auto;vertical-align:middle"> <span>Missing</span> Park History</a>
   <div class="topnav-links">
@@ -85,23 +107,24 @@
 </nav>
 <script src="/site-nav.js"></script>
 <section class="hero">
-  <div class="hero-eyebrow">News &amp; Press Coverage</div>
-  <h1>Tracking the Censorship of America's National Parks</h1>
+  <h1>Tracking the <span>Censorship</span> of America's National Parks</h1>
   <p class="hero-subtitle">A chronological record of reporting on Executive Order 14253, Secretary's Order 3431, and the ongoing campaign to remove signs, exhibits, and publications from National Park Service sites.</p>
-  <div class="hero-stats">
-    <div class="stat"><span class="stat-number">874</span><span class="stat-label">Items Flagged</span></div>
-    <div class="stat"><span class="stat-number">100+</span><span class="stat-label">Parks Affected</span></div>
-    <div class="stat"><span class="stat-number">3</span><span class="stat-label">Active Lawsuits</span></div>
-    <div class="stat"><span class="stat-number">2</span><span class="stat-label">Court-Ordered Restorations</span></div>
+  <div class="publish-date">Updated <time datetime="2026-10-06">October 6, 2026</time>&nbsp;&middot; 226 articles tracked</div>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-num blue">874</div><div class="stat-label">Items Flagged</div></div>
+    <div class="stat-card"><div class="stat-num red">100+</div><div class="stat-label">Parks Affected</div></div>
+    <div class="stat-card"><div class="stat-num orange">3</div><div class="stat-label">Active Lawsuits</div></div>
+    <div class="stat-card"><div class="stat-num green">2</div><div class="stat-label">Court-Ordered Restorations</div></div>
   </div>
 </section>
-<section class="key-facts"><h2>Key Background</h2><div class="facts-grid">
+<section class="key-facts"><h2 class="section-heading">Key Background</h2><div class="facts-grid">
   <div class="fact-card"><h4>Executive Order 14253</h4><p>Signed March 27, 2025, directing the DOI to ensure park sites do not contain content that "inappropriately disparages Americans past or living, including persons living in colonial times."</p></div>
   <div class="fact-card"><h4>Secretary's Order 3431</h4><p>Issued May 20, 2025 by Interior Secretary Doug Burgum, implementing the EO by requiring park staff to review all interpretive content and post feedback signs asking visitors to report "negative" information.</p></div>
   <div class="fact-card"><h4>The Leaked Database</h4><p>On March 2, 2026, a whistleblower published the internal NPS database — 879 entries of flagged signs, films, brochures, and exhibits across hundreds of parks.</p></div>
   <div class="fact-card"><h4>Lawsuits</h4><p>Three active federal lawsuits: NPCA coalition (SO 3431), City of Philadelphia (Independence Hall), and Sierra Club (FOIA). The Gilbert Baker Foundation lawsuit (Stonewall Pride flag) was settled on April 13, 2026, with the flag permanently restored.</p></div>
 </div></section>
 <div class="filter-bar">
+  <h2 class="section-heading">All Coverage</h2>
   <div class="filter-row">
     <span class="filter-label">Topic:</span>
     <button class="filter-btn active" data-filter="all">All</button>
@@ -113,7 +136,7 @@
     <button class="filter-btn" data-filter="court">Court Rulings</button>
   </div>
   <div class="filter-row">
-    <span class="filter-label">Month:</span>
+    <span class="filter-group"><span class="filter-label">Month:</span>
     <select class="filter-select" id="filterMonth">
       <option value="all">All Months</option>
       <option value="2026-09">Sep 2026</option><option value="2026-08">Aug 2026</option><option value="2026-07">Jul 2026</option><option value="2026-06">Jun 2026</option><option value="2026-05">May 2026</option><option value="2026-04">Apr 2026</option><option value="2026-03">Mar 2026</option><option value="2026-02">Feb 2026</option><option value="2026-01">Jan 2026</option>
@@ -121,8 +144,8 @@
       <option value="2025-09">Sep 2025</option><option value="2025-08">Aug 2025</option><option value="2025-07">Jul 2025</option>
       <option value="2025-06">Jun 2025</option><option value="2025-05">May 2025</option>
       <option value="2025-03">Mar 2025</option><option value="2025-02">Feb 2025</option>
-    </select>
-    <span class="filter-label">Source:</span>
+    </select></span>
+    <span class="filter-group"><span class="filter-label">Source:</span>
     <select class="filter-select" id="filterSource">
       <option value="all">All Publications</option>
       <option value="wapo">Washington Post</option>
@@ -142,7 +165,7 @@
       <option value="govexec">Government Executive</option>
       <option value="notus">NOTUS</option>
       <option value="other">Other / Regional</option>
-    </select>
+    </select></span>
     <button class="filter-clear" id="clearFilters">Clear all filters</button>
   </div>
   <div class="results-count" id="resultsCount"></div>
