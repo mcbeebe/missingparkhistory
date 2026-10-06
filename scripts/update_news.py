@@ -105,7 +105,7 @@ def write_html(content: str) -> None:
     HTML_FILE.write_text(content, encoding="utf-8")
 
 
-_HOST_PREFIXES = ("www.", "us.", "uk.", "m.", "mobile.", "amp.")
+_HOST_PREFIXES = ("www.", "us.", "uk.", "edition.", "m.", "mobile.", "amp.")
 
 
 def canonical_url(url: str) -> str:
@@ -574,15 +574,21 @@ _MONTHS = {m: i + 1 for i, m in enumerate(
 
 
 def _articles_for_synthesis(html: str, since_date: str, limit: int = 20) -> list[dict]:
-    """Extract articles published on or after since_date for the weekly
-    synthesis prompt. Returns dicts with date, source, tag, headline, url,
-    summary (HTML, may contain <strong>/<em>)."""
+    """Extract articles published OR added (data-added) on or after since_date
+    for the weekly synthesis/timeline prompts.
+
+    Coverage often surfaces days after publication, so publish date alone
+    misses most of a week's news (the Sep 28 and Oct 5, 2026 Mondays found 0
+    articles that way). Returns dicts with date, added, source, tag, headline,
+    url, summary (HTML, may contain <strong>/<em>)."""
     cards = re.findall(
         r'<article class="article-card"[^>]*>.*?</article>', html, re.DOTALL,
     )
     sy, sm, sd = (int(x) for x in since_date.split("-"))
     results = []
     for c in cards:
+        added_m = re.search(r'data-added="(\d{4}-\d{2}-\d{2})"', c.split(">", 1)[0])
+        added = added_m.group(1) if added_m else ""
         md = re.search(r'<div class="month-day">([^<]+)</div>', c)
         yr = re.search(r'<div class="date-detail">([^<]+)</div>', c)
         src = re.search(r'<span class="article-source">([^<]+)</span>', c)
@@ -601,10 +607,11 @@ def _articles_for_synthesis(html: str, since_date: str, limit: int = 20) -> list
         year = int(ym.group(1)) if ym else 0
         if not (month and year):
             continue
-        if (year, month, day) < (sy, sm, sd):
+        if (year, month, day) < (sy, sm, sd) and not (added and added >= since_date):
             continue
         results.append({
             "date": f"{year:04d}-{month:02d}-{day:02d}",
+            "added": added,
             "source": src.group(1).strip(),
             "tag": tag.group(1) if tag else "",
             "headline": h.group(1).strip(),
@@ -663,16 +670,17 @@ def update_news_digest(news_html: str, today_iso: str) -> None:
     else:
         date_range = today_iso
 
-    # Replace the articles section between markers
-    start_marker = '<div class="nd-articles">'
-    end_marker = '</div>\n\n    <div class="nd-footer">'
+    # Replace the articles section: from its opening div up to its closing
+    # div, which is followed by the next pop-up block (the newsletter signup,
+    # added Oct 2026, or the footer). Matching only the footer broke the
+    # digest silently once the signup box was inserted between them.
+    start_idx = idx_html.find('<div class="nd-articles">')
+    end_m = re.compile(r'</div>\n\s*\n\s*<div class="nd-(?:sub|footer)">').search(idx_html, max(start_idx, 0))
 
-    start_idx = idx_html.find(start_marker)
-    end_idx = idx_html.find(end_marker)
-
-    if start_idx == -1 or end_idx == -1:
+    if start_idx == -1 or end_m is None:
         log.warning("Could not find digest markers in index.html; skipping")
         return
+    end_idx = end_m.start()
 
     new_articles_section = (
         f'<div class="nd-articles">\n'
@@ -749,26 +757,144 @@ Return ONLY this JSON. The very first character of your response MUST be
 """
 
 
+# ---------------------------------------------------------------------------
+# Weekly cadence (synthesis + timeline)
+# ---------------------------------------------------------------------------
+#
+# Weekly jobs used to run only on Mondays and gave up silently when that one
+# run found too little news, so a missed Monday meant another week of stale
+# content. Each job now records when it last succeeded in an HTML comment
+# stamp (<!-- news-bot:<name> YYYY-MM-DD -->) and runs on any day it is
+# 7+ days stale, retrying daily until it succeeds.
+
+WEEKLY_INTERVAL_DAYS = 7
+MAX_LOOKBACK_DAYS = 21
+SYNTHESIS_STAMP = "synthesis-updated"
+TIMELINE_STAMP = "timeline-updated"
+
+
+def _stamp_re(name: str) -> re.Pattern:
+    return re.compile(rf"<!--\s*news-bot:{name}\s+(\d{{4}}-\d{{2}}-\d{{2}})\s*-->")
+
+
+def read_stamp(html: str, name: str) -> str | None:
+    """Return the YYYY-MM-DD in a `<!-- news-bot:<name> DATE -->` stamp, if any."""
+    m = _stamp_re(name).search(html)
+    return m.group(1) if m else None
+
+
+def write_stamp(html: str, name: str, today_iso: str, anchor: str) -> str:
+    """Set the stamp to today_iso, inserting it just before `anchor` if absent."""
+    stamp = f"<!-- news-bot:{name} {today_iso} -->"
+    new, n = _stamp_re(name).subn(stamp, html, count=1)
+    if n:
+        return new
+    i = html.find(anchor)
+    if i == -1:
+        raise ValueError(f"anchor {anchor!r} not found for stamp {name}")
+    line_start = html.rfind("\n", 0, i) + 1
+    indent = html[line_start:i] if not html[line_start:i].strip() else ""
+    return html[:i] + stamp + "\n" + indent + html[i:]
+
+
+def _days_between(a_iso: str, b_iso: str) -> int:
+    a = datetime.strptime(a_iso, "%Y-%m-%d").date()
+    b = datetime.strptime(b_iso, "%Y-%m-%d").date()
+    return (b - a).days
+
+
+def weekly_due(last_iso: str | None, today_iso: str) -> bool:
+    """True when a weekly job has never run or last succeeded 7+ days ago."""
+    return last_iso is None or _days_between(last_iso, today_iso) >= WEEKLY_INTERVAL_DAYS
+
+
+def window_start(last_iso: str | None, today_iso: str) -> str:
+    """Start of the article window for a weekly job: everything since its last
+    success (capped at MAX_LOOKBACK_DAYS), or the past week if it never ran."""
+    today = datetime.strptime(today_iso, "%Y-%m-%d").date()
+    if last_iso is None:
+        return (today.fromordinal(today.toordinal() - WEEKLY_INTERVAL_DAYS)).isoformat()
+    floor = today.fromordinal(today.toordinal() - MAX_LOOKBACK_DAYS).isoformat()
+    return max(last_iso, floor)
+
+
+def _complete(prompt: str, max_tokens: int) -> str | None:
+    """One text completion, falling back through MODEL_CANDIDATES. Returns the
+    response text, or None on any API failure (callers treat None as skip)."""
+    client = anthropic.Anthropic()
+    last_err: Exception | None = None
+    for model in MODEL_CANDIDATES:
+        try:
+            log.info("Calling Anthropic API with model=%s", model)
+            resp = client.messages.create(
+                model=model,
+                max_tokens=max_tokens,
+                messages=[{"role": "user", "content": prompt}],
+            )
+        except anthropic.NotFoundError as e:
+            log.warning("Model %s not available: %s", model, e)
+            last_err = e
+            continue
+        except anthropic.AnthropicError as e:
+            log.error("API call failed: %s", e)
+            return None
+        text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", None) == "text")
+        return text or None
+    log.error("All candidate models failed; last error: %s", last_err)
+    return None
+
+
+def _parse_json_object(text: str) -> dict | None:
+    """Parse a JSON object from a model reply, tolerating fences and prose."""
+    text = re.sub(r"^```(?:json)?\s*", "", text.strip())
+    text = re.sub(r"\s*```$", "", text)
+    fb, lb = text.find("{"), text.rfind("}")
+    if fb == -1 or lb <= fb:
+        return None
+    try:
+        data = json.loads(text[fb : lb + 1])
+    except json.JSONDecodeError as e:
+        log.error("Model returned non-JSON: %s; first 500 chars: %s", e, text[:500])
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def _gather_weekly_articles(news_html: str, last_iso: str | None, today_iso: str) -> tuple[str, list[dict]]:
+    """Articles for a weekly job: since its last success, widening to
+    MAX_LOOKBACK_DAYS if that window holds fewer than two."""
+    since = window_start(last_iso, today_iso)
+    articles = _articles_for_synthesis(news_html, since, limit=20)
+    if len(articles) < 2:
+        wider = window_start("0000-01-01", today_iso)
+        if wider < since:
+            since, articles = wider, _articles_for_synthesis(news_html, wider, limit=20)
+    return since, articles
+
+
 def update_synthesis(news_html: str, today_iso: str) -> bool:
     """Regenerate the 'Where the Fight Stands' synthesis paragraphs and the
-    three header badges in index.html, using Claude over the last 7 days of
-    articles. Returns True on success, False on any soft failure (caller
-    should treat False as "leave existing synthesis in place")."""
+    three header badges in index.html from articles published or added since
+    the last successful refresh. On success, stamps index.html with today's
+    date and returns True; returns False on any soft failure (existing
+    synthesis stays in place and the next daily run retries)."""
     if not INDEX_FILE.exists():
         log.warning("index.html not found; skipping synthesis update")
-        return False
-
-    since = datetime.now().date().toordinal() - 7
-    since_date = datetime.fromordinal(since).strftime("%Y-%m-%d")
-    articles = _articles_for_synthesis(news_html, since_date, limit=20)
-    if len(articles) < 2:
-        log.warning("Only %d article(s) in past 7 days; skipping synthesis", len(articles))
         return False
 
     idx_html = INDEX_FILE.read_text(encoding="utf-8")
 
     if _is_frozen(idx_html, "synthesis"):
         log.info("Synthesis is frozen by a news-bot:freeze marker; leaving it unchanged")
+        return False
+
+    since_date, articles = _gather_weekly_articles(
+        news_html, read_stamp(idx_html, SYNTHESIS_STAMP), today_iso
+    )
+    if len(articles) < 2:
+        log.warning(
+            "Only %d article(s) published or added since %s; skipping synthesis",
+            len(articles), since_date,
+        )
         return False
 
     syn_re = re.compile(
@@ -800,50 +926,12 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
         articles_block=articles_block,
     )
 
-    client = anthropic.Anthropic()
-    resp = None
-    last_err: Exception | None = None
-    for model in MODEL_CANDIDATES:
-        try:
-            log.info("Calling Anthropic API for synthesis with model=%s", model)
-            resp = client.messages.create(
-                model=model,
-                max_tokens=2000,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            break
-        except anthropic.NotFoundError as e:
-            log.warning("Model %s not available: %s", model, e)
-            last_err = e
-            continue
-        except anthropic.AnthropicError as e:
-            log.error("Synthesis API call failed: %s", e)
-            return False
-    if resp is None:
-        log.error("All candidate models failed for synthesis; last error: %s", last_err)
-        return False
-
-    text = ""
-    for block in resp.content:
-        if getattr(block, "type", None) == "text":
-            text = block.text
+    text = _complete(prompt, max_tokens=2000)
     if not text:
         log.warning("No text in synthesis response")
         return False
-
-    text = text.strip()
-    text = re.sub(r"^```(?:json)?\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
-    fb = text.find("{")
-    lb = text.rfind("}")
-    if fb != -1 and lb > fb:
-        text = text[fb : lb + 1]
-
-    try:
-        data = json.loads(text)
-    except json.JSONDecodeError as e:
-        log.error("Synthesis returned non-JSON: %s", e)
-        log.error("Raw (first 1000 chars): %s", text[:1000])
+    data = _parse_json_object(text)
+    if data is None:
         return False
 
     paragraphs = data.get("paragraphs", [])
@@ -872,17 +960,206 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
         '      </div>'
     )
 
-    new_idx = syn_re.sub(new_synthesis + r"\1", idx_html, count=1)
-    new_idx = badge_re.sub(new_badges + r"\1", new_idx, count=1)
+    new_idx = syn_re.sub(lambda m: new_synthesis + m.group(1), idx_html, count=1)
+    new_idx = badge_re.sub(lambda m: new_badges + m.group(1), new_idx, count=1)
+    new_idx = write_stamp(new_idx, SYNTHESIS_STAMP, today_iso, '<div class="nd-synthesis">')
 
     INDEX_FILE.write_text(new_idx, encoding="utf-8")
     log.info(
-        "Updated synthesis: %d paragraphs (~%d words), %d badges",
-        len(paragraphs),
+        "Updated synthesis from %d article(s) since %s: %d paragraphs (~%d words), %d badges",
+        len(articles), since_date, len(paragraphs),
         sum(len(re.sub(r"<[^>]+>", "", p).split()) for p in paragraphs),
         len(badges),
     )
     return True
+
+
+# ---------------------------------------------------------------------------
+# Timeline (timeline.html) — weekly, sourced milestones only
+# ---------------------------------------------------------------------------
+
+TIMELINE_FILE = REPO_ROOT / "timeline.html"
+TIMELINE_TYPES = {"removal": "Removal", "restoration": "Restoration", "legal": "Legal", "info": "Update"}
+TIMELINE_MAX_NEW = 3
+TIMELINE_TITLE_MAX = 80
+TIMELINE_DESC_MAX = 320
+_TL_EVENT_RE = re.compile(r'\n    <div class="timeline-event [^"]*"[^>]*\bdata-date="(\d{4}-\d{2}-\d{2})"')
+
+TIMELINE_PROMPT = """You maintain the public timeline on MissingParkHistory.org, which tracks
+the removal of history and science content from U.S. national parks and the
+legal and public fight over it.
+
+Below are news articles the site tracked since {since_date}, and the titles of
+events already on the timeline. Pick AT MOST {max_new} genuine milestones from
+these articles that are not already on the timeline: a removal or restoration of
+specific content, a court ruling or major filing, a new law/order/budget action,
+or a significant revelation (leak, data, investigation). Skip opinion pieces,
+event announcements, re-reporting of older events, and minor follow-ups.
+Returning zero events is fine and expected in slow weeks.
+
+Hard rules:
+- Use ONLY facts stated in the article summary. Do not add facts, numbers, or
+  characterizations that are not in it.
+- "url" must be copied exactly from one of the articles below.
+- "date" is when the event happened if the summary states it, else the article
+  date; format YYYY-MM-DD.
+- "type" is one of: removal, restoration, legal, info.
+- "title": plain text, at most 70 characters, headline case.
+- "description": plain text, 1-2 neutral sentences, at most 280 characters.
+
+EXISTING TIMELINE TITLES (most recent first):
+{existing_titles}
+
+ARTICLES (most recent first):
+{articles_block}
+
+Return ONLY this JSON, starting with `{{`:
+{{"events": [{{"date": "2026-09-30", "type": "info", "title": "...", "description": "...", "url": "https://..."}}]}}
+"""
+
+
+def _plain(text: str) -> str:
+    """Model output → safe plain text: drop tags, decode then re-escape entities."""
+    import html as _html
+    text = _html.unescape(re.sub(r"<[^>]+>", "", str(text)))
+    return _html.escape(re.sub(r"\s+", " ", text).strip(), quote=False)
+
+
+def validate_timeline_events(raw: object, candidate_urls: set[str], existing_urls: set[str],
+                             today_iso: str) -> list[dict]:
+    """Keep only well-formed events that cite a tracked article not already on
+    the timeline. Returns at most TIMELINE_MAX_NEW cleaned events."""
+    out: list[dict] = []
+    seen = set(existing_urls)
+    if not isinstance(raw, list):
+        return out
+    for ev in raw:
+        if not isinstance(ev, dict):
+            continue
+        url = str(ev.get("url", "")).strip()
+        typ = str(ev.get("type", "")).strip().lower()
+        date_s = str(ev.get("date", "")).strip()
+        title = _plain(ev.get("title", ""))
+        desc = _plain(ev.get("description", ""))
+        if url not in candidate_urls or canonical_url(url) in seen:
+            log.info("Timeline: dropping event with untracked or duplicate url %s", url)
+            continue
+        if typ not in TIMELINE_TYPES:
+            continue
+        try:
+            d = datetime.strptime(date_s, "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if d.isoformat() > today_iso or d.year < 2025:
+            continue
+        if not (5 <= len(title) <= TIMELINE_TITLE_MAX and 20 <= len(desc) <= TIMELINE_DESC_MAX):
+            continue
+        seen.add(canonical_url(url))
+        out.append({"date": d.isoformat(), "type": typ, "title": title, "description": desc, "url": url})
+        if len(out) >= TIMELINE_MAX_NEW:
+            break
+    return out
+
+
+def render_timeline_event(ev: dict) -> str:
+    import html as _html
+    d = datetime.strptime(ev["date"], "%Y-%m-%d")
+    label = f"{d.strftime('%b')} {d.day}, {d.year}"
+    typ = ev["type"]
+    return (
+        f'\n    <div class="timeline-event {typ}" data-type="{typ}" data-date="{ev["date"]}" data-added-by="news-bot">\n'
+        f'      <div class="event-dot"></div>\n'
+        f'      <div class="event-content">\n'
+        f'        <div class="event-date">{label}</div>\n'
+        f'        <span class="event-type {typ}">{TIMELINE_TYPES[typ]}</span>\n'
+        f'        <div class="event-title">{ev["title"]}</div>\n'
+        f'        <div class="event-description">{ev["description"]}</div>\n'
+        f'        <a href="{_html.escape(ev["url"])}" class="event-link" target="_blank" rel="noopener">View details →</a>\n'
+        f'      </div>\n'
+        f'    </div>\n'
+    )
+
+
+def insert_timeline_event(tl_html: str, ev: dict) -> str:
+    """Insert an event so events stay newest-first by data-date (a new event
+    goes above existing events with the same date)."""
+    block = render_timeline_event(ev)
+    for m in _TL_EVENT_RE.finditer(tl_html):
+        if m.group(1) <= ev["date"]:
+            return tl_html[: m.start()] + block + tl_html[m.start() :]
+    # Older than everything: append after the last event block.
+    last_close = tl_html.rfind("\n    </div>\n", 0, tl_html.index('\n  </div>\n</div>\n\n<div class="sources">'))
+    if last_close == -1:
+        raise ValueError("timeline.html: no event blocks found")
+    pos = last_close + len("\n    </div>\n")
+    return tl_html[:pos] + block + tl_html[pos:]
+
+
+def update_timeline(news_html: str, today_iso: str) -> str:
+    """Add up to TIMELINE_MAX_NEW sourced milestones to timeline.html from news
+    published or added since the timeline's last update. Returns a short status
+    for the run summary. Stamps timeline.html after every successful model
+    call (even when it picks zero events) so the job runs once a week."""
+    if not TIMELINE_FILE.exists():
+        return "skipped (timeline.html missing)"
+    tl_html = TIMELINE_FILE.read_text(encoding="utf-8")
+    if re.search(r"<!--\s*news-bot:freeze(?:-timeline)?\s*-->", tl_html):
+        return "skipped (frozen by news-bot:freeze-timeline)"
+
+    existing = {canonical_url(u) for u in re.findall(r'href="([^"]+)" class="event-link"', tl_html)}
+    since, articles = _gather_weekly_articles(news_html, read_stamp(tl_html, TIMELINE_STAMP), today_iso)
+    articles = [a for a in articles if a["url"] and canonical_url(a["url"]) not in existing]
+    if not articles:
+        return f"skipped (no new tracked articles since {since})"
+
+    titles = re.findall(r'<div class="event-title">([^<]+)</div>', tl_html)[:25]
+    prompt = TIMELINE_PROMPT.format(
+        since_date=since,
+        max_new=TIMELINE_MAX_NEW,
+        existing_titles="\n".join(f"- {t}" for t in titles),
+        articles_block="\n\n".join(
+            f"[{a['date']}] {a['source']} — {a['headline']}\n"
+            f"  Summary: {re.sub(r'<[^>]+>', '', a['summary'])[:600]}\n"
+            f"  URL: {a['url']}"
+            for a in articles
+        ),
+    )
+    text = _complete(prompt, max_tokens=1500)
+    data = _parse_json_object(text) if text else None
+    if data is None:
+        return "skipped (model call failed)"
+
+    events = validate_timeline_events(
+        data.get("events"), {a["url"] for a in articles}, existing, today_iso,
+    )
+    for ev in events:
+        tl_html = insert_timeline_event(tl_html, ev)
+    if events:
+        tl_html = re.sub(r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{today_iso}"', tl_html, count=1)
+    tl_html = write_stamp(tl_html, TIMELINE_STAMP, today_iso, '    <div class="timeline-event ')
+    TIMELINE_FILE.write_text(tl_html, encoding="utf-8")
+    for ev in events:
+        log.info("Timeline: added %s %s — %s", ev["date"], ev["type"], ev["title"])
+    return f"added {len(events)} event(s)" if events else "checked; no new milestones"
+
+
+def run_weekly_jobs(news_html: str, today_iso: str, force: bool) -> list[str]:
+    """Run whichever weekly jobs are due; return run-summary lines."""
+    lines = []
+    idx = INDEX_FILE.read_text(encoding="utf-8") if INDEX_FILE.exists() else ""
+    if force or weekly_due(read_stamp(idx, SYNTHESIS_STAMP), today_iso):
+        log.info("Refreshing weekly synthesis narrative.")
+        ok = update_synthesis(news_html, today_iso)
+        lines.append(f"- Weekly synthesis: **{'refreshed' if ok else 'skipped — see log; retries tomorrow'}**")
+    else:
+        lines.append(f"- Weekly synthesis: not due (last {read_stamp(idx, SYNTHESIS_STAMP)})")
+
+    tl = TIMELINE_FILE.read_text(encoding="utf-8") if TIMELINE_FILE.exists() else ""
+    if force or weekly_due(read_stamp(tl, TIMELINE_STAMP), today_iso):
+        lines.append(f"- Timeline: **{update_timeline(news_html, today_iso)}**")
+    else:
+        lines.append(f"- Timeline: not due (last {read_stamp(tl, TIMELINE_STAMP)})")
+    return lines
 
 
 def archive(today_iso: str) -> None:
@@ -912,7 +1189,7 @@ def main() -> int:
     parser.add_argument(
         "--force-synthesis",
         action="store_true",
-        help="Refresh the 'Where the Fight Stands' synthesis even on non-Mondays",
+        help="Run the weekly synthesis + timeline jobs even if they are not due",
     )
     args = parser.parse_args()
 
@@ -925,21 +1202,17 @@ def main() -> int:
     last = banner_date(html)
     log.info("Banner last-updated: %s | today: %s", last, today_iso)
 
-    # Synthesis refresh runs weekly on Mondays (or whenever --force-synthesis is set).
-    # weekday(): Monday is 0.
-    is_monday = datetime.now().weekday() == 0
-    do_synthesis = (is_monday or args.force_synthesis) and not args.dry_run
+    # Weekly jobs (synthesis + timeline) run whenever they are 7+ days stale.
+    force_weekly = args.force_synthesis
 
     if last == today_iso and not args.force:
         log.info("Banner already shows today; nothing to do for articles.")
-        if do_synthesis:
-            log.info("Refreshing weekly synthesis narrative.")
-            update_synthesis(html, today_iso)
+        weekly = [] if args.dry_run else run_weekly_jobs(html, today_iso, force_weekly)
         emit_github_summary([
             "## NPS News Daily Update",
             f"- Date: **{today_iso}**",
             "- Status: **Skipped articles** — banner already shows today.",
-            f"- Synthesis refreshed: **{do_synthesis}**",
+            *weekly,
         ])
         return 0
 
@@ -972,16 +1245,14 @@ def main() -> int:
             archive(today_iso)
             write_html(new_html)
             update_news_digest(new_html, today_iso)
-            if do_synthesis:
-                log.info("Refreshing weekly synthesis narrative.")
-                update_synthesis(new_html, today_iso)
+            weekly = run_weekly_jobs(new_html, today_iso, force_weekly)
             update_index_last_updated(today_iso)
             log.info("No new articles. Banner date bumped.")
         emit_github_summary([
             "## NPS News Daily Update",
             f"- Date: **{today_iso}**",
             "- Status: **No new articles**. Banner date updated.",
-            f"- Synthesis refreshed: **{do_synthesis}**",
+            *([] if args.dry_run else weekly),
         ])
         return 0
 
@@ -1002,9 +1273,7 @@ def main() -> int:
     archive(today_iso)
     write_html(new_html)
     update_news_digest(new_html, today_iso)
-    if do_synthesis:
-        log.info("Refreshing weekly synthesis narrative.")
-        update_synthesis(new_html, today_iso)
+    weekly = run_weekly_jobs(new_html, today_iso, force_weekly)
     update_index_last_updated(today_iso)
     log.info("Wrote %s with %d new article(s)", HTML_FILE.name, len(articles))
 
@@ -1012,7 +1281,7 @@ def main() -> int:
         "## NPS News Daily Update",
         f"- Date: **{today_iso}**",
         f"- **{len(articles)} new article(s) added**",
-        f"- Synthesis refreshed: **{do_synthesis}**",
+        *weekly,
         "",
     ]
     for a in articles:

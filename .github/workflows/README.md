@@ -41,6 +41,24 @@ no local computer required.
 - Previous version is copied to `News and Press/Archive/news-and-press_YYYYMMDD.html`
 - Commit is pushed as `NPS News Bot <bot@missingparkhistory.org>`
 
+### Weekly jobs
+
+Two jobs run whenever they are **7+ days stale** (not just on Mondays), and
+retry on each daily run until they succeed:
+
+- **Where the Fight Stands** (home-page news pop-up in `index.html`): a
+  two-paragraph synthesis + three badges, written from articles *published or
+  added* since the last refresh. Stamp: `<!-- news-bot:synthesis-updated DATE -->`.
+- **Timeline** (`timeline.html`, newest first): up to 3 milestone events per
+  week, each required to cite an article already tracked on the News & Press
+  page (anything else is discarded). Stamp: `<!-- news-bot:timeline-updated DATE -->`.
+
+To stop the bot editing a section, add its freeze comment on its own:
+`news-bot:freeze-synthesis` / `news-bot:freeze-digest` (in `index.html`) or
+`news-bot:freeze-timeline` (in `timeline.html`). Run *Actions → Daily NPS News
+Update → Run workflow* with **force_synthesis = true** to run both weekly jobs
+immediately.
+
 ## Cost
 
 Each run uses ~1 Claude API call with up to 12 web searches. Expected cost
