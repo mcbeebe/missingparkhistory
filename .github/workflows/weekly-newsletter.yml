@@ -1,0 +1,64 @@
+name: Weekly Watch Newsletter
+
+# Sends the Weekly Watch to Buttondown subscribers.
+# Runs right after the daily news bot finishes, so Monday's new articles are
+# already on the page; the script exits unless it's Monday in Pacific time and
+# skips if this week's issue was already sent.
+on:
+  workflow_run:
+    workflows: ["Daily NPS News Update"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = build only (download the artifact); draft = create a Buttondown draft; send = email subscribers now"
+        required: true
+        default: "preview"
+        type: choice
+        options: [preview, draft, send]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-newsletter
+  cancel-in-progress: false
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout latest main (includes the bot's newest commit)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Build and send
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            python scripts/send_newsletter.py --mode send --only-on-monday
+          else
+            python scripts/send_newsletter.py --mode "${{ inputs.mode }}"
+          fi
+
+      - name: Upload preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-preview
+          path: newsletter-preview.html
+          if-no-files-found: ignore
