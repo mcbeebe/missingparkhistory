@@ -32,3 +32,11 @@ don't add per-page hamburger CSS or buttons.
 (no horizontal overflow at 390px; header collapses correctly). CI runs the same
 on every PR (`.github/workflows/layout-tests.yml`). Run it before opening a PR
 that touches layout or the header.
+
+## News bot
+
+`scripts/update_news.py` (daily GitHub Action) adds news cards, and weekly
+refreshes the home-page "Where the Fight Stands" synthesis and adds sourced
+milestones to `timeline.html`. Timeline events must stay newest first and carry
+`data-date="YYYY-MM-DD"`. Unit tests: `python -m unittest discover -s tests/python`.
+See `.github/workflows/README.md` for stamps and freeze markers.
