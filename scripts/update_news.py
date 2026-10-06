@@ -346,13 +346,29 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
     return [a for a in parsed if a is not None]
 
 
+def is_iso_date(value: str) -> bool:
+    """True for a real calendar date written exactly as YYYY-MM-DD."""
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return False
+    try:
+        datetime.strptime(value, "%Y-%m-%d")
+    except ValueError:
+        return False
+    return True
+
+
 def parse_article(raw: dict) -> Article | None:
     # A single malformed article from the model must not abort the whole run.
     # Skip (with a warning) any entry missing a required field.
     required = ("date", "source_name", "url", "headline", "summary_html")
-    missing = [k for k in required if not str(raw.get(k, "")).strip()]
+    missing = [k for k in required if not str(raw.get(k) or "").strip()]
     if missing:
         log.warning("Skipping malformed article (missing %s): %r", ", ".join(missing), raw)
+        return None
+    # The card's year heading, data-month and date label all derive from this.
+    date = str(raw["date"]).strip()
+    if not is_iso_date(date):
+        log.warning("Skipping article with unparseable date %r: %r", date, raw)
         return None
 
     tag = raw.get("tag", "").strip().lower()
@@ -360,7 +376,7 @@ def parse_article(raw: dict) -> Article | None:
         log.warning("Invalid tag %r; coercing to 'removal'", tag)
         tag = "removal"
     return Article(
-        date=raw["date"].strip(),
+        date=date,
         source_name=raw["source_name"].strip(),
         source_key=raw.get("source_key", "other").strip().lower() or "other",
         tag=tag,
@@ -402,8 +418,12 @@ def insert_card(html: str, card: str, year: str) -> str:
     """Insert a card at the top of the given year's section.
 
     The page is ordered newest-first within each year. We insert right after the
-    ``<div class="year-marker"><h2>{year}</h2></div>`` line.
+    ``<div class="year-marker"><h2>{year}</h2></div>`` line. ``year`` must be a
+    4-digit year: anything else raises rather than writing a heading like
+    ``<h2>None</h2>``.
     """
+    if not re.fullmatch(r"\d{4}", str(year)):
+        raise ValueError(f"insert_card needs a 4-digit year, got {year!r}")
     marker = f'<div class="year-marker"><h2>{year}</h2></div>'
     idx = html.find(marker)
     if idx == -1:
@@ -428,6 +448,20 @@ def insert_card(html: str, card: str, year: str) -> str:
 
 def sort_articles_desc(articles: list[Article]) -> list[Article]:
     return sorted(articles, key=lambda a: a.date, reverse=True)
+
+
+def coerce_unlisted_sources(articles: list[Article], html: str) -> None:
+    """File any article whose source_key has no option in the page's Source
+    filter (#filterSource) under 'other', so every card stays filterable."""
+    m = re.search(r'<select[^>]*id="filterSource"[^>]*>(.*?)</select>', html, re.DOTALL)
+    if not m:
+        log.warning("Source filter (#filterSource) not found; leaving source keys as-is")
+        return
+    offered = set(re.findall(r'<option value="([^"]+)"', m.group(1))) - {"all"}
+    for a in articles:
+        if a.source_key not in offered:
+            log.info("No Source filter option for %r (%s); coercing to 'other'", a.source_key, a.source_name)
+            a.source_key = "other"
 
 
 # ---------------------------------------------------------------------------
@@ -1264,6 +1298,7 @@ def main() -> int:
         seen.add(c)
         deduped.append(a)
     articles = sort_articles_desc(deduped)
+    coerce_unlisted_sources(articles, html)
     log.info("Claude returned %d qualifying new article(s)", len(articles))
 
     if not articles:

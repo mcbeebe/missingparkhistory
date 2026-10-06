@@ -38,5 +38,8 @@ that touches layout or the header.
 `scripts/update_news.py` (daily GitHub Action) adds news cards, and weekly
 refreshes the home-page "Where the Fight Stands" synthesis and adds sourced
 milestones to `timeline.html`. Timeline events must stay newest first and carry
-`data-date="YYYY-MM-DD"`. Unit tests: `python -m unittest discover -s tests/python`.
+`data-date="YYYY-MM-DD"`. News cards need `data-month="YYYY-MM"` and a
+`data-source` that has an option in the page's Source filter (else `other`);
+`scripts/resort_cards.py`, run after the bot, orders cards newest first and
+rewrites the year headings. Unit tests: `python -m unittest discover -s tests/python`.
 See `.github/workflows/README.md` for stamps and freeze markers.

@@ -1,4 +1,5 @@
-"""Unit tests for scripts/update_news.py weekly jobs (synthesis + timeline).
+"""Unit tests for scripts/update_news.py weekly jobs (synthesis + timeline),
+its card handling, and the scripts/resort_cards.py step that runs after it.
 
 Run: python -m unittest discover -s tests/python
 """
@@ -15,6 +16,7 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import resort_cards as rc  # noqa: E402
 import update_news as un  # noqa: E402
 
 
@@ -32,9 +34,26 @@ def card(month_day: str, year: str, url: str, added: str | None = None, headline
     )
 
 
+def legacy_card(month_day: str, year: str, url: str) -> str:
+    """A card in the old hand-written format: data-tags only, no data-month."""
+    return (
+        f'<article class="article-card" data-tags="resistance">\n'
+        f'  <div class="article-date">\n'
+        f'    <div class="month-day">{month_day}</div>\n'
+        f'    <div class="date-detail">{year}</div>\n'
+        f'  </div>\n'
+        f'  <div class="article-body"><h3><a href="{url}" target="_blank">Legacy card</a></h3></div>\n'
+        f'</article>\n'
+    )
+
+
 def git_show(rev: str, path: str) -> str:
     return subprocess.run(["git", "-C", str(ROOT), "show", f"{rev}:{path}"],
                           capture_output=True, text=True, check=True).stdout
+
+
+def year_headings(html: str) -> list[str]:
+    return re.findall(r'<div class="year-marker"><h2>([^<]*)</h2></div>', html)
 
 
 class CanonicalUrlTest(unittest.TestCase):
@@ -352,6 +371,85 @@ class DigestTest(unittest.TestCase):
         self.assertEqual(out.count('<div class="nd-footer">'), 1)
         self.assertEqual(out.split('<div class="nd-sub">')[1], real.split('<div class="nd-sub">')[1])
         self.assertEqual(out.count('<div class="nd-article">'), 5)
+
+
+class YearHeadingTest(unittest.TestCase):
+    """A missing or unparseable year must never become a <h2>None</h2> heading.
+
+    The page carried one from June to October 2026: resort_cards.py (run after
+    every bot update) filed cards without data-month under year None."""
+
+    def raw(self, **kw):
+        base = {"date": "2026-10-05", "source_name": "Src", "source_key": "npr", "tag": "court",
+                "tag_label": "Court Ruling", "url": "https://t.example/x", "headline": "H",
+                "summary_html": "Summary."}
+        base.update(kw)
+        return base
+
+    def test_parse_article_skips_unparseable_dates(self):
+        for bad in (None, "", "None", "June 2026", "2026-1-5", "2026-13-01", "2026-02-30", 20261005):
+            with self.subTest(date=bad), self.assertLogs(un.log, "WARNING"):
+                self.assertIsNone(un.parse_article(self.raw(date=bad)))
+        self.assertEqual(un.parse_article(self.raw()).year, "2026")
+
+    def test_insert_card_refuses_a_non_year(self):
+        html = '<section class="timeline-section">\n<div class="year-marker"><h2>2026</h2></div>\n</section>'
+        for bad in (None, "None", "", "26", "2026-10"):
+            with self.subTest(year=bad), self.assertRaises(ValueError):
+                un.insert_card(html, card("Oct 5", "2026", "https://t.example/x"), bad)
+
+    def test_unlisted_source_keys_are_filed_under_other(self):
+        # A data-source with no #filterSource option can't be picked in the filter.
+        html = ('<select class="filter-select" id="filterSource">\n'
+                '<option value="all">All Publications</option><option value="npr">NPR</option>\n'
+                '<option value="senate">U.S. Senate</option><option value="other">Other</option>\n</select>')
+        arts = [un.parse_article(self.raw(source_key=k)) for k in ("npr", "senate", "calmatters", "all")]
+        un.coerce_unlisted_sources(arts, html)
+        self.assertEqual([a.source_key for a in arts], ["npr", "senate", "other", "other"])
+
+    def test_resort_files_cards_without_data_month_by_their_visible_date(self):
+        html = ('<section class="timeline-section">\n'
+                '<div class="year-marker"><h2>2026</h2></div>\n' + card("Jan 20", "2026", "https://a/2026")
+                + '<div class="year-marker"><h2>2025</h2></div>\n' + card("Jan 5", "2025", "https://a/2025")
+                + '<div class="year-marker"><h2>None</h2></div>\n'
+                + legacy_card("Apr 20", "2026", "https://a/legacy-2026")
+                + legacy_card("Jul 01", "2025", "https://a/legacy-2025") + '</section>\n')
+        out = rc.resort(html)
+        self.assertEqual(year_headings(out), ["2026", "2025"])
+        self.assertEqual(re.findall(r'href="([^"]+)"', out),
+                         ["https://a/legacy-2026", "https://a/2026", "https://a/legacy-2025", "https://a/2025"])
+        self.assertTrue(rc.is_sorted(out)[0])
+        self.assertEqual(rc.resort(out), out)  # re-running is a no-op (it used to add a blank line)
+
+    def test_resort_refuses_a_card_with_no_year(self):
+        html = ('<section class="timeline-section">\n<div class="year-marker"><h2>2026</h2></div>\n'
+                + card("Jan 20", "2026", "https://a/1") + legacy_card("Spring", "Undated", "https://a/2")
+                + '</section>\n')
+        with self.assertRaisesRegex(ValueError, "no year"):
+            rc.resort(html)
+        # The workflow step fails loudly and leaves the page untouched.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "news-and-press.html"
+            path.write_text(html, encoding="utf-8")
+            r = subprocess.run([sys.executable, str(ROOT / "scripts" / "resort_cards.py"), str(path)],
+                               capture_output=True, text=True)
+            self.assertEqual(r.returncode, 1)
+            self.assertIn("Legacy card", r.stderr)
+            self.assertEqual(path.read_text(encoding="utf-8"), html)
+
+    @unittest.skipUnless((ROOT / ".git").exists(), "needs git history")
+    def test_resort_fixes_the_real_none_heading(self):
+        # The live page on Aug 29, 2026 ended with 13 data-month-less cards
+        # under <h2>None</h2>, out of date order.
+        try:
+            page = git_show("b846656", "news-and-press.html")
+        except subprocess.CalledProcessError:
+            self.skipTest("commit not in this clone")
+        self.assertIn("<h2>None</h2>", page)
+        out = rc.resort(page)
+        self.assertEqual(year_headings(out), ["2026", "2025"])
+        self.assertTrue(rc.is_sorted(out)[0])
+        self.assertEqual(sorted(rc.CARD_RE.findall(out)), sorted(rc.CARD_RE.findall(page)))
 
 
 class RealNewsPageTest(unittest.TestCase):
