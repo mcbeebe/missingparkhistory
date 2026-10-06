@@ -173,6 +173,7 @@ TIMELINE_FIXTURE = """<script>{"dateModified":"2026-06-12"}</script>
 </div>
 
 <div class="sources">
+<p>Last updated: <time class="tl-updated" datetime="2026-06-12">June 12, 2026</time>.</p>
 """
 
 
@@ -247,6 +248,7 @@ class TimelineTest(unittest.TestCase):
         self.assertNotIn("hallucinated", out)
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-10-06"', out)
+        self.assertIn('<time class="tl-updated" datetime="2026-10-06">October 6, 2026</time>', out)
 
     def test_rejects_newly_reported_old_event(self):
         # Regression (Oct 6, 2026 run): a Sep 26, 2026 article about a Sep 2025
@@ -274,6 +276,7 @@ class TimelineTest(unittest.TestCase):
         out = self.tl.read_text(encoding="utf-8")
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-06-12"', out)
+        self.assertIn('<time class="tl-updated" datetime="2026-06-12">June 12, 2026</time>', out)
 
     def test_model_failure_does_not_stamp(self):
         with mock.patch.object(un, "_complete", return_value=None):
@@ -344,6 +347,10 @@ class RealTimelineTest(unittest.TestCase):
         self.assertGreater(len(ds), 40)
         self.assertEqual(ds, sorted(ds, reverse=True))
         self.assertIsNotNone(un.read_stamp(html, un.TIMELINE_STAMP))
+        self.assertEqual(html.count('<time class="tl-updated" datetime="'), 1)
+        bumped = un.mark_timeline_modified(html, "2031-01-02")
+        self.assertIn('<time class="tl-updated" datetime="2031-01-02">January 2, 2031</time>', bumped)
+        self.assertIn('"dateModified":"2031-01-02"', bumped)
         out = un.insert_timeline_event(html, {"date": "2026-08-15", "type": "info", "title": "Test Event",
                                               "description": "A test description sentence.", "url": "https://t/x"})
         self.assertEqual(dates(out), sorted(dates(out), reverse=True))
