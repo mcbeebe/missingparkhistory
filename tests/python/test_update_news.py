@@ -248,6 +248,26 @@ class TimelineTest(unittest.TestCase):
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-10-06"', out)
 
+    def test_rejects_newly_reported_old_event(self):
+        # Regression (Oct 6, 2026 run): a Sep 26, 2026 article about a Sep 2025
+        # Acadia removal came back as a "Sep 30, 2025" event, duplicating an
+        # older timeline entry the model was never shown.
+        news = card("Sep 26", "2026", "https://themainemonitor.org/acadia", added="2026-10-01")
+        old = self.ev(date="2025-09-30", type="removal", title="Climate Signs Removed From Acadia",
+                      url="https://themainemonitor.org/acadia")
+        with mock.patch.object(un, "_complete", return_value=json.dumps({"events": [old]})) as c:
+            self.assertEqual(un.update_timeline(news, "2026-10-06"), "checked; no new milestones")
+        prompt = c.call_args.args[0]
+        self.assertIn("2026-06-12 Older", prompt)  # every existing event is shown, with its date
+        # One article widens the window to 21 days (2026-09-15), minus the 14-day grace.
+        self.assertIn("on or after 2026-09-01", prompt)
+        self.assertNotIn("themainemonitor", self.tl.read_text(encoding="utf-8"))
+
+    def test_grace_window_allows_slightly_older_events(self):
+        got = un.validate_timeline_events([self.ev(date="2026-09-10")], {"https://a.example/new"}, set(),
+                                          "2026-10-06", "2026-09-06")
+        self.assertEqual(len(got), 1)
+
     def test_zero_events_still_stamps(self):
         with mock.patch.object(un, "_complete", return_value='{"events": []}'):
             self.assertEqual(un.update_timeline(self.news, "2026-10-06"), "checked; no new milestones")

@@ -983,6 +983,9 @@ TIMELINE_TYPES = {"removal": "Removal", "restoration": "Restoration", "legal": "
 TIMELINE_MAX_NEW = 3
 TIMELINE_TITLE_MAX = 80
 TIMELINE_DESC_MAX = 320
+# Events may predate the article window by this much (coverage lags events);
+# anything older is re-reporting of history, not a new milestone.
+TIMELINE_GRACE_DAYS = 14
 _TL_EVENT_RE = re.compile(r'\n    <div class="timeline-event [^"]*"[^>]*\bdata-date="(\d{4}-\d{2}-\d{2})"')
 
 TIMELINE_PROMPT = """You maintain the public timeline on MissingParkHistory.org, which tracks
@@ -1001,13 +1004,17 @@ Hard rules:
 - Use ONLY facts stated in the article summary. Do not add facts, numbers, or
   characterizations that are not in it.
 - "url" must be copied exactly from one of the articles below.
-- "date" is when the event happened if the summary states it, else the article
-  date; format YYYY-MM-DD.
+- Only add events that HAPPENED on or after {earliest}. An article that newly
+  reports an older event (e.g. a 2025 removal covered in 2026) is not a new
+  milestone; skip it, especially if a similar event is already listed below.
+- "date" is the exact day the event happened, as stated in the summary, else
+  the article date if the article itself is the news; format YYYY-MM-DD. Never
+  invent a day the summary does not give.
 - "type" is one of: removal, restoration, legal, info.
 - "title": plain text, at most 70 characters, headline case.
 - "description": plain text, 1-2 neutral sentences, at most 280 characters.
 
-EXISTING TIMELINE TITLES (most recent first):
+EXISTING TIMELINE EVENTS (date, title; most recent first):
 {existing_titles}
 
 ARTICLES (most recent first):
@@ -1026,9 +1033,10 @@ def _plain(text: str) -> str:
 
 
 def validate_timeline_events(raw: object, candidate_urls: set[str], existing_urls: set[str],
-                             today_iso: str) -> list[dict]:
+                             today_iso: str, earliest_iso: str = "2025-01-01") -> list[dict]:
     """Keep only well-formed events that cite a tracked article not already on
-    the timeline. Returns at most TIMELINE_MAX_NEW cleaned events."""
+    the timeline and happened between earliest_iso and today_iso. Returns at
+    most TIMELINE_MAX_NEW cleaned events."""
     out: list[dict] = []
     seen = set(existing_urls)
     if not isinstance(raw, list):
@@ -1050,7 +1058,8 @@ def validate_timeline_events(raw: object, candidate_urls: set[str], existing_url
             d = datetime.strptime(date_s, "%Y-%m-%d").date()
         except ValueError:
             continue
-        if d.isoformat() > today_iso or d.year < 2025:
+        if d.isoformat() > today_iso or d.isoformat() < max(earliest_iso, "2025-01-01"):
+            log.info("Timeline: dropping event dated %s (outside %s..%s)", d, earliest_iso, today_iso)
             continue
         if not (5 <= len(title) <= TIMELINE_TITLE_MAX and 20 <= len(desc) <= TIMELINE_DESC_MAX):
             continue
@@ -1112,11 +1121,18 @@ def update_timeline(news_html: str, today_iso: str) -> str:
     if not articles:
         return f"skipped (no new tracked articles since {since})"
 
-    titles = re.findall(r'<div class="event-title">([^<]+)</div>', tl_html)[:25]
+    # Every existing event (not just recent ones) so older events newly
+    # re-reported can be recognised as duplicates.
+    listed = re.findall(
+        r'data-date="(\d{4}-\d{2}-\d{2})".*?<div class="event-title">([^<]+)</div>', tl_html, re.DOTALL,
+    )
+    earliest = (datetime.strptime(since, "%Y-%m-%d").date().toordinal() - TIMELINE_GRACE_DAYS)
+    earliest_iso = datetime.fromordinal(earliest).strftime("%Y-%m-%d")
     prompt = TIMELINE_PROMPT.format(
         since_date=since,
+        earliest=earliest_iso,
         max_new=TIMELINE_MAX_NEW,
-        existing_titles="\n".join(f"- {t}" for t in titles),
+        existing_titles="\n".join(f"- {d} {t}" for d, t in listed),
         articles_block="\n\n".join(
             f"[{a['date']}] {a['source']} — {a['headline']}\n"
             f"  Summary: {re.sub(r'<[^>]+>', '', a['summary'])[:600]}\n"
@@ -1130,7 +1146,7 @@ def update_timeline(news_html: str, today_iso: str) -> str:
         return "skipped (model call failed)"
 
     events = validate_timeline_events(
-        data.get("events"), {a["url"] for a in articles}, existing, today_iso,
+        data.get("events"), {a["url"] for a in articles}, existing, today_iso, earliest_iso,
     )
     for ev in events:
         tl_html = insert_timeline_event(tl_html, ev)
