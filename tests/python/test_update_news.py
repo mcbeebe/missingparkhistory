@@ -248,6 +248,26 @@ class TimelineTest(unittest.TestCase):
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-10-06"', out)
 
+    def test_rejects_newly_reported_old_event(self):
+        # Regression (Oct 6, 2026 run): a Sep 26, 2026 article about a Sep 2025
+        # Acadia removal came back as a "Sep 30, 2025" event, duplicating an
+        # older timeline entry the model was never shown.
+        news = card("Sep 26", "2026", "https://themainemonitor.org/acadia", added="2026-10-01")
+        old = self.ev(date="2025-09-30", type="removal", title="Climate Signs Removed From Acadia",
+                      url="https://themainemonitor.org/acadia")
+        with mock.patch.object(un, "_complete", return_value=json.dumps({"events": [old]})) as c:
+            self.assertEqual(un.update_timeline(news, "2026-10-06"), "checked; no new milestones")
+        prompt = c.call_args.args[0]
+        self.assertIn("2026-06-12 Older", prompt)  # every existing event is shown, with its date
+        # One article widens the window to 21 days (2026-09-15), minus the 14-day grace.
+        self.assertIn("on or after 2026-09-01", prompt)
+        self.assertNotIn("themainemonitor", self.tl.read_text(encoding="utf-8"))
+
+    def test_grace_window_allows_slightly_older_events(self):
+        got = un.validate_timeline_events([self.ev(date="2026-09-10")], {"https://a.example/new"}, set(),
+                                          "2026-10-06", "2026-09-06")
+        self.assertEqual(len(got), 1)
+
     def test_zero_events_still_stamps(self):
         with mock.patch.object(un, "_complete", return_value='{"events": []}'):
             self.assertEqual(un.update_timeline(self.news, "2026-10-06"), "checked; no new milestones")
@@ -291,6 +311,28 @@ class DigestTest(unittest.TestCase):
         self.assertEqual(out.count('<div class="nd-footer">'), 1)
         self.assertEqual(out.split('<div class="nd-sub">')[1], real.split('<div class="nd-sub">')[1])
         self.assertEqual(out.count('<div class="nd-article">'), 5)
+
+
+class RealNewsPageTest(unittest.TestCase):
+    """The committed news-and-press.html must stay writable by the daily bot."""
+
+    def setUp(self):
+        self.html = (ROOT / "news-and-press.html").read_text(encoding="utf-8")
+
+    def test_updated_line_and_count_are_bot_editable(self):
+        self.assertIsNotNone(un.banner_date(self.html))
+        out = un.update_banner(self.html, "2031-01-02", 999)
+        self.assertEqual(un.banner_date(out), "2031-01-02")
+        self.assertIn('<time datetime="2031-01-02">January 2, 2031</time>', out)
+        self.assertIn("999 articles tracked", out)
+
+    def test_new_card_lands_at_top_of_its_year(self):
+        a = un.Article(date="2026-12-31", source_name="Src", source_key="other", url="https://t.example/x",
+                       headline="Headline", summary_html="Summary.", tag="court", tag_label="Court Ruling")
+        out = un.insert_card(self.html, un.render_card(a, "2026-12-31"), "2026")
+        first = out.index('<article class="article-card"')
+        self.assertIn("https://t.example/x", out[first:first + 1000])
+        self.assertEqual(un.article_count(out), un.article_count(self.html) + 1)
 
 
 class RealTimelineTest(unittest.TestCase):
