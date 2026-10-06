@@ -57,4 +57,24 @@ test.describe('timeline page', () => {
     await page.getByRole('button', { name: 'All Events' }).click();
     await expect(page.locator('.timeline-event.hidden')).toHaveCount(0);
   });
+
+  test.describe('on a phone', () => {
+    test.use({ viewport: { width: 390, height: 844 } });
+
+    test('event dots stay round instead of being squeezed by the card', async ({ page }) => {
+      await page.goto('/timeline.html');
+      const dots = await page.locator('.timeline-event .event-dot').evaluateAll((els) =>
+        els.slice(0, 5).map((el) => {
+          const r = el.getBoundingClientRect();
+          return { width: r.width, height: r.height };
+        }),
+      );
+      expect(dots).toHaveLength(5);
+      for (const [i, d] of dots.entries()) {
+        expect(d.height, `dot ${i + 1} should be visible`).toBeGreaterThan(0);
+        expect(Math.abs(d.width - d.height), `dot ${i + 1} is ${d.width}×${d.height}px`)
+          .toBeLessThanOrEqual(0.5);
+      }
+    });
+  });
 });
