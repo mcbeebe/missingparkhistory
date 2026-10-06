@@ -76,9 +76,9 @@ Assign each new article exactly ONE primary tag:
 For each new article, create an HTML card following this exact template:
 
 ```html
-<article class="article-card" data-tags="[tag-class]">
+<article class="article-card" data-tags="[tag-class]" data-month="[YYYY-MM]" data-source="[source key]">
   <div class="article-date">
-    <div class="month-day">[Mon DD]</div>
+    <div class="month-day">[Mon D]</div>
     <div class="date-detail">[YYYY]</div>
   </div>
   <div class="article-body">
@@ -93,6 +93,11 @@ For each new article, create an HTML card following this exact template:
   </div>
 </article>
 ```
+
+`data-month` and `data-source` are required: the Month and Source filters match
+on them, and `scripts/resort_cards.py` files each card under its year from
+`data-month`. Use a `data-source` value that has an `<option>` in the page's
+Source filter (`#filterSource`), or `other`.
 
 **Writing guidelines for summaries:**
 - Paraphrase entirely — never quote articles directly
