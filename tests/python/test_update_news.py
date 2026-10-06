@@ -134,8 +134,12 @@ class SynthesisTest(unittest.TestCase):
         self.index.write_text(INDEX_FIXTURE, encoding="utf-8")
         self.p = mock.patch.object(un, "INDEX_FILE", self.index)
         self.p.start()
+        # Keep the synthesis mirror away from the real status.html.
+        self.p2 = mock.patch.object(un, "STATUS_FILE", Path(self.tmp.name) / "no-status.html")
+        self.p2.start()
 
     def tearDown(self):
+        self.p2.stop()
         self.p.stop()
         self.tmp.cleanup()
 
@@ -522,3 +526,189 @@ class RealTimelineTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# ---------------------------------------------------------------------------
+# Status page (status.html): synthesis mirror + weekly lanes/case board
+# ---------------------------------------------------------------------------
+
+def _lane(lid: str, trend: str, text: str) -> str:
+    return (
+        f'    <div class="lane" data-lane="{lid}" data-trend="{trend}">\n'
+        f'      <div><div class="name">{lid}<small>x</small></div><span class="trend {trend}"><i></i>{trend}</span></div>\n'
+        f'      <div class="latest"><b>Latest &middot; Sep 1, 2026</b>{text}</div>\n'
+        f'      <div class="nextbox"><b>Next to watch</b>next {lid}</div>\n'
+        f'    </div>\n'
+    )
+
+
+def _case(cid: str, status: str, text: str) -> str:
+    return (
+        f'    <div class="case" data-case="{cid}" data-status="{status}">\n'
+        f'      <div><h3>{cid}</h3><div class="court">c</div></div>\n'
+        f'      <span class="pill {status}">{status}</span>\n'
+        f'      <div class="what">{text}</div>\n'
+        f'    </div>\n'
+    )
+
+
+STATUS_FIXTURE = (
+    '<script type="application/ld+json">{"dateModified":"2026-10-06"}</script>\n'
+    '<time id="statusUpdated" datetime="2026-10-06">Oct 6, 2026</time>\n'
+    '<!-- news-bot:status-updated 2026-10-06 -->\n'
+    '<div class="section-heading">The four fronts</div>\n'
+    '<div class="lanes">\n    <!-- status-bot:lanes-start -->\n'
+    + "".join(_lane(k, "holding", f"old {k} text") for k in ("courts", "congress", "agency", "parks"))
+    + '    <!-- status-bot:lanes-end -->\n</div>\n'
+    '<div class="case-board">\n    <!-- status-bot:cases-start -->\n'
+    + "".join(_case(k, "ongoing", f"old {k} text") for k in ("stonewall", "npca", "philadelphia", "sierra", "peer"))
+    + '    <!-- status-bot:cases-end -->\n</div>\n'
+    '<div class="nd-synthesis">\n  <h3>Where the Fight Stands</h3>\n  <p>OLD ONE</p>\n  <p>OLD TWO</p>\n</div>\n'
+    '<!-- status-bot:synthesis-end -->\n'
+    '<p class="prose">tail</p>\n'
+)
+
+
+class StatusBoardTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.status = Path(self.tmp.name) / "status.html"
+        self.status.write_text(STATUS_FIXTURE, encoding="utf-8")
+        self.index = Path(self.tmp.name) / "index.html"
+        self.index.write_text(INDEX_FIXTURE, encoding="utf-8")
+        self.patches = [mock.patch.object(un, "STATUS_FILE", self.status),
+                        mock.patch.object(un, "INDEX_FILE", self.index)]
+        for p in self.patches:
+            p.start()
+        self.urls = {"https://a.example/1", "https://a.example/2"}
+
+    def tearDown(self):
+        for p in self.patches:
+            p.stop()
+        self.tmp.cleanup()
+
+    def news(self):
+        return card("Oct 1", "2026", "https://a.example/1") + card("Oct 2", "2026", "https://a.example/2")
+
+    def test_validate_keeps_only_cited_changed_entries(self):
+        long = "A development long enough to be a real update of the lane text."
+        raw = {
+            "lanes": [
+                {"id": "courts", "changed": False},
+                {"id": "congress", "changed": True, "trend": "worsening", "latest_date": "2026-10-02",
+                 "latest": long, "next": "Watch the bill.", "url": "https://a.example/1"},
+                {"id": "agency", "changed": True, "trend": "worsening", "latest_date": "2026-10-02",
+                 "latest": long, "next": "Watch.", "url": "https://evil.example/x"},      # untracked url
+                {"id": "parks", "changed": True, "trend": "sideways", "latest_date": "2026-10-02",
+                 "latest": long, "next": "Watch this.", "url": "https://a.example/2"},    # bad trend
+                {"id": "weather", "changed": True, "trend": "mixed", "latest_date": "2026-10-02",
+                 "latest": long, "next": "Watch this.", "url": "https://a.example/2"},    # unknown lane
+            ],
+            "cases": [
+                {"id": "npca", "changed": True, "status": "paused", "update": long + " <b>x</b>",
+                 "next": "", "url": "https://a.example/2"},
+                {"id": "peer", "changed": True, "status": "won", "update": "short",
+                 "next": "", "url": "https://a.example/2"},                               # too short
+                {"id": "philadelphia", "changed": True, "status": "reversed", "update": long,
+                 "next": "", "url": "https://a.example/2", "latest_date": "2027-01-01"},
+            ],
+        }
+        lanes, cases = un.validate_status_board(raw, self.urls, "2026-10-06")
+        self.assertEqual(sorted(lanes), ["congress"])
+        self.assertEqual(sorted(cases), ["npca", "philadelphia"])
+        self.assertNotIn("<b>", cases["npca"]["update"])  # model HTML is stripped
+
+    def test_validate_rejects_future_dates_and_non_dicts(self):
+        self.assertEqual(un.validate_status_board(["nope"], self.urls, "2026-10-06"), ({}, {}))
+        raw = {"lanes": [{"id": "courts", "changed": True, "trend": "mixed", "latest_date": "2026-12-01",
+                          "latest": "x" * 60, "next": "Watch the court.", "url": "https://a.example/1"}]}
+        self.assertEqual(un.validate_status_board(raw, self.urls, "2026-10-06")[0], {})
+
+    def test_update_rewrites_changed_blocks_only_and_stamps(self):
+        reply = json.dumps({
+            "lanes": [{"id": "courts", "changed": False}, {"id": "congress", "changed": False},
+                      {"id": "agency", "changed": True, "trend": "worsening", "latest_date": "2026-10-02",
+                       "latest": "Interior blocked 130 partner projects, records show on October 2.",
+                       "next": "Whether the projects are reinstated.", "url": "https://a.example/1"},
+                      {"id": "parks", "changed": False}],
+            "cases": [{"id": "npca", "changed": True, "status": "paused",
+                       "update": "The First Circuit kept its stay in place while briefing continues this month.",
+                       "next": "A merits decision.", "url": "https://a.example/2"}],
+        })
+        with mock.patch.object(un, "_complete", return_value=reply) as c:
+            self.assertTrue(un.update_status_board(self.news(), "2026-10-13"))
+        prompt = c.call_args.args[0]
+        self.assertIn("old courts text", prompt)
+        self.assertIn("https://a.example/2", prompt)
+        out = self.status.read_text(encoding="utf-8")
+        # Changed blocks are rendered from the model's data...
+        self.assertIn('data-lane="agency" data-trend="worsening"', out)
+        self.assertIn("Latest &middot; Oct 2, 2026</b>Interior blocked 130", out)
+        self.assertIn('<a class="src" href="https://a.example/1"', out)
+        self.assertIn('data-case="npca" data-status="paused"', out)
+        self.assertIn('<span class="pill paused">Injunction paused</span>', out)
+        self.assertIn('<div class="next"><b>Next:</b> A merits decision.</div>', out)
+        # ...unchanged blocks keep their HTML verbatim, in place.
+        for k in ("courts", "congress", "parks"):
+            self.assertIn(f"old {k} text", out)
+        for k in ("stonewall", "philadelphia", "sierra", "peer"):
+            self.assertIn(f"old {k} text", out)
+        self.assertEqual(len(re.findall(r'<div class="lane" ', out)), 4)
+        self.assertEqual(len(re.findall(r'<div class="case" ', out)), 5)
+        # Date, JSON-LD and stamp move to today; markers survive for next time.
+        self.assertIn('<time id="statusUpdated" datetime="2026-10-13">Oct 13, 2026</time>', out)
+        self.assertIn('"dateModified":"2026-10-13"', out)
+        self.assertEqual(un.read_stamp(out, un.STATUS_STAMP), "2026-10-13")
+        for marker in ("lanes-start", "lanes-end", "cases-start", "cases-end", "synthesis-end"):
+            self.assertIn(f"status-bot:{marker}", out)
+        self.assertIn("<p>OLD ONE</p>", out)  # the board job never touches the synthesis
+
+    def test_no_changes_still_bumps_date_and_stamp(self):
+        reply = json.dumps({"lanes": [{"id": k, "changed": False} for k in un.STATUS_LANES],
+                            "cases": [{"id": k, "changed": False} for k in un.STATUS_CASES]})
+        with mock.patch.object(un, "_complete", return_value=reply):
+            self.assertTrue(un.update_status_board(self.news(), "2026-10-13"))
+        out = self.status.read_text(encoding="utf-8")
+        self.assertEqual(un.read_stamp(out, un.STATUS_STAMP), "2026-10-13")
+        self.assertIn('datetime="2026-10-13"', out)
+        self.assertEqual(out.count("old "), STATUS_FIXTURE.count("old "))
+
+    def test_too_few_articles_or_model_failure_leaves_page_alone(self):
+        with mock.patch.object(un, "_complete") as c:
+            self.assertFalse(un.update_status_board(card("Jan 1", "2026", "https://a.example/1"), "2026-10-13"))
+        c.assert_not_called()
+        with mock.patch.object(un, "_complete", return_value=None):
+            self.assertFalse(un.update_status_board(self.news(), "2026-10-13"))
+        self.assertEqual(self.status.read_text(encoding="utf-8"), STATUS_FIXTURE)
+
+    def test_frozen(self):
+        self.status.write_text(STATUS_FIXTURE + "<!-- news-bot:freeze-status -->", encoding="utf-8")
+        with mock.patch.object(un, "_complete") as c:
+            self.assertFalse(un.update_status_board(self.news(), "2026-10-13"))
+        c.assert_not_called()
+
+    def test_synthesis_is_mirrored_to_status_page(self):
+        reply = json.dumps({
+            "paragraphs": ["NEW ONE " + "x" * 60, "NEW TWO " + "y" * 60],
+            "badges": [{"emoji": "⚖️", "label": "A"}, {"emoji": "✊", "label": "B"}, {"emoji": "📜", "label": "C"}],
+        })
+        with mock.patch.object(un, "_complete", return_value=reply):
+            self.assertTrue(un.update_synthesis(self.news(), "2026-10-13"))
+        out = self.status.read_text(encoding="utf-8")
+        self.assertIn("<p>NEW ONE ", out)
+        self.assertNotIn("OLD ONE", out)
+        self.assertIn("<!-- status-bot:synthesis-end -->", out)
+        self.assertIn('<p class="prose">tail</p>', out)
+        self.assertIn("old courts text", out)  # lanes untouched by the synthesis job
+
+    def test_real_status_page_has_the_markers_the_bot_needs(self):
+        real = (ROOT / "status.html").read_text(encoding="utf-8")
+        self.assertIsNotNone(un._status_region(real, "lanes"))
+        self.assertIsNotNone(un._status_region(real, "cases"))
+        a, b = un._status_region(real, "lanes")
+        self.assertEqual(set(un._status_blocks(real[a:b], "lane")), set(un.STATUS_LANES))
+        a, b = un._status_region(real, "cases")
+        self.assertEqual(set(un._status_blocks(real[a:b], "case")), set(un.STATUS_CASES))
+        self.assertRegex(real, un._STATUS_SYNTH_RE)
+        self.assertRegex(real, un._STATUS_TIME_RE)
+        self.assertIsNotNone(un.read_stamp(real, un.STATUS_STAMP))
