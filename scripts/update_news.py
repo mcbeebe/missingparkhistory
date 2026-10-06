@@ -1104,6 +1104,20 @@ def insert_timeline_event(tl_html: str, ev: dict) -> str:
     return tl_html[:pos] + block + tl_html[pos:]
 
 
+def mark_timeline_modified(tl_html: str, today_iso: str) -> str:
+    """Set the page's last-modified date (JSON-LD dateModified and the footer's
+    <time class="tl-updated">) to today_iso."""
+    d = datetime.strptime(today_iso, "%Y-%m-%d")
+    pretty = f"{d.strftime('%B')} {d.day}, {d.year}"
+    tl_html = re.sub(r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{today_iso}"', tl_html, count=1)
+    return re.sub(
+        r'(<time class="tl-updated" datetime=")\d{4}-\d{2}-\d{2}(">)[^<]*(</time>)',
+        lambda m: f"{m.group(1)}{today_iso}{m.group(2)}{pretty}{m.group(3)}",
+        tl_html,
+        count=1,
+    )
+
+
 def update_timeline(news_html: str, today_iso: str) -> str:
     """Add up to TIMELINE_MAX_NEW sourced milestones to timeline.html from news
     published or added since the timeline's last update. Returns a short status
@@ -1151,7 +1165,7 @@ def update_timeline(news_html: str, today_iso: str) -> str:
     for ev in events:
         tl_html = insert_timeline_event(tl_html, ev)
     if events:
-        tl_html = re.sub(r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{today_iso}"', tl_html, count=1)
+        tl_html = mark_timeline_modified(tl_html, today_iso)
     tl_html = write_stamp(tl_html, TIMELINE_STAMP, today_iso, '    <div class="timeline-event ')
     TIMELINE_FILE.write_text(tl_html, encoding="utf-8")
     for ev in events:

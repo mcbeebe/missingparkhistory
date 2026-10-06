@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 from unittest import mock
 
@@ -149,6 +150,25 @@ class SynthesisTest(unittest.TestCase):
             self.assertFalse(un.update_synthesis(card("Oct 1", "2026", "https://a/1") * 2, "2026-10-06"))
         c.assert_not_called()
 
+    def test_refreshes_real_index_and_keeps_its_headline(self):
+        real = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.index.write_text(real, encoding="utf-8")
+        # Fixed articles, so the test doesn't depend on the real page's synthesis stamp.
+        arts = [{"date": "2026-10-08", "source": "S", "tag": "court", "headline": "H", "summary": "S",
+                 "url": f"https://a.example/{i}"} for i in (1, 2)]
+        with mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-06", arts)), \
+                mock.patch.object(un, "_complete", return_value=self.reply()):
+            self.assertTrue(un.update_synthesis("", "2026-10-13"))
+        out = self.index.read_text(encoding="utf-8")
+        self.assertEqual(un.read_stamp(out, un.SYNTHESIS_STAMP), "2026-10-13")
+        self.assertEqual(re.findall(r'<span class="nd-badge">([^<]+)</span>', out), ["⚖️ One", "✊ Two", "📜 Three"])
+        self.assertIn("<p>P1 ", out)
+        # The pop-up's standing headline (and everything above the badges) is not the bot's to change.
+        head = real.split('<div class="nd-badge-row">')[0]
+        self.assertRegex(head, r'<div class="nd-header[^"]*">\s*<h2>[^<]+</h2>')
+        self.assertEqual(out.split('<div class="nd-badge-row">')[0], head)
+        self.assertEqual(out.split('<div class="nd-articles">', 1)[1], real.split('<div class="nd-articles">', 1)[1])
+
 
 TIMELINE_FIXTURE = """<script>{"dateModified":"2026-06-12"}</script>
 <div class="timeline-container">
@@ -173,11 +193,30 @@ TIMELINE_FIXTURE = """<script>{"dateModified":"2026-06-12"}</script>
 </div>
 
 <div class="sources">
+<p>Last updated: <time class="tl-updated" datetime="2026-06-12">June 12, 2026</time>.</p>
 """
 
 
 def dates(html: str) -> list[str]:
     return re.findall(r'class="timeline-event [^"]*"[^>]*data-date="([^"]+)"', html)
+
+
+class _EventLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.hrefs: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == "a" and "event-link" in (a.get("class") or "").split():
+            self.hrefs.append(a.get("href") or "")
+
+
+def event_link_hrefs(html: str) -> list[str]:
+    """Every a.event-link href, whatever its attribute order."""
+    parser = _EventLinks()
+    parser.feed(html)
+    return parser.hrefs
 
 
 class TimelineTest(unittest.TestCase):
@@ -247,6 +286,7 @@ class TimelineTest(unittest.TestCase):
         self.assertNotIn("hallucinated", out)
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-10-06"', out)
+        self.assertIn('<time class="tl-updated" datetime="2026-10-06">October 6, 2026</time>', out)
 
     def test_rejects_newly_reported_old_event(self):
         # Regression (Oct 6, 2026 run): a Sep 26, 2026 article about a Sep 2025
@@ -274,6 +314,7 @@ class TimelineTest(unittest.TestCase):
         out = self.tl.read_text(encoding="utf-8")
         self.assertEqual(un.read_stamp(out, un.TIMELINE_STAMP), "2026-10-06")
         self.assertIn('"dateModified":"2026-06-12"', out)
+        self.assertIn('<time class="tl-updated" datetime="2026-06-12">June 12, 2026</time>', out)
 
     def test_model_failure_does_not_stamp(self):
         with mock.patch.object(un, "_complete", return_value=None):
@@ -344,10 +385,41 @@ class RealTimelineTest(unittest.TestCase):
         self.assertGreater(len(ds), 40)
         self.assertEqual(ds, sorted(ds, reverse=True))
         self.assertIsNotNone(un.read_stamp(html, un.TIMELINE_STAMP))
+        self.assertEqual(html.count('<time class="tl-updated" datetime="'), 1)
+        bumped = un.mark_timeline_modified(html, "2031-01-02")
+        self.assertIn('<time class="tl-updated" datetime="2031-01-02">January 2, 2031</time>', bumped)
+        self.assertIn('"dateModified":"2031-01-02"', bumped)
         out = un.insert_timeline_event(html, {"date": "2026-08-15", "type": "info", "title": "Test Event",
                                               "description": "A test description sentence.", "url": "https://t/x"})
         self.assertEqual(dates(out), sorted(dates(out), reverse=True))
         self.assertEqual(len(dates(out)), len(ds) + 1)
+
+    def test_weekly_job_never_re_adds_a_linked_story(self):
+        """Every source already linked from an event (including a second link on
+        the same event) must count as on the timeline, so the bot skips it."""
+        html = (ROOT / "timeline.html").read_text(encoding="utf-8")
+        urls = [h for h in event_link_hrefs(html) if h.startswith("http")]
+        self.assertGreater(len(urls), 20)
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        tl = Path(tmp.name) / "timeline.html"
+        tl.write_text(html, encoding="utf-8")
+        p = mock.patch.object(un, "TIMELINE_FILE", tl)
+        p.start()
+        self.addCleanup(p.stop)
+
+        def run(url):
+            story = {"url": url, "date": "2026-10-07", "source": "S", "headline": "H", "summary": "S"}
+            with mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-06", [story])), \
+                    mock.patch.object(un, "_complete", return_value=None) as c:
+                return un.update_timeline("", "2026-10-13"), c.call_count
+
+        for url in urls:
+            with self.subTest(url=url):
+                self.assertEqual(run(url), ("skipped (no new tracked articles since 2026-10-06)", 0))
+        # Control: a story that is not on the timeline yet does reach the model.
+        self.assertEqual(run("https://new.example/story"), ("skipped (model call failed)", 1))
+        self.assertEqual(tl.read_text(encoding="utf-8"), html)
 
 
 if __name__ == "__main__":
