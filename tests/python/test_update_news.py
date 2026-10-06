@@ -149,6 +149,25 @@ class SynthesisTest(unittest.TestCase):
             self.assertFalse(un.update_synthesis(card("Oct 1", "2026", "https://a/1") * 2, "2026-10-06"))
         c.assert_not_called()
 
+    def test_refreshes_real_index_and_keeps_its_headline(self):
+        real = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.index.write_text(real, encoding="utf-8")
+        # Fixed articles, so the test doesn't depend on the real page's synthesis stamp.
+        arts = [{"date": "2026-10-08", "source": "S", "tag": "court", "headline": "H", "summary": "S",
+                 "url": f"https://a.example/{i}"} for i in (1, 2)]
+        with mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-06", arts)), \
+                mock.patch.object(un, "_complete", return_value=self.reply()):
+            self.assertTrue(un.update_synthesis("", "2026-10-13"))
+        out = self.index.read_text(encoding="utf-8")
+        self.assertEqual(un.read_stamp(out, un.SYNTHESIS_STAMP), "2026-10-13")
+        self.assertEqual(re.findall(r'<span class="nd-badge">([^<]+)</span>', out), ["⚖️ One", "✊ Two", "📜 Three"])
+        self.assertIn("<p>P1 ", out)
+        # The pop-up's standing headline (and everything above the badges) is not the bot's to change.
+        head = real.split('<div class="nd-badge-row">')[0]
+        self.assertRegex(head, r'<div class="nd-header[^"]*">\s*<h2>[^<]+</h2>')
+        self.assertEqual(out.split('<div class="nd-badge-row">')[0], head)
+        self.assertEqual(out.split('<div class="nd-articles">', 1)[1], real.split('<div class="nd-articles">', 1)[1])
+
 
 TIMELINE_FIXTURE = """<script>{"dateModified":"2026-06-12"}</script>
 <div class="timeline-container">
