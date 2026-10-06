@@ -66,3 +66,19 @@ export ANTHROPIC_API_KEY=sk-ant-...
 pip install -r scripts/requirements.txt
 python scripts/update_news.py --dry-run
 ```
+
+---
+
+# GitHub Actions — Layout tests
+
+`layout-tests.yml` runs on every pull request and on pushes to `main`. It
+serves the repo as static files and uses Playwright (headless Chromium) to
+check every public page (root `*.html` + `parks/*.html`):
+
+- **No horizontal overflow at 390px** (iPhone-width) — including content that
+  is silently clipped inside the fixed header, and long unbroken text.
+- **Shared header** (`nav.topnav`, styled by `/site-nav.css` and driven by
+  `/site-nav.js`) collapses into a working menu whenever its links don't fit,
+  and shows the full link row on desktop.
+
+Run locally: `npm install && npm test` (needs Python 3 for the static server).
