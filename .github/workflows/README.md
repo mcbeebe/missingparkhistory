@@ -53,9 +53,23 @@ retry on each daily run until they succeed:
   week, each required to cite an article already tracked on the News & Press
   page (anything else is discarded). Stamp: `<!-- news-bot:timeline-updated DATE -->`.
 
+- **Status page** (`status.html`, "Where the Issue Stands Now"): the same
+  weekly synthesis is also written into the page's `<div class="nd-synthesis">`
+  block, and a separate weekly pass rewrites the **four fronts** (lanes) and the
+  **case board** from structured JSON. Every changed lane or case must cite an
+  article already tracked on the News & Press page or it is discarded; items
+  the model marks unchanged keep their existing HTML. The lanes and cases live
+  between `<!-- status-bot:lanes-start/end -->` and
+  `<!-- status-bot:cases-start/end -->`; the "Updated" date in the hero
+  (`<time id="statusUpdated">`) follows. Stamp:
+  `<!-- news-bot:status-updated DATE -->`. The verdict strip and the stat tiles
+  are hand-edited and never touched by the bot.
+
 To stop the bot editing a section, add its freeze comment on its own:
-`news-bot:freeze-synthesis` / `news-bot:freeze-digest` (in `index.html`) or
-`news-bot:freeze-timeline` (in `timeline.html`). Run *Actions → Daily NPS News
+`news-bot:freeze-synthesis` / `news-bot:freeze-digest` (in `index.html`),
+`news-bot:freeze-timeline` (in `timeline.html`) or `news-bot:freeze-status`
+(in `status.html`; `freeze-synthesis` in `index.html` also freezes the copy of
+the synthesis on the status page). Run *Actions → Daily NPS News
 Update → Run workflow* with **force_synthesis = true** to run both weekly jobs
 immediately.
 

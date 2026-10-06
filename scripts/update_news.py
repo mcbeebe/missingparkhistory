@@ -999,6 +999,7 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
     new_idx = write_stamp(new_idx, SYNTHESIS_STAMP, today_iso, '<div class="nd-synthesis">')
 
     INDEX_FILE.write_text(new_idx, encoding="utf-8")
+    mirror_synthesis_to_status(new_synthesis)
     log.info(
         "Updated synthesis from %d article(s) since %s: %d paragraphs (~%d words), %d badges",
         len(articles), since_date, len(paragraphs),
@@ -1207,6 +1208,297 @@ def update_timeline(news_html: str, today_iso: str) -> str:
     return f"added {len(events)} event(s)" if events else "checked; no new milestones"
 
 
+# ---------------------------------------------------------------------------
+# Weekly status page (status.html): synthesis mirror, four lanes, case board
+# ---------------------------------------------------------------------------
+
+STATUS_FILE = REPO_ROOT / "status.html"
+STATUS_STAMP = "status-updated"
+STATUS_TEXT_MIN = 40
+STATUS_TEXT_MAX = 600
+STATUS_NEXT_MAX = 300
+
+STATUS_TRENDS = {
+    "improving": "Improving",
+    "holding": "Holding",
+    "mixed": "Mixed",
+    "worsening": "Worsening",
+}
+STATUS_PILLS = {
+    "won": "Won",
+    "settled": "Settled",
+    "restored": "Restored",
+    "paused": "Injunction paused",
+    "pending": "Pending",
+    "reversed": "Reversed",
+    "dismissed": "Dismissed",
+    "ongoing": "Ongoing",
+    "filed": "Filed",
+}
+# Fixed lane and case identities. The model may update their state and text,
+# never add, remove or rename them.
+STATUS_LANES: dict[str, tuple[str, str]] = {
+    "courts": ("In the courts", "3 cases &middot; 2 records suits"),
+    "congress": ("In Congress", "1 bill &middot; 2 funding letters"),
+    "agency": ("Interior &amp; the Park Service", "Policy, staffing, partners"),
+    "parks": ("In the parks", "Signs, exhibits, films"),
+}
+STATUS_CASES: dict[str, tuple[str, str]] = {
+    "stonewall": ("Stonewall Pride flag &middot; Gilbert Baker Foundation v. Interior",
+                  "S.D.N.Y. &middot; Lambda Legal"),
+    "npca": ("NPCA v. Department of the Interior",
+             "D. Mass. (Judge Kelley) &middot; appeal in the First Circuit &middot; Democracy Forward for six plaintiff groups"),
+    "philadelphia": ("City of Philadelphia v. Burgum &middot; President's House",
+                     "E.D. Pa. (Judge Rufe) &middot; Third Circuit"),
+    "sierra": ("Sierra Club FOIA litigation", "Records requests and suit against Interior"),
+    "peer": ("PEER FOIA suit", "D.D.C. &middot; filed June 17, 2026"),
+}
+
+_STATUS_SYNTH_RE = re.compile(
+    r'<div class="nd-synthesis">.*?</div>(\s*<!--\s*status-bot:synthesis-end\s*-->)', re.DOTALL
+)
+_STATUS_TIME_RE = re.compile(r'<time id="statusUpdated" datetime="[^"]*">[^<]*</time>')
+
+
+def mirror_synthesis_to_status(new_synthesis: str) -> bool:
+    """Copy the freshly generated homepage synthesis block into status.html.
+    Soft no-op when the page or its marker is missing."""
+    if not STATUS_FILE.exists():
+        return False
+    st = STATUS_FILE.read_text(encoding="utf-8")
+    if not _STATUS_SYNTH_RE.search(st):
+        log.warning("status.html has no synthesis block/marker; not mirroring")
+        return False
+    new = _STATUS_SYNTH_RE.sub(lambda m: new_synthesis + m.group(1), st, count=1)
+    STATUS_FILE.write_text(new, encoding="utf-8")
+    log.info("Mirrored synthesis into status.html")
+    return True
+
+
+def _status_region(html: str, name: str) -> tuple[int, int] | None:
+    """(start, end) of the HTML between the status-bot:<name>-start/-end comments."""
+    a = re.search(rf"<!--\s*status-bot:{name}-start\s*-->", html)
+    b = re.search(rf"<!--\s*status-bot:{name}-end\s*-->", html)
+    if not (a and b) or b.start() < a.end():
+        return None
+    return a.end(), b.start()
+
+
+def _status_blocks(region_html: str, kind: str) -> dict[str, str]:
+    """Split a lanes/cases region into {id: block_html} by its data-lane/data-case
+    attribute. Blocks are returned stripped; order is preserved by dict insertion."""
+    parts = re.split(rf'(?=<div class="{kind}" data-{kind}=)', region_html)
+    out: dict[str, str] = {}
+    for part in parts:
+        m = re.match(rf'<div class="{kind}" data-{kind}="([a-z]+)"', part)
+        if m:
+            out[m.group(1)] = part.strip()
+    return out
+
+
+def _fmt_date(iso: str) -> str:
+    d = datetime.strptime(iso, "%Y-%m-%d")
+    return f"{d.strftime('%b')} {d.day}, {d.year}"
+
+
+def render_status_lane(item: dict) -> str:
+    import html as _html
+    name, small = STATUS_LANES[item["id"]]
+    trend = item["trend"]
+    src = (f' <a class="src" href="{_html.escape(item["url"])}" target="_blank" rel="noopener">source</a>'
+           if item.get("url") else "")
+    return (
+        f'<div class="lane" data-lane="{item["id"]}" data-trend="{trend}" data-updated-by="news-bot">\n'
+        f'      <div><div class="name">{name}<small>{small}</small></div>'
+        f'<span class="trend {trend}"><i></i>{STATUS_TRENDS[trend]}</span></div>\n'
+        f'      <div class="latest"><b>Latest &middot; {_fmt_date(item["latest_date"])}</b>{item["latest"]}{src}</div>\n'
+        f'      <div class="nextbox"><b>Next to watch</b>{item["next"]}</div>\n'
+        f'    </div>'
+    )
+
+
+def render_status_case(item: dict) -> str:
+    import html as _html
+    title, court = STATUS_CASES[item["id"]]
+    status = item["status"]
+    src = (f' <a class="src" href="{_html.escape(item["url"])}" target="_blank" rel="noopener">source</a>'
+           if item.get("url") else "")
+    nxt = (f'\n      <div class="next"><b>Next:</b> {item["next"]}</div>' if item.get("next") else "")
+    return (
+        f'<div class="case" data-case="{item["id"]}" data-status="{status}" data-updated-by="news-bot">\n'
+        f'      <div><h3>{title}</h3><div class="court">{court}</div></div>\n'
+        f'      <span class="pill {status}">{STATUS_PILLS[status]}</span>\n'
+        f'      <div class="what">{item["update"]}{src}</div>{nxt}\n'
+        f'    </div>'
+    )
+
+
+def validate_status_board(raw: object, candidate_urls: set[str], today_iso: str) -> tuple[dict, dict]:
+    """Keep only well-formed *changed* lanes and cases that cite a tracked article.
+    Returns ({lane_id: item}, {case_id: item}); unchanged or invalid entries are
+    left out so the page keeps its existing HTML for them."""
+    lanes: dict[str, dict] = {}
+    cases: dict[str, dict] = {}
+    if not isinstance(raw, dict):
+        return lanes, cases
+
+    def text(v: object, lo: int, hi: int) -> str | None:
+        t = _plain(v) if v is not None else ""
+        return t if lo <= len(t) <= hi else None
+
+    for ln in raw.get("lanes") or []:
+        if not isinstance(ln, dict) or not ln.get("changed"):
+            continue
+        lid = str(ln.get("id", "")).strip()
+        trend = str(ln.get("trend", "")).strip().lower()
+        url = str(ln.get("url", "")).strip()
+        date_s = str(ln.get("latest_date", "")).strip()
+        latest = text(ln.get("latest"), STATUS_TEXT_MIN, STATUS_TEXT_MAX)
+        nxt = text(ln.get("next"), 10, STATUS_NEXT_MAX)
+        if lid not in STATUS_LANES or trend not in STATUS_TRENDS or url not in candidate_urls:
+            log.info("Status: dropping lane %r (unknown id/trend or untracked url %s)", lid, url)
+            continue
+        if not is_iso_date(date_s) or date_s > today_iso or latest is None or nxt is None:
+            log.info("Status: dropping lane %r (bad date or text length)", lid)
+            continue
+        lanes[lid] = {"id": lid, "trend": trend, "latest_date": date_s, "latest": latest, "next": nxt, "url": url}
+
+    for cs in raw.get("cases") or []:
+        if not isinstance(cs, dict) or not cs.get("changed"):
+            continue
+        cid = str(cs.get("id", "")).strip()
+        status = str(cs.get("status", "")).strip().lower()
+        url = str(cs.get("url", "")).strip()
+        update = text(cs.get("update"), STATUS_TEXT_MIN, STATUS_TEXT_MAX)
+        nxt = text(cs.get("next"), 0, STATUS_NEXT_MAX)
+        if cid not in STATUS_CASES or status not in STATUS_PILLS or url not in candidate_urls:
+            log.info("Status: dropping case %r (unknown id/status or untracked url %s)", cid, url)
+            continue
+        if update is None or nxt is None:
+            log.info("Status: dropping case %r (text length)", cid)
+            continue
+        cases[cid] = {"id": cid, "status": status, "update": update, "next": nxt, "url": url}
+    return lanes, cases
+
+
+STATUS_PROMPT = """You maintain the "Where the Issue Stands Now" page on
+MissingParkHistory.org, which tracks the removal of history and science
+content from U.S. national parks under Secretary's Order 3431.
+
+The page has FOUR LANES and FIVE CASES. Their ids are fixed. For each one,
+decide whether the week's articles (below) change its state. If they do not,
+return it with "changed": false and nothing else. If they do, return the full
+updated entry with "changed": true and the single most relevant article URL
+from the list as its citation. Never invent facts or URLs; every changed entry
+must be supported by one of the articles below.
+
+CURRENT LANES (id — trend — text):
+{lanes_block}
+
+CURRENT CASES (id — status — text):
+{cases_block}
+
+Allowed lane trends: improving, holding, mixed, worsening.
+Allowed case statuses: won, settled, restored, paused, pending, reversed,
+dismissed, ongoing, filed.
+
+Writing rules for changed entries: plain text, no HTML. "latest" and "update"
+are 1-3 sentences (under 600 characters) that lead with the newest fact and
+its date; keep still-true context from the current text. "next" is one short
+sentence naming the next thing to watch. "latest_date" is the YYYY-MM-DD date
+of the newest development, not today's date.
+
+ARTICLES from {since_date} through {today} (most recent first):
+{articles_block}
+
+Return ONLY this JSON. The very first character of your response MUST be
+`{{` — no prose intro, no markdown fences, no commentary:
+
+{{
+  "lanes": [
+    {{"id": "courts", "changed": false}},
+    {{"id": "congress", "changed": true, "trend": "holding", "latest_date": "2026-10-02",
+      "latest": "...", "next": "...", "url": "https://..."}}
+  ],
+  "cases": [
+    {{"id": "stonewall", "changed": false}},
+    {{"id": "npca", "changed": true, "status": "paused", "update": "...", "next": "...", "url": "https://..."}}
+  ]
+}}
+"""
+
+
+def update_status_board(news_html: str, today_iso: str) -> bool:
+    """Weekly: ask the model which lanes/cases on status.html changed given the
+    week's tracked articles, validate every change against those articles,
+    rewrite only the changed blocks, bump the page's "Updated" date and stamp
+    it. Returns False on any soft failure so the next daily run retries."""
+    if not STATUS_FILE.exists():
+        log.warning("status.html not found; skipping status board update")
+        return False
+    st = STATUS_FILE.read_text(encoding="utf-8")
+    if _is_frozen(st, "status"):
+        log.info("Status board is frozen by a news-bot:freeze marker; leaving it unchanged")
+        return False
+
+    lanes_rg = _status_region(st, "lanes")
+    cases_rg = _status_region(st, "cases")
+    if not (lanes_rg and cases_rg):
+        log.warning("status.html is missing its status-bot lanes/cases markers; skipping")
+        return False
+    cur_lanes = _status_blocks(st[lanes_rg[0]:lanes_rg[1]], "lane")
+    cur_cases = _status_blocks(st[cases_rg[0]:cases_rg[1]], "case")
+    if set(cur_lanes) != set(STATUS_LANES) or set(cur_cases) != set(STATUS_CASES):
+        log.warning("status.html lanes/cases do not match the known ids; skipping")
+        return False
+
+    since_date, articles = _gather_weekly_articles(news_html, read_stamp(st, STATUS_STAMP), today_iso)
+    if len(articles) < 2:
+        log.warning("Only %d article(s) since %s; skipping status board", len(articles), since_date)
+        return False
+    candidate_urls = {a["url"] for a in articles}
+
+    def summarize(block: str, attr: str) -> str:
+        state = re.search(rf'data-{attr}="([a-z]+)"', block)
+        return f"{state.group(1) if state else '?'} — {_plain(block)[:700]}"
+
+    lanes_block = "\n".join(f"- {k} — {summarize(v, 'trend')}" for k, v in cur_lanes.items())
+    cases_block = "\n".join(f"- {k} — {summarize(v, 'status')}" for k, v in cur_cases.items())
+    articles_block = "\n\n".join(
+        f"[{a['date']}] {a['source']} ({a['tag']}) — {a['headline']}\n"
+        f"  Summary: {a['summary'][:500]}\n"
+        f"  URL: {a['url']}"
+        for a in articles
+    )
+    prompt = STATUS_PROMPT.format(
+        lanes_block=lanes_block, cases_block=cases_block,
+        since_date=since_date, today=today_iso, articles_block=articles_block,
+    )
+    text = _complete(prompt, max_tokens=3000)
+    if not text:
+        log.warning("No text in status board response")
+        return False
+    data = _parse_json_object(text)
+    if data is None:
+        return False
+    new_lanes, new_cases = validate_status_board(data, candidate_urls, today_iso)
+
+    out = st
+    for cid, item in new_cases.items():
+        out = out.replace(cur_cases[cid], render_status_case(item), 1)
+    for lid, item in new_lanes.items():
+        out = out.replace(cur_lanes[lid], render_status_lane(item), 1)
+    out = _STATUS_TIME_RE.sub(
+        f'<time id="statusUpdated" datetime="{today_iso}">{_fmt_date(today_iso)}</time>', out, count=1
+    )
+    out = re.sub(r'"dateModified":"\d{4}-\d{2}-\d{2}"', f'"dateModified":"{today_iso}"', out, count=1)
+    out = write_stamp(out, STATUS_STAMP, today_iso, '<div class="section-heading">The four fronts')
+    STATUS_FILE.write_text(out, encoding="utf-8")
+    log.info("Status board: %d lane(s) and %d case(s) updated from %d article(s) since %s",
+             len(new_lanes), len(new_cases), len(articles), since_date)
+    return True
+
+
 def run_weekly_jobs(news_html: str, today_iso: str, force: bool) -> list[str]:
     """Run whichever weekly jobs are due; return run-summary lines."""
     lines = []
@@ -1223,6 +1515,14 @@ def run_weekly_jobs(news_html: str, today_iso: str, force: bool) -> list[str]:
         lines.append(f"- Timeline: **{update_timeline(news_html, today_iso)}**")
     else:
         lines.append(f"- Timeline: not due (last {read_stamp(tl, TIMELINE_STAMP)})")
+
+    if STATUS_FILE.exists():
+        st = STATUS_FILE.read_text(encoding="utf-8")
+        if force or weekly_due(read_stamp(st, STATUS_STAMP), today_iso):
+            ok = update_status_board(news_html, today_iso)
+            lines.append(f"- Status page: **{'refreshed' if ok else 'skipped — see log; retries tomorrow'}**")
+        else:
+            lines.append(f"- Status page: not due (last {read_stamp(st, STATUS_STAMP)})")
     return lines
 
 

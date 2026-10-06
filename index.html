@@ -344,6 +344,7 @@ Sincerely,
     </div>
     <div class="ta-footer">
       <span>Data from <a href="https://missingparkhistory.org" target="_blank">MissingParkHistory.org</a></span>
+      <a href="/help.html">More ways to help &rarr;</a>
       <a href="https://www.house.gov/representatives/find-your-representative" target="_blank">Find your rep &rarr;</a>
     </div>
   </div>
@@ -504,6 +505,8 @@ Sincerely,
     </div>
     <div class="nd-footer">
       <a class="nd-cta nd-cta-primary" href="/news-and-press.html">&#128240; Read All Coverage</a>
+      <a class="nd-cta nd-cta-secondary" href="/status.html">&#x1F4CD; Where Things Stand</a>
+      <a class="nd-cta nd-cta-secondary" href="/help.html">&#x270B; Ways to Help</a>
       <button class="nd-cta nd-cta-secondary" onclick="ndClose()">&#x1F5FA;&#xFE0F; Explore the Map</button>
       <a class="nd-cta nd-cta-support" href="https://ko-fi.com/missingparkhistory" target="_blank" rel="noopener">&#x2615; Support This Project</a>
     </div>
@@ -554,7 +557,10 @@ Sincerely,
   window.addEventListener('load',function(){
     try{
       var p=new URLSearchParams(location.search);
-      if(p.get('action')==='1'&&typeof window.taOpen==='function'){window.taOpen();}
+      if(p.get('action')==='1'&&typeof window.taOpen==='function'){window.taOpen();
+        var z=p.get('zip'),zi=document.getElementById('taZipInput');
+        if(z&&/^\d{5}$/.test(z)&&zi){zi.value=z;if(typeof window.taLookup==='function')setTimeout(window.taLookup,400);}
+      }
       if(p.get('subscribe')==='1')window.ndOpenSubscribe();
     }catch(e){}
   });
