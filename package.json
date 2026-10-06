@@ -1,0 +1,14 @@
+{
+  "name": "missingparkhistory",
+  "private": true,
+  "description": "Static site for MissingParkHistory.org. Node is used only for layout tests.",
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -16,3 +16,16 @@ Most content pages share the same top navigation (`.topnav` / `.topnav-links`).
 When changing nav links or header behavior, update all pages that contain
 `<div class="topnav-links">` so the header stays consistent. `index.html` (the
 map/home page) uses a different banner design and does not share this header.
+
+Responsive/menu behavior lives in two shared files, not in each page:
+`/site-nav.css` (linked at the end of `<head>`) and `/site-nav.js` (loaded
+synchronously right after `</nav>`). The script adds the menu button and
+collapses the links whenever they don't fit. New header pages need both tags;
+don't add per-page hamburger CSS or buttons.
+
+## Tests
+
+`npm install && npm test` runs Playwright layout checks on every public page
+(no horizontal overflow at 390px; header collapses correctly). CI runs the same
+on every PR (`.github/workflows/layout-tests.yml`). Run it before opening a PR
+that touches layout or the header.
