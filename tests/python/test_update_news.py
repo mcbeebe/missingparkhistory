@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from html.parser import HTMLParser
 from pathlib import Path
 from unittest import mock
 
@@ -200,6 +201,24 @@ def dates(html: str) -> list[str]:
     return re.findall(r'class="timeline-event [^"]*"[^>]*data-date="([^"]+)"', html)
 
 
+class _EventLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.hrefs: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == "a" and "event-link" in (a.get("class") or "").split():
+            self.hrefs.append(a.get("href") or "")
+
+
+def event_link_hrefs(html: str) -> list[str]:
+    """Every a.event-link href, whatever its attribute order."""
+    parser = _EventLinks()
+    parser.feed(html)
+    return parser.hrefs
+
+
 class TimelineTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -374,6 +393,33 @@ class RealTimelineTest(unittest.TestCase):
                                               "description": "A test description sentence.", "url": "https://t/x"})
         self.assertEqual(dates(out), sorted(dates(out), reverse=True))
         self.assertEqual(len(dates(out)), len(ds) + 1)
+
+    def test_weekly_job_never_re_adds_a_linked_story(self):
+        """Every source already linked from an event (including a second link on
+        the same event) must count as on the timeline, so the bot skips it."""
+        html = (ROOT / "timeline.html").read_text(encoding="utf-8")
+        urls = [h for h in event_link_hrefs(html) if h.startswith("http")]
+        self.assertGreater(len(urls), 20)
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        tl = Path(tmp.name) / "timeline.html"
+        tl.write_text(html, encoding="utf-8")
+        p = mock.patch.object(un, "TIMELINE_FILE", tl)
+        p.start()
+        self.addCleanup(p.stop)
+
+        def run(url):
+            story = {"url": url, "date": "2026-10-07", "source": "S", "headline": "H", "summary": "S"}
+            with mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-06", [story])), \
+                    mock.patch.object(un, "_complete", return_value=None) as c:
+                return un.update_timeline("", "2026-10-13"), c.call_count
+
+        for url in urls:
+            with self.subTest(url=url):
+                self.assertEqual(run(url), ("skipped (no new tracked articles since 2026-10-06)", 0))
+        # Control: a story that is not on the timeline yet does reach the model.
+        self.assertEqual(run("https://new.example/story"), ("skipped (model call failed)", 1))
+        self.assertEqual(tl.read_text(encoding="utf-8"), html)
 
 
 if __name__ == "__main__":

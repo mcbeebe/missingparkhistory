@@ -11,6 +11,31 @@ test.describe('timeline page', () => {
     expect(dates).toEqual([...dates].sort().reverse());
   });
 
+  test('each date label matches its data-date', async ({ page }) => {
+    // "Sep 30, 2026" for an exact day, "Sep 2026" for a month (data-date on the 1st).
+    await page.goto('/timeline.html');
+    const pairs = await page.locator('.timeline-event').evaluateAll((els) =>
+      els.map((el) => [(el as HTMLElement).dataset.date ?? '', el.querySelector('.event-date')?.textContent ?? '']),
+    );
+    const mon = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const mismatched = pairs.filter(([iso, label]) => {
+      const [y, m, d] = iso.split('-').map(Number);
+      const allowed = [`${mon[m - 1]} ${d}, ${y}`, ...(d === 1 ? [`${mon[m - 1]} ${y}`] : [])];
+      return !allowed.includes(label.trim());
+    });
+    expect(mismatched).toEqual([]);
+  });
+
+  test('external event links open safely in a new tab', async ({ page }) => {
+    await page.goto('/timeline.html');
+    const unsafe = await page.locator('a.event-link[href^="http"]').evaluateAll((els) =>
+      els
+        .filter((a) => a.getAttribute('target') !== '_blank' || !/\bnoopener\b/.test(a.getAttribute('rel') ?? ''))
+        .map((a) => a.getAttribute('href')),
+    );
+    expect(unsafe).toEqual([]);
+  });
+
   test('every event from 2026-06-13 on cites a source', async ({ page }) => {
     await page.goto('/timeline.html');
     const missing = await page.locator('.timeline-event').evaluateAll((els) =>
