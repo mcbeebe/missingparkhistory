@@ -12,10 +12,16 @@ name: Weekly SOS Tracker Watch
 on:
   schedule:
     - cron: "30 15 * * 1"        # Mondays 08:30 Pacific, after the daily news job
+    - cron: "0 16 1 1,4,7,10 *"  # first day of each quarter: per-park coverage report
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Print the diff only; no PR, no issue, no snapshot update"
+        required: false
+        default: "false"
+        type: boolean
+      coverage:
+        description: "Run the per-park coverage report (quarterly reconciliation) instead of the diff"
         required: false
         default: "false"
         type: boolean
@@ -30,7 +36,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  coverage:
+    if: github.event.schedule == '0 16 1 1,4,7,10 *' || inputs.coverage == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compare every park on the tracker with the site
+        run: python scripts/sos_tracker_watch.py --coverage --report sos-coverage.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sos-coverage
+          path: sos-coverage.md
+      - name: File the report as an issue
+        if: inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh issue create --title "Quarterly SOS tracker coverage ($(date +%Y-%m-%d))" --body-file sos-coverage.md --label sos-tracker
+
   watch:
+    if: github.event.schedule != '0 16 1 1,4,7,10 *' && inputs.coverage != true
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

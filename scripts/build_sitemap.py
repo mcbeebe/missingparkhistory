@@ -6,7 +6,8 @@ skipping pages that only redirect elsewhere. These are the same rules
 tests/pages.ts uses for the layout tests. tests/python/test_sitemap.py fails
 when sitemap.xml and the pages on disk disagree.
 
-lastmod is each file's last commit date. changefreq and priority keep
+lastmod is each file's last commit date, or today for a page with uncommitted
+changes. changefreq and priority keep
 whatever sitemap.xml already says for a URL; new URLs get the defaults below.
 
 Usage:
@@ -56,6 +57,13 @@ def public_urls(root: Path = ROOT) -> list[str]:
 
 
 def last_commit_date(rel: str, root: Path = ROOT) -> str | None:
+    """Last commit date of a page, or today when it has uncommitted changes
+    (the daily news bot rebuilds the sitemap before it commits its edits)."""
+    dirty = subprocess.run(["git", "-C", str(root), "status", "--porcelain", "--", rel],
+                           capture_output=True, text=True).stdout.strip()
+    if dirty:
+        import datetime as _dt
+        return _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d")
     out = subprocess.run(["git", "-C", str(root), "log", "-1", "--format=%cs", "--", rel],
                          capture_output=True, text=True).stdout.strip()
     return out or None
