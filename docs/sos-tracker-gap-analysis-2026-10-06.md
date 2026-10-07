@@ -3,18 +3,19 @@
 **Date:** October 6, 2026 · **Supersedes:** SOS-Data-Alignment-Analysis.md (April 3, 2026)
 **Copies:** repo `docs/sos-tracker-gap-analysis-2026-10-06.md` (github.com/mcbeebe/missingparkhistory) · local project folder `SOS-Tracker-Gap-Analysis-2026-10-06.md`
 
-## Implementation status (updated 2026-10-07)
+## Implementation status (updated 2026-10-07, after PR #43)
 
 | Step | Status | Where |
 |---|---|---|
-| Part 4 watcher: script, snapshot, weekly Action, triage doc | PR open, CI green | [PR #41](https://github.com/mcbeebe/missingparkhistory/pull/41) |
-| Part 3 steps 1-5, 7: filing badge, status flips, Glacier downgrade, sign lists, 21 sources, 74 SOS photos copied in, Bunker Hill, BLM entries, alias map, homepage/status/methodology updates | PR open | [PR #42](https://github.com/mcbeebe/missingparkhistory/pull/42) |
-| Port the 197 local narrative fixes to live (decided: separate PR first) | Not started | local `missing-history/data/parkData.json` |
+| Part 4 watcher: script, snapshot, weekly Action, triage doc | Merged 2026-10-07 (039a338), live | [PR #41](https://github.com/mcbeebe/missingparkhistory/pull/41) |
+| Part 3 steps 1-5, 7: filing badge, status flips, Glacier downgrade, sign lists, 21 sources, 74 SOS photos copied in, Bunker Hill, BLM entries, alias map, homepage/status/methodology updates | Merged 2026-10-07 (d0f13c8), live | [PR #42](https://github.com/mcbeebe/missingparkhistory/pull/42) |
+| Port the 197 local narrative fixes to live | Not ported. Review on 2026-10-07 found the April 5 edits were a blind find-and-replace, roughly half regressions. Replaced by a direct fix: 86 wrong-park narratives, 3 mislocated markers (398, 788, 907), false "enslaved here — including" clauses, spelling, and 36 park-page cards | [PR #43](https://github.com/mcbeebe/missingparkhistory/pull/43) |
+| Park pages under the wrong title: `lower-delaware-wsr.html` shows Lowell's entries (and the map's Lowell link points there), `fire-island-ns.html` shows Freedom Riders'; Birthplace card #922 on the Theodore Roosevelt NP page; duplicate C&O Canal pages | Needs a decision (retire or rebuild pages) | `parks/` |
 | Part 3 step 6: new park pages (GATE, CACO, BEPA, SUCR, then filing-only parks) | Not started | `parks/` |
 | News cards for Provincetown Independent 6/24, Charlotte Observer 8/19, SL Tribune 7/23, Earthjustice 7/30 | Not started | `news-and-press.html` |
 | Timeline milestone for the June rebuild (102 signs / 41 sites) | Not started | `timeline.html` |
 
-Final numbers after PR #42: 25 entries confirmed removed + 22 removed per NPS court filing = **47** on the home-page tile; status page shows SOS's **102+ signs at 41 sites** and **20 thrown away**.
+Live numbers after PR #42 (verified on missingparkhistory.org 2026-10-07): 25 entries confirmed removed + 22 removed per NPS court filing = **47** on the home-page tile; status page shows SOS's **102+ signs at 41 sites** and **20 thrown away**.
 
 
 ## Context
@@ -148,6 +149,7 @@ Local `missing-history/data/parkData.json` (Jun 12) differs from live in **197 n
 local commits `496c19c` "Fix 182 wrong park names" and `b498a58` "81 wrong state refs" were never
 ported to `origin/main` (live's last parkData commit is 2026-04-05). Any SOS data PR must be
 3-way merged onto origin/main's file, and those fixes should probably ship first.
+**Update 2026-10-07:** reviewed hunk by hunk before porting. About half were regressions (50 "Why this matters:" labels replaced by park names, "Kinderhook" → "NY", sentences like "the combined forces of the Lakota, Northern Cheyenne, and Arapaho nations" rewritten as "…of the Little Bighorn Battlefield National Monument"), and many real fixes were partial. None were ported; PR #43 fixes the underlying wrong-park narratives directly.
 
 ---
 
@@ -239,3 +241,4 @@ that prints SOS rows vs MPH entries per park code, so the table in Part 2A regen
   provenance. Download happens in step 4 (10 parks) and step 2 (photo-backed group).
 - **Narrative fixes:** port the 197 local narrative/state fixes onto `origin/main` as their **own
   PR first** (3-way merge of `data/parkData.json`), then build the SOS data PRs on top.
+  *Superseded 2026-10-07:* the local edits were not safe to port; see PR #43.
