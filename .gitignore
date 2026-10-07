@@ -4,3 +4,4 @@ node_modules/
 test-results/
 playwright-report/
 newsletter-preview.html
+.cache/

@@ -1,0 +1,14 @@
+{
+  "_comment": "Code handling for scripts/npshistory_audit.py. NPSHistory URLs are DISCOVERED from npshistory.com's own park index (home-page <select> + park_histories.htm anchors), then by park-name match; this file only covers what discovery cannot. 'no_page' = MPH codes that are NPS administrative/regional units with no park archive on NPSHistory.com. 'umbrella' = codes that appear first in composite MPH codes (e.g. 'NAMA,LINC') but are the parent unit; primary_code() skips them so the entry maps to the specific site. 'non_nps' = FWS/BLM codes (no NPSHistory park page; FWS/BLM general collections exist but are not per-site).",
+  "overrides": {
+    "CRMO": "https://npshistory.com/publications/blm/craters-of-the-moon/index.htm"
+  },
+  "no_page": ["SERO", "CBPO", "ANCH", "WEAR", "NEPH", "MWAC", "FAIR", "NRSS"],
+  "umbrella": ["NAMA", "GWMP", "WEAR"],
+  "non_nps": ["BLM-001", "BLM-002", "BRMBR", "FNNWR", "NWRS-HQ", "OBNWR", "SSWPA"],
+  "name_hints": {
+    "_comment": "Optional: MPH code -> exact NPSHistory park name when automatic name matching fails. Filled by hand after a run reports 'unresolved'.",
+    "MAWA": "Maggie L Walker NHS",
+    "CACR": "Cane River Creole NHP"
+  }
+}
