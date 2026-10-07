@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Our Signs image viewer</title>
+    <link rel="icon" href="https://sos-sandbox.s3.us-east-2.amazonaws.com/sos-public-viewer/static_media/img/sos_icon.png">
+    <meta property="og:title" content="Save Our Signs image viewer">
+    <meta name="twitter:title" content="Save Our Signs image viewer">
+
+    <meta name="description" content="The People's Archive of National Park Signs. Photographs of signs at National Park Service (NPS) sites were taken by volunteers and submitted to the Save Our Signs project.">
+    <meta property="og:description" content="The People's Archive of National Park Signs. Photographs of signs at National Park Service (NPS) sites were taken by volunteers and submitted to the Save Our Signs project.">
+    <meta name="twitter:description" content="The People's Archive of National Park Signs. Photographs of signs at National Park Service (NPS) sites were taken by volunteers and submitted to the Save Our Signs project.">
+
+    <meta property="og:image" content="https://sos-sandbox.s3.us-east-2.amazonaws.com/sos-public-viewer/static_media/img/SOS_Logo_green_background_white_sign.png">
+    <meta name="twitter:image" content="https://sos-sandbox.s3.us-east-2.amazonaws.com/sos-public-viewer/static_media/img/SOS_Logo_green_background_white_sign.png">
+
+    <link rel="stylesheet" href="./node_modules/@selectize/selectize/dist/css/selectize.default.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #c7a1c4 url(https://umn.qualtrics.com/CP/Graphic.php?IM=IM_5A7MEwhjDM0SnaK) no-repeat center fixed;
+            background-size: cover;
+        }
+
+        .Skin {
+            color: #000;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .Skin #Overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -9;
+            background: 0 0;
+            opacity: 0;
+        }
+
+        .Skin #Wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -40px;
+        }
+
+        .Skin #SkinContent {
+            margin: 0 auto;
+            max-width: 750px;
+            zoom: 1;
+            position: relative;
+            z-index: 0;
+            background: #fff;
+            border-radius: 4px;
+            padding: 1em 0;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        .Skin #HeaderContainer {
+            padding: 15px 20px 0 20px;
+        }
+
+        .Skin #Header {
+            font-size: 18px;
+            color: #000;
+            margin: 5px auto 20px auto;
+            max-width: none;
+            padding: 0;
+            padding: 5px 20px;
+            /* background-color: #e8eadc; */
+            text-align: center;
+        }
+
+        .Skin #SkinContent p {
+            margin: 1em auto;
+            font-size: 18px;
+            font-weight: 300;
+            padding: 0 0.8em;
+        }
+
+        @media (min-width: 770px) {
+            .Skin #SkinContent {
+                width: 750px;
+                max-width: 85%;
+            }
+
+            .Skin #HeaderContainer {
+                /* width: 770px; */
+                margin: auto;
+            }
+
+            .Skin #Header {
+                padding-bottom: 40px;
+            }
+
+            .Skin #SkinContent p {
+                width: 85%;
+            }
+        }
+
+        @media (min-width: 980px) {
+            .Skin #SkinContent {
+                display: table;
+                min-width: 750px;
+                width: unset;
+            }
+
+            .Skin #HeaderContainer {
+                display: table;
+                min-width: 750px;
+            }
+
+            .Skin #SkinContent p {
+                width: 85%;
+            }
+        }
+
+        #Header h1, 
+        #Header h2 {
+            width: 100%;
+            padding: 24px 24px 0 24px;
+            color: #2E5E1B;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: #e8eadc;
+        }
+
+        /* style="width:100%;background-color:#e8eadc;padding:24px; */
+
+        #Header h2 {
+            font-size: 18px;
+            padding-top: 0px;
+            padding-bottom: 24px;
+        }
+
+        a {
+            color: #2E5E1B;
+            text-decoration: underline;
+        }
+
+        #LogoContainer {
+            background: #2e5e1b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #Logo {
+            background-position: center center;
+            margin: 0 20px;
+        }
+
+        #Logo img {
+            vertical-align: middle;
+            max-height: 150px;
+        }
+
+        #site-select-form {
+            display: block;
+            margin: 1em auto;
+            text-align: center;
+        }
+
+        #site-select-form label, 
+        #site-select-form select {
+            display: inline-block;
+        }
+
+        .selectize-input {
+            width: 300px; /* Or use percentages like 100% for responsive width */
+        }
+
+        h2.site-name {
+            width: 95%;
+            margin: 1em auto 0.5em auto;
+        }
+
+        div.site-image-count,
+        div.download,
+        div.related-sites {
+            width: 95%;
+            margin: 0.5em auto 1em auto;
+        }
+
+        div.related-sites {
+            font-size: 0.8em;
+        }
+
+        .related-park {
+            display: inline-block;
+            padding: 0 0.3em;
+        }
+
+        .site-container {
+            width: 95% ;
+            margin: 1em auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            
+            justify-content: center;
+        }
+        
+        .thumbnail {
+            margin: 0.25em;
+            max-width: 160px;
+            padding: 0.25em;
+            border-radius: 4px;
+        }
+
+        .normal,
+        .regular {
+            border: 1px solid #999;
+        }
+
+        .other {
+            border: 1px dashed #999;
+        }
+
+        .altered {
+            /* background-color: #db9b6e; */
+            background-color: #649950;
+            /* color: #cbd1a3; */
+        }
+
+        .artistic {
+            /* background-color: #9598cc; */
+            background-color: #cbd1a3;
+            /* color: #649950; */
+        }
+
+        .color-key {
+            width: 1em;
+            height: 1em;
+            margin-left: 1em;
+            display: inline-block;
+        }
+
+        .color-key:first-child {
+            margin-left: 0;
+        }
+
+        .thumbnail img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            max-height: 150px;
+            border: 1px solid #999;
+        }
+
+        /* div.altered img {
+            border: 3px solid #2E5E1B;
+        } */
+
+        .thumbnail .info {
+            display: block;
+            margin-top: 0.3em;
+            font-size: 0.8em;
+        }
+
+        .Skin #BrandingFooter, .Skin #Footer {
+            font-size: 16px;
+            max-width: 810px;
+            margin: 100px auto 0 auto;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="Skin">
+        <div id="Overlay"></div>
+        <div id="Wrapper">
+            <div class="SkinInner">
+                <div id="LogoContainer">
+                    <div id="Logo">
+                        <a href="http://saveoursigns.org/"><img src="https://umn.qualtrics.com/CP/Graphic.php?IM=IM_bdvCGxXqRt6bhLU" data-image-state="ready" alt="Save Our Signs logo"></a>
+                    </div>
+                </div>
+                <div id="HeaderContainer">
+                    
+                    <div id="Header" role="banner">
+                        <h1>The Save Our Signs Archive</h1>
+                        <h2>The People's Archive of National Park Signs</h2>
+                    </div>
+                </div>
+                <div id="SkinContent">
+
+                    <p>These photographs of signs at National Park Service (NPS) sites were taken by volunteers and submitted to the <a href="https://sites.google.com/umn.edu/save-our-signs">Save Our Signs project</a>. The photos have been released into the public domain and are free to reuse. Titles and dates of sign photos were provided by volunteers and dates may be estimates. The Save Our Signs team is not able to independently verify dates.</p>
+
+                    <p>We continue to accept photo submissions at <a href="http://saveoursigns.org">saveoursigns.org</a>. See the <a href="https://z.umn.edu/SOSphotoFAQs">FAQs</a> and <a href="https://sites.google.com/umn.edu/save-our-signs/about/project-updates">Project Updates page</a> for more info.</p>
+
+                    <p><strong>Currently in the archive:</strong> <span id="total-count"></span></p>
+                    <p><strong>Get the data:</strong> <a href="data/sos_public_manifest.xlsx">Download a spreadsheet of all public images and metadata</a></p>
+                    <p><strong>About the archive:</strong> <a href="https://sites.google.com/umn.edu/save-our-signs/sos-archive?authuser=0">Column names and metadata</a></p>
+
+                    <form id="site-select-form">
+                        <label for="site-select">Select an NPS site:</label>
+                        <select id="site-select" name="site-select"></select>
+                    </form>
+                    
+                    <div id="image-container"></div>
+            
+                </div>
+            </div>
+            <div id="Footer" role="contentinfo"><br>
+                <br>
+                &nbsp;
+                <div style="width:100%;background-color:#e8eadc;padding:24px;">This initiative is powered by the&nbsp;<a href="https://sites.google.com/umn.edu/save-our-signs" rel="noopener" target="_blank">Save Our Signs Project</a>, and is supported by&nbsp;<a href="https://safeguar.de/" rel="noopener" target="_blank">Safeguarding Research &amp; Culture</a>&nbsp;and the&nbsp;<a href="https://datarescueproject.org/" rel="noopener" target="_blank">Data Rescue Project</a>.&nbsp; Image from <a href="https://catalog.archives.gov/id/231740690" target="_blank">National Archives Catalog</a>.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/papaparse/papaparse.min.js"></script>
+    <script src="./node_modules/@selectize/selectize/dist/js/selectize.min.js"></script>
+
+    <script>
+        let file_path = './data/public_manifest_main.csv'
+        let file_manifest
+        let select_content
+        let sites_data = []
+        let collections_lookup = {}
+        let site_count = 0
+        let image_total_count = 0
+
+
+        let showAllSites = function (sites_data) {
+            let image_html = ''
+
+            sites_data.forEach((site) => {
+                image_html += getSiteImagesHTML(site)
+            });
+
+            $('#image-container').html(image_html)
+        }
+
+
+        let showOneSite = function(site_code) {
+
+            let site_obj = sites_data.find(site => site.site_code === site_code)
+            if (site_obj) {
+                let image_html = getSiteImagesHTML(site_obj)
+
+                $('#image-container').html(image_html)
+
+                update_url(site_code)
+            } else {
+                // no site selected, clear viewer
+                $('#image-container').html('')
+            }
+        }
+
+
+        let check_querystring = function() {
+
+            const params = new URLSearchParams(window.location.search);
+            const site_code = params.get("site")
+            if (site_code) {
+                site_obj = sites_data.find(site => site.site_code === site_code)
+                if (site_obj) {
+                    return site_code
+                }
+            }
+            return false
+        }
+
+
+        let forceSiteDisplay = function() {
+            // Used for querystring and back event detection
+            const selected_site_code = check_querystring()
+            var selectizeInstance = $('#site-select')[0].selectize
+            if (selected_site_code) {
+                selectizeInstance.setValue(selected_site_code);
+                showOneSite(selected_site_code)
+            } else {
+                selectizeInstance.setValue(null);
+            }
+        }
+
+
+        let update_url = function(site_code) {
+            let url = window.location           
+            const params = new URLSearchParams(url.search);
+            // check if url has changed, and push new history state if so
+            current_site_code = params.get("site");
+            if (current_site_code != site_code) {
+                params.set("site", site_code);
+                history.pushState(null, '', `?${params.toString()}`);
+            }
+        }
+
+
+        let getSiteImagesHTML = function(site_obj) {
+            site_html = ''
+            site_html += `<h2 class="site-name">${site_obj.site_name}</h2>`
+            // ParkCollection info
+            if (site_obj.park_collections.length > 0) {
+                site_html += '<div class="related-sites">Related sites: '
+                site_obj.park_collections.forEach((collection) => {
+                    var collection_parks = collections_lookup[collection].parks
+                    collection_parks.forEach((park) => {
+                        if (park.site_code != site_obj.site_code) {
+                            site_html += `<span class="related-park"><a href="Javascript:showOneSite('${park.site_code}')">${park.site_name}</a></span>`
+                        }
+                    })
+                })
+                site_html += '</div>'
+            }
+            site_html += `<div class="site-image-count">${site_obj.images.length.toLocaleString()} photos</div>`
+            site_html += '<div class="site-image-count"> <span class="color-key regular"></span> Regular <span class="color-key altered"></span> Altered version <span class="color-key artistic"></span> Artistic response or protest <span class="color-key other"></span> Other</div>'
+            site_html += `<div class="download"><a href="data/site_manifests/sos_public_manifest_${site_obj.site_code}.xlsx">Download spreadsheet of images from ${site_obj.site_name}</a></div>`
+
+            
+
+            site_html += '<div class="site-container">'
+
+            site_obj.images.sort((a, b) => new Date(b.date_taken) - new Date(a.date_taken));
+            
+            site_obj.images.forEach((item) => {
+
+                if (item.date_taken == '') {
+                    date_taken = ''
+                } else {
+                    date_taken = ', ' + new Date(item.date_taken).toLocaleDateString("en-US", {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric",
+                        timeZone: "UTC"
+                    });
+                }
+
+                if (item.title == '') {
+                    image_title = 'Title not submitted'
+                    image_alt = 'No title submitted for this image' + date_taken + ` (${item.photo_type} type)`
+                } else {
+                    image_title = item.title
+                    image_alt = item.title + date_taken + ` (${item.photo_type} type)`
+                }
+
+                site_html += `<div class="thumbnail ${item.photo_type.toLowerCase()}">`
+                site_html += `<a href="${item.main_image_url}" target="_blank"><img alt="${image_alt}" src="${item.thumb_url}"/></a>`
+                site_html += `<span class="info">${image_title}${date_taken}</span>`
+                site_html += `</div>`
+                });
+            site_html += '</div>'
+
+            return site_html
+        }
+
+
+        Papa.parse(file_path, {
+            download: true,
+            header: true,
+            complete: function(results) {
+                file_manifest = results.data;
+
+                // Regroup items by site
+                file_manifest.forEach((item) => {
+                    site_obj = sites_data.find(site => site.site_code === item.site_code)
+                    if (item.site_code) {
+                        if (site_obj) {
+                            site_obj.images.push(item)
+                        } else {
+                            var park_collections = []
+                            if (item.park_collections != '') {
+
+                                park_collections = item.park_collections.split('|')
+
+                                if (park_collections.length > 0) {
+                                    park_collections.forEach((collection) => {
+                                        if (!(collection in collections_lookup)) {
+                                            collections_lookup[collection] = {'parks': []}
+                                        }
+                                        collections_lookup[collection].parks.push({'site_name': item.site_name, 'site_code': item.site_code})
+                                    })
+                                }
+                            }
+                            sites_data.push({'site_name': item.site_name, 'site_code': item.site_code, 'park_collections': park_collections,'images': [item]})
+                            site_count += 1
+                        }
+                        
+                    }
+                    image_total_count += 1
+                });
+
+                // populate select
+                select_content = '<option value="">Select a site</option>'
+                sites_data.forEach((site) => {
+                    select_content += `<option value="${site.site_code}">${site.site_name}</option>`
+                });
+
+                $('#total-count').html(`${image_total_count.toLocaleString()} approved photos from ${site_count.toLocaleString()} sites`)
+                $('#site-select').html(select_content)
+                $('#site-select').selectize();
+
+                forceSiteDisplay()
+
+                window.addEventListener('popstate', function(event) {
+                    forceSiteDisplay()
+                });
+
+                $('#site-select').change(function() {
+                    showOneSite(this.value)
+                });
+            }
+        });
+
+    </script>
+</body>
+</html>
