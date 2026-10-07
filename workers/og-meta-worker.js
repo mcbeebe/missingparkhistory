@@ -46,7 +46,6 @@ const PARKS_WITH_PAGES = {
   "CAHA": "cape-hatteras-ns", "CHOH": "cando-canal-nhp",
   "ANTI": "antietam-nb", "NATR": "natchez-trace-parkway",
   "CHPI": "charles-pinckney-nhs", "FOSU": "fort-sumter-and-fort-moultrie-nhp",
-  "FRRI": "fire-island-ns", "LOWE": "lower-delaware-wsr",
   "INDE": "independence-nhp", "NAMA": "national-mall",
   "BLRI": "blue-ridge-parkway", "CUGA": "cumberland-gap-nhp",
   "YOSE": "yosemite-np", "FORA": "fort-raleigh-nhs",

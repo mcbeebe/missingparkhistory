@@ -20,6 +20,8 @@ export function publicPages(): string[] {
     .map((f) => `/${f}`);
   const parks = readdirSync(join(ROOT, 'parks'))
     .filter((f) => f.endsWith('.html'))
+    // pages kept only to redirect an old URL (e.g. lower-delaware-wsr.html) are not public pages
+    .filter((f) => !readFileSync(join(ROOT, 'parks', f), 'utf8').includes('http-equiv="refresh"'))
     .map((f) => `/parks/${f}`);
   return [...root, ...parks].sort();
 }
