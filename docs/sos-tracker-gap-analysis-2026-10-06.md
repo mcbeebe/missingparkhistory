@@ -3,7 +3,7 @@
 **Date:** October 6, 2026 · **Supersedes:** SOS-Data-Alignment-Analysis.md (April 3, 2026)
 **Copies:** repo `docs/sos-tracker-gap-analysis-2026-10-06.md` (github.com/mcbeebe/missingparkhistory) · local project folder `SOS-Tracker-Gap-Analysis-2026-10-06.md`
 
-## Implementation status (updated 2026-10-07, after PR #45)
+## Implementation status (updated 2026-10-07, after PR #46)
 
 | Step | Status | Where |
 |---|---|---|
@@ -18,7 +18,7 @@
 | Timeline milestone for the tracker's rebuild | Fixed: Aug 19, 2026 event, citing the Charlotte Observer's count of 100+ signs at 41 sites | [PR #45](https://github.com/mcbeebe/missingparkhistory/pull/45) |
 | Template, state and source-title errors: "Civil War sites" at Natchez Trace, Fort McHenry and Great Smoky Mountains; "in WA" at Walnut Canyon, the Clinton Birthplace and Roger Williams; Great Falls Park listed as DC; source titles written from URLs in #42 | Fixed: wording and states corrected after a coordinates audit of every entry; real headlines where the page could be read, bracketed descriptions where it could not | [PR #45](https://github.com/mcbeebe/missingparkhistory/pull/45) |
 | Theodore Roosevelt Birthplace "nothing to report" submission (#922) missing from the map | Fixed: own entry at the Birthplace; home-page counts updated (446 entries) | [PR #45](https://github.com/mcbeebe/missingparkhistory/pull/45) |
-| 16 older park pages still show statuses from before #42 (e.g. Blue Ridge Parkway "Flagged for Review" vs. Confirmed Removed on the map; Grand Canyon and Independence need a judgment call) | Open | `parks/` |
+| 16 older park pages still showed statuses from before #42 (e.g. Blue Ridge Parkway "Flagged for Review" vs. Confirmed Removed on the map) | Fixed: each page's card and header badges match the map; Independence cards show their own statuses; Grand Canyon listed as confirmed removed per the tracker (map entry corrected, Interior's sun-damage claim noted); missing badge styles added on six more pages | [PR #46](https://github.com/mcbeebe/missingparkhistory/pull/46) |
 
 Live numbers after PR #42 (verified on missingparkhistory.org 2026-10-07): 25 entries confirmed removed + 22 removed per NPS court filing = **47** on the home-page tile; status page shows SOS's **102+ signs at 41 sites** and **20 thrown away**.
 
