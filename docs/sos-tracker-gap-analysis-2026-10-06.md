@@ -3,14 +3,16 @@
 **Date:** October 6, 2026 · **Supersedes:** SOS-Data-Alignment-Analysis.md (April 3, 2026)
 **Copies:** repo `docs/sos-tracker-gap-analysis-2026-10-06.md` (github.com/mcbeebe/missingparkhistory) · local project folder `SOS-Tracker-Gap-Analysis-2026-10-06.md`
 
-## Implementation status (updated 2026-10-07, after PR #43)
+## Implementation status (updated 2026-10-07, after PR #44)
 
 | Step | Status | Where |
 |---|---|---|
 | Part 4 watcher: script, snapshot, weekly Action, triage doc | Merged 2026-10-07 (039a338), live | [PR #41](https://github.com/mcbeebe/missingparkhistory/pull/41) |
 | Part 3 steps 1-5, 7: filing badge, status flips, Glacier downgrade, sign lists, 21 sources, 74 SOS photos copied in, Bunker Hill, BLM entries, alias map, homepage/status/methodology updates | Merged 2026-10-07 (d0f13c8), live | [PR #42](https://github.com/mcbeebe/missingparkhistory/pull/42) |
 | Port the 197 local narrative fixes to live | Not ported. Review on 2026-10-07 found the April 5 edits were a blind find-and-replace, roughly half regressions. Replaced by a direct fix: 86 wrong-park narratives, 3 mislocated markers (398, 788, 907), false "enslaved here — including" clauses, spelling, and 36 park-page cards | [PR #43](https://github.com/mcbeebe/missingparkhistory/pull/43) |
-| Park pages under the wrong title: `lower-delaware-wsr.html` shows Lowell's entries (and the map's Lowell link points there), `fire-island-ns.html` shows Freedom Riders'; Birthplace card #922 on the Theodore Roosevelt NP page; duplicate C&O Canal pages | Needs a decision (retire or rebuild pages) | `parks/` |
+| Park pages under the wrong title: `lower-delaware-wsr.html` showed Lowell's entries and the map's Lowell link pointed there; `fire-island-ns.html` showed Freedom Riders' entries | Fixed: Fire Island page rebuilt around its own entry (#427, state corrected to NY), Lower Delaware URL now redirects to Lowell's page, map links and Freedom Riders' photo count (43) corrected, sitemap and share-preview worker updated | [PR #44](https://github.com/mcbeebe/missingparkhistory/pull/44) |
+| Birthplace card #922 on the Theodore Roosevelt NP page; duplicate C&O Canal pages (`cando-canal-nhp.html`, `chesapeake-and-ohio-canal-nhp.html`) | Open | `parks/` |
+| `sitemap.xml` lists about 30 of the 74 park pages (last regenerated 2026-03-24) | Open | `sitemap.xml` |
 | Part 3 step 6: new park pages (GATE, CACO, BEPA, SUCR, then filing-only parks) | Not started | `parks/` |
 | News cards for Provincetown Independent 6/24, Charlotte Observer 8/19, SL Tribune 7/23, Earthjustice 7/30 | Not started | `news-and-press.html` |
 | Timeline milestone for the June rebuild (102 signs / 41 sites) | Not started | `timeline.html` |
