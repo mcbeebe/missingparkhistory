@@ -57,6 +57,21 @@ and restored; new tabs (the old-format tab is hidden, not deleted); additions to
 
 ## Quarterly
 
-Re-run the full gap analysis (the last one is
-[`docs/sos-tracker-gap-analysis-2026-10-06.md`](sos-tracker-gap-analysis-2026-10-06.md)) so sign lists, sources and counts for every park are reconciled, not just
-the rows that changed.
+On the first day of each quarter the same workflow runs
+`python scripts/sos_tracker_watch.py --coverage` and files the result as an
+`sos-tracker` issue: one row per park comparing the tracker's sign rows (press-
+confirmed, court filing, with photos), non-sign rows and flagged rows with the
+site's status, sign list, sources and park page, plus a "Needs attention" list.
+Run it any time from the Actions tab (`coverage = true`) or locally:
+
+```bash
+python scripts/sos_tracker_watch.py --coverage                   # fresh download
+python scripts/sos_tracker_watch.py --coverage --from-snapshot   # saved snapshot
+```
+
+Known, expected flags: Independence lists fewer signs than the tracker because
+the tracker counts each two-panel set as two rows; parks confirmed from other
+sources (Stonewall, Golden Gate, the BLM monuments) have no tracker rows.
+Re-read the full gap analysis
+([`docs/sos-tracker-gap-analysis-2026-10-06.md`](sos-tracker-gap-analysis-2026-10-06.md))
+when the report shows a pattern rather than one-off rows.

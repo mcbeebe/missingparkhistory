@@ -20,6 +20,8 @@ Usage:
     python scripts/sos_tracker_watch.py --dry-run       # diff only, keep old snapshot
     python scripts/sos_tracker_watch.py --report out.md # also write the report to a file
     python scripts/sos_tracker_watch.py --baseline      # (re)create snapshot, no diff
+    python scripts/sos_tracker_watch.py --coverage      # per-park tracker vs. site report (quarterly)
+    python scripts/sos_tracker_watch.py --coverage --from-snapshot  # same, from the saved snapshot
 
 Only the standard library is used so the script runs anywhere.
 """
@@ -205,15 +207,126 @@ def diff_snapshots(old: dict, new: dict) -> tuple[bool, str]:
     return changed_any, "\n".join(out)
 
 
+# ---------------------------------------------------------------- coverage (quarterly reconciliation)
+def _yes(v: str) -> bool:
+    return (v or "").strip().lower().startswith("yes")
+
+
+_DESIG = r"\b(national|historical|historic|park|site|monument|memorial|preserve|seashore|lakeshore|recreation|area|battlefield|military|trail|parkway|and|of|the)\b"
+
+
+def _norm(name: str) -> str:
+    """Park name without punctuation, apostrophes or designation words, for matching."""
+    name = re.sub(r"['\u2019]", "", name.lower())
+    name = re.sub(r"[^a-z0-9]+", " ", name)
+    return re.sub(r"\s+", " ", re.sub(_DESIG, " ", name)).strip()
+
+
+def _sign_count(signs: list) -> int:
+    n = 0
+    for s in signs or []:
+        m = re.search(r"\((\d+) signs\)$", s.get("title", ""))
+        n += int(m.group(1)) if m else 1
+    return n
+
+
+def coverage(snapshot: dict, root: Path = Path(".")) -> tuple[str, int]:
+    """Per park: what the tracker lists vs. what the site shows. Returns (markdown, problems)."""
+    pd = json.loads((root / "data/parkData.json").read_text())
+    idx = (root / "index.html").read_text()
+    pages = {m.group(1): m.group(2) for m in re.finditer(r'([A-Z]{4}):\{name:"[^"]*",entries:\d+,photos:\d+,slug:"([^"]*)"\}', idx)}
+    tabs = snapshot["tabs"]
+    track: dict[str, dict] = {}
+    def row(code):
+        return track.setdefault(code, {"signs": 0, "press": 0, "filing": 0, "photos": 0, "nonsigns": 0, "flagged": 0, "names": set()})
+    for rec in tabs.get("NPS signs removed or modified", {}).get("records", {}).values():
+        code = rec.get("alpha_code", "").strip()
+        if not code: continue
+        r = row(code); r["signs"] += 1; r["names"].add(rec.get("Name of NPS site", ""))
+        r["press"] += _yes(rec.get("Confirmed removed/modified by news reports?", ""))
+        r["filing"] += _yes(next((v for k, v in rec.items() if k.startswith("Was this sign")), ""))
+        r["photos"] += any(rec.get(k) for k in rec if k.endswith("Photo - URL") or k.startswith("Missing Sign Photo"))
+    for rec in tabs.get("Non-signs confirmed removed/modified", {}).get("records", {}).values():
+        code = rec.get("alpha_code", "").strip()
+        if code: row(code)["nonsigns"] += 1
+    by_name = {}
+    for v in pd.values():
+        by_name.setdefault(_norm(v["park"]), v["code"])
+    unmatched = []
+    for rec in tabs.get("Flagged for review or ordered to remove", {}).get("records", {}).values():
+        name = _norm(rec.get("Name of NPS site", ""))
+        code = by_name.get(name) or next((c for n, c in by_name.items() if name and (n.startswith(name) or name.startswith(n))), None)
+        if code: row(code)["flagged"] += 1
+        elif name and "parks" not in name: unmatched.append(rec.get("Name of NPS site", ""))
+    site: dict[str, dict] = {}
+    for k, v in pd.items():
+        s = site.setdefault(v["code"], {"entries": [], "confirmed": False, "filing": False, "ordered": False, "signs": 0, "sources": 0, "statuses": set()})
+        s["entries"].append(k); s["statuses"].add(v["status"])
+        s["confirmed"] |= bool(v.get("confirmedRemoved")); s["filing"] |= bool(v.get("filingRemoved"))
+        s["ordered"] |= bool(v.get("orderedToRemove")); s["signs"] += _sign_count(v.get("sosSignNames"))
+        s["sources"] += len([x for x in v.get("sosSources") or [] if isinstance(x, dict)])
+    codes = sorted(set(track) | {c for c, s in site.items() if s["confirmed"] or s["filing"]})
+    lines = ["| Park | Tracker: signs (press / filing / photos) | Non-signs | Flagged | Site status | Site signs | Sources | Page | Check |",
+             "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    problems = []
+    for code in codes:
+        t = track.get(code, {"signs": 0, "press": 0, "filing": 0, "photos": 0, "nonsigns": 0, "flagged": 0})
+        s = site.get(code)
+        notes = []
+        removed_rows = t["signs"] + t["nonsigns"]
+        if not s:
+            notes.append("no site entry")
+        else:
+            removed = s["confirmed"] or s["filing"]
+            if removed_rows and not removed:
+                notes.append("tracker lists removals; site does not show them")
+            if (t["press"] or t["photos"]) and t["signs"] and not s["confirmed"]:
+                notes.append("press/photo-confirmed in tracker; site not Confirmed Removed")
+            if t["signs"] > s["signs"]:
+                notes.append(f"sign list short ({s['signs']} of {t['signs']})")
+            if t["flagged"] and not (s["ordered"] or removed):
+                notes.append("flagged in tracker; not marked ordered")
+            if removed and code not in pages:
+                notes.append("no park page")
+            if s["confirmed"] and not removed_rows and not t["flagged"]:
+                notes.append("info: confirmed on site from other sources")
+        real = [n for n in notes if not n.startswith("info:")]
+        if real: problems.append((code, real))
+        status = ", ".join(sorted(s["statuses"]))[:60] if s else "\u2014"
+        lines.append(f"| {code} | {t['signs']} ({t['press']} / {t['filing']} / {t['photos']}) | {t['nonsigns']} | {t['flagged']} | {status} | "
+                     f"{s['signs'] if s else 0} | {s['sources'] if s else 0} | {'yes' if code in pages else 'no'} | {'; '.join(notes) or 'ok'} |")
+    out = [f"# SOS tracker coverage \u2014 snapshot {snapshot.get('fetched_at', '?')}", "",
+           f"{len(codes)} parks compared; {len(problems)} need attention.", ""]
+    if problems:
+        out += ["## Needs attention", ""] + [f"- **{c}**: {'; '.join(n)}" for c, n in problems] + [""]
+    if unmatched:
+        out += ["## Flagged-tab sites not matched to a park", ""] + [f"- {u}" for u in sorted(set(unmatched))] + [""]
+    out += ["## All parks", ""] + lines
+    return "\n".join(out) + "\n", len(problems)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--snapshot", default="data/sos_tracker_snapshot.json", help="snapshot path (default: data/sos_tracker_snapshot.json)")
     ap.add_argument("--report", help="write the Markdown change report here as well as stdout")
     ap.add_argument("--dry-run", action="store_true", help="diff but do not overwrite the snapshot")
     ap.add_argument("--baseline", action="store_true", help="write a fresh snapshot without diffing")
+    ap.add_argument("--coverage", action="store_true", help="print a per-park tracker vs. site report instead of diffing")
+    ap.add_argument("--from-snapshot", action="store_true", help="with --coverage: use the saved snapshot, no download")
     args = ap.parse_args()
 
     path = Path(args.snapshot)
+    if args.coverage:
+        try:
+            snap = json.loads(path.read_text()) if args.from_snapshot else build_snapshot()
+        except Exception as exc:
+            print(f"error: could not load the tracker: {exc}", file=sys.stderr)
+            return 1
+        text, problems = coverage(snap)
+        print(text)
+        if args.report:
+            Path(args.report).write_text(text)
+        return 0
     try:
         new = build_snapshot()
     except Exception as exc:
