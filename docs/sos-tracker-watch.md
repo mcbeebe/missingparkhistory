@@ -57,6 +57,6 @@ and restored; new tabs (the old-format tab is hidden, not deleted); additions to
 
 ## Quarterly
 
-Re-run the full gap analysis (see `SOS-Tracker-Gap-Analysis-2026-10-06.md` in the project
-folder for the last one) so sign lists, sources and counts for every park are reconciled, not just
+Re-run the full gap analysis (the last one is
+[`docs/sos-tracker-gap-analysis-2026-10-06.md`](sos-tracker-gap-analysis-2026-10-06.md)) so sign lists, sources and counts for every park are reconciled, not just
 the rows that changed.

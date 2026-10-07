@@ -1,0 +1,241 @@
+# SOS Censorship Tracker vs. Missing Park History — Gap Analysis and Watch Plan
+
+**Date:** October 6, 2026 · **Supersedes:** SOS-Data-Alignment-Analysis.md (April 3, 2026)
+**Copies:** repo `docs/sos-tracker-gap-analysis-2026-10-06.md` (github.com/mcbeebe/missingparkhistory) · local project folder `SOS-Tracker-Gap-Analysis-2026-10-06.md`
+
+## Implementation status (updated 2026-10-07)
+
+| Step | Status | Where |
+|---|---|---|
+| Part 4 watcher: script, snapshot, weekly Action, triage doc | PR open, CI green | [PR #41](https://github.com/mcbeebe/missingparkhistory/pull/41) |
+| Part 3 steps 1-5, 7: filing badge, status flips, Glacier downgrade, sign lists, 21 sources, 74 SOS photos copied in, Bunker Hill, BLM entries, alias map, homepage/status/methodology updates | PR open | [PR #42](https://github.com/mcbeebe/missingparkhistory/pull/42) |
+| Port the 197 local narrative fixes to live (decided: separate PR first) | Not started | local `missing-history/data/parkData.json` |
+| Part 3 step 6: new park pages (GATE, CACO, BEPA, SUCR, then filing-only parks) | Not started | `parks/` |
+| News cards for Provincetown Independent 6/24, Charlotte Observer 8/19, SL Tribune 7/23, Earthjustice 7/30 | Not started | `news-and-press.html` |
+| Timeline milestone for the June rebuild (102 signs / 41 sites) | Not started | `timeline.html` |
+
+Final numbers after PR #42: 25 entries confirmed removed + 22 removed per NPS court filing = **47** on the home-page tile; status page shows SOS's **102+ signs at 41 sites** and **20 thrown away**.
+
+
+## Context
+
+Save Our Signs (SOS, UMN librarians) maintains the public Google Sheet "SOS Censorship Tracker"
+(sheet id `1ulzIcpjpyTKLa52DClUkUlcazJPdAryK0B0oKmA9TF8`, last modified **2026-09-25** per Drive
+metadata). MPH last reconciled against it on **2026-04-03** (see `SOS-Data-Alignment-Analysis.md`,
+`SOS-Alignment-Project-Plan.docx` in the parent folder), when the tracker had 46 rows / 57 signs /
+10 parks. Since then SOS **rebuilt the sheet around the government's own court filing**
+(NPCA v. DOI, 1:26-cv-10877, Doc. 49-2, filed 2026-06-17): it is now one row per sign, carries the
+NPS filing's columns, and headlines **102 censored signs at 41 sites** (both "minimum" numbers).
+MPH's live `data/parkData.json` (443 entries; last data commit on `main` was 2026-04-05) still
+reflects the April picture: 10 SOS-confirmed parks, "58+ confirmed" on `status.html`.
+
+Treating SOS as the source of truth, this plan records (1) what differs, (2) what MPH must update,
+and (3) how to watch the sheet going forward. Research was done read-only against the live site
+(`missingparkhistory.org`, raw `main`), the local clone, and a fresh export of every tab.
+
+Watcher files (in the repo via PR #41):
+- `scripts/sos_tracker_watch.py` — tab discovery + CSV export + keyed diff; tested
+  (baseline 102 rows; clean rerun exits 0; simulated change exits 3 with ADDED/CHANGED report).
+- `data/sos_tracker_snapshot.json` — baseline snapshot taken 2026-10-07 04:51 UTC.
+- `.github/workflows/sos-tracker-watch.yml` — weekly Action (snapshot PR + `sos-tracker` issue).
+- `docs/sos-tracker-watch.md` — how to run it and the per-issue triage checklist.
+
+---
+
+## Part 1 — What the SOS tracker is now (2026-10-06)
+
+| Tab (gid) | Rows | Notes |
+|---|---|---|
+| ABOUT (689733930) | — | Inclusion rule: press-verified **or** before/after photos via SOS form; "we do not verify removals ourselves" |
+| **NPS signs removed or modified** (1460906999) | **102** | One row per sign. 64 rows press-confirmed; 99 listed in the 6/17 filing; **38 rest only on the filing**; 68 have a photo URL (before/after/"missing sign"). 33 park codes, 43 site+subsite pairs |
+| Non-signs confirmed removed/modified (484100168) | 21 | Films, brochures, Junior Ranger books, podcasts, web content, one poster |
+| Flagged for review or ordered to remove (140530881) | 31 | Pipeline; newest: Bunker Hill Lodge quotes (2026-06-04) |
+| Related non-NPS reports (1443371538) | 6 | Sierra Club FOIAs (BOR/BLM/FWS/BIA) + **BLM Bears Ears tribal seals (Jul 22-23) and ≥5 Grand Staircase gateway signs (Jul 28)** |
+| Related lawsuits and legislation (279510859) | 3 | Philadelphia v. Burgum, NPCA v. DOI, Truth in National Parks Act |
+| Other related NPS reports | 0 | empty |
+| "out of date NPS signs removed…" | 72 | **hidden** old-format tab (88-sign era); not in public HTML view |
+
+New "purple" columns copied from Doc. 49-2 on the signs and non-signs tabs: *Item Description,
+Reason for Removal, Media Type, Item Current Location, Item Condition, Process to recreate,
+alpha_code, park centerpoint lon/lat, site_type, **related response ID**, Related folder, Related
+description*. "Related response ID" is the **leaked-NPS-dataset ID — the same key scheme as
+`parkData.json`** — so the sheet now joins directly to MPH entries.
+
+Headline distributions (signs tab): reason = 60 "Disparages Americans past or living", 37
+"Unrelated to beauty, abundance, and grandeur…"; location = 34 INDE "mixed glass panels
+restored; metal panels damaged, not restored, pending litigation", 30 "In the park", 22 "At the
+park", **11 "Discarded"**; date reported = Sep 2025 (19), Jan 2026 (42), Jun 2026 (33, the filing).
+
+---
+
+## Part 2 — Gap analysis (SOS = truth)
+
+### A. Coverage: 23 SOS-listed parks that MPH does not treat as removed
+All 23 exist in `parkData.json` but with status FLAGGED FOR REVIEW / REVISE / REPLACE-REMOVE and
+`confirmedRemoved:false`. Grouped by evidence strength:
+
+- **Press-confirmed (must change):** CACO "On the Fringe — Salt Marshes and Sea Level Rise"
+  (Provincetown Independent 2026-06-24, entry 316); INDE Second Bank "Thomas Jefferson" panel and
+  Independence Hall touchscreen (Inquirer 2026-06-29) — not in entry 439's sign list.
+- **Photo-backed before+after in the SOS archive:** BEPA "Consequential Concrete" (386); GWMP
+  Theodore Roosevelt Island "Tribal Land Acknowledgement" (removed 2025-07-02 per leaked data; 893);
+  NAMA George Mason "Forgotten Founder", African American Civil War Memorial "Men of Color, To
+  Arms!", FDR Memorial "What's Missing?" → replaced by "Freedom from Dependence" (368); SUCR
+  "Explore More! Basalt Bubbles" (photos received 2026-08-04; 414 still "ordered").
+- **Filing-only (NPS admits removal; no press):** BICY, BLRI, CARI ×2, CACO ×3, CASA ×2, CHPI,
+  COLO, FRST, FORA, GWMP Great Falls, GRSM, GUCO, GUIS, JELA, MACA, NATR, OCMU, PIRO, TIMU, WRST,
+  ACAD Nature Center + Schoodic Institute. 11 of these say **"Discarded"** (BEPA, FRST, GATE, JELA,
+  NAMA/FDR, SUCR, …).
+
+### B. Sign-level drift inside the 10 already-confirmed parks
+| Park (entry) | SOS now | MPH now | Action |
+|---|---|---|---|
+| ACAD (391) | 18 named tripod panels (Summits 1-3 @ Cadillac, Wetlands 1-3 @ Great Meadows) + 2 filing rows; 14 before photos; new sources acadiaonmymind Nov-2025 & Jun-2026 | 3 titles + "10 total" placeholder; 1 sosPhotoUrl | Replace sign list, add photos/sources |
+| INDE (439) | **34** President's House rows (2-panel sets split) + 2 new items = 36; per-row "restored" flag is gone (location text is uniform); 17 after + 18 missing-sign photos; new Inquirer 6/29 source | 30 titles with per-sign restored/removed from the old tab | Keep per-sign statuses but re-source them to the archived old tab / after-photo column; add the 2 new items; methodology page says "30 signs" |
+| GLAC (783) | Only "climate/glacial-loss descriptions" confirmed (Outside); "Climate Change Affects…", "Blame It on the Grain", "Fire on the Rise", "Symbol of Controversy" sit on the **Flagged** tab; podcast on Non-signs | 5 titles all marked **removed** | **MPH overstates**: downgrade 4 titles to ordered/flagged |
+| FOSU (568) | 4 rows (3 bottle-filling + pier climate wayside), 6 photo URLs | 2 titles, items=9, 2 photo URLs | Split bottle-filling into 3; add photos |
+| GRTE (720) | + KHOL source: higher court ruled sign need not be reinstalled | 2 sources | Add source; note appellate ruling |
+| MUWO (389) | + KALW 2026-01-23, NPS "History Under Construction" article | 2 sources | Add sources |
+| ROCR (820) | + NBC Washington source; 1 before photo | 1 source, 0 photos | Add |
+| VIIS (235) | 4 rows (Taíno "unknown" row dropped); 3 before photos; + Plaskett release | 4 titles, 0 photos | Add photos/source; drop Taíno claim if present |
+| GATE (249), GRCA (792) | Aligned; GATE filing says "Discarded — refabricate via vendor"; GRCA not in filing | — | Add filing detail |
+
+### C. Non-signs tab: statuses MPH has stale
+YOSE book (827 flagged → SOS confirmed), LECL web content (730 flagged → confirmed via E&E News
+2026-05-01), BUIS Junior Ranger book **Discarded** (449 flagged), CAWO videos (359), CHRI films
+(183), CUGA publication **Discarded** (621), DEWA "Guide to the Gap" **Discarded** (109), FORA
+Junior Ranger book (170), MEMY Junior Ranger book **Discarded** (rid 285, no MPH entry), NATR 5
+items removed under **EO 14172** not SO 3431 (521), **BLRI Morris Brothers Minstrels poster removed
+2026-08-19 (Charlotte Observer; 486; not on News page)**. LOWE/MEMY/STON/GLAC-podcast aligned.
+
+### D. Flagged tab: mostly aligned with MPH `orderedToRemove` (21 entries). Gaps: Boston NHP
+Bunker Hill Lodge quotes (2026-06-04) — timeline has it, entry 322 has no `orderedToRemove`;
+SUCR has graduated to removed (see A). Fort Pulaski correctly *not* flagged.
+
+### E. Non-NPS tab: BLM Bears Ears / Grand Staircase sign removals (Jul 2026) absent from MPH
+(parkData has only FWS non-NPS entries; news page has nothing on either).
+
+### F. Lawsuits/legislation: MPH is ahead (adds Gilbert Baker v. DOI, PEER FOIA suit, H.R. 8539).
+No gap.
+
+### G. Site numbers and plumbing that are now wrong
+- `status.html` tile "58+ Confirmed removed or altered — Save Our Signs" → SOS says 102 / 41.
+  Tile "13+ Thrown away — NPS court filing" → re-derive (11 sign rows + 9 non-sign rows "Discarded").
+- `timeline.html` "May 2026 — SOS documents 58 removals" is fine as history; add a milestone for
+  the June rebuild (102 signs / 41 sites, keyed to the 6/17 filing).
+- `index.html` has no "confirmed removed" stat tile; its `parkPages` link map (68 codes) omits
+  **GRCA, MUWO, ROCR, GWMP** although `parks/grand-canyon-np.html`, `muir-woods-nm.html`,
+  `rock-creek-park.html`, `george-washington-memorial-parkway.html` exist → popups show no
+  "View Full Park Page" link. Same on live.
+- No park page for 14 SOS-listed parks: BEPA, BICY, CACO, COLO, FRST, **GATE** (confirmed since
+  Sep 2025), GUCO, GUIS, JELA, OCMU, PIRO, SUCR, TIMU, WRST.
+- `data-methodology.html`: INDE "30 individual signs" → 34 (+2 outside the President's House).
+
+### H. Data-model gaps (why the join is brittle)
+- No way to say "removed per NPS court filing" — needs a field (`filingListed`, `filingDetail{…}`)
+  and a distinct badge so filing-only rows are not shown as press-confirmed.
+- SOS "related response ID" points at IDs MPH consolidated away (874 → 443): e.g. 392-394 ACAD,
+  896 GATE, 856 MUWO, 609/612 FOSU, 712/717 INDE, 894 GLAC, 987 GRCA, 426/236-238 VIIS, 542 BLRI,
+  457 MACA, 307/384/408 NAMA, 482 JELA, 286 WRST, 436 TIMU, 751 GWMP, CARI's 11 IDs.
+  `manifestData.json` still holds image folders for 14 of them. Need an alias map.
+- No per-sign link to the SOS row (`sosRowKey`) so future diffs can be applied mechanically.
+- 68 SOS rows carry public-domain S3 photo URLs; MPH `sosPhotoUrls` exists on 11 entries. Need an
+  ingest policy (hotlink vs copy + "Data: SOS Removal Tracker" attribution, per Jenny McBurney's
+  request that SOS be cited as a source, not a verifier).
+
+### Side finding (verify before any data PR)
+Local `missing-history/data/parkData.json` (Jun 12) differs from live in **197 narratives** —
+local commits `496c19c` "Fix 182 wrong park names" and `b498a58` "81 wrong state refs" were never
+ported to `origin/main` (live's last parkData commit is 2026-04-05). Any SOS data PR must be
+3-way merged onto origin/main's file, and those fixes should probably ship first.
+
+---
+
+## Part 3 — Update work (ordered; each step = one PR off `origin/main` from an app worktree)
+
+1. **Data model + alias map** (`data/parkData.json`, new `data/sos_id_aliases.json`): add
+   `filingListed`, `filingDetail`, `sosRowKey`, `aliasIds`; new status/badge "REMOVED — NPS court
+   filing" wired into `index.html` filters, legend, and the status dropdown. Decide the badge name
+   and color with the user first (see question below).
+2. **Status flips with evidence** (sections A-C): CACO, INDE two items, BEPA, GWMP, NAMA ×3,
+   SUCR; non-signs YOSE, LECL, BUIS, CUGA, DEWA, FORA, MEMY JR book, NATR (note EO 14172), BLRI
+   poster. Each gets `sosSources` from the sheet's link column and `sosPhotoUrls` where SOS has
+   them. Mark the 38 filing-only rows with the new filing status, not "CONFIRMED REMOVED".
+3. **Fix overstatement**: GLAC 783 — four titles → ordered/flagged; keep podcast + glacial-loss text
+   as removed.
+4. **Sign-level refresh** for ACAD, INDE, FOSU, VIIS, ROCR, GRTE, MUWO (table B): sign lists,
+   photos, sources; INDE per-sign restoration re-sourced; update `presidents-house.html` and
+   `data-methodology.html` counts.
+5. **Site plumbing**: `index.html` parkPages map (+GRCA/MUWO/ROCR/GWMP, + any new pages); new
+   stat tile "Confirmed removed (SOS)"; `status.html` tiles (102 / 41; re-derived "thrown away");
+   timeline milestone; news cards for Provincetown Independent 6/24, Inquirer 6/29 (exists),
+   Charlotte Observer 8/19, SL Tribune 7/23 + Earthjustice 7/28 (Bears Ears / Grand Staircase).
+6. **Park pages**: at minimum GATE and CACO (press-confirmed), then the photo-backed group (BEPA,
+   SUCR; NAMA/GWMP already have pages); filing-only parks can wait for a template-driven batch.
+7. **Non-NPS**: add BLM Bears Ears / Grand Staircase entries (agency "BLM", mirroring the FWS
+   pattern `agency`/`fwsSource` → generalize to `agencySource`).
+
+Reuse: `scripts/resort_cards.py` for news cards; the news-bot stamps in `timeline.html` /
+`status.html` (bot rewrites lanes/cases weekly — hand-edit only the verdict strip and tiles, per
+memory); 3-way `git merge-file` onto origin/main for every content page.
+
+---
+
+## Part 4 — Watching the sheet (the recurring plan)
+
+**Cadence.** SOS edits are bursty (Sep-25, Jan-26, Jun-26 bulk; then Aug 4, Aug 19, Sep 25
+single edits). → **Weekly automated diff** (Mondays, after the daily news job) + **manual deep
+review quarterly** or after any major event (court rulings, a new WaPo/Inquirer story, a new
+Sierra Club FOIA).
+
+**Mechanism (already drafted, untracked):**
+- `scripts/sos_tracker_watch.py`: discovers tab gids from the public `htmlview`, exports each tab
+  as CSV (anonymous; no 97 MB xlsx), keys rows by `alpha_code | subsite | title | date | item
+  description` (order-insensitive), stores `data/sos_tracker_snapshot.json`, prints a Markdown
+  report of ADDED / REMOVED / CHANGED rows (cell-level), new/vanished tabs, and banner totals
+  (102 / 41). Exit 0 none, 3 changes, 1 fetch error. Stdlib only.
+- `.github/workflows/sos-tracker-watch.yml`: weekly; on exit 3 opens a **PR** updating the
+  snapshot (audit trail) and an **issue** labelled `sos-tracker` carrying the report. Needs
+  `contents`, `pull-requests`, `issues: write`; no secrets. Mirrors the news bot's identity.
+- Optional cheap pre-check from Cowork: Drive `modifiedTime` of the sheet (connector works; it
+  returned 2026-09-25). Google-native "notification rules" are **not** available on a view-only
+  sheet, so polling is the only option; ask Jenny McBurney whether SOS keeps a changelog.
+
+**What to watch for (the report surfaces all of these):** new rows; "Confirmed by news" flipping
+to yes; new photo URLs; "Item Current Location" changing (Discarded ↔ restored); INDE
+restoration text; new or renamed tabs (the hidden old tab reappearing; new columns — script falls
+back to first-3-cell keys and prints a "New tab" line); banner totals; lawsuits tab additions; ABOUT
+rule changes.
+
+**Triage checklist (per issue, run in a Claude Code worktree session):**
+1. Map each changed row → `parkData` entry via `alpha_code` + `related response ID` + alias map.
+2. Decide status: press-confirmed → CONFIRMED REMOVED; filing-only → filing badge; flagged → `orderedToRemove`.
+3. Add `sosSources` (link column), `sosPhotoUrls`, `sosRowKey`; update sign list / subsite.
+4. Touch the stat tiles, timeline milestone, and a news card if a new article is cited.
+5. 3-way merge onto origin/main, PR, CI, merge. Close the issue with the PR link.
+
+**Quarterly reconciliation:** re-run this gap analysis (add a `--coverage` mode to the watcher
+that prints SOS rows vs MPH entries per park code, so the table in Part 2A regenerates itself).
+
+---
+
+## Verification
+- `python scripts/sos_tracker_watch.py --dry-run` → "No changes" / exit 0 against the committed
+  snapshot; tamper a copy and confirm exit 3 with ADDED/CHANGED lines (done once already).
+- Trigger the Action with `dry_run=true` from the Actions tab; then a real run on a deliberately
+  stale snapshot to see the PR + issue appear.
+- After data PRs: `npm test` (Playwright, via the private-port scratch config per memory); open
+  the preview via pyenv `http.server`; check map popups for GRCA/MUWO/ROCR links, the new badge in
+  filters/legend, `status.html` tiles, and that filing-only parks do not render as press-confirmed.
+- Spot-check 5 flipped entries against the sheet rows by `sosRowKey`.
+
+## Decisions (confirmed with the user 2026-10-06)
+- **Filing-only rows:** new distinct status/badge "Removed — per NPS court filing" (own color),
+  and they **count** toward the public "confirmed removed" tile with a footnote, so MPH's headline
+  matches SOS's 102 / 41. Step 1 adds the badge to `index.html` filters, legend, and status
+  dropdown; step 5's tile reads "Confirmed removed or altered (SOS)" with the footnote.
+- **Photos:** copy SOS before/after images into `images/<entry-id>/` (and `manifestData.json`),
+  credited "Photo: Save Our Signs (public domain)"; keep the source S3 URL in `sosPhotoUrls` for
+  provenance. Download happens in step 4 (10 parks) and step 2 (photo-backed group).
+- **Narrative fixes:** port the 197 local narrative/state fixes onto `origin/main` as their **own
+  PR first** (3-way merge of `data/parkData.json`), then build the SOS data PRs on top.
