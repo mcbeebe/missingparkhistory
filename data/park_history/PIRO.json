@@ -1,0 +1,26 @@
+{
+  "code": "PIRO",
+  "name": "Pictured Rocks National Lakeshore",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/piro/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/piro/adhi/index.htm",
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 83
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/piro/index.htm"
+  },
+  "corrections": []
+}

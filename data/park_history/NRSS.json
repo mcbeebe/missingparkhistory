@@ -1,0 +1,26 @@
+{
+  "code": "NRSS",
+  "name": "Natural Resource Stewardship",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>The National Park Service's natural resource stewardship mission dates to the agency's founding in 1916, when the Organic Act charged the NPS with conserving \"the scenery and the natural and historic objects and the wild life therein\" for the enjoyment of future generations. The NPS Natural Resource Stewardship and Science Directorate oversees programs in biological resources, geologic resources, water resources, air quality, climate change science, and inventory and monitoring across more than 400 park units. These scientific programs produce peer-reviewed research that informs park management decisions and contributes to the broader scientific understanding of ecosystem health, biodiversity, and environmental change across the nation's most protected landscapes.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": null,
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 0
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/nrss/index.htm"
+  },
+  "corrections": []
+}

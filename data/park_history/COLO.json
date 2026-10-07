@@ -1,0 +1,26 @@
+{
+  "code": "COLO",
+  "name": "Colonial National Historical Park",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/colo/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 58
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/colo/index.htm"
+  },
+  "corrections": []
+}

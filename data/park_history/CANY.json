@@ -1,0 +1,26 @@
+{
+  "code": "CANY",
+  "name": "Canyonlands National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Canyonlands National Park in southeastern Utah preserves 337,598 acres of dramatic desert landscape carved by the Colorado and Green Rivers into countless canyons, mesas, and buttes. Established as a national park in 1964 through the efforts of Secretary of the Interior Stewart Udall, Canyonlands is divided into four distinct districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. The region's geological record spans over 300 million years, and archaeological evidence shows human presence dating back at least 10,000 years, including ancestral Puebloan granaries and Fremont rock art.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/cany/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/cany/hrs-1986.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 112
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/cany/index.htm"
+  },
+  "corrections": []
+}

@@ -1,0 +1,26 @@
+{
+  "code": "SITK",
+  "name": "Sitka National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Sitka National Historical Park in Sitka, Alaska, is the oldest federally designated park in Alaska, established as a public park in 1890 and redesignated a national monument in 1910 and a national historical park in 1972. The park preserves the site of the 1804 Battle of Sitka — the last major armed resistance by the Tlingit people against Russian colonization in Alaska. The battle occurred when Tlingit warriors defended a wooden fort (the Shís'gi Noow) against a combined Russian and Aleut force; after several days of fighting, the Tlingit withdrew in a strategic retreat. The park also houses the Southeast Alaska Indian Cultural Center, where Tlingit, Haida, and Tsimshian artists practice and demonstrate traditional carving, weaving, and other art forms, and maintains a renowned collection of totem poles along a temperate rainforest trail.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/sitk/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/sitk/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/sitk/russian_bishop.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 52
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/sitk/index.htm"
+  },
+  "corrections": []
+}

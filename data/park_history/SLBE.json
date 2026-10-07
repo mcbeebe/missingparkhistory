@@ -1,0 +1,28 @@
+{
+  "code": "SLBE",
+  "name": "Sleeping Bear Dunes National Lakeshore",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Sleeping Bear Dunes National Lakeshore on the northeastern coast of Lake Michigan in Michigan protects 35 miles of shoreline, massive perched sand dunes rising up to 450 feet above the lake, pristine inland lakes, dense beech-maple forests, and two offshore wilderness islands — North and South Manitou. The national lakeshore was established in 1970, and in 2011 viewers of ABC's \"Good Morning America\" voted its beaches the \"Most Beautiful Place in America.\" The park's name derives from a Chippewa (Ojibwe) legend in which a mother bear and her two cubs swam across Lake Michigan to escape a forest fire; the mother bear waited on the bluff for her cubs, who drowned and became the Manitou Islands, while she became the Sleeping Bear Dune. The park's diverse ecosystems support endangered piping plovers and over 100 species of migratory birds.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/slbe/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/slbe/hrs.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [
+      "https://npshistory.com/publications/slbe/climate-sb.pdf"
+    ],
+    "docCount": 121
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/slbe/index.htm"
+  },
+  "corrections": []
+}

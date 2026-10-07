@@ -1,0 +1,26 @@
+{
+  "code": "CUGA",
+  "name": "Cumberland Gap NHP",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Cumberland Gap National Historical Park straddles the border of Kentucky, Virginia, and Tennessee at a natural pass through the Appalachian Mountains that has served as a major migration corridor for thousands of years. Herds of bison and Native American peoples — including Cherokee and Shawnee — used the gap long before European settlement. In 1775, Daniel Boone led a party to widen the trail through the gap into what became the Wilderness Road, and by 1810 an estimated 200,000 to 300,000 settlers had passed through Cumberland Gap heading west. The park was authorized by Congress in 1940 and encompasses over 24,000 acres of forested mountain terrain.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/cuga/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 34
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/cuga/index.htm"
+  },
+  "corrections": []
+}

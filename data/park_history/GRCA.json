@@ -1,0 +1,31 @@
+{
+  "code": "GRCA",
+  "name": "Grand Canyon National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Grand Canyon National Park in northern Arizona protects 1,218,375 acres encompassing the most spectacular portion of the Grand Canyon — a 277-mile gorge carved by the Colorado River that exposes nearly two billion years of Earth's geological history. The canyon reaches depths of over a mile, with layered bands of colorful rock revealing the geological story of the North American continent. President Theodore Roosevelt, who first visited in 1903, declared it a national monument in 1908; it became a national park in 1919. Eleven Native American tribes, including the Havasupai, Hualapai, Navajo, and Hopi, have ancestral connections to the canyon. The Grand Canyon was designated a UNESCO World Heritage Site in 1979 and receives over six million visitors annually.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/grca/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/grca/adhi.pdf",
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/geology/ofr/2023-1092.pdf",
+      "https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf",
+      "https://npshistory.com/publications/glca/piapaxa-uipi.pdf",
+      "https://npshistory.com/publications/grca/mna-bul-30.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 464
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/grca/index.htm"
+  },
+  "corrections": []
+}

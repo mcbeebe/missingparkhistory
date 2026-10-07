@@ -1,0 +1,26 @@
+{
+  "code": "GWMP",
+  "name": "George Washington Memorial Parkway",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>George Washington Memorial Parkway preserves the natural scenery along the Potomac River and connects significant historic sites from Mount Vernon, George Washington's estate in Virginia, through the nation's capital. The parkway was authorized by Congress in 1930 as a memorial to the first president and was designed as a scenic and recreational corridor. The park system encompasses over 7,000 acres across multiple sites in Virginia, Maryland, and the District of Columbia, including Great Falls Park, Theodore Roosevelt Island, the Claude Moore Colonial Farm site, and the historic town of Glen Echo. The parkway itself follows part of the route Washington traveled between his Mount Vernon plantation and what would become the federal city.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/gwmp/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/gwmp/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 43
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/gwmp/index.htm"
+  },
+  "corrections": []
+}

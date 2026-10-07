@@ -1,0 +1,28 @@
+{
+  "code": "FODO",
+  "name": "Fort Donelson National Battlefield",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Fort Donelson National Battlefield in Dover, Tennessee, preserves the site of the first major Union victory in the Civil War. In February 1862, forces under Brigadier General Ulysses S. Grant captured the Confederate river fortification on the Cumberland River after a combined land and naval assault. The surrender of roughly 12,000 Confederate troops — the largest surrender of American forces up to that point — opened the door for Union control of middle and western Tennessee and earned Grant the nickname \"Unconditional Surrender\" Grant. The battlefield was established as a national military park in 1928 and redesignated a national battlefield in 1985.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/fodo/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/fodo/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/fodo/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 27
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/fodo/index.htm"
+  },
+  "corrections": []
+}

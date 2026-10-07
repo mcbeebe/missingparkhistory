@@ -1,0 +1,28 @@
+{
+  "code": "FIIS",
+  "name": "Fire Island National Seashore",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Fire Island National Seashore, established in 1964, protects a 26-mile stretch of barrier island off the southern shore of Long Island, New York — one of the last remaining undeveloped barrier beaches on the Atlantic Coast. The national seashore was created after a fierce conservation battle to prevent large-scale resort development on the island. The park includes the Sunken Forest, a rare 300-year-old maritime holly forest growing behind the dunes, and the Fire Island Lighthouse, first constructed in 1826 and rebuilt in 1858. The William Floyd Estate, the ancestral home of a signer of the Declaration of Independence, is also part of the seashore. Fire Island has historically served as a significant cultural refuge for LGBTQ communities, particularly the communities of Cherry Grove and Fire Island Pines.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/fiis/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/fiis/adhi-1977.pdf",
+    "hrsUrl": "https://npshistory.com/publications/fiis/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/fiis/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 103
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/fiis/index.htm"
+  },
+  "corrections": []
+}

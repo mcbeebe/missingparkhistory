@@ -1,0 +1,29 @@
+{
+  "code": "WICA",
+  "name": "Wind Cave National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Wind Cave National Park in the southern Black Hills of South Dakota protects one of the longest and most complex caves in the world, with over 160 miles of explored passageways, as well as one of the largest remaining mixed-grass prairies in the United States. Wind Cave is distinguished by its extensive boxwork formations — thin calcite fins resembling honeycomb — found in greater quantity here than in any other known cave. The cave is considered sacred by the Lakota people, who know it as \"Washun Niya\" (the Breathing Hole), and it figures prominently in their creation story as the place from which the Lakota people emerged into the world. Wind Cave was established as the seventh national park in 1903 by President Theodore Roosevelt, making it the first cave to be designated a national park anywhere in the world. The park's surface also supports a free-ranging bison herd descended from animals reintroduced from the Bronx Zoo in 1913.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/wica/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/wica/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/wica/beyer-2016.pdf",
+      "https://npshistory.com/publications/wica/home-of-the-bison-v1.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 140
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/wica/index.htm"
+  },
+  "corrections": []
+}

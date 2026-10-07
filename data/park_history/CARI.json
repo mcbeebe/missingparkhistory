@@ -1,0 +1,30 @@
+{
+  "code": "CARI",
+  "name": "Cane River Creole National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Cane River Creole National Historical Park in Natchitoches Parish, Louisiana, preserves two 18th- and 19th-century Creole cotton plantations — Oakland and Magnolia — that document the complex history of French Creole culture, plantation agriculture, and enslaved labor along the Cane River. Established by Congress in 1994, the park protects plantation structures, slave quarters, agricultural landscapes, and the stories of the enslaved people who built and maintained these operations. The Cane River region is one of the oldest permanent European settlements in the Louisiana Purchase territory, and the park's cultural landscape reflects centuries of French, Spanish, African, and Native American influence.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/cari/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+    "ethnoUrls": [
+      "https://www.nps.gov/archeology/pubs/studies/study04a.htm",
+      "https://npshistory.com/publications/cari/oral-history-2015.pdf",
+      "https://npshistory.com/publications/cari/eo.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 35
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/cari/index.htm"
+  },
+  "corrections": []
+}

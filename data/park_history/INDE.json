@@ -1,0 +1,28 @@
+{
+  "code": "INDE",
+  "name": "Independence National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Independence National Historical Park in Philadelphia, Pennsylvania, preserves several of the most historically significant buildings in the United States, including Independence Hall — where both the Declaration of Independence and the United States Constitution were debated and adopted — and the Liberty Bell. Independence Hall, a UNESCO World Heritage Site since 1979, hosted the Second Continental Congress (1775–1783) and the Constitutional Convention of 1787. The park also includes Congress Hall, where the U.S. Congress met from 1790 to 1800 when Philadelphia served as the nation's capital, and the President's House site, which interprets the stories of the nine enslaved Africans George Washington brought to the executive mansion during his presidency.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/inde/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/inde/hrs-mall-block-one.pdf",
+    "ethnoUrls": [
+      "https://pubs.nps.gov/eTIC/HOSP-INDU/INDE_391_142545_0001.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 307
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/inde/index.htm"
+  },
+  "corrections": []
+}

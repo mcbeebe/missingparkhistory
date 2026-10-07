@@ -1,0 +1,30 @@
+{
+  "code": "GUIS",
+  "name": "Gulf Islands National Seashore",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/guis/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/guis/hrs-ship-island.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/guis/nr-naval-live-oaks-res.pdf",
+      "https://npshistory.com/publications/guis/nr-naval-live-oaks-prehist-hist-arch.pdf",
+      "https://npshistory.com/publications/guis/naval_live_oak.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 95
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/guis/index.htm"
+  },
+  "corrections": []
+}

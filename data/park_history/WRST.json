@@ -1,0 +1,32 @@
+{
+  "code": "WRST",
+  "name": "Wrangell-St. Elias National Park & Preserve",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/wrst/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/wrst/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/wrst/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/wrst/eoa.pdf",
+      "https://npshistory.com/publications/wrst/chisana-ethnohistory.pdf",
+      "https://npshistory.com/publications/blm/cultresser/ak/tr-56.pdf",
+      "https://npshistory.com/publications/wrst/for-the-love-of-freedom.pdf",
+      "https://npshistory.com/publications/wrst/for-the-love-of-freedom-app-a.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 156
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/wrst/index.htm"
+  },
+  "corrections": []
+}

@@ -1,0 +1,30 @@
+{
+  "code": "INDU",
+  "name": "Indiana Dunes National Park (National Lakeshore)",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Indiana Dunes National Park on the southern shore of Lake Michigan in northwestern Indiana protects 15,349 acres of dunes, wetlands, prairies, rivers, and forests. The park's origins trace to the early 20th-century conservation campaign led by botanist Henry Cowles, whose groundbreaking studies of plant succession on the Indiana dunes helped establish the modern science of ecology. Despite being surrounded by one of the most heavily industrialized regions in North America, the park supports remarkable biodiversity — over 1,100 native plant species, the fourth-highest count of any national park unit. Originally designated as Indiana Dunes National Lakeshore in 1966, it was redesignated as a national park in 2019.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/indu/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/indu/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/indu/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/indu/chellberg.pdf",
+      "https://npshistory.com/publications/indu/clr-hsr-bailly-homestead-v1.pdf",
+      "https://npshistory.com/publications/indu/clr-hsr-bailly-homestead-v2.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 120
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/indu/index.htm"
+  },
+  "corrections": []
+}

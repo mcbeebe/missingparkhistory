@@ -1,0 +1,26 @@
+{
+  "code": "CUIS",
+  "name": "Cumberland Island National Seashore",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Cumberland Island National Seashore protects Georgia's largest and southernmost barrier island — an 18-mile-long island encompassing over 36,000 acres of maritime forest, salt marshes, tidal creeks, and undeveloped beaches. The island has a layered human history stretching from the Timucuan people through Spanish missions, British colonial settlement, and the plantation era. After the Civil War, formerly enslaved people established the First African Baptist Church on the island, which still stands today. In the late 19th century, industrialist Thomas Carnegie and his wife Lucy built several grand estates on the island. The national seashore was established in 1972 to protect the island's natural and cultural resources from development.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/cuis/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 55
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/cuis/index.htm"
+  },
+  "corrections": []
+}

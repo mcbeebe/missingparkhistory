@@ -1,0 +1,26 @@
+{
+  "code": "MORR",
+  "name": "Morristown National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Morristown National Historical Park in Morristown, New Jersey, was the first national historical park in the United States, established on March 2, 1933. The park preserves sites associated with two critical winter encampments of the Continental Army during the American Revolution. During the winter of 1779–1780, General George Washington quartered his army of approximately 10,000 soldiers at Jockey Hollow, where they endured what was recorded as the coldest winter of the 18th century — with 28 snowstorms and temperatures colder than at Valley Forge. Washington used the nearby Ford Mansion as his headquarters. The park also preserves Fort Nonsense and the New Jersey Brigade encampment area.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/morr/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 68
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/morr/index.htm"
+  },
+  "corrections": []
+}

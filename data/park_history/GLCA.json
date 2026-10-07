@@ -1,0 +1,29 @@
+{
+  "code": "GLCA",
+  "name": "Glen Canyon National Recreation Area",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Glen Canyon National Recreation Area in southern Utah and northern Arizona encompasses over 1.25 million acres of desert canyon country surrounding Lake Powell, the reservoir created by Glen Canyon Dam on the Colorado River. The dam, completed in 1966, was one of the most controversial reclamation projects in American history — its construction flooded hundreds of miles of canyon and thousands of archaeological sites, galvanizing the modern environmental movement. Author and conservationist Edward Abbey's writings about the area, particularly \"Desert Solitaire\" (1968), helped bring national attention to the ecological costs of damming western rivers. The recreation area also protects Rainbow Bridge National Monument, one of the world's largest natural bridges, sacred to the Navajo, Paiute, and other Indigenous nations.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/glca/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/series/archeology/glen-canyon/uu/28.pdf",
+      "https://npshistory.com/publications/glca/piapaxa-uipi.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 167
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/glca/index.htm"
+  },
+  "corrections": []
+}

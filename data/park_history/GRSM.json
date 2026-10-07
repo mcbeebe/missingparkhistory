@@ -1,0 +1,28 @@
+{
+  "code": "GRSM",
+  "name": "Great Smoky Mountains National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Great Smoky Mountains National Park, straddling the border of Tennessee and North Carolina, is the most visited national park in the United States, drawing over 12 million recreational visits annually. Established in 1934, the park protects 522,427 acres of old-growth temperate forest — one of the largest blocks of hardwood forest remaining in North America. The park's biodiversity is extraordinary: it is home to over 19,000 documented species and is often called the \"Salamander Capital of the World\" for its 30-plus salamander species. The Cherokee people inhabited the region for thousands of years before forced removal along the Trail of Tears in 1838; members of the Eastern Band of Cherokee Indians still reside on the adjacent Qualla Boundary. The park was designated a UNESCO World Heritage Site in 1983 and an International Biosphere Reserve in 1976.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/grsm/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/grsm/hrs-v1.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/grsm/ssr-fisheries-306.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 409
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/grsm/index.htm"
+  },
+  "corrections": []
+}

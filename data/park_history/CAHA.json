@@ -1,0 +1,29 @@
+{
+  "code": "CAHA",
+  "name": "Cape Hatteras National Seashore",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Cape Hatteras National Seashore, established in 1953, was the first national seashore in the United States. Stretching across portions of North Carolina's Outer Banks barrier islands — Bodie Island, Hatteras Island, and Ocracoke Island — the seashore protects over 30,000 acres of dynamic coastline shaped by wind, waves, and storms. The waters off Cape Hatteras, where the cold Labrador Current meets the warm Gulf Stream, have been known as the \"Graveyard of the Atlantic\" for the more than 1,000 shipwrecks documented in the area. The Cape Hatteras Lighthouse, at 198.5 feet the tallest brick lighthouse in the United States, was famously relocated 2,900 feet inland in 1999 to save it from shoreline erosion.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/caha/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/caha/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/caha/ethno-description-v1.pdf",
+      "https://npshistory.com/publications/caha/ethno-description-v2.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 263
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/caha/index.htm"
+  },
+  "corrections": []
+}

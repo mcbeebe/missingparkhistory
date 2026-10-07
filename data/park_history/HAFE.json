@@ -1,0 +1,28 @@
+{
+  "code": "HAFE",
+  "name": "Harpers Ferry National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Harpers Ferry National Historical Park in West Virginia, Maryland, and Virginia preserves the town at the confluence of the Potomac and Shenandoah Rivers where abolitionist John Brown led his famous 1859 raid on the federal armory — a pivotal event that accelerated the nation's march toward civil war. Harpers Ferry changed hands eight times between Union and Confederate forces during the Civil War and witnessed the largest surrender of Union troops during the war in September 1862. After the war, Storer College — one of the first integrated schools in the United States — was established in the town to educate formerly enslaved people. The Niagara Movement, the precursor to the NAACP, held its second meeting at Storer College in 1906. The park was established in 1944.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/hafe/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/hafe/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/hafe/storer.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/hafe/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 203
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/hafe/index.htm"
+  },
+  "corrections": []
+}

@@ -1,0 +1,28 @@
+{
+  "code": "VIIS",
+  "name": "Virgin Islands National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Virgin Islands National Park on the island of St. John in the U.S. Virgin Islands protects approximately 7,259 acres of tropical landscapes and 5,650 acres of submerged marine areas, covering about 60 percent of the island. The park was established in 1956, largely through land donations by Laurance S. Rockefeller, who purchased large tracts of the island to prevent commercial development. The park encompasses white sand beaches, tropical forest, coral reefs, and significant cultural sites including the ruins of colonial-era sugar plantations that were built and operated by enslaved Africans. The 1733 slave revolt on St. John — one of the first and longest slave revolts in the Americas — is an important part of the island's history. Trunk Bay's underwater snorkeling trail is one of the most popular attractions in the U.S. Virgin Islands.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/viis/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/viis/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/viis/indigenous-gold.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 89
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/viis/index.htm"
+  },
+  "corrections": []
+}

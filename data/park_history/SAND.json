@@ -1,0 +1,30 @@
+{
+  "code": "SAND",
+  "name": "Sand Creek Massacre National Historic Site",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Sand Creek Massacre National Historic Site in southeastern Colorado preserves the location where, on November 29, 1864, approximately 675 U.S. volunteer soldiers attacked a peaceful encampment of Cheyenne and Arapaho people, killing an estimated 150 to 200 men, women, children, and elders. The village, led by Chiefs Black Kettle and Left Hand, had been assured of safety by U.S. military officials, and an American flag and a white flag of surrender flew over the camp during the attack. The massacre was condemned by some contemporaries, including a Congressional investigation, but no perpetrators were prosecuted. The site was designated a national historic site in 2007 after extensive consultation with descendants of the Cheyenne and Arapaho victims, who participated in identifying the massacre location.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/sand/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/sand/dwr-v70n5-2014.pdf",
+      "https://npshistory.com/publications/sand/olr-v70n4-2018.pdf",
+      "https://archive.org/details/indiansofpikespe00howbrich"
+    ],
+    "brochureUrls": [],
+    "docCount": 62
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/sand/index.htm"
+  },
+  "corrections": []
+}
