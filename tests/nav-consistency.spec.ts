@@ -12,6 +12,7 @@ const CANONICAL = [
   ['/about.html', 'About'],
   ['/data-methodology.html', 'Data'],
   ['/nps-censorship.html', 'Censorship'],
+  ['/status.html', 'Status'],
   ['/help.html', 'Help'],
   ['/timeline.html', 'Timeline'],
   ['/legal-analysis.html', 'Legal'],
