@@ -1,0 +1,79 @@
+# Weekly watch of the Save Our Signs Censorship Tracker.
+#
+# Runs scripts/sos_tracker_watch.py against the public Google Sheet, diffs it
+# against data/sos_tracker_snapshot.json, and when anything changed:
+#   * opens a PR that updates the snapshot (review surface + audit trail), and
+#   * opens a GitHub issue labelled `sos-tracker` with the change report so the
+#     triage checklist in docs can be worked through.
+# No secrets are needed: the sheet is "anyone with the link" and the export
+# endpoint is anonymous.  GITHUB_TOKEN is enough for the PR and the issue.
+name: Weekly SOS Tracker Watch
+
+on:
+  schedule:
+    - cron: "30 15 * * 1"        # Mondays 08:30 Pacific, after the daily news job
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the diff only; no PR, no issue, no snapshot update"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: sos-tracker-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Diff the tracker against the stored snapshot
+        id: diff
+        run: |
+          set +e
+          python scripts/sos_tracker_watch.py --dry-run --report sos-change-report.md
+          code=$?
+          set -e
+          echo "exit=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" = "1" ]; then echo "fetch failed"; exit 1; fi
+
+      - name: Upload change report
+        if: steps.diff.outputs.exit == '3'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sos-change-report
+          path: sos-change-report.md
+
+      - name: Update snapshot and open a PR + issue
+        if: steps.diff.outputs.exit == '3' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/sos_tracker_watch.py          # overwrites data/sos_tracker_snapshot.json
+          TODAY=$(date +%Y-%m-%d)
+          BRANCH="sos-tracker/$TODAY"
+          git config user.name "NPS News Bot"
+          git config user.email "bot@missingparkhistory.org"
+          git checkout -b "$BRANCH"
+          git add data/sos_tracker_snapshot.json
+          git commit -m "data: SOS tracker snapshot $TODAY"
+          git push -u origin "$BRANCH"
+          gh pr create --title "SOS tracker changed — snapshot $TODAY" \
+            --body-file sos-change-report.md --label sos-tracker
+          gh issue create --title "Triage SOS tracker changes ($TODAY)" \
+            --body-file sos-change-report.md --label sos-tracker
