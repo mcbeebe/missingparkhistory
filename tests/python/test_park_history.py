@@ -160,6 +160,14 @@ class RenderTest(unittest.TestCase):
             self.skipTest("MORA not present")
         self.assertTrue(any("themeKey" in p for p in bph.validate(rec)))
 
+    def test_drafts_and_reviewed_text_never_render(self):
+        for status in ("draft", "reviewed"):
+            rec = ValidatorRulesTest().base(reviewStatus=status, summary="<p>UNVERIFIED DRAFT TEXT</p>",
+                                            npshistory={"indexUrl": "https://npshistory.com/publications/zzzz/index.htm"})
+            html = bph.render_block(rec)
+            self.assertNotIn("UNVERIFIED DRAFT TEXT", html, status)
+            self.assertIn("Documentary record", html)
+
     def test_mora_exemplar_renders_all_four_themes(self):
         if "MORA" not in SOURCES:
             self.skipTest("MORA not present")

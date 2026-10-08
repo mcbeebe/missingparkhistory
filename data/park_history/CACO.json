@@ -3,14 +3,194 @@
   "name": "Cape Cod National Seashore",
   "entries": [],
   "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
+  "lastReviewed": "2026-10-08",
+  "author": "author-E-2026-10-08",
   "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>Cape Cod is a slender arm of sand and glacial debris curving some 60 miles into the Atlantic, one of the largest glacially formed peninsulas in the world. Wind and water never stop moving it: sand is torn from one stretch of shore and laid down on another, and the Great Beach on the ocean side is one of the longest uninterrupted sandy shorelines on the East Coast. Cape Cod National Seashore, authorized on August 7, 1961, protects about 44,000 acres along a 40-mile stretch between Chatham and Provincetown — beaches and dunes, kettle ponds, pine barrens, heathland and some 1,875 acres of salt marsh. <a href=\"https://npshistory.com/publications/caco/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Archeological sites here record more than 9,000 years of human occupation, and by the 1600s the Wampanoag used or lived on all of the land now inside the seashore — use the Park Service says continues today. In 1620 the Cape was the Pilgrims’ first landfall and the place where they drafted the Mayflower Compact. Later Cape Codders took to whaling, fishing and shellfishing; lighthouses and lifesaving stations still line the outer shore; and the first transatlantic cable (1866) and the first exchange of transatlantic wireless messages (1903) went out from this coast. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service’s own foundation document names what is at stake: the forces that shape the Cape are directly affected by climate change, and the seashore is a place to watch it happen. At the Marconi Station Site in Wellfleet, where the peninsula is only a mile wide, much of the high cliff has eroded since Guglielmo Marconi built his towers there in 1901. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/caco/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/caco/index.htm",
+      "title": "NPSHistory.com: Cape Cod National Seashore archive page — overview (from the 2005 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "title": "Foundation Document, Cape Cod National Seashore, Massachusetts (NPS, 2018)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>When Samuel de Champlain mapped Nauset Bay in 1605 he saw a harbor bordered by wigwams and recorded about 150 people living around it, farming and fishing. That was a late chapter: Paleo-Indian spear points suggest people have lived on or crossed this land for 10,000 years. The Park Service’s archeological survey, begun in 1979, found shellfish being gathered at least 4,000 years ago, some people living on the Outer Cape year-round in the late Woodland period, and a community in sustained contact with other Native peoples of the Northeast. A communal burial at Indian Neck in Wellfleet held more than two dozen people and dates to about A.D. 880–1155. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/caco/archeology.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>After 1620 Plymouth colonists came to Nauset to buy corn and trade, spreading diseases against which the Nauset had no immunity; their population fell drastically. In 1639 about half the English at Plymouth moved to the Nauset area and founded what is now Eastham. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/caco/archeology.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+          "title": "Foundation Document, Cape Cod National Seashore (2018), Nauset Archeological District and Archeological Sites (pp. 10–11)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/caco/archeology.pdf",
+          "title": "McManamon & Borstel, The Archeology of Cape Cod National Seashore (NPS, 1982; rev. 1984)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The salt marshes are where rising seas show first. The 2018 foundation document finds evidence of sea-level rise in every one of the seashore’s salt marshes, which it says are getting wetter, and says their vegetation is changing rapidly in response. A 2020 Park Service study of marshes surveyed from 2003 to 2018 found both dominant cordgrasses declining, mostly from sea-level rise, crab grazing and wave erosion, and concluded that marsh migration is not keeping up with the losses; those marshes hold an estimated 18,000 metric tons of carbon. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/caco/nrr-2020-2157.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On the ocean side, bluff erosion — a natural process the Park Service says is now being influenced by sea-level rise — has averaged 2.5 to 3 feet a year over a century, and the Nantucket tide gauge shows the sea rising faster here than the national average. Even the kettle ponds are warming: Gull Pond’s August surface water has grown warmer since 1980. <a href=\"https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/caco/climate-change-brief.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+          "title": "Foundation Document, Cape Cod National Seashore (2018), Estuaries and Salt Marshes; Beaches, Barrier Islands and Spits (pp. 22–26)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/caco/nrr-2020-2157.pdf",
+          "title": "Smith, Salt Marsh Vegetation Change at Cape Cod National Seashore between 2003 and 2018 (NPS NRR 2020/2157)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/caco/climate-change-brief.pdf",
+          "title": "Resource Brief: Monitoring Climate Change at Cape Cod National Seashore (NPS Northeast Coastal and Barrier Network, December 2009)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Cape Cod is a slender spit curving some 60 miles into the Atlantic; one of the largest glacially formed peninsulas in the world; Great Beach one of the longest uninterrupted sandy shorelines on the East Coast",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Brief Description of the Park, p. 3"
+    },
+    {
+      "claim": "The Cape is a glacial deposit constantly changing as winds and water move sand, tearing away one place and building up another",
+      "sourceUrl": "https://npshistory.com/publications/caco/index.htm",
+      "locator": "overview, paragraph 2"
+    },
+    {
+      "claim": "National seashore established 1961 (enabling legislation signed August 7, 1961); 44,000 acres along a 40-mile section between Chatham and Provincetown",
+      "sourceUrl": "https://npshistory.com/publications/caco/index.htm",
+      "locator": "overview paragraph 1; Establishment block"
+    },
+    {
+      "claim": "About 44,000 acres; 1,875 acres of salt marsh; also grassland, heathland, pine forest, ponds",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Brief Description, p. 3; Park Purpose, p. 4"
+    },
+    {
+      "claim": "Archeological sites testify to more than 9,000 years of occupation; by the 1600s the Wampanoag used or inhabited all lands now within the seashore; Wampanoag use continues to this day",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Brief Description p. 3; Significance statement 5, p. 5"
+    },
+    {
+      "claim": "1620 Pilgrims' first landfall on Cape Cod; Mayflower Compact drafted and signed in Provincetown harbor",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Brief Description p. 3; Significance statement 5, p. 5"
+    },
+    {
+      "claim": "Whaling, fishing, shellfishing; lighthouses, lifesaving and Coast Guard stations; first transatlantic cable 1866; 1903 first exchange of transatlantic wireless messages (Roosevelt–Edward VII)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Significance statement 2: dynamic coastal processes are directly impacted by the effects of climate change and are possible to observe and document",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Significance statement 2, p. 5"
+    },
+    {
+      "claim": "Marconi Station Site at Wellfleet: peninsula only a mile wide; much of the high cliff has eroded since Marconi first built his towers there in 1901",
+      "sourceUrl": "https://npshistory.com/publications/caco/index.htm",
+      "locator": "overview, paragraph 2"
+    },
+    {
+      "claim": "Champlain 1605: bay with wigwams bordering it; about 150 people around Nauset Harbor; Indians at Nauset practiced farming and fishing",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Nauset Archeological District, p. 10"
+    },
+    {
+      "claim": "Paleo-Indian projectile points indicate humans occupied or traversed the land for the last 10,000 years",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Archeological Sites (McManamon statement), p. 11"
+    },
+    {
+      "claim": "Archeological survey since 1979; new radiocarbon dates confirm Indians collecting shellfish at least 4,000 years ago; some people stayed on the Outer Cape year-round in the late Woodland; sustained communication with other native peoples of the Northeast, 'far from living in the backwater' some archeologists envisioned",
+      "sourceUrl": "https://npshistory.com/publications/caco/archeology.pdf",
+      "locator": "pp. 3, 14 (Postscript)",
+      "interpretive": true
+    },
+    {
+      "claim": "1979 excavation of a prehistoric burial in Wellfleet threatened by construction; more than two dozen individuals of both sexes and all ages; Indian Neck ossuary dated about A.D. 880–1155; threatened by a septic tank system",
+      "sourceUrl": "https://npshistory.com/publications/caco/archeology.pdf",
+      "locator": "pp. 9–10 and caption p. 10"
+    },
+    {
+      "claim": "Pilgrims travelled to Nauset several times in the early 1620s to purchase corn",
+      "sourceUrl": "https://npshistory.com/publications/caco/archeology.pdf",
+      "locator": "p. 11"
+    },
+    {
+      "claim": "After 1620 Plymouth colonists visited Nauset to buy food and trade; European diseases spread; many Nauset Indians died and the population declined drastically; in 1639 about half the English from Plymouth relocated to the Nauset area, settling what is now Eastham",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Nauset Archeological District, p. 10"
+    },
+    {
+      "claim": "In all CACO salt marshes there is evidence of sea level rise with wetland submergence, changes in species, increasing creek and pool size — marshes getting wetter; marsh vegetation composition changing rapidly in response to sea level rise",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Estuaries and Salt Marshes, Conditions and Trends, pp. 25–26"
+    },
+    {
+      "claim": "2003–2018: dominant S. alterniflora and S. patens both decreased, mostly due to sea level rise, crab herbivory and/or lateral wave erosion; salt marsh migration not keeping up with losses; 18,000 metric tons of carbon stored in CACO marshes",
+      "sourceUrl": "https://npshistory.com/publications/caco/nrr-2020-2157.pdf",
+      "locator": "Executive Summary, p. viii"
+    },
+    {
+      "claim": "Bluff erosion north of Nauset Light is natural but influenced by sea level rise; oceanside erosion rate 2.5–3 feet per year over a 100-year period",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Beaches, Barrier Islands, and Spits, Conditions, p. 22"
+    },
+    {
+      "claim": "Nantucket tide gauge shows sea level around the seashore rising faster than the national average",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/caco-fd-2018.pdf",
+      "locator": "Beaches, Barrier Islands, and Spits, Threats, p. 23"
+    },
+    {
+      "claim": "Gull Pond average surface water temperature at the warmest time of year (August) has been increasing since 1980",
+      "sourceUrl": "https://npshistory.com/publications/caco/climate-change-brief.pdf",
+      "locator": "p. 2, Water Quality Monitoring and Figure 1"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/caco/low-tide-sand-ripples.jpg",
+      "caption": "Low tide exposes rippled ridges of sand and water on a Cape Cod beach",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/caco/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C8531C0-1DD8-B71B-0BE3CAF8B7CFED72.jpg",
+      "evidenceUrl": "https://www.nps.gov/caco/index.htm",
+      "note": "On-page caption: \"You will never walk the same beach twice on Cape Cod; daily low and high tides expose and then cover the sand. NPS photo\"; alt text \"Low tide exposes rippled ridges of sand and water.\" Resized from 5184x3456.",
+      "width": 1400,
+      "height": 933,
+      "bytes": 214912,
+      "capturedAt": "2026-10-08"
+    },
+    {
+      "file": "images/history/caco/marconi-staircase-storm.jpg",
+      "caption": "The Marconi Beach access staircase after a storm destroyed it in early 2010",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/caco/learn/nature/climate-change.htm",
+      "imageUrl": "https://www.nps.gov/caco/learn/nature/images/Marconi_Staircase-resized.jpg",
+      "evidenceUrl": "https://www.nps.gov/caco/learn/nature/climate-change.htm",
+      "themeKey": "climate",
+      "note": "On-page caption: \"The beach access staircase at Marconi Beach destroyed by a storm in early 2010. Stronger storms and sea-level rise associated with a changing climate are factors that will affect coastal areas in the Northeast. NPS Photo\". Original file, 450x337.",
+      "width": 450,
+      "height": 337,
+      "bytes": 64527,
+      "capturedAt": "2026-10-08"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/caco/index.htm",
     "adhiUrl": null,

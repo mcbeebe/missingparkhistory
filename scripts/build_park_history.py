@@ -310,7 +310,9 @@ def render_block(rec: dict, mode: str = "page") -> str:
         if rec.get("corrections"):
             last = rec["corrections"][-1]
             parts.append(f'<p class="ph-updated">Updated {_esc(last.get("date"))}: {_esc(last.get("note"))}</p>')
-    elif rec.get("summary"):
+    elif status == "legacy-unsourced" and rec.get("summary"):
+        # Only the old hand-written park-page paragraphs show while unpublished; drafts and
+        # reviewed-but-unpublished text never render anywhere until the owner publishes them.
         parts.append(f'<div class="ph-summary ph-legacy">{rec["summary"]}</div>')
     if index_url:
         n = npsh.get("docCount") or 0

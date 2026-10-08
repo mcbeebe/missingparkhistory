@@ -1,16 +1,239 @@
 {
   "code": "BICY",
   "name": "Big Cypress National Preserve",
-  "entries": [],
+  "entries": [
+    "737"
+  ],
   "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
+  "lastReviewed": "2026-10-08",
+  "author": "author-D-2026-10-08",
   "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>Big Cypress is a swamp that is really a river system: rain falling on its 729,000 acres moves slowly south through a mosaic of hardwood hammocks, pinelands, prairies, cypress strands and estuaries into the Everglades and the Ten Thousand Islands. By some accounts its watershed supplies more than half the surface water that reaches the Everglades from outside them. The preserve holds the largest dwarf cypress forests in North America and the largest old-growth South Florida slash pine forest, rare plants such as the ghost orchid, and the heart of the primary range of the Florida panther, one of the most endangered mammals in the world. <a href=\"https://npshistory.com/publications/bicy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/bicy/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>In 1968 construction began on what was meant to be the world’s largest jetport in the middle of the swamp. A coalition of conservationists, hunters, landowners and Seminole and Miccosukee people stopped it, and on October 11, 1974, President Gerald Ford signed the law creating Big Cypress as one of the nation’s first national preserves — a new kind of park where hunting, off-road vehicles, oil and gas extraction, private land and the customary uses of the Miccosukee and Seminole would continue alongside protection. Congress enlarged it by 147,000 acres in 1988. The land carries evidence of some 15,000 years of human use. <a href=\"https://npshistory.com/publications/bicy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/bicy/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/bicy/index.htm",
+      "title": "NPSHistory.com: Big Cypress National Preserve archive page — overview (NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "title": "Foundation Document, Big Cypress National Preserve, Florida (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "title": "Harvey & Harvey, A Question of Balance: Administrative History of Big Cypress National Preserve (NPS, 2024)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The swamp was a refuge as well as a home. The 2024 administrative history recounts how U.S. troops pursued Seminole people into the Everglades and Big Cypress during the Second and Third Seminole Wars, campaigns meant to force them west to Indian Territory. Abiaka, a Miccosukee medicine man also known as Sam Jones, helped defeat Zachary Taylor’s troops at Lake Okeechobee in 1837 and refused every demand to relocate. When fighting ended in stalemate by 1858, many Seminole, Billy Bowlegs among them, agreed to go to Oklahoma, but about 150, Abiaka included, stayed in the villages of Big Cypress; he died there in 1866. The Seminole population of Big Cypress grew through the late nineteenth century, and the Big Cypress Seminole Reservation now borders the preserve to the north. <a href=\"https://npshistory.com/publications/bicy/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> In creating the preserve, Congress honored the customs and occupancy of the Miccosukee and Seminole peoples, whose villages stand in it today as they have for generations. <a href=\"https://npshistory.com/publications/bicy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/bicy/adhi.pdf",
+          "title": "A Question of Balance (NPS administrative history, 2024), ch. 1, Prehistoric and Historic Background, pp. 9–11",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/bicy/index.htm",
+          "title": "NPSHistory.com: Big Cypress archive page — NPS brochure, 'Customary Uses'",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>The cypress that once filled the swamp was cut largely by Black hands. A 2002 study prepared for the preserve by Frank and Audrey Peterman found that the railroad crews and Tamiami Trail builders who opened the swamp were overwhelmingly Black, and so was much of the labor in the logging towns of Copeland and Jerome. Spurred in part by World War II’s need for durable timber, the Lee Tidewater Cypress Company alone shipped about 360 million board feet of cypress from 1944 to 1956. Copeland was a company town divided into a Black side and a White side; the C. J. Jones company paid in scrip good only for rent and goods at its store. Frances Hodge, who came to Copeland in 1950 and cooked at the company boardinghouse, serving white workers, for 50 cents an hour, remembered so much work that people slept on others’ porches — until the power saw came and the jobs were gone. The authors note how rarely the local papers of the day even mentioned these workers. <a href=\"https://npshistory.com/publications/bicy/sawmills.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/bicy/sawmills.pdf",
+          "title": "Frank & Audrey Peterman, African Americans and the Sawmills of Big Cypress — A Brief History (Earthwise Productions for NPS, Big Cypress National Preserve, 2002)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Marjory Stoneman Douglas is remembered for saving the Everglades, but her newly formed Friends of the Everglades also played a major role in the coalition that turned back the jetport and won protection for Big Cypress, and her book The Everglades: River of Grass describes the swamp in detail. <a href=\"https://npshistory.com/publications/bicy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> In the logging town of Copeland a generation earlier, Annie Mae Perry, a logger’s wife known far and wide as “Mother Perry,” served as midwife and delivered more than 500 babies in Copeland, Jerome, Immokalee, Everglades City and Naples; decades later she still gathered them every June. <a href=\"https://npshistory.com/publications/bicy/sawmills.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/bicy/index.htm",
+          "title": "NPSHistory.com: Big Cypress archive page — NPS brochure (Marjory Stoneman Douglas; the brochure spells her name 'Marjorie')",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+          "title": "Foundation Document, Big Cypress National Preserve (2016), brief description",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/bicy/sawmills.pdf",
+          "title": "Peterman, African Americans and the Sawmills of Big Cypress (NPS, 2002), oral histories",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The preserve’s 2016 foundation document records the change already under way: average annual temperature has risen at a statistically significant rate since 1950, sea levels and storm-surge heights have risen, and the preserve has been in or near 19 hurricane-strength storms over the past century. Rising seas and storm surge threaten loss of land and habitat, rising groundwater and saltwater intrusion into freshwater ecosystems, and an imbalance between salt and fresh water that can favor invasive species. The Gulf Coast region is already showing an enhanced hydrological cycle — more intense rain, stronger storms — and the preserve’s shallow waters are expected to track the warming closely. <a href=\"https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+          "title": "Foundation Document, Big Cypress National Preserve (2016) — FRV analyses and key issues on climate change",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "729,000 acres; five habitats (hardwood hammocks, pinelands, prairies, cypress swamps, estuaries); protects flow of freshwater into Everglades and Ten Thousand Islands",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Brief Description, PDF p. 7"
+    },
+    {
+      "claim": "By some accounts Big Cypress watershed provides more than half of the surface water that enters the Everglades from outside its boundaries",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "Introduction, p. 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Largest dwarf cypress forests in North America and largest old-growth South Florida slash pine forest",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Significance, PDF p. 10"
+    },
+    {
+      "claim": "Ghost orchid; heart of the Florida panther's primary range",
+      "sourceUrl": "https://npshistory.com/publications/bicy/index.htm",
+      "locator": "overview, 'A Complete Ecosystem'"
+    },
+    {
+      "claim": "Florida panther one of the most endangered mammals in the world",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Brief Description, PDF p. 7"
+    },
+    {
+      "claim": "1968 construction of a massive jetport begun; plan for world's largest jetport with world's largest runway; coalition of conservationists, hunters, private landowners, Seminole and Miccosukee stopped it",
+      "sourceUrl": "https://npshistory.com/publications/bicy/index.htm",
+      "locator": "overview, 'Why Care About a Swamp?' paras 3–4"
+    },
+    {
+      "claim": "P.L. 93-440 signed by President Gerald R. Ford October 11, 1974",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "Introduction, p. 3"
+    },
+    {
+      "claim": "One of the first national preserves; hunting, fishing, trapping, oil and gas, ORVs, private land, traditional use by Miccosukee and Seminole allowed",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Brief Description, PDF pp. 7–8"
+    },
+    {
+      "claim": "Addition Act April 29, 1988 (P.L. 100-301) expanded preserve by 147,000 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Preserve Purpose, PDF p. 9"
+    },
+    {
+      "claim": "Evidence of approximately 15,000 years of human use",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Significance, PDF p. 10"
+    },
+    {
+      "claim": "Army pursued Seminole warriors into the Everglades in the Second Seminole War; Big Cypress also important; U.S. sought to remove remaining Seminole from Big Cypress and Everglades in the Third Seminole War",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "ch. 1, pp. 9–10"
+    },
+    {
+      "claim": "Abiaka (Sam Jones), Miccosukee medicine man, led warriors to defeat forces under Lt. Zachary Taylor at Battle of Lake Okeechobee 1837; refused resettlement",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "ch. 1, p. 9 (note: ADHI calls Taylor 'Lieutenant')"
+    },
+    {
+      "claim": "Stalemate by 1858; many Seminole incl. Billy Bowlegs relocated to Indian Territory; approximately 150 incl. Sam Jones remained in Big Cypress villages; Jones died 1866",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "ch. 1, p. 11, fn. 7"
+    },
+    {
+      "claim": "Seminole population in Big Cypress increased in late 19th century; Big Cypress Reservation abuts northern boundary of preserve",
+      "sourceUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+      "locator": "ch. 1, p. 11, fn. 8"
+    },
+    {
+      "claim": "Congress honored the customs and occupancy of the Miccosukee and Seminole; villages exist in the Preserve today as they have for generations",
+      "sourceUrl": "https://npshistory.com/publications/bicy/index.htm",
+      "locator": "overview, 'Customary Uses'"
+    },
+    {
+      "claim": "Railroad workers and Tamiami Trail builders overwhelmingly Black; labor pool predominantly Black; local newspapers barely mention them",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "Methodology and 'The Scope of this Project', PDF pp. 2, 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Lee Tidewater Cypress Company shipped approximately 360 million board feet 1944–1956; company towns Copeland and Jerome; WWII demand",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "PDF p. 5"
+    },
+    {
+      "claim": "Copeland organized along racial lines, black side and white side; C. J. Jones paid in company scrip ('babbit') for rent and company store; Lee Tidewater paid in U.S. dollars",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "PDF p. 18"
+    },
+    {
+      "claim": "Frances Hodge (interview Nov. 8, 2002): came to Copeland 1950 (report narrative elsewhere says 1947); cooked at Lee Tidewater boardinghouse for white workers at 50 cents an hour; 'people were sleeping on other people's porch'; power saw ended work",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "PDF p. 4; Hodge interview transcript (Copeland chapter)"
+    },
+    {
+      "claim": "Report dated 2002 (fieldwork April 2001–April 2002)",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "front matter; index listing date"
+    },
+    {
+      "claim": "Marjory Stoneman Douglas's Friends of the Everglades played a major role in coalition to protect Big Cypress; River of Grass describes Big Cypress in detail",
+      "sourceUrl": "https://npshistory.com/publications/bicy/index.htm",
+      "locator": "overview, final para of 'Why Care About a Swamp?'"
+    },
+    {
+      "claim": "Coalition including Marjory Stoneman Douglas and the newly formed Friends of the Everglades pressured the Dade County Port Authority to relocate the jetport",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Brief Description, PDF p. 8"
+    },
+    {
+      "claim": "Mother Annie Mae Perry, logger's wife, midwife, delivered more than 500 babies in Copeland, Jerome, Immokalee, Everglades City and Naples; annual gathering every second Sunday in June",
+      "sourceUrl": "https://npshistory.com/publications/bicy/sawmills.pdf",
+      "locator": "PDF p. 4"
+    },
+    {
+      "claim": "Average annual temperature increased at statistically significant rate since 1950; sea levels and storm surge height risen; in or near 19 hurricane-strength storms over last century",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "FRV 'Climate Change and Habitat Diversity', PDF p. 20"
+    },
+    {
+      "claim": "Rising sea levels and storm surge may lead to loss of land and habitat, rising groundwater, saltwater intrusion, loss of freshwater ecosystems; saltwater/freshwater imbalance can contribute to invasive species",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "Key issues/FRV threats, PDF pp. 17, 20"
+    },
+    {
+      "claim": "Enhanced hydrological cycle in Gulf Coast region; shallow-water resources expected to closely track regional air temperatures",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bicy-fd-2016.pdf",
+      "locator": "FRV water resources trends, PDF p. 16"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/bicy/cypress-swamp.jpg",
+      "caption": "A cypress swamp in Big Cypress National Preserve",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/bicy/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/C251B53C-FE76-6924-BEC14D7FA6DC2A57.jpg",
+      "evidenceUrl": "https://www.nps.gov/bicy/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 800,
+      "bytes": 237357,
+      "note": "On-page caption: \"Cypress swamps while appearing mysterious, are peaceful and serene.\" credit \"NPS Photo\". Resized from 5168x3448."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/bicy/index.htm",
     "adhiUrl": "https://npshistory.com/publications/bicy/adhi.pdf",

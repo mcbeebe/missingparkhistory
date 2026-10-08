@@ -2,15 +2,296 @@
   "code": "CASA",
   "name": "Castillo de San Marcos National Monument",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-08",
+  "author": "author-E-2026-10-08",
   "verifiedBy": "",
-  "summary": "<p>Castillo de San Marcos National Monument in St. Augustine, Florida, preserves the oldest masonry fortification in the continental United States. Built by the Spanish between 1672 and 1695 using coquina — a local limestone formed from compressed shells — the fort was designed to protect Spain's claim to La Florida and the sea route of treasure ships returning to Europe. The fortress withstood multiple sieges, including British attacks in 1702 and 1740, and changed hands between Spain, Great Britain, the Confederate States, and the United States over its 300-year history. It was also used to imprison Native Americans, including members of the Seminole, Apache, Cheyenne, and other nations during the 19th century.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>On the west bank of Matanzas Bay at St. Augustine stands the oldest masonry fort in the continental United States: a hollow square of coquina, a soft local shell-stone, with a diamond-shaped bastion at each corner and only one way in. Spain broke ground on October 2, 1672, and finished it in 1695, replacing nine successive wooden forts that had guarded the town since its founding in 1565. For many years it was the northernmost outpost of Spain’s empire in the Americas, built to protect the town and the Gulf Stream route of the treasure fleets. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>It held. English forces besieged it for 50 days in 1702 and bombarded it for 27 days in 1740; the Park Service notes that the Castillo changed hands only by treaty, never in battle — to Britain in 1763, back to Spain in 1783, to the United States in 1821. The Americans renamed it Fort Marion and made it a prison for Native people: Seminoles in 1837, Plains Indians from 1875 to 1878, Apaches in 1886–1887. Proclaimed a national monument in 1924 and transferred to the Park Service in 1933, it had its Spanish name restored by Congress in 1942. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service defines the monument’s purpose as preserving the fort and interpreting more than 450 years of cultural intersections — Native, Spanish, British, African and American. Its seawall is now the lowest point in St. Augustine’s seawall network, which makes the fort the first place in the city to flood in a storm. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/casa/index.htm",
+      "title": "NPSHistory.com: Castillo de San Marcos National Monument archive page — overview (from the 2017 NPS brochure), timeline and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "title": "Foundation Document, Castillo de San Marcos National Monument, Florida (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+      "title": "Raise and Rehabilitate the Seawall Environmental Assessment, Castillo de San Marcos National Monument (NPS, June 2025)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The fort was built with Native labor. Jason Palmer’s 2002 study documents Apalachee, Timucua and Guale men drafted under Spain’s labor system to quarry coquina on Anastasia Island and burn oyster shell for lime; the Apalachee quota rose from 100 to 300 men a year, and disease, hunger and exhaustion killed many. The walls, Palmer concludes, could not protect the people who built them. <a href=\"https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>As Fort Marion it became an Army prison. In 1875, 74 prisoners from Fort Sill — Cheyenne, Kiowa, Comanche, Arapaho and Caddo, many survivors of the 1864 Sand Creek Massacre — were held in chains until 1878; their ledger drawings survive in the park collection. In 1886 came Chiricahua and Warm Springs Apache families — more than 500, by a 1952 account written in the dated language of its time — crowded into tents atop the fort. The park now holds gatherings with the Cheyenne and Arapaho Tribes to honor those imprisoned here. <a href=\"https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+          "title": "Palmer, Forgotten Sacrifice: Native American Involvement in the Construction of the Castillo de San Marcos, Florida Historical Quarterly 80(4), Spring 2002, pp. 437–454",
+          "type": "journal"
+        },
+        {
+          "url": "https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm",
+          "title": "NPS, Castillo de San Marcos: Plains Incarceration (nps.gov)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+          "title": "Foundation Document, Castillo de San Marcos (2016), significance statements and fundamental resources (ledger art)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf",
+          "title": "East & Manucy, Arizona Apaches as “Guests” in Florida, Florida Historical Quarterly 30(3), 1952",
+          "type": "journal"
+        }
+      ]
+    },
+    "latino": {
+      "html": "<p>St. Augustine, founded by Pedro Menéndez de Avilés in 1565, is the oldest permanent European settlement in the continental United States, and for 235 years it was the political, military and religious capital of Spanish Florida. Its grid of narrow streets, plaza and patios may be the earliest example of community planning in the continental United States, and the brochure says the city’s character still reflects its Spanish heritage. The Castillo was laid out by the Spanish engineer Ignacio Daza; it was a presidio, and no one lived inside — soldiers lived in town with their families and came to the fort for 24-hour guard shifts. Spain’s Florida missions predate those of the American West by more than a century. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service calls the fort a symbol of America’s first great melting pot, where Native people, European soldiers and settlers, and enslaved and free Africans met and clashed. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/casa/index.htm",
+          "title": "NPSHistory.com: Castillo de San Marcos archive page — brochure text (2017): St. Augustine; A Guide to the Castillo",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+          "title": "Foundation Document, Castillo de San Marcos (2016), interpretive themes",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Africans were here from the start: Menéndez arrived in 1565 with about 50 Africans, free and enslaved, among his 800 colonists. When disease cut down the Native workforce building the Castillo, Governor Manuel de Cendoya asked Cuba for thirty enslaved Africans. In 1687 eleven people escaped slavery in Carolina by boat and reached St. Augustine; the governor refused to return them, and six of the men were paid to work on the Castillo. A 1693 royal decree offered freedom to those who fled British colonies and converted, and in 1738 Governor Manuel de Montiano granted the freedom seekers land two miles north of town. Gracia Real de Santa Teresa de Mose — Fort Mose — was, the Park Service says, the first legally established free African settlement in North America, about a hundred people led by militia captain Francisco Menéndez. When Spain ceded Florida in 1763, its people left for Cuba. <a href=\"https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm",
+          "title": "NPS, Castillo de San Marcos: African Americans in St. Augustine 1565–1821 (nps.gov)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+          "title": "Palmer, Forgotten Sacrifice, Florida Historical Quarterly 80(4), 2002, p. 447",
+          "type": "journal"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The 2025 environmental assessment for the seawall that fronts the fort is blunt. The wall is aging, eroding and storm-damaged, its low elevation worsened by subsidence, and coquina is porous: running water and acidic rain and seawater dissolve the shell in the stone. Under the intermediate sea-level scenario the designers chose — about one meter of global rise by 2100 — the North and South Wall segments would be overtopped by Matanzas Bay even without a storm, with the potential to flood historic St. Augustine. The Park Service proposes raising the seawall to an elevation of +10.5 feet. <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The 2016 foundation document had already listed rising seas, rising groundwater, possible saltwater intrusion and more intense storms among the threats to the Castillo itself. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+          "title": "Raise and Rehabilitate the Seawall Environmental Assessment (NPS, June 2025), ch. 1 and alternatives",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+          "title": "Foundation Document, Castillo de San Marcos (2016), Castillo de San Marcos threats (p. 12)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Oldest masonry fort and best-preserved Spanish colonial fortification in the continental U.S.; northernmost outpost of Spain's New World empire; protected St. Augustine and the treasure-fleet route",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "overview, 'Outpost of Empire' paragraphs 1–3"
+    },
+    {
+      "claim": "Hollow square with diamond-shaped bastions at each corner and only one way in; layout by Spanish engineer Ignacio Daza; coquina is fragile",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "'A Guide to the Castillo'; 'For a Safe Visit'"
+    },
+    {
+      "claim": "Ground broken October 2, 1672; finished August 1695; replaced nine successive wooden fortifications; St. Augustine founded 1565",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "overview 'Begun in 1672…'; Castillo Timeline 17th century"
+    },
+    {
+      "claim": "Treasure ships / sea routes; built 1672–1695; oldest remaining European fortification in continental U.S.",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "1702 English besieged the fort for 50 days; 1740 27-day British bombardment",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "overview, siege paragraphs"
+    },
+    {
+      "claim": "Changed hands only through treaty and peaceful exchange, never falling in battle",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Interpretive themes, 'Constructing a New World Stronghold', p. 9"
+    },
+    {
+      "claim": "1763 ceded to Britain; 1783 returned to Spain; 1821 ceded to U.S.; 1825 renamed Fort Marion; 1924 national monument; 1933 transferred to NPS; 1942 name restored",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "Castillo Timeline"
+    },
+    {
+      "claim": "Military prison for American Indians: Seminoles 1837, Plains Indians 1875–1878, Apaches 1886–1887",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Significance statement 4, p. 6"
+    },
+    {
+      "claim": "Proclaimed Fort Marion NM October 15, 1924; War Department until 1933; Congress restored the Spanish name in 1942",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Purpose: preserves the oldest masonry fortification in continental U.S. and interprets more than 450 years of cultural intersections",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Park Purpose, p. 5"
+    },
+    {
+      "claim": "Seawall is the lowest elevation of the city of St. Augustine's seawall network, making the fort the first area to flood during storm events; low elevation worsened by subsidence",
+      "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+      "locator": "ch. 1, Purpose and Need, p. 1"
+    },
+    {
+      "claim": "Apalachees, Timucuans and Guales toiled for over twenty-four years to construct the fort (Palmer)",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "locator": "p. 437",
+      "interpretive": true
+    },
+    {
+      "claim": "Repartimiento labor system; Apalachee yearly labor quota rose from one hundred to three hundred men",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "locator": "p. 440"
+    },
+    {
+      "claim": "Labor plan: fifty to quarry and transport stone from Anastasia Island, fifty to carry oyster shells for lime and tend kilns, fifty to shape stone and open foundation trenches",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "locator": "p. 443"
+    },
+    {
+      "claim": "Natives succumbed to disease, malnourishment and exhaustion; the fort's walls proved unable to protect many of those who worked on it (Palmer's conclusion)",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "locator": "pp. 437, 454",
+      "interpretive": true
+    },
+    {
+      "claim": "74 prisoners chosen from Fort Sill: 33 Cheyenne, 27 Kiowa, 11 Comanche, 2 Arapaho, 1 Caddo; many survivors of the Sand Creek Massacre of 1864; wore chains and shackles; released to the Indian Bureau in 1878",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm",
+      "locator": "main text, paragraphs on Red River War, conditions, and 1878 release"
+    },
+    {
+      "claim": "Ledger art created by imprisoned Plains Indians housed in the museum collection; two engravings on walls of casemate 15",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Fundamental Resources: Ledger Art and American Indian Wall Art, p. 8"
+    },
+    {
+      "claim": "1886: over 500 Apaches (Chiricahua and Warm Spring) sent by train to Fort Marion; women and children of Geronimo's band routed there; 130-odd tents on top of the fort; commandant had room for about 150 (East & Manucy 1952; dated language)",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf",
+      "locator": "pp. 295–297"
+    },
+    {
+      "claim": "Park works with the Cheyenne and Arapaho Tribes of Oklahoma and other nations on annual gatherings; November 2022 memorial with the Cheyenne and Arapaho Tribes honoring warriors imprisoned 1875–1878",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm",
+      "locator": "opening paragraphs"
+    },
+    {
+      "claim": "St. Augustine established 1565 by Menéndez; oldest permanent European settlement in continental U.S.; for 235 years capital of the Province of Florida; perhaps earliest example of community planning; character still reflects Spanish heritage",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "brochure section 'St. Augustine'"
+    },
+    {
+      "claim": "Presidio; no one lived inside the Castillo during the Spanish years; soldiers lived in town with families and stood rotating guard (usually 24 hours)",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "'Guard Rooms'"
+    },
+    {
+      "claim": "Spanish set up Florida's mission system over 100 years before missions in the American West",
+      "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
+      "locator": "'Chapel'"
+    },
+    {
+      "claim": "Interpretive theme 'America's First Great Melting Pot': clash between cultures, from American Indians to European soldiers and settlers to enslaved and free African Americans",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Interpretive themes, p. 9",
+      "interpretive": true
+    },
+    {
+      "claim": "September 8, 1565: Menéndez arrived with 800 colonists including approximately 50 Africans, free and enslaved",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm",
+      "locator": "timeline, 1565"
+    },
+    {
+      "claim": "Contagion weakened and killed Indian laborers; Governor Cendoya requested thirty slaves be sent from Cuba",
+      "sourceUrl": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "locator": "p. 447"
+    },
+    {
+      "claim": "October 1687: eight men, two women and a nursing child escaped Carolina by boat; six men put to work on the Castillo; all reportedly paid; Governor Quiroga refused to return them",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm",
+      "locator": "main text paragraphs on 1687; timeline 1687"
+    },
+    {
+      "claim": "1693 decree of King Charles II granting liberty; 1738 Governor Montiano granted land about two miles north of St. Augustine; Gracia Real de Santa Teresa de Mose the first legally-established free African settlement in North America; about one hundred people; militia captain Francisco Menéndez",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm",
+      "locator": "main text, Fort Mose paragraphs"
+    },
+    {
+      "claim": "1763 the Mose settlers evacuated to Cuba with the rest of the Spanish",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/african-americans-in-st-augustine-1565-1821.htm",
+      "locator": "main text; timeline 1763"
+    },
+    {
+      "claim": "Coquina is porous; flowing water and acidity in ocean and rainwater break down the stone",
+      "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+      "locator": "Considerations for Alternatives Development, p. 9"
+    },
+    {
+      "claim": "Intermediate scenario (1.0 m GMSL rise by 2100) selected; North and South Wall segments would be overtopped by Matanzas Bay during non-storm conditions, with potential to flood historic St. Augustine",
+      "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+      "locator": "pp. 9–10"
+    },
+    {
+      "claim": "Wall segments would be raised to an elevation of +10.5 feet",
+      "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
+      "locator": "Alternatives, p. 11 (section following Considerations)"
+    },
+    {
+      "claim": "Threats: effects of climate change including increasing sea levels, rising groundwater tables and possible salt water intrusion, increased risk of flooding and high-intensity storms",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Fundamental resource 'Castillo de San Marcos', Threats, p. 12"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/casa/castillo-aerial-st-augustine.jpg",
+      "caption": "The Castillo at the northern edge of downtown St. Augustine, on Matanzas Bay",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/casa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7EA03D-1DD8-B71B-0B1EB4B61FB5F117.jpg",
+      "evidenceUrl": "https://www.nps.gov/casa/index.htm",
+      "note": "On-page caption: \"the Castillo commands the northern edge of the heart of downtown St. Augsutine. NPS Photo\"; alt text \"Aerial view of the Castillo and the city of St. Augustine\". Resized from 3005x1968.",
+      "width": 1600,
+      "height": 1048,
+      "bytes": 203951,
+      "capturedAt": "2026-10-08"
+    },
+    {
+      "file": "images/history/casa/drawbridge-moat.jpg",
+      "caption": "The drawbridge across the dry moat, the only way into the Castillo",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/casa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7E9A99-1DD8-B71B-0B5C1C290617CA10.jpg",
+      "evidenceUrl": "https://www.nps.gov/casa/index.htm",
+      "note": "On-page caption: \"Crossing a dry moat, this drawbridge was the only way into the Castillo. NPS Photo\"; alt text \"Drawbridge entrance to the Castillo de San Marcos\". Resized from 2560x1920.",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 221569,
+      "capturedAt": "2026-10-08"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/casa/index.htm",
     "adhiUrl": "https://npshistory.com/publications/casa/adhi.pdf",

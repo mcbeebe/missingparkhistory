@@ -1,0 +1,289 @@
+{
+  "code": "GOGA",
+  "name": "Golden Gate National Recreation Area",
+  "entries": [
+    "857"
+  ],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-08",
+  "author": "author-C-2026-10-08",
+  "verifiedBy": "",
+  "summary": "<p>Golden Gate National Recreation Area wraps the mouth of San Francisco Bay: more than 80,000 acres across Marin, San Francisco and San Mateo counties, where the San Andreas Fault, the bay and the Pacific coastline converge. It reaches from the coast redwoods of Muir Woods, some nearly 1,000 years old, to the shoreline of Crissy Field and the former penitentiary on Alcatraz Island, and protects parts of 19 ecosystems and more than 1,250 plant and animal species, among them one of the largest concentrations of rare, threatened and endangered species in the national park system. These lands are the traditional homelands of the Coast Miwok and Ohlone peoples. <a href=\"https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s forts and batteries run from Spanish settlement in 1776 to the Cold War Nike missile site in the Marin Headlands; the Presidio was a military post for more than 200 years, under Spain, briefly Mexico, and the United States from 1846. Alcatraz became the nation’s first military prison, then its most notorious federal penitentiary, then the site of the occupation that helped ignite the movement for American Indian self-determination. In 1972 Congress made it one of two experiments in bringing national parks to city dwellers, after Rep. Phillip Burton warned that without action the place where sea, bay and land meet would be doomed; it was established on October 27, 1972, and now draws more than 17 million visits a year. <a href=\"https://npshistory.com/publications/goga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "title": "Foundation Document, Golden Gate National Recreation Area, Muir Woods National Monument and Fort Point National Historic Site (NPS, 2017), pp. 3–9",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/goga/index.htm",
+      "title": "NPSHistory.com: Golden Gate NRA archive page — overview (2014 NPS brochure) and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Before Spain arrived, the San Francisco Peninsula belonged to Ohlone people — called Costanoan, from the Spanish for “coast people,” in Kathryn Lang’s 1979 park study — living in small autonomous tribelets of about 200; the Ramaytush of San Francisco and San Mateo counties numbered about 1,400 in 1770. North of the strait, Coast Miwok territory, centered in Marin and Sonoma counties, took in much of today’s park. The Spanish garrison at the Presidio depended on their labor: mission Indians, some lent out and some sent as prisoners for alleged misconduct, built and constantly repaired its crumbling adobe walls and fortifications, with wages paid to the padres rather than the workers. Introduced disease ravaged the missions: Mission Dolores held 1,010 Indians in 1804 and only 241 less than twenty-five years later. <a href=\"https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>Generations later, Indigenous people returned to claim a piece of the bay: the park’s foundation document credits the occupation of Alcatraz Island with helping to ignite the movement for American Indian self-determination. <a href=\"https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+          "title": "Lang, Golden Gate National Recreation Area: The Indian and Hispanic Heritage of a Modern Urban Park (NPS, 1979), pp. 5, 8, 30, 107, 123",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+          "title": "Foundation Document, Golden Gate NRA (NPS, 2017), p. 8",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "latino": {
+      "html": "<p>Spanish explorer Gaspar de Portolá first saw San Francisco Bay in 1769 from Sweeney Ridge, now park land. On June 17, 1776, Lieutenant José Moraga led soldiers and settlers north from Monterey to build the fort at the site Juan Bautista de Anza had chosen — ten leather-jacket soldiers with their families, seven settler families, vaqueros and muleteers. The soldiers were mostly Mexican-born, and Lang’s 1979 study describes most of the colonists as poor families recruited in Sinaloa and Sonora. On September 17, 1776, they formally founded the Presidio of San Francisco with a Mass and the Spanish ceremony of possession. It served Spain, then briefly Mexico, until the United States took it in 1846, and the park’s foundation document dates its long line of fortifications from that Spanish settlement. <a href=\"https://npshistory.com/publications/goga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/goga/index.htm",
+          "title": "NPSHistory.com: Golden Gate NRA archive page overview (2014 NPS brochure), 'If you have a half day or more'",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+          "title": "Lang, The Indian and Hispanic Heritage of a Modern Urban Park (NPS, 1979), ch. III.B, pp. 88–92",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+          "title": "Foundation Document, Golden Gate NRA (NPS, 2017), pp. 4, 8",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Black soldiers garrisoned the Presidio at the turn of the twentieth century. In 1899 four companies of the 24th Infantry — veterans of Cuba, where they had nursed the sick in the Army hospital and lost many men to disease — arrived in San Francisco, three of them at the Presidio and one on Alcatraz; the 25th Infantry passed through on its way to the Philippines, and the 9th Cavalry was posted at the Presidio in 1900. When President Theodore Roosevelt visited in 1903, two troops of the 9th escorted him, the first time in the West, Daniels’s 1980 study notes, that Black soldiers held the place of honor in a public procession. In 1908 Black troops deserted at under one percent, against nearly five percent among white soldiers. Charles D. Young, a West Point graduate and in 1899 the Army’s only Black commissioned officer apart from chaplains, spoke across the Bay Area. <a href=\"https://npshistory.com/publications/goga/african-am.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/goga/african-am.pdf",
+          "title": "Daniels, Afro-Americans, the San Francisco Bay Area, and the Golden Gate National Recreation Area, 1850–1960 (report for GGNRA, March 13, 1980), pp. 18–21",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+          "title": "Foundation Document, Golden Gate NRA (NPS, 2017), p. 4 (Buffalo Soldiers theme)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The park’s 2025 coastal hazards assessment looked at 681 buildings and 433 roads, trails, piers and other transportation assets against flooding, shoreline change, sea-level rise and tsunami zones. Most sit high enough to escape, but 18 percent are highly or moderately vulnerable, clustered at Stinson Beach, Crissy Field, lower Fort Baker, Fort Cronkhite, Fort Mason and Point Bonita; the Fort Mason piers and the Alcatraz waterfront fall within every hazard zone evaluated. Coastal cliff retreat is a major concern in its own right: it has already brought down the Battery Bluff Panama Mounts at Fort Funston and threatens corridors such as Conzelman Road in the Marin Headlands. <a href=\"https://npshistory.com/publications/goga/coastal-hazards-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/goga/coastal-hazards-2025.pdf",
+          "title": "Peek, Thompson, Tormey & Young, Coastal Hazards & Sea-Level Rise Asset Vulnerability Assessment for Golden Gate NRA, Presidio of San Francisco, and Fort Point NHS: Summary of Results (NPS 641/197620, May 2025), pp. 1–3",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "More than 80,000 acres across Marin, San Francisco and San Mateo counties; one of the largest urban parks in the world",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Convergence of the San Andreas Fault, San Francisco Bay at the Golden Gate and the California coastline",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Significance: Physical Landforms, p. 8"
+    },
+    {
+      "claim": "Muir Woods redwoods nearly 1,000 years old, more than 250 feet",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Muir Woods description, p. 5"
+    },
+    {
+      "claim": "Parts of 19 separate ecosystems; more than 1,250 plant and animal species; one of the largest concentrations of rare, threatened and endangered species in the national park system",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "p. 4; Significance: Coastal Corridor, p. 8"
+    },
+    {
+      "claim": "Park lands within the traditional homelands of the Coast Miwok and Ohlone people",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Significance: Coast Miwok and Ohlone People, p. 8"
+    },
+    {
+      "claim": "Military installations and fortifications from Spanish settlement in 1776 through the 20th century",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Significance: Military Installations, p. 8"
+    },
+    {
+      "claim": "Presidio a military base more than 200 years: Spain late 1700s, briefly Mexico, U.S. from 1846; part of GGNRA since 1994",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Alcatraz: pre-Civil War fortifications; nation's first military prison; most notorious maximum security penitentiary; site of the occupation that helped ignite the movement for American Indian self-determination",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Significance: Alcatraz Island, p. 8",
+      "interpretive": true
+    },
+    {
+      "claim": "Cold War-era Nike Missile Site in the Marin Headlands",
+      "sourceUrl": "https://npshistory.com/publications/goga/index.htm",
+      "locator": "overview, 'Highlights for two hours or less'"
+    },
+    {
+      "claim": "1972 Congress added Golden Gate NRA and Gateway NRA ('bring parks to the people'); Burton 1972 quotation that the area 'will be doomed' if Congress does not act",
+      "sourceUrl": "https://npshistory.com/publications/goga/index.htm",
+      "locator": "overview, opening quotation and paragraph 1"
+    },
+    {
+      "claim": "Established October 27, 1972",
+      "sourceUrl": "https://npshistory.com/publications/goga/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "More than 17 million visitors each year",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Costanoan derived from Spanish Costanos, 'coast people'; debate over Costanoan vs. Ohlone",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. I.A.3, p. 8"
+    },
+    {
+      "claim": "Coast Miwok centered in Marin and adjacent Sonoma counties, a territory which included much of the current GGNRA",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. I.D, p. 30"
+    },
+    {
+      "claim": "Tribelet population about 50–500, average about 200; Ramaytush (San Francisco and San Mateo Counties) about 1,400 in 1770",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. I.A.2, p. 5"
+    },
+    {
+      "claim": "Presidio dependent on inexpensive and exploitable Indian labor from the missions; 'borrowed employees' or sentenced prisoners; wages paid to the padre; construction and repair of fortifications primarily by Indian labor; poor adobe left buildings in constant disrepair",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. III.E, pp. 107, 109"
+    },
+    {
+      "claim": "1804: 1,010 neophytes at Mission Dolores; less than twenty-five years later only 241 remained; measles 1806, smallpox 1838",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. III.F.2, p. 123"
+    },
+    {
+      "claim": "Portolá first saw San Francisco Bay in 1769 at the Bay Discovery Site on Sweeney Ridge",
+      "sourceUrl": "https://npshistory.com/publications/goga/index.htm",
+      "locator": "overview, 'If you have a half day or more'"
+    },
+    {
+      "claim": "Presidio formally founded September 17, 1776 with a solemn Mass and the Spanish possession ceremony",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. III.B, p. 92"
+    },
+    {
+      "claim": "June 17, 1776 Moraga and detachment left Monterey for San Francisco to establish the fort on the site selected by Anza; ten soldados de cuera with families and servants, seven large families of settlers, vaqueros and muleteers; soldiers mostly Mexican born; colonists mostly poverty-ridden, recruited in Sinaloa or Sonora",
+      "sourceUrl": "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "locator": "ch. III.B, pp. 88–89"
+    },
+    {
+      "claim": "Four companies of the 24th Infantry arrived in San Francisco in 1899; served as nurses in the Army hospital in Cuba, many deaths from tropical disease; three companies at the Presidio and one at Alcatraz",
+      "sourceUrl": "https://npshistory.com/publications/goga/african-am.pdf",
+      "locator": "pp. 18–19"
+    },
+    {
+      "claim": "25th Infantry en route to the Philippines; 9th Cavalry at the Presidio in 1900",
+      "sourceUrl": "https://npshistory.com/publications/goga/african-am.pdf",
+      "locator": "p. 19"
+    },
+    {
+      "claim": "1903 Roosevelt visit: escorted by two troops of the 9th Cavalry; first instance in the West of Black soldiers holding the position of honor in a public procession (Daniels citing Fletcher)",
+      "sourceUrl": "https://npshistory.com/publications/goga/african-am.pdf",
+      "locator": "pp. 19–20",
+      "interpretive": true
+    },
+    {
+      "claim": "1908 desertion: Black troops under one percent, white nearly five percent",
+      "sourceUrl": "https://npshistory.com/publications/goga/african-am.pdf",
+      "locator": "p. 20"
+    },
+    {
+      "claim": "Charles D. Young, West Point graduate; in 1899 only Black commissioned officer except for chaplains; spoke throughout the Bay Area including Stanford in 1903",
+      "sourceUrl": "https://npshistory.com/publications/goga/african-am.pdf",
+      "locator": "p. 21"
+    },
+    {
+      "claim": "Buffalo Soldiers listed among the park's historic themes",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/goga-fd-2017.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Assessed 681 buildings and 433 transportation assets; 18% high or moderate vulnerability, 12% low, 70% minimal",
+      "sourceUrl": "https://npshistory.com/publications/goga/coastal-hazards-2025.pdf",
+      "locator": "Executive Summary, p. 1"
+    },
+    {
+      "claim": "Over half of high and moderate vulnerability assets in Stinson Beach, Crissy Field, Fort Baker-Lower, Fort Cronkhite, Fort Mason and Point Bonita areas",
+      "sourceUrl": "https://npshistory.com/publications/goga/coastal-hazards-2025.pdf",
+      "locator": "Executive Summary, p. 1"
+    },
+    {
+      "claim": "Eighteen assets within all evaluated hazard zones, including Fort Mason piers and pier sheds, Fort Baker waterfront assets and the Alcatraz waterfront",
+      "sourceUrl": "https://npshistory.com/publications/goga/coastal-hazards-2025.pdf",
+      "locator": "GOGA Exposure Results, p. 3"
+    },
+    {
+      "claim": "Coastal cliff retreat a major concern; previous collapse of Battery Bluff Panama Mounts in the Fort Funston area; Conzelman Road Segment 2 exposed",
+      "sourceUrl": "https://npshistory.com/publications/goga/coastal-hazards-2025.pdf",
+      "locator": "GOGA Exposure Results, p. 3"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/goga/golden-gate-from-battery-east.jpg",
+      "caption": "The Golden Gate from Battery East",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/goga/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/FD457F81-C06F-457A-310C9781E0C97448.jpg",
+      "evidenceUrl": "https://www.nps.gov/goga/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 900,
+      "bytes": 207702,
+      "note": "On-page figcaption: \"Golden Gate from Battery East\" with credit span \"NPS Photo\" (park homepage). Resized from 1280x960."
+    },
+    {
+      "file": "images/history/goga/crissy-field-fog.jpg",
+      "caption": "Fog moving over Crissy Field",
+      "credit": "NPS photo/Will Elder",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/goga/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg",
+      "evidenceUrl": "https://www.nps.gov/goga/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "climate",
+      "width": 1600,
+      "height": 1073,
+      "bytes": 205557,
+      "note": "On-page figcaption: \"Visiting Crissy Field is an ever changing experience as the fog comes in and dissipates.\" with credit span \"NPS photo/Will Elder\" (park homepage). Resized from 3303x2216."
+    }
+  ],
+  "photoStatus": "complete",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/goga/index.htm",
+    "adhiUrl": "https://irma.nps.gov/DataStore/DownloadFile/490214",
+    "hrsUrl": "https://npshistory.com/publications/goga/hrs-civil-history-v1.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/goga/coast-miwok-ethnohistory.pdf",
+      "https://npshistory.com/publications/goga/indian-hispanic-heritage.pdf",
+      "https://npshistory.com/publications/goga/nr-fort-miley-mr.pdf",
+      "https://npshistory.com/publications/goga/ohlone-indians.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 151
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/goga/index.htm"
+  },
+  "corrections": []
+}

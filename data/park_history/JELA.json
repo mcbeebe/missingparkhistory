@@ -1,16 +1,322 @@
 {
   "code": "JELA",
   "name": "Jean Lafitte National Historical Park and Preserve",
-  "entries": [],
+  "entries": [
+    "481"
+  ],
   "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
+  "lastReviewed": "2026-10-08",
+  "author": "author-C-2026-10-08",
   "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>The Mississippi River built this country. At the end of its journey it drops sediment scoured from 40 percent of the continental United States, and the ground beneath the New Orleans region is less than 4,000 years old — marsh, slow bayous, cypress swamp and forested natural levees in a restless interplay of land and water. American Indians settled the delta as it formed, some 2,500 years ago; from the 1720s European settlers and enslaved Africans took their place among them, and the park’s brochure traces how French, Chitimacha and Houma, West African, Spanish-speaking Isleño, Caribbean and Acadian peoples together made the culture now called Creole and Cajun. <a href=\"https://npshistory.com/publications/jela/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On January 8, 1815, on the Chalmet plantation below New Orleans, Andrew Jackson’s mixed force of regulars, militia, volunteers and Jean Lafitte’s Baratarian privateers stopped a British assault in less than two hours; more than 2,000 British soldiers were killed, wounded or captured and American casualties numbered fewer than 20. Chalmette National Historical Park, created in 1939 to preserve part of that field, was the first national park unit in Louisiana. Congress expanded it into Jean Lafitte National Historical Park and Preserve on November 10, 1978, and in 1988 added three Acadian cultural centers, for six sites in all. The land itself is now going: blocked sedimentation, subsidence and rising seas cost the delta, by the brochure’s count, a football field’s worth of land every 45 minutes. <a href=\"https://npshistory.com/publications/jela/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/jela/index.htm",
+      "title": "NPSHistory.com: Jean Lafitte NHP&P archive page — overview (2017 and 2014 NPS brochures) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "title": "Foundation Document, Jean Lafitte National Historical Park and Preserve (NPS, 2015), pp. 3–6",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "climate": {
+      "html": "<p>The delta was always in motion: over 3,500 years the Mississippi built five major deltas, the newest only 500 years old, while subsidence and erosion balanced the new land it laid down. Levees and channelization have broken that balance. The park’s 2015 foundation document says parts of this landscape have the highest rate of relative sea-level rise and land loss in North America — a historical average of 0.36 inches a year at Grand Isle from 1947 to 2012, with projections for 2100 of 3.3 to 7.6 feet. In Barataria Preserve, scientists have already documented species lost from the natural levee ridges, more flooding and land loss, and the document names the climate-driven rise of ocean influence over the delta and its people the park’s major cross-cutting concern. <a href=\"https://npshistory.com/publications/jela/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/jela/index.htm",
+          "title": "NPSHistory.com: Jean Lafitte archive page — 'Shaping a New Land' (2017 NPS brochure)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+          "title": "Foundation Document, Jean Lafitte NHP&P (NPS, 2015), pp. 7, 12, 32",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Around 1867, Jean Pierre Fazende, a free man of color before emancipation, began selling lots on part of the old Chalmet plantation to freedmen. Fazendeville grew into a close-knit Black working-class village of about 40 houses, a church, stores, a school and benevolent societies, sitting between the battlefield monument and the national cemetery, which for generations drew its laborers from the village. Blythe’s 2012 administrative history records that NPS managers believed from the start that the community would have to be obliterated to restore the historic scene. Congress authorized purchase of every property in 1962, and by 1964 the village was gone — taken, former residents told an anthropologist, while Black residents of St. Bernard Parish were still fighting for the vote. The same history notes that park managers long overlooked the free men of color who fought for Jackson. The NPS placed a wayside about Fazendeville on the battlefield in 2008. <a href=\"https://npshistory.com/publications/jela/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/jela/adhi.pdf",
+          "title": "Blythe, Administrative History of Jean Lafitte National Historical Park and Preserve (NPS, 2012), ch. 3 pp. 35–36; ch. 4 pp. 57–58",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+          "title": "Foundation Document, Jean Lafitte NHP&P (NPS, 2015), p. 4",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>The Barataria basin south of New Orleans was sugar country before the Civil War. In 1850, Holmes’s 1986 historic resource study counts 1,176 people living there: 504 enslaved, 15 free people of color and 657 white, with 79 percent of the enslaved owned by planters and living on the plantations. In 1856 the Mavis Grove plantation inventoried houses for 156 enslaved people alongside its steam sawmill, seventy mules and $226,914 in total value. Enslaved workers labored six days a week, and every day during the October-to-December harvest and grinding season. Jean Lafitte’s smuggling empire in the basin, which the park’s foundation document notes trafficked in enslaved people, was bold enough to advertise auctions of contraband slaves openly. <a href=\"https://npshistory.com/publications/jela/hrs-barataria.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+          "title": "Holmes, Historic Resources Study: The Barataria Unit of Jean Lafitte NHP (NPS Southwest Cultural Resources Center Professional Papers No. 5, 1986), pp. 59, 88–89",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+          "title": "Foundation Document, Jean Lafitte NHP&P (NPS, 2015), p. 3",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>People lived in the Barataria basin as soon as the river formed it, and by the Marksville period (about 100 B.C. to A.D. 300) were building large villages, growing corn and probably beans and squash while relying chiefly on hunting, fishing and gathering. Prehistoric shell middens from that long occupation remain part of the preserve’s landscape. At French contact their descendants were the Washa, Chawasha and Chitimacha (“Sitimachas” on a 1718 French map). France’s Indian allies waged a twelve-year war on the Chitimacha which, Holmes writes, supplied the French colony with many Indian slaves from Chitimacha bands; the 1718 peace forced the Chitimacha to abandon Bayou Lafourche and settle near New Orleans. By 1739 the Washa and Chawasha together numbered only thirty warriors, a collapse the study attributes probably to disease. <a href=\"https://npshistory.com/publications/jela/hrs-barataria.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+          "title": "Holmes, Historic Resources Study: The Barataria Unit (NPS, 1986), ch. II, The Indigenous Occupation, pp. 31, 35; ch. VI, p. 129",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+          "title": "Foundation Document, Jean Lafitte NHP&P (NPS, 2015), p. 7 (Barataria Cultural Landscape)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "latino": {
+      "html": "<p>Spain ruled Louisiana from 1763 to 1800, and its colonial government built the road through the preserve still called El Camino Real de Barataria, the royal road. In 1778 the first settlers from the Canary Islands — the Isleños — arrived, brought by the Spanish governor to strengthen Spain’s hold against British and American aggression. In 1779 a group of about 150 settled at the meeting of Bayou des Familles and Bayou Barataria; the bayou’s name, “of the families,” comes from them. Hurricanes and river crevasses wore the settlement down over some sixteen years, until a crevasse that opened in or before 1796 ruined the last five families’ crops and livestock and the government moved them to Terre aux Boeufs, in today’s St. Bernard Parish. <a href=\"https://npshistory.com/publications/jela/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/jela/hrs-barataria.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/jela/index.htm",
+          "title": "NPSHistory.com: Jean Lafitte archive page overview (2017 NPS brochure)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+          "title": "Foundation Document, Jean Lafitte NHP&P (NPS, 2015), p. 9 (El Camino Real de Barataria)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+          "title": "Holmes, Historic Resources Study: The Barataria Unit (NPS, 1986), ch. III, Canary Islanders Settlement, pp. 57–58",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "River deposits sediment scoured from 40 percent of the continental United States; marshes, bayous, swamps, forested natural levees",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'First there was the land'"
+    },
+    {
+      "claim": "Deltaic sediments underlying the New Orleans region less than 4,000 years old",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'Shaping a New Land'"
+    },
+    {
+      "claim": "American Indians settled this land as it formed some 2,500 years ago; from the 1720s European settlers and enslaved Africans",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'First there was the land'"
+    },
+    {
+      "claim": "Contributing groups: French; Chitimacha, Houma and other tribes; Canadian French; Germans; enslaved West Africans; Isleños and free people of color from the Caribbean under Spanish rule 1763–1800; Acadians",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'Just as soil washed…'"
+    },
+    {
+      "claim": "January 8, 1815; defenders about 5,000 regulars, militia, volunteers including Lafitte's Baratarians; battle lasted less than two hours; more than 2,000 British dead, wounded or captured; American casualties fewer than 20",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "Chalmette Battlefield brochure (2014)"
+    },
+    {
+      "claim": "Rodriguez Canal bordered one side of the Chalmet plantation",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "Chalmette brochure (2014)"
+    },
+    {
+      "claim": "Chalmette NHP established 1939, first unit of the national park system in Louisiana; JELA established 1978; 1988 PL 100-250 authorized Acadian folklife centers; six units",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Park Background, p. 3"
+    },
+    {
+      "claim": "JELA established November 10, 1978; Chalmette NHP August 10, 1939",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "A football field's worth of land lost every 45 minutes; human engineering blocking sedimentation; rising seas due to climate change accelerating loss",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'Shaping a New Land'"
+    },
+    {
+      "claim": "Over the last 3,500 years the Mississippi created five major deltas, the newest only 500 years old",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview, 'Shaping a New Land'"
+    },
+    {
+      "claim": "Highest rate of relative sea level rise and land loss in North America",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "FRV 'Dynamic Delta Landscape', p. 7"
+    },
+    {
+      "claim": "Grand Isle historical average 0.36 inches per year 1947–2012; 2100 projections 3.30 to 7.62 feet (NOAA data)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Appendix, FRV analysis 'Dynamic Delta Landscape' conditions, p. 32"
+    },
+    {
+      "claim": "Barataria: documented species loss from natural levee ridges, increased flooding, land loss; climate change-driven increase in ocean influence is the park's major cross-cutting concern",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Key Issues, 'Climate Change, Relative Sea Level Rising', p. 12",
+      "interpretive": true
+    },
+    {
+      "claim": "Around 1867 Jean Pierre Fazende, a free man of color before emancipation, began selling lots to freedmen on part of the Chalmet Plantation",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 3, Fazendeville, p. 36"
+    },
+    {
+      "claim": "Village eventually about 40 houses, a church, one or two general stores, an elementary school, at least two benevolent societies; close-knit community of black working-class families for almost 100 years; for generations supplied laborers for the national cemetery",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 3, Fazendeville, p. 36"
+    },
+    {
+      "claim": "NPS managers from the start believed Fazendeville would have to be obliterated to provide a meaningful visitor experience of the historic scene",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 4, p. 57",
+      "interpretive": true
+    },
+    {
+      "claim": "Public Law 87-759, October 9, 1962, authorized acquisition of all Fazendeville properties; community lost in 1964",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 4, pp. 57–58"
+    },
+    {
+      "claim": "Anthropologist Joyce Marie Jackson interviewed former residents; taking occurred while blacks in St. Bernard Parish struggled to register to vote; some displaced saw connections",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 4, p. 58",
+      "interpretive": true
+    },
+    {
+      "claim": "Park managers and New Orleans media often overlooked contributions of the free men of color to Jackson's victory",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 4, p. 58",
+      "interpretive": true
+    },
+    {
+      "claim": "NPS placed a wayside exhibit describing Fazendeville on the battlefield in 2008",
+      "sourceUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+      "locator": "ch. 3, p. 36"
+    },
+    {
+      "claim": "Fazendeville community dated c. 1867–1964",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Park Background, p. 4"
+    },
+    {
+      "claim": "1850 Barataria region: 1,176 people; 504 slaves, 15 free people of color, 657 whites; 428 (79%) of slaves owned by plantation owners and lived on plantation centers",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. IV, p. 89"
+    },
+    {
+      "claim": "1856 Mavis Grove Plantation inventoried houses for 156 slaves, steam sawmill, seventy mules; Andrew Hodge estate valued at $226,914.61",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. IV, p. 88"
+    },
+    {
+      "claim": "Slaves usually worked six days a week, every day during October–December harvest and sugar making",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. IV, p. 88"
+    },
+    {
+      "claim": "Lafitte dared to openly advertise an auction of contraband slaves in Barataria (1805–1813 commercial empire)",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. III, p. 59"
+    },
+    {
+      "claim": "Lafitte navigated the Barataria swamps smuggling contraband and slaves",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Park Background, p. 3"
+    },
+    {
+      "claim": "Basin inhabited as soon as formed; large-scale villages by the Marksville period 100 B.C.–A.D. 300; cultivated corn and probably beans and squash, hunting and gathering most important",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. VI Summary, p. 129"
+    },
+    {
+      "claim": "Prehistoric shell midden complexes in the Barataria cultural landscape",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "FRV 'Barataria Cultural Landscape', p. 7"
+    },
+    {
+      "claim": "Descendants known as Washa, Chawasha and Chitimacha; Plate 5 map shows 'Sitimachas' (after Delisle 1718)",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. VI p. 129; ch. II Plate 5"
+    },
+    {
+      "claim": "By 1739 Washa and Chawasha together numbered only thirty warriors; probably significant population loss from disease",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. II, p. 31",
+      "interpretive": true
+    },
+    {
+      "claim": "French Indian allies waged war on the Chitimacha for twelve years; Chitimacha bands contributed many Indian slaves to the French colony; 1718 peace treaty forced them to abandon Bayou Lafourche and settle near New Orleans",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. II, p. 35"
+    },
+    {
+      "claim": "Spanish rule of Louisiana 1763–1800",
+      "sourceUrl": "https://npshistory.com/publications/jela/index.htm",
+      "locator": "overview"
+    },
+    {
+      "claim": "El Camino Real de Barataria: remnant of public road built by the Spanish colonial government (1763–1803); some Isleños settled along it in the Pecan Grove area",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/jela-fd-2015.pdf",
+      "locator": "Other Important Resources, p. 9"
+    },
+    {
+      "claim": "1778 first Canary Islands settlers arrived, brought by the Spanish governor to strengthen Spanish presence against British and American aggression; 1779 group under Andrés Jung settled on the Dauterive grant; about 150 people at first; 30 or 40 Canarian families gave Bayou des Familles its name (McDonogh)",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. III, p. 57"
+    },
+    {
+      "claim": "Settlement failed from repeated floods caused by hurricanes and crevasses; Porta crevasse opened in or before 1796; five remaining families resettled at Terre aux Boeufs (later St. Bernard Parish); settlement lasted about sixteen years",
+      "sourceUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+      "locator": "ch. III, pp. 57–58"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/jela/chalmette-rampart.jpg",
+      "caption": "The American rampart and cannons at Chalmette Battlefield, site of the 1815 Battle of New Orleans",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/jela/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C845E7E-1DD8-B71B-0BE1AC184B0AF650.jpg",
+      "evidenceUrl": "https://www.nps.gov/jela/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 1050,
+      "bytes": 237158,
+      "note": "On-page figcaption: \"Chalmette Battlefield's American rampart and cannons still guard the site of the Battle of New Orleans in 1815.\" credit span \"NPS Photo\" (park homepage). Resized from 2048x1536."
+    },
+    {
+      "file": "images/history/jela/barataria-preserve-wetlands.jpg",
+      "caption": "Spanish moss and wetland vegetation in Barataria Preserve",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/jela/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C845D16-1DD8-B71B-0B04181AABF4F0C1.jpg",
+      "evidenceUrl": "https://www.nps.gov/jela/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "climate",
+      "width": 1200,
+      "height": 803,
+      "bytes": 248222,
+      "note": "On-page figcaption: \"Spanish moss and lush vegetation provide glimpses of Louisiana's wild wetlands at Jean Lafitte's Barataria Preserve.\" credit span \"NPS Photo\" (park homepage). Resized from 3872x2592."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/jela/index.htm",
     "adhiUrl": "https://npshistory.com/publications/jela/adhi.pdf",

@@ -1,16 +1,285 @@
 {
   "code": "HAFE",
   "name": "Harpers Ferry National Historical Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
+  "entries": [
+    "813"
+  ],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-08",
+  "author": "author-C-2026-10-08",
   "verifiedBy": "",
-  "summary": "<p>Harpers Ferry National Historical Park in West Virginia, Maryland, and Virginia preserves the town at the confluence of the Potomac and Shenandoah Rivers where abolitionist John Brown led his famous 1859 raid on the federal armory — a pivotal event that accelerated the nation's march toward civil war. Harpers Ferry changed hands eight times between Union and Confederate forces during the Civil War and witnessed the largest surrender of Union troops during the war in September 1862. After the war, Storer College — one of the first integrated schools in the United States — was established in the town to educate formerly enslaved people. The Niagara Movement, the precursor to the NAACP, held its second meeting at Storer College in 1906. The park was established in 1944.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>At Harpers Ferry the Potomac River cuts through the Blue Ridge and takes in the Shenandoah, leaving a V-shaped water gap that Thomas Jefferson called perhaps one of the most stupendous scenes in nature, worth a voyage across the Atlantic. That gap made the place a crossroads from the earliest human habitation onward: American Indians first, then European settlers, and in 1747 Robert Harper’s ferry across the Potomac. Congress authorized a federal armory here on June 15, 1796; when production began in 1801 it was the nation’s second, and in its workshops new ideas about interchangeable parts were tried and tested while large-scale manufacturing turned a quiet rural village into one of the leading industrial centers of its day. <a href=\"https://npshistory.com/publications/hafe/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In October 1859 John Brown and his followers seized the armory, determined to arm enslaved people and spark a rebellion; the raid failed, but his trial and execution, in the park brochure’s words, propelled the nation toward civil war. Harpers Ferry then changed hands eight times, and in September 1862 Stonewall Jackson captured nearly 12,700 Union soldiers here — the largest surrender of U.S. troops in the war. After it, Storer College opened on Camp Hill in 1867 as a school primarily for formerly enslaved people, and in 1906 hosted the Niagara Movement, where W. E. B. Du Bois laid out a demand for full civil rights. Congress authorized Harpers Ferry National Monument in 1944; it became a national historical park in 1963 and now covers 3,745 acres in West Virginia, Maryland and Virginia. <a href=\"https://npshistory.com/publications/hafe/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/hafe/index.htm",
+      "title": "NPSHistory.com: Harpers Ferry National Historical Park archive page — overview (from the 2015 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "title": "Foundation Document, Harpers Ferry National Historical Park (NPS, 2016), pp. 3–6",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>Harpers Ferry sat in Jefferson County, Virginia, which before 1863 held twice as many enslaved people as any other county in present-day West Virginia: 4,157 in 1840, 4,341 in 1850, and 27 percent of the population by 1860. Most local owners held one or two people; the 2017 ethnographic overview records that people were bought and sold frequently, that an 1857 Charles Town court sale auctioned free Black people for remaining in the state contrary to law, and that escapes toward Pennsylvania were common enough that the Virginia Slave Insurance Company was formed to insure against them. <a href=\"https://npshistory.com/publications/hafe/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>On October 16, 1859, Brown led 21 men against an arsenal holding 100,000 arms. The first man killed was Heyward Shepherd, an African American baggage handler for the B&amp;O Railroad. By noon the next day, the park’s own 2006 armory study records, drunken vigilantes encircled the armory and several captured raiders were brutally executed; U.S. Marines took Brown at daybreak on October 18. <a href=\"https://npshistory.com/publications/hafe/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/hafe/hrs-armory.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hafe/eoa.pdf",
+          "title": "Bailey, An Ethnographic Overview and Assessment Study of Harpers Ferry National Historical Park (NPS, 2017), pp. 23, 43–45",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+          "title": "Lee, The U.S. Armory at Harpers Ferry: Historic Resource Study (NPS, 2006), ch. 7, pp. 57–59",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>During and after the war, people escaping slavery — called “contrabands” — poured into Harpers Ferry — and by the late 1860s about 700 African Americans lived in town, double the prewar number. Freewill Baptists opened a school for refugees in the armory paymaster’s Lockwood House in 1864, and on October 2, 1867, Storer College began classes there with nineteen students. Students were bullied by local residents and at times had to be escorted into town by hired militiamen. For 25 years Storer was the only institution in West Virginia offering African Americans secondary and post-secondary education; Frederick Douglass sat on its first board of trustees. <a href=\"https://npshistory.com/publications/hafe/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In August 1906 the Niagara Movement met at Storer — its first meeting in the United States — and its members walked barefoot to John Brown’s Fort to honor him; the movement led to the founding of the NAACP in 1909. Storer closed in 1955, after the State of West Virginia withdrew its support. <a href=\"https://npshistory.com/publications/hafe/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hafe/eoa.pdf",
+          "title": "Bailey, Ethnographic Overview and Assessment Study of Harpers Ferry NHP (NPS, 2017), pp. 27, 47–49, 107, 140",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+          "title": "Foundation Document, Harpers Ferry National Historical Park (NPS, 2016), pp. 4, 6",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>The armory began in 1801 with 28 armorers who turned out 293 flintlock muskets that year; by 1810 it employed almost 200 workers in 28 buildings. Its early gunsmiths were craftsmen who built whole locks or stocks by hand and were paid by the piece, and the Ordnance Department’s campaign to impose factory discipline met fierce resistance. When Superintendent Thomas Dunn posted strict rules and inspections that cut piece-work wages, a dismissed worker, Ebenezer Cox, murdered him in his office in 1830 — and, the park’s 2006 study says, became a folk hero to the armorers. In 1842, after Major Henry Craig imposed a fixed workday enforced by a clock, the entire workforce struck for a week and sent a delegation to President John Tyler protesting that they were being made into “mere machines of labor.” Instead Congress placed military superintendents over all U.S. armories. <a href=\"https://npshistory.com/publications/hafe/hrs-armory.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+          "title": "Lee, The U.S. Armory at Harpers Ferry: Historic Resource Study (NPS, 2006), pp. 12, 23, 29, 42–43",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>People have lived in the Shenandoah and Potomac valleys since the Paleoindian period, roughly 11,000 to 9,600 B.C. A 1989–1990 excavation in Lower Town recovered 1,585 artifacts — ceramics, stone tools, postholes and hearths — from Late Archaic and Early Woodland occupations around 1200 to 500 B.C. By the time Europeans arrived about 1600, the valley had held no permanent villages for nearly a century; Tuscarora and Shawnee people lived there in temporary settlements, and Iroquois raiding parties used it as a road south. The 1744 Treaty of Lancaster, in which the Iroquois sold their land claims to the Virginia colony, pushed Native nations west of the Alleghenies. The 2017 ethnographic overview found no federally recognized tribes in the vicinity, and acknowledges that the park has devoted more of its resources to the town’s historic remains than to its pre-contact past. <a href=\"https://npshistory.com/publications/hafe/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hafe/eoa.pdf",
+          "title": "Bailey, Ethnographic Overview and Assessment Study of Harpers Ferry NHP (NPS, 2017), ch. 2, Native American Presence, pp. 15–18",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Potomac cuts through the Blue Ridge; V-shaped water gap at The Point; American Indians then European settlers moved through the corridor; Robert Harper started a ferry across the Potomac in 1747",
+      "sourceUrl": "https://npshistory.com/publications/hafe/index.htm",
+      "locator": "overview, paragraphs 1–2"
+    },
+    {
+      "claim": "Jefferson: view of the confluence 'perhaps one of the most stupendous in nature' and 'worth a voyage across the Atlantic'; key crossroads from the earliest human habitation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Significance statement 1, p. 6"
+    },
+    {
+      "claim": "Congress authorized the armory June 15, 1796; production began 1801; nation's second federal armory",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Park Background, p. 3"
+    },
+    {
+      "claim": "Interchangeability of parts tried and tested; transformed Harpers Ferry from a quiet rural village to one of the leading industrial centers of its day",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Significance statement 3, p. 6"
+    },
+    {
+      "claim": "October 1859 John Brown and followers seized the armory, determined to arm enslaved people and spark rebellion; raid failed; trial and execution propelled the nation toward civil war",
+      "sourceUrl": "https://npshistory.com/publications/hafe/index.htm",
+      "locator": "overview, paragraph 3",
+      "interpretive": true
+    },
+    {
+      "claim": "Harpers Ferry changed hands eight times during the Civil War",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Park Background, p. 3; significance statement 5"
+    },
+    {
+      "claim": "September 1862: Stonewall Jackson captured nearly 12,700 Union soldiers; largest surrender of US troops during the Civil War",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Park Background, p. 3; significance statement 6, p. 6"
+    },
+    {
+      "claim": "Storer College established 1867 as a school primarily for former slaves; site of the second Niagara Movement convention in 1906 where Du Bois presented a strategy for civil rights; conventions led to the NAACP in 1909",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Significance statements 7–8, p. 6; Park Background p. 4"
+    },
+    {
+      "claim": "Harpers Ferry National Monument authorized 1944 (PL 78-386); renamed national historical park 1963; 3,745 acres primarily in WV with lands in MD and VA",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Park Background, p. 3"
+    },
+    {
+      "claim": "Establishment dates: National Monument June 30, 1944; National Historical Park May 29, 1963",
+      "sourceUrl": "https://npshistory.com/publications/hafe/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Jefferson County had twice as many slaves as any other county in present-day West Virginia; 4,157 enslaved in 1840, 4,341 in 1850; 27% of population in 1860",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Slavery, p. 44"
+    },
+    {
+      "claim": "In Harpers Ferry and Bolivar most slave-owners held one or two people (1850, 1860 censuses); slaves bought and sold frequently",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Slavery, p. 44"
+    },
+    {
+      "claim": "1857 Virginia Free Press: sale of free Negroes in front of the Charlestown court house, sold by order of the court for remaining in the state contrary to law",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Slavery, pp. 44–45"
+    },
+    {
+      "claim": "Runaway advertisements referenced Pennsylvania; Virginia Slave Insurance Company established in Charles Town to insure against losses by runaways",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Slavery, p. 45"
+    },
+    {
+      "claim": "October 16, 1859, Brown led his Provisional Army of 21 men; 100,000 arms stored in the arsenal; first man to die was Heyward Shepherd, African American baggage handler for the B&O",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, p. 23"
+    },
+    {
+      "claim": "By noon on October 17 drunken vigilantes encircled the armory; several raiders were captured and brutally executed; 90 Marines under Robert E. Lee; Brown captured at daybreak October 18, 1859",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 7, pp. 58–59"
+    },
+    {
+      "claim": "Contrabands, as runaway slaves were called, poured into Harpers Ferry",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Contrabands, p. 47"
+    },
+    {
+      "claim": "Mid-to-late 1860s about 700 African Americans in Harpers Ferry, double the pre-war population; 1864 Freewill Baptist school for refugee slaves in Lockwood House, former residence of the armory paymaster",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Reconstruction, p. 48"
+    },
+    {
+      "claim": "Storer classes began October 2, 1867 with nineteen students at the Lockwood House",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Reconstruction, p. 49"
+    },
+    {
+      "claim": "Students bullied by local residents; had to be escorted into town by hired militiamen",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 3, Reconstruction, p. 49"
+    },
+    {
+      "claim": "For 25 years Storer was the only institution in West Virginia to provide African Americans a secondary and post-secondary education",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, p. 27"
+    },
+    {
+      "claim": "Frederick Douglass among the first trustees",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hafe-fd-2016.pdf",
+      "locator": "Park Background, p. 4"
+    },
+    {
+      "claim": "Niagara Movement: Harpers Ferry the site of its first meeting in the United States; attendees walked from Storer to the fort, barefoot as they approached; leaders photographed August 17, 1906",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 4, p. 140, Figure 56"
+    },
+    {
+      "claim": "Storer College closed permanently in 1955; the State of West Virginia withdrew its support in 1955",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 4, p. 107"
+    },
+    {
+      "claim": "1801: Superintendent Perkin and 28 armorers produced 293 flintlock muskets",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 2, p. 12"
+    },
+    {
+      "claim": "May 1810: armory of 28 buildings employed almost 200 workers",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 2, p. 23"
+    },
+    {
+      "claim": "Early workforce of highly skilled gunsmiths each making a whole stock or lock",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 5, p. 29"
+    },
+    {
+      "claim": "Superintendent Thomas Dunn (1829) posted strict rules and inspections that cut piece-work wages; murdered in early 1830 by Ebenezer Cox, who became a folk hero among armory workers",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 5, p. 42",
+      "interpretive": true
+    },
+    {
+      "claim": "Major Henry Craig (1841) established a standard workday reinforced by a clock; entire workforce struck for a week in 1842; delegation to President Tyler; 'mere machines of labor'; Congress and Tyler established military superintendents at all U.S. armories",
+      "sourceUrl": "https://npshistory.com/publications/hafe/hrs-armory.pdf",
+      "locator": "ch. 5, pp. 42–43, fn. 35"
+    },
+    {
+      "claim": "Paleoindian period 11,000–9,600 B.C. in the Shenandoah Valley",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, Native American Presence, p. 15"
+    },
+    {
+      "claim": "Lower Town excavation 1989–1990 recovered 1,585 prehistoric items, Late Archaic and Early Woodland (c. 1200–500 B.C.), including ceramic sherds, lithics, postholes, hearth features",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, p. 17"
+    },
+    {
+      "claim": "By European contact c. 1600 no permanent settlements for nearly 100 years; only Tuscarora and Shawnee in temporary villages; Iroquois raiding parties used the valley as a route to attack southern tribes",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, p. 16"
+    },
+    {
+      "claim": "1744 Treaty of Lancaster: Iroquois sold their land claims to the Virginia Colony and moved west of the Allegheny Mountains",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, p. 17"
+    },
+    {
+      "claim": "No federally recognized tribes in the vicinity; park has devoted more resources to historical remains than pre-Contact past",
+      "sourceUrl": "https://npshistory.com/publications/hafe/eoa.pdf",
+      "locator": "ch. 2, pp. 17–18",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/hafe/lower-town-from-maryland-heights.jpg",
+      "caption": "Lower Town Harpers Ferry seen from Maryland Heights",
+      "credit": "NPS Photo/Shenandoah Sanchez",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/hafe/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C829352-1DD8-B71B-0BEB6383BF4B9277.jpg",
+      "evidenceUrl": "https://www.nps.gov/hafe/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 801,
+      "bytes": 210710,
+      "note": "On-page figcaption: \"View of Lower Town Harpers Ferry as seen from Maryland Heights\" with credit span \"NPS Photo/Shenandoah Sanchez\" (park homepage carousel). Resized from 3068x2048."
+    },
+    {
+      "file": "images/history/hafe/john-browns-fort-winter.jpg",
+      "caption": "John Brown’s Fort in winter",
+      "credit": "NPS Photo/Holden Mills",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/hafe/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C82991A-1DD8-B71B-0B1F106943DF2E48.jpg",
+      "evidenceUrl": "https://www.nps.gov/hafe/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "slavery",
+      "width": 1400,
+      "height": 940,
+      "bytes": 251430,
+      "note": "On-page figcaption: \"John Brown's Fort in Winter\" with credit span \"NPS Photo/Holden Mills\" (park homepage carousel). Resized from 3650x2452."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/hafe/index.htm",
     "adhiUrl": "https://npshistory.com/publications/hafe/adhi.pdf",

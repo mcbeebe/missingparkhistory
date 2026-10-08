@@ -2,15 +2,225 @@
   "code": "CHRI",
   "name": "Christiansted National Historic Site",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-08",
+  "author": "author-E-2026-10-08",
   "verifiedBy": "",
-  "summary": "<p>Christiansted National Historic Site on the island of St. Croix in the U.S. Virgin Islands preserves several colonial-era structures in the historic waterfront town of Christiansted, the former capital of the Danish West Indies. The site includes Fort Christiansvaern (built 1738–1749), the Danish West India and Guinea Company Warehouse, the Steeple Building, and the Scale House — all built during Denmark's colonial rule of the island from 1733 to 1917. The economy of Danish St. Croix was driven by sugar plantation agriculture dependent on the labor of enslaved Africans, who constituted the vast majority of the island's population. The site was designated in 1952 to preserve this colonial history and was one of the first NPS units in the Virgin Islands.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>On the harbor of St. Croix’s northeast coast, a three-block stretch of waterfront holds what the Park Service calls one of the most complete and best-preserved groups of 18th- and 19th-century Danish colonial buildings in the New World: Fort Christiansvaern, the Danish West India &amp; Guinea Company Warehouse, the Customs House, the Scale House where hogsheads of sugar and puncheons of rum were weighed for export, and the Steeple Building, St. Croix’s first Lutheran church. The Danish company bought the island from France in 1733 and laid out Christiansted, named for King Christian VI, around a good harbor; a progressive 1747 building code gave the town its arcades, galleries and neoclassical lines. <a href=\"https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/chri/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The wealth in those walls was made by enslaved Africans. In 1803 St. Croix had 30,000 people, 26,500 of them enslaved, working cane on 218 plantations, and for a time it was one of the wealthiest sugar islands in the West Indies. The Park Service names the site’s central significance plainly: this is where tens of thousands of enslaved Africans were landed and sold at auction. Slavery was abolished in 1848. The United States bought the islands for $25 million in gold, and the transfer at Fort Christiansvaern and two other venues on March 31, 1917, created the U.S. Virgin Islands. <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Civic-minded residents petitioned the federal government to protect the fort and its buildings, and the site was established as Virgin Islands National Historic Site on March 4, 1952. <a href=\"https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/chri/index.htm",
+      "title": "NPSHistory.com: Christiansted National Historic Site archive page — overview (from the 2004 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "title": "Foundation Document Overview, Christiansted National Historic Site, U.S. Virgin Islands (NPS, 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/chri/cli-2021.pdf",
+      "title": "Cultural Landscapes Inventory: Christiansted National Historic Site (NPS, 2021)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>From settlement in 1734 until Denmark ended its slave trade in 1803, tens of thousands of Africans — the exact number is not known — were shipped to St. Croix. Survivors of the Middle Passage were auctioned at the Company’s compound — a warehouse complex built by enslaved Africans the Company owned, where, the Park Service says, people were sold in the courtyard until the 1750s. On the plantations they worked dawn to dark six days a week and around the clock at harvest, lived in masonry huts they built themselves in rows arranged for control, and kept African language, religion and foods alive. <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/places/danish-west-india-and-guinea-company-warehouse.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Captured leaders of the 1733 uprising on St. John helped build the fort; in the early 1800s its prison held mostly enslaved plantation workers. Beside its doors, exposed ground marks the whipping post where enslaved people were publicly brutalized. The fort is now part of the National Underground Railroad Network to Freedom. <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/chri/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/places/fort-christiansvaern.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/chri/index.htm",
+          "title": "NPSHistory.com: Christiansted archive page — brochure text (2004): Life of the Blacks; Exports and Imports; Regulars and Militia",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/places/danish-west-india-and-guinea-company-warehouse.htm",
+          "title": "NPS, Danish West India and Guinea Company Warehouse (nps.gov place page)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/chri/cli-2021.pdf",
+          "title": "Cultural Landscapes Inventory: Christiansted NHS (2021), land use history",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/places/fort-christiansvaern.htm",
+          "title": "NPS, Fort Christiansvaern (nps.gov place page)",
+          "type": "nps"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>In slavery’s shadow a distinct class of Free Blacks grew up on St. Croix. Some were freed for service; others bought their freedom with money earned as artisans or from produce sold at the Sunday Market. They worked as merchants, fishermen, seamen, tailors, coopers and blacksmiths, filled the fire brigade and served in the militia, and many of the anonymous masons and carpenters who built Christiansted’s neoclassical town were Free Blacks. As early as 1747 a section of town, Neger Gotted — later Free Gut — was set aside for them to build their own houses. Their number more than doubled between 1791 and 1815, from 775 to 1,764, but not until 1834 were they granted full equality with whites. <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/chri/index.htm",
+          "title": "NPSHistory.com: Christiansted archive page — brochure text (2004): Free Blacks; In the West Indian Style; Regulars and Militia",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>St. Croix’s first settlers came up the Lesser Antilles from South America. By 2,000 years ago there was a village at Salt River Bay on the north shore, and by 1300 it had the only ceremonial plaza and ball court so far found in the Lesser Antilles. On his second voyage, in 1493, Columbus named the island Santa Cruz and sent a boat ashore; it met Kalinago people (the brochure calls them Caribs) in a canoe, and the fight that followed, at what became known as the Cape of the Arrows, is considered the first armed resistance to European encroachment in the Americas. Over the next century the Spanish wiped out the island’s Kalinago population. The park’s museum holds what it calls a world-class archeological collection documenting St. Croix’s Amerindian cultures. <a href=\"https://npshistory.com/publications/chri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/chri/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/chri/index.htm",
+          "title": "NPSHistory.com: Christiansted archive page — brochure text (2004): Before the Danes",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/chri/cli-2021.pdf",
+          "title": "Cultural Landscapes Inventory: Christiansted NHS (2021), site history pp. 2–3",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+          "title": "Foundation Document Overview, Christiansted NHS (2015), significance statements",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "One of the most complete and best preserved assemblages of 18th and 19th century Danish colonial administrative buildings and military fortifications in the New World",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "locator": "Significance, bullet 1"
+    },
+    {
+      "claim": "Historic buildings located within a three-block area along the waterfront",
+      "sourceUrl": "https://npshistory.com/publications/chri/cli-2021.pdf",
+      "locator": "Summary, p. 3"
+    },
+    {
+      "claim": "Scale House (1856): hogsheads of sugar and puncheons of rum weighed before export; Steeple Building St. Croix's first Lutheran church; Fort Christiansvaern completed 1749",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Visiting the Park' walking tour"
+    },
+    {
+      "claim": "DWI&G Company purchased St. Croix from France in 1733; Christiansted named for King Christian VI; first settlement on a good harbor on the northeast coast",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "overview paragraphs 1–2"
+    },
+    {
+      "claim": "1747 building code; arcaded sidewalks, galleries, neoclassical style",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'In The West Indian Style'"
+    },
+    {
+      "claim": "1803 population 30,000, 26,500 slaves, 218 plantations; for a time one of the wealthiest sugar islands in the West Indies",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'The Sugar Plantation'"
+    },
+    {
+      "claim": "Site where tens of thousands of enslaved Africans were transported, disembarked and sold at auction",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "locator": "Significance, bullet 2"
+    },
+    {
+      "claim": "Slavery abolished in 1848",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "overview paragraph 4"
+    },
+    {
+      "claim": "U.S. acquired the Danish West Indies March 31, 1917 for $25 million in gold coin; Fort Christiansvaern one of three venues for the transfer ceremony, creating the U.S. Virgin Islands",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "locator": "Description; Significance bullet 5"
+    },
+    {
+      "claim": "Established by Secretarial Order as Virgin Islands NHS March 4, 1952, the result of civic-minded citizens who petitioned the federal government to protect the fort and associated buildings",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "From 1734 to the abolition of Denmark's slave trade in 1803, tens of thousands of blacks — exact number not known — shipped to St. Croix; survivors herded into the DWI&G compound and auctioned",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Life of the Blacks'; 'Exports and Imports'"
+    },
+    {
+      "claim": "Warehouse complex finished 1749, built by enslaved Africans owned by the Company; enslaved Africans sold in the courtyard until the 1750s",
+      "sourceUrl": "https://www.nps.gov/places/danish-west-india-and-guinea-company-warehouse.htm",
+      "locator": "main text paragraph 2"
+    },
+    {
+      "claim": "Worked dawn to dark six days a week; around the clock at crop time; masonry huts they built themselves arranged in rows for control; African customs persisted in language, religion and foods",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Life of the Blacks'"
+    },
+    {
+      "claim": "Captured leaders of the 1733 slave uprising on St. John did some of the fort's construction work",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Regulars and Militia'"
+    },
+    {
+      "claim": "Early 1800s the fort functioned as a prison/dungeon, with mostly enslaved plantation workers as prisoners",
+      "sourceUrl": "https://npshistory.com/publications/chri/cli-2021.pdf",
+      "locator": "Land use, Military land use paragraph, p. 44"
+    },
+    {
+      "claim": "Exposed ground marks the location of the whipping post where enslaved people were publicly brutalized; Christiansted NHS part of the National Underground Railroad Network to Freedom",
+      "sourceUrl": "https://www.nps.gov/places/fort-christiansvaern.htm",
+      "locator": "main text"
+    },
+    {
+      "claim": "Free Blacks: freed for faithful service or bought freedom; occupations; filled fire brigade and served in militia; many masons and carpenters were Free Blacks",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Free Blacks'; 'Regulars and Militia'; 'In The West Indian Style'"
+    },
+    {
+      "claim": "1747 Neger Gotted (later Free Gut) set aside for Free Blacks; 1791–1815 rose from 775 to 1,764; full equality with whites not until 1834",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Free Blacks'"
+    },
+    {
+      "claim": "First settlers from South America; settlement at Salt River Bay by 2,000 years ago; by 1300 the only ceremonial plaza/ball court so far discovered in the Lesser Antilles; Columbus 1493 named the island Santa Cruz",
+      "sourceUrl": "https://npshistory.com/publications/chri/index.htm",
+      "locator": "'Before the Danes'"
+    },
+    {
+      "claim": "1493 longboat encountered Kalinagos in a canoe; armed conflict; Cape of the Arrows; considered the first example of armed resistance to European encroachment in the Americas; Spanish extirpated the local Kalinago population over the next century",
+      "sourceUrl": "https://npshistory.com/publications/chri/cli-2021.pdf",
+      "locator": "Summary, pp. 2–3",
+      "interpretive": true
+    },
+    {
+      "claim": "Museum collection includes a world-class archeological resource collection documenting St. Croix's Amerindian cultures",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/chri-fd-overview.pdf",
+      "locator": "Significance, bullet 4"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/chri/christiansted-nhs-waterfront.jpg",
+      "caption": "Fort Christiansvaern, the Customs House, Scale House, Company Warehouse and Steeple Building on the Christiansted waterfront",
+      "credit": "NPS Photo: Diaz",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/chri/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/B6133863-E4BF-A90C-C005C0E5ACFDE6C1.jpg",
+      "evidenceUrl": "https://www.nps.gov/chri/index.htm",
+      "note": "On-page caption: \"Fort Christiansvaern, the Danish Customs House, Scale House, Danish West Inda and Guinea Co Warehouse and Steeple Building make up Christiansted NHS NPS Photo: Diaz\"; alt text \"View of the Christiansted NHS complex\". Resized from 3000x2000.",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 242610,
+      "capturedAt": "2026-10-08"
+    },
+    {
+      "file": "images/history/chri/fort-christiansvaern.jpg",
+      "caption": "Fort Christiansvaern, built 1738–1749",
+      "credit": "NPS Photo: Kahle",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/places/fort-christiansvaern.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/cropped_image/primary/F1E0777E-096B-A79A-6FD22DC55F9034EB.jpg",
+      "evidenceUrl": "https://www.nps.gov/places/fort-christiansvaern.htm",
+      "themeKey": "slavery",
+      "note": "On-page caption: \"Fort Christiansvaern NPS Photo: Kahle\". Build dates from the same page (\"Built between 1738-1749\"). Resized from 3000x1687.",
+      "width": 1600,
+      "height": 899,
+      "bytes": 234949,
+      "capturedAt": "2026-10-08"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/chri/index.htm",
     "adhiUrl": null,

@@ -1,16 +1,279 @@
 {
   "code": "GATE",
   "name": "Gateway National Recreation Area",
-  "entries": [],
+  "entries": [
+    "249"
+  ],
   "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
+  "lastReviewed": "2026-10-08",
+  "author": "author-D-2026-10-08",
   "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>Gateway National Recreation Area wraps around the mouth of New York Harbor, the stretch of water long called the “Gateway to America.” Its more than 26,000 acres reach from Sandy Hook in New Jersey along the south shore of Staten Island to Jamaica Bay and Breezy Point in Brooklyn and Queens — about 75 miles of shoreline, 31 of them ocean beach. Assembled from city parks, military posts and undeveloped land, it protects dunes, salt marsh islands and, at Sandy Hook, two globally imperiled kinds of barrier-island forest, maritime red-cedar woodland and maritime holly forest. More than 330 species of birds have been recorded here along the Atlantic Flyway. <a href=\"https://npshistory.com/publications/gate/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The human story is as layered as the shoreline. The Sandy Hook Light, first lit in 1764, is the oldest continuously operating lighthouse in the nation; the Army opened its first weapons proving ground on the Hook in 1874; Fort Wadsworth guarded the Narrows for two centuries; and Floyd Bennett Field opened in 1931 as New York City’s first municipal airport, and during World War II the busiest military airport in the United States. <a href=\"https://npshistory.com/publications/gate/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Congress established Gateway on October 27, 1972, as one of the first urban parks in the National Park System. Its foundation document counts more than 800 historic buildings, structures, landscapes and archeological sites, many already in poor condition when the park inherited them, and names the work ahead plainly: responding to climate change and sea level rise in a park whose resources lie almost entirely at the water’s edge. <a href=\"https://npshistory.com/publications/gate/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/gate/index.htm",
+      "title": "NPSHistory.com: Gateway National Recreation Area archive page — overview (NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "title": "Foundation Document, Gateway National Recreation Area, New Jersey–New York (NPS, 2017)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>For thousands of years before the Dutch arrived, the northern shores of Jamaica Bay were home to the Canarsie, and the Rockaway peninsula to the Rechquaakie, “people of the sandy places” — both Lenape-speaking peoples of the Algonquian world, according to the Park Service’s 2012 ethnographic overview. They gathered from the bay’s shellfish beds, leaving shoreline middens of oyster shell that the first European writers noticed, and farmed a cornfield that stretched for miles across southeastern Brooklyn. From 1635, when Dutch settlers began building villages on land “purchased” from the Canarsie, warfare, disease and migration steadily weakened the Native communities; the authors date the death of the last known Canarsie person to 1830. Their legacy survives largely in place names: Rockaway, and perhaps Jamaica itself, which the report suggests may come from an Algonquian word for “place of the beaver.” <a href=\"https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+          "title": "Kornblum & Van Hooreweghe, The Changing Traditional Uses of Jamaica Bay, New York: Ethnographic Overview and Assessment (NPS Northeast Region Ethnography Program, 2012), ch. 2",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>The land under Floyd Bennett Field was once Barren Island, for much of the nineteenth century New York City’s offal depot and grease factory. A rendering and fish-oil industry began there in 1845; by 1884 about 500 people worked in its plants, and at its peak in the 1920s and early 1930s the island held close to 1,500 residents — African American, Irish, Italian and Polish families whose children picked over mountains of garbage while their parents worked the try works. In 1936 Parks Commissioner Robert Moses moved to raze the community for the Marine Parkway Bridge approaches; one former resident remembered the western half being evicted and about 30 families staying on to 1939. Jane Shaw, for nineteen years the island school’s principal and only teacher, fought for time to let her pupils finish the school year, and won. The 2012 ethnographic overview likens the eviction to the removal of Seneca Village for Central Park, as another case of the powerless being cleared to make valuable public places. <a href=\"https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+          "title": "Kornblum & Van Hooreweghe, The Changing Traditional Uses of Jamaica Bay (NPS, 2012), ch. 2, “The Legacy of Community Solidarity and Defended Neighborhoods”",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Riis Park’s beach was rebuilt by Robert Moses under a 1936 plan, and in 1974 more than three million people visited its mile and a half of sand. When sociologists Terry Williams and William Kornblum studied it for the Park Service in the mid-1970s, they found it organized into territories: on summer weekends Bay 5 was the beach of Black and Latino New Yorkers — West Indians, Cubans, Puerto Ricans — with perhaps 30,000 people there on one July 4th, drums, card games and parties into the night. The authors observed pointedly that the crowd hardly matched the middle-class white family the Park Service was comfortable serving, and urged caution before strict enforcement. A 2000 Park Service study found Bays 5 and 6 still Black and Hispanic but more mixed, reflecting a quarter-century of immigration from all over the world to Brooklyn and Queens. <a href=\"https://npshistory.com/publications/gate/jacob-riis.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+          "title": "Terry Williams & William Kornblum, Segregation and Use at Riis Park (CUNY Cooperative Park Studies Unit, NPS Research Paper #5, c. 1975), pp. 4–13",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+          "title": "Low, Scheid, Taplin & Honey, Rapid Ethnographic Assessment Procedure for Jacob Riis Park (CUNY Public Space Research Group for NPS, August 30, 2000)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "lgbtq": {
+      "html": "<p>At the eastern end of the beach, Bays 1 and 2 were in the mid-1970s the home of a large gay community whose use of the beach, Williams and Kornblum reported, already went back more than twenty years; on an average day Bay 1 was about 70 percent gay and Bay 2 about 90 percent. They quoted Arthur Evans, writing in the gay publication The Advocate, on Riis as a haven — one place gay people could be openly themselves. A quarter-century later, the Park Service’s 2000 ethnographic assessment found Bay 1 still a gay beach. Visitors described it as a space of freedom and liberation, one of the few beaches where they felt safe; some suspected that its neglected bathrooms and missing lifeguard reflected discrimination against people who were gay and predominantly Black and Latino. In 2025 the Park Service listed Bay 1 as closed to swimming and access because of hazardous erosion. <a href=\"https://npshistory.com/publications/gate/jacob-riis.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> <a href=\"https://www.nps.gov/gate/learn/historyculture/jacob-riis-park.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+          "title": "Williams & Kornblum, Segregation and Use at Riis Park (NPS Research Paper #5, c. 1975), “Gay Men and Lesbian Women,” pp. 10–11",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+          "title": "Rapid Ethnographic Assessment Procedure for Jacob Riis Park (NPS, 2000), Bay 1 findings",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/gate/learn/historyculture/jacob-riis-park.htm",
+          "title": "NPS, Gateway NRA: Jacob Riis Park (nps.gov, last updated May 30, 2025)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Nearly all of Gateway’s natural and cultural resources sit beside the ocean or the bay, and its 2017 foundation document names responding to climate change and sea level rise as the first of the park’s key issues: the park has been changed by the frequency and intensity of recent storms such as Hurricane Sandy, some sites have already seen more flooding, and the park’s marshes and beaches serve as buffers that protect the neighborhoods behind them. When the document was written the park’s planning was still focused on recovering from Sandy. <a href=\"https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> A park climate poster on Jamaica Bay warns that its salt marsh islands, and the wildlife they shelter, are endangered by sea-level rise and human activity, pairing views of Elders Point in 1951 and 2006 with the restoration begun after. <a href=\"https://npshistory.com/publications/gate/poster-cc-jamaica-bay.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[7]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+          "title": "Foundation Document, Gateway NRA (2017) — Key Issues: Responding to Climate Change and Sea Level Rise",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/gate/poster-cc-jamaica-bay.pdf",
+          "title": "NPS poster, Changes in Sea Level at Jamaica Bay (Gateway NRA, Climate Friendly Parks, undated)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Area known for more than a century as the 'Gateway to America'; more than 26,000 acres from Sandy Hook NJ along south side of Staten Island to Jamaica Bay and Breezy Point; assembled from city parks, military sites, undeveloped land",
+      "sourceUrl": "https://npshistory.com/publications/gate/index.htm",
+      "locator": "overview, 'Gateway to America' para 1"
+    },
+    {
+      "claim": "About 75 miles of shoreline including 31 miles of ocean beaches",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "Fundamental Resources, 'Beaches/Dune System', PDF p. 11"
+    },
+    {
+      "claim": "Maritime red-cedar woodland and maritime holly forest globally imperiled; in the park both occur only at Sandy Hook",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "FRV 'Sandy Hook Maritime Forest', PDF p. 11"
+    },
+    {
+      "claim": "More than 330 species of birds recorded; Atlantic Flyway",
+      "sourceUrl": "https://npshistory.com/publications/gate/index.htm",
+      "locator": "overview, 'Birds Galore'"
+    },
+    {
+      "claim": "Sandy Hook Light first lit 1764; oldest continuously operating light tower in the nation; NHL",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "FRV 'Maritime Resources', PDF p. 11; brochure 'Sandy Hook' (first lighted June 11, 1764)"
+    },
+    {
+      "claim": "1874 U.S. Army established the nation's first weapons proving ground at Sandy Hook; Fort Hancock built 1895",
+      "sourceUrl": "https://npshistory.com/publications/gate/index.htm",
+      "locator": "overview, 'Fort Hancock'"
+    },
+    {
+      "claim": "Fort Wadsworth guarded the entrance to New York Harbor for 200 years",
+      "sourceUrl": "https://npshistory.com/publications/gate/index.htm",
+      "locator": "overview, 'Fort Wadsworth'"
+    },
+    {
+      "claim": "Floyd Bennett Field opened as NYC's first municipal airport May 23, 1931; passed to U.S. Navy 1942; busiest military airport in the U.S. during WWII",
+      "sourceUrl": "https://npshistory.com/publications/gate/index.htm",
+      "locator": "overview, 'City by the Sea'"
+    },
+    {
+      "claim": "Congress established Gateway in 1972 as one of the first urban parks in the National Park System; signed into law October 27, 1972",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "Park Purpose, PDF p. 8; archive page overview and Establishment block"
+    },
+    {
+      "claim": "More than 800 historic buildings, structures, landscapes and archeological sites; significance not clearly understood at establishment; many already in poor condition",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "Key Issues 'Preserving Gateway's Heritage', PDF p. 17"
+    },
+    {
+      "claim": "Climate change and sea level rise key issue; Hurricane Sandy; some places already experienced increases in storm flooding; park sites act as buffer zones protecting upland communities; park focused on Hurricane Sandy recovery",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gate-fd-2017.pdf",
+      "locator": "Key Issues, PDF p. 17; Planning Needs, PDF p. 18"
+    },
+    {
+      "claim": "Northern shores occupied by the Canarsie; Rockaways by the Rechquaakie ('people of the sandy places'); both of the Lenape branch of the Algonquian peoples",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "ch. 2, 'Historic Periods and Turning Points', printed p. 22 (PDF p. 35)"
+    },
+    {
+      "claim": "Use of shellfish beds; oyster-shell middens noted by Europeans; great cornfield extending several miles across southeast Brooklyn",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 22 (PDF p. 35)"
+    },
+    {
+      "claim": "From 1635 Dutch settlers established villages on land 'purchased' from the Canarsie; death of the last known Canarsie Indian in 1830; weakening through warfare, disease, outward migration",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 23 (PDF p. 36)"
+    },
+    {
+      "claim": "Jamaica may derive from Yau-may-ko, 'Place of the Beaver'",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 23 (PDF p. 36)",
+      "interpretive": true
+    },
+    {
+      "claim": "1845 offal rendering and fish-oil industry began on Barren Island (now Floyd Bennett Field); about 500 workers by 1884",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 23 (PDF p. 36)"
+    },
+    {
+      "claim": "Barren Island the city's offal depot and grease factory; African-American, Irish, Italian, Polish families; youth picked over garbage; population close to 1,500 at peak in 1920s–early 1930s",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 33 (PDF p. 46)"
+    },
+    {
+      "claim": "Eviction in 1936; west half of island evicted; for Marine Parkway Bridge approaches; Miss Jane Shaw principal and only teacher for nineteen years, fought to let pupils finish the school year and succeeded",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed pp. 32–34 (PDF pp. 45–47); former resident quote (citynoise.org 2007) on west-half eviction and ~30 families 1936–39"
+    },
+    {
+      "claim": "EOA compares Barren Island eviction to removal of Irish and African American settlers of Seneca Village — 'removal of the powerless to create valuable public places'",
+      "sourceUrl": "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf",
+      "locator": "printed p. 32 (PDF p. 45)",
+      "interpretive": true
+    },
+    {
+      "claim": "Moses's Riis Park reconstruction plan issued in 1936, tied to Marine Parkway Bridge",
+      "sourceUrl": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+      "locator": "Site history, report pp. 5–6 (PDF p. 5)"
+    },
+    {
+      "claim": "Over 3 million people visited the 1.5 miles of beach in 1974",
+      "sourceUrl": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+      "locator": "p. 5"
+    },
+    {
+      "claim": "Bay 5 occupied by Blacks and Latins on weekends (West Indians, Cubans, Puerto Ricans); July 4 perhaps 30,000; Bay 5 exclusively Black and Latin on summer weekends",
+      "sourceUrl": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+      "locator": "pp. 8–9, 12"
+    },
+    {
+      "claim": "Visitors 'hardly conform to the ideal of the middle class white American family which the National Park Service is comfortable in serving'; reefer smoking, nudity, gay activity etc. should be carefully considered before stringent enforcement",
+      "sourceUrl": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+      "locator": "pp. 6, 10",
+      "interpretive": true
+    },
+    {
+      "claim": "Segregation and Use at Riis Park dated: REAP identifies the Gateway report written by William Kornblum in 1975 identifying Bays 1–2 gay and Bays 5–6 Black American",
+      "sourceUrl": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+      "locator": "report p. 7 (PDF p. 7)"
+    },
+    {
+      "claim": "In 2000 Bays 5 and 6 no longer solely Black American; diverse Black Caribbean Americans, Black Americans, Hispanics; reflects demographic change in Brooklyn and Queens over past 25 years",
+      "sourceUrl": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+      "locator": "PDF p. 7"
+    },
+    {
+      "claim": "Large gay community in Bays 1 and 2 through summer; use dates back over 20 years; Bay 1 about 70% gay, Bay 2 about 90%; Arthur Evans in The Advocate quoted describing Riis as a haven",
+      "sourceUrl": "https://npshistory.com/publications/gate/jacob-riis.pdf",
+      "locator": "pp. 10–11"
+    },
+    {
+      "claim": "2000: Bay 1 retains its gay identity; most visitors came for tolerant gay-friendly atmosphere; space of freedom and liberation; one of the few beaches with a gay area where they felt safe; some visitors explicitly concerned the park was discriminating against them because they were gay and predominantly Black and Latino; lack of lifeguard (note: REAP elsewhere says most Bay 1 interviewees identified as White American or Hispanic, so prose does not characterize Bay 1 demographics)",
+      "sourceUrl": "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+      "locator": "Bay 1, PDF pp. 7, 10–12"
+    },
+    {
+      "claim": "Bays 1 and 4 closed to swimming and access due to hazardous conditions from erosion",
+      "sourceUrl": "https://www.nps.gov/gate/learn/historyculture/jacob-riis-park.htm",
+      "locator": "Jacob Riis Park page, paragraph 2 (last updated May 30, 2025)"
+    },
+    {
+      "claim": "Salt marsh islands of Jamaica Bay and their wildlife endangered by sea-level rise and human activity; Elder's Point 1951 / 2006 restoration started / 2010 restoration continues",
+      "sourceUrl": "https://npshistory.com/publications/gate/poster-cc-jamaica-bay.pdf",
+      "locator": "poster, single page"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/gate/jamaica-bay-wildlife-refuge.jpg",
+      "caption": "Jamaica Bay Wildlife Refuge, one of the largest bird habitats in the northeastern United States",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/gate/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/67F9854E-0446-FD17-BCC3A6AF7A27924B.jpg",
+      "evidenceUrl": "https://www.nps.gov/gate/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 800,
+      "bytes": 221863,
+      "note": "On-page caption: \"The Jamaica Bay Wildlife Refuge includes over 12,600 acres of water, saltmarshes, freshwater and brackish water ponds, upland fields and woods, and open bay and islands. It is one of the largest bird habitats in the northeastern United States.\" credit \"NPS Photo\". Resized from 5472x3648."
+    },
+    {
+      "file": "images/history/gate/jacob-riis-park.jpg",
+      "caption": "Jacob Riis Park, popular with New York beachgoers for over a century",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/gate/learn/historyculture/jacob-riis-park.htm",
+      "imageUrl": "https://www.nps.gov/gate/learn/historyculture/images/0042.jpg",
+      "evidenceUrl": "https://www.nps.gov/gate/learn/historyculture/jacob-riis-park.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1600,
+      "height": 677,
+      "bytes": 235499,
+      "note": "On-page caption: \"Jacob Riis Park has been popular with New York beachgoers for over a century.\" figcredit \"NPS PHOTO\". Resized from 2430x1028. No themeKey: the image does not show a specific bay."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/gate/index.htm",
     "adhiUrl": null,

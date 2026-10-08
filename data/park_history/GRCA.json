@@ -2,15 +2,205 @@
   "code": "GRCA",
   "name": "Grand Canyon National Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-08",
+  "author": "author-E-2026-10-08",
   "verifiedBy": "",
-  "summary": "<p>Grand Canyon National Park in northern Arizona protects 1,218,375 acres encompassing the most spectacular portion of the Grand Canyon — a 277-mile gorge carved by the Colorado River that exposes nearly two billion years of Earth's geological history. The canyon reaches depths of over a mile, with layered bands of colorful rock revealing the geological story of the North American continent. President Theodore Roosevelt, who first visited in 1903, declared it a national monument in 1908; it became a national park in 1919. Eleven Native American tribes, including the Havasupai, Hualapai, Navajo, and Hopi, have ancestral connections to the canyon. The Grand Canyon was designated a UNESCO World Heritage Site in 1979 and receives over six million visitors annually.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "summary": "<p>Grand Canyon is a twisting, 277-mile gorge of the Colorado River with thousands of miles of side canyons, carved over six million years. Its walls rise more than a mile above the river and expose one of the most complete geological records on Earth, from flat-lying seabed layers full of marine fossils down to basement rock as much as 1.84 billion years old. The park’s 1,218,375 acres run from Sonoran Desert at the bottom to conifer forest on the 8,000-foot North Rim, and 94 percent of it is managed as wilderness. <a href=\"https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People have lived with the canyon for at least 12,000 years, and eleven federally recognized tribes keep strong historical, cultural and spiritual ties to it; the Navajo, Havasupai and Hualapai reservations share its boundary. President Theodore Roosevelt proclaimed 818,560 acres a national monument on January 11, 1908; Congress made it a national park in 1919, and the 1975 Grand Canyon National Park Enlargement Act nearly doubled it, to more than 1.2 million acres. It became a World Heritage Site in 1979, and visitation, averaging about 4.5 million a year, reached 6 million in 2016. <a href=\"https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grca/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s own brochure asks what the canyon’s future holds: Glen Canyon Dam now releases clear, cold water in which native fish adapted to warm, muddy water cannot thrive, and the brochure asks whether one river can meet the Southwest’s growing demand. <a href=\"https://npshistory.com/publications/grca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/grca/index.htm",
+      "title": "NPSHistory.com: Grand Canyon National Park archive page — overview (from the 2019 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf",
+      "title": "Foundation Document Overview, Grand Canyon National Park, Arizona (NPS, 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/grca/adhi.pdf",
+      "title": "Anderson, Polishing the Jewel: An Administrative History of Grand Canyon National Park (2000), ch. 5, p. 67",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>A broken spear point found in Marble Canyon shows a hunter passing through about 11,000 years ago; Puebloan people were farming the rims and river deltas by about 1,500 years ago, and split-twig figurines, masonry rooms and rock art show the canyon sheltering people across some 600 generations. Eleven tribes — Yavapai-Apache, Havasupai, Hopi, Hualapai, Kaibab Paiute, Las Vegas Paiute, Moapa Paiute, Navajo, Paiute Indian, San Juan Southern Paiute and Zuni — still use it for trade, gathering and ceremony. <a href=\"https://npshistory.com/publications/grca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park itself displaced people. Havasupai families farmed Ha’a Gyoh, below the South Rim, until Park Service policies forced them out in the 1920s; in 2022, at the tribe’s request, the place long called Indian Garden was renamed Havasupai Gardens, and the superintendent called the renaming long overdue. The 1975 enlargement act returned 83,800 acres of park land to the Havasupai Tribe and guaranteed traditional use of another 95,300. <a href=\"https://www.nps.gov/grca/learn/news/indian-garden-officially-renamed-to-havasupai-gardens.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grca/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grca/index.htm",
+          "title": "NPSHistory.com: Grand Canyon archive page — brochure text (2019): Adapting to Change; Hunters; Dwellers",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/grca/learn/news/indian-garden-officially-renamed-to-havasupai-gardens.htm",
+          "title": "NPS news release, Indian Garden Now Officially Called Havasupai Gardens (November 21, 2022)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/grca/adhi.pdf",
+          "title": "Anderson, Polishing the Jewel (2000), ch. 5, p. 67",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Much of what visitors picture as the Grand Canyon’s architecture is the work of Mary Elizabeth Jane Colter, a Pittsburgh-born designer hired by the Fred Harvey Company and the Santa Fe Railway. Her Hopi House (1905) replicated part of the Hopi pueblo at Oraibi; Hermit’s Rest and Lookout Studio (both 1914) grew out of the rim’s own rock — “You can’t imagine what it cost to make it look this old,” she told railroad men who found Hermit’s Rest dingy. For the Desert View Watchtower, completed in 1932, she spent about six months studying ancestral towers across the Southwest, and its Hopi Room murals are by the Hopi artist Fred Kabotie. A 1986 Park Service nomination argues that her landscape-shaped buildings helped form the architectural aesthetic for development in the national parks. <a href=\"https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf",
+          "title": "National Register nomination, M.E.J. Colter Buildings (Hopi House, Hermit’s Rest, Lookout Studio, Desert View Watchtower), NPS Southwest Region, 1986",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Grand Canyon is getting hotter. A 2024 Park Service report finds the park warmed significantly from 1895 to 2020 — 1.89 °F per century on average, and at a rate of 6.31 °F per century since 1970 — while total precipitation did not change significantly. Changes in the region already attributed at least in part to human-caused climate change include drier soils, reduced Colorado River flow and a doubling of the area burned by wildfire across the western United States; it projects more drought, larger fires and new threats to archeological sites and historic buildings. <a href=\"https://npshistory.com/publications/grca/nrr-2024-2615.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Mining is the other pressure. In 2012 the Interior Secretary closed about a million acres of federal land in the watershed to new mining claims until 2032, partly because harm to tribal resources could not be mitigated. A 2023 USGS report co-written by Havasupai author Carletta Tilousi maps the exposure risks of uranium mining near Red Butte, a place sacred to the Havasupai, Hopi, Navajo and Zuni. <a href=\"https://npshistory.com/publications/geology/ofr/2023-1092.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grca/nrr-2024-2615.pdf",
+          "title": "Lawrence et al., Historical and Projected Climate Change for Grand Canyon National Park and Surrounding Areas (NPS NRR 2024/2615), Executive Summary",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/geology/ofr/2023-1092.pdf",
+          "title": "Tilousi & Hinck, Expanded Conceptual Risk Framework for Uranium Mining in Grand Canyon Watershed — Inclusion of the Havasupai Tribe Perspective (USGS OFR 2023-1092, v1.1, 2024)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "1,218,375-acre park; 277-mile-long gorge with thousands of miles of side canyons formed during six million years; strata rising more than a mile above the river; one of the most complete geological records on Earth; Sonoran Desert to North Rim coniferous forest",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "Basement rocks formed as much as 1.84 billion years BP; Paleozoic layers contain marine fossils; North Rim elevation 8,000 feet",
+      "sourceUrl": "https://npshistory.com/publications/grca/index.htm",
+      "locator": "'Making Geological History'; 'North Rim'"
+    },
+    {
+      "claim": "More than 1.1 million acres, or 94%, managed as wilderness",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf",
+      "locator": "Significance bullet 3"
+    },
+    {
+      "claim": "Human–Grand Canyon relationship at least 12,000 years; eleven federally recognized tribes maintain strong connections; Navajo, Havasupai and Hualapai reservations share a boundary with the park",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf",
+      "locator": "Significance bullets 5–6; Description"
+    },
+    {
+      "claim": "January 11, 1908 Roosevelt proclamation set aside 818,560 acres as Grand Canyon National Monument; 1919 Congress established the national park; World Heritage Site October 26, 1979; visitation averaged ~4.5 million/yr, 6 million in 2016",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grca-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "Grand Canyon National Park Enlargement Act (P.L. 93-620), January 1975, nearly doubled the park to more than 1.2 million acres",
+      "sourceUrl": "https://npshistory.com/publications/grca/adhi.pdf",
+      "locator": "ch. 5, p. 67"
+    },
+    {
+      "claim": "Glen Canyon Dam (1963) releases clearer, colder water; native fish adapted to more sediment and warmer water cannot thrive; 'can one river meet the increased demand?'",
+      "sourceUrl": "https://npshistory.com/publications/grca/index.htm",
+      "locator": "'The River's Course'; 'Where the River Exits the Park'"
+    },
+    {
+      "claim": "Broken spear point in Marble Canyon about 11,000 years BP; earliest pottery about 1,500 BP when Puebloan people farmed rims and deltas; split-twig figurines, masonry, rock images; 600 generations",
+      "sourceUrl": "https://npshistory.com/publications/grca/index.htm",
+      "locator": "'Adapting to Change'; 'Hunters'; 'Dwellers'"
+    },
+    {
+      "claim": "Eleven traditionally associated tribes named (Yavapai-Apache, Havasupai, Hopi, Hualapai, Kaibab Paiute, Las Vegas Paiute, Moapa Paiute, Navajo, Paiute Indian, San Juan Southern Paiute, Zuni) continue to use the canyon for trade, collecting, and ceremony",
+      "sourceUrl": "https://npshistory.com/publications/grca/index.htm",
+      "locator": "'Dwellers' closing paragraph"
+    },
+    {
+      "claim": "Originally called Ha'a Gyoh; NPS policies forced the Havasupai out; last resident Captain Burro forcibly removed (release gives 1928 in one place and 1926 in the superintendent's quote); November 2022 Board on Geographic Names vote 19-0 renaming Indian Garden to Havasupai Gardens at the tribe's request (Resolution 29-21); superintendent: 'This renaming is long overdue'",
+      "sourceUrl": "https://www.nps.gov/grca/learn/news/indian-garden-officially-renamed-to-havasupai-gardens.htm",
+      "locator": "paragraphs 1–3, 5"
+    },
+    {
+      "claim": "1975 act returned 83,800 acres of park land to the Havasupai Tribe (Manakacha, Topocoba, Tenderfoot Plateau) and ensured traditional use of another 95,300 acres",
+      "sourceUrl": "https://npshistory.com/publications/grca/adhi.pdf",
+      "locator": "ch. 5, p. 67"
+    },
+    {
+      "claim": "Mary Elizabeth Jane Colter born Pittsburgh 1869; hired by Fred Harvey / Santa Fe; Hopi House opened 1905 replicating part of Oraibi pueblo; Hermit's Rest opened 1914 ('You can't imagine what it cost to make it look this old'); Lookout Studio 1914",
+      "sourceUrl": "https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf",
+      "locator": "Section 8, pp. 1–3"
+    },
+    {
+      "claim": "Desert View Watchtower completed 1932; about six months studying Anasazi towers; Hopi Room paintings by Hopi artist Fred Kabotie",
+      "sourceUrl": "https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf",
+      "locator": "Section 8, p. 4"
+    },
+    {
+      "claim": "Hermit's Rest and Lookout Studio served as part of the basis of the developing architectural aesthetic for development in national parks; form prepared 1986",
+      "sourceUrl": "https://npshistory.com/publications/grca/nr-form-colter-bldgs.pdf",
+      "locator": "Statement of Significance; Section 11",
+      "interpretive": true
+    },
+    {
+      "claim": "Park warmed significantly 1895–2020 (1.89 °F/century), faster 1970–2020 (6.31 °F/century); precipitation not significantly changed",
+      "sourceUrl": "https://npshistory.com/publications/grca/nrr-2024-2615.pdf",
+      "locator": "Executive Summary, p. vii"
+    },
+    {
+      "claim": "Detected changes attributed at least in part to anthropogenic climate change: reduced soil moisture, reduced Colorado River flow, doubling of area burned by wildfire across the western U.S.",
+      "sourceUrl": "https://npshistory.com/publications/grca/nrr-2024-2615.pdf",
+      "locator": "Executive Summary, p. vii"
+    },
+    {
+      "claim": "Projected: increasing drought risk, increasing occurrence of large fires, exacerbated threats to archeological resources, cultural landscapes and historic structures",
+      "sourceUrl": "https://npshistory.com/publications/grca/nrr-2024-2615.pdf",
+      "locator": "Executive Summary, pp. vii–viii"
+    },
+    {
+      "claim": "2012 Secretary Salazar closed federal lands in the Grand Canyon watershed (~1 million acres) to new mining claims until 2032; justification that impacts to Tribal resources could not be mitigated",
+      "sourceUrl": "https://npshistory.com/publications/geology/ofr/2023-1092.pdf",
+      "locator": "Abstract; Introduction, pp. 1–3"
+    },
+    {
+      "claim": "Report by Carletta Tilousi (Havasupai Tribe) and Jo Ellen Hinck (USGS); framework applied to Red Butte, sacred gathering place for Havasupai, Hopi, Zuni and Navajo, near active uranium development",
+      "sourceUrl": "https://npshistory.com/publications/geology/ofr/2023-1092.pdf",
+      "locator": "title page; Abstract; p. 3"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/grca/mather-point-sunset.jpg",
+      "caption": "Sunset over the canyon from Mather Point",
+      "credit": "NPS/M. Quinn",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grca/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/6C7F2214-CE4D-E366-A283BE0F4E65F83B.jpg",
+      "evidenceUrl": "https://www.nps.gov/grca/index.htm",
+      "note": "On-page caption: \"Dramatic sunset from Mather Point NPS/M. Quinn\"; alt text \"At Sunset, swirling rain clouds above a vast canyon filled with colorful peaks and cliff walls.\" Resized from 1969x1531.",
+      "width": 1400,
+      "height": 1088,
+      "bytes": 226330,
+      "capturedAt": "2026-10-08"
+    },
+    {
+      "file": "images/history/grca/havasupai-gardens-fall.jpg",
+      "caption": "Havasupai Gardens, formerly called Indian Garden, in fall color",
+      "credit": "NPS Photo/K. Pitts",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grca/learn/news/indian-garden-officially-renamed-to-havasupai-gardens.htm",
+      "imageUrl": "https://www.nps.gov/grca/learn/news/images/50673539216_50962040f5_o.jpg",
+      "evidenceUrl": "https://www.nps.gov/grca/learn/news/indian-garden-officially-renamed-to-havasupai-gardens.htm",
+      "themeKey": "indigenous",
+      "note": "On-page caption: \"Havsupai Gardens during fall colors NPS Photo/K. Pitts\" (spelling as on page). Original file, 1200x675.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 242865,
+      "capturedAt": "2026-10-08"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/grca/index.htm",
     "adhiUrl": "https://npshistory.com/publications/grca/adhi.pdf",
