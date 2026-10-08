@@ -1,16 +1,233 @@
 {
   "code": "GRTE",
   "name": "Grand Teton National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Grand Teton National Park in northwestern Wyoming protects the Teton Range — one of the youngest mountain ranges in the Rocky Mountains, rising abruptly over 7,000 feet above the valley floor of Jackson Hole without foothills. The park was established in 1929, originally protecting only the mountains themselves, and was expanded in 1950 to include much of Jackson Hole valley after John D. Rockefeller Jr. quietly purchased and donated 35,000 acres of ranchland. The park encompasses glacial lakes, alpine meadows, and the headwaters of the Snake River, and supports wildlife populations including grizzly bears, wolves, bison, and one of the largest elk herds in North America. Together with adjacent Yellowstone National Park and surrounding national forests, Grand Teton is part of the Greater Yellowstone Ecosystem, one of the last remaining large, intact temperate ecosystems on Earth.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "720"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-D-2026-10-08",
+  "verifiedBy": "verifier-D-2026-10-08 (49 claims checked; 9 corrections)",
+  "summary": "<p>With no foothills in the way, the jagged peaks and deep canyons of the Teton Range rise straight out of the valley of Jackson Hole. The rocks at the range’s core, 2.7 billion years old, are among the oldest in North America, yet the mountains are among the youngest in the world: for about 10 million years earthquakes on the Teton fault have lifted the range while the valley floor dropped, until the same rock layers lie nearly 30,000 feet apart. Glaciers up to 3,500 feet thick flowed south from Yellowstone and filled the valley, while alpine glaciers carved the jagged skyline and left moraines that now dam lakes like Jenny Lake. The 310,000-acre park shelters some 1,200 kinds of plants, 300 of birds and more than 60 of mammals. <a href=\"https://npshistory.com/publications/grte/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People have used this valley for roughly 11,000 years, coming seasonally to hunt and gather because the winters were too severe to stay; permanent residents, farmers and ranchers, came only from the mid-1880s. <a href=\"https://npshistory.com/publications/grte/hrs/chap2.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/grte/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Protecting it took half a century of fighting. Congress created a 96,000-acre park around the peaks and lakes on February 26, 1929. John D. Rockefeller Jr., through the Snake River Land Company, bought more than 35,000 acres of the valley floor, and in 1943 President Franklin Roosevelt proclaimed Jackson Hole National Monument — over strong local opposition, including a heavily armed cattle drive across the monument joined by the actor Wallace Beery. A compromise merged park and monument on September 14, 1950, after Rockefeller gave 32,117 acres to the nation; the HRS calls the result the culmination of 50 years of work, often marred by bitter controversy. <a href=\"https://npshistory.com/publications/grte/hrs/chap17.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/grte/index.htm",
+      "title": "NPSHistory.com: Grand Teton National Park archive page — overview (NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "title": "Crockett, ch. 2, The Prehistoric Peoples of Jackson Hole, in Daugherty, A Place Called Jackson Hole: The Historic Resource Study of Grand Teton National Park (NPS, 1999)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "title": "Daugherty, A Place Called Jackson Hole (NPS HRS, 1999), ch. 17, Conservationists",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Jackson Hole’s winters were too severe for year-round living, so for millennia its peoples came in season, following ripening plants and migrating game; the oldest buried cultural deposits in the park date to about 5,850 years ago. The mountain-dwelling people the first trappers met were Eastern Shoshone — the Tukudika, or Sheep-Eaters, who were still without horses when they were placed on the Wind River Reservation around 1868. The Shoshone still keep close ties here: in their belief system high peaks are “Power Mountain,” places to enter the spirit world through visions. <a href=\"https://npshistory.com/publications/grte/hrs/chap2.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Lt. Gustavus Doane, who led a near-disastrous winter expedition into Jackson Hole in 1876, is part of that history too. <a href=\"https://npshistory.com/publications/grte/hrs/chap4.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> In June 2022 Yellowstone’s Mount Doane was renamed First Peoples Mountain; the Yellowstone National Park news release announcing the change states that in 1870 Doane led an attack on a band of Piegan Blackfeet, the Marias Massacre, in which at least 173 people were killed, many of them women, elders and children sick with smallpox, and that he bragged of it for the rest of his life. <a href=\"https://www.nps.gov/yell/learn/news/22022.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> The Blackfeet are among the tribes Grand Teton lists as traditionally associated with the park. <a href=\"https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+          "title": "Crockett, The Prehistoric Peoples of Jackson Hole (HRS ch. 2, 1999), incl. 'The Shoshone in Jackson Hole'",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/grte/hrs/chap4.htm",
+          "title": "Daugherty, A Place Called Jackson Hole (HRS, 1999), ch. 4, Explorers and Scientists",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/yell/learn/news/22022.htm",
+          "title": "NPS Yellowstone news release, “Yellowstone’s Mount Doane name changes to First Peoples Mountain” (June 9, 2022; archived content)",
+          "type": "nps.gov"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf",
+          "title": "Foundation Document, Grand Teton National Park and John D. Rockefeller, Jr. Memorial Parkway (NPS, 2017), Appendix C: Traditionally Associated Tribes",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>When the Bureau of Reclamation dammed Jackson Lake, the shoreline trees were flooded and killed, and dead and downed trees ringed the lake. Clearing them was one of the Civilian Conservation Corps’ biggest undertakings in the valley. Young men aged 17 to 25 were stationed in camps at Leigh Lake, Lizard Point and near Colter Bay, and from 1934 at Camp NP-4 at the south end of Jenny Lake, manned through 1942. Between 1933 and 1937 they cleared the bulk of 7,000 acres of shoreline; by September 1936 crews were finishing the last 85 acres. They also built the Jenny Lake campground, trails to Phelps Lake and Garnet Canyon, telephone lines and staff housing, and several buildings from the Jenny Lake camp, meant to be temporary, were moved elsewhere and, the HRS reports, remain in use. <a href=\"https://npshistory.com/publications/grte/hrs/chap17.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+          "title": "Daugherty, A Place Called Jackson Hole (HRS, 1999), ch. 17, Conservationists — Civilian Conservation Corps section",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Only remnant glaciers remain in the Tetons, and they are shrinking. The park’s 2017 foundation document reports that its glaciers and snowfields are getting smaller each year; records show both advance and retreat, but the overall trend is retreat, and models of Wyoming’s alpine glaciers under projected climate change predict the near-complete disappearance of Teton Glacier within 30 to 75 years. A 1968 USGS map showed 9 named glaciers and about 136 smaller glaciers or perennial snowfields, but the park has never completed a thorough inventory. The same document lists glacier retreat, thinner winter snowpack and lower lake levels among the effects of climate change on the park’s scenery, and notes that landslides and avalanches are exacerbated by increasing climate variability, including more extreme events. <a href=\"https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a> The brochure singles out whitebark pine, a keystone food source for grizzly bears and red squirrels, as sensitive to global climate change. <a href=\"https://npshistory.com/publications/grte/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf",
+          "title": "Foundation Document, Grand Teton NP and John D. Rockefeller, Jr. Memorial Parkway (2017) — scenic and geologic FRV analyses",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/grte/index.htm",
+          "title": "NPSHistory.com: Grand Teton archive page — NPS brochure, 'Forests'",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "No foothills; peaks rise abruptly from Jackson Hole valley; 2.7 billion-year-old core rocks among oldest in North America; mountains among youngest in the world",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "overview, 'Geologic Forces...' para 1"
+    },
+    {
+      "claim": "Teton fault movement beginning 10 million years ago; vertical displacement approaches 30,000 feet",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "overview para 2"
+    },
+    {
+      "claim": "Glaciers up to 3,500 feet thick flowed south from Yellowstone and filled the valley; alpine glaciers sculpted the jagged skyline; moraines dam lakes like Jenny Lake; 310,000-acre park",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "overview para 3"
+    },
+    {
+      "claim": "1,200 plants, 300 birds, over 60 mammals, 12 fish",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "'Enjoy a Safe Visit' para"
+    },
+    {
+      "claim": "Native Americans did not live in the valley year-round because of severe winters; permanent residents from the mid-1880s",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "'Sagebrush Flats' para"
+    },
+    {
+      "claim": "Slim Lawrence collection helped illuminate approximately 11,000 years of human habitation",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "locator": "opening, fn. 1"
+    },
+    {
+      "claim": "Feb 26, 1929 Coolidge signed bill creating a 96,000-acre park including Teton Range and alpine lakes",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "fn. 42"
+    },
+    {
+      "claim": "Snake River Land Company acquired more than 35,000 acres (paid $1,400,310.04 for 35,310.396 acres)",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "fns. ~60–75, land purchase section"
+    },
+    {
+      "claim": "1943 Roosevelt proclamation under Antiquities Act established Jackson Hole National Monument; transferred 130,000 acres from Teton National Forest",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "intro to NPS section; fns. 86–90"
+    },
+    {
+      "claim": "May 2, 1943 heavily armed ranchers trailed some 500 cattle across the monument; Wallace Beery's participation drew national attention",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "fn. 87"
+    },
+    {
+      "claim": "New Grand Teton NP created September 14, 1950 merging most of 1929 park and monument; Dec 16, 1949 Rockefeller conveyed 32,117 acres; 'culmination of 50 years work, often marred by bitter controversy'",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "fn. 93 and following paragraph",
+      "interpretive": true
+    },
+    {
+      "claim": "Prehistoric people resided in the valley seasonally following ripening plants and game",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "locator": "'An Archeological Model...'"
+    },
+    {
+      "claim": "Oldest buried cultural deposits in GRTE radiocarbon-dated to around 5,850 years ago",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "locator": "Early Archaic, fn. 20"
+    },
+    {
+      "claim": "First mountain-dwelling peoples met by trappers known as Sheep-eaters; Tukudika, Eastern Shoshone, still without horses when placed on the Wind River Reservation around 1868",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "locator": "'The Shoshone in Jackson Hole', fns. 35–38"
+    },
+    {
+      "claim": "For modern Shoshone, peaks are 'puhadoya' ('Power Mountain'), access to spirit world through visions or dreams",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap2.htm",
+      "locator": "fn. 42 and preceding paragraph"
+    },
+    {
+      "claim": "1876 Lt. Gustavus Cheney Doane led a small party of soldiers into Jackson Hole; winter expedition; poor planning; lucky to survive",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap4.htm",
+      "locator": "fns. 15–25"
+    },
+    {
+      "claim": "Yellowstone NP news release, June 9, 2022: Mount Doane renamed First Peoples Mountain; 1870 Doane led an attack on a band of Piegan Blackfeet (Marias Massacre); at least 173 killed incl. many women, elderly and children suffering from smallpox; Doane wrote fondly about it and bragged for the rest of his life",
+      "sourceUrl": "https://www.nps.gov/yell/learn/news/22022.htm",
+      "locator": "news release paras 1–3"
+    },
+    {
+      "claim": "Blackfeet Tribe of the Blackfeet Indian Reservation of Montana listed as traditionally associated tribe",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf",
+      "locator": "Appendix C, PDF p. 97"
+    },
+    {
+      "claim": "Jackson Lake dam flooded shoreline trees; CCC enrollees 17–25; camps at Leigh Lake, Lizard Point, 'Hot Springs' near Colter Bay; Camp NP-4 at south end of Jenny Lake built 1934, manned through 1942",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "CCC section, fn. 106"
+    },
+    {
+      "claim": "CCC cleared bulk of 7,000 acres 1933–1937; last 85 acres Sept 1936; projects incl. Jenny Lake campground, Phelps Lake–Granite Canyon and Teton Glacier–Garnet Canyon trails, telephone lines, employee dwellings; Jenny Lake camp buildings moved and remain in use",
+      "sourceUrl": "https://npshistory.com/publications/grte/hrs/chap17.htm",
+      "locator": "CCC section, fn. 106"
+    },
+    {
+      "claim": "Glaciers getting smaller each year; overall trend of retreat; models predict near-complete disappearance of Teton Glacier within 30 to 75 years; 1968 USGS map shows 9 named glaciers and ~136 undifferentiated glaciers/snowfields; no thorough inventory",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf",
+      "locator": "FRV geologic resources, current conditions and trends, PDF p. 22"
+    },
+    {
+      "claim": "Effects of climate change such as glacier retreat, decreased snow pack and lower lake levels impact scenic values; landslides/avalanches exacerbated by increasing climate variability",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grte-fd-2017.pdf",
+      "locator": "FRV scenic resources, PDF p. 20; geologic FRV PDF p. 22"
+    },
+    {
+      "claim": "Whitebark pine a keystone species sensitive to global climate change; food source for red squirrels and grizzly bears",
+      "sourceUrl": "https://npshistory.com/publications/grte/index.htm",
+      "locator": "overview, 'Forests' para 2"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/grte/teton-range-fall.jpg",
+      "caption": "The Teton Range in the fall",
+      "credit": "NPS Photo/Tobiason",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grte/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/769E01AF-98C8-ECA3-7799030A09A7F685.jpg",
+      "evidenceUrl": "https://www.nps.gov/grte/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1600,
+      "height": 857,
+      "bytes": 234713,
+      "note": "On-page caption: \"The Teton Range in the fall.\" credit \"NPS Photo/Tobiason\". Resized from 5472x2933."
+    },
+    {
+      "file": "images/history/grte/middle-teton-glacier.jpg",
+      "caption": "The Middle Teton Glacier in early August",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grte/learn/nature/glaciers.htm",
+      "imageUrl": "https://www.nps.gov/grte/learn/nature/images/Middle-Teton-Glacier.jpg",
+      "evidenceUrl": "https://www.nps.gov/grte/learn/nature/glaciers.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "climate",
+      "width": 960,
+      "height": 553,
+      "bytes": 223297,
+      "note": "On-page caption begins: \"The Middle Teton glacier sits on the northeast flank of the Middle Teton, and is visible along the route to the Lower Saddle. Old snow from the previous winter appears white near the top and central parts of the glacier in early August; exposed ice appears gray.\" credit \"NPS Photo\". Original dimensions, re-encoded."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/grte/index.htm",
     "adhiUrl": null,

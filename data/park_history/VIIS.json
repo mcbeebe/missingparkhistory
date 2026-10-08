@@ -1,16 +1,271 @@
 {
   "code": "VIIS",
   "name": "Virgin Islands National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Virgin Islands National Park on the island of St. John in the U.S. Virgin Islands protects approximately 7,259 acres of tropical landscapes and 5,650 acres of submerged marine areas, covering about 60 percent of the island. The park was established in 1956, largely through land donations by Laurance S. Rockefeller, who purchased large tracts of the island to prevent commercial development. The park encompasses white sand beaches, tropical forest, coral reefs, and significant cultural sites including the ruins of colonial-era sugar plantations that were built and operated by enslaved Africans. The 1733 slave revolt on St. John — one of the first and longest slave revolts in the Americas — is an important part of the island's history. Trunk Bay's underwater snorkeling trail is one of the most popular attractions in the U.S. Virgin Islands.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "235",
+    "982"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-D-2026-10-08",
+  "verifiedBy": "verifier-D-2026-10-08 (52 claims checked; 8 corrections)",
+  "summary": "<p>Just over half of the small, rugged volcanic island of St. John is protected as Virgin Islands National Park: moist forest on the interior mountains, cactus scrub on the dry south-facing slopes, white beaches at Trunk, Cinnamon and Hawksnest bays, and offshore a world of mangroves, seagrass and coral. More than 800 kinds of plants grow here, among them the teyer palm, the island’s only native palm, and the bay rum tree whose leaves once scented a famous cologne; over 50 species of tropical birds breed on the island, and hawksbill and green sea turtles feed in its waters. The reefs are slow work — the fastest corals grow two or three inches a year, and large brain corals are centuries old. <a href=\"https://npshistory.com/publications/viis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress established the park on August 2, 1956, on land that Rockefeller interests had bought and given to the federal government. In 1962 it gained 5,650 acres of submerged lands, in 1978 128 acres on Hassel Island in St. Thomas harbor, and in 2001 a presidential proclamation created the adjoining Virgin Islands Coral Reef National Monument on 12,708 more acres of sea floor. The Park Service now manages almost 58 percent of St. John’s land and more than 18,000 acres underwater, and in 1976 UNESCO made the park one of the first international biosphere reserves. <a href=\"https://npshistory.com/publications/viis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>People have lived on these islands for at least 3,000 years. The park’s cultural resources include hundreds of historic structures, and its 2016 foundation document is plain about what built the plantation landscape: a plantation economy raised under Danish rule with the forced labor of enslaved people, primarily from Africa. It names the park as a place to explore the experience of the enslaved Africans and the history of slavery in the West Indies. <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/viis/index.htm",
+      "title": "NPSHistory.com: Virgin Islands National Park archive page — overview (from the 2019 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "title": "Foundation Document, Virgin Islands National Park / Virgin Islands Coral Reef National Monument (NPS, December 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>The Danes raised their flag at Coral Bay in 1718; by 1733 nearly all of St. John was in sugar cane and cotton, and enslaved people outnumbered Europeans 1,087 to 208. <a href=\"https://npshistory.com/publications/viis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> After drought, a hurricane and insects destroyed the food crops, many fled into the forest, and Governor Philip Gardelin answered with the 1733 Slave Code: flogging, amputation, public torture and execution. Early on November 23, 1733, Akwamu fighters with cane knives hidden in firewood seized the Danish fort at Coral Bay. Led by King Claes, King Juni and Kanta, they fought for six months, until about 400 French soldiers came from Martinique; many then took their own lives. The Park Service calls it the first time enslaved people took control of a colony. <a href=\"https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>Slavery continued. When Annaberg’s owner James Murphy died in 1808 he held 1,300 acres and 662 enslaved people. After Britain abolished slavery across the strait in 1834, enslaved St. Johnians escaped across the narrow strait — in 1840 eleven fled together to Tortola — until Danish emancipation in 1848. Three rows of foundations from Annaberg’s enslaved laborers’ village survive west of the animal mill. <a href=\"https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/viis/index.htm",
+          "title": "NPSHistory.com: Virgin Islands National Park archive page — 2019 NPS brochure, “St. John’s Historical Heritage”",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf",
+          "title": "Cultural Landscapes Inventory: Annaberg Sugar Factory, Virgin Islands National Park (NPS, 2010)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm",
+          "title": "NPS, Virgin Islands National Park: The 1733 Akwamu Insurrection (nps.gov, last updated June 15, 2023)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>From St. John it is possible to sight and navigate to Puerto Rico and every island in between, to St. Croix and to all the British Virgin Islands, and the northern Virgin Islands’ cultural chronology corresponds with eastern Puerto Rico’s throughout prehistory. Kenneth Wild of Virgin Islands National Park reports that excavations at Trunk Bay and Cinnamon Bay trace a ceramic sequence beginning around AD 800, and at Cinnamon Bay a ceremonial offering place — an articulated turtle plastron, a decorated vessel of closed ark shells, a carved zemi head, shell and gold inlays for statues — preserved beneath a colonial road in use since the mid-1600s. Wild reads the change in styles around AD 1200 as a pivotal point in the development of Taíno culture. <a href=\"https://npshistory.com/publications/viis/taino-dev.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> The Reef Bay petroglyphs, which the 2016 foundation document counts among the best-preserved rock art in the Caribbean, were in 2016 the only one of the 22 prehistoric sites recorded on St. John listed on the National Register. The Taíno who met Columbus were decimated by European disease, enslavement and overwork under Spanish colonization. <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/viis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/viis/taino-dev.pdf",
+          "title": "Kenneth S. Wild, A Timeline of Taíno Development in the Virgin Islands (Virgin Islands National Park, 2013; paper to the 25th Congress of the International Association for Caribbean Archaeology)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+          "title": "Foundation Document, Virgin Islands NP / Virgin Islands Coral Reef NM (2016) — “Evidence of Pre-Columbian Taino Indians”",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/viis/index.htm",
+          "title": "NPSHistory.com: Virgin Islands National Park archive page — 2019 NPS brochure, “Taino People”",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>In September and October 2005, after record-warm seawater, an average of 90 percent of the coral cover at the long-term monitoring sites around St. John and St. Croix bleached white. Many corals began to regain their color and were then hit by disease, chiefly white plague — what National Park Service and U.S. Geological Survey scientists called a “one-two punch.” By July 2006 coral cover at the study sites had fallen 48.7 percent, the worst coral mortality the islands had seen from any cause in 40 years; it was also the first time bleaching of elkhorn coral, listed as threatened that May, had ever been observed in the Virgin Islands. <a href=\"https://npshistory.com/publications/viis/coral-bleaching-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> The park’s 2016 foundation document records that Caribbean air temperatures rose more than one degree Fahrenheit over the past century and relative sea level is climbing about 3.9 inches per 100 years, and expects more bleaching and disease outbreaks; shoreline erosion is already damaging coastal archeological sites. <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/viis/coral-bleaching-2006.pdf",
+          "title": "Patterson, Rogers, Schill & Miller, Coral Bleaching and Disease Deliver “One–Two Punch” to Coral Reefs in the U.S. Virgin Islands (NPS South Florida–Caribbean Network / USGS, October 2006)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+          "title": "Foundation Document, Virgin Islands NP / Virgin Islands Coral Reef NM (2016) — climate change sections",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Just over half of the small, rugged volcanic island of St. John is protected in the park",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'The Island of St. John' para 1"
+    },
+    {
+      "claim": "Forests vary from moist subtropical forests of the interior mountains to semi-arid cactus scrublands on south-facing slopes; beaches at Hawksnest, Trunk, Cinnamon bays; mangroves and seagrass beds",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'A Richness in Plant Life', 'Beaches', 'Nearshore Waters'"
+    },
+    {
+      "claim": "Over 800 species of plants incl. teyer palm (St. John's only native palm) and bay rum tree (oil for bay rum cologne); over 50 species of tropical birds breed on St. John; hawksbill and green sea turtles",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'The Island of St. John' para 3; 'Sea Turtles'"
+    },
+    {
+      "claim": "Fastest growing corals grow only two to three inches per year; large brain corals are hundreds of years old",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'Coral Reefs' para 4"
+    },
+    {
+      "claim": "Park established August 2, 1956 (enabling legislation signed)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Park Purpose, PDF p. 8; also Establishment block on archive page"
+    },
+    {
+      "claim": "In 1956 Rockefeller interests bought land, giving it to the federal government for a national park",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'Century of Change'"
+    },
+    {
+      "claim": "5,650 acres of submerged lands added 1962; 128 acres on Hassel Island added 1978; Coral Reef NM 2001 protects 12,708 acres; NPS manages almost 58% of St. John land area and more than 18,000 acres offshore",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Brief Description of the Parks, PDF p. 7"
+    },
+    {
+      "claim": "Virgin Islands Coral Reef National Monument established by presidential proclamation on January 17, 2001",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Park Purpose, PDF p. 8"
+    },
+    {
+      "claim": "Designated an International Biosphere Reserve by UNESCO in 1976; one of the first protected areas in the world to receive this designation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Brief Description, PDF p. 7"
+    },
+    {
+      "claim": "Virgin Islands inhabited for at least 3,000 years; cultural resources include hundreds of historic structures",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Brief Description, PDF p. 7"
+    },
+    {
+      "claim": "Plantation economy built during Danish rule using forced labor in the form of enslaved persons, primarily from Africa, during the 18th and early 19th centuries",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Significance/FRV 'Diverse Historic Landscape', PDF p. 12"
+    },
+    {
+      "claim": "Park provides a setting for exploring the experience of the enslaved Africans and the institution of slavery in the West Indies",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Interpretive themes, PDF p. 15",
+      "interpretive": true
+    },
+    {
+      "claim": "Danes took formal possession 1694 and raised their flag 1718, first permanent European settlement at Estate Carolina in Coral Bay; by 1733 virtually all of St. John planted in sugar cane and cotton",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'A Cultural Crossroads' paras 2-3"
+    },
+    {
+      "claim": "Ratio of enslaved people to Europeans before the 1733 rebellion was 1,087 to 208",
+      "sourceUrl": "https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf",
+      "locator": "Site History, 1718–1796, PDF p. 24"
+    },
+    {
+      "claim": "Drought, major hurricane and plague of insects caused total crop failure; marronage; Governor General Philip Gardelin's 1733 Slave Code with flogging, amputation, public torture and execution",
+      "sourceUrl": "https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm",
+      "locator": "paras 5-6"
+    },
+    {
+      "claim": "Early morning November 23, 1733, enslaved people entered the Danish West India Company fort at Coral Bay with cane knives hidden in firewood and took it",
+      "sourceUrl": "https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm",
+      "locator": "para 1"
+    },
+    {
+      "claim": "Leaders King Claes, King Juni and Kanta; fighting lasted six months; ~400 French soldiers from Martinique; many Akwamu fighters took their own lives",
+      "sourceUrl": "https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm",
+      "locator": "paras 8, 16"
+    },
+    {
+      "claim": "NPS calls the 1733 insurrection the first instance in which enslaved people took control of a colony (brochure separately says the Africans controlled St. John for six months)",
+      "sourceUrl": "https://www.nps.gov/viis/learn/historyculture/the-1733-akwamu-insurrection.htm",
+      "locator": "final paragraph; cf. archive-page brochure 'A Cultural Crossroads' para 3",
+      "interpretive": true
+    },
+    {
+      "claim": "James Murphy died 1808; combined estate 1,300 acres and 662 enslaved laborers",
+      "sourceUrl": "https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf",
+      "locator": "Site History 1796–1862, PDF p. 26"
+    },
+    {
+      "claim": "British Virgin Islands abolished slavery 1834; maroonage across the strait; 1840: 11 enslaved laborers escaped on Kitty Berg and fled to Tortola (CLI chronology; prose does not say they were from Annaberg); slavery abolished in Danish colonies 1848",
+      "sourceUrl": "https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf",
+      "locator": "Chronology table PDF p. 21; Site History PDF p. 24"
+    },
+    {
+      "claim": "Enslaved laborers' village remains include three rows of foundations west of the animal mill; 1991 excavations",
+      "sourceUrl": "https://npshistory.com/publications/viis/cli-annaberg-sugar-factory-2011.pdf",
+      "locator": "Statement of Significance, PDF p. 17"
+    },
+    {
+      "claim": "From St. John one can sight and navigate to Puerto Rico and all islands in between, St. Croix, and the British Virgin Islands; northern Virgin Islands cultural chronology corresponds with that of eastern Puerto Rico throughout prehistory",
+      "sourceUrl": "https://npshistory.com/publications/viis/taino-dev.pdf",
+      "locator": "Background, p. 2"
+    },
+    {
+      "claim": "Monserrate Period began around AD 800 (Trunk Bay); Cinnamon Bay ceremonial offering area with articulated turtle plastron and closed Eared-Ark shells in a decorated vessel; preserved by a colonial road in use since the mid-1600s; inlays, carved zemi head, gold/copper pendant in upper Monserrate levels (c. AD 1100–1200)",
+      "sourceUrl": "https://npshistory.com/publications/viis/taino-dev.pdf",
+      "locator": "Site Context p. 1-2; Chronological Results p. 3"
+    },
+    {
+      "claim": "Shift in ceramic style and artifact types at end of Monserrate period indicates a pivotal point in the development of Taíno culture",
+      "sourceUrl": "https://npshistory.com/publications/viis/taino-dev.pdf",
+      "locator": "Abstract; Chronological Results",
+      "interpretive": true
+    },
+    {
+      "claim": "Reef Bay petroglyph site recognized as one of the best preserved ancient rock art sites in the Caribbean; only 1 of the 22 prehistoric sites recorded on St. John (the Reef Bay petroglyphs) is listed on the National Register",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Significance PDF p. 12; FRV 'Evidence of Pre-Columbian Taino Indians' current conditions, PDF p. 29"
+    },
+    {
+      "claim": "Taino decimated by European diseases and from enslavement and overwork during Spanish colonization",
+      "sourceUrl": "https://npshistory.com/publications/viis/index.htm",
+      "locator": "overview, 'Taino People'"
+    },
+    {
+      "claim": "Average 90% of coral cover bleached at monitoring sites Sept–Oct 2005; followed by disease (primarily white plague), 'one-two punch'; bleaching associated with record-warm seawater",
+      "sourceUrl": "https://npshistory.com/publications/viis/coral-bleaching-2006.pdf",
+      "locator": "p. 1, Long-term and Episodic Monitoring"
+    },
+    {
+      "claim": "Coral cover declined 48.7% at long-term study sites as of July 2006; highest hard coral mortality from any stressor over the last 40 years",
+      "sourceUrl": "https://npshistory.com/publications/viis/coral-bleaching-2006.pdf",
+      "locator": "p. 1, Historical Context and Monitoring"
+    },
+    {
+      "claim": "Elkhorn coral listed as threatened May 2006; fall 2005 first time elkhorn bleaching observed in the Virgin Islands",
+      "sourceUrl": "https://npshistory.com/publications/viis/coral-bleaching-2006.pdf",
+      "locator": "p. 2, Monitoring Elkhorn Corals"
+    },
+    {
+      "claim": "Caribbean average annual air temperature up more than 1 °F in past 100 years; relative sea level rising about 3.9 inches per 100 years; more bleaching and disease expected; coastal erosion damages cultural sites",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Key Issues 'Climate Change', PDF p. 47; FRV analysis tables"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/viis/trunk-bay.jpg",
+      "caption": "Trunk Bay, St. John",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/viis/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/1F0534AF-91EB-443B-41760F790BE42778.jpg",
+      "evidenceUrl": "https://www.nps.gov/viis/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 1072,
+      "bytes": 215828,
+      "note": "On-page caption: \"Renowned for its beauty, Trunk Bay is a visitor favorite.\" credit \"NPS Photo\". Resized from 3229x2473."
+    },
+    {
+      "file": "images/history/viis/annaberg-windmill.jpg",
+      "caption": "The windmill at Annaberg, with the boiling house and animal mill behind",
+      "credit": "NPS/Parnicza",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/viis/learn/historyculture/places.htm",
+      "imageUrl": "https://www.nps.gov/viis/learn/historyculture/images/20210908_100331.jpg",
+      "evidenceUrl": "https://www.nps.gov/viis/learn/historyculture/places.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "slavery",
+      "width": 1000,
+      "height": 750,
+      "bytes": 199660,
+      "note": "On-page caption: \"The towering windmill at Annaberg Plantation with the boiling house and animal mill in the background.\" figcredit \"NPS/Parnicza\". Resized from 4032x3024."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/viis/index.htm",
     "adhiUrl": null,
