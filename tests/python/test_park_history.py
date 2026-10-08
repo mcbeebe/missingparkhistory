@@ -138,7 +138,7 @@ class RenderTest(unittest.TestCase):
         html = bph.render_block(SOURCES["MORA"]) if SOURCES["MORA"].get("reviewStatus") == "published" else ""
         if html:
             for key in ("indigenous", "climate", "women", "labor_ccc"):
-                self.assertIn(bph.THEME_LABELS[key], html)
+                self.assertIn(f"<h4>{bph._esc(bph.THEME_LABELS[key])}</h4>", html)
 
 
 if __name__ == "__main__":
