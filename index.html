@@ -52,7 +52,7 @@
 .ph-section .ph-theme h4,.ph-section .ph-h{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#8b9cf7;margin:0 0 6px;font-family:-apple-system,sans-serif;font-weight:600}
 .ph-section .ph-h{color:#6d9eeb;margin:18px 0 10px}
 .ph-section .ph-photo{margin:0 0 16px}
-.ph-section .ph-photo img{display:block;width:100%;height:auto;max-height:320px;object-fit:cover;border-radius:8px;border:1px solid #2a2a3a;cursor:pointer}
+.ph-section .ph-photo img{display:block;width:100%;height:auto;aspect-ratio:auto;max-height:320px;object-fit:cover;border-radius:8px;border:1px solid #2a2a3a;cursor:pointer}
 .ph-section .ph-photo figcaption{font-family:-apple-system,sans-serif;font-size:12px;color:#888;margin-top:6px;line-height:1.5}
 .ph-section .ph-credit{color:#666}
 .ph-section .ph-credit a,.ph-section .ph-sources a,.ph-section .ph-policy a{color:#6d9eeb;text-decoration:none}
@@ -629,12 +629,15 @@ function buildParkHistoryHTML(t,id){
       keys.forEach(function(k){while((m=hrefRe.exec(rec.themes[k].html)))add({url:m[1]})});
       while((m=hrefRe.exec(rec.summary||"")))add({url:m[1]});
       function renumber(html){return String(html||"").replace(/(<a\s[^>]*href="(https?:\/\/[^"]+)"[^>]*class="cite"[^>]*>)\[[^\]]*\](<\/a>)/g,function(_,a,u,b){return a+"["+(number[u]||"?")+"]"+b})}
-      (rec.photos||[]).forEach(function(ph){
-        s+='<figure class="ph-photo"><img src="/'+phEsc(ph.file)+'" alt="'+phEsc(ph.caption)+'" loading="lazy" onclick="openLightbox(\'/'+phEsc(ph.file)+'\',\''+phEsc(ph.caption).replace(/'/g,"\\'")+'\')">'
-          +'<figcaption>'+phEsc(ph.caption)+' &middot; <span class="ph-credit">Photo: '+phEsc(ph.credit)+' &middot; '+phEsc(ph.license)+' &middot; <a href="'+phEsc(ph.sourceUrl)+'" target="_blank" rel="noopener">source &#8599;</a></span></figcaption></figure>';
-      });
+      var PH_LIC={"PD-USGov-NPS":"Public domain (U.S. Government work)","PD-USGov":"Public domain (U.S. Government work)","PD-LOC-HABS-HAER":"Public domain (Library of Congress, HABS/HAER/HALS)","PD-old":"Public domain","CC0":"Public domain (CC0)"};
+      function fig(ph){
+        var src='/'+phEsc(ph.file),cap=phEsc(ph.caption);
+        return '<figure class="ph-photo"><img src="'+src+'" alt="'+cap+'" loading="lazy"'+(ph.width&&ph.height?' width="'+(+ph.width)+'" height="'+(+ph.height)+'"':'')+' onclick="openLightbox(\''+src+'\',\''+cap.replace(/'/g,"\\'")+'\')">'
+          +'<figcaption>'+cap+' &middot; <span class="ph-credit">Photo: '+phEsc(ph.credit)+' &middot; '+phEsc(PH_LIC[ph.license]||ph.license)+' &middot; <a href="'+phEsc(ph.sourceUrl)+'" target="_blank" rel="noopener">source &#8599;</a></span></figcaption></figure>';
+      }
+      (rec.photos||[]).forEach(function(ph){if(!ph.themeKey)s+=fig(ph)});
       s+='<div class="ph-summary">'+renumber(rec.summary)+'</div>';
-      keys.forEach(function(k){s+='<section class="ph-theme"><h4>'+phEsc(PH_LABELS[k]||k)+'</h4>'+renumber(rec.themes[k].html)+'</section>'});
+      keys.forEach(function(k){var f=(rec.photos||[]).filter(function(ph){return ph.themeKey===k}).map(fig).join("");s+='<section class="ph-theme"><h4>'+phEsc(PH_LABELS[k]||k)+'</h4>'+f+renumber(rec.themes[k].html)+'</section>'});
       if(seen.length){s+='<h4 class="ph-h">Sources</h4><ol class="ph-sources">'+seen.map(function(x){return '<li><a href="'+phEsc(x.url)+'" target="_blank" rel="noopener">'+phEsc(x.title)+'</a></li>'}).join("")+'</ol>'}
       if(rec.corrections&&rec.corrections.length){var c=rec.corrections[rec.corrections.length-1];s+='<p class="ph-updated">Updated '+phEsc(c.date)+': '+phEsc(c.note)+'</p>'}
     }
