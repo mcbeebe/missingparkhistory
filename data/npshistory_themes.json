@@ -1,0 +1,95 @@
+{
+  "_comment": "Keyword rules used by scripts/npshistory_audit.py to classify NPSHistory.com document titles (and MPH narrative text) into document categories and sensitive-history themes. Patterns are case-insensitive Python regexes applied to 'title | citation | group header'. Text matching 'not' is blanked out before 'any' is tested (so 'Stonewall Jackson' never counts as LGBTQ). Tune here, not in code.",
+  "categories": {
+    "adhi": {
+      "any": "administrative histor"
+    },
+    "hrs": {
+      "any": "historic resources? (study|studies|report)"
+    },
+    "ethno": {
+      "any": "ethnograph|ethnohistor|traditional(ly)? (use|associated|cultural)|\\btribal\\b|\\btribes?\\b|\\btreat(y|ies)\\b|\\bIndians?\\b|\\bNative (American|Hawaiian|peoples?|lands?)\\b|Alaska Native|indigenous|\\bpueblos?\\b|boarding schools?|\\breservation\\b|Trail of Tears",
+      "not": "(Nisqually|Yakima|Cowlitz|Puyallup|Klamath|Shoshone|Paiute|Cheyenne|Navajo|Apache|Comanche|Osage|Miami|Chinook|Cherokee|Seminole|Choctaw|Mohawk|Potawatomi|Shawnee|Pawnee|Caddo|Modoc|Ute|Crow|Hopi|Zuni|Salish|Lakota|Dakota|Kiowa|Arapaho|Blackfoot|Ojibwe|Chippewa|Tlingit|Haida|Kootenai|Miwok|Pomo|Yurok|Tolowa|Chumash|Mandan|Hidatsa|Arikara|Abenaki|Penobscot|Wampanoag|Lenape|Delaware|Timucua|Calusa) ?(Glacier|River|Road|Entrance|Corridor|Creek|Lake|Pass|Valley|Falls|Basin|Mountain|Mountains|Peak|Bay|Trail|Park|County|Canyon|Highway|Plains|Reservoir|Dam|Mine|Mines|Point|Sound|Delta|Bridge|Island|Ridge|Hill|Hills|Flats|Meadows?|Springs?|Gletscher|-Gletscher|to Paradise|Mission|Fort|City|Beach|Flat|Butte|Mesa|Rock|Range|Divide|Prairie|Fork|Gulch|Hot Springs|Glacier Basin|Tunnel|Picnic Area|Campground|Overlook|Vista|National Forest|Formation|salmon|wind)|Indian (Head|Creek|River|Point|Springs|Hill|Mound|Village Developed|Garden|Peak|Pass|Trail Bridge|Henry|Bar|Key|Cave|Lake|Hot Springs|Flat|Mountain|Wells|Ford|Town|Rock|Island|Cove|Field)|Indiana|Trail of Tears(?= National Historic Trail brochure)|Dakota (Territory|sandstone|Formation|Hogback)|Delaware (Water Gap|River|Bay|Canal|Valley|and Raritan|Avenue|County)|Crow(s|ley|n|bar|foot)"
+    },
+    "cli_clr": {
+      "any": "cultural landscape"
+    },
+    "hsr": {
+      "any": "historic structures? report"
+    },
+    "nrhp": {
+      "any": "national register|\\bnomination\\b|\\bHABS\\b|\\bHAER\\b|\\bHALS\\b|historic american (buildings|engineering|landscapes) survey|national historic landmark"
+    },
+    "brochure": {
+      "any": "\\bbrochures?\\b|unigrid|official map|site bulletin"
+    },
+    "handbook": {
+      "any": "\\bhandbooks?\\b"
+    },
+    "foundation": {
+      "any": "foundation document"
+    },
+    "planning": {
+      "any": "general management plan|master plan|long-range interpretive plan|development concept plan|environmental (impact statement|assessment)"
+    },
+    "newspaper": {
+      "any": "\\bnewspapers?\\b|\\bnewsletters?\\b|visitor'?s? guide|park paper|\\bgazette\\b|\\bcourier\\b|\\bchronicle\\b|\\btimes\\b|\\bnews\\b"
+    },
+    "climate": {
+      "any": "climat|glacier|glacial|mass balance|sea[- ]level|warming|phenolog|snowpack|\\bcarbon\\b|ice (caves?|volumes?|loss|extent)|recession of|drought|coral bleach|ocean acidif|permafrost|treeline|whitebark pine",
+      "not": "Carbon River|glacial (geology|deposits|history of|erratics)"
+    }
+  },
+  "themes": {
+    "indigenous": {
+      "any": "ethnograph|ethnohistor|traditional(ly)? (use|associated|cultural)|\\btribal\\b|\\btribes?\\b|\\btreat(y|ies)\\b|\\bIndians?\\b|\\bNative (American|Hawaiian|peoples?|lands?|village)|Alaska Native|indigenous|\\bpueblos?\\b|boarding schools?|Trail of Tears|\\bNAGPRA\\b|repatriation|petroglyph|pictograph|\\bmassacre\\b|Nisqually|Yakama|Yakima (Nation|Indian|guide)|Puyallup|Muckleshoot|Cowlitz|Navajo|Din[eé]\\b|\\bHopi\\b|\\bZuni\\b|Apache|Comanche|\\bKiowa\\b|Lakota|\\bSioux\\b|\\bDakota (people|nation|tribe)|Cheyenne|Arapaho|Shoshone|Paiute|\\bUte\\b|Blackfeet|Blackfoot|\\bCrow (tribe|nation|people|indian)|Nez Perce|Nimiipuu|\\bSalish\\b|Kootenai|Chinook|Tlingit|Haida|I[nñ]upia[tq]|Yup'?ik|Athabasc|Cherokee|Choctaw|Chickasaw|Muscogee|\\bCreek (nation|indian|people)|Seminole|Miccosukee|Timucua|Calusa|Powhatan|Wampanoag|Penobscot|Passamaquoddy|Abenaki|Mohawk|Haudenosaunee|Iroquois|Lenape|Ojibwe|Chippewa|Anishinaabe|Potawatomi|Shawnee|\\bOsage\\b|Pawnee|Mandan|Hidatsa|Arikara|\\bCaddo\\b|Tohono O'?odham|Hohokam|Ancestral Puebloan|Anasazi|Mogollon|Chumash|Ohlone|Miwok|\\bPomo\\b|Yurok|Tolowa|Klamath (tribe|people|indian)|\\bModoc\\b|Kanaka|Native Hawaiian|Chamorro|Ta[ií]no|Arawak",
+      "not": "(Nisqually|Yakima|Cowlitz|Puyallup|Klamath|Shoshone|Paiute|Cheyenne|Navajo|Apache|Comanche|Osage|Miami|Chinook|Cherokee|Seminole|Choctaw|Mohawk|Potawatomi|Shawnee|Pawnee|Caddo|Modoc|Ute|Crow|Hopi|Zuni|Salish|Lakota|Dakota|Kiowa|Arapaho|Blackfoot|Ojibwe|Chippewa|Tlingit|Haida|Kootenai|Miwok|Pomo|Yurok|Tolowa|Chumash|Mandan|Hidatsa|Arikara|Abenaki|Penobscot|Wampanoag|Lenape|Delaware|Timucua|Calusa) ?(Glacier|River|Road|Entrance|Corridor|Creek|Lake|Pass|Valley|Falls|Basin|Mountain|Mountains|Peak|Bay|Trail|Park|County|Canyon|Highway|Plains|Reservoir|Dam|Mine|Mines|Point|Sound|Delta|Bridge|Island|Ridge|Hill|Hills|Flats|Meadows?|Springs?|Gletscher|-Gletscher|to Paradise|Mission|Fort|City|Beach|Flat|Butte|Mesa|Rock|Range|Divide|Prairie|Fork|Gulch|Hot Springs|Glacier Basin|Tunnel|Picnic Area|Campground|Overlook|Vista|National Forest|Formation|salmon|wind)|Indian (Head|Creek|River|Point|Springs|Hill|Mound|Village Developed|Garden|Peak|Pass|Trail Bridge|Henry|Bar|Key|Cave|Lake|Hot Springs|Flat|Mountain|Wells|Ford|Town|Rock|Island|Cove|Field)|Indiana|Trail of Tears(?= National Historic Trail brochure)|Dakota (Territory|sandstone|Formation|Hogback)|Delaware (Water Gap|River|Bay|Canal|Valley|and Raritan|Avenue|County)|Crow(s|ley|n|bar|foot)|native Hawaiian (montane|forest|vegetation|plants?|species|ecosystems?|rainforest|birds?|flora|fauna|trees?)|Indian Well|Indian Grinding Rock(?= .*vegetation)"
+    },
+    "women": {
+      "any": "\\bwomen'?s?\\b|\\bwoman\\b|\\bfemale\\b|suffrag|mill girls?|first lad(y|ies)|\\bladies\\b|feminis|\\bgender\\b|\\bmothers?\\b|\\bwives\\b|\\bnurses?\\b|\\bher (own|story|life)\\b|Harriet Tubman|Eleanor Roosevelt|Clara Barton|Maggie L?\\.? Walker|Mary McLeod Bethune|Alice Paul|Elizabeth Cady Stanton|Susan B\\. Anthony|Frances Perkins|Rosie the Riveter|Fay Fuller|Dora Keen|Georgia O'Keeffe|Sacagawea|Pocahontas",
+      "not": "Women'?s? (Rights NHP|Equality NM)\\b(?=.*index)"
+    },
+    "black": {
+      "any": "African[- ]American|Afro[- ]American|\\bBlack (history|americans?|people|community|communities|experience|families|settlers?|soldiers?|regiment|church|life|freedom|codes?|towns?|labor|workers?|women|men|press|codes)|\\bNegro\\b|colored (troops|infantry|soldiers|people|school)|\\bUSCT\\b|freed(men|women|people)|Buffalo Soldiers?|\\bReconstruction\\b|Underground Railroad|Jim Crow|segregat|desegregat|civil rights|Tuskegee|Gullah|Geechee|\\bmaroons?\\b|lynching|\\bNAACP\\b|Freedom Riders?|Selma|Frederick Douglass|Booker T\\. Washington|Carter G\\. Woodson|Martin Luther King|Medgar Evers|Harriet Tubman|Nicodemus|Brown v\\. Board|Little Rock Nine|Emmett Till|Port Chicago|Africanisms?",
+      "not": "Black (Canyon|Hills|Rock|Bear|River|Creek|Mountain|Hawk|Ridge|Forest|Butte|Mesa|Lake|Pond|Sand|Point|Elk|Kettle)|Blackfeet|Blackfoot|Blackstone|Blackwell|Blackwater|blackbird|black-tailed|black-footed|black-capped|black bear"
+    },
+    "slavery": {
+      "any": "\\bslaves?\\b|\\bslavery\\b|enslave|\\bplantations?\\b|emancipation|abolition|manumission|freedom[- ]seek|fugitive slave|\\bbondage\\b|middle passage|slave trade|Underground Railroad|African Burial Ground|enslaved people",
+      "not": ""
+    },
+    "climate": {
+      "any": "climat|glacier|glacial|mass balance|sea[- ]level|warming|phenolog|snowpack|\\bcarbon\\b|ice (caves?|volumes?|loss|extent)|recession of|drought|coral bleach|ocean acidif|permafrost|treeline|whitebark pine|melt",
+      "not": "Carbon River|Little Ice Age(?!.*climate)|glacial (geology|deposits|history of|erratics)|melting pot"
+    },
+    "labor_ccc": {
+      "any": "\\bCCC\\b|Civilian Conservation Corps|\\blabou?r\\b|\\bstrikes?\\b|\\bunions?\\b|\\bunioniz|\\bworkers\\b|working[- ]class|\\bmill (girls|workers|town|village)|\\bfactor(y|ies)\\b|\\bminers\\b|Pullman|\\bWPA\\b|Works Progress|New Deal|\\bwages?\\b|immigrant labor|coal (camp|town|miners)|textile|\\bcannery\\b|company town|Bracero|Chinese (workers|laborers|railroad)",
+      "not": "Union (Army|soldiers?|troops|forces|lines?|Pacific|Station|cavalry|infantry|general|officer|victory|defenses)|Fort Union|Union Square|the Union\\b|Union (and|&) Confederate|save the Union|preserve the Union"
+    },
+    "lgbtq": {
+      "any": "\\bLGBTQ?I?A?\\+?\\b|\\bgay\\b|lesbian|\\bqueer\\b|transgender|Stonewall (National Monument|Inn|uprising|riots?|rebellion)|bisexual|homosexual|same-sex",
+      "not": ""
+    },
+    "japanese_american": {
+      "any": "Japanese[- ]Americans?|\\binternment\\b|incarceration (camps?|sites?|of Japanese)|incarcerees?|relocation (center|camp)|\\bNisei\\b|\\bIssei\\b|War Relocation Authority|confinement (sites?|camps?)|Executive Order 9066|wartime relocation|\\bevacuees\\b",
+      "not": ""
+    },
+    "latino": {
+      "any": "Hispanic|Latin[oax]\\b|Mexican|Chican[oa]|Tejan[oa]|Spanish (colonial|mission|missions|presidio|empire|borderlands|settlers?|settlement|frontier|period|era|exploration|explorers?|conquest|crown|rule)|Spanish-American|bracero|vaquero|Californio|Puerto Ric|\\bCuban\\b|\\bpresidio\\b|conquistador|borderlands|\\bTejas\\b|Camino Real|\\bmestizo|Nuevo M[eé]xico|New Spain",
+      "not": "Spanish-American War|Mission 66|Mission Statement|mission of the (park|service)|interpretive mission"
+    }
+  },
+  "topic_tag_to_theme": {
+    "Indigenous & Native History": "indigenous",
+    "Colonization": "indigenous",
+    "Slavery & Enslaved People": "slavery",
+    "Slavery & Forced Labor": "slavery",
+    "Climate & Environment": "climate",
+    "Civil Rights & Racial Justice": "black",
+    "Labor History": "labor_ccc",
+    "Women's History": "women",
+    "Women's Suffrage": "women",
+    "Mexican-American History": "latino",
+    "LGBTQ+ History": "lgbtq",
+    "Japanese American Incarceration": "japanese_american"
+  }
+}
