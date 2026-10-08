@@ -204,6 +204,21 @@
       "height": 1066,
       "bytes": 212698,
       "note": "On-page caption (park home page gallery): \"Kennecott Mines National Historic Landmark is found within Wrangell-St. Elias National Park. This early 1900's copper mining operation overcame numerous challenges and found success in the heart of the Alaskan wilderness.\" credit span \"NPS Photo/ Matthew Yarbrough\"; alt \"Historic, large, red buildings with mountains in the background\". Resized from 4500x3000."
+    },
+    {
+      "file": "images/history/wrst/malaspina-glacier.jpg",
+      "caption": "Malaspina Glacier (Tlingit: Sít’ Tlein, “big glacier”)",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/wrst/learn/nature/glaciers.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/cropped_image/primary/90D3CD4D-B3D9-58B5-19C0539C35D7679A.jpg",
+      "evidenceUrl": "https://www.nps.gov/wrst/learn/nature/glaciers.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "climate",
+      "width": 1600,
+      "height": 899,
+      "bytes": 209694,
+      "note": "Embedded place card on the evidence page, heading \"Malaspina Glacier National Natural Landscape\" / \"Tlingit: Sít' Tlein, meaning 'big glacier'\"; figcaption \"Malaspina Glacier\" with credit paragraph \"NPS\"; alt \"Malaspina Glacier\". Resized from 1898x1067. Owner decision 2026-10-08: keep — bare \"NPS\" credit accepted for a contemporary NPS park photograph."
     }
   ],
   "photoStatus": "complete",
@@ -224,6 +239,5 @@
   "wayback": {
     "main": "https://web.archive.org/web/20250119/https://www.nps.gov/wrst/index.htm"
   },
-  "corrections": [],
-  "photoNote": "Malaspina Glacier photo held back pending owner decision: evidence page credits it only as \"NPS\"."
+  "corrections": []
 }
