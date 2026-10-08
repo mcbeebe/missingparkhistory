@@ -56,6 +56,13 @@ THEME_LABELS = {
 }
 REVIEW_STATUSES = ("legacy-unsourced", "draft", "reviewed", "published")
 LICENSES = ("PD-USGov-NPS", "PD-USGov", "PD-LOC-HABS-HAER", "PD-old", "CC0")
+LICENSE_LABELS = {
+    "PD-USGov-NPS": "Public domain (U.S. Government work)",
+    "PD-USGov": "Public domain (U.S. Government work)",
+    "PD-LOC-HABS-HAER": "Public domain (Library of Congress, HABS/HAER/HALS)",
+    "PD-old": "Public domain",
+    "CC0": "Public domain (CC0)",
+}
 BANNED = ("is one of hundreds of", "466+", "under review", "TODO")
 ALLOWED_TAGS = {"p", "a", "em", "strong", "ul", "li", "br"}
 
@@ -217,6 +224,8 @@ def validate(rec: dict) -> list[str]:
             for field in ("file", "caption", "credit", "license", "sourceUrl", "imageUrl", "evidenceUrl", "capturedAt"):
                 if not ph.get(field):
                     problems.append(f"{code}: photos[{i}] missing {field}")
+            if ph.get("themeKey") and ph["themeKey"] not in (rec.get("themes") or {}):
+                problems.append(f"{code}: photos[{i}] themeKey {ph['themeKey']!r} has no matching theme section")
             if ph.get("license") not in LICENSES:
                 problems.append(f"{code}: photos[{i}] license {ph.get('license')!r} not in {LICENSES}")
             if re.search(r"courtesy|©|copyright|all rights reserved", str(ph.get("credit", "")), re.I):
@@ -235,6 +244,14 @@ def _esc(s: str) -> str:
     return htmllib.escape(str(s or ""), quote=True)
 
 
+def photo_figure(ph: dict) -> str:
+    lic = LICENSE_LABELS.get(ph.get("license"), ph.get("license", ""))
+    return (f'<figure class="ph-photo"><img src="/{_esc(ph["file"])}" alt="{_esc(ph["caption"])}" loading="lazy"'
+            + (f' width="{int(ph["width"])}" height="{int(ph["height"])}"' if ph.get("width") and ph.get("height") else "") + '>'
+            f'<figcaption>{_esc(ph["caption"])} &middot; <span class="ph-credit">Photo: {_esc(ph["credit"])} &middot; '
+            f'{_esc(lic)} &middot; <a href="{_esc(ph["sourceUrl"])}" target="_blank" rel="noopener">source &#8599;</a></span></figcaption></figure>')
+
+
 def render_block(rec: dict, mode: str = "page") -> str:
     """The Option-A 'Dossier' block: photo -> summary -> theme sections -> sources -> archive link.
     mode='page' is the parks/*.html card body; mode='modal' is the markup index.html builds.
@@ -245,11 +262,10 @@ def render_block(rec: dict, mode: str = "page") -> str:
     index_url = npsh.get("indexUrl")
     parts: list[str] = []
     if status == "published":
+        # Photos without a themeKey lead the section; a photo tagged with a theme sits inside it.
         for ph in rec.get("photos") or []:
-            parts.append(
-                f'<figure class="ph-photo"><img src="/{_esc(ph["file"])}" alt="{_esc(ph["caption"])}" loading="lazy">'
-                f'<figcaption>{_esc(ph["caption"])} &middot; <span class="ph-credit">Photo: {_esc(ph["credit"])} &middot; '
-                f'{_esc(ph["license"])} &middot; <a href="{_esc(ph["sourceUrl"])}" target="_blank" rel="noopener">source &#8599;</a></span></figcaption></figure>')
+            if not ph.get("themeKey"):
+                parts.append(photo_figure(ph))
         # Citation numbering is derived here (summary sources first, then themes in THEMES order),
         # and the inline [n] markers are rewritten to match, so authors never hand-number.
         seen: list[dict] = []
@@ -273,7 +289,8 @@ def render_block(rec: dict, mode: str = "page") -> str:
                           lambda m: f"{m.group(1)}[{number.get(m.group(2), '?')}]{m.group(3)}", html)
         parts.append(f'<div class="ph-summary">{renumber(rec.get("summary", ""))}</div>')
         for key in theme_keys:
-            parts.append(f'<section class="ph-theme"><h4>{_esc(THEME_LABELS[key])}</h4>{renumber(rec["themes"][key]["html"])}</section>')
+            figs = "".join(photo_figure(ph) for ph in rec.get("photos") or [] if ph.get("themeKey") == key)
+            parts.append(f'<section class="ph-theme"><h4>{_esc(THEME_LABELS[key])}</h4>{figs}{renumber(rec["themes"][key]["html"])}</section>')
         if seen:
             parts.append('<h4 class="ph-h">Sources</h4><ol class="ph-sources">' + "".join(
                 f'<li><a href="{_esc(s["url"])}" target="_blank" rel="noopener">{_esc(s["title"])}</a></li>' for s in seen) + "</ol>")

@@ -132,6 +132,25 @@ class RenderTest(unittest.TestCase):
         self.assertNotIn("ph-sources", html)
         self.assertIn("Documentary record on NPSHistory.com", html)
 
+    def test_theme_photo_sits_inside_its_section(self):
+        if "MORA" not in SOURCES:
+            self.skipTest("MORA not present")
+        html = bph.render_block(SOURCES["MORA"])
+        self.assertTrue(html.startswith('<figure class="ph-photo">'), "untagged photo should lead the section")
+        climate = html.index(f"<h4>{bph._esc(bph.THEME_LABELS['climate'])}</h4>")
+        nisqually = html.index("nisqually-glacier.jpg")
+        next_section = html.find("<section", climate)
+        self.assertGreater(nisqually, climate)
+        self.assertTrue(next_section == -1 or nisqually < next_section)
+        self.assertIn("Public domain (U.S. Government work)", html)
+        self.assertNotIn(">PD-USGov-NPS<", html)
+
+    def test_theme_key_must_match_a_section(self):
+        rec = ValidatorRulesTest().base(photos=[{**SOURCES["MORA"]["photos"][0], "themeKey": "slavery"}]) if "MORA" in SOURCES else None
+        if rec is None:
+            self.skipTest("MORA not present")
+        self.assertTrue(any("themeKey" in p for p in bph.validate(rec)))
+
     def test_mora_exemplar_renders_all_four_themes(self):
         if "MORA" not in SOURCES:
             self.skipTest("MORA not present")

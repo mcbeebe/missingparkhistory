@@ -215,8 +215,40 @@
       "interpretive": true
     }
   ],
-  "photos": [],
-  "photoStatus": "pending-phase-e",
+  "photos": [
+    {
+      "file": "images/history/mora/summit-emmons-glacier.jpg",
+      "caption": "Mount Rainier’s summit and the start of the Emmons Glacier",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/mora/learn/nature/glaciers.htm",
+      "imageUrl": "https://www.nps.gov/mora/learn/nature/images/2014-7-18_Emmons-Sunrise_KLoving_web2_sml.jpeg",
+      "evidenceUrl": "https://www.nps.gov/mora/learn/nature/glaciers.htm",
+      "capturedAt": "2026-10-08",
+      "width": 960,
+      "height": 490,
+      "bytes": 189291,
+      "note": "On-page caption: \"Mount Rainier's summit and the start of the Emmons Glacier. NPS Photo\". Re-encoded JPEG, original dimensions.",
+      "verifiedBy": "independent-verifier-agent-2026-10-08 (credit 'NPS Photo' confirmed on evidence page; image src matched)"
+    },
+    {
+      "file": "images/history/mora/nisqually-glacier.jpg",
+      "caption": "The Nisqually Glacier, whose changes have been recorded since 1857",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/places/nisqually-glacier.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/cropped_image/primary/9C96C1D4-A0A2-28CC-8C8138B93AA79DFF.jpg",
+      "evidenceUrl": "https://www.nps.gov/places/nisqually-glacier.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "climate",
+      "width": 1400,
+      "height": 787,
+      "bytes": 236982,
+      "note": "On-page caption: \"Nisqually Glacier NPS Photo\"; alt text \"Retreating glacier on southwest side of mountain forming a river\". Resized from 4032x2268.",
+      "verifiedBy": "independent-verifier-agent-2026-10-08 (credit 'NPS Photo' confirmed on evidence page; image src matched)"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/mora/index.htm",
     "adhiUrl": "https://npshistory.com/publications/mora/adhi/index.htm",

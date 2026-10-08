@@ -86,6 +86,28 @@ test('the modal shows the block when a published park is opened', async ({ page 
   expect(overflow).toBe(false);
 });
 
+test('photos: untagged leads the section, theme-tagged sits inside its theme, licence is readable', async ({ page }) => {
+  await openHome(page);
+  const html = await page.evaluate((rec) => {
+    const w = window as unknown as W;
+    const photo = { caption: 'c', credit: 'NPS Photo', license: 'PD-USGov-NPS', sourceUrl: 'https://www.nps.gov/mora/', width: 960, height: 490 };
+    w.parkHistory['MORA'] = { ...rec, photos: [
+      { ...photo, file: 'images/history/mora/summit-emmons-glacier.jpg' },
+      { ...photo, file: 'images/history/mora/nisqually-glacier.jpg', themeKey: 'climate' },
+    ] };
+    return w.buildParkHistoryHTML(w.parkData['131'], '131');
+  }, PUBLISHED);
+  const summit = html.indexOf('summit-emmons-glacier.jpg');
+  const summary = html.indexOf('class="ph-summary"');
+  const climate = html.indexOf('Climate &amp; environment</h4>');
+  const nisqually = html.indexOf('nisqually-glacier.jpg');
+  expect(summit).toBeGreaterThan(-1);
+  expect(summit).toBeLessThan(summary);
+  expect(nisqually).toBeGreaterThan(climate);
+  expect(html).toContain('Public domain (U.S. Government work)');
+  expect(html).not.toContain('>PD-USGov-NPS<');
+});
+
 test('a park with only an archive page gets the single documentary-record link', async ({ page }) => {
   await openHome(page);
   const html = await page.evaluate(() => {
