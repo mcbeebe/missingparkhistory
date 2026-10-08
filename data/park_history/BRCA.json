@@ -1,0 +1,26 @@
+{
+  "code": "BRCA",
+  "name": "Bryce Canyon National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Bryce Canyon National Park in southwestern Utah is renowned for its extraordinary collection of hoodoos — tall, thin spires of rock formed by frost weathering and stream erosion of the Claron Formation limestone. Despite its name, Bryce Canyon is not a true canyon but rather a series of natural amphitheaters carved into the eastern edge of the Paunsaugunt Plateau. The area was designated a national monument in 1923 and became a national park in 1928. The Paiute people, who inhabited the region for centuries before European contact, called the hoodoos \"red rocks standing like men in a bowl-shaped canyon\" in their oral tradition.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/brca/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 97
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/brca/index.htm"
+  },
+  "corrections": []
+}

@@ -1,0 +1,30 @@
+{
+  "code": "JELA",
+  "name": "Jean Lafitte National Historical Park and Preserve",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/jela/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/jela/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/jela/hrs-barataria.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/jela/road_recognition.pdf",
+      "https://irma.nps.gov/DataStore/DownloadFile/421603",
+      "https://npshistory.com/publications/jela/eo-1996.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 72
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/jela/index.htm"
+  },
+  "corrections": []
+}

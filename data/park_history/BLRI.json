@@ -1,0 +1,26 @@
+{
+  "code": "BLRI",
+  "name": "Blue Ridge Parkway",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>The Blue Ridge Parkway stretches 469 miles along the crest of the Blue Ridge Mountains, connecting Shenandoah National Park in Virginia to Great Smoky Mountains National Park in North Carolina. Construction began in 1935 as a New Deal public works project and was not completed until 1987 with the opening of the Linn Cove Viaduct. Designed as a recreational motor road with no commercial vehicles allowed, the parkway passes through some of the oldest mountains in the world — the southern Appalachians — and features over 200 overlooks with sweeping views of the Blue Ridge. It is consistently the most-visited unit of the National Park System, drawing over 15 million recreational visitors annually.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/blri/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 76
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/blri/index.htm"
+  },
+  "corrections": []
+}

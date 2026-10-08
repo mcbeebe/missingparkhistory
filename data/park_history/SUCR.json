@@ -1,0 +1,28 @@
+{
+  "code": "SUCR",
+  "name": "Sunset Crater Volcano National Monument",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/sucr/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/sucr/l-v11-2022.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 49
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/sucr/index.htm"
+  },
+  "corrections": []
+}

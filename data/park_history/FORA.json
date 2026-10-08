@@ -1,0 +1,28 @@
+{
+  "code": "FORA",
+  "name": "Fort Raleigh NHS",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Fort Raleigh National Historic Site on Roanoke Island, North Carolina, preserves the site of England's first attempts to establish a permanent settlement in North America. Sir Walter Raleigh sponsored expeditions in 1585 and 1587 to colonize the area; the second expedition, led by John White, included 117 men, women, and children who established the famous \"Lost Colony.\" When White returned from a supply trip to England in 1590, the colonists had vanished, leaving only the word \"CROATOAN\" carved into a post. The fate of the colonists remains one of American history's most enduring mysteries. The site was designated in 1941 and also commemorates the Freedmen's Colony established on Roanoke Island during the Civil War, where formerly enslaved people built a self-governing community.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/fora/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/fora/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/fora/sis-v1n1-1949.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 145
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/fora/index.htm"
+  },
+  "corrections": []
+}

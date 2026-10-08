@@ -1,0 +1,29 @@
+{
+  "code": "AMIS",
+  "name": "Amistad National Recreation Area",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Amistad National Recreation Area was authorized by Congress in 1965 and established in 1990 along the U.S.–Mexico border near Del Rio, Texas. The recreation area surrounds Amistad Reservoir, a 64,860-acre international lake formed by the Amistad Dam on the Rio Grande, built jointly by the United States and Mexico. The region contains some of the oldest and best-preserved rock art in North America, with over 200 known pictograph sites created by hunter-gatherer peoples over a span of roughly 4,000 years. The Fate Bell Shelter and Panther Cave are among the most significant archaeological sites in the Lower Pecos Canyonlands.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/amis/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/amis/aspr-34.pdf",
+      "https://irma.nps.gov/DataStore/DownloadFile/449603"
+    ],
+    "brochureUrls": [],
+    "docCount": 30
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/amis/index.htm"
+  },
+  "corrections": []
+}

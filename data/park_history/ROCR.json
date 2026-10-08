@@ -1,0 +1,26 @@
+{
+  "code": "ROCR",
+  "name": "Rock Creek Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Rock Creek Park in Washington, D.C., is one of the largest and oldest urban parks in the United States. Established by an act of Congress in 1890 — just two years after Yellowstone — the park preserves nearly 1,800 acres of forested valley along Rock Creek and its tributaries in the heart of the nation's capital. The park was created to protect the creek's watershed and provide a natural retreat for city residents during the rapid urbanization of late 19th-century Washington. Rock Creek Park includes the Civil War-era Fort DeRussy, Peirce Mill (a 19th-century grist mill), and significant archaeological sites with evidence of Native American habitation dating back thousands of years. The park's forests, trails, and Nature Center make it a vital green space in one of the country's most densely developed metropolitan areas.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/rocr/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/rocr/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 113
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/rocr/index.htm"
+  },
+  "corrections": []
+}

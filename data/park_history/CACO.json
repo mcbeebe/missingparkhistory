@@ -1,0 +1,31 @@
+{
+  "code": "CACO",
+  "name": "Cape Cod National Seashore",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/caco/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/caco/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/caco/crm-17.pdf",
+      "https://npshistory.com/publications/caco/dune-shack-tcpa.pdf",
+      "https://npshistory.com/publications/caco/dwelling-in-the-dunes.pdf",
+      "https://npshistory.com/publications/caco/pamet-cranberry-boag-ea.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 240
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/caco/index.htm"
+  },
+  "corrections": []
+}

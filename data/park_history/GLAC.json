@@ -1,0 +1,30 @@
+{
+  "code": "GLAC",
+  "name": "Glacier National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Glacier National Park in northwestern Montana protects over one million acres of pristine mountain landscape in the northern Rocky Mountains, including portions of two mountain ranges, over 130 named lakes, more than 1,000 species of plants, and hundreds of species of animals. Established as a national park in 1910 following advocacy by naturalist George Bird Grinnell, the park is known as the \"Crown of the Continent\" for its dramatic glacially carved terrain. Together with Waterton Lakes National Park in Alberta, Canada, it forms the Waterton-Glacier International Peace Park, the world's first international peace park, designated in 1932. The park's namesake glaciers have been shrinking due to climate change; of the approximately 150 glaciers present in 1850, only 25 named glaciers remained active as of recent scientific surveys. The Blackfeet Nation has deep ancestral ties to the eastern slopes of the park, which they know as the \"Backbone of the World.\"</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/glac/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/glac/hrs-hss.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/glac/eo.pdf",
+      "https://npshistory.com/publications/glac/blackfeet-hwy-reconstruction.pdf",
+      "https://npshistory.com/publications/glac/gpq-v26n3-2006.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 454
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/glac/index.htm"
+  },
+  "corrections": []
+}

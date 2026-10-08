@@ -1,0 +1,29 @@
+{
+  "code": "NATR",
+  "name": "Natchez Trace Parkway",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>The Natchez Trace Parkway is a 444-mile scenic road that follows the approximate route of the historic Natchez Trace, an ancient travel corridor connecting Natchez, Mississippi, to Nashville, Tennessee. The original trace was used for thousands of years by Native Americans, including the Natchez, Chickasaw, and Choctaw nations, and became a major route for \"Kaintuck\" boatmen who floated goods down the Mississippi River to Natchez or New Orleans and then walked home overland. The trace's peak use was between 1785 and 1820, before steamboats made the return trip upriver practical. The parkway, administered by the National Park Service, was authorized in 1938 and substantially completed in 2005, passing through diverse landscapes from cypress swamps to Appalachian foothills.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/natr/index.htm",
+    "adhiUrl": "https://irma.nps.gov/DataStore/DownloadFile/481937",
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/natr/sis-v1n2-1949.pdf",
+      "https://www.nps.gov/media/video/view.htm?id=D8CE6B99-D60E-7E7D-2CF331645556E088"
+    ],
+    "brochureUrls": [],
+    "docCount": 60
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/natr/index.htm"
+  },
+  "corrections": []
+}

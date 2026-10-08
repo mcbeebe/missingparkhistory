@@ -1,0 +1,29 @@
+{
+  "code": "CASA",
+  "name": "Castillo de San Marcos National Monument",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Castillo de San Marcos National Monument in St. Augustine, Florida, preserves the oldest masonry fortification in the continental United States. Built by the Spanish between 1672 and 1695 using coquina — a local limestone formed from compressed shells — the fort was designed to protect Spain's claim to La Florida and the sea route of treasure ships returning to Europe. The fortress withstood multiple sieges, including British attacks in 1702 and 1740, and changed hands between Spain, Great Britain, the Confederate States, and the United States over its 300-year history. It was also used to imprison Native Americans, including members of the Seminole, Apache, Cheyenne, and other nations during the 19th century.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/casa/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/casa/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/casa/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
+      "https://npshistory.com/publications/casa/barnewolt-2018.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 37
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/casa/index.htm"
+  },
+  "corrections": []
+}

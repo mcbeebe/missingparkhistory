@@ -1,0 +1,26 @@
+{
+  "code": "ANTI",
+  "name": "Antietam National Battlefield",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Antietam National Battlefield in Sharpsburg, Maryland, preserves the site of the Battle of Antietam, fought on September 17, 1862 — the bloodiest single day in American military history, with an estimated 23,000 casualties. The Union's strategic victory gave President Abraham Lincoln the political leverage to issue the preliminary Emancipation Proclamation five days later, fundamentally shifting the war's purpose to include the abolition of slavery. Established as a national battlefield site in 1890, the park encompasses approximately 3,230 acres of rolling farmland and includes landmarks such as Burnside Bridge, the Dunker Church, and Bloody Lane.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/anti/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/anti/adhi.pdf",
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 40
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/anti/index.htm"
+  },
+  "corrections": []
+}

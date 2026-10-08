@@ -1,0 +1,28 @@
+{
+  "code": "STRI",
+  "name": "Stones River NB",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Stones River National Battlefield near Murfreesboro, Tennessee, preserves the site of the Battle of Stones River (also known as the Battle of Murfreesboro), fought from December 31, 1862, to January 2, 1863. The battle was among the bloodiest of the Civil War, with roughly 23,000 combined casualties — a casualty rate comparable to the Battle of Antietam. The Union victory under Major General William S. Rosecrans secured central Tennessee for the Union and provided a critical morale boost following the Confederate victory at Fredericksburg. The Stones River National Cemetery, established in 1865 at the battlefield, is the oldest national cemetery in the country established during the Civil War. The site was established as a national battlefield in 1927.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/stri/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/stri/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/stri/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 61
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/stri/index.htm"
+  },
+  "corrections": []
+}

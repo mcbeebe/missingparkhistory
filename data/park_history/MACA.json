@@ -1,0 +1,28 @@
+{
+  "code": "MACA",
+  "name": "Mammoth Cave National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Mammoth Cave National Park in central Kentucky protects the world's longest known cave system, with over 420 miles of surveyed passageways — more than twice the length of any other known cave. The cave was formed over millions of years as mildly acidic water dissolved the park's thick limestone bedrock. Native Americans explored and mined minerals in the cave at least 4,000 years ago, and during the War of 1812, enslaved laborers were forced to mine calcium nitrate (saltpeter) from the cave for use in gunpowder. Enslaved men, most notably Stephen Bishop, served as the cave's first guides in the 1830s and 1840s, making major explorations and mapping discoveries. The park was established in 1941 and was designated a UNESCO World Heritage Site in 1981 and an International Biosphere Reserve in 1990.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/maca/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/maca/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 106
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/maca/index.htm"
+  },
+  "corrections": []
+}

@@ -1,0 +1,28 @@
+{
+  "code": "YOSE",
+  "name": "Yosemite NP",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Yosemite National Park in California's Sierra Nevada protects nearly 750,000 acres of granite cliffs, waterfalls, giant sequoia groves, and diverse biological habitat. Yosemite Valley, carved by glaciers over millions of years, features iconic landmarks including El Capitan, Half Dome, and Yosemite Falls — at 2,425 feet, the tallest waterfall in North America. The valley was granted to California as a public trust by President Abraham Lincoln in 1864 — the first time the federal government set aside scenic land specifically for public enjoyment — and was established as a national park in 1890 through the advocacy of John Muir and others. The park is a UNESCO World Heritage Site and is home to the Ahwahneechee people, who have inhabited the valley for at least 3,000 years. Yosemite's scenery has profoundly influenced American art and conservation philosophy, notably through the photography of Ansel Adams.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/yose/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+    "ethnoUrls": [
+      "https://talltimbers.org/wp-content/uploads/2018/09/29-Gassaway2007_op.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 621
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/yose/index.htm"
+  },
+  "corrections": []
+}

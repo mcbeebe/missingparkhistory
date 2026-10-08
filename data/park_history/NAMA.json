@@ -1,0 +1,28 @@
+{
+  "code": "NAMA",
+  "name": "National Mall",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>The National Mall and Memorial Parks encompasses some of America's most iconic public spaces and monuments in the heart of Washington, D.C. The Mall stretches approximately two miles from the U.S. Capitol to the Lincoln Memorial and includes the Washington Monument, the World War II Memorial, the Vietnam Veterans Memorial, the Korean War Veterans Memorial, and the Martin Luther King Jr. Memorial, among others. Pierre Charles L'Enfant's 1791 plan for the federal city envisioned the Mall as a grand public promenade, though the space took its current form largely through the McMillan Plan of 1901–1902. The Mall has served as the nation's premier stage for public assembly and free expression, hosting events from Marian Anderson's 1939 concert to the 1963 March on Washington where Dr. Martin Luther King Jr. delivered his \"I Have a Dream\" speech.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/nama/index.htm",
+    "adhiUrl": "https://irma.nps.gov/DataStore/DownloadFile/482497",
+    "hrsUrl": "https://npshistory.com/publications/nama/hrs-events-celebrations.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/nama/ncp-res-list-2009.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 117
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/nama/index.htm"
+  },
+  "corrections": []
+}

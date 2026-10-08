@@ -1,0 +1,28 @@
+{
+  "code": "ARCH",
+  "name": "Arches National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Arches National Park in eastern Utah protects over 2,000 natural stone arches — the densest concentration of such formations in the world — along with pinnacles, balanced rocks, and eroded sandstone fins. The landscape was shaped over 300 million years as salt deposits, sandstone layers, and erosion created the park's distinctive red-rock formations. Originally proclaimed a national monument by President Herbert Hoover in 1929, it was redesignated as a national park in 1971. Delicate Arch, the park's most iconic feature, has become a widely recognized symbol of Utah and appears on the state's license plates.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/arch/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/cany/hrs-1986.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/arch/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 75
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/arch/index.htm"
+  },
+  "corrections": []
+}

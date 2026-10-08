@@ -1,0 +1,30 @@
+{
+  "code": "BISC",
+  "name": "Biscayne National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Biscayne National Park in southeastern Florida protects 172,971 acres of marine and coastal environments, making it one of the largest marine parks in the National Park System. Ninety-five percent of the park is water, encompassing Biscayne Bay, the northernmost Florida Keys, and a portion of the third-largest barrier reef in the world. Originally established as Biscayne National Monument in 1968 after a citizen-led campaign blocked a proposed industrial seaport, it was redesignated as a national park in 1980. The park preserves mangrove shorelines, the shallow waters of Biscayne Bay, the undeveloped upper Florida Keys, and living coral reefs supporting over 600 species of fish.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/bisc/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/bisc/adhi.pdf",
+    "hrsUrl": "https://npshistory.com/publications/bisc/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/bisc/eoa.pdf"
+    ],
+    "brochureUrls": [
+      "https://irma.nps.gov/DataStore/DownloadFile/469260"
+    ],
+    "docCount": 63
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/bisc/index.htm"
+  },
+  "corrections": []
+}

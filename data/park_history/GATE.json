@@ -1,0 +1,29 @@
+{
+  "code": "GATE",
+  "name": "Gateway National Recreation Area",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/gate/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/gate/fort-wadsworth-hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/gate/reap-jacob-riis-park.pdf",
+      "https://npshistory.com/publications/gate/jamaica-bay-eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 148
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/gate/index.htm"
+  },
+  "corrections": []
+}

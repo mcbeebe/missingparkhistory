@@ -1,0 +1,26 @@
+{
+  "code": "GRTE",
+  "name": "Grand Teton National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Grand Teton National Park in northwestern Wyoming protects the Teton Range — one of the youngest mountain ranges in the Rocky Mountains, rising abruptly over 7,000 feet above the valley floor of Jackson Hole without foothills. The park was established in 1929, originally protecting only the mountains themselves, and was expanded in 1950 to include much of Jackson Hole valley after John D. Rockefeller Jr. quietly purchased and donated 35,000 acres of ranchland. The park encompasses glacial lakes, alpine meadows, and the headwaters of the Snake River, and supports wildlife populations including grizzly bears, wolves, bison, and one of the largest elk herds in North America. Together with adjacent Yellowstone National Park and surrounding national forests, Grand Teton is part of the Greater Yellowstone Ecosystem, one of the last remaining large, intact temperate ecosystems on Earth.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/grte/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/grte/hrs.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 310
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/grte/index.htm"
+  },
+  "corrections": []
+}

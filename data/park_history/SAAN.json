@@ -1,0 +1,28 @@
+{
+  "code": "SAAN",
+  "name": "San Antonio Missions National Historical Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>San Antonio Missions National Historical Park in San Antonio, Texas, preserves four of the five Spanish colonial missions established along the San Antonio River in the 18th century: Mission Concepción, Mission San José, Mission San Juan, and Mission Espada. Together with the Alamo (Mission San Antonio de Valero), these missions represent the largest concentration of Spanish colonial missions in North America. Founded between 1718 and 1731 by Franciscan friars, the missions served as centers for converting and acculturating Native American peoples into Spanish colonial society. The park was established in 1978 and the missions were inscribed as a UNESCO World Heritage Site in 2015 — the first World Heritage Site in Texas — recognized for their outstanding example of the interchange of Spanish and Coahuiltecan cultures.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/saan/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/saan/campbell/index.htm"
+    ],
+    "brochureUrls": [],
+    "docCount": 85
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/saan/index.htm"
+  },
+  "corrections": []
+}

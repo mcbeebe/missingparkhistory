@@ -1,0 +1,29 @@
+{
+  "code": "FODA",
+  "name": "Fort Davis National Historic Site",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Fort Davis National Historic Site in the Davis Mountains of West Texas preserves one of the best surviving examples of a frontier military post in the American Southwest. Established in 1854, the fort guarded emigrants, mail coaches, and freight wagons on the San Antonio–El Paso road through Limpia Canyon. After the Civil War, the post was garrisoned by troops of the 9th and 10th U.S. Cavalry and the 24th and 25th U.S. Infantry — the famed Buffalo Soldiers, African American troops who played a vital role in the frontier Army during the Indian Wars period. The fort was active until 1891 and was designated a national historic site in 1963. Over two dozen original and restored buildings remain, making it one of the most intact frontier forts in the West.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/foda/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/foda/hrs.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/foda/ssi-v37-2011.pdf",
+      "https://npshistory.com/publications/foda/hsr-indian-lodge.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 41
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/foda/index.htm"
+  },
+  "corrections": []
+}

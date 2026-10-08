@@ -1,0 +1,30 @@
+{
+  "code": "ACAD",
+  "name": "Acadia National Park",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>Acadia National Park was established in 1919 as Lafayette National Park — the first national park east of the Mississippi River — and renamed Acadia in 1929. Located on Mount Desert Island and surrounding areas along the Maine coast, the park protects roughly 49,000 acres of granite-peaked mountains, rocky shoreline, woodlands, and glacially carved lakes. George B. Dorr and Charles W. Eliot led the private land conservation effort that made the park possible, with John D. Rockefeller Jr. later financing the construction of 45 miles of carriage roads. The park's diverse ecosystems mark the overlap of northern boreal and eastern deciduous forests, supporting over 1,100 plant species and serving as a critical stopover for migratory birds along the Atlantic Flyway.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/acad/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/acad/hrs-jccc.pdf",
+    "ethnoUrls": [
+      "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "https://npshistory.com/publications/acad/eoa-v2.pdf",
+      "https://npshistory.com/publications/acad/fish_house.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 228
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/acad/index.htm"
+  },
+  "corrections": []
+}

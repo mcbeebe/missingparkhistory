@@ -1,0 +1,26 @@
+{
+  "code": "FRST",
+  "name": "First State National Historical Park",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/frst/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/frst/hrs.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 15
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/frst/index.htm"
+  },
+  "corrections": []
+}

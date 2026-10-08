@@ -1,0 +1,29 @@
+{
+  "code": "BICY",
+  "name": "Big Cypress National Preserve",
+  "entries": [],
+  "reviewStatus": "draft",
+  "lastReviewed": "2026-10-07",
+  "author": "",
+  "verifiedBy": "",
+  "summary": "",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/bicy/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/bicy/adhi.pdf",
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/bicy/ethnohistory-1982.pdf",
+      "https://npshistory.com/publications/bicy/goss-1995.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 80
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/bicy/index.htm"
+  },
+  "corrections": []
+}

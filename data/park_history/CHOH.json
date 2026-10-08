@@ -1,0 +1,26 @@
+{
+  "code": "CHOH",
+  "name": "C&O Canal NHP",
+  "entries": [],
+  "reviewStatus": "legacy-unsourced",
+  "lastReviewed": "2026-10-07",
+  "author": "parks-page-legacy",
+  "verifiedBy": "",
+  "summary": "<p>The Chesapeake and Ohio Canal National Historical Park preserves the 184.5-mile towpath and canal route that runs from Georgetown in Washington, D.C. to Cumberland, Maryland, paralleling the Potomac River. Constructed between 1828 and 1850, the C&O Canal was conceived as a transportation route to connect the eastern seaboard with the Ohio River valley, but competition from the Baltimore and Ohio Railroad ultimately limited the canal's commercial success. The canal ceased operations in 1924 after a devastating flood, and a campaign led by Supreme Court Justice William O. Douglas in 1954 helped save the corridor from being converted into a highway. It was designated a national historical park in 1971.</p>",
+  "themes": {},
+  "facts": [],
+  "photos": [],
+  "photoStatus": "none-yet",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/choh/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/choh/adhi-2022.pdf",
+    "hrsUrl": "https://npshistory.com/publications/choh/brunswick-hrs.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 143
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/choh/index.htm"
+  },
+  "corrections": []
+}
