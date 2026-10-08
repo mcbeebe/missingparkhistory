@@ -2,15 +2,197 @@
   "code": "GLAC",
   "name": "Glacier National Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Glacier National Park in northwestern Montana protects over one million acres of pristine mountain landscape in the northern Rocky Mountains, including portions of two mountain ranges, over 130 named lakes, more than 1,000 species of plants, and hundreds of species of animals. Established as a national park in 1910 following advocacy by naturalist George Bird Grinnell, the park is known as the \"Crown of the Continent\" for its dramatic glacially carved terrain. Together with Waterton Lakes National Park in Alberta, Canada, it forms the Waterton-Glacier International Peace Park, the world's first international peace park, designated in 1932. The park's namesake glaciers have been shrinking due to climate change; of the approximately 150 glaciers present in 1850, only 25 named glaciers remained active as of recent scientific surveys. The Blackfeet Nation has deep ancestral ties to the eastern slopes of the park, which they know as the \"Backbone of the World.\"</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-08",
+  "author": "author-F-2026-10-08",
+  "verifiedBy": "verifier-F-2026-10-08 (25 claims checked; 4 corrections)",
+  "summary": "<p>Glacier National Park protects 1,600 square miles of the northern Rocky Mountains in Montana, where the plains end abruptly against peaks built of sediments laid down 1.5 billion years ago and shoved, about 75 million years ago, over far younger rock along the Lewis Overthrust. From Triple Divide Peak, water runs to the Pacific, the Gulf of Mexico and Hudson Bay. Together with Waterton Lakes it is one of the few places in North America where all the native carnivores survive, and George Bird Grinnell named it the Crown of the Continent in 1908. <a href=\"https://npshistory.com/publications/glac/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>People have been drawn to this country for 10,000 years, and the park brochure calls it a landscape that has always been sacred to the Blackfeet, Salish and Kootenai peoples. Congress made Glacier the tenth national park on May 11, 1910; in 1932 it and Canada’s Waterton Lakes became the world’s first international peace park, later a biosphere reserve (1976) and World Heritage Site (1995). The park draws more than two million visitors a year; its Going-to-the-Sun Road, which crosses the Continental Divide at Logan Pass, was the first road designated a national historic civil engineering landmark. <a href=\"https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/glac/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s namesakes are leaving. An estimated 150 glaciers existed around 1850; by 2015 only 26 remained large enough to count as active, and the 2016 foundation document describes the last remnants of alpine glaciers as disappearing quickly due to climate change. <a href=\"https://npshistory.com/publications/glac/glacier-retreat-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/glac/index.htm",
+      "title": "NPSHistory.com: Glacier archive page — overview (from the 2014 NPS brochure for Waterton-Glacier International Peace Park) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+      "title": "Foundation Document, Glacier National Park, Montana (NPS, 2016), Brief Description and Significance",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "title": "USGS, Retreat of Glaciers in Glacier National Park: 1996–2015 (2017)",
+      "type": "usgov"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The K’tunaxa (Kootenai) and the Piikáni, one of the three Blackfeet tribes, have ties to this country reaching back well over a thousand years; the mountains are the Piikáni’s most sacred place. On January 23, 1870, in what the 2001 ethnographic overview calls the Massacre on the Marias, Col. E. M. Baker, under orders from General Sheridan, attacked a winter camp of friendly Piikáni and killed 173 or more, mostly women, children and elders. In 1883–1885, as promised rations were delayed or never delivered, 400 to 600 Piikáni died. <a href=\"https://npshistory.com/publications/glac/eo.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>In September 1895 three commissioners, George Bird Grinnell among them, met Blackfeet leaders to buy the mountain lands. The Piikáni asked $3 million and received $1.5 million over ten years, plus the right to hunt, fish and cut timber while the land stayed public. The strip became part of Glacier National Park in 1910, and the government came to treat those rights as lost or severely curtailed; many Blackfeet contend they never gave them up. <a href=\"https://npshistory.com/publications/glac/eo.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/glac/eo.pdf",
+          "title": "Reeves & Peacock, “Our Mountains Are Our Pillows”: An Ethnographic Overview of Glacier National Park (NPS, 2001), Executive Summary pp. vii–xiii and “The Ceded Strip — 1896,” p. 119",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Glacier’s current ice is geologically young — formed about 7,000 years ago and at its largest around 1850, at the end of the Little Ice Age. Since 1900, the U.S. Geological Survey reports, the park region’s mean annual temperature has risen 1.33 °C, 1.8 times the global mean increase, and rain rather than snow has been the dominant form of the century’s added precipitation. Of the roughly 150 glaciers estimated in 1850, 26 were still active in 2015; Grinnell Glacier lost about 45 percent of its area between 1966 and 2015, and models project that some studied glaciers will disappear between 2030 and 2080. The loss reaches beyond scenery: glaciers act as a bank of water that keeps streams cold and flowing in late summer, and without meltwater, USGS warns, rising stream temperatures could cause local extinctions of sensitive aquatic species and harm the threatened bull trout. <a href=\"https://npshistory.com/publications/glac/glacier-retreat-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+          "title": "USGS, Retreat of Glaciers in Glacier National Park: 1996–2015 (2017), text and Glacier Area Summary table",
+          "type": "usgov"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+          "title": "Foundation Document, Glacier National Park (NPS, 2016), Brief Description",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "1,600 square miles of the northern Rocky Mountains; 10th national park; established by Congress May 11, 1910",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 9)"
+    },
+    {
+      "claim": "Lewis Overthrust: Precambrian rock (sediments 1.5 billion years ago) forced over Cretaceous rock; movement began about 75 million years ago",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "'Where Even the Landscapes Have Met'"
+    },
+    {
+      "claim": "Triple Divide Peak: water to Columbia/Pacific, Mississippi/Gulf of Mexico, Saskatchewan/Hudson Bay",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "'A Meeting Place' para 2"
+    },
+    {
+      "claim": "One of the few places in North America where all the native carnivores survive",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "'All the Native Carnivores Survive Here'"
+    },
+    {
+      "claim": "Grinnell named the place the 'Crown of the Continent' in 1908; advocated Blackfeet interests and establishment of the park",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "'A Meeting Place' para 1"
+    },
+    {
+      "claim": "Resources and landscapes have drawn people to the region for 10,000 years",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+      "locator": "Brief Description, p. 3; Significance 'Cultural Connections', p. 6"
+    },
+    {
+      "claim": "Landscape has always been sacred to the Blackfeet, Salish and Kootenai peoples",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "overview para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "1932 world's first International Peace Park; Biosphere Reserve 1976; World Heritage Site December 6, 1995",
+      "sourceUrl": "https://npshistory.com/publications/glac/index.htm",
+      "locator": "overview para 1; Establishment block"
+    },
+    {
+      "claim": "More than two million visitors a year; visitors drive Going-to-the-Sun Road to Logan Pass and cross the Continental Divide; first road designated a national historic civil engineering landmark",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+      "locator": "Brief Description p. 3; Significance p. 6"
+    },
+    {
+      "claim": "Last remnants of alpine glaciers disappearing quickly due to climate change",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/glac-fd-2016.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 9)"
+    },
+    {
+      "claim": "Approximately 150 glaciers estimated present in 1850; most still present 1910; 26 glaciers larger than 25 acres in 2015",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "p. 1, para 1"
+    },
+    {
+      "claim": "Current glaciers formed ~7,000 years ago; maximum size at end of Little Ice Age around 1850",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "p. 1 sidebar"
+    },
+    {
+      "claim": "Since 1900 mean annual temperature for GNP region increased 1.33 °C, 1.8 times the global mean; rain the dominant form of increased precipitation",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "p. 1, 'Why are they melting?'"
+    },
+    {
+      "claim": "Model projections suggest certain studied glaciers will disappear between 2030 and 2080",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "p. 1, para 1"
+    },
+    {
+      "claim": "Grinnell Glacier area change 1966–2015: −44.74%",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "Glacier Area Summary table"
+    },
+    {
+      "claim": "Glaciers a 'bank' of water; loss raises summer stream temperatures, may cause local extinction of temperature-sensitive aquatic species; adverse effects for threatened bull trout",
+      "sourceUrl": "https://npshistory.com/publications/glac/glacier-retreat-2017.pdf",
+      "locator": "p. 1, 'What are the effects of losing glaciers?'",
+      "interpretive": true
+    },
+    {
+      "claim": "K'tunaxa and Piikáni traditional associations extend back well over a thousand years; mountains are the Piikáni's most sacred place",
+      "sourceUrl": "https://npshistory.com/publications/glac/eo.pdf",
+      "locator": "Executive Summary, p. vii"
+    },
+    {
+      "claim": "Massacre on the Marias, January 1870: Col. E. M. Baker under orders from General Sheridan attacked a winter camp of friendly Piikáni; U.S. Army killed 173 or more, mostly women, children and elders",
+      "sourceUrl": "https://npshistory.com/publications/glac/eo.pdf",
+      "locator": "Executive Summary, p. xi; date January 23, 1870 at p. 111 (pdf p. 130)"
+    },
+    {
+      "claim": "Starvation 1883–1885: delayed or non-delivered rations under Lame Bull Treaty; 400 to 600 Piikáni died",
+      "sourceUrl": "https://npshistory.com/publications/glac/eo.pdf",
+      "locator": "Executive Summary, p. xii"
+    },
+    {
+      "claim": "September 1895 three commissioners including George Bird Grinnell met Blackfeet leaders; asking price $3 million; Piikáni got $1.5 million over 10 years and right to hunt, fish, cut timber while lands remained public (section heading 'The Ceded Strip -- 1896'; agreement referred to as the Agreement of 1895)",
+      "sourceUrl": "https://npshistory.com/publications/glac/eo.pdf",
+      "locator": "'The Ceded Strip — 1896', p. 119 (pdf p. 138)"
+    },
+    {
+      "claim": "Ceded Strip became Glacier National Park 1910; enabling legislation 1912 and 1914, after which in the government view the lands were no longer public and the Blackfeet lost or had their rights severely curtailed; many Blackfeet contend they never gave up these rights",
+      "sourceUrl": "https://npshistory.com/publications/glac/eo.pdf",
+      "locator": "Executive Summary, pp. xii–xiii",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/glac/going-to-the-sun-road-st-mary.jpg",
+      "caption": "Going-to-the-Sun Road in the St. Mary Valley",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/glac/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/C1C49B92-9BE9-6A08-F2C851A2A4ACEC8D.jpg",
+      "evidenceUrl": "https://www.nps.gov/glac/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 933,
+      "bytes": 136024,
+      "note": "On-page caption: \"Going-to-the-Sun Road in the St. Mary Valley NPS Photo\"; alt text \"Jagged peaks rise out of a forested valley and an empty road curves off into the distance.\" Resized from 2500x1667."
+    },
+    {
+      "file": "images/history/glac/grinnell-glacier-2025.jpg",
+      "caption": "Grinnell Glacier from Upper Grinnell Ridge on September 6, 2025",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "themeKey": "climate",
+      "sourceUrl": "https://www.nps.gov/glac/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3676C0C4-DAE8-9603-7668281F66A34E69.jpg",
+      "evidenceUrl": "https://www.nps.gov/glac/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 1050,
+      "bytes": 176977,
+      "note": "On-page caption: \"Grinnell Glacier from Upper Grinnell Ridge on September 6, 2025. NPS Photo\"; alt text \"a mountain glacier with a lake and mountains behind\". Resized from 3000x2250. (The same page shows a 1911 Elrod view credited to Glacier National Park Archives, not used.)"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/glac/index.htm",
     "adhiUrl": null,

@@ -1,16 +1,309 @@
 {
   "code": "HUTR",
   "name": "Hubbell Trading Post National Historic Site",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Hubbell Trading Post National Historic Site near Ganado, Arizona, preserves the oldest continuously operating trading post on the Navajo Nation. Established by John Lorenzo Hubbell in 1878, the post served as a vital center of commerce and cultural exchange between the Navajo people and the wider American economy. Hubbell became a trusted figure in the community, acting as interpreter, mediator, and advisor while building a business around Navajo weavings, silverwork, and other crafts. The trading post was designated a national historic site in 1965 and still functions as a working trading post today, selling Navajo rugs, jewelry, and pottery. The site preserves the Hubbell family home, a visitor center with historic rug collections, and the surrounding cultural landscape.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "1033"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-08",
+  "author": "author-G-2026-10-08",
+  "verifiedBy": "verifier-G-2026-10-08 (37 claims checked; 10 corrections)",
+  "summary": "<p>Hubbell Trading Post sits at 6,325 feet beside the Pueblo Colorado Wash on the edge of Ganado, Arizona, in a valley the Navajo call Lók’aah niteel, Wide Reeds, and in the middle of the Navajo Nation. People lived along this wash long before any trader: Wide Reed Ruin, a pueblo with kivas and plazas inside the site, was built in A.D. 1276–77 by tree-ring dating, and, by the administrative history’s account, the general area was largely abandoned about 1300 because of a drought that had begun in the 1270s. <a href=\"https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap9.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>John Lorenzo Hubbell, born in Pajarito, New Mexico Territory, in 1853, began trading in the Ganado valley in 1876 and, by the park’s administrative history and foundation document, bought a trading post on this spot — William Leonard’s, the administrative history says — in 1878 (the 2010 park brochure dates the purchase to 1876). He came as the Navajo struggled to adjust to reservation life after the Long Walk. In 1883 he built a new post of uncoursed sandstone, today divided into a bullpen store, jewelry room and rug room beside a wareroom, and a U.S. post office opened there in the 1880s. At various times Hubbell and his sons owned more than 30 trading posts. He died in 1930 and lies in an unmarked grave on Hubbell Hill, following Navajo custom. <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/intro.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress authorized the historic site on August 28, 1965, on the understanding that it would stay a working business, and Dorothy Hubbell sold it to the Park Service in 1967. It is the oldest continuously operating trading post in the Southwest: artisans still bring in rugs, jewelry, pottery and baskets, neighbors still buy groceries, and the museum collection holds more than 450,000 items. <a href=\"https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "themes": {
+    "indigenous": {
+      "html": "<p>In 1864 the U.S. Army forced more than 8,500 Diné (Navajo) on the Long Walk to Hwééldi — Bosque Redondo, at Fort Sumner, New Mexico Territory — for four years of imprisonment. When they came home in 1868 their hogans, herds and crops were gone, and many came to depend on traders for food. The Navajo leader Totsonii Hastiin, Ganado Mucho, invited Hubbell to the valley; when smallpox swept the reservation in 1886 Hubbell turned his home into a hospital. Traders wrote letters and served as pawnbroker and banker; the Manchesters’ 1993 administrative history counts them among the most important acculturating forces in Navajo history. <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap4.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap5.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap9.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park brochure says Navajo learned weaving from Spanish, Mexican and Pueblo weavers and surpassed them, and dates blankets of Spanish Churro-sheep wool to the 1650s; Navajo-Churro ewes still lamb at the post each spring. Hubbell urged weavers toward older patterns in gray, black, white and red, the style now called Ganado Red. Daghaa Neezi, Friday Kinlicheenie, came to work at the post around 1915, kept its garden for some 70 years and, as a medicine man, performed a Blessing Way there. <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap6.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hutr/index.htm",
+          "title": "NPSHistory.com: Hubbell Trading Post NHS archive page — overview (from the 2010 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+          "title": "Foundation Document Overview, Hubbell Trading Post National Historic Site (NPS, 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap4.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. IV, The Rise and Fall of the Trading Post as an Important Institution",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap5.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. V, Traders and Trading",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap6.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. VI, The Trading Post: Finances, Organization, and Some Veteran Employees",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap9.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. IX, Cultural Resources III (Indian culture; archeological sites)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/hutr/index.htm",
+          "title": "NPS, Hubbell Trading Post NHS homepage (photo caption: Navajo-Churro ewes lambing each spring)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "latino": {
+      "html": "<p>Hubbell came from a Hispanic New Mexican family on his mother’s side. His father, James Lawrence Hubbell, came from Connecticut; his mother, Julianita Gutierrez (so spelled in the administrative history; the park brochure has “Gutierriez”), was of Spanish descent. He worked as a clerk and Spanish interpreter at forts and trading posts before he traded, married Lina Rubi of Cebolleta, New Mexico Territory, in 1879, and was known to local Hispanics as Don Lorenzo — “Don,” the administrative history notes, being a Spanish term of respect — and to the Navajo as Naakaii Sani, Old Mexican. <a href=\"https://npshistory.com/publications/hutr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/intro.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hutr/index.htm",
+          "title": "NPSHistory.com: Hubbell Trading Post NHS archive page — overview (from the 2010 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/intro.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), Introduction — History of the Site to 1957",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Born Dorothy Elizabeth Smith in Indiana, Dorothy Hubbell came west in 1920 to teach the Hubbell children and soon married their widowed father, Roman. By 1957, with Roman gradually paralyzed by strokes and the family company in bankruptcy, she was running the post while caring for him. That July she asked the Museum of Northern Arizona whether it could acquire and preserve the place; it could not, but the administrative history dates the movement for a national historic site to that year. She was appalled when one prospective buyer said he would sell off the contents and put in a liquor store, and the Manchesters credit her “vision, determination, and patience” for bringing the collection to the American people intact. <a href=\"https://npshistory.com/publications/hutr/adhi/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/summary.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/hutr/adhi/chap3.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap1.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. I, Hubbell Trading Post, July 1957",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/chap3.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. III, Land Acquisition",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/hutr/adhi/summary.htm",
+          "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), Executive Summary",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Along Pueblo Colorado Wash, tributary of the Little Colorado; elevation 6,325 feet; outskirts of Ganado, Apache County; 160-acre site",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 4, Description para 1"
+    },
+    {
+      "claim": "Valley of the Pueblo Colorado Wash known as Lók'aah niteel, Wide Reeds; NPS cares for the site in the midst of the Navajo Nation",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Welcome / Woosh Deeh'; 'Homestead on the High Plateau'"
+    },
+    {
+      "claim": "Wide Reed Ruin: pentagon-shaped Pueblo III pueblo constructed A.D. 1276–1277 by tree-ring dates; kivas and plazas; area largely abandoned about 1300 due to drought beginning in the 1270s",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap9.htm",
+      "locator": "Anasazi Period (Pueblo III); HUTR-5 Wide Reed Ruin, fn. 10"
+    },
+    {
+      "claim": "Wide Reed Ruin circa AD 1276",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 3, Other Cultural Resources"
+    },
+    {
+      "claim": "Hubbell born 1853 in Pajarito, New Mexico Territory",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Starting Out'"
+    },
+    {
+      "claim": "Born November 1853 in Pajarito; opened first post at the Hardison place near Ganado Lake in 1876; bought the Leonard Trading Post in 1878",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/intro.htm",
+      "locator": "History of the Site to 1957, paras 4–6"
+    },
+    {
+      "claim": "Brochure: began trading here in 1876; 'In 1876 he bought William Leonard's business in this location'",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Aftermath of the Long Walk'; 'Traders and Trading'",
+      "interpretive": false
+    },
+    {
+      "claim": "In 1878 he purchased a trading post along the Pueblo Colorado Wash; new two-room post 1883; uncoursed sandstone with flat earthen roof; store (bullpen), jewelry room, rug room, wareroom",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 4, Description"
+    },
+    {
+      "claim": "For over 50 years Hubbell known for neighborly friendship, honest dealings; at various times he and his sons owned over 30 trading posts; today American Indians bring rugs, jewelry, pottery, baskets; locals buy groceries",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'A Bridge Between Cultures'; 'The Hubbell Trading Empire'"
+    },
+    {
+      "claim": "Hubbell died 1930, buried on the hill; grave unmarked following Navajo custom; Lina Rubi and Bi'lii Lani also buried there",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Trader and Friend'; 'Hubbell Hill'"
+    },
+    {
+      "claim": "Authorized by Act of Congress August 28, 1965; to remain a working trading post",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 4, Description para 1"
+    },
+    {
+      "claim": "Dorothy Hubbell sold to the NPS in 1967",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Trader and Friend'; timeline '1960s'"
+    },
+    {
+      "claim": "Oldest continuously operating trading post in the American Southwest; museum collection more than 450,000 items",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 2 Significance bullet 1; p. 3 Museum Collections"
+    },
+    {
+      "claim": "1864 Long Walk to Hwééldi, Bosque Redondo (Fort Sumner); four-year imprisonment; returned 1868 to destroyed hogans, herds, crops; over 8,500 Navajo exiled",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Aftermath of the Long Walk'; timeline '1864-1868'"
+    },
+    {
+      "claim": "More than 8,500 Navajo (Diné) returned after 1868 from forced relocation and internment at Fort Sumner; many came to rely on traders for food and supplies",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "locator": "p. 4, Description para 2"
+    },
+    {
+      "claim": "Totsonii Hastiin, Ganado Mucho, invited Hubbell to Ganado Valley",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "timeline '1872-1878'"
+    },
+    {
+      "claim": "1886 smallpox epidemic; Hubbell opened his home as a hospital; 1883–1886 U.S. post office opens at Hubbell Trading Post",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Trader and Friend'; timeline '1883-1886'"
+    },
+    {
+      "claim": "Traders read and wrote letters, interceded in legal difficulties, were pawnbroker and banker",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap5.htm",
+      "locator": "ch. V, What It Takes to be an Indian Trader"
+    },
+    {
+      "claim": "Traders proved one of the most important acculturating influences in Navajo history (Manchesters 1993)",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap9.htm",
+      "locator": "ch. IX, The Navajo, final paragraph",
+      "interpretive": true
+    },
+    {
+      "claim": "Trading posts proved significant acculturating institutions",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap4.htm",
+      "locator": "ch. IV, Rise and Fall of the Trading Post, para 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Hubbell encouraged designs from old patterns with gray, black, white and red; legacy includes the Ganado Red style",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Weavers and Weaving'"
+    },
+    {
+      "claim": "Daghaa Neezi (Friday Kinlicheenie), Hubbell's gardener for over 70 years",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "site guide, 'Kitchen Garden'"
+    },
+    {
+      "claim": "Friday Kinlicheenie came to work at the post about 1915; medicine man; Blessing Way; ceremony after lightning struck a tree in the 1970s",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap6.htm",
+      "locator": "ch. VI, Friday Kinlicheenie, fns. 8–10"
+    },
+    {
+      "claim": "Father James Lawrence Hubbell from Connecticut; mother Julianita Gutierriez of Spanish descent; clerk and Spanish interpreter; married Lina Rubi of Cebolleta 1879; Don Lorenzo to local Hispanics; Naakaii Sani (Old Mexican) to the Navajo",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Starting Out'; 'Aftermath of the Long Walk'"
+    },
+    {
+      "claim": "Mother Julianita Gutierrez, of New Mexico; 'Don' a Spanish term of respect",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/intro.htm",
+      "locator": "History of the Site to 1957"
+    },
+    {
+      "claim": "1650s: Navajo begin weaving blankets using wool from Spanish Churro sheep",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "timeline '1650s'"
+    },
+    {
+      "claim": "Each spring Navajo-Churro ewes give birth to their lambs at Hubbell Trading Post",
+      "sourceUrl": "https://www.nps.gov/hutr/index.htm",
+      "locator": "homepage slideshow caption"
+    },
+    {
+      "claim": "Dorothy Elizabeth Smith, born in Indiana, came west in 1920 to teach the Hubbell children; Roman's wife had died in the influenza epidemic; Dorothy soon married Roman",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap1.htm",
+      "locator": "ch. I, fn. 13"
+    },
+    {
+      "claim": "Roman's strokes from 1953 left him paralyzed on his right side; Hubbell Trading Post, Inc. in bankruptcy; Dorothy running the post and caring for Roman",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap1.htm",
+      "locator": "ch. I, fn. 8 and following paragraph"
+    },
+    {
+      "claim": "Mid-July 1957 meeting with Harold Colton and Ned Danson of the Museum of Northern Arizona; Hubbells asked whether MNA could acquire and preserve the property; Colton said it could not",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap1.htm",
+      "locator": "ch. I, paras following fn. 8 and fn. 9"
+    },
+    {
+      "claim": "Prospective buyer said he'd sell the contents and put in a liquor store; Dorothy determined to see it preserved",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap1.htm",
+      "locator": "ch. I, fn. 12"
+    },
+    {
+      "claim": "'It was only because of Dorothy Hubbell's vision, determination, and patience that the collection came to the American people intact'",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/chap3.htm",
+      "locator": "ch. III, closing of Case of the Silk Rug",
+      "interpretive": true
+    },
+    {
+      "claim": "The movement to bring Hubbell Trading Post into the National Park System started in 1957",
+      "sourceUrl": "https://npshistory.com/publications/hutr/adhi/summary.htm",
+      "locator": "Executive Summary, para 1"
+    },
+    {
+      "claim": "Weaving common among Spanish, Mexicans and Pueblo Indians; Navajo learned the skill and surpassed their teachers",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Weavers and Weaving' para 1"
+    },
+    {
+      "claim": "Navajo struggled to adjust to reservation life following the 1864 Long Walk when Hubbell came to Ganado",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "overview, 'Aftermath of the Long Walk'"
+    },
+    {
+      "claim": "1883–1886: U.S. post office opens at Hubbell Trading Post",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "locator": "timeline '1883-1886'"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/hutr/trading-post-panorama.jpg",
+      "caption": "The sandstone trading post at Ganado",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "imageUrl": "https://npshistory.com/publications/hutr/index.jpg",
+      "evidenceUrl": "https://npshistory.com/publications/hutr/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 350,
+      "bytes": 110373,
+      "note": "NPSHistory archive-page header image, credited \"NPS photo\" (image-credit div directly under the image). Re-encoded JPEG, original dimensions."
+    },
+    {
+      "file": "images/history/hutr/navajo-churro-ewe-lambs.jpg",
+      "caption": "A Navajo-Churro ewe and her spring lambs at Hubbell Trading Post",
+      "credit": "NPS Photo/LHenio",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/hutr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7C91D7-1DD8-B71B-0B54C08912784B29.jpg",
+      "evidenceUrl": "https://www.nps.gov/hutr/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "indigenous",
+      "width": 1400,
+      "height": 1378,
+      "bytes": 237212,
+      "note": "On-page caption (homepage slideshow, alt \"Spring lambs with their Navajo-Churro ewe.\"): \"Each spring Navajo-Churro ewes give birth to their lambs at Hubbell Trading Post. NPS Photo/LHenio\". Resized from 1800x1772."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/hutr/index.htm",
     "adhiUrl": "https://npshistory.com/publications/hutr/adhi.pdf",
@@ -25,5 +318,27 @@
   "wayback": {
     "main": "https://web.archive.org/web/20250119/https://www.nps.gov/hutr/index.htm"
   },
-  "corrections": []
+  "corrections": [],
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/hutr/index.htm",
+      "title": "NPSHistory.com: Hubbell Trading Post NHS archive page — overview (from the 2010 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/hutr-fd-overview.pdf",
+      "title": "Foundation Document Overview, Hubbell Trading Post National Historic Site (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/hutr/adhi/intro.htm",
+      "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), Introduction — History of the Site to 1957",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/hutr/adhi/chap9.htm",
+      "title": "Manchester & Manchester, Hubbell Trading Post National Historic Site: An Administrative History (NPS Southwest Cultural Resources Center, 1993), ch. IX, Cultural Resources III (Indian culture; archeological sites)",
+      "type": "npshistory"
+    }
+  ]
 }

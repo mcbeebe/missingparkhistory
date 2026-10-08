@@ -2,11 +2,11 @@
   "code": "FORA",
   "name": "Fort Raleigh NHS",
   "entries": [],
-  "reviewStatus": "draft",
+  "reviewStatus": "reviewed",
   "lastReviewed": "2026-10-08",
   "author": "author-A-2026-10-08",
-  "verifiedBy": "",
-  "summary": "<p>At the wooded north end of Roanoke Island, behind the Outer Banks, England made its first attempts to plant a colony in the Americas. In 1585 a military party of 108 colonists built a small earthen fort here and left within a year; in 1587 a second colony of about 110 men, women and children arrived, and when John White returned in 1590 he found only the word “CROATOAN” carved on a palisade post. Of some 250 colonists who struggled here, 116 men, women and children disappeared. The 355-acre site preserves the reconstructed fort — the only structure whose location is known exactly — and the ground where part, perhaps all, of the settlement stood. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The island holds more than the mystery. The Park Service calls it the site of the first sustained encounter between the English and Native Americans, which produced the first written ethnographic record of the Algonquian peoples of coastal North Carolina. Created by secretarial order on April 5, 1941, the park had its purpose broadened by Congress in 1990 to include the Native Americans, European Americans and African Americans who lived on the island — among them the 3,500 formerly enslaved people who built the Roanoke Island Freedmen’s Colony during and after the Civil War. <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "verifiedBy": "verifier-A-2026-10-08 (88 claims checked; 9 corrections)",
+  "summary": "<p>At the wooded north end of Roanoke Island, behind the Outer Banks, English explorers attempted to create England’s first colonial settlement in the New World. In 1585 a military party of 108 colonists built a small earthen fort here and left within a year; in 1587 a second colony of about 110 men, women and children arrived, and when John White returned in 1590 he found only the letters “CRO” carved on a tree and “CROATOAN” carved on a palisade post. Of some 250 colonists who struggled here, 116 men, women and children disappeared. The 355-acre site preserves the reconstructed fort — the only structure whose location is known exactly — and the ground where part, perhaps all, of the settlement stood. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The island holds more than the mystery. The Park Service calls it the site of the first sustained interaction between Native Americans and the English, which produced the first written cultural and ethnographic information of the Algonquian peoples of coastal North Carolina. Created by secretarial order on April 5, 1941, the park had its purpose broadened by Congress in 1990 to include the Native Americans, European Americans and African Americans who lived on the island — among them the 3,500 formerly enslaved people who built the Roanoke Island Freedmen’s Colony during and after the Civil War. <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
   "sources": [
     {
       "url": "https://npshistory.com/publications/fora/index.htm",
@@ -26,7 +26,7 @@
   ],
   "themes": {
     "indigenous": {
-      "html": "<p>The English came ashore among the Carolina Algonquians. In 1584 two of them, Manteo of the Croatoan and Wanchese of the Roanoke, sailed to England with the first expedition, and Thomas Hariot learned some of their language from them. The 1585 colonists, who planted little, came to depend on Indian food, robbed fish traps, and spread measles and smallpox; in 1586, at a parley he had arranged, Ralph Lane’s men opened fire on a prearranged signal and killed and beheaded the Roanoke leader Wingina. In 1587 White’s colonists attacked a village they wrongly believed hostile. Hariot himself rebuked colonists for killing Indians over offenses that might easily have been forgiven. The park’s foundation document concludes that the Carolina Algonquian culture, nearly a thousand years old, fell victim to the European race for the New World until it survived only in archeology and in the colonists’ narratives and John White’s watercolors. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>The English came ashore among the Carolina Algonquians. In 1584 two of them, Manteo of the Croatoan and Wanchese of the Roanoke, sailed to England with the first expedition, and Thomas Hariot learned some of their language from them. The 1585 colonists, who planted little, came to depend on Indian food, robbed fish traps, and spread measles and smallpox; in 1586, at a parley he had arranged, Ralph Lane’s men opened fire on a prearranged signal and killed and beheaded the Roanoke leader Wingina. In 1587 White’s colonists attacked a village they wrongly believed hostile. Hariot himself rebuked colonists for killing Indians over offenses that might easily have been forgiven. The park’s foundation document concludes that the Carolina Algonquian, a culture nearly 1,000 years old, fell victim to the European race to capitalize on the New World until the culture and its people were extirpated, surviving only in archeological evidence and in the narratives, ethnography and art of the Roanoke voyages. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/fora/index.htm",
@@ -46,7 +46,7 @@
       ]
     },
     "black": {
-      "html": "<p>When Union forces took Roanoke Island in 1862, enslaved people from the island and the surrounding country fled to it — the first group, fifteen or twenty men, women and children, came down the Chowan River. They worked as porters, cooks and laundresses and built forts and docks; men were paid $10 a month and women and children $4. In 1863 Gen. John G. Foster ordered chaplain Horace James to found a colony on the island’s north end, where each family received a one-acre lot. By January 1865 there were at least 591 houses and more than 3,000 residents, with churches, schools, a sawmill and a council of fifteen. It never became self-sufficient: its men went into the Union Army, and James calculated the government owed the freedpeople more than $18,500 in unpaid wages. After the war the land went back to its prewar owners, rations were cut, and by February 1867 the colony had virtually dispersed. <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>When Union forces took Roanoke Island in 1862, enslaved people from the island and the surrounding country fled to it — the first group, fifteen or twenty men, women and children, came down the Chowan River. They worked as porters, cooks and laundresses and built forts and docks; men were paid $10 a month and women and children $4. In 1863 Gen. John G. Foster ordered chaplain Horace James to found a colony on the island’s north end, where each family received a one-acre lot. By January 1865 there were at least 591 houses and more than 3,000 residents, with a church, several schools, a steam-powered saw and grist mill, and an appointed council of fifteen. It never became self-sufficient — many of its able-bodied young men enlisted in the Union Army — and James calculated the government owed the freedpeople more than $18,500 in unpaid wages. After the war the island’s prewar residents returned and reclaimed their land, rations were cut, and by February 1867 the colony had virtually dispersed. <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/fora/hrs.pdf",
@@ -76,7 +76,7 @@
       ]
     },
     "labor_ccc": {
-      "html": "<p>The New Deal remade the site before the Park Service owned it. From 1934, relief workers of the Works Progress Administration, under a state plan drawn up by Frank Stick, built a juniper-log palisade, blockhouses, a chapel, a museum and other log buildings with thatch roofs as a “highly conjectural” restoration of the 1587 settlement, and in 1937 WPA workers built the Waterside Theatre where Paul Green’s The Lost Colony opened. Visitation rose tenfold, to 30,000 in 1935. But Park Service historian Charles W. Porter found the blockhouse an 18th-century type that would suit the Pennsylvania frontier in 1776 and was absurd as “Fort Raleigh”; the administrative history concludes the log structures were historically inaccurate and had damaged archeologically sensitive ground. <a href=\"https://npshistory.com/publications/fora/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "html": "<p>The New Deal remade the site before the Park Service owned it. From 1934, relief workers of the Works Progress Administration, under a state commission’s plan with structures designed by Frank Stick, built a juniper-log palisade, blockhouses, a chapel, a museum and other log buildings, several with thatch roofs, as a “highly conjectural” restoration of the 1587 settlement, and in 1937 WPA workers built the Waterside Theatre where Paul Green’s The Lost Colony opened. Visitation rose tenfold, to 30,000 in 1935. But Park Service historian Charles W. Porter found the blockhouse an 18th-century type that would suit the Pennsylvania frontier in 1776 and was absurd as “Fort Raleigh”; the administrative history concludes the log structures were historically inaccurate and had damaged archeologically sensitive ground. <a href=\"https://npshistory.com/publications/fora/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/fora/adhi.pdf",
@@ -159,7 +159,7 @@
       "locator": "brochure, 'Portraying the New World'"
     },
     {
-      "claim": "Carolina Algonquian culture existed for nearly 1,000 years, fell victim to impacts of the European race to capitalize on the New World, eventually extirpated except for archeological evidence and Roanoke voyages narrative, ethnography and art",
+      "claim": "Carolina Algonquian, a unique and viable culture that had existed for nearly 1,000 years, fell victim to impacts of the European race to capitalize on the New World; culture and its people eventually extirpated except for archeological evidence and Roanoke voyages-related narrative, ethnography and art",
       "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
       "locator": "Interpretive Themes, p. 8 (pdf p. 12)",
       "interpretive": true
@@ -180,18 +180,18 @@
       "locator": "pp. 44–45, fns. 131–134"
     },
     {
-      "claim": "By January 1, 1865 at least 591 houses and more than 3,000 residents; church, several schools, saw and grist mill; council of fifteen",
+      "claim": "By January 1, 1865 at least 591 houses and more than 3,000 residents; a church, several schools, steam-powered saw and grist mill; an appointed council of fifteen",
       "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
       "locator": "pp. 47–49, fns. 137, 147"
     },
     {
-      "claim": "Colony never self-sufficient; enlistment of able-bodied men; government owed more than $18,500 in unpaid wages",
+      "claim": "Colony never self-sufficient; enlistment of many of its young, able-bodied men into the Union army; James calculated the government owed more than $18,500 in unpaid wages",
       "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
       "locator": "pp. 49–50, fn. 149",
       "interpretive": true
     },
     {
-      "claim": "Prewar residents reclaimed land; rations cut; Freedmen's Bureau recommended return of the island to prewar owners (Nov 1866); by February 1867 colony virtually dispersed",
+      "claim": "Prewar residents returned and reclaimed their land; rations cut; Freedmen's Bureau recommended return of the island to prewar owners (Nov 1866); by February 1867 colony virtually dispersed",
       "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
       "locator": "p. 50, fns. 151–153"
     },
@@ -217,25 +217,30 @@
       "locator": "pp. 47–48, fn. 140"
     },
     {
-      "claim": "From 1934 WPA Camp Wirth; relief workers built a 'highly conjectural restoration' of the 1587 settlement designed by Frank Stick with builder Albert Q. Bell: juniper-log palisade, blockhouses, chapel, museum and other log buildings, several with thatch roofs; visitation ten-fold to 30,000 in 1935",
+      "claim": "1934 WPA Camp Wirth; relief workers built a 'highly conjectural restoration' of the 1587 settlement, planned and overseen by a state commission (Stick, Etheridge, Jeffress), designed by Frank Stick with builder Albert Q. Bell: juniper-log palisade, blockhouses, chapel, museum and other log buildings, several with thatch roofs; visitation ten-fold to 30,000 in 1935",
       "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
-      "locator": "ch. 1, pp. 26–27 (pdf pp. 43–44), fns. 113–116"
+      "locator": "ch. 3, Development of Fort Raleigh State Park, pp. 25–27, fns. 112–116 (verified from the PDF's text layer by range read)"
     },
     {
-      "claim": "WPA workers built the theater (photo June 1937); Federal Theatre Project funds; The Lost Colony 1937 season",
+      "claim": "Using WPA funds, RIHA contracted Albert Bell to design and build the outdoor theater; fig. 13 'Theater construction at Fort Raleigh by WPA workers, June 1937'; Federal Theatre Project funds; The Lost Colony 1937",
       "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
-      "locator": "pp. 28–29 (pdf pp. 45–46), fig. 13, fns. 120–121"
+      "locator": "ch. 3, pp. 27–28, fig. 13"
     },
     {
       "claim": "Porter: '18th Century in type'; 'a pretentious 18th Century blockhouse … would look well on the Pennsylvania frontier in 1776, but in a restored Fort Raleigh it is absurd'; historically inaccurate and damaged archeologically sensitive areas",
       "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
-      "locator": "p. 27 (pdf p. 44), fns. 117–118",
+      "locator": "ch. 3, p. 27, fn. 117 and following paragraph",
       "interpretive": true
     },
     {
       "claim": "Archeological resources being lost to shoreline erosion; sea level rise may cause rise in water table, salt water inundation, more severe storms affecting the earthwork; Waterside Theatre located directly against the shoreline",
       "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
       "locator": "FRV analyses: Earthen Fort p. 11; Waterside Theatre p. 13; History and Archeological Resources p. 16"
+    },
+    {
+      "claim": "Park preserves the site where English explorers attempted to create England's first colonial settlement in the New World in 1585–1587",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Park Significance, p. 5 (pdf p. 9)"
     }
   ],
   "photos": [
@@ -251,7 +256,7 @@
       "width": 1000,
       "height": 666,
       "bytes": 233055,
-      "note": "On-page caption (park home page gallery): \"The Fort Raleigh earthworks is one of the remnants of the English attempts at a colony on Roanoke Island\"; credit span \"Kurt Moses/NPS\"; alt \"An earthworks covered in reddish-green grass about 4 feet high in a star pattern\". Credit is in '<name>/NPS' order — verifier please confirm it qualifies as an NPS-staff credit. Resized from 1200x799."
+      "note": "On-page caption (park home page gallery): \"The Fort Raleigh earthworks is one of the remnants of the English attempts at a colony on Roanoke Island\"; credit span \"Kurt Moses/NPS\"; alt \"An earthworks covered in reddish-green grass about 4 feet high in a star pattern\". Verifier A (2026-10-08) re-read the credit verbatim on the evidence page and accepted '<name>/NPS' as an NPS-staff credit. Resized from 1200x799."
     },
     {
       "file": "images/history/fora/freedmens-colony-monument.jpg",

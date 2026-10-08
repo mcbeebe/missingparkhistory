@@ -1,16 +1,245 @@
 {
   "code": "INDE",
   "name": "Independence National Historical Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Independence National Historical Park in Philadelphia, Pennsylvania, preserves several of the most historically significant buildings in the United States, including Independence Hall — where both the Declaration of Independence and the United States Constitution were debated and adopted — and the Liberty Bell. Independence Hall, a UNESCO World Heritage Site since 1979, hosted the Second Continental Congress (1775–1783) and the Constitutional Convention of 1787. The park also includes Congress Hall, where the U.S. Congress met from 1790 to 1800 when Philadelphia served as the nation's capital, and the President's House site, which interprets the stories of the nine enslaved Africans George Washington brought to the executive mansion during his presidency.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "439",
+    "442"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-08",
+  "author": "author-G-2026-10-08",
+  "verifiedBy": "verifier-G-2026-10-08 (36 claims checked; 8 corrections)",
+  "summary": "<p>Independence National Historical Park covers more than 51 acres of downtown Philadelphia, and at its center stands the old Pennsylvania State House, now Independence Hall. In its Assembly Room the Second Continental Congress adopted the Declaration of Independence on July 4, 1776; four days later the Declaration was read aloud to the public for the first time in the square outside. In 1787 fifty-five delegates were sent to Philadelphia, and in the same Assembly Room they created the Constitution — a document, the park’s own brochure says, that failed to adequately address slavery. Congress sat in nearby Congress Hall from 1790 to 1800, while Philadelphia was the nation’s capital, and the First Continental Congress had gathered at nearby Carpenters’ Hall in 1774. <a href=\"https://npshistory.com/publications/inde/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The bell that hung in the State House steeple was first heard in 1753; its inscription reads “Proclaim Liberty throughout All the land unto All the Inhabitants Thereof.” In the 1830s anti-slavery groups named it the Liberty Bell; it cracked around 1846. The park’s brochure calls the crack a reminder that liberty is imperfect, hopefully evolving to include those denied full participation. <a href=\"https://npshistory.com/publications/inde/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress created the park on June 28, 1948. The park was made by creating public parks and open green space around the founding-era landmarks, clearing later commercial buildings, drawing on the City Beautiful movement and the colonial revival of Williamsburg, and in the 1950s and 1960s park architects, archeologists and historians working on Independence Hall developed restoration methods the Park Service still treats as a model. Independence Hall was named a World Heritage Site in 1979. <a href=\"https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/inde/pres-house-excavations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/inde/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "themes": {
+    "slavery": {
+      "html": "<p>Partly beneath today’s Liberty Bell Center stood the President’s House, the executive mansion of George Washington (1790–1797) and John Adams (1797–1800). The Washingtons brought nine enslaved Africans from Mount Vernon to work there at various times: Austin, Christopher Sheels, Giles, Hercules, Joe Richardson, Moll, Ona (Oney) Judge, Paris and Richmond. Under Pennsylvania’s Gradual Abolition Law of 1780, the park’s 2009 excavation report (revised 2023) explains, enslaved people became free after a six-month stay in the state, so Washington rotated them back to Virginia — a practice the report says itself violated Pennsylvania law, which was not enforced. In the spring of 1796 Ona Judge walked out while the family sat down to dinner and escaped to New Hampshire; she died free in 1848. Hercules, the chef, escaped from Mount Vernon on February 22, 1797. Adams, the brochure notes, never owned slaves. <a href=\"https://npshistory.com/publications/inde/pres-house-excavations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/inde/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+          "title": "Mooney, Levin, Wuebber, Jeppson, Roberts, LaRoche & Brauer, The Archeology of Freedom and Slavery: Excavations at the President’s House Site in Philadelphia (URS/NPS/City of Philadelphia, 2009; rev. 2023)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/inde/index.htm",
+          "title": "NPSHistory.com: Independence National Historical Park archive page — overview (from the 2018 NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Ona Judge hid among the free Black Philadelphians she had befriended — part of a city the brochure describes as home to people fleeing slavery and free people of African descent. The house itself was torn down in 1832, and for some fifty years after Independence Mall was built the site lay under a lawn and a women’s restroom, marked only by a small brass plaque. In 2002 independent scholar Edward Lawler Jr. showed that Washington had ordered a smokehouse on the lot altered as housing for his “stablepeople.” Lawler judged it most likely that the order was carried out and the building housed enslaved stable workers, and he pointed out that visitors would pass over that site on entering the new Liberty Bell Center; in the controversy that followed, attorney Michael Coard founded the Avenging the Ancestors Coalition, and on July 3, 2002, some five hundred mostly African American protesters demanded a memorial. The 2007 excavation uncovered the kitchen where Hercules cooked and drew more than 300,000 visitors in four months; the park then built its first community-based exhibit there, interpreting race and slavery. <a href=\"https://npshistory.com/publications/inde/pres-house-excavations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/inde/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+          "title": "Mooney, Levin, Wuebber, Jeppson, Roberts, LaRoche & Brauer, The Archeology of Freedom and Slavery: Excavations at the President’s House Site in Philadelphia (URS/NPS/City of Philadelphia, 2009; rev. 2023)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/inde/index.htm",
+          "title": "NPSHistory.com: Independence National Historical Park archive page — overview (from the 2018 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+          "title": "Foundation Document, Independence National Historical Park (NPS, September 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Lucretia Mott and other activists of the Philadelphia Female Anti-Slavery Society wrote for <em>The Liberty Bell</em>, the Boston abolitionist annual that in 1839 first gave the bell its name in print and for twenty years used it as an anti-slavery symbol, John Paige’s special history study for the park records. On July 4, 1876, Susan B. Anthony gave the first public reading of a women’s declaration of rights here, urging suffrage. And on August 2, 1954, the General Federation of Women’s Clubs gave the Park Service $209,541.82 raised nationwide to restore and refurnish the first floor of Independence Hall — by the park’s account the largest single sum ever applied to the building to that time. <a href=\"https://npshistory.com/publications/inde/shs-liberty-bell.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/inde/restore-refurnish.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/inde/shs-liberty-bell.pdf",
+          "title": "Paige, The Liberty Bell of Independence National Historical Park: A Special History Study (NPS Denver Service Center, undated, c. 1985), ch. on the bell as an abolitionist symbol",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+          "title": "Foundation Document, Independence National Historical Park (NPS, September 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/inde/restore-refurnish.pdf",
+          "title": "Lee & Anderson, The Role of the General Federation of Women’s Clubs in the Restoration and Refurnishing of Independence Hall 1953–1963 (NPS)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Park established 1948; covers more than 51 acres in downtown Philadelphia",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 5 (PDF p. 11), Brief Description para 1"
+    },
+    {
+      "claim": "Independence Hall: Declaration, Articles and Constitution debated and adopted; Second Continental Congress 1775–1783; Constitutional Convention summer 1787; Declaration read publicly for the first time in Independence Square July 8, 1776",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 5 (PDF p. 11), para 2"
+    },
+    {
+      "claim": "Delegates adopted the Declaration in Independence Hall on July 4 [1776]; Second Continental Congress convened in the State House May 1775",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "overview, opening section"
+    },
+    {
+      "claim": "Fifty-five delegates sent to Philadelphia in 1787; Constitution 'failed to adequately address slavery'",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "overview, 'A More Perfect Union'",
+      "interpretive": true
+    },
+    {
+      "claim": "US Congress met in Congress Hall 1790–1800; Philadelphia temporary capital from 1790; First Continental Congress at Carpenters' Hall 1774 (September)",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "site guide 'Independence Square', 'Carpenters' Hall'; timeline 1790"
+    },
+    {
+      "claim": "Bell first heard in 1753 atop the Pennsylvania State House; inscription 'Proclaim Liberty throughout All the land unto All the Inhabitants Thereof'; crack a reminder that liberty is imperfect, evolving to include those denied full participation",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "overview, opening paragraphs",
+      "interpretive": true
+    },
+    {
+      "claim": "In the 1830s anti-slavery groups named it the Liberty Bell; cracked sometime around 1846",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 5 (PDF p. 11), para 3; also brochure site guide 'Liberty Bell Center'"
+    },
+    {
+      "claim": "Enabling legislation signed June 28, 1948",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 7 (PDF p. 13), Park Purpose; Appendix A"
+    },
+    {
+      "claim": "Park made by creating public parks and open green space to showcase iconic buildings; influenced by City Beautiful Movement and colonial revival introduced at Williamsburg; 1950s–1960s restoration work pioneered methodology still a model",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 9 (PDF p. 15), significance 15; printed p. 10 (PDF p. 16)",
+      "interpretive": true
+    },
+    {
+      "claim": "World Heritage Site 1979",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "President's House: executive mansion for Washington and Adams 1790–1800; President's House Site located partially under, at the doorway to, and adjacent to the Liberty Bell Center",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "Abstract, p. i (PDF p. 4); ch. 2, p. 13 (PDF p. 23)"
+    },
+    {
+      "claim": "Nine enslaved Africans brought from Mount Vernon at various times: Austin, Christopher Sheels, Giles, Hercules, Joe Richardson, Moll, Oney Judge, Paris, Richmond; eight were Martha Washington's dower slaves",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "p. 11 (PDF p. 21); p. 27 (PDF p. 37)"
+    },
+    {
+      "claim": "Washington's staff included at least nine enslaved Africans; Adams never owned slaves",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "site guide 'President's House Site'"
+    },
+    {
+      "claim": "Gradual Abolition Law of 1780: emancipation after six-month residency; president rotated his slaves to circumvent the law; rotation itself a violation of Pennsylvania law, not enforced",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "p. 30 (PDF p. 40)",
+      "interpretive": true
+    },
+    {
+      "claim": "Washington (1790–1797), Adams moved in mid-March 1797",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "Table of contents; p. 30 (PDF p. 40)"
+    },
+    {
+      "claim": "Ona Judge escaped spring 1796 when the family sat down to dinner; hid among free blacks she had befriended in Philadelphia; reached Portsmouth, New Hampshire; died a free woman February 25, 1848",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "sidebar 'The Escape and Later Life of Ona Judge', p. 29 (PDF p. 39)"
+    },
+    {
+      "claim": "Hercules escaped from Mount Vernon February 22, 1797",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "p. 30 (PDF p. 40), sidebar 'Hercules'"
+    },
+    {
+      "claim": "Report first circulated November 2009, revised September 2023",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "title page (PDF p. 2)"
+    },
+    {
+      "claim": "Diverse community including those fleeing slavery and free people of African descent",
+      "sourceUrl": "https://npshistory.com/publications/inde/index.htm",
+      "locator": "'A Cosmopolitan City'"
+    },
+    {
+      "claim": "House torn down 1832; commercial buildings demolished 1952 for Independence Mall; for the next 50 or so years the site lay beneath a grassy lawn and women's toilet, marked only by a small brass plaque; excavations March 12–August 31, 2007",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "Abstract, p. i (PDF p. 4)"
+    },
+    {
+      "claim": "Independent scholar Edward Lawler Jr.'s 2002 research: Washington ordered a smokehouse altered and extended as housing for the 'stablepeople'; Lawler concluded the most likely reading is that the order was carried out and it housed enslaved stable workers; Lawler pointed out visitors would pass over these slave quarters before entering the Liberty Bell Center; Michael Coard founded ATAC (Avenging the Ancestors Coalition) in response to the controversy; July 3, 2002, five hundred mostly African American protesters pressed for a memorial",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "ch. 2, pp. 12–14 (PDF pp. 22–24)",
+      "interpretive": true
+    },
+    {
+      "claim": "2007 excavations exposed the back kitchen where the cook Hercules prepared dinners; more than 300,000 people came to view the site over four months",
+      "sourceUrl": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "locator": "Abstract, p. ii (PDF p. 5)"
+    },
+    {
+      "claim": "Park designed its first community-based exhibition at the President's House site interpreting race and slavery",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 11 (PDF p. 17), Archeological Resources"
+    },
+    {
+      "claim": "Lucretia Mott and other contributors were activists in the Philadelphia Female Anti-Slavery Society; The Liberty Bell tract used the bell as an anti-slavery symbol for the next twenty years",
+      "sourceUrl": "https://npshistory.com/publications/inde/shs-liberty-bell.pdf",
+      "locator": "pp. 115–116, fn. 13"
+    },
+    {
+      "claim": "1839: Friends of Freedom, a Boston abolitionist organization, first used the appellation 'Liberty Bell' in a publication (sold at the Massachusetts Anti-Slavery Fair)",
+      "sourceUrl": "https://npshistory.com/publications/inde/shs-liberty-bell.pdf",
+      "locator": "pp. 113–114, fns. 3–5"
+    },
+    {
+      "claim": "Susan B. Anthony's first public reading of the 'Women's Declaration of Rights' urging women's suffrage, July 4, 1876",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "locator": "printed p. 9 (PDF p. 15), significance 13"
+    },
+    {
+      "claim": "August 2, 1954 letter: GFWC president Mrs. Oscar A. Ahlgren presented a check for $209,541.82 to restore and refurnish the first floor of Independence Hall; largest single amount ever applied to Independence Hall up to that time",
+      "sourceUrl": "https://npshistory.com/publications/inde/restore-refurnish.pdf",
+      "locator": "PDF pp. 6–7"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/inde/independence-hall-chestnut-street.jpg",
+      "caption": "Independence Hall, where the Declaration of Independence and the Constitution were signed",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/inde/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/C59AAC97-CCCF-45C3-79E94A603D968CC6.jpg",
+      "evidenceUrl": "https://www.nps.gov/inde/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 933,
+      "bytes": 205291,
+      "note": "On-page caption (homepage slideshow, alt \"Color photo of Independence Hall as seen from the north side of Chestnut Street.\"): \"Known as the birthplace of the United States, Independence Hall houses the room where the Declaration of Independence and U.S. Constitution were both signed. NPS Photo\". Resized from 5883x3922."
+    },
+    {
+      "file": "images/history/inde/liberty-bell.jpg",
+      "caption": "The Liberty Bell, with Independence Hall behind it",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/inde/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/7AFE0115-FFFB-4779-4787C9D078489E1C.jpg",
+      "evidenceUrl": "https://www.nps.gov/inde/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 933,
+      "bytes": 199953,
+      "note": "On-page caption (homepage slideshow, alt \"Color photo of the Liberty Bell with Independence Hall in the background.\"): \"Recognizable for its crack, the Liberty Bell remains significant today for its message of liberty. NPS Photo\". Resized from 3000x2000."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/inde/index.htm",
     "adhiUrl": null,
@@ -24,5 +253,22 @@
   "wayback": {
     "main": "https://web.archive.org/web/20250119/https://www.nps.gov/inde/index.htm"
   },
-  "corrections": []
+  "corrections": [],
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/inde/index.htm",
+      "title": "NPSHistory.com: Independence National Historical Park archive page — overview (from the 2018 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/inde-fd-2017.pdf",
+      "title": "Foundation Document, Independence National Historical Park (NPS, September 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/inde/pres-house-excavations.pdf",
+      "title": "Mooney, Levin, Wuebber, Jeppson, Roberts, LaRoche & Brauer, The Archeology of Freedom and Slavery: Excavations at the President’s House Site in Philadelphia (URS/NPS/City of Philadelphia, 2009; rev. 2023)",
+      "type": "npshistory"
+    }
+  ]
 }

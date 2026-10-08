@@ -6,10 +6,10 @@
     "666",
     "750"
   ],
-  "reviewStatus": "draft",
+  "reviewStatus": "reviewed",
   "lastReviewed": "2026-10-08",
   "author": "author-D-2026-10-08",
-  "verifiedBy": "",
+  "verifiedBy": "verifier-D-2026-10-08 (52 claims checked; 8 corrections)",
   "summary": "<p>For more than two centuries the National Mall — the great green swath that runs from the foot of the U.S. Capitol to the Potomac River — has been the nation’s premier civic and symbolic space. National Mall and Memorial Parks cares for it and more than 1,000 acres of parkland across Washington: the Washington Monument and the Lincoln, Jefferson, Roosevelt, King, Korean War, Vietnam Veterans, World War I and World War II memorials, Ford’s Theatre, Pennsylvania Avenue, and more than 150 circles, squares and small reservations, from the African American Civil War Memorial to Logan Circle. <a href=\"https://npshistory.com/publications/nama/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Its open spaces are as old as the capital: Pierre L’Enfant’s 1791 plan, commissioned by President Washington, laid them out as a stage for remembrance, celebration and the exercise of First Amendment rights, and federal review bodies are still charged with protecting both it and the 1901 McMillan Plan. For decades the federal government largely neglected the Mall itself; after its oak forest was cleared in the 1810s it became eroded scrubland where pigs and cows grazed. The parks passed to the National Park Service in 1933, and today they draw more than 33 million visitors a year to a place that, in the Park Service’s words, hosts history in the making — from presidential inaugurals to civil rights demonstrations. <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/nama/hrs-events-celebrations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
   "sources": [
     {
@@ -30,7 +30,7 @@
   ],
   "themes": {
     "slavery": {
-      "html": "<p>In the early nineteenth century, the 2024 historic resource study notes, the horror of American slavery was on full display on the Mall: pens holding enslaved people stood at its edge at 7th Street NW, and coffles of enslaved men and women, chained together, were marched across it to the loading docks on the Potomac. <a href=\"https://npshistory.com/publications/nama/hrs-events-celebrations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> A few blocks north, the African American Civil War Memorial honors the more than 200,000 Black soldiers and sailors who served in the U.S. Army and Navy during the Civil War — service that, in the foundation document’s words, helped end the war and free more than four million enslaved people. The memorial’s curved walls carry the names of the men who served. <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>In the early nineteenth century, the 2024 historic resource study notes, the horror of American slavery was on full display on the Mall: pens holding enslaved people stood at its edge at 7th Street NW, and coffles of enslaved men and women, chained together, were marched across it to the loading docks on the Potomac. <a href=\"https://npshistory.com/publications/nama/hrs-events-celebrations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> North of the Mall, at Vermont Avenue and U Street NW, the African American Civil War Memorial honors the more than 200,000 Black soldiers and sailors who served in the U.S. Army and Navy during the Civil War — service that, the foundation document says, helped end the war and free more than four million enslaved people. The memorial’s curved walls carry the names of the men who served. <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/nama/hrs-events-celebrations.pdf",
@@ -55,7 +55,7 @@
       ]
     },
     "women": {
-      "html": "<p>On March 3, 1913, the day before Woodrow Wilson’s inauguration, Alice Paul and Lucy Burns led the Woman Suffrage Procession down Pennsylvania Avenue from the Capitol toward the Treasury. A crowd of about 250,000 spilled into the street; men heckled, spat on and assaulted the marchers while police proved unable or unwilling to control them. The protests kept coming. Paul and Burns founded the National Woman’s Party in 1916, and through 1917 more than 1,000 women picketed the White House; between June and November police arrested 218 of them for “obstructing sidewalk traffic.” Wilson signaled support for the suffrage amendment in January 1918, and the Nineteenth Amendment was ratified in 1920. The Park Service’s 2024 study credits the 1913 march with establishing Washington as a national stage for large-scale demonstration. <a href=\"https://npshistory.com/publications/nama/hrs-events-celebrations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "html": "<p>On March 3, 1913, the day before Woodrow Wilson’s inauguration, the National American Woman Suffrage Association’s Woman Suffrage Procession, organized by Alice Paul and Lucy Burns, marched down Pennsylvania Avenue from the Capitol toward the Treasury. A crowd of about 250,000 spilled into the street; men heckled, spat on and assaulted the marchers while police proved unable or unwilling to control them. The protests kept coming. Paul and Burns joined Alva Belmont in founding the National Woman’s Party in 1916, and through 1917 more than 1,000 women picketed the White House; between June and November police arrested 218 of them for “obstructing sidewalk traffic.” Wilson signaled support for the suffrage amendment in January 1918, and the Nineteenth Amendment was ratified in 1920. The Park Service’s 2024 study credits the 1913 march with further establishing Washington as a national stage for large-scale demonstration. <a href=\"https://npshistory.com/publications/nama/hrs-events-celebrations.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/nama/hrs-events-celebrations.pdf",
@@ -65,7 +65,7 @@
       ]
     },
     "climate": {
-      "html": "<p>Much of the monumental core sits on ground that was once river. West and East Potomac parks were built on reclaimed land, and the 2017 foundation document reports that the seawalls built to keep the water out are crumbling and failing. Both parks remain vulnerable to river flooding and sea level rise even with the Potomac Park levee; the park’s own headquarters lay below the normal high tide line, where high water had become a regular occurrence, and the area around the Tidal Basin is a major concern. The document expects the problem to be made worse by climate change’s effects on sea level and storm surges, and calls it a critical issue for the park. <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>Part of the park sits on ground taken from the river: West and East Potomac parks were built on reclaimed land, and the 2017 foundation document reports that the seawalls built to keep the water out are crumbling and failing. Both parks remain vulnerable to river flooding and sea level rise even with portions of the Potomac Park levee completed; the park’s own headquarters lay below the normal high tide line, where high water had become a regular occurrence, and the area around the Tidal Basin is a major concern. The document expects the problem to be made worse by climate change’s effects on sea level and storm surges, and calls it a critical issue for the park. <a href=\"https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/foundation-documents/nama-fd-2017.pdf",
@@ -143,12 +143,12 @@
       "locator": "PDF p. 219, fns. 102–103"
     },
     {
-      "claim": "Woman Suffrage Procession March 3, 1913, day before Wilson's inauguration; Alice Paul and Lucy Burns; route Pennsylvania Avenue Capitol to Treasury; crowd ~250,000; heckled, spat on, physically assaulted; police unable or unwilling",
+      "claim": "Woman Suffrage Procession March 3, 1913, day before Wilson's inauguration; organized by NAWSA suffragists Alice Paul and Lucy Burns; route Pennsylvania Avenue Capitol to Treasury; crowd ~250,000; heckled, spat on, physically assaulted; police unable or unwilling",
       "sourceUrl": "https://npshistory.com/publications/nama/hrs-events-celebrations.pdf",
       "locator": "PDF pp. 197–198, fns. 27–28"
     },
     {
-      "claim": "NWP founded 1916; 1917 over 1,000 women picketed; June–November 218 arrested for 'obstructing sidewalk traffic'; Wilson signaled support January 1918; 19th Amendment ratified 1920; procession established Washington as national stage for demonstration",
+      "claim": "Paul and Burns joined Alva Belmont to found NWP 1916; 1917 over 1,000 women picketed; June–November 218 arrested for 'obstructing sidewalk traffic'; Wilson signaled support January 1918; 19th Amendment ratified 1920; procession established Washington as national stage for demonstration",
       "sourceUrl": "https://npshistory.com/publications/nama/hrs-events-celebrations.pdf",
       "locator": "PDF p. 199, fns. 29–30",
       "interpretive": true
@@ -181,7 +181,7 @@
     },
     {
       "file": "images/history/nama/lincoln-memorial.jpg",
-      "caption": "The Lincoln Memorial at dusk",
+      "caption": "The Lincoln Memorial",
       "credit": "NPS Photo",
       "license": "PD-USGov-NPS",
       "sourceUrl": "https://www.nps.gov/linc/index.htm",

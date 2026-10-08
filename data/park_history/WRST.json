@@ -2,10 +2,10 @@
   "code": "WRST",
   "name": "Wrangell-St. Elias National Park & Preserve",
   "entries": [],
-  "reviewStatus": "draft",
+  "reviewStatus": "reviewed",
   "lastReviewed": "2026-10-08",
   "author": "author-A-2026-10-08",
-  "verifiedBy": "",
+  "verifiedBy": "verifier-A-2026-10-08 (82 claims checked; 8 corrections)",
   "summary": "<p>Wrangell-St. Elias is the largest national park in the United States — the brochure counts it as six Yellowstones — a place where four mountain ranges meet and nine of the sixteen highest peaks in the country rise. Mount Wrangell still vents steam near its summit. Near the coast the Bagley Icefield, North America’s largest subpolar icefield, feeds glaciers like the Hubbard and Guyot, and the Malaspina Glacier spills out of the St. Elias Range in a mass larger than Rhode Island. Its more than 9.6 million acres of designated wilderness make up nearly a tenth of the national wilderness system, and with neighboring parks in Canada and Glacier Bay it forms a 24-million-acre World Heritage Site. <a href=\"https://npshistory.com/publications/wrst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>This is the homeland of the Ahtna, whose territory takes in the whole Copper River Basin; some 2,500 Ahtna place names — nearly every drainage, hill and ridge named — attest to the length of their presence. Yakutat, on the coast, is a traditional Tlingit fishing village. From 1911 to 1938 the Kennecott mines near McCarthy shipped copper by rail to Cordova, and their ruins are a national historic landmark. President Carter proclaimed the area a national monument on December 1, 1978, and Congress established the 13.2-million-acre park and preserve on December 2, 1980, where local rural residents may still hunt, fish and trap for subsistence. <a href=\"https://npshistory.com/publications/wrst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/wrst/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
   "sources": [
     {
@@ -21,7 +21,7 @@
   ],
   "themes": {
     "indigenous": {
-      "html": "<p>The Copper River, called ’Atna’ or “beyond river” in Ahtna, runs 290 miles from the Wrangells to the Gulf of Alaska, and the Ahtna have worked and traded its copper for centuries — archeologists think for 500 to 1,000 years. In 1885 Chief Nicolai showed Lt. Henry Allen a copper vein, and later revealed a source to prospectors for a cache of supplies. Popular histories mocked him for trading a fortune for food; the historian Pratt, cited in the 2024 ethnographic overview, argues instead that he was canny and that his death around 1900 opened the way to outside exploitation. Simeone and Miller call the Kennecott mine one of the grandest colonial land thefts in early twentieth-century Alaska: the Ahtna received no compensation for the land or the ore, though they could ride the railroad free. Ahtna reaction to the 1978 monument, the authors write, was mixed: many welcomed protection for subsistence lands but felt sidelined. <a href=\"https://npshistory.com/publications/wrst/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>The Copper River, called ’Atna’ or “beyond river” in Ahtna, runs 290 miles from the Wrangells to the Gulf of Alaska, and the Ahtna have worked and traded its copper for centuries — archeologists think for 500 to 1,000 years. In 1885 Chief Nicolai showed Lt. Henry Allen a copper vein, and later revealed a source to prospectors for a cache of supplies. Some writers demeaned him as an innocent who traded a multimillion-dollar mine for food; Pratt (1998), as summarized in the 2024 ethnographic overview, argued instead that he was canny in his dealings and that his death in 1899 or 1900 opened the floodgates to rapid outside exploitation. Simeone and Miller call the Kennecott mine one of the grandest colonial land thefts in early twentieth-century Alaska: the Ahtna received no compensation for the land or the ore, though they could ride the railroad free. Ahtna reaction to the 1978 monument, the authors write, was mixed: many supported protection for the lands their subsistence depended on, but Alaska Native people felt their voices were sidelined at points in the debates over land selections and protected areas. <a href=\"https://npshistory.com/publications/wrst/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/wrst/eoa.pdf",
@@ -31,7 +31,7 @@
       ]
     },
     "women": {
-      "html": "<p>Two Ahtna elders, Katie John and Doris Charles, changed how Alaska’s fisheries are governed. In 1983 they and the Mentasta Village Council asked to fish at Batzulnetas, their natal village on Tanada Creek, where salmon had been taken for hundreds of years and the state had banned fishing since 1964. Refused, they sued. In March 1994 a federal court ruled that the federal government could manage subsistence fisheries on navigable waters, and the ruling was upheld in April 1995. Thousands marched in Anchorage in their support, Rosa Parks among them. John said she fought so her grandchildren would remember the way she had learned. Their victory opened Batzulnetas and extended federal subsistence jurisdiction to more than half of Alaska’s navigable waters. <a href=\"https://npshistory.com/publications/wrst/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>Two Ahtna elders, Katie John and Doris Charles, pushed the federal government into managing subsistence fishing across much of Alaska. In 1983 they and the Mentasta Village Council asked the state to let them fish at Tanada Creek, which the state had closed to fishing in 1964; at Batzulnetas, their natal village, salmon had been taken for hundreds of years. Refused, they sued. In March 1994 a federal court ruled that the federal government could manage subsistence fisheries on navigable waters, and the ruling was upheld in April 1995. Thousands marched in Anchorage in their support, Rosa Parks among them. John said she fought so her grandchildren would remember the way she had learned. Their victory opened Batzulnetas and extended federal subsistence jurisdiction to more than half of Alaska’s navigable waters. <a href=\"https://npshistory.com/publications/wrst/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/wrst/eoa.pdf",
@@ -41,7 +41,7 @@
       ]
     },
     "labor_ccc": {
-      "html": "<p>At Kennecott, a 14-story concentrator stepped down the hillside so gravity could carry ore through the mill. In 1916 the mines produced 101,410,000 pounds of copper — about a third of the output of the Anaconda mine in Butte with only 500 workers to Anaconda’s 15,000. The mill town was ordered by rank, the manager’s house and staff quarters at its center; the bunkhouses had no room for families, so married miners usually left theirs behind. In June 1917 miners struck — the only strike at Kennecott — for a flat wage instead of one that slid with copper prices. After 45 days of arbitration they won 50 cents a day more and new bunkhouse, mess and recreation halls, but the company refused collective contracts and rehired only one member of the Miners Committee. <a href=\"https://npshistory.com/publications/wrst/clr-kennecott-mill-town.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "html": "<p>At Kennecott, a 14-story concentrator stepped down the hillside so gravity could carry ore through the mill. In 1916 the mines produced 101,410,000 pounds of copper; William Douglass, later Kennecott’s superintendent, reckoned it achieved a third of the Anaconda mine’s production in Butte with only 500 workers to Anaconda’s 15,000. The mill town was ordered by rank, the manager’s house and staff quarters at its center; the bunkhouses had no facilities for families, so married miners usually left theirs behind. In June 1917 miners struck — the only strike at Kennecott — for a flat wage instead of one that slid with copper prices. In arbitration 45 days later the company kept its sliding scale but granted a 50-cent daily raise and a new bunkhouse, mess hall and recreation hall at the Bonanza Mine; it refused collective contracts and rehired only one member of the Miners Committee. <a href=\"https://npshistory.com/publications/wrst/clr-kennecott-mill-town.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/wrst/clr-kennecott-mill-town.pdf",
@@ -51,7 +51,7 @@
       ]
     },
     "climate": {
-      "html": "<p>The Tlingit named the Malaspina Glacier Sít’ Tlein, Big Glacier. At about 2,400 square kilometres it is the world’s largest piedmont glacier, and it is thinning by more than a metre a year. A 2023 radar survey found that two-thirds of it rests below sea level, cut by channels more than 350 metres deep, and that only a narrow, eroding strip of ice-cored land separates it from the Gulf of Alaska — where lagoons have formed in front of the glacier in recent decades. If the sea breaks through, the authors warn, retreat could be rapid, and the glacier holds enough ice to raise global sea level by 1.4 millimetres. <a href=\"https://npshistory.com/publications/wrst/jgres-v128i3-2023.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "html": "<p>The Tlingit named the Malaspina Glacier Sít’ Tlein, Big Glacier. At about 2,400 square kilometres it is the world’s largest piedmont glacier, and it is thinning by more than a metre a year. A 2023 radar-mapping study found that two-thirds of it is grounded below sea level, its bed cut by channels that reach more than 350 metres below sea level, and that only a narrow, eroding strip of ice-cored land separates it from the Gulf of Alaska — where lagoons have formed in front of the glacier in recent decades. If the sea breaks through, the authors warn, retreat could be rapid, and the glacier holds enough ice to raise global sea level by 1.4 millimetres. <a href=\"https://npshistory.com/publications/wrst/jgres-v128i3-2023.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/wrst/jgres-v128i3-2023.pdf",
@@ -114,7 +114,7 @@
       "interpretive": true
     },
     {
-      "claim": "April 1885 Chief Nicolai showed Allen a vein of copper (upper Chitina drainage); later revealed a source to others in exchange for a cache of supplies; Janson's 'traded a multimillion-dollar copper mine for a cache of food'; Pratt argues he was canny and his death in 1899 or 1900 opened the floodgates",
+      "claim": "April 1885 Chief Nicolai showed Allen a vein of copper (upper Chitina drainage); later revealed a source to others in exchange for a cache of supplies; demeaned 'by some' (Janson 1975) as having 'traded a multimillion-dollar copper mine for a cache of food'; Pratt (1998) argued he was canny and his death in 1899 or 1900 opened the floodgates to rapid exploitation",
       "sourceUrl": "https://npshistory.com/publications/wrst/eoa.pdf",
       "locator": "ch. 7, Ahtna Copper and the Kennecott Mine, pp. 122–123",
       "interpretive": true
@@ -126,13 +126,13 @@
       "interpretive": true
     },
     {
-      "claim": "Ahtna reaction to the monument mixed; many supported protection for subsistence; Alaska Native people felt their voices sidelined",
+      "claim": "Ahtna reaction to the monument mixed; many supported protected areas over concerns about competition and habitat for subsistence; Alaska Native people felt their voices sidelined at various points in discussions of land selections and protected areas",
       "sourceUrl": "https://npshistory.com/publications/wrst/eoa.pdf",
       "locator": "ch. 7, p. 142",
       "interpretive": true
     },
     {
-      "claim": "1983 Katie John, Doris Charles and Mentasta Village Council proposed fishing at Tanada Creek, closed by the state in 1964; Batzulnetas their natal village; salmon taken there for hundreds of years",
+      "claim": "1983 Katie John, Doris Charles and Mentasta Village Council proposed to the Board of Fisheries to fish at Tanada Creek, closed by the state in 1964; board refused and they sued; Batzulnetas their natal village; salmon taken there for hundreds of years",
       "sourceUrl": "https://npshistory.com/publications/wrst/eoa.pdf",
       "locator": "ch. 7, Katie John and Doris Charles Take on the State of Alaska, pp. 145–146"
     },
@@ -162,12 +162,12 @@
       "locator": "p. 26 (pdf p. 30)"
     },
     {
-      "claim": "1916: 101,410,000 lb of copper; Kennecott achieved one-third of Anaconda's production employing only 500 people vs. 15,000",
+      "claim": "1916: 101,410,000 lb of copper; William Douglass (later superintendent) compared Kennecott to Anaconda: one-third of Anaconda's production employing only 500 people vs. 15,000",
       "sourceUrl": "https://npshistory.com/publications/wrst/clr-kennecott-mill-town.pdf",
       "locator": "Kennecott Copper Corporation Era, p. 31 (pdf p. 35)"
     },
     {
-      "claim": "June 1917 strike (only strike at Kennecott) for flat-rate wage instead of sliding scale; after 45 days arbitration 50-cent-per-day increase and new bunkhouse, mess hall, recreation hall at Bonanza Mine; company refused collective contracts; rehired only one member of the Miners Committee",
+      "claim": "June 1917 strike (only strike at Kennecott) for flat-rate wage instead of sliding scale; company refused to change payment regime; in arbitration 45 days later, 50-cent-per-day increase and new bunkhouse, mess hall, recreation hall at Bonanza Mine; company refused collective contracts; rehired only one member of the Miners Committee",
       "sourceUrl": "https://npshistory.com/publications/wrst/clr-kennecott-mill-town.pdf",
       "locator": "pp. 37–38 (pdf pp. 40–41), fns. 81–82"
     },
@@ -177,9 +177,15 @@
       "locator": "Introduction, p. 1"
     },
     {
-      "claim": "Two-thirds grounded below sea level; channels >350 m below sea level; narrow ice-cored foreland undergoing rapid thermokarst erosion; lagoon formed in front of glacier over past decades; potential rapid retreat; sea-level rise potential 1.4 mm",
+      "claim": "Two-thirds grounded below sea level; subglacial channels where bed elevation reaches >350 m below sea level; narrow ice-cored foreland undergoing rapid thermokarst erosion; lagoon system formed in front of glacier over past decades; ice-ocean connection may promote rapid retreat; sea-level rise potential 1.4 mm",
       "sourceUrl": "https://npshistory.com/publications/wrst/jgres-v128i3-2023.pdf",
       "locator": "Key Points; Abstract; Plain Language Summary, p. 1",
+      "interpretive": true
+    },
+    {
+      "claim": "John's and Charles's victory pushed the federal government into a more active role in managing subsistence fisheries, expanding its jurisdiction to more than half of Alaska's navigable waters",
+      "sourceUrl": "https://npshistory.com/publications/wrst/eoa.pdf",
+      "locator": "ch. 7, p. 147",
       "interpretive": true
     }
   ],

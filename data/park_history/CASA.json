@@ -2,11 +2,11 @@
   "code": "CASA",
   "name": "Castillo de San Marcos National Monument",
   "entries": [],
-  "reviewStatus": "draft",
+  "reviewStatus": "reviewed",
   "lastReviewed": "2026-10-08",
   "author": "author-E-2026-10-08",
-  "verifiedBy": "",
-  "summary": "<p>On the west bank of Matanzas Bay at St. Augustine stands the oldest masonry fort in the continental United States: a hollow square of coquina, a soft local shell-stone, with a diamond-shaped bastion at each corner and only one way in. Spain broke ground on October 2, 1672, and finished it in 1695, replacing nine successive wooden forts that had guarded the town since its founding in 1565. For many years it was the northernmost outpost of Spain’s empire in the Americas, built to protect the town and the Gulf Stream route of the treasure fleets. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>It held. English forces besieged it for 50 days in 1702 and bombarded it for 27 days in 1740; the Park Service notes that the Castillo changed hands only by treaty, never in battle — to Britain in 1763, back to Spain in 1783, to the United States in 1821. The Americans renamed it Fort Marion and made it a prison for Native people: Seminoles in 1837, Plains Indians from 1875 to 1878, Apaches in 1886–1887. Proclaimed a national monument in 1924 and transferred to the Park Service in 1933, it had its Spanish name restored by Congress in 1942. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service defines the monument’s purpose as preserving the fort and interpreting more than 450 years of cultural intersections — Native, Spanish, British, African and American. Its seawall is now the lowest point in St. Augustine’s seawall network, which makes the fort the first place in the city to flood in a storm. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "verifiedBy": "verifier-E-2026-10-08 (36 claims checked; 7 corrections)",
+  "summary": "<p>On the west bank of Matanzas Bay at St. Augustine stands the oldest masonry fort in the continental United States: a hollow square of locally quarried coquina stone, with a diamond-shaped bastion at each corner and only one way in. Spain broke ground on October 2, 1672, and finished it in 1695, replacing nine successive wooden forts that had guarded the town since its founding in 1565. For many years it was the northernmost outpost of Spain’s empire in the Americas, built to protect the town and the Gulf Stream route of the treasure fleets. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>It held. English forces besieged it for 50 days in 1702, and British troops bombarded it for 27 days in 1740; the Park Service notes that the Castillo changed hands only by treaty, never in battle — to Britain in 1763, back to Spain in 1783, to the United States in 1821. The Americans renamed it Fort Marion and made it a prison for Native people: Seminoles in 1837, Plains Indians from 1875 to 1878, Apaches in 1886–1887. Proclaimed a national monument in 1924 and transferred to the Park Service in 1933, it had its Spanish name restored by Congress in 1942. <a href=\"https://npshistory.com/publications/casa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service defines the monument’s purpose as preserving the fort and interpreting more than 450 years of cultural intersections. Its seawall is now the lowest point in St. Augustine’s seawall network, which makes the fort the first place in the city to flood in a storm. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
   "sources": [
     {
       "url": "https://npshistory.com/publications/casa/index.htm",
@@ -26,7 +26,7 @@
   ],
   "themes": {
     "indigenous": {
-      "html": "<p>The fort was built with Native labor. Jason Palmer’s 2002 study documents Apalachee, Timucua and Guale men drafted under Spain’s labor system to quarry coquina on Anastasia Island and burn oyster shell for lime; the Apalachee quota rose from 100 to 300 men a year, and disease, hunger and exhaustion killed many. The walls, Palmer concludes, could not protect the people who built them. <a href=\"https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>As Fort Marion it became an Army prison. In 1875, 74 prisoners from Fort Sill — Cheyenne, Kiowa, Comanche, Arapaho and Caddo, many survivors of the 1864 Sand Creek Massacre — were held in chains until 1878; their ledger drawings survive in the park collection. In 1886 came Chiricahua and Warm Springs Apache families — more than 500, by a 1952 account written in the dated language of its time — crowded into tents atop the fort. The park now holds gatherings with the Cheyenne and Arapaho Tribes to honor those imprisoned here. <a href=\"https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "html": "<p>The fort was built with Native labor. Jason Palmer’s 2002 study documents Apalachee, Timucua and Guale men drafted under Spain’s labor system to quarry coquina on Anastasia Island and burn oyster shell for lime; the Apalachee quota rose from 100 to 300 men a year, and disease, hunger and exhaustion killed many. The walls, Palmer concludes, could not protect the people who built them. <a href=\"https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>As Fort Marion it became an Army prison. In 1875, 74 prisoners chosen at Fort Sill — Cheyenne, Kiowa, Comanche, Arapaho and Caddo, many survivors of the 1864 Sand Creek Massacre — were brought here (the same Park Service page later gives the number as seventy-two). They were first kept in chains and shackles, which were removed after their jailer, Lt. Richard Henry Pratt, took charge; they were released in 1878. Their ledger drawings survive in the park collection. In 1886 came Chiricahua and Warm Springs Apaches, many of them women and children — more than 500 people, by Omega East and Albert Manucy’s 1952 account — crowded into some 130 tents atop the fort. The park now holds gatherings with the Cheyenne and Arapaho Tribes to honor those imprisoned here. <a href=\"https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/casa/fhq-v80n4-2002.pdf",
@@ -81,7 +81,7 @@
       ]
     },
     "climate": {
-      "html": "<p>The 2025 environmental assessment for the seawall that fronts the fort is blunt. The wall is aging, eroding and storm-damaged, its low elevation worsened by subsidence, and coquina is porous: running water and acidic rain and seawater dissolve the shell in the stone. Under the intermediate sea-level scenario the designers chose — about one meter of global rise by 2100 — the North and South Wall segments would be overtopped by Matanzas Bay even without a storm, with the potential to flood historic St. Augustine. The Park Service proposes raising the seawall to an elevation of +10.5 feet. <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The 2016 foundation document had already listed rising seas, rising groundwater, possible saltwater intrusion and more intense storms among the threats to the Castillo itself. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "html": "<p>The 2025 environmental assessment for the seawall that fronts the fort is blunt. The wall is aging, eroding and storm-damaged, its low elevation worsened by subsidence, and coquina is porous: running water wears it, and acidic rain and seawater can dissolve the shell in the stone. Under the intermediate sea-level scenario the designers chose — about one meter of global rise by 2100 — the North and South Wall segments would be overtopped by Matanzas Bay even without a storm, with the potential to flood historic St. Augustine. Both of the Park Service’s action alternatives would raise the North and South wall segments to an elevation of +10.5 feet. <a href=\"https://npshistory.com/publications/casa/seawall-ea-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The 2016 foundation document had already listed rising seas, rising groundwater, possible saltwater intrusion and more intense storms among the threats to the Castillo itself. <a href=\"https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
@@ -118,7 +118,7 @@
       "locator": "Brief Description, p. 4"
     },
     {
-      "claim": "1702 English besieged the fort for 50 days; 1740 27-day British bombardment",
+      "claim": "1702 English besieged the fort for 50 days; 1740 27-day bombardment by Gen. Oglethorpe's British troops",
       "sourceUrl": "https://npshistory.com/publications/casa/index.htm",
       "locator": "overview, siege paragraphs"
     },
@@ -175,7 +175,7 @@
       "interpretive": true
     },
     {
-      "claim": "74 prisoners chosen from Fort Sill: 33 Cheyenne, 27 Kiowa, 11 Comanche, 2 Arapaho, 1 Caddo; many survivors of the Sand Creek Massacre of 1864; wore chains and shackles; released to the Indian Bureau in 1878",
+      "claim": "74 prisoners chosen from Fort Sill: 33 Cheyenne, 27 Kiowa, 11 Comanche, 2 Arapaho, 1 Caddo (same page later says \"seventy-two\"); many survivors of the Sand Creek Massacre of 1864; wore chains and shackles until Pratt took charge and removed them; released to the Indian Bureau in 1878",
       "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm",
       "locator": "main text, paragraphs on Red River War, conditions, and 1878 release"
     },
@@ -185,7 +185,7 @@
       "locator": "Fundamental Resources: Ledger Art and American Indian Wall Art, p. 8"
     },
     {
-      "claim": "1886: over 500 Apaches (Chiricahua and Warm Spring) sent by train to Fort Marion; women and children of Geronimo's band routed there; 130-odd tents on top of the fort; commandant had room for about 150 (East & Manucy 1952; dated language)",
+      "claim": "1886: over 500 Apaches (Chiricahua and Warm Spring) sent by train to Fort Marion; women and children of Geronimo's band routed there; 130-odd tents on top of the fort; commandant had room for about 150 (Omega G. East & Albert C. Manucy, FHQ January 1952)",
       "sourceUrl": "https://npshistory.com/publications/casa/fhq-v30n3-1952.pdf",
       "locator": "pp. 295–297"
     },
@@ -241,7 +241,7 @@
       "locator": "main text; timeline 1763"
     },
     {
-      "claim": "Coquina is porous; flowing water and acidity in ocean and rainwater break down the stone",
+      "claim": "Coquina is a porous limestone; flowing water causes deterioration and acidity in ocean and rainwater can break down the stone, gradually dissolving shell fragments",
       "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
       "locator": "Considerations for Alternatives Development, p. 9"
     },
@@ -251,7 +251,7 @@
       "locator": "pp. 9–10"
     },
     {
-      "claim": "Wall segments would be raised to an elevation of +10.5 feet",
+      "claim": "Both action alternatives: North Wall, North Transition Wall, South Wall and South Transition Wall segments would be raised to an elevation of +10.5 feet",
       "sourceUrl": "https://npshistory.com/publications/casa/seawall-ea-2025.pdf",
       "locator": "Alternatives, p. 11 (section following Considerations)"
     },
@@ -259,6 +259,16 @@
       "claim": "Threats: effects of climate change including increasing sea levels, rising groundwater tables and possible salt water intrusion, increased risk of flooding and high-intensity storms",
       "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
       "locator": "Fundamental resource 'Castillo de San Marcos', Threats, p. 12"
+    },
+    {
+      "claim": "Lt. Richard Henry Pratt given command of the prisoners after six months; all chains and shackles removed",
+      "sourceUrl": "https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm",
+      "locator": "main text, conditions and Pratt paragraphs"
+    },
+    {
+      "claim": "Castillo primarily constructed of locally quarried coquina stone",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/casa-fd-2016.pdf",
+      "locator": "Significance statement 1, p. 6"
     }
   ],
   "photos": [

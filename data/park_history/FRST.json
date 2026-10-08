@@ -2,11 +2,11 @@
   "code": "FRST",
   "name": "First State National Historical Park",
   "entries": [],
-  "reviewStatus": "draft",
+  "reviewStatus": "reviewed",
   "lastReviewed": "2026-10-08",
   "author": "author-A-2026-10-08",
-  "verifiedBy": "",
-  "summary": "<p>Delaware is small, but the Park Service describes it as a state born out of a three-way contest among Sweden, the Netherlands and Great Britain for the Delaware Valley. First State National Historical Park gathers that story in seven places across Delaware’s two northern counties and a corner of Chester County, Pennsylvania: the rocks on the Christina River where Swedish and Finnish settlers landed in 1638; Holy Trinity (Old Swedes) Church, founded by their descendants in 1698; the New Castle Court House and its Green; the Green at Dover; John Dickinson’s plantation; and the 1,359-acre Brandywine Valley tract of farmsteads, wooded hillsides and stream valleys north of Wilmington. Long before any of them, the land was Lenape country. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>On December 7, 1787, delegates meeting at the Golden Fleece Tavern on Dover’s Green made Delaware the first state to ratify the Constitution. President Barack Obama proclaimed the First State National Monument on March 25, 2013, and Congress made it a national historical park on December 19, 2014. The park’s own brochure frames its subject not as a triumph but as more than 300 years of people pursuing human rights and self-determination on a course it calls fraught and uneven, full of contradictions: the plantation of the primary author of the Articles of Confederation was worked by enslaved people, and the courthouse where Delaware broke with Britain later saw two Quaker abolitionists bankrupted under the Fugitive Slave Act. The Rodneys, like the Ridgelys and the Dickinsons, owned large plantations near Dover; Caesar Rodney was among the leaders of the colony’s independence movement. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "verifiedBy": "verifier-A-2026-10-08 (96 claims checked; 11 corrections)",
+  "summary": "<p>Delaware is small, but the Park Service describes it as a state born out of a three-way contest among Sweden, the Netherlands and Great Britain for the Delaware Valley. First State National Historical Park gathers that story in seven places across Delaware’s two northern counties and a corner of Chester County, Pennsylvania: the rocks on the Christina River where Swedish and Finnish settlers landed in 1638; Holy Trinity (Old Swedes) Church, founded by their descendants in 1698; the New Castle Court House and its Green; the Green at Dover; John Dickinson’s plantation; and the 1,359-acre Brandywine Valley tract of farmsteads, wooded hillsides and stream valleys north of Wilmington. Long before any of them, the land was Lenape country. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>On December 7, 1787, delegates meeting at the Golden Fleece Tavern on Dover’s Green made Delaware the first state to ratify the Constitution. President Barack Obama proclaimed the First State National Monument on March 25, 2013, and Congress made it a national historical park on December 19, 2014. The park’s own brochure frames its subject as more than 300 years in which people pursued human rights and self-determination on what it calls a fraught and uneven course, marked by questions and contradictions: the plantation of the primary author of the Articles of Confederation had free and enslaved laborers, and the courthouse where Delaware broke with Britain later saw two Quaker abolitionists bankrupted under the Fugitive Slave Act. The Rodneys, like the Ridgelys and the Dickinsons, owned large plantations near Dover; Caesar Rodney was among the leaders of the colony’s independence movement. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
   "sources": [
     {
       "url": "https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf",
@@ -26,7 +26,7 @@
   ],
   "themes": {
     "indigenous": {
-      "html": "<p>The Lenape called the Delaware River Lenapewihittuck; “Delaware” was an English name, taken from the bay named for Virginia’s governor Lord De La Warr. Anthony F. C. Wallace estimated about 8,000 Lenape lived along its drainages around 1600. On the Big Bend of the Brandywine stood Queonemysing, “place where there are long fish,” a summer fishing village. In 1683 its sachems, among them Seketarius, agreed to sell William Penn the land between the Christina and Upland creeks; in 1701 a Quaker settler was granted the village’s 200 acres on the claim that the people had left — to the surprise, the 2019 study notes, of a band that would have returned the next summer. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>Pushed west, the Lenape signed the first treaty the United States made with an Indian nation, at Fort Pitt in 1778. Removed to Kansas in 1829, they were moved again in 1867 to Indian Territory, where the Delaware Tribe of Indians lives today. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>The Lenape knew the Delaware River as the Lenapewihittuck; “Delaware” was an English label — explorers named the bay for Virginia’s governor Lord De La Warr and applied the name to the Lenape themselves. Anthony F. C. Wallace estimated about 8,000 Lenape lived along its drainages around 1600. On the Big Bend of the Brandywine stood Queonemysing, “place where there are long fish,” a summer fishing village. In 1683 Seketarius — a principal Brandywine sachem who, Weslager believed, may have lived there — and other Lenape sachems promised to “give or sell” William Penn the land between the Christina and Upland creeks; in 1701 a Quaker settler was granted the village’s 200 acres on the claim that the people had left — to the surprise, the 2019 study notes, of a band that would have returned the next summer. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>Pushed west, the Lenape signed the first treaty the United States made with an Indian nation, at Fort Pitt in 1778. Under two 1829 treaties the federal government removed them to a reservation in Kansas; in 1867 most were moved again to Indian Territory (present-day Oklahoma), where they live today as the Delaware Tribe of Indians. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/frst/hrs.pdf",
@@ -41,7 +41,7 @@
       ]
     },
     "slavery": {
-      "html": "<p>Kent County’s rich soil supported a plantation economy built on enslaved labor, and the John Dickinson Plantation is where the Park Service tells it. The Dickinsons grew wheat and grain there and held a large number of African Americans in bondage. On May 12, 1777, Dickinson signed a deed naming the men, women and children he held — Augustus, Joe, Toby, Mary, Flora, Dinah and many others — and promising them freedom only after another twenty-one years of faithful service. He reconsidered, freeing a few in 1781 and the rest in 1786; by the historic resource study’s count, fifty-nine people in all. Several stayed on as tenant farmers. Delaware itself never abolished slavery before the Civil War: nearly 9,000 people, about 15 percent of the state, were enslaved in 1790, and in 1860 there were still more than 1,300 in Sussex County, 303 in Kent and 254 in New Castle. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "html": "<p>Kent County’s rich soil supported a plantation economy built on enslaved labor, and the John Dickinson Plantation is where the Park Service tells it. The Dickinsons grew wheat and grain there and held a large number of African Americans in bondage. On May 12, 1777, Dickinson signed a deed naming the men, women and children he held — Augustus, Joe, Toby, Mary, Flora, Dinah and many others — and promising them freedom only after another twenty-one years of faithful service. He reconsidered, freeing a few in 1781 and the rest in 1786; by the historic resource study’s count, fifty-nine people in all. Several stayed on as tenant farmers. Slavery remained legal in Delaware throughout the Civil War: nearly 9,000 people, about 15 percent of the state, were enslaved in 1790, and in 1860 there were still more than 1,300 in Sussex County, 303 in Kent and 254 in New Castle. <a href=\"https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/foundation-documents/frst-fd-2022.pdf",
@@ -56,7 +56,7 @@
       ]
     },
     "black": {
-      "html": "<p>Delaware’s northern border was the line between slavery and freedom. In December 1845 Samuel D. Burris, a free Black man, guided Samuel and Emeline Hawkins and their six children from Maryland to Quaker John Hunn’s farm; a Delaware judge freed the family and Thomas Garrett sent them on to Pennsylvania. Convicted in a later case, Burris was sentenced to be sold into slavery for seven years until abolitionists posing as buyers rescued him at auction. In May 1848, in the New Castle Court House, Chief Justice Roger Taney and a jury the study calls predominantly pro-slavery found Hunn and Garrett liable under the 1793 Fugitive Slave Act; Taney’s $500 fine per fugitive bankrupted both men. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>A century later, William Poole Bancroft’s Woodlawn Trustees excluded African Americans from their Wilmington housing; only in 1972, after years of Quaker protest and a state inquiry, did they rent “without regard to race, color or creed.” <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "html": "<p>Delaware’s northern border was the line between slavery and freedom. In December 1845 Samuel D. Burris, a free Black man, guided Samuel and Emeline Hawkins and their six children from Maryland to Quaker John Hunn’s farm; Delaware’s chief justice found no evidence to hold the family, and Thomas Garrett sent them on to Pennsylvania. Convicted in a later case, Burris was sentenced to be sold into slavery for seven years until abolitionists posing as buyers rescued him at auction. In May 1848, in the New Castle Court House, Chief Justice Roger Taney and a jury of Sussex County men described in the study as predominantly pro-slavery found Hunn and Garrett liable under the 1793 Fugitive Slave Act; Taney’s $500 fine per fugitive bankrupted both men. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In the twentieth century, William Poole Bancroft’s Woodlawn Trustees excluded African Americans from their Woodlawn Flats housing in Wilmington, which as late as 1972 allowed only white residents. Only that year, after a decade of Quaker protest and a State Human Relations Commission investigation, did the Trustees agree to accept new applications “without regard to race, color or creed.” <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/frst/hrs.pdf",
@@ -71,7 +71,7 @@
       ]
     },
     "women": {
-      "html": "<p>In 1920 the Nineteenth Amendment needed one more state, and suffragists hoped it would be the First State. Mabel Lloyd Ridgely, who lived on the Dover Green, had already led the effort with the Colonial Dames to save the old State House from demolition after 1909; she presided over the Delaware Equal Suffrage Association. Seven of the women arrested picketing the White House in 1917 were Delawareans, among them Mabel Vernon and Florence Bayard Hilles. As rival rallies filled the Green, the state Senate ratified on May 5, 1920, but the House tabled the vote after nearly a month of debate — the brochure notes that declining to vote counted as a “no.” Anti-suffragists led by Delawareans Mary Wilson Thompson and Emily Bissell had come to Dover too. Hilles went on to work for passage in Tennessee, which ratified two months later; the amendment became law on August 26. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "html": "<p>In 1920 the Nineteenth Amendment needed one more state, and suffragists hoped it would be the First State. Mabel Lloyd Ridgely, who lived on the Dover Green, had already, with the Colonial Dames, saved the old State House from a demolition the legislature proposed in 1909; she presided over the Delaware Equal Suffrage Association. Seven of the women arrested protesting in front of the White House in 1917 were Delawareans, among them Mabel Vernon and Florence Bayard Hilles. As rival rallies filled the Green, the state Senate ratified on May 5, 1920, but the House tabled the vote after nearly a month of debate — the brochure notes that declining to vote counted as a “no.” Anti-suffragists led by Delawareans Mary Wilson Thompson and Emily Bissell had come to Dover too. Hilles went on to work for passage in Tennessee, which ratified two months later; the amendment became law on August 26. <a href=\"https://npshistory.com/publications/frst/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/frst/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
       "sources": [
         {
           "url": "https://npshistory.com/publications/frst/hrs.pdf",
@@ -119,7 +119,7 @@
       "locator": "Park Purpose, p. 5 (pdf p. 9)"
     },
     {
-      "claim": "'For more than 300 years, on a fraught and uneven course' people in Delaware pursued human rights and self-determination; questions and contradictions",
+      "claim": "'For more than 300 years, on a fraught and uneven course' people in Delaware pursued human rights and self-determination; 'Questions and contradictions' in the First State story",
       "sourceUrl": "https://npshistory.com/publications/frst/index.htm",
       "locator": "brochure intro, 'From First Settlement to First State'",
       "interpretive": true
@@ -140,12 +140,12 @@
       "locator": "ch. 2.6, Establishing Kent County and Dover, p. 249; The Green in Dover…, p. 250"
     },
     {
-      "claim": "Name 'Delaware' given by English explorers who named Delaware Bay for Virginia governor Lord De La Warr",
+      "claim": "Name 'Delaware' for the Lenape given by English explorers who named Delaware Bay for Virginia governor Lord De La Warr and applied the title to the occupants of the Lenapewihittuck drainage",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "ch. 1.1, p. 12, fn. 32"
     },
     {
-      "claim": "Anthony F. C. Wallace estimated approximately 8,000 Lenape along the Delaware River drainages before contact (around 1600 CE); ",
+      "claim": "Anthony F. C. Wallace estimated approximately 8,000 Lenape along the Delaware River drainages before contact (around 1600 CE)",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "ch. 1.1, p. 12, fns. 32–35"
     },
@@ -155,9 +155,9 @@
       "locator": "ch. 1.1, Queonemysing, p. 26, fn. 77"
     },
     {
-      "claim": "1683 agreement of Seketarius and other Brandywine sachems to give or sell land between Christina and Upland creeks to Penn",
+      "claim": "1683 agreement of Seketarius and other Lenape sachems to 'give or sell' land between Christina and Upland creeks to Penn; Weslager: Seketarius 'a principal sachem of the Indians living along the Brandywine', might have lived at Queonemysing",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
-      "locator": "Queonemysing, pp. 26–27, fns. 76, 79"
+      "locator": "Queonemysing, pp. 26–27, fns. 76, 79, 80"
     },
     {
       "claim": "1701: George Harlan granted the 200 acres of the Queonemysing village site, claiming the Indians had left; 'much to the surprise' of the band who would have returned the next summer",
@@ -171,7 +171,7 @@
       "locator": "Lenape Forced to Migrate Farther West, p. 31; Significance…, p. 35"
     },
     {
-      "claim": "1829 treaties under Jackson's removal policy moved them to Kansas; 1866 final treaty; 1867 most removed to Indian Territory where they reside as the Delaware Tribe of Indians",
+      "claim": "Two 1829 treaties under Jackson's removal policy removed the remaining Ohio and Missouri Lenape to a Kansas reservation; 1866 final treaty; 1867 most Kansas Lenape removed to Indian Territory (present-day Oklahoma), where they reside as the Delaware Tribe of Indians",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "pp. 33–34, fns. 109–113"
     },
@@ -206,7 +206,7 @@
       "locator": "ch. 2.4, p. 219, fn. 51"
     },
     {
-      "claim": "1790: Delaware enslaved population just under 9,000 (15 percent); 1860: Sussex over 1,300, Kent 303, New Castle 254; Delaware a slave state through the Civil War",
+      "claim": "1790: Delaware enslaved population just under 9,000 (15 percent); 1860: Sussex over 1,300, Kent 303, New Castle 254; human bondage remained legal in Delaware throughout the Civil War",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "ch. 2.4, The Hunn-Garrett Trials, pp. 218–219, fns. 49–52"
     },
@@ -216,7 +216,7 @@
       "locator": "brochure, 'The Constitution Tested'"
     },
     {
-      "claim": "December 1845: Samuel D. Burris (free Black) led Samuel and Emeline Hawkins and six children from Maryland's Eastern Shore to the Hunn farm; Chief Justice James Booth found no evidence to hold them; Garrett arranged their travel to Byberry, PA",
+      "claim": "December 1845: Samuel D. Burris (free Black) led Samuel and Emeline Hawkins and six children from Maryland's Eastern Shore to the Hunn farm; Chief Justice James Booth (of Delaware) found no evidence to hold them; Garrett arranged their travel to Byberry, PA",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "pp. 219–221, fn. 55"
     },
@@ -231,23 +231,23 @@
       "locator": "brochure, 'The Constitution Tested' caption"
     },
     {
-      "claim": "May 1848 trials in U.S. Circuit Court at New Castle Court House, presided over by Chief Justice Roger B. Taney; jury of Sussex County men predominately pro-slavery; Taney applied $500 per fugitive; fines bankrupted both men",
+      "claim": "May 1848 trials in U.S. Circuit Court at New Castle Court House, presided over by Chief Justice Roger B. Taney; jury of Sussex County men 'predominately pro-slavery' (block quotation in the HRS); Taney applied $500 per fugitive; fines bankrupted both men",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "pp. 221–222, fns. 57–59",
       "interpretive": true
     },
     {
-      "claim": "African Americans excluded from Woodlawn Flats; 1963 Friends committee found Woodlawn deeds restricted residency to Caucasians; as late as 1972 Flats allowed only white residents; 1972 State Human Relations Commission investigation; new applications 'without regard to race, color or creed'",
+      "claim": "African Americans excluded from Woodlawn Flats; Friends Wilmington Monthly Meeting condemned the Trustees from the early 1960s; 1963 Friends committee found Woodlawn deeds restricted residency to Caucasians; as late as 1972 Flats allowed only white residents; 1972 State Human Relations Commission investigation; new applications 'without regard to race, color or creed'",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "ch. 1.4, Woodlawn Trustees' Housing and Development Policies Challenged, pp. 126–128, fns. 104–108"
     },
     {
-      "claim": "Mabel Lloyd Ridgely and the Colonial Dames saved the State House from proposed 1909 demolition; Ridgely president of Delaware Equal Suffrage Association",
+      "claim": "By 1909 the legislature proposed demolishing the old State House; Mabel Lloyd Ridgely (a Dover Green resident) and the Colonial Dames saved it; Ridgely president of Delaware Equal Suffrage Association",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "ch. 2.6, p. 258, fn. 49"
     },
     {
-      "claim": "1917: seven of the women arrested in front of the White House were from Delaware, incl. Mabel Vernon and Florence Bayard Hilles",
+      "claim": "1917: seven of the women protesters arrested in front of the White House were from Delaware, incl. Mabel Vernon and Florence Bayard Hilles",
       "sourceUrl": "https://npshistory.com/publications/frst/hrs.pdf",
       "locator": "p. 258, fn. 50"
     },
