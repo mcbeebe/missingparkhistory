@@ -2,15 +2,283 @@
   "code": "FOFR",
   "name": "Fort Frederica National Monument",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Fort Frederica National Monument on St. Simons Island, Georgia, preserves the archaeological remains of a fortified town founded in 1736 by James Edward Oglethorpe as the southern outpost of the British colony of Georgia. The settlement served as a military buffer between British Georgia and Spanish Florida during a period of intense colonial rivalry. In 1742, British troops from Frederica defeated a larger Spanish invasion force at the nearby Battle of Bloody Marsh — a decisive engagement that effectively ended Spain's attempts to reclaim Georgia. At its peak, Frederica was home to about 500 soldiers and civilians. The monument was established in 1936 to preserve the town's ruins and earthwork fortifications.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-F-2026-10-08",
+  "verifiedBy": "verifier-F-2026-10-08 (32 claims checked; 12 corrections)",
+  "summary": "<p>On St. Simons Island, Georgia, at a sharp bend in the Frederica River between salt marsh and live oaks hung with moss, lie the remains of Frederica, the fort and town James Oglethorpe laid out in 1736 to hold Britain’s southern frontier against Spanish Florida. The first settlers — 44 men, mostly skilled workers, and 72 women and children — built palmetto huts and then houses of wood, brick and tabby, a concrete of burnt oyster shell, along a 75-foot-wide Broad Street shaded by orange trees. At its height the town held about 500 people by the 2009 park brochure’s count, more than 800 by the 2016 foundation document’s. <a href=\"https://npshistory.com/publications/fofr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Frederica was born of war. In early 1740 “the aggressive Oglethorpe,” as the 2009 brochure calls him, set out to capture St. Augustine with 900 troops and 1,100 Indian allies, and failed. In July 1742 a Spanish force landed on the island; British troops beat back one column within sight of the town and ambushed another at Bloody Marsh. Casualties were light, but within a week the Spanish withdrew, ending, in the Park Service’s judgment, Spain’s claim to Georgia and the Carolinas. Peace undid the town: the regiment was disbanded in 1749, and a visitor in 1755 found houses without inhabitants and streets overgrown with weeds. <a href=\"https://npshistory.com/publications/fofr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Congress created the national monument on May 26, 1936. Its roughly 282 acres in two units protect a largely intact archeological record — the subject of more than 40 investigations since 1936, with more than 227,000 objects in the park’s collections — and tabby ruins such as the King’s Magazine that now stand in the path of an eroding riverbank. <a href=\"https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/fofr/index.htm",
+      "title": "NPSHistory.com: Fort Frederica archive page — overview (from the 2009 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "title": "Foundation Document, Fort Frederica National Monument, Georgia (NPS, 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Before Frederica there was a Guale village on the same ground, allied to Spain through trade and conversion to Catholicism; two Spanish missions stood on the island. The park’s history describes how English traders armed Native slave raiders — the Westo were the largest such group from 1679 into the early 1700s — and how British colonists and their allies attacked the coastal missions to enslave the Guale; in 1683 the village and missions were abandoned, their people following the Spanish south or forcibly removed. Half a century later the Yamacraw, a people of mixed Creek and Yamasee descent, served as treaty negotiators between Oglethorpe and the Creek, allowing Frederica’s peaceful founding in February 1736. Oglethorpe laid out the town lots on a field the Indians had planted in corn, and townspeople traded with Creek and Yuchi people outside the town gate. <a href=\"https://www.nps.gov/fofr/learn/historyculture/the-people-before-frederica.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/fofr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/fofr/learn/historyculture/the-people-before-frederica.htm",
+          "title": "NPS, Fort Frederica NM: The People Before Frederica (nps.gov, last updated September 12, 2024)",
+          "type": "nps.gov"
+        },
+        {
+          "url": "https://npshistory.com/publications/fofr/index.htm",
+          "title": "NPSHistory.com: Fort Frederica archive page — 2009 NPS brochure (“Defending Utopia”, “Touring the Park”)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Coosaponakeesa, known as Mary Musgrove, was born at Coweta on the Ocmulgee River in 1700, the daughter of British trader Edmund Griffen and of a sister of the Lower Creek leader Brim. When Oglethorpe met the Yamacraw chief Tomochichi in 1733 she interpreted, and the colony paid her one hundred pounds sterling a year. She helped negotiate treaties, recruited warriors against Spain, supplied the struggling colonists with meat and bread, and in 1742 influenced the Creeks to aid the British on St. Simons. She owned three trading posts, and her third husband, Thomas Bosomworth, pressed claims to Sapelo, St. Catherine’s and Ossabaw islands granted to her by the Creeks — making her, in the park’s telling, the largest landowner in colonial Georgia. <a href=\"https://www.nps.gov/fofr/learn/historyculture/mary-musgrove.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/fofr/learn/historyculture/mary-musgrove.htm",
+          "title": "NPS, Fort Frederica NM: Mary Musgrove (nps.gov, last updated October 20, 2022)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Frederica’s settlers farmed with their own hands, because Georgia banned slavery. The park attributes the ban both to the Trustees’ ideals and to fear: an enslaved person’s quickest way to freedom ran down the Frederica River to Spanish Florida, where accepting Catholicism and fighting for Spain could bring liberty. Colonists petitioned against the ban soon after Frederica’s founding; in 1751 Parliament allowed slavery. By 1775 nearly 18,000 people were enslaved in Georgia; St. Simons came to hold more than 14 plantations. In 1803 John Couper and Thomas Spalding bought 75 Igbo people in Savannah; on the voyage south, the park recounts, they overpowered their captors, took the ship into Dunbar Creek two miles from Frederica, and walked into the water rather than be re-enslaved. Long told as legend — the park notes details vary by source — the event is documented in letters to Pierce Butler, one recording bodies salvaged at ten dollars a head. <a href=\"https://npshistory.com/publications/fofr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fofr/index.htm",
+          "title": "NPSHistory.com: Fort Frederica archive page — 2009 NPS brochure (“Defending Utopia”, “The Battle of Bloody Marsh”)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+          "title": "NPS, Fort Frederica NM: Igbo Landing (nps.gov, last updated September 9, 2024)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Just outside the town wall lies a small cemetery of freed people from the late 1860s and 1870s. One of them is Thomas Abbott, whom Charles Stevens — a coastal shipper who held nineteen people in slavery in 1860 and whose family owned much of the old townsite — had enslaved; another is Celia Abbott. Many freed people, the park notes, still worked for former enslavers after emancipation, often on the same land. Thomas Abbott’s son Robert, born on St. Simons, founded The Chicago Defender, a paper that aided African Americans during the Great Migration and exposed lynching; in 1928 he paid $1,500 for a monument to his ancestors. Ground-penetrating radar in 2017 and 2019 and a 2019 excavation, guided by a church map marking a “Colored burial lot,” confirmed the cemetery’s location. The monument, the 2016 foundation document says, links the park to the island’s African American community and the early struggle against racial prejudice. <a href=\"https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+          "title": "NPS, Fort Frederica NM: Reconstruction Era History at Fort Frederica (nps.gov, last updated August 1, 2024)",
+          "type": "nps.gov"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+          "title": "Foundation Document, Fort Frederica NM (NPS, 2016), Other Important Resources and Values: Monuments",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The river beside which Oglethorpe placed Frederica is now eroding it. The 2016 foundation document warns that shoreline erosion along the Frederica River is an increasing threat, especially to the King’s Magazine, and that a rising water table and more frequent and intense storm surges tied to climate change could disturb buried archeological deposits. Salt marshes on the Georgia coast, it notes, may shrink by 20 to 40 percent this century as sea level rises. The document calls for working with Georgia’s Department of Natural Resources on a Living Shoreline project to stabilize the bank, and one of its interpretive themes concerns conserving and restoring the island ecology that shaped the lives of the people who lived there. <a href=\"https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+          "title": "Foundation Document, Fort Frederica NM (NPS, 2016), Interpretive Themes; Analysis of FRVs (Archeological Resources, Historic Structures, Frederica River and Salt Marsh); Key Issues: Climate Change",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "St. Simons: live oaks draped in moss; town on a bluff at a sharp bend in the inland passage; first settlers 1736: 44 men (mostly skilled workers) and 72 women and children",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'Defending Utopia' para 5"
+    },
+    {
+      "claim": "Palmetto huts replaced by houses of wood, tabby (burnt oyster shells) and brick; orange trees along 75-foot-wide Broad Street",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'Defending Utopia' para 7"
+    },
+    {
+      "claim": "Population reached about 500",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'Defending Utopia' para 8"
+    },
+    {
+      "claim": "Town supported more than 800 residents during the 1740s",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 7)"
+    },
+    {
+      "claim": "'In early 1740 the aggressive Oglethorpe set out to capture St. Augustine.' 900 troops and 1,100 Indian allies; could not breach defenses",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'War and Decline' para 3"
+    },
+    {
+      "claim": "July 1742: Spanish landed; column beaten back within sight of Frederica; ambush at Bloody Marsh; casualties relatively light; within the week Spanish quit St. Simons",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'The Battle of Bloody Marsh'; 'War and Decline' para 4"
+    },
+    {
+      "claim": "British victory effectively ended the Spanish claim to Georgia and the Carolinas",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Significance, p. 6 (pdf p. 10)",
+      "interpretive": true
+    },
+    {
+      "claim": "Regiment disbanded 1749; 1755 visitor: 'houses without inhabitants, barracks without soldiers, guns without carriages, and streets overgrown with weeds'",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'War and Decline' para 5"
+    },
+    {
+      "claim": "Enabling legislation signed May 26, 1936; approximately 282 acres in two units",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Purpose p. 5 (pdf p. 9); Brief Description p. 3"
+    },
+    {
+      "claim": "More than 40 archeological investigations since 1936; subsurface resources mostly intact; more than 227,237 objects accessioned into museum collections",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "FRVs, pp. 7–8 (pdf pp. 11–12)"
+    },
+    {
+      "claim": "Guale village on land that would become Fort Frederica; two Spanish missions on Saint Simons; British colonists and allies targeted the island to enslave the Guale village; 1683 village and missions abandoned; villagers followed the Spanish or were forcibly removed",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/the-people-before-frederica.htm",
+      "locator": "paras 5–6"
+    },
+    {
+      "claim": "Westos the largest American Indian slave raiding group, 1679 to early 1700s; English traders armed raiders and demanded payment in enslaved people",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/the-people-before-frederica.htm",
+      "locator": "para 5"
+    },
+    {
+      "claim": "Yamacraw a mix of Creek and Yamasee; treaty negotiators between Oglethorpe and the Creek allowing peaceful creation of Fort Frederica, February 1736",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/the-people-before-frederica.htm",
+      "locator": "final paragraph"
+    },
+    {
+      "claim": "Lots laid out on a field planted in corn by the Indians; townspeople traded with Creek and Yuchi outside the town gate",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'Defending Utopia' para 7; 'Touring the Park' (town gate)"
+    },
+    {
+      "claim": "Coosaponakeesa born 1700 at Coweta on the Ocmulgee; father Edmund Griffen, British Indian trader; mother sister of Brim, Lower Creek leader",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/mary-musgrove.htm",
+      "locator": "para 1"
+    },
+    {
+      "claim": "1733 interpreter at meeting with Tomochichi; salary one hundred pounds sterling per year; helped establish treaties, secured warriors, supplied colonists with meat, bread, and liquor; 1742 influenced Creeks to aid British",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/mary-musgrove.htm",
+      "locator": "'Oglethorpe's Interpreter'"
+    },
+    {
+      "claim": "Third marriage to Thomas Bosomworth (1744); claims to Sapelo, St. Catherine's, Ossabaw islands from the Creeks 'making her the largest landowner in colonial Georgia'; owned three trading posts",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/mary-musgrove.htm",
+      "locator": "'Marriage and Property'",
+      "interpretive": true
+    },
+    {
+      "claim": "Farmers cultivated with their own hands — slavery was banned in the colony",
+      "sourceUrl": "https://npshistory.com/publications/fofr/index.htm",
+      "locator": "'Defending Utopia' para 8"
+    },
+    {
+      "claim": "Ban reasons: Trustees' ideals and the route to freedom down the Frederica River to Spanish Florida (Catholicism, fighting for Spain)",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+      "locator": "para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Parliament replaced the Act of 1735 with one allowing slavery in 1751; by 1775 enslaved population almost 18,000; over 14 plantations on St. Simons",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+      "locator": "paras 4–5"
+    },
+    {
+      "claim": "1803 Couper and Spalding purchased 75 Igbo people to be sold in Savannah; overthrew three white captors; took ship down Dunbar Creek, two miles from Fort Frederica; walked into the water; park note: details vary by source (oral tradition)",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+      "locator": "paras 6–7"
+    },
+    {
+      "claim": "Letters from Roswell King and Mein Mackay & Co. to Pierce Butler document the event; 'an expense of ten dollars a head for salvage'",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+      "locator": "para 8"
+    },
+    {
+      "claim": "Cemetery of freed people from the late 1860s and 1870s; Thomas Abbott enslaved by Charles Stevens (19 individuals, 1860 Slave Schedule); Stevens family owned large portion of townsite; Celia Abbott",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "locator": "paras 1–2"
+    },
+    {
+      "claim": "1928 Robert Abbott paid $1,500 for monument; GPR 2017 and 2019 and excavations 2019 to confirm cemetery location; Christ Church map 'Colored burial lot'",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "locator": "paras 1–2"
+    },
+    {
+      "claim": "Many freed people still worked for former enslavers, often on the same land",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "locator": "para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Robert Abbott born on St. Simons; founded The Chicago Defender, instrumental in aiding African Americans during the Great Migration and highlighting racial injustice and lynching; 2023 Reconstruction Era National Historic Network",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "locator": "para 3"
+    },
+    {
+      "claim": "Abbott Monument link to the African American community and 'the early struggle against racial prejudice'",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Other Important Resources and Values, p. 8 (pdf p. 12)"
+    },
+    {
+      "claim": "Shoreline erosion increasing threat especially to King's Magazine; climate change-related rising water table and storm surges could disturb archeological deposits",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Analysis of FRVs, pp. 12, 15 (pdf pp. 16, 19)"
+    },
+    {
+      "claim": "Salt marshes on the Georgia coast may decline in area by 20% to 40% due to predicted sea level rise this century; Living Shoreline project with Georgia DNR",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Analysis of FRVs, pp. 12, 21 (pdf pp. 16, 25)"
+    },
+    {
+      "claim": "Interpretive theme: efforts to conserve and restore Saint Simons Island's ecology",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fofr-fd-2016.pdf",
+      "locator": "Interpretive Themes, p. 9 (pdf p. 13)"
+    },
+    {
+      "claim": "Colonists began petitioning for reversal of the ban soon after Frederica was established",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/igbo-landing.htm",
+      "locator": "para 3"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/fofr/barracks-ruin.jpg",
+      "caption": "The tabby ruin of the soldiers’ barracks, one of the few above-ground structures left at Frederica",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fofr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7DD350-1DD8-B71B-0BF0B4C77628ED80.jpg",
+      "evidenceUrl": "https://www.nps.gov/fofr/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1400,
+      "height": 951,
+      "bytes": 249979,
+      "note": "On-page caption: \"The Barracks ruin is one of the few above ground structures at Fort Frederica NPS photo\"; alt text \"Ruin of Soldier Barracks at Fort Frederica NM\". Resized from 1600x1087."
+    },
+    {
+      "file": "images/history/fofr/abbott-monument-cemetery.jpg",
+      "caption": "The Abbott Monument, with the cemetery of freed people beyond",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "themeKey": "black",
+      "sourceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "imageUrl": "https://www.nps.gov/fofr/learn/historyculture/images/AbbottMonumentCemetery.jpg",
+      "evidenceUrl": "https://www.nps.gov/fofr/learn/historyculture/reconstruction-era-history-at-fort-frederica.htm",
+      "capturedAt": "2026-10-08",
+      "width": 467,
+      "height": 623,
+      "bytes": 119941,
+      "note": "On-page caption: \"Abbott Monument and Cemetery at Fort Frederica National Monument NPS Photo.\"; alt text \"Granite Abbott Monument in the foreground, small fenced-in cemetery in background.\" Re-encoded at original size."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/fofr/index.htm",
     "adhiUrl": null,

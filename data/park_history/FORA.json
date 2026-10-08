@@ -2,15 +2,279 @@
   "code": "FORA",
   "name": "Fort Raleigh NHS",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Fort Raleigh National Historic Site on Roanoke Island, North Carolina, preserves the site of England's first attempts to establish a permanent settlement in North America. Sir Walter Raleigh sponsored expeditions in 1585 and 1587 to colonize the area; the second expedition, led by John White, included 117 men, women, and children who established the famous \"Lost Colony.\" When White returned from a supply trip to England in 1590, the colonists had vanished, leaving only the word \"CROATOAN\" carved into a post. The fate of the colonists remains one of American history's most enduring mysteries. The site was designated in 1941 and also commemorates the Freedmen's Colony established on Roanoke Island during the Civil War, where formerly enslaved people built a self-governing community.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-A-2026-10-08",
+  "verifiedBy": "verifier-A-2026-10-08 (88 claims checked; 9 corrections)",
+  "summary": "<p>At the wooded north end of Roanoke Island, behind the Outer Banks, English explorers attempted to create England’s first colonial settlement in the New World. In 1585 a military party of 108 colonists built a small earthen fort here and left within a year; in 1587 a second colony of about 110 men, women and children arrived, and when John White returned in 1590 he found only the letters “CRO” carved on a tree and “CROATOAN” carved on a palisade post. Of some 250 colonists who struggled here, 116 men, women and children disappeared. The 355-acre site preserves the reconstructed fort — the only structure whose location is known exactly — and the ground where part, perhaps all, of the settlement stood. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The island holds more than the mystery. The Park Service calls it the site of the first sustained interaction between Native Americans and the English, which produced the first written cultural and ethnographic information of the Algonquian peoples of coastal North Carolina. Created by secretarial order on April 5, 1941, the park had its purpose broadened by Congress in 1990 to include the Native Americans, European Americans and African Americans who lived on the island — among them the 3,500 formerly enslaved people who built the Roanoke Island Freedmen’s Colony during and after the Civil War. <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/fora/index.htm",
+      "title": "NPSHistory.com: Fort Raleigh National Historic Site archive page — overview (from the 2008 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "title": "Foundation Document, Fort Raleigh National Historic Site, North Carolina (NPS, July 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/fora/hrs.pdf",
+      "title": "Treballas & Chapman, Historic Resource Study: Fort Raleigh National Historic Site (NPS, November 1999)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The English came ashore among the Carolina Algonquians. In 1584 two of them, Manteo of the Croatoan and Wanchese of the Roanoke, sailed to England with the first expedition, and Thomas Hariot learned some of their language from them. The 1585 colonists, who planted little, came to depend on Indian food, robbed fish traps, and spread measles and smallpox; in 1586, at a parley he had arranged, Ralph Lane’s men opened fire on a prearranged signal and killed and beheaded the Roanoke leader Wingina. In 1587 White’s colonists attacked a village they wrongly believed hostile. Hariot himself rebuked colonists for killing Indians over offenses that might easily have been forgiven. The park’s foundation document concludes that the Carolina Algonquian, a culture nearly 1,000 years old, fell victim to the European race to capitalize on the New World until the culture and its people were extirpated, surviving only in archeological evidence and in the narratives, ethnography and art of the Roanoke voyages. <a href=\"https://npshistory.com/publications/fora/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fora/index.htm",
+          "title": "NPSHistory.com: Fort Raleigh National Historic Site archive page — overview (from the 2008 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fora/hrs.pdf",
+          "title": "Treballas & Chapman, Historic Resource Study: Fort Raleigh National Historic Site (NPS, November 1999)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+          "title": "Foundation Document, Fort Raleigh National Historic Site, North Carolina (NPS, July 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>When Union forces took Roanoke Island in 1862, enslaved people from the island and the surrounding country fled to it — the first group, fifteen or twenty men, women and children, came down the Chowan River. They worked as porters, cooks and laundresses and built forts and docks; men were paid $10 a month and women and children $4. In 1863 Gen. John G. Foster ordered chaplain Horace James to found a colony on the island’s north end, where each family received a one-acre lot. By January 1865 there were at least 591 houses and more than 3,000 residents, with a church, several schools, a steam-powered saw and grist mill, and an appointed council of fifteen. It never became self-sufficient — many of its able-bodied young men enlisted in the Union Army — and James calculated the government owed the freedpeople more than $18,500 in unpaid wages. After the war the island’s prewar residents returned and reclaimed their land, rations were cut, and by February 1867 the colony had virtually dispersed. <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fora/hrs.pdf",
+          "title": "Treballas & Chapman, Historic Resource Study: Fort Raleigh National Historic Site (NPS, November 1999)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+          "title": "Foundation Document, Fort Raleigh National Historic Site, North Carolina (NPS, July 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Raleigh’s second colony was meant to last, and so it carried families: seventeen women and nine children among the 110 colonists, seven of the women probably servants traveling alone. One was Eleanor Dare, John White’s daughter, who on August 18, 1587, gave birth to Virginia Dare, the first English child born in the New World. Nearly three centuries later, women ran the classrooms of the Freedmen’s Colony. Elizabeth James of the American Missionary Association began teaching from a log cabin in October 1863; by fall 1864 the school had seven teachers and still could not keep up with 1,297 children under fourteen and the many adults who wanted to learn to read and write. <a href=\"https://npshistory.com/publications/fora/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fora/hrs.pdf",
+          "title": "Treballas & Chapman, Historic Resource Study: Fort Raleigh National Historic Site (NPS, November 1999)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+          "title": "Foundation Document, Fort Raleigh National Historic Site, North Carolina (NPS, July 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>The New Deal remade the site before the Park Service owned it. From 1934, relief workers of the Works Progress Administration, under a state commission’s plan with structures designed by Frank Stick, built a juniper-log palisade, blockhouses, a chapel, a museum and other log buildings, several with thatch roofs, as a “highly conjectural” restoration of the 1587 settlement, and in 1937 WPA workers built the Waterside Theatre where Paul Green’s The Lost Colony opened. Visitation rose tenfold, to 30,000 in 1935. But Park Service historian Charles W. Porter found the blockhouse an 18th-century type that would suit the Pennsylvania frontier in 1776 and was absurd as “Fort Raleigh”; the administrative history concludes the log structures were historically inaccurate and had damaged archeologically sensitive ground. <a href=\"https://npshistory.com/publications/fora/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fora/adhi.pdf",
+          "title": "Preserving the Mystery: An Administrative History of Fort Raleigh National Historic Site (NPS, 2003), ch. 1 New Deal era",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The island’s history now sits at the water’s edge. The 2017 foundation document reports archeological resources and their context being lost to shoreline erosion, warns that sea level rise may raise the water table and bring saltwater inundation and more severe storms to the earthen fort, and notes that the Waterside Theatre, home of The Lost Colony since 1937, stands directly against an eroding shoreline, where more storm surge, flooding and saltwater intrusion could hasten its decay. <a href=\"https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+          "title": "Foundation Document, Fort Raleigh National Historic Site, North Carolina (NPS, July 2017)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Park on the northern end of Roanoke Island in Roanoke Sound west of the Outer Banks; manages 355 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 7)"
+    },
+    {
+      "claim": "Spring 1585: 500 men, 108 of them colonists, under Grenville; Ralph Lane governor; built a fort; left with Drake in 1586",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'The First Colony: Harsh Lessons'"
+    },
+    {
+      "claim": "1587 colony of 110 colonists including 17 women and 9 children; White returned 1590 and found 'CRO' on a tree and 'CROATOAN' carved on a palisade post",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'The Lost Colony: A Silent Cittie'"
+    },
+    {
+      "claim": "Some 250 colonists; 116 men, women, and children disappeared; 355 acres; reconstructed earthen fort; fort is the only structure whose site has been located exactly; sites of part, perhaps all, of the settlement",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'The Newe Forte in Verginia'"
+    },
+    {
+      "claim": "First sustained interaction between Native Americans and the English; first written cultural/ethnographic information of the Algonquian people of the North Carolina coastal region",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Park Significance, p. 5 (pdf p. 9)",
+      "interpretive": true
+    },
+    {
+      "claim": "Secretarial order of April 5, 1941 established the site; 1990 Public Law 101-603 broadened purpose to include Native Americans, European Americans and African Americans who lived on Roanoke Island",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Roanoke Island Freedmen's Colony, a refuge established for and built by 3,500 former slaves during and after the Civil War until 1867",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Park Significance, p. 5"
+    },
+    {
+      "claim": "Manteo (Croatoan tribe) and Wanchese (Roanoke tribe) returned with the 1584 expedition to England; Hariot learned some Algonquian from them",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "ch. 1, p. 15, fn. 36"
+    },
+    {
+      "claim": "1585 colonists cultivated little land, depended on the Indians, robbed fish traps; measles and smallpox brought by settlers began to kill the Indians",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'Harsh Lessons'"
+    },
+    {
+      "claim": "Lane arranged a parley with Wingina; at a prearranged signal the English opened fire; Wingina was killed and beheaded",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'Harsh Lessons'"
+    },
+    {
+      "claim": "1587 colonists attacked a village they mistakenly thought hostile, killing one Indian; HRS: raided an inland settlement unconnected with Howe's death, killing at least one",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "p. 24, fns. 73–74"
+    },
+    {
+      "claim": "Hariot chastised colonists for being 'too harsh with them and killing a few of their number for offenses which might easily have been forgiven'",
+      "sourceUrl": "https://npshistory.com/publications/fora/index.htm",
+      "locator": "brochure, 'Portraying the New World'"
+    },
+    {
+      "claim": "Carolina Algonquian, a unique and viable culture that had existed for nearly 1,000 years, fell victim to impacts of the European race to capitalize on the New World; culture and its people eventually extirpated except for archeological evidence and Roanoke voyages-related narrative, ethnography and art",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Interpretive Themes, p. 8 (pdf p. 12)",
+      "interpretive": true
+    },
+    {
+      "claim": "After Union capture of Roanoke Island (1862), many slaves sought refuge; first group of 15 or 20 men, women and children escaped down the Chowan River",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "The Freedmen's Colony on Roanoke Island, 1862–1866, p. 42, fns. 125–126"
+    },
+    {
+      "claim": "Freedmen hired as porters, cooks, servants; men paid $10 a month, women and children $4 a month plus clothes and rations; freedmen built forts and new docks",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "pp. 42–44, fns. 127–130"
+    },
+    {
+      "claim": "May 1863 Foster appointed Rev. Horace James Superintendent of Negro Affairs and ordered a colony on the northern end of Roanoke Island; one-acre lots assigned to families",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "pp. 44–45, fns. 131–134"
+    },
+    {
+      "claim": "By January 1, 1865 at least 591 houses and more than 3,000 residents; a church, several schools, steam-powered saw and grist mill; an appointed council of fifteen",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "pp. 47–49, fns. 137, 147"
+    },
+    {
+      "claim": "Colony never self-sufficient; enlistment of many of its young, able-bodied men into the Union army; James calculated the government owed more than $18,500 in unpaid wages",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "pp. 49–50, fn. 149",
+      "interpretive": true
+    },
+    {
+      "claim": "Prewar residents returned and reclaimed their land; rations cut; Freedmen's Bureau recommended return of the island to prewar owners (Nov 1866); by February 1867 colony virtually dispersed",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "p. 50, fns. 151–153"
+    },
+    {
+      "claim": "White's colony: nine children and seventeen women including Eleanor Dare; seven women and three boys without family attachments, probably servants; 110 colonists",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "p. 21, fn. 60",
+      "interpretive": true
+    },
+    {
+      "claim": "Five days after Manteo's christening on August 13 [i.e., August 18, 1587], Eleanor Dare gave birth to a daughter",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "p. 24"
+    },
+    {
+      "claim": "Birthplace of Virginia Dare, the first English child born in the New World",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Park Significance, p. 5"
+    },
+    {
+      "claim": "October 1863 Elizabeth James (American Missionary Association) first teacher; seven teachers by fall 1864; 1,297 children under fourteen and many adults wanting to read and write",
+      "sourceUrl": "https://npshistory.com/publications/fora/hrs.pdf",
+      "locator": "pp. 47–48, fn. 140"
+    },
+    {
+      "claim": "1934 WPA Camp Wirth; relief workers built a 'highly conjectural restoration' of the 1587 settlement, planned and overseen by a state commission (Stick, Etheridge, Jeffress), designed by Frank Stick with builder Albert Q. Bell: juniper-log palisade, blockhouses, chapel, museum and other log buildings, several with thatch roofs; visitation ten-fold to 30,000 in 1935",
+      "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
+      "locator": "ch. 3, Development of Fort Raleigh State Park, pp. 25–27, fns. 112–116 (verified from the PDF's text layer by range read)"
+    },
+    {
+      "claim": "Using WPA funds, RIHA contracted Albert Bell to design and build the outdoor theater; fig. 13 'Theater construction at Fort Raleigh by WPA workers, June 1937'; Federal Theatre Project funds; The Lost Colony 1937",
+      "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
+      "locator": "ch. 3, pp. 27–28, fig. 13"
+    },
+    {
+      "claim": "Porter: '18th Century in type'; 'a pretentious 18th Century blockhouse … would look well on the Pennsylvania frontier in 1776, but in a restored Fort Raleigh it is absurd'; historically inaccurate and damaged archeologically sensitive areas",
+      "sourceUrl": "https://npshistory.com/publications/fora/adhi.pdf",
+      "locator": "ch. 3, p. 27, fn. 117 and following paragraph",
+      "interpretive": true
+    },
+    {
+      "claim": "Archeological resources being lost to shoreline erosion; sea level rise may cause rise in water table, salt water inundation, more severe storms affecting the earthwork; Waterside Theatre located directly against the shoreline",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "FRV analyses: Earthen Fort p. 11; Waterside Theatre p. 13; History and Archeological Resources p. 16"
+    },
+    {
+      "claim": "Park preserves the site where English explorers attempted to create England's first colonial settlement in the New World in 1585–1587",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fora-fd-2017.pdf",
+      "locator": "Park Significance, p. 5 (pdf p. 9)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/fora/fort-raleigh-earthworks.jpg",
+      "caption": "The Fort Raleigh earthworks, one of the remnants of the English attempts at a colony on Roanoke Island",
+      "credit": "Kurt Moses/NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fora/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/72C6635B-AEE5-CDEE-C9CC70E92612F1CC.jpg",
+      "evidenceUrl": "https://www.nps.gov/fora/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1000,
+      "height": 666,
+      "bytes": 233055,
+      "note": "On-page caption (park home page gallery): \"The Fort Raleigh earthworks is one of the remnants of the English attempts at a colony on Roanoke Island\"; credit span \"Kurt Moses/NPS\"; alt \"An earthworks covered in reddish-green grass about 4 feet high in a star pattern\". Verifier A (2026-10-08) re-read the credit verbatim on the evidence page and accepted '<name>/NPS' as an NPS-staff credit. Resized from 1200x799."
+    },
+    {
+      "file": "images/history/fora/freedmens-colony-monument.jpg",
+      "caption": "Monument commemorating the Roanoke Island Freedmen’s Colony",
+      "credit": "Kurt Moses/NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fora/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/730A477E-BCB6-4E67-63E08D7F1F2B68E5.jpg",
+      "evidenceUrl": "https://www.nps.gov/fora/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "black",
+      "width": 1200,
+      "height": 798,
+      "bytes": 250144,
+      "note": "On-page caption (park home page gallery): \"Commemorating the Roanoke Island Freedmen's Colony\"; credit span \"Kurt Moses/NPS Photo\"; alt \"A black stone monument with the words \\\"First Light of Freedom and an etched painting of many people\". Original dimensions, re-encoded."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/fora/index.htm",
     "adhiUrl": "https://npshistory.com/publications/fora/adhi.pdf",

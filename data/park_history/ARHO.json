@@ -2,15 +2,267 @@
   "code": "ARHO",
   "name": "Arlington House, The Robert E. Lee Memorial",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Arlington House was built between 1803 and 1818 by George Washington Parke Custis, the grandson of Martha Washington, as a memorial to George Washington. His daughter, Mary Anna Custis, married Robert E. Lee there in 1831, and the couple lived at the estate for 30 years before Lee resigned his U.S. Army commission to join the Confederacy in 1861. Union forces occupied the property early in the Civil War, and in 1864 the grounds were designated as a military cemetery — the origin of Arlington National Cemetery. The mansion was designated a national memorial in 1955 and is managed by the National Park Service in partnership with Arlington National Cemetery.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-F-2026-10-08",
+  "verifiedBy": "verifier-F-2026-10-08 (33 claims checked; 5 corrections)",
+  "summary": "<p>Arlington House stands on a high ridge above the Potomac River, its massive portico facing Washington, D.C. George Washington Parke Custis, Martha Washington’s grandson, was raised by Martha and George Washington; when she died in 1802 he inherited 1,100 acres on the Potomac and the people she had enslaved. Between 1802 and 1818 enslaved workers and free labor built his house, modeled on a Greek temple, as the first memorial to George Washington and a museum for the family’s Washington heirlooms. <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In 1831 his only surviving child, Mary Anna Randolph Custis, married Lt. Robert E. Lee in the family parlor. For thirty years the house was the Lees’ home and a working plantation where enslaved people numbered as many as 63 at one time. In April 1861 Lee resigned from the U.S. Army and sided with Virginia; Union troops occupied the heights, the Army built a Freedmen’s Village on the estate in 1863, and in 1864 it declared 200 acres a military cemetery — the beginning of Arlington National Cemetery. By August 1864, the Park Service’s 2015 foundation document says, more than two dozen soldiers had been buried within a few yards of the mansion to keep the Lee family from returning. <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>A 1925 joint resolution of Congress authorized restoring the mansion as a memorial to Lee; the Park Service took it over in 1933, and it was redesignated Arlington House, The Robert E. Lee Memorial in 1972. Only 19 of Custis’s original 1,100 acres lie within the memorial. The 2010 park brochure presents Lee as a figure of post-war reconciliation; the 2015 foundation document also names “Slavery and Freedom” as one of the park’s five interpretive themes and counts the two slave quarters among its fundamental resources. <a href=\"https://npshistory.com/publications/arho/hsr1-1/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/arho/index.htm",
+      "title": "NPSHistory.com: Arlington House archive page — overview (from the 2010 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf",
+      "title": "Foundation Document Overview, Arlington House, The Robert E. Lee Memorial, Virginia (NPS, January 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/arho/hsr1-1/chap1.htm",
+      "title": "Snell, Historic Structure Report, Historical Data Section, Vol. I: Arlington House (NPS, 1985), ch. I, Significance of Arlington House",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>George Washington Parke Custis’s will freed the people he held in slavery no later than five years after his death, provided the estate was solvent. He died in 1857; Lee, as executor, managed more than 60 enslaved workers, and in December 1862 he was obliged to carry out the will. The 2010 park brochure quotes Lee calling slavery a moral and political evil while holding that only Providence should decide its fate. Household workers lived in twin quarters built to echo the mansion; Selina Gray, the head housekeeper, lived with her family in one room of the south quarters. <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In 1826 Custis gave Maria and Charles Syphax a 17-acre parcel on the estate’s southern edge, where a church for the enslaved community also stood; only in 1865 were they allowed to buy it legally. On March 3, 1930, two of Thornton and Selina Gray’s daughters, Annie Baker (77) and Ada Thompson (73), toured the house with architect L. M. Leisenring and described how its rooms had been used. <a href=\"https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/arho/hsr1-1/chap3.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arho/index.htm",
+          "title": "NPSHistory.com: Arlington House archive page — 2010 NPS brochure text (“A Home Overrun by War”, “Moment of Decision”, house tour: Winter Kitchen, Slave Quarters)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+          "title": "Cultural Landscapes Inventory: Arlington House, The Robert E. Lee Memorial (NPS, 2009, rev. 2024), chronology p. 41",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+          "title": "Snell, Historic Structure Report, Historical Data Section, Vol. I (NPS, 1985), ch. III, B.6.e, Data on Use of Rooms Provided by Former Slaves, 1930",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>The war turned the estate into a refuge. In 1863 the Army founded Freedmen’s Village on roughly 400 acres in the south of the property for people who had escaped or been freed from slavery and come to Washington: it had homes, churches, a school and a hospital, and from 1866 to 1868 residents rented ten-acre parcels of the old estate to farm their way to independence. Quartermaster General Montgomery Meigs laid out the 200-acre cemetery so it would not interfere with the village, but wanted soldiers buried nearer the mansion to prevent its future use as a residence. By January 1871 the cemetery’s records counted about 4,100 Black burials — 343 U.S. soldiers and 3,757 former slaves. Once the courts gave the United States clear title, the Army moved to remove civilians from the military reservation: according to the 2024 landscape inventory, the village’s 763 residents were evicted and it was disbanded around 1900 (the 2010 brochure says all were gone by 1890). <a href=\"https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/arho/hsr1-1/chap3.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+          "title": "Cultural Landscapes Inventory: Arlington House (NPS, 2009, rev. 2024), Summary pp. 3–4, chronology p. 42, Analysis p. 63",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+          "title": "Snell, Historic Structure Report, Historical Data Section, Vol. I (NPS, 1985), ch. III, C.2, Record of Burials table (note to 1871 row)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/index.htm",
+          "title": "NPSHistory.com: Arlington House archive page — 2010 NPS brochure (“A Memorial to Lee”)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>After her father’s death in 1857 Arlington was legally owned by Mary Anna Custis Lee, though her husband became its master. From her mother’s death in 1853 she managed the household and its enslaved workers despite worsening rheumatoid arthritis; she and her daughters grew roses in the flower garden and sold them to help the American Colonization Society send freed slaves to Liberia. When she left in May 1861 she handed her keys to Selina Gray, who guarded the family’s possessions; by January 1862 Gray found that boxes of Mount Vernon relics had been broken into and reported the theft to General McDowell. In 1864 the government took the estate when Mrs. Lee could not appear in person to pay its taxes. Visiting shortly before her death in 1873, she wrote that it seemed but a dream of the past. <a href=\"https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/arho/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/arho/hsr1-1/chap3.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+          "title": "Cultural Landscapes Inventory: Arlington House (NPS, 2009, rev. 2024), Summary p. 3",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/index.htm",
+          "title": "NPSHistory.com: Arlington House archive page — 2010 NPS brochure (“A Shrine Worthy of Washington”, “A Home Overrun by War”, Gardens)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+          "title": "Snell, Historic Structure Report, Historical Data Section, Vol. I (NPS, 1985), ch. III, C.1, Military Headquarters, 1861–64",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Custis, grandson of Martha Custis, raised by Martha and George Washington; inherited her estates and enslaved workers incl. 1,100 acres on the Potomac on her death in 1802",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "overview, 'A Shrine Worthy of Washington' para 1"
+    },
+    {
+      "claim": "House modeled on a Greek temple; museum for 'Washington Treasures'; first memorial to Washington",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "overview, 'A Shrine Worthy of Washington' paras 1–2"
+    },
+    {
+      "claim": "Between 1802 and 1818 his enslaved workers and free labor built his house on a high ridge",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'Arlington Transformed — Showcase on the Potomac 1802-1861'"
+    },
+    {
+      "claim": "Built between 1802 and 1818 by Custis and his slaves as memorial to Washington; 'Washington Treasury'",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf",
+      "locator": "Description, col. 1"
+    },
+    {
+      "claim": "1831 Mary Anna Randolph Custis (only surviving child) married Lt. Robert E. Lee; married in the Family Parlor",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Shrine Worthy of Washington' para 3; house tour 'Family Parlor'"
+    },
+    {
+      "claim": "Lees lived on estate 30 years, raised seven children; working plantation with slaves numbering as many as 63 at one time",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf",
+      "locator": "Description, col. 2"
+    },
+    {
+      "claim": "Lee left for Richmond April 1861; resigned from the U.S. Army and sided with Virginia",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Home Overrun by War' and 'Moment of Decision'"
+    },
+    {
+      "claim": "1863 Freedmen's Village on the grounds; 1864 army declared 200 acres of the estate a military cemetery",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'Civil War Military Complex 1861-1865'"
+    },
+    {
+      "claim": "By August 1864 more than two dozen bodies buried within a few yards of the mansion to prevent the Lee family from returning",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf",
+      "locator": "Description, col. 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Joint resolution of Congress, March 4, 1925, authorizing restoration of the Lee Mansion as memorial to Lee",
+      "sourceUrl": "https://npshistory.com/publications/arho/hsr1-1/chap1.htm",
+      "locator": "ch. I, para 1"
+    },
+    {
+      "claim": "NPS acquired Arlington in 1933; redesignated Arlington House, The Robert E. Lee Memorial in 1972; Custis-Lee Mansion June 29, 1955",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Memorial to Lee' para 2; Establishment block"
+    },
+    {
+      "claim": "19 of the original 1,100 acres within the memorial's boundaries",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'Cemetery, Army Base, Park 1865-Present'"
+    },
+    {
+      "claim": "Brochure frames Lee as a great general who helped heal the country's wounds, in a 'climate of reconciliation'",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Memorial to Lee' para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Interpretive themes include 'Slavery and Freedom'; Slave Quarters a fundamental resource",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/arho-fd-overview.pdf",
+      "locator": "Interpretive Themes; Fundamental Resources and Values"
+    },
+    {
+      "claim": "Custis provided for emancipation of his slaves no later than five years after his death if Arlington was solvent; died 1857; Lee obligated to carry out wishes December 1862",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Home Overrun by War' para 1"
+    },
+    {
+      "claim": "Lee managed over 60 enslaved workers as executor; called slavery a 'moral and political evil' but believed only 'Merciful Providence' should determine its fate",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'...and the Moment of Decision' para 2"
+    },
+    {
+      "claim": "Twin quarters echo architecture of the house; Selina Gray lived with her family in one room of the South Slave Quarters",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "house tour: Slave Quarters"
+    },
+    {
+      "claim": "1826 Custis gives Maria Syphax and husband Charles a seventeen-acre parcel on the southern boundary; 'old school house' or Arlington slave church on this property; 1865 allowed to legally purchase it",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Chronology, p. 41 (CE 1826; CE 1865)"
+    },
+    {
+      "claim": "March 3, 1930 tour with architect L. M. Leisenring by Mrs. Annie Baker (77) and Mrs. Ada Thompson (73), daughters of Thornton and Selina Gray, former slaves of the Custis-Lee family",
+      "sourceUrl": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+      "locator": "ch. III, B.6.e"
+    },
+    {
+      "claim": "Freedmen's Village 1863, approx. 400 acres, homes, churches, school, hospital, farming government-owned lands",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Summary, p. 3"
+    },
+    {
+      "claim": "1866–1868 four hundred acres divided into ten-acre parcels rented to people from Freedmen's Village",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Chronology, p. 42"
+    },
+    {
+      "claim": "Meigs established 200 acres of burial ground that would not interfere with Freedmen's Village; wanted soldiers buried nearer the mansion 'to prevent it from future use as residence'",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Summary, p. 4",
+      "interpretive": true
+    },
+    {
+      "claim": "Jan. 1871: 4,100 blacks buried = 343 U.S. black soldiers and 3,757 former slaves",
+      "sourceUrl": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+      "locator": "ch. III, C.2, Record of Burials table, note ++ to 1871 row (fn. 118)"
+    },
+    {
+      "claim": "After Supreme Court decision giving clear title, Freedmen's Village's 763 residents evicted; disbanded around 1900",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Analysis and Evaluation, p. 63; Summary p. 4"
+    },
+    {
+      "claim": "Brochure: army regulations barred civilians; residents compensated for improvements; by 1890 all were gone",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Memorial to Lee' para 1"
+    },
+    {
+      "claim": "After GWP Custis's death in 1857 Lee became master of Arlington though the estate was actually owned by his wife Mary",
+      "sourceUrl": "https://npshistory.com/publications/arho/cli-arlington-house-2024.pdf",
+      "locator": "Summary, p. 3"
+    },
+    {
+      "claim": "Mrs. Lee managed household and its slaves after her mother died in 1853 despite severe rheumatoid arthritis",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Shrine Worthy of Washington' para 3"
+    },
+    {
+      "claim": "Mary Lee and daughters grew flowers sold to help the American Colonization Society send freed slaves to Liberia",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "house tour: Gardens and Museum"
+    },
+    {
+      "claim": "Mrs. Lee left in May 1861, entrusted house keys to Selina Gray",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Home Overrun by War' para 2"
+    },
+    {
+      "claim": "By January 1862 Mount Vernon relics disappeared; Selina Gray found basement room broken into; turned keys over to General McDowell and reported theft",
+      "sourceUrl": "https://npshistory.com/publications/arho/hsr1-1/chap3.htm",
+      "locator": "ch. III, C.1 (fn. 93)"
+    },
+    {
+      "claim": "1864 government took possession when Mrs. Lee couldn't appear in person to pay property taxes; 1873 visit, 'it seemed but a dream of the past'",
+      "sourceUrl": "https://npshistory.com/publications/arho/index.htm",
+      "locator": "'A Home Overrun by War' para 3; 'A Memorial to Lee' para 1"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/arho/aerial-view.jpg",
+      "caption": "Arlington House from the air, surrounded by fall foliage",
+      "credit": "NPS / Marcey Frutchey",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/arho/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/1E8E848E-FB49-785E-92A1CF5486BE6539.jpg",
+      "evidenceUrl": "https://www.nps.gov/arho/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1200,
+      "height": 800,
+      "bytes": 201675,
+      "note": "On-page caption: \"This image was captured from a manned helicopter flight. NPS / Marcey Frutchey\"; alt text \"Aerial view of Arlington House surrounded by fall foliage.\" Resized from 5616x3744."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/arho/index.htm",
     "adhiUrl": null,

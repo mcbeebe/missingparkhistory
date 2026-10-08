@@ -38,6 +38,15 @@ class SourceFilesTest(unittest.TestCase):
                 self.assertNotEqual(rec.get("reviewStatus"), "published", code)
 
 
+class AliasTest(unittest.TestCase):
+    def test_alias_targets_exist_and_render_the_same_record(self):
+        compiled = bph.compile_sources(SOURCES)["parks"]
+        for code, rec in SOURCES.items():
+            if rec.get("aliasOf"):
+                self.assertIn(rec["aliasOf"], SOURCES, f"{code} aliases a missing park")
+                self.assertEqual(compiled[code], compiled[rec["aliasOf"]])
+
+
 class CompiledFileTest(unittest.TestCase):
     def test_compiled_matches_sources(self):
         self.assertTrue(bph.COMPILED.exists(), "run python scripts/build_park_history.py --compile")
@@ -150,6 +159,14 @@ class RenderTest(unittest.TestCase):
         if rec is None:
             self.skipTest("MORA not present")
         self.assertTrue(any("themeKey" in p for p in bph.validate(rec)))
+
+    def test_drafts_and_reviewed_text_never_render(self):
+        for status in ("draft", "reviewed"):
+            rec = ValidatorRulesTest().base(reviewStatus=status, summary="<p>UNVERIFIED DRAFT TEXT</p>",
+                                            npshistory={"indexUrl": "https://npshistory.com/publications/zzzz/index.htm"})
+            html = bph.render_block(rec)
+            self.assertNotIn("UNVERIFIED DRAFT TEXT", html, status)
+            self.assertIn("Documentary record", html)
 
     def test_mora_exemplar_renders_all_four_themes(self):
         if "MORA" not in SOURCES:

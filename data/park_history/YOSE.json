@@ -2,15 +2,268 @@
   "code": "YOSE",
   "name": "Yosemite NP",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Yosemite National Park in California's Sierra Nevada protects nearly 750,000 acres of granite cliffs, waterfalls, giant sequoia groves, and diverse biological habitat. Yosemite Valley, carved by glaciers over millions of years, features iconic landmarks including El Capitan, Half Dome, and Yosemite Falls — at 2,425 feet, the tallest waterfall in North America. The valley was granted to California as a public trust by President Abraham Lincoln in 1864 — the first time the federal government set aside scenic land specifically for public enjoyment — and was established as a national park in 1890 through the advocacy of John Muir and others. The park is a UNESCO World Heritage Site and is home to the Ahwahneechee people, who have inhabited the valley for at least 3,000 years. Yosemite's scenery has profoundly influenced American art and conservation philosophy, notably through the photography of Ansel Adams.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-08",
+  "author": "author-F-2026-10-08",
+  "verifiedBy": "verifier-F-2026-10-08 (34 claims checked; 7 corrections)",
+  "summary": "<p>Yosemite covers 747,956 acres of the central Sierra Nevada: granite domes and cliffs, waterfalls, three groves of giant sequoias, alpine meadows and the headwaters of the Tuolumne and Merced rivers, which supply drinking water to millions of people in the San Francisco Bay Area. About a million years ago glaciers moved down the river valleys — ice in Yosemite Valley may have been 4,000 feet thick — and carved the U-shaped valley visitors know today. More than 94 percent of the park is designated wilderness. <a href=\"https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Oral tradition and archeological evidence, the Park Service’s 2016 foundation document says, suggest people have lived continuously in the Yosemite region for at least 8,000 years, and seven present-day tribes descend from those who first called it home. On June 30, 1864, President Lincoln signed the Yosemite Grant, giving Yosemite Valley and the Mariposa Grove to California to be held for public use, resort and recreation, inalienable for all time — the first scenic natural area set aside by the United States for public benefit. Congress created the surrounding national park on October 1, 1890; California returned the valley and the grove in 1905 and Congress accepted them in 1906. <a href=\"https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/yose/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>More than four million people a year now enter the park. Its own documents describe a landscape still being remade — by rockfall and flood, by fire after a century of protecting the sequoias from it, and by a warming climate pushing the pika upslope — and a human history that includes the 1851 militia campaign against the valley’s Ahwahneechee people. <a href=\"https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/yose/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/yose/hrs1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "title": "Foundation Document, Yosemite National Park, California (NPS, 2016), Part 1: Brief Description, Purpose, Significance",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/yose/index.htm",
+      "title": "NPSHistory.com: Yosemite archive page — overview (from the 2019 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "title": "Greene, Yosemite: The Park and its Resources — Historic Resource Study, Vol. 1 (NPS, 1987), ch. I",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The Ahwahneechee, a Southern Sierra Miwok tribelet, lived in and around the valley they called Ahwahnee. Gold Rush miners and settlers burned their villages and felled oak groves; Indians had no civil or legal rights. Governor John McDougal — who, Greene writes, had once spoken to the legislature of the inevitability of the extermination of the Indian race — authorized a militia: the 200-man Mariposa Battalion under trader James Savage, mustered in January 1851. Savage threatened to annihilate Chief Tenaya’s people if they resisted, then burned their dwellings and food caches to starve them onto reservations. In May another company shot two captives trying to escape; one was Tenaya’s youngest son. <a href=\"https://npshistory.com/publications/yose/hrs1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>In June 1852 Army troops shot five Indians found with clothing suspected to be the murdered prospectors’. In 1907 the Army took Koomine, the valley’s largest village, as a camp and forced out its residents; in 1969 the Park Service moved the last family from its 1933 Indian Village and burned it. <a href=\"https://npshistory.com/publications/yose/hrs1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/yose/hrs1.pdf",
+          "title": "Greene, Historic Resource Study, Vol. 1 (NPS, 1987), ch. I, sections A, C–E (pp. 1–28)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>From 1891 to 1914, before the Park Service existed, the U.S. Army guarded Yosemite and the other Sierra parks. In 1899 the 24th Infantry patrolled the backcountry, and the 9th Cavalry followed in 1903 and 1904 — both regiments of African American soldiers, the Buffalo Soldiers, formed after the Civil War. Shelton Johnson argues that the nearly 500 soldiers who served over those three years were long left out of the park’s histories; Carl Russell’s One Hundred Years in Yosemite never names either regiment. He calls them invisible men and contends that such gaps in history are made, not accidental. The Park Service’s 2016 foundation document now names the Army’s role, including the Buffalo Soldiers, in its statement of the park’s significance. <a href=\"https://npshistory.com/publications/yose/invisible-men.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> <a href=\"https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/yose/invisible-men.pdf",
+          "title": "Johnson, Invisible Men: Buffalo Soldiers of the Sierra Nevada (NPS Yosemite, undated), pp. 1–6",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+          "title": "Foundation Document, Yosemite National Park (NPS, 2016), significance statement 12",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Enid Michael, a third-grade teacher from Pasadena, moved to the park in May 1919 and became one of the four members of Yosemite’s first Nature Guide Service. She published 195 articles in Yosemite Nature Notes and from 1931 directed the planting of a wildflower garden behind the Yosemite Museum, funded by a $4,000 gift from Marjorie Montgomery Ward, that came to hold more than a thousand plants. Some male colleagues resented a woman in the job: in 1923 she rallied the California Federation of Women’s Clubs to press for a permanent appointment, and a handwritten note on a 1937 memo said Civilian Conservation Corps boys should work under a male naturalist, the word underlined four times. After twenty-one seasonal reappointments, her service ended on September 30, 1942. <a href=\"https://npshistory.com/publications/yose/y-v66n3-2004.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/yose/y-v66n3-2004.pdf",
+          "title": "Peñalosa, Enid Michael: Yosemite’s First Woman Ranger-Naturalist, Yosemite (Yosemite Association), Vol. 66 No. 3, Summer 2004, pp. 3–6",
+          "type": "journal"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>Ten Civilian Conservation Corps camps operated in Yosemite between May 1933 and October 1940, with 6,816 enrollees assigned — unemployed, unmarried young men of 18 to 25 typically earning thirty dollars a month, twenty-five of which went home to their families. Each camp held 225 to 250 men, mostly from cities, alongside local recruits and experienced local men. They built log curbing and paths around Yosemite Village, revived the 250 apple trees settler James Lamon had planted, and replaced the posts of the Half Dome cable route, drilling 41 holes into the rock by hand while roped to the posts. The Cascades camp on Highway 140 was wiped out in the 1937 flood. <a href=\"https://npshistory.com/publications/yose/ccc.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/yose/ccc.pdf",
+          "title": "Orr, The Civilian Conservation Corps (CCC) in Yosemite, Yosemite (Yosemite Association), Vol. 67 No. 4, Fall 2005, pp. 2–4",
+          "type": "journal"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The 2019 park brochure points to the pika, a small, heat-intolerant animal of the high-country rock piles, whose habitat is shifting upward as the climate rapidly warms — and asks where pikas will go when they run out of mountain. The 2016 foundation document names climate change a key issue: drought had already killed large numbers of ponderosa pines and other trees at lower elevations, and less snowpack and earlier runoff could bring longer, drier summers, larger and more intense wildfires and more flooding as precipitation falls as rain. The park is restoring meadows, riverbanks and the Mariposa Grove and using prescribed and managed fire; the brochure notes that a century of protecting sequoias from fire had harmed the trees it meant to save. <a href=\"https://npshistory.com/publications/yose/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/yose/index.htm",
+          "title": "NPSHistory.com: Yosemite archive page — 2019 NPS brochure (“High Sierra”, “Sequoia Groves”)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+          "title": "Foundation Document, Yosemite National Park (NPS, 2016), Key Issues: Climate Change; Planning and Data Needs",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "747,956 acres; UNESCO World Heritage 1984; more than 94% designated wilderness",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 9)"
+    },
+    {
+      "claim": "Three groves of giant sequoias; headwaters of two major watersheds supplying drinking water to millions in the San Francisco Bay Area",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Significance statements 4 and 6, p. 6 (pdf p. 12)"
+    },
+    {
+      "claim": "About 1 million years ago glaciers formed; ice in Yosemite Valley may have reached 4,000 ft; carved U-shaped valley",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Brief Description, p. 4 (pdf p. 10)"
+    },
+    {
+      "claim": "Oral tradition and archeological evidence suggest humans living continuously in the region at least 8,000 years",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Significance statement 10, p. 7 (pdf p. 13)",
+      "interpretive": true
+    },
+    {
+      "claim": "Seven present-day tribes descended from the people who first called Yosemite home",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "FRV 'Enduring Human Connections', p. 9 (pdf p. 15)"
+    },
+    {
+      "claim": "Lincoln signed Yosemite Grant 1864; 'held for public use, resort, and recreation… inalienable for all time'; 1890 park excluded Valley and Mariposa Grove; receded 1905; accepted 1906",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Brief Description, p. 3 (pdf p. 9)"
+    },
+    {
+      "claim": "Yosemite Grant June 30, 1864; Yosemite National Park October 1, 1890",
+      "sourceUrl": "https://npshistory.com/publications/yose/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "First scenic natural area set aside by the US for public benefit; 1864 birthplace of the national park idea",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Significance statement 11, p. 7 (pdf p. 13)",
+      "interpretive": true
+    },
+    {
+      "claim": "More than 4 million people enter the park each year",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Brief Description, p. 4 (pdf p. 10)"
+    },
+    {
+      "claim": "100-ton rockfall; flooding Merced; after 1864 'we began a 100-year history of protecting these beloved trees from fire', contributing to their loss; fire promotes reproduction",
+      "sourceUrl": "https://npshistory.com/publications/yose/index.htm",
+      "locator": "'Sequoia Groves' and 'Valley' sections"
+    },
+    {
+      "claim": "Pika habitat shifting upward as climate rapidly warms; 'Where will the pikas go when they run out of mountain?'",
+      "sourceUrl": "https://npshistory.com/publications/yose/index.htm",
+      "locator": "'High Sierra' para 3"
+    },
+    {
+      "claim": "Ahwahneeches, tribelet of Southern Sierra Miwoks, lived in and around Yosemite Valley; called home 'Ahwahnee'",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.A, p. 2"
+    },
+    {
+      "claim": "Miners and settlers burned their villages, felled oak groves; Indians had no civil or legal rights",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.1, p. 16"
+    },
+    {
+      "claim": "McDougal, who 'spoke to the state legislature of the inevitability of the extermination of the Indian race', authorized a local militia; Mariposa Battalion, 200 mounted men, mustered 24 January 1851; Savage commissioned major",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.2, p. 18",
+      "interpretive": true
+    },
+    {
+      "claim": "Savage threatened to annihilate the tribe if they resisted further",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.2, p. 19"
+    },
+    {
+      "claim": "Savage's men fired Indian dwellings and food caches, hoping to starve out inhabitants to compel move to reservations",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.2, p. 23"
+    },
+    {
+      "claim": "May 1851 Boling's company of the battalion; two captives shot as they tried to break away; Tenaya's youngest son among the dead",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.3, p. 24"
+    },
+    {
+      "claim": "June 1852 regular army troops under Lt. Tredwell Moore shot five Indians found with white men's clothing suspected to be the murdered prospectors'",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.C.4, p. 25"
+    },
+    {
+      "claim": "U.S. Army took possession of Koomine village, largest in valley, as a camp in 1907 and forced out its inhabitants",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.A, p. 9 (fn. 12)"
+    },
+    {
+      "claim": "1933 NPS established new Indian Village west of Camp Sunnyside; 1969 moved the one remaining family and burned the village",
+      "sourceUrl": "https://npshistory.com/publications/yose/hrs1.pdf",
+      "locator": "ch. I.E, p. 28 (fn. 27)"
+    },
+    {
+      "claim": "1891–1914 Yosemite, Sequoia & General Grant under protection of U.S. Army",
+      "sourceUrl": "https://npshistory.com/publications/yose/invisible-men.pdf",
+      "locator": "p. 1"
+    },
+    {
+      "claim": "1899 24th Infantry; 9th Cavalry 1903 and 1904; African-American regiments formed in 1866",
+      "sourceUrl": "https://npshistory.com/publications/yose/invisible-men.pdf",
+      "locator": "pp. 3–4"
+    },
+    {
+      "claim": "Russell's One Hundred Years in Yosemite never names the 24th Infantry or 9th Cavalry; 'forced absence of nearly 500 men over a period of 3 years'; 'invisible men'; holes in history 'there by design'",
+      "sourceUrl": "https://npshistory.com/publications/yose/invisible-men.pdf",
+      "locator": "pp. 4–6",
+      "interpretive": true
+    },
+    {
+      "claim": "Significance statement 12: role of the U.S. Army (including Buffalo Soldiers)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Significance statement 12, p. 7 (pdf p. 13)"
+    },
+    {
+      "claim": "Enid Michael born Gilroy 1883, family to Pasadena; third-grade teacher; married Charles Michael, moved to park May 1919; one of four in first Nature Guide Service under Ansel F. Hall",
+      "sourceUrl": "https://npshistory.com/publications/yose/y-v66n3-2004.pdf",
+      "locator": "p. 3"
+    },
+    {
+      "claim": "195 articles in Yosemite Nature Notes; 1931 Marjorie Montgomery Ward $4,000 donation for garden behind Yosemite Museum; Enid Michael hired to direct selecting and planting; more than one thousand plants in its heyday",
+      "sourceUrl": "https://npshistory.com/publications/yose/y-v66n3-2004.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "1923 mobilized California Federation of Women's Clubs; status resented by some male colleagues; handwritten notation on March 5, 1937 memo, 'male' underlined four times",
+      "sourceUrl": "https://npshistory.com/publications/yose/y-v66n3-2004.pdf",
+      "locator": "p. 5"
+    },
+    {
+      "claim": "Twenty-one seasonal reappointments; last day of service September 30, 1942",
+      "sourceUrl": "https://npshistory.com/publications/yose/y-v66n3-2004.pdf",
+      "locator": "p. 6"
+    },
+    {
+      "claim": "Ten CCC camps in Yosemite May 1933–October 1940, 6,816 enrollees; ages 18–25, unmarried, unemployed; typical pay $30/month with $25 allotment to family",
+      "sourceUrl": "https://npshistory.com/publications/yose/ccc.pdf",
+      "locator": "p. 3"
+    },
+    {
+      "claim": "Camp complement 225–250 (about 200 city enrollees, 25–30 local, 15–20 LEMs); Cascades Camp wiped out in 1937 flood; Half Dome: 41 holes drilled by hand, men tied to posts; revitalized 250 Lamon apple trees",
+      "sourceUrl": "https://npshistory.com/publications/yose/ccc.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "Climate change key issue: drought killed large numbers of ponderosa pine; decreased snowpack, earlier runoff, larger wildfires, increased flooding; restoring meadows, riverbanks, Mariposa Grove; prescribed and managed lightning fire",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/yose-fd-2016.pdf",
+      "locator": "Key Issues, 'Climate Change' (pdf p. 24)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/yose/tunnel-view-winter.jpg",
+      "caption": "Yosemite Valley in winter from Tunnel View, with El Capitan on the left and Cathedral Rocks on the right",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/yose/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/232C02DC-BE31-0C6D-E1E2D2FB1EE7E251.jpg",
+      "evidenceUrl": "https://www.nps.gov/yose/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1600,
+      "height": 652,
+      "bytes": 173848,
+      "note": "On-page caption: \"A rewarding view of Yosemite Valley in winter as seen from Tunnel View. NPS Photo\"; alt text \"El Capitan on left, Cathedral Rocks on the right, all covered in snow, low clouds and sun\". Resized from 3206x1308. No theme photo: the Buffalo Soldier, Indian-history and women’s-history images on nps.gov/yose carry no credit line (or © credits) and were rejected."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/yose/index.htm",
     "adhiUrl": null,

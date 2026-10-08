@@ -89,9 +89,13 @@ def load_sources() -> dict[str, dict]:
 
 
 def compile_sources(sources: dict[str, dict]) -> dict:
-    """The compiled file keeps what the site renders and drops authoring-only fields."""
+    """The compiled file keeps what the site renders and drops authoring-only fields.
+    A source file of the form {"code": X, "aliasOf": Y} makes X render Y's history
+    (two map codes for one park unit, e.g. CACR and CARI for Cane River Creole)."""
     parks = {}
     for code, rec in sources.items():
+        if rec.get("aliasOf"):
+            continue
         parks[code] = {
             "name": rec.get("name"),
             "reviewStatus": rec.get("reviewStatus"),
@@ -104,6 +108,10 @@ def compile_sources(sources: dict[str, dict]) -> dict:
             "npshistory": rec.get("npshistory", {}),
             "corrections": rec.get("corrections", []),
         }
+    for code, rec in sources.items():
+        target = rec.get("aliasOf")
+        if target and target in parks:
+            parks[code] = parks[target]
     return {"_meta": {"parks": len(parks), "themes": THEMES, "labels": THEME_LABELS}, "parks": parks}
 
 
@@ -173,6 +181,11 @@ def validate(rec: dict) -> list[str]:
     """Return a list of problems; empty means the record is acceptable for its reviewStatus."""
     problems: list[str] = []
     code = rec.get("code", "?")
+    if rec.get("aliasOf"):
+        extra = set(rec) - {"code", "aliasOf", "note"}
+        if extra:
+            problems.append(f"{code}: an alias file may only hold code, aliasOf and note (found {sorted(extra)})")
+        return problems
     status = rec.get("reviewStatus")
     if status not in REVIEW_STATUSES:
         problems.append(f"{code}: reviewStatus {status!r} not in {REVIEW_STATUSES}")
@@ -297,7 +310,9 @@ def render_block(rec: dict, mode: str = "page") -> str:
         if rec.get("corrections"):
             last = rec["corrections"][-1]
             parts.append(f'<p class="ph-updated">Updated {_esc(last.get("date"))}: {_esc(last.get("note"))}</p>')
-    elif rec.get("summary"):
+    elif status == "legacy-unsourced" and rec.get("summary"):
+        # Only the old hand-written park-page paragraphs show while unpublished; drafts and
+        # reviewed-but-unpublished text never render anywhere until the owner publishes them.
         parts.append(f'<div class="ph-summary ph-legacy">{rec["summary"]}</div>')
     if index_url:
         n = npsh.get("docCount") or 0
