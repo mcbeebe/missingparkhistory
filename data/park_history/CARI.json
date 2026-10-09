@@ -1,16 +1,257 @@
 {
   "code": "CARI",
   "name": "Cane River Creole National Historical Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Cane River Creole National Historical Park in Natchitoches Parish, Louisiana, preserves two 18th- and 19th-century Creole cotton plantations — Oakland and Magnolia — that document the complex history of French Creole culture, plantation agriculture, and enslaved labor along the Cane River. Established by Congress in 1994, the park protects plantation structures, slave quarters, agricultural landscapes, and the stories of the enslaved people who built and maintained these operations. The Cane River region is one of the oldest permanent European settlements in the Louisiana Purchase territory, and the park's cultural landscape reflects centuries of French, Spanish, African, and Native American influence.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "405",
+    "1070"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-09",
+  "author": "author-B-2026-10-08",
+  "verifiedBy": "verifier-V1-2026-10-09 (29 ledger rows + all summary/theme sentences checked against sources, 10 corrections; 2 photos re-verified NPS Photo)",
+  "summary": "<p>Creole culture took root along the Cane River in 18th-century Louisiana, at what the Park Service calls the borderlands between New France and New Spain — a culture nurtured by French and Spanish colonial ways, steeped in Africanisms and enriched by American Indian contact. The park preserves two plantations, Oakland and Magnolia, 10 and 20 miles south of Natchitoches: in the Park Service’s words the most intact French Creole cotton plantations in the United States, owned and continuously operated by the same families, the Prud’hommes and the LeComte–Hertzogs, since their establishment in the 18th century. They hold 70 historic structures, including eight rare brick slave quarters at Magnolia, and nearly 500,000 museum objects and archives. <a href=\"https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p><p>Jean Baptiste Lecomte obtained the land grant that grew into Magnolia in 1753. Emmanuel Prud’homme’s land on the river became the core of Bermuda, later renamed Oakland; the brochure dates his grant to 1789, a family tradition the 2019 Historic Resource Study finds no evidence for. After the cotton gin’s invention in 1793 both families turned to cotton, and between 1818 and 1821 Prud’homme’s enslaved workers built his house. After the United States took Louisiana in 1803, the 2018 brochure explains, Anglo-Americans poured in with their English language, Protestant religion and their own enslaved workers; life grew more constricted for non-whites as U.S. law removed colonial-era rights such as self-emancipation by purchase. <a href=\"https://npshistory.com/publications/cari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p><p>Congress created the park on November 2, 1994, in the same law that created the 116,000-acre Cane River National Heritage Area — which the 2015 foundation document calls the only instance of a park unit and a heritage area being co-legislated. The Park Service says the park tells the story of oppressive plantation labor systems founded on slavery and replaced by tenant farming, sharecropping and day labor from Reconstruction through the 1970s. <a href=\"https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/cari/index.htm",
+      "title": "NPSHistory.com: Cane River Creole NHP archive page — overview (from the 2018 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "title": "Foundation Document, Cane River Creole National Historical Park (NPS, September 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/cari/hrs.pdf",
+      "title": "Historic Resource Study: Cane River Creole National Historical Park (Commonwealth Heritage Group & Suzanne Turner Associates for NPS, 2019)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Before there was a French post at Natchitoches, this valley was Caddo country. By the end of the 1400s the Caddo numbered about 200,000, and the Red River valley was among the most densely settled parts of their homeland. Then came European disease and a years-long drought: archaeological evidence cited in the 2019 Historic Resource Study suggests the population fell by about 95 percent between 1500 and the 1680s. The Natchitoches confederacy, smallest of three, lived in villages on the river terraces between today’s Oakland Plantation and Natchitoches. <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p><p>In 1835 the Caddo sold all their lands by a treaty signed near Shreveport, for $30,000 in goods and horses and a promise of $50,000 over five years, pledging never to return to live as a nation within the United States. They went to Texas and later to Oklahoma, where the Caddo Nation is based today. Some stayed or returned, and the tribe still holds the Natchitoches area as its spiritual homeland. <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cari/hrs.pdf",
+          "title": "Historic Resource Study: Cane River Creole National Historical Park (Commonwealth Heritage Group & Suzanne Turner Associates for NPS, 2019)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Between 1810 and 1860 the Prud’hommes held between 50 and 145 people, placing them in the top nine percent of Louisiana slaveholders. The LeComtes held 234 people in 1860 across Magnolia and their other properties, 112 of them in the Magnolia quarters, completed in 1845. In an 1836 cotton book, Phanor Prud’homme’s overseer listed the first names of 77 people who had worked seven days a week to bring in that year’s cotton; in April 1830 a Prud’homme cousin sold Phanor eight enslaved people for just over $3,000: a couple, Thibuad and Salinette, and their six children. The Historic Resource Study cautions that much of what was recorded about these lives was written by white planters and overseers. <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p><p>The brochure describes the cotton year: picking began in August and ran from first light until too dark to see, the hard bolls cut pickers’ hands, and the overseer expected each adult to pick at least 200 pounds a day. <a href=\"https://npshistory.com/publications/cari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cari/hrs.pdf",
+          "title": "Historic Resource Study: Cane River Creole National Historical Park (Commonwealth Heritage Group & Suzanne Turner Associates for NPS, 2019)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cari/index.htm",
+          "title": "NPSHistory.com: Cane River Creole NHP archive page — overview (from the 2018 NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>After the war a Union commander, on June 5, 1865, told freed people to stay on the premises to which they belonged, and the initial labor contracts at Bermuda paid six to ten dollars a month for men and five to eight for women. Those contracts, the park’s brochure says, differed from slavery mainly in requiring the worker’s consent; sharecropping ranged from a relatively benign feudalism to virtual bondage, the chains of slavery replaced by endless debt at the plantation store. Many stayed and rebuilt a community around church and family, often in the quarters that had housed their enslaved ancestors. <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p><p>The first sharecropper did not leave Oakland until 1949. At Magnolia the Hertzogs housed day laborers in the brick cabins from the Depression on; electricity reached the cabins in the 1940s; mechanical pickers replaced the field crews in the 1960s, and the last residents of the cabins, the Vercher family, moved out in the early 1970s. <a href=\"https://npshistory.com/publications/cari/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cari/hrs.pdf",
+          "title": "Historic Resource Study: Cane River Creole National Historical Park (Commonwealth Heritage Group & Suzanne Turner Associates for NPS, 2019)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cari/index.htm",
+          "title": "NPSHistory.com: Cane River Creole NHP archive page — overview (from the 2018 NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Creole culture took root along Cane River in 18th-century Louisiana; nurtured by French and Spanish colonial ways, steeped in Africanisms, enriched by American Indian contact",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'Colonial Roots — Genesis of a Culture' para 1"
+    },
+    {
+      "claim": "Borderlands between New France and New Spain in the 1700s",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 6, Significance statement 6"
+    },
+    {
+      "claim": "Oakland unit 10 miles and Magnolia unit 20 miles south of Natchitoches",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 3, Brief Description of the Park"
+    },
+    {
+      "claim": "Most intact French Creole cotton plantations in the United States; owned and continuously operated by the same French Creole families since the 18th century",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 6, Significance statements 1–2",
+      "interpretive": true
+    },
+    {
+      "claim": "Prud'homme family (Oakland) and LeComte-Hertzog family (Magnolia)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 3, Brief Description"
+    },
+    {
+      "claim": "70 historic structures; nearly 500,000 museum objects and archives",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 3, Brief Description; p. 6 statement 4"
+    },
+    {
+      "claim": "Magnolia: eight rare examples of brick slave quarters",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 7, Fundamental Resources and Values"
+    },
+    {
+      "claim": "Brochure: Jean Baptiste Lecomte land grant 1753 (seed of Magnolia); Jean Pierre Emmanuel Prud'homme land grant 1789, core of Bermuda later renamed Oakland; cotton gin 1793; both turned to cotton",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'Colonial Roots' para 3"
+    },
+    {
+      "claim": "Prud'homme family tradition holds Emmanuel was granted the land by Spanish governor Estevan Miro in 1789, but there is no supporting evidence for that account",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 3, p. 3-24, fn. 181"
+    },
+    {
+      "claim": "Brochure: in 1821 Emmanuel Prud'homme's enslaved workers built his house; HRS: Big House construction proceeded between 1818 and 1821",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'King Cotton — The Prosperous Years' para 1; HRS ch. 4, p. 4-55 (Big House)"
+    },
+    {
+      "claim": "After the U.S. took possession of Louisiana in 1803; Anglo-Americans poured in with English language, Protestant religion and their own African American enslaved workers; life more constricted for non-whites; U.S. laws removed colonial-era rights such as self-emancipation by purchase",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'King Cotton' paras 1–2 (source: NPS Brochure 2018)"
+    },
+    {
+      "claim": "PL 103-449 of November 2, 1994 created the park and the Cane River NHA together; FD (2015) calls it the only instance of an NPS unit and NHA co-legislated; NHA 116,000 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "Park tells story of oppressive labor systems founded on slavery and replaced by tenant farming, sharecropping and day labor from Reconstruction through the 1970s",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cari-fd-2015.pdf",
+      "locator": "p. 6, Significance statement 3",
+      "interpretive": true
+    },
+    {
+      "claim": "Caddo population reached 200,000 by end of the 1400s; Red River valley among most densely populated Caddo areas",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 2, p. 2-3, fns. 11–13"
+    },
+    {
+      "claim": "European disease and years-long drought; archaeological evidence suggests Caddo population fell ~95 percent between 1500 and the 1680s (to about 10,000)",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 2, pp. 2-3 to 2-4"
+    },
+    {
+      "claim": "Three confederacies (Kadohadacho, Natchitoches, Hasinai); Natchitoches the least populous; small villages on river terraces and levees between Oakland Plantation and Natchitoches",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 2, p. 2-4, fns. 14, 17"
+    },
+    {
+      "claim": "1835 treaty at the Caddo Indian Agency south of Shreveport: Caddo sold all their lands, agreed to move to Texas, promised never to return as a nation; paid $30,000 in goods and horses, promised $50,000 cash over five years; later relocated to Oklahoma (Caddo Nation of Oklahoma); some remained or returned; Natchitoches area their 'spiritual homeland'",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-3, fns. 8–10"
+    },
+    {
+      "claim": "Prud'hommes owned between 50 and 145 people 1810–1860, upper 9 percent of Louisiana slave owners (Table 4-1)",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-11, Table 4-1, fn. 61"
+    },
+    {
+      "claim": "By 1860 the LeComtes owned 234 people across Magnolia, Shallow Lake, Vienna and other properties; 112 resided in the Magnolia Quarters; Magnolia Quarters completed 1845 (Table 4-2)",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-12, Table 4-2, fn. 65"
+    },
+    {
+      "claim": "1836 cotton book: overseer J. F. Culbertson listed first names of seventy-seven enslaved persons who worked seven days a week to harvest the cotton",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-12, fn. 67"
+    },
+    {
+      "claim": "April 1830: Prud'homme cousin Narcisse sold eight enslaved workers to Phanor for just over $3,000, including the couple Thibuad and Salinette and their six children",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-11, fn. 60"
+    },
+    {
+      "claim": "Much of the recorded material on the enslaved was scribed by white planters and overseers from a labor and crops perspective",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 4, p. 4-12, fn. 66",
+      "interpretive": true
+    },
+    {
+      "claim": "Picking began in August; first light until too dark to see; sharp bolls caused deep cuts; overseer expected adults to pick at least 200 pounds a day",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'The Cotton Year'"
+    },
+    {
+      "claim": "June 5, 1865: Lt. Col. S. G. Van Anda instructed freed slaves to remain on 'the premises to which they belong'; wages in initial contracts $6–10/month for males, $5–8 for females (Bermuda workers)",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 5, p. 5-13, fns. 76–78"
+    },
+    {
+      "claim": "Freedmen's Bureau contracts differed from slavery mainly in requiring the worker's consent; sharecropping ranged from relatively benign feudalism to virtual bondage with endless debt to the plantation store; many rebuilt community around church and family, often within the quarters that housed enslaved ancestors",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'Civil War — Ruin and Rebirth' paras 2–3",
+      "interpretive": true
+    },
+    {
+      "claim": "First sharecropper to leave Oakland did not do so until 1949; sharecropping continued at Magnolia into the 1950s",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 8, p. 8-4, fn. 18"
+    },
+    {
+      "claim": "During the Depression the Hertzogs housed day laborers in the brick quarters (Slave Cabins #1–8); HRS p. 8-32: cabins continued to be occupied by day laborers",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 7, p. 7-13, fn. 94; ch. 8, p. 8-32"
+    },
+    {
+      "claim": "Electricity reached the Magnolia cabins in the 1940s; last residents the Vercher family moved out in the early 1970s",
+      "sourceUrl": "https://npshistory.com/publications/cari/hrs.pdf",
+      "locator": "ch. 8, p. 8-32, fn. 168; p. 8-4"
+    },
+    {
+      "claim": "Mechanical pickers replaced ranks of workers in the cotton fields in the 1960s",
+      "sourceUrl": "https://npshistory.com/publications/cari/index.htm",
+      "locator": "overview, 'Old Ways Pass' final para"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/cari/oakland-oak-allee.jpg",
+      "caption": "The Oak Allée, planted in the mid-1820s, running from the Cane River to the Oakland Plantation Main House",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cari/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/013E2FA7-0484-6936-482FC53FB6584056.jpg",
+      "evidenceUrl": "https://www.nps.gov/cari/index.htm",
+      "capturedAt": "2026-10-08",
+      "width": 1000,
+      "height": 666,
+      "bytes": 230867,
+      "note": "On-page caption (nps.gov/cari home carousel): \"The Oak Allee, planted in the mid-1820s, stretches from the Cane River to the Oakland Plantation Main House. NPS Photo\". Resized from 5444x3629."
+    },
+    {
+      "file": "images/history/cari/magnolia-brick-quarters.jpg",
+      "caption": "Brick cabins built in the 1840s to house enslaved workers on Magnolia Plantation, later homes for tenant farmers",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cari/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/00B736C4-96DD-E2B8-FD02840AB40264BF.jpg",
+      "evidenceUrl": "https://www.nps.gov/cari/index.htm",
+      "capturedAt": "2026-10-08",
+      "themeKey": "slavery",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 243593,
+      "note": "On-page caption (nps.gov/cari home carousel): \"These brick cabins were built in the 1840s to house enslaved workers on Magnolia Plantation. Following Emancipation the cabins served as homes for tenant farmers. NPS Photo\". Resized from 5616x3744."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/cari/index.htm",
     "adhiUrl": null,
