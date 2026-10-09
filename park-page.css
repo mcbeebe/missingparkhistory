@@ -98,7 +98,7 @@ body{font-family:Georgia,'Times New Roman',serif;background:#0a0a0f;color:#c8c8d
 
 /* ---- Park History section (Option A "Dossier"); mirrors #park-history-css in index.html ---- */
 .park-history-section .ph-summary p,.park-history-section .ph-theme p{font-size:15px;line-height:1.75;color:#b8b8c0;margin-bottom:14px}
-.park-history-section .cite{color:#6d9eeb;text-decoration:none;font-family:-apple-system,sans-serif;font-size:11px;vertical-align:super;margin-left:2px}
+.entry-narrative .cite,.park-history-section .cite{color:#6d9eeb;text-decoration:none;font-family:-apple-system,sans-serif;font-size:11px;vertical-align:super;margin-left:2px}
 .park-history-section .ph-theme{margin-top:16px}
 .park-history-section .ph-theme h4,.park-history-section .ph-h{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#8b9cf7;margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:600}
 .park-history-section .ph-h{color:#6d9eeb;margin:20px 0 10px}
