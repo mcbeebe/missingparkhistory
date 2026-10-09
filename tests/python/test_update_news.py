@@ -145,7 +145,7 @@ class SynthesisTest(unittest.TestCase):
 
     def reply(self):
         return json.dumps({
-            "paragraphs": ["P1 " + "x" * 80 + r" C:\path", "P2 " + "y" * 80],
+            "paragraph": "P1 " + "x" * 80 + r" C:\path " + '<a href="https://a.example/1">first story</a>.',
             "badges": [{"emoji": "⚖️", "label": "One"}, {"emoji": "✊", "label": "Two"},
                        {"emoji": "📜", "label": "Three"}],
         })
@@ -191,6 +191,88 @@ class SynthesisTest(unittest.TestCase):
         self.assertRegex(head, r'<div class="nd-header[^"]*">\s*<h2>[^<]+</h2>')
         self.assertEqual(out.split('<div class="nd-badge-row">')[0], head)
         self.assertEqual(out.split('<div class="nd-articles">', 1)[1], real.split('<div class="nd-articles">', 1)[1])
+
+
+    def _run(self, paragraph: str) -> bool:
+        news = card("Oct 1", "2026", "https://a.example/1") + card("Oct 2", "2026", "https://a.example/2")
+        reply = json.dumps({"paragraph": paragraph, "badges": [
+            {"emoji": "⚖️", "label": "One"}, {"emoji": "✊", "label": "Two"}, {"emoji": "📜", "label": "Three"}]})
+        with mock.patch.object(un, "_complete", return_value=reply):
+            return un.update_synthesis(news, "2026-10-06")
+
+    def test_writes_one_paragraph_with_tracked_links_only(self):
+        self.assertTrue(self._run(
+            "Interior blocked <strong>130</strong> projects, "
+            '<a href="https://www.a.example/1/">records show</a>; a '
+            '<a href="https://evil.example/x">made-up link</a> is unwrapped. ' + "word " * 40))
+        out = self.index.read_text(encoding="utf-8")
+        syn = out.split('<div class="nd-synthesis">')[1].split("</div>")[0]
+        self.assertEqual(syn.count("<p>"), 1)
+        self.assertIn('<a href="https://a.example/1" target="_blank" rel="noopener">records show</a>', syn)
+        self.assertNotIn("evil.example", syn)
+        self.assertIn("made-up link", syn)
+        self.assertIn("<strong>130</strong>", syn)
+
+    def test_rejects_summary_that_is_too_long(self):
+        long = '<a href="https://a.example/1">x</a> ' + "word " * (un.SYNTHESIS_HARD_MAX_WORDS + 5)
+        self.assertFalse(self._run(long))
+        self.assertIn("<p>old</p>", self.index.read_text(encoding="utf-8"))
+
+    def test_rejects_summary_without_a_tracked_link(self):
+        self.assertFalse(self._run('<a href="https://other.example/">x</a> ' + "word " * 60))
+        self.assertIn("<p>old</p>", self.index.read_text(encoding="utf-8"))
+
+    def test_prompt_asks_for_short_linked_paragraph(self):
+        self.assertIn("ONE paragraph", un.SYNTHESIS_PROMPT)
+        self.assertIn("<a href", un.SYNTHESIS_PROMPT)
+        self.assertNotIn("TWO paragraphs", un.SYNTHESIS_PROMPT)
+
+
+class SanitizeSynthesisTest(unittest.TestCase):
+    URLS = ["https://news.example/story"]
+
+    def clean(self, html: str) -> tuple[str, int]:
+        return un.sanitize_synthesis_html(html, self.URLS)
+
+    def test_keeps_allowed_link_and_canonicalizes(self):
+        out, n = self.clean('See <a href="https://www.news.example/story/?utm=1">this</a>.')
+        self.assertEqual(out, 'See <a href="https://news.example/story" target="_blank" rel="noopener">this</a>.')
+        self.assertEqual(n, 1)
+
+    def test_strips_disallowed_tags_and_attributes(self):
+        out, n = self.clean('<p onclick="x"><script>alert(1)</script><strong class="c">A</strong> <em>B</em></p>')
+        self.assertEqual(out, "alert(1)<strong>A</strong> <em>B</em>")
+        self.assertEqual(n, 0)
+
+    def test_unknown_and_javascript_links_are_unwrapped(self):
+        out, n = self.clean('<a href="javascript:alert(1)">x</a> <a href="https://bad.example">y</a>')
+        self.assertEqual(out, "x y")
+        self.assertEqual(n, 0)
+
+    def test_nested_and_unclosed_links(self):
+        out, n = self.clean('<a href="https://news.example/story">a <a href="https://news.example/story">b</a> c')
+        self.assertEqual(out.count("<a "), 1)
+        self.assertEqual(out.count("</a>"), 1)
+        self.assertEqual(n, 1)
+
+    def test_entities_and_stray_brackets(self):
+        out, _ = self.clean("Congress&rsquo;s 2% cut &mdash; 3 < 4")
+        self.assertEqual(out, "Congress&rsquo;s 2% cut &mdash; 3 &lt; 4")
+
+    def test_real_page_summary_is_short_and_linked(self):
+        real = (ROOT / "index.html").read_text(encoding="utf-8")
+        syn = real.split('<div class="nd-synthesis">')[1].split("</div>")[0]
+        paras = re.findall(r"<p>(.*?)</p>", syn, re.DOTALL)
+        self.assertEqual(len(paras), 1)
+        self.assertLessEqual(un._word_count(paras[0]), un.SYNTHESIS_HARD_MAX_WORDS)
+        hrefs = re.findall(r'<a href="([^"]+)"', paras[0])
+        self.assertGreaterEqual(len(hrefs), 2)
+        news = (ROOT / "news-and-press.html").read_text(encoding="utf-8")
+        tracked = {un.canonical_url(u) for u in re.findall(r'href="(https?://[^"]+)"', news)}
+        for h in hrefs:
+            self.assertIn(un.canonical_url(h), tracked, h)
+        status = (ROOT / "status.html").read_text(encoding="utf-8")
+        self.assertIn(paras[0], status)  # the status page mirrors the same text
 
 
 TIMELINE_FIXTURE = """<script>{"dateModified":"2026-06-12"}</script>
@@ -689,7 +771,7 @@ class StatusBoardTest(unittest.TestCase):
 
     def test_synthesis_is_mirrored_to_status_page(self):
         reply = json.dumps({
-            "paragraphs": ["NEW ONE " + "x" * 60, "NEW TWO " + "y" * 60],
+            "paragraph": "NEW ONE " + "x" * 60 + ' <a href="https://a.example/2">second</a>',
             "badges": [{"emoji": "⚖️", "label": "A"}, {"emoji": "✊", "label": "B"}, {"emoji": "📜", "label": "C"}],
         })
         with mock.patch.object(un, "_complete", return_value=reply):

@@ -111,7 +111,7 @@
 <div class="filter-chips" id="filterChips"></div>
 <div class="search-box" style="margin-top:0">
 <span class="search-icon">&#128269;</span>
-<label for="searchInput" class="sr-only">Search parks, states, and topics</label><input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off"/>
+<label for="searchInput" class="sr-only">Search parks, states, and topics</label><input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off" enterkeyhint="search"/>
 <div class="search-results" id="searchResults"></div>
 </div>
 </div>
@@ -240,6 +240,29 @@ body:not(.embed-mode) .news-btn{top:220px}
 body:not(.embed-mode) .legend{bottom:56px}
 }
 </style>
+<style>
+/* Search on phones. iOS Safari zooms the whole page when a focused text box is under
+   16px, which pushed the title and search bar off-screen; and the floating Take Action
+   and Subscribe buttons (z-index 4500) covered the results list. While the search is
+   in use the bar and its results sit above them. */
+@media(max-width:600px){
+body:not(.embed-mode) .search-box input{font-size:16px;padding:6px 12px 6px 36px}
+body:not(.embed-mode) .search-icon{font-size:14px}
+body:not(.embed-mode) .search-results{max-height:min(300px,45vh);overscroll-behavior:contain}
+body:not(.embed-mode) .search-result{padding:12px 16px}
+}
+.controls-bar:focus-within,.controls-bar:has(.search-results.active){z-index:4600}
+</style>
+<script>
+/* Return/"Search" on the keyboard opens the first result; Escape closes the list. */
+document.getElementById('searchInput').addEventListener('keydown',function(e){
+  var list=document.getElementById('searchResults');
+  if(e.key==='Enter'){
+    var first=list.classList.contains('active')&&list.querySelector('.search-result[onclick]');
+    if(first){e.preventDefault();first.click();this.blur();}
+  }else if(e.key==='Escape'){list.classList.remove('active');this.blur();}
+});
+</script>
 <script>document.addEventListener('click',function(e){var d=document.getElementById('topicsDropdown'),m=document.getElementById('mobileTopicsDropdown');if(d&&!d.contains(e.target))d.classList.remove('open');if(m&&!m.contains(e.target))m.classList.remove('open')})</script>
 <!-- TAKE ACTION BUTTON -->
 <button class="take-action-btn" onclick="taOpen()">
@@ -390,6 +413,8 @@ Sincerely,
 .nd-synthesis p:last-child{margin-bottom:0}
 .nd-synthesis p strong{color:#fff}
 .nd-synthesis p em{color:#fbbf24;font-style:normal}
+.nd-synthesis p a{color:#93c5fd;text-decoration:underline;text-underline-offset:2px}
+.nd-synthesis p a:hover{color:#fff}
 .nd-articles{padding:16px 24px}
 .nd-articles h3{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;color:#888;margin-bottom:12px;font-family:-apple-system,sans-serif;font-weight:600}
 .nd-article{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #1a1a2a}
@@ -457,9 +482,9 @@ Sincerely,
       <h2>&#128240; This Week in the Fight for Park History</h2>
       <div class="nd-daterange">Sep 27 &ndash; Oct 1, 2026 &middot; 5 new developments</div>
       <div class="nd-badge-row">
-        <span class="nd-badge">📰 Partner Projects Blocked</span>
-        <span class="nd-badge">👁️ Climate Signs Removed</span>
-        <span class="nd-badge">⚖️ West Potomac Injunction Filed</span>
+        <span class="nd-badge">📜 130+ Partner Projects Blocked</span>
+        <span class="nd-badge">👁️ Archaeology Surveys Halted</span>
+        <span class="nd-badge">✊ MLB Drops Grand Teton</span>
       </div>
     </div>
 
@@ -467,8 +492,7 @@ Sincerely,
     <!-- news-bot:synthesis-updated 2026-10-06 -->
     <div class="nd-synthesis">
       <h3>Where the Fight Stands</h3>
-      <p>The <strong>Interior Department</strong> has <strong>disapproved more than 130 partner-run park projects</strong> worth at least <strong>$25 million</strong> as misaligned with administration priorities, internal <strong>National Park Service</strong> records obtained by <strong>KUNC</strong> revealed on <strong>September 30</strong>. The blocked agreements include <strong>cultural-resource work at Death Valley</strong> and <strong>museum digitization at Zion</strong>, with the <strong>Great Basin Institute</strong> alone having 78 projects worth <strong>$12.7 million</strong> disapproved or left in limbo. The systematic obstruction of third-party conservation work compounds the agency&rsquo;s operational collapse, coming just weeks after a <strong>CNN</strong> investigation documented that <strong>NPS has lost more than 24% of its permanent workforce</strong> since January 2025, even as <strong>Congress rejected</strong> the administration&rsquo;s proposed <strong>$1.2 billion cut</strong>&mdash;a historic 37% decrease&mdash;and provided only a 2% reduction. The administration&rsquo;s spending decisions have not translated into staffing or partner support, leaving parks struggling with severe personnel shortages as ideological directives choke off collaborative research and preservation.</p>
-      <p>The partner-project blockade intensifies ongoing battles over interpretive content, as librarians and archivists race to digitally preserve <strong>national park signs about women and LGBTQ+ history</strong> that have been revised or destroyed under administration orders, including language describing a massacre of <strong>Blackfeet women and children</strong> at <strong>Grand Teton National Park</strong>. The <strong>Interior Department</strong> removed <strong>climate change signage from Acadia National Park</strong> in September 2025, with spokesperson Aubrie Spady dismissing the removed materials as <em>&ldquo;brainless fear-mongering rhetoric&rdquo;</em> rather than <em>&ldquo;real science.&rdquo;</em> Meanwhile, a coalition including <strong>NPCA, DC Preservation League</strong>, and the <strong>National Mall Coalition</strong> filed for a <strong>preliminary injunction</strong> in early September to halt unauthorized construction at <strong>West Potomac Park</strong>, where the administration seeks to transform park land into a massive sculpture garden complex. The <strong>Sierra Club</strong> obtained documents on <strong>September 23</strong> revealing a secretive reorganization plan that would strip authority from experienced park officials, suggesting the workforce and partnership crises are features of a broader strategy to hollow out the agency&rsquo;s institutional capacity and reshape what the Park Service protects and tells.</p>
+      <p>Interior has <a href="https://www.kunc.org/2026-09-30/trump-administration-blocks-dozens-of-third-party-agreements-in-national-parks" target="_blank" rel="noopener">disapproved more than 130 partner-run park projects</a> worth at least <strong>$25 million</strong> as misaligned with administration priorities, internal Park Service records show. Much of the blocked work is history itself: cultural-resource work at Death Valley, museum digitization at Zion and, in Utah, <a href="https://www.moabtimes.com/articles/the-trump-admin-blocked-nearly-2m-for-projects-at-utahs-national-parks-heres-what-wont-get-done/" target="_blank" rel="noopener">archaeological surveys of sites newly exposed around Lake Powell</a>. Cutting the partners who document the past is another way to narrow what parks can tell. One reversal: after weeks of local opposition, Major League Baseball <a href="https://www.npca.org/articles/11517-swing-and-a-miss-grand-teton-safe-at-home-after-mlb-withdraws-proposal" target="_blank" rel="noopener">dropped Grand Teton</a> from consideration as a ballpark site.</p>
     </div>
 
     <div class="nd-articles">
