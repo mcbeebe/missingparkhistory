@@ -56,7 +56,6 @@ body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2
 .section-heading::before{content:"";width:8px;height:8px;border-radius:50%;background:#2563b4;flex-shrink:0}
 .section-heading .tag{margin-left:auto;font-size:10px;letter-spacing:.5px;text-transform:none;font-weight:600;border-radius:999px;padding:2px 9px}
 .section-heading .tag.bot{color:#047857;background:#ecfdf5;border:1px solid #a7f3d0}
-.section-heading .tag.hand{color:#6b7280;background:#f3f4f6;border:1px solid #e5e7eb}
 
 /* ─── Prose ─── */
 .prose{font-size:17px;line-height:1.85;color:#2d2d2d;margin-bottom:20px}
@@ -68,6 +67,8 @@ body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2
 .nd-synthesis p{font-size:17px;line-height:1.85;color:#2d2d2d;margin-bottom:20px}
 .nd-synthesis p strong{color:#1a1a1a}
 .nd-synthesis p em{color:#b45309;font-style:normal;font-weight:600}
+.nd-synthesis p a{color:#2563b4;text-decoration:none;border-bottom:1px solid rgba(37,99,180,0.3)}
+.nd-synthesis p a:hover{border-color:#2563b4}
 
 /* ─── Verdict strip ─── */
 .verdict{background:#1a1a1a;color:#f5f5f5;border-radius:14px;padding:22px 26px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
@@ -271,17 +272,16 @@ body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2
 
   <!-- Editor's note: the "This week" paragraphs below are the same weekly synthesis the bot writes
        for the homepage news pop-up. news-bot:freeze-synthesis in index.html freezes both copies. -->
-  <div class="section-heading">This week <span class="tag bot">Auto-written weekly from tracked coverage</span></div>
+  <div class="section-heading">This week <span class="tag bot">Updated weekly from tracked coverage</span></div>
   <div class="nd-synthesis">
       <h3>Where the Fight Stands</h3>
-      <p>The <strong>Interior Department</strong> has <strong>disapproved more than 130 partner-run park projects</strong> worth at least <strong>$25 million</strong> as misaligned with administration priorities, internal <strong>National Park Service</strong> records obtained by <strong>KUNC</strong> revealed on <strong>September 30</strong>. The blocked agreements include <strong>cultural-resource work at Death Valley</strong> and <strong>museum digitization at Zion</strong>, with the <strong>Great Basin Institute</strong> alone having 78 projects worth <strong>$12.7 million</strong> disapproved or left in limbo. The systematic obstruction of third-party conservation work compounds the agency&rsquo;s operational collapse, coming just weeks after a <strong>CNN</strong> investigation documented that <strong>NPS has lost more than 24% of its permanent workforce</strong> since January 2025, even as <strong>Congress rejected</strong> the administration&rsquo;s proposed <strong>$1.2 billion cut</strong>&mdash;a historic 37% decrease&mdash;and provided only a 2% reduction. The administration&rsquo;s spending decisions have not translated into staffing or partner support, leaving parks struggling with severe personnel shortages as ideological directives choke off collaborative research and preservation.</p>
-      <p>The partner-project blockade intensifies ongoing battles over interpretive content, as librarians and archivists race to digitally preserve <strong>national park signs about women and LGBTQ+ history</strong> that have been revised or destroyed under administration orders, including language describing a massacre of <strong>Blackfeet women and children</strong> at <strong>Grand Teton National Park</strong>. The <strong>Interior Department</strong> removed <strong>climate change signage from Acadia National Park</strong> in September 2025, with spokesperson Aubrie Spady dismissing the removed materials as <em>&ldquo;brainless fear-mongering rhetoric&rdquo;</em> rather than <em>&ldquo;real science.&rdquo;</em> Meanwhile, a coalition including <strong>NPCA, DC Preservation League</strong>, and the <strong>National Mall Coalition</strong> filed for a <strong>preliminary injunction</strong> in early September to halt unauthorized construction at <strong>West Potomac Park</strong>, where the administration seeks to transform park land into a massive sculpture garden complex. The <strong>Sierra Club</strong> obtained documents on <strong>September 23</strong> revealing a secretive reorganization plan that would strip authority from experienced park officials, suggesting the workforce and partnership crises are features of a broader strategy to hollow out the agency&rsquo;s institutional capacity and reshape what the Park Service protects and tells.</p>
+      <p>Interior has <a href="https://www.kunc.org/2026-09-30/trump-administration-blocks-dozens-of-third-party-agreements-in-national-parks" target="_blank" rel="noopener">disapproved more than 130 partner-run park projects</a> worth at least <strong>$25 million</strong> as misaligned with administration priorities, internal Park Service records show. Much of the blocked work is history itself: cultural-resource work at Death Valley, museum digitization at Zion and, in Utah, <a href="https://www.moabtimes.com/articles/the-trump-admin-blocked-nearly-2m-for-projects-at-utahs-national-parks-heres-what-wont-get-done/" target="_blank" rel="noopener">archaeological surveys of sites newly exposed around Lake Powell</a>. Cutting the partners who document the past is another way to narrow what parks can tell. One reversal: after weeks of local opposition, Major League Baseball <a href="https://www.npca.org/articles/11517-swing-and-a-miss-grand-teton-safe-at-home-after-mlb-withdraws-proposal" target="_blank" rel="noopener">dropped Grand Teton</a> from consideration as a ballpark site.</p>
     </div>
   <!-- status-bot:synthesis-end -->
   <p class="prose" style="font-family:-apple-system,sans-serif;font-size:14px;color:#666"><a href="/news-and-press.html">Read all tracked coverage &rarr;</a></p>
 
-  <div class="section-heading">How this page is kept current <span class="tag hand">Hand-edited</span></div>
-  <p class="prose">Every day a bot reads the news and adds qualifying articles to the <a href="/news-and-press.html">News &amp; Press</a> page. Once a week it rewrites the four fronts, the case board and the "This week" summary above, using only articles already on that page, and every change must cite one of them. The verdict strip and the numbers are written by people and dated. If something here is wrong, <a href="mailto:info@missingparkhistory.org">tell us</a>.</p>
+  <div class="section-heading">How this page is kept current</div>
+  <p class="prose">Every day we read the news and add qualifying articles to the <a href="/news-and-press.html">News &amp; Press</a> page. Once a week we update the four fronts, the case board and the "This week" summary above, using only articles already on that page, and every change cites one of them. The verdict and the headline numbers are dated each time we change them. If something here is wrong, <a href="mailto:info@missingparkhistory.org">tell us</a>.</p>
 
   <div class="cta-section">
     <h3>You can do something about this</h3>

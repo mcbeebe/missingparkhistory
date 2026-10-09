@@ -738,26 +738,31 @@ def update_news_digest(news_html: str, today_iso: str) -> None:
 
 
 SYNTHESIS_PROMPT = """You are the editorial voice of MissingParkHistory.org,
-regenerating the "Where the Fight Stands" synthesis at the top of the
-homepage news digest. Your output replaces a hand-curated narrative.
+regenerating the "Where the Fight Stands" summary at the top of the homepage
+news pop-up. Readers mostly see it on a phone, so it must be short.
 
-Tone reference (the most recent prior version — match this voice exactly):
+Tone reference (the most recent prior version — match this voice):
 ---
 {prior_synthesis}
 ---
 
 Rules:
-- TWO paragraphs, ~150-200 words each. No more, no less.
-- Lead with the WEEK'S ANCHOR STORY (the single most consequential
-  development), then add a second paragraph that adds another thread
-  (legal, executive, or congressional) and contextualizes how the pieces
-  fit together. Find the throughline; do not summarize each article.
-- Voice: analytical, journalistic, structural. Use specific names, dates,
-  numbers, dollar amounts. No vague phrases like "this week saw" or "many
-  developments occurred."
-- HTML: wrap key proper nouns and figures in <strong>...</strong>.
-  Italicize key phrases, titles, or quoted concepts in <em>...</em>.
-  Use &mdash; for em-dashes and &rsquo; for apostrophes.
+- ONE paragraph, {min_words}-{max_words} words. Never longer.
+- Lead with the week's single most consequential development, then one
+  sentence on how it connects to the wider fight. Find the throughline; do
+  not summarize each article.
+- Link 2-4 of the articles inline: wrap a short phrase (3-8 words) in
+  <a href="URL">...</a>, using ONLY URLs from the ARTICLES list below,
+  copied exactly. Never invent or alter a URL.
+- Voice: plain, factual, journalistic. Specific names, dates and numbers.
+  If a first-person voice is needed, use "we" (never "the bot").
+- Hard history deserves care. If you mention violence against people (a
+  massacre, enslavement, forced removal, incarceration, lynching), name the
+  people harmed, say plainly what happened, and say why its removal from a
+  park matters. Never mention it in passing or in a list next to unrelated
+  topics; if there is no room to do it justice, leave it out.
+- HTML: only <a href>, <strong> (key names and figures, used sparingly)
+  and <em>. Use &mdash; for em-dashes and &rsquo; for apostrophes.
 
 ALSO produce THREE badge labels for the header. Each is one emoji + a short
 label (3-5 words). Pick the three most newsworthy threads. Use one of
@@ -778,10 +783,7 @@ Return ONLY this JSON. The very first character of your response MUST be
 `{{` — no prose intro, no markdown fences, no commentary:
 
 {{
-  "paragraphs": [
-    "first paragraph HTML, with <strong> and <em>",
-    "second paragraph HTML"
-  ],
+  "paragraph": "one paragraph of HTML with 2-4 <a href> links",
   "badges": [
     {{"emoji": "🏛️", "label": "Truth in NPs Act Introduced"}},
     {{"emoji": "⚖️", "label": "Plaintiffs File New Brief"}},
@@ -789,6 +791,54 @@ Return ONLY this JSON. The very first character of your response MUST be
   ]
 }}
 """
+
+# Length bounds for the weekly summary. The prompt asks for MIN-MAX words;
+# replies over SYNTHESIS_HARD_MAX_WORDS are rejected (the old text stays and
+# the next daily run retries).
+SYNTHESIS_MIN_WORDS = 80
+SYNTHESIS_MAX_WORDS = 100
+SYNTHESIS_HARD_MAX_WORDS = 130
+
+_SYN_TAG_RE = re.compile(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>")
+
+
+def sanitize_synthesis_html(text: str, allowed_urls: Iterable[str]) -> tuple[str, int]:
+    """Reduce model-written summary HTML to <strong>, <em> and links.
+
+    A link survives only if its href matches (after canonical_url) one of
+    `allowed_urls`, the articles the summary was written from; it is rewritten
+    to that article's URL and opens in a new tab. Any other link is unwrapped
+    to its text, and every other tag is dropped. Returns (html, link_count)."""
+    allowed = {canonical_url(u): u for u in allowed_urls if u}
+    out: list[str] = []
+    stack: list[str] = []  # open <a> tags: "a" when kept, "" when unwrapped
+    links = 0
+    pos = 0
+    for m in _SYN_TAG_RE.finditer(text):
+        out.append(text[pos:m.start()].replace("<", "&lt;").replace(">", "&gt;"))
+        pos = m.end()
+        closing, tag, attrs = m.group(1) == "/", m.group(2).lower(), m.group(3)
+        if tag in ("strong", "em"):
+            out.append(f"</{tag}>" if closing else f"<{tag}>")
+        elif tag == "a" and closing:
+            if stack and stack.pop():
+                out.append("</a>")
+        elif tag == "a":
+            href = re.search(r"""href\s*=\s*["']([^"']+)["']""", attrs)
+            url = allowed.get(canonical_url(href.group(1))) if href else None
+            if url and "a" not in stack:
+                out.append(f'<a href="{url}" target="_blank" rel="noopener">')
+                stack.append("a")
+                links += 1
+            else:
+                stack.append("")
+    out.append(text[pos:].replace("<", "&lt;").replace(">", "&gt;"))
+    out.extend("</a>" for t in stack if t)
+    return re.sub(r"\s+", " ", "".join(out)).strip(), links
+
+
+def _word_count(html: str) -> int:
+    return len(re.sub(r"<[^>]+>", " ", html).split())
 
 
 # ---------------------------------------------------------------------------
@@ -906,7 +956,7 @@ def _gather_weekly_articles(news_html: str, last_iso: str | None, today_iso: str
 
 
 def update_synthesis(news_html: str, today_iso: str) -> bool:
-    """Regenerate the 'Where the Fight Stands' synthesis paragraphs and the
+    """Regenerate the one-paragraph, linked "Where the Fight Stands" summary and the
     three header badges in index.html from articles published or added since
     the last successful refresh. On success, stamps index.html with today's
     date and returns True; returns False on any soft failure (existing
@@ -958,6 +1008,8 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
         since_date=since_date,
         today=today_iso,
         articles_block=articles_block,
+        min_words=SYNTHESIS_MIN_WORDS,
+        max_words=SYNTHESIS_MAX_WORDS,
     )
 
     text = _complete(prompt, max_tokens=2000)
@@ -968,20 +1020,29 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
     if data is None:
         return False
 
-    paragraphs = data.get("paragraphs", [])
+    raw = data.get("paragraph")
+    if raw is None and isinstance(data.get("paragraphs"), list) and len(data["paragraphs"]) == 1:
+        raw = data["paragraphs"][0]
     badges = data.get("badges", [])
-    if len(paragraphs) != 2 or not all(isinstance(p, str) and len(p) > 50 for p in paragraphs):
-        log.warning("Synthesis paragraph schema mismatch (expected 2 substantive strings)")
+    if not isinstance(raw, str) or len(raw) < 50:
+        log.warning("Synthesis schema mismatch (expected one substantive paragraph)")
         return False
     if len(badges) != 3 or not all(isinstance(b, dict) and "emoji" in b and "label" in b for b in badges):
         log.warning("Synthesis badge schema mismatch (expected 3 dicts with emoji+label)")
+        return False
+    paragraph, links = sanitize_synthesis_html(raw, (a["url"] for a in articles))
+    words = _word_count(paragraph)
+    if words > SYNTHESIS_HARD_MAX_WORDS:
+        log.warning("Synthesis too long (%d words > %d); keeping the old one", words, SYNTHESIS_HARD_MAX_WORDS)
+        return False
+    if links == 0:
+        log.warning("Synthesis links none of the tracked articles; keeping the old one")
         return False
 
     new_synthesis = (
         '<div class="nd-synthesis">\n'
         '      <h3>Where the Fight Stands</h3>\n'
-        f'      <p>{paragraphs[0]}</p>\n'
-        f'      <p>{paragraphs[1]}</p>\n'
+        f'      <p>{paragraph}</p>\n'
         '    </div>'
     )
     badge_lines = "\n".join(
@@ -1001,10 +1062,8 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
     INDEX_FILE.write_text(new_idx, encoding="utf-8")
     mirror_synthesis_to_status(new_synthesis)
     log.info(
-        "Updated synthesis from %d article(s) since %s: %d paragraphs (~%d words), %d badges",
-        len(articles), since_date, len(paragraphs),
-        sum(len(re.sub(r"<[^>]+>", "", p).split()) for p in paragraphs),
-        len(badges),
+        "Updated synthesis from %d article(s) since %s: %d words, %d links, %d badges",
+        len(articles), since_date, words, links, len(badges),
     )
     return True
 
