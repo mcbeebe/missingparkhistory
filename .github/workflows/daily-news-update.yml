@@ -41,6 +41,11 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Push with the NPS News Bot deploy key when it is configured. The
+          # "main: require CI" ruleset exempts deploy keys, so the bot can keep
+          # committing straight to main; without the secret this falls back to
+          # the token above.
+          ssh-key: ${{ secrets.NEWS_BOT_DEPLOY_KEY }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
