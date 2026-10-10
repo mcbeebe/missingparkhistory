@@ -44,9 +44,8 @@ ARCHIVE_DIR = REPO_ROOT / "News and Press" / "Archive"
 # Keep in sync with the SKILL frontmatter. Fall back through a small list so
 # the workflow does not break the first time Anthropic retires a model alias.
 MODEL_CANDIDATES = [
-    "claude-sonnet-4-5",
-    "claude-sonnet-4-5-20250929",
-    "claude-sonnet-4-20250514",
+    "claude-sonnet-5-5",
+    "claude-sonnet-4-5",  # deprecated; retires 2026-11-30
 ]
 
 MAX_TOOL_USES = 15
