@@ -101,7 +101,14 @@ jobs:
           git add data/sos_tracker_snapshot.json
           git commit -m "data: SOS tracker snapshot $TODAY"
           git push -u origin "$BRANCH"
-          gh pr create --title "SOS tracker changed — snapshot $TODAY" \
-            --body-file sos-change-report.md --label sos-tracker
+          # File the issue first: it is the alert, and it must not depend on the
+          # PR step. Opening a PR with GITHUB_TOKEN needs the repo setting
+          # "Allow GitHub Actions to create and approve pull requests"; when that
+          # is off, the issue carries a link to open the snapshot PR by hand.
+          COMPARE="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$BRANCH?expand=1"
+          { cat sos-change-report.md; echo; echo "---"; echo "Snapshot branch: \`$BRANCH\`. [Open the snapshot PR]($COMPARE) if the bot could not."; } > sos-issue.md
           gh issue create --title "Triage SOS tracker changes ($TODAY)" \
-            --body-file sos-change-report.md --label sos-tracker
+            --body-file sos-issue.md --label sos-tracker
+          gh pr create --title "SOS tracker changed — snapshot $TODAY" \
+            --body-file sos-change-report.md --label sos-tracker \
+            || echo "::warning::Could not open the snapshot PR (Actions may not be allowed to create PRs). Open it from: $COMPARE"

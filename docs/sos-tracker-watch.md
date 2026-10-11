@@ -14,10 +14,14 @@ and diffs against `data/sos_tracker_snapshot.json`.
 
 When anything changed it opens:
 
-- a **pull request** that updates the snapshot (the audit trail; merge it after triage), and
 - an **issue** labelled `sos-tracker` whose body is the change report (added / removed /
   changed rows with the cells that changed, new or vanished tabs, and the banner totals such as
-  "102 signs / 41 sites").
+  "102 signs / 41 sites"), and
+- a **pull request** that updates the snapshot (the audit trail; merge it after triage). The
+  bot can only open it when *Settings → Actions → General → Allow GitHub Actions to create and
+  approve pull requests* is on; otherwise the issue links to the pushed `sos-tracker/<date>`
+  branch so you can open the PR yourself. Until the snapshot is merged, later runs keep
+  reporting the same changes.
 
 Run it by hand any time:
 
