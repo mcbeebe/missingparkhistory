@@ -12,7 +12,11 @@
      Those opens send GA4 park_photo_open. Without JS every link still opens the file.
 
    Zoom 100-500%: +/- buttons or keys, wheel (toward the cursor), double-click, pinch;
-   drag to pan. At 100% a horizontal swipe changes photo. Esc, x or the backdrop closes. */
+   drag to pan. At 100% a horizontal swipe changes photo. Esc, x or the backdrop closes.
+
+   GA4 (all with viewer: map|park_page, gallery, photo_index, photos):
+     photo_zoom  first zoom past 100% on a photo (method: button|key|wheel|double_click|pinch)
+     photo_nav   moving to another photo (direction: next|prev, method: button|key|swipe) */
 (function () {
   if (window.PhotoViewer) return;
 
@@ -40,7 +44,7 @@
     '@media(max-width:600px){.pv .pv-prev,.pv .pv-next{top:auto;bottom:14px;transform:none}.pv img{max-height:calc(100vh - 150px)}.pv figcaption{padding:4px 12px}}';
 
   var box, img, cap, count, orig, prevBtn, nextBtn, closeBtn, zoomBar, zoomLabel, hint;
-  var photos = [], idx = 0, opener = null, hintShown = false;
+  var photos = [], idx = 0, opener = null, hintShown = false, gallery = '', zoomedThisPhoto = false;
   var scale = 1, panX = 0, panY = 0;
   var pointers = {}, gesture = null, moved = false;
 
@@ -84,13 +88,13 @@
     hint = box.querySelector('.pv-hint');
 
     closeBtn.addEventListener('click', close);
-    prevBtn.addEventListener('click', function () { go(-1); });
-    nextBtn.addEventListener('click', function () { go(1); });
+    prevBtn.addEventListener('click', function () { go(-1, 'button'); });
+    nextBtn.addEventListener('click', function () { go(1, 'button'); });
     zoomBar.addEventListener('click', function (e) {
       var b = e.target.closest('[data-zoom]');
       if (!b) return;
       var z = b.getAttribute('data-zoom');
-      if (z === 'reset') resetZoom(); else zoomTo(z === 'in' ? scale * STEP : scale / STEP);
+      if (z === 'reset') resetZoom(); else zoomTo(z === 'in' ? scale * STEP : scale / STEP, undefined, undefined, 'button');
     });
     box.addEventListener('click', function (e) {
       if (moved) { moved = false; return; }   // the end of a drag is not a backdrop click
@@ -99,10 +103,10 @@
 
     img.addEventListener('wheel', function (e) {
       e.preventDefault();
-      zoomTo(e.deltaY < 0 ? scale * STEP : scale / STEP, e.clientX, e.clientY);
+      zoomTo(e.deltaY < 0 ? scale * STEP : scale / STEP, e.clientX, e.clientY, 'wheel');
     }, { passive: false });
     img.addEventListener('dblclick', function (e) {
-      if (scale > 1) resetZoom(); else zoomTo(2.5, e.clientX, e.clientY);
+      if (scale > 1) resetZoom(); else zoomTo(2.5, e.clientX, e.clientY, 'double_click');
     });
     img.addEventListener('pointerdown', down);
     img.addEventListener('pointermove', move);
@@ -116,10 +120,10 @@
     if (!isOpen()) return;
     var handled = true;
     if (e.key === 'Escape') close();
-    else if (e.key === 'ArrowLeft') go(-1);
-    else if (e.key === 'ArrowRight') go(1);
-    else if (e.key === '+' || e.key === '=') zoomTo(scale * STEP);
-    else if (e.key === '-' || e.key === '_') zoomTo(scale / STEP);
+    else if (e.key === 'ArrowLeft') go(-1, 'key');
+    else if (e.key === 'ArrowRight') go(1, 'key');
+    else if (e.key === '+' || e.key === '=') zoomTo(scale * STEP, undefined, undefined, 'key');
+    else if (e.key === '-' || e.key === '_') zoomTo(scale / STEP, undefined, undefined, 'key');
     else if (e.key === '0') resetZoom();
     else if (e.key === 'Tab') trapFocus(e);
     else handled = false;
@@ -146,9 +150,13 @@
   }
 
   // Zoom to `next`, keeping the point under (cx, cy) still; default is the photo's centre.
-  function zoomTo(next, cx, cy) {
+  function zoomTo(next, cx, cy, method) {
     next = Math.max(MIN, Math.min(MAX, next));
     if (next === scale) return;
+    if (next > 1 && !zoomedThisPhoto) {
+      zoomedThisPhoto = true;
+      track('photo_zoom', { method: method || 'other' });
+    }
     var r = img.getBoundingClientRect();
     var baseX = r.left + r.width / 2 - panX, baseY = r.top + r.height / 2 - panY;
     var px = (cx === undefined ? baseX + panX : cx) - baseX;
@@ -187,7 +195,7 @@
       var ids = Object.keys(pointers);
       if (ids.length < 2) return;
       var a = pointers[ids[0]], b = pointers[ids[1]];
-      zoomTo(gesture.scale * Math.hypot(a.x - b.x, a.y - b.y) / gesture.dist, (a.x + b.x) / 2, (a.y + b.y) / 2);
+      zoomTo(gesture.scale * Math.hypot(a.x - b.x, a.y - b.y) / gesture.dist, (a.x + b.x) / 2, (a.y + b.y) / 2, 'pinch');
       moved = true;
     } else if (gesture.type === 'pan') {
       panX = gesture.panX + e.clientX - gesture.x;
@@ -204,7 +212,7 @@
     delete pointers[e.pointerId];
     if (gesture && gesture.type === 'swipe') {
       var dx = e.clientX - gesture.x, dy = e.clientY - gesture.y;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) { moved = true; go(dx < 0 ? 1 : -1); }
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) { moved = true; go(dx < 0 ? 1 : -1, 'swipe'); }
     }
     if (Object.keys(pointers).length === 0) {
       gesture = null;
@@ -228,6 +236,7 @@
   function show() {
     var p = photos[idx];
     resetZoom();
+    zoomedThisPhoto = false;
     img.src = p.src;
     img.alt = p.caption;
     cap.textContent = p.caption;
@@ -240,10 +249,21 @@
     });
   }
 
-  function go(step) {
+  function go(step, method) {
     if (photos.length < 2) return;
     idx = (idx + step + photos.length) % photos.length;
     show();
+    track('photo_nav', { direction: step > 0 ? 'next' : 'prev', method: method || 'other' });
+  }
+
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    params.viewer = /\/parks\//.test(location.pathname) ? 'park_page' : 'map';
+    params.gallery = gallery;
+    params.photo_index = idx;
+    params.photos = photos.length;
+    params.page_path = location.pathname;
+    window.gtag('event', name, params);
   }
 
   function isOpen() {
@@ -251,12 +271,17 @@
   }
 
   // list: [{src, caption}] (name is accepted for caption too)
-  function open(list, start, from) {
+  // opts: {gallery, from} -- gallery names the set in GA4; from gets focus back on close.
+  //       An element may be passed instead, as `from`.
+  function open(list, start, opts) {
+    opts = opts && opts.nodeType ? { from: opts } : (opts || {});
+    var from = opts.from;
     photos = [].filter.call(list || [], function (p) { return p && p.src; }).map(function (p) {
       return { src: p.src, caption: p.caption != null ? String(p.caption) : String(p.name || '') };
     });
     if (!photos.length) return false;
     if (!box) build();
+    gallery = String(opts.gallery || '');
     idx = Math.min(Math.max(start || 0, 0), photos.length - 1);
     opener = from || document.activeElement;
     show();
@@ -309,7 +334,7 @@
     var list = [].map.call(links, function (a) {
       return { src: a.getAttribute('href'), caption: a.getAttribute('data-caption') || '' };
     });
-    if (!open(list, start, more || link)) return;
+    if (!open(list, start, { from: more || link, gallery: name })) return;
     e.preventDefault();
     if (typeof window.gtag === 'function') {
       var m = location.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
