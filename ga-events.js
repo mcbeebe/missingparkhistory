@@ -10,8 +10,18 @@
      shop_click             any link to shop.missingparkhistory.org
      timeline_filter        a type button on the timeline (filter, results)
      news_filter            a News & Press topic button, Month/Source menu, or Clear (filter_type, value, results)
-   Take Action panel steps (take_action_open, _zip_lookup, _contact_click, ...)
-   are sent by taTrack() in index.html, not here. */
+   Map (homepage):
+     map_filter             Status/Topic/Media option, State menu, filter chip removed, Clear All
+                            (filter_type, value, selected, results = markers still on the map)
+     search                 a map search result is picked (search_term, park, entry_id)
+     map_park_page_click    a link from the map to a parks/ page (park_slug)
+   Park pages (parks/*.html) and any page with the share bar:
+     share                  share bar button (method, content_type, item_id)
+     park_photo_open        an entry photo is opened
+     park_map_click         View on map / Open Interactive Map (location)
+     park_source_click      a news source or park-history source link (section, link_domain)
+   Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
+   and the Take Action steps via taTrack(). */
 (function () {
   if (window.mphGaEvents) return;
   window.mphGaEvents = true;
@@ -42,6 +52,19 @@
   // Count what is still showing once the page's own filter handler has run.
   function afterFilter(selector, fn) {
     setTimeout(function () { fn(document.querySelectorAll(selector).length); }, 0);
+  }
+
+  function isHome() {
+    return /^\/(index\.html)?$/.test(location.pathname);
+  }
+
+  function parkSlug() {
+    var m = location.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
+    return m ? m[1] : '';
+  }
+
+  function mapResults() {
+    return typeof clusterGroup !== 'undefined' && clusterGroup.getLayers ? clusterGroup.getLayers().length : -1;
   }
 
   function isHelpPage() {
@@ -89,6 +112,9 @@
       });
     }
 
+    if (isHome()) mapClick(e.target);
+    if (parkSlug() || e.target.closest('.share-bar')) parkClick(e.target);
+
     var sub = e.target.closest('.sub-btn, a[href*="subscribe=1"]');
     if (sub) send('subscribe_click', { location: label(sub) || placement(sub) });
 
@@ -106,8 +132,69 @@
     }
   }, true);
 
+  function mapClick(t) {
+    var opt = t.closest('.ms-dd-opt[data-val]');
+    if (opt) {
+      var panel = opt.closest('[id$="Panel"]');
+      var type = panel ? panel.id.replace(/Panel$/, '') : 'unknown';
+      return afterFilter('body', function () {
+        send('map_filter', { filter_type: type, value: opt.getAttribute('data-val'), selected: opt.classList.contains('sel'), results: mapResults() });
+      });
+    }
+    var chip = t.closest('#filterChips [onclick]');
+    if (chip) {
+      var m = (chip.getAttribute('onclick') || '').match(/rem(\w+)\('([^']*)'/);
+      return afterFilter('body', function () {
+        send('map_filter', { filter_type: m ? m[1].toLowerCase() : 'chip', value: m ? m[2] : '', selected: false, results: mapResults() });
+      });
+    }
+    if (t.closest('#clearAllBtn')) {
+      return afterFilter('body', function () {
+        send('map_filter', { filter_type: 'clear', value: 'all', selected: false, results: mapResults() });
+      });
+    }
+    var hit = t.closest('.search-result');
+    if (hit) {
+      var input = document.getElementById('searchInput');
+      var id = (hit.getAttribute('onclick') || '').match(/goToEntry\('([^']*)'/);
+      var park = hit.querySelector('.sr-park');
+      return send('search', { search_term: input ? input.value.trim().slice(0, 100) : '', park: park ? text(park) : '', entry_id: id ? id[1] : '' });
+    }
+    var pl = t.closest('a[href*="parks/"]');
+    if (pl) {
+      var slugM = pl.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
+      if (slugM) send('map_park_page_click', { park_slug: slugM[1] });
+    }
+  }
+
+  var SHARE_METHODS = { tw: 'twitter', bs: 'bluesky', fb: 'facebook', rd: 'reddit', cl: 'copy_link' };
+
+  function parkClick(t) {
+    var park = parkSlug();
+    var sh = t.closest('.share-btn');
+    if (sh) {
+      var method = 'other';
+      for (var k in SHARE_METHODS) if (sh.classList.contains(k)) method = SHARE_METHODS[k];
+      return send('share', { method: method, content_type: park ? 'park_page' : 'page', item_id: park || location.pathname });
+    }
+    if (!park) return;
+    var photo = t.closest('a[href*="/images/"]');
+    if (photo) return send('park_photo_open', { park: park, link_url: photo.href });
+    var mapLink = t.closest('.view-map-link, .cta-btn');
+    if (mapLink) return send('park_map_click', { park: park, location: mapLink.classList.contains('cta-btn') ? 'cta' : 'view-on-map' });
+    var src = t.closest('.news-source-item, .park-history-section a[href^="http"]');
+    if (src) {
+      send('park_source_click', { park: park, section: src.classList.contains('news-source-item') ? 'news' : 'history', link_domain: src.hostname, link_url: src.href });
+    }
+  }
+
   document.addEventListener('change', function (e) {
     var sel = e.target;
+    if (isHome() && sel && sel.id === 'stateSel') {
+      return afterFilter('body', function () {
+        send('map_filter', { filter_type: 'state', value: sel.value || 'all', selected: !!sel.value, results: mapResults() });
+      });
+    }
     if (!onPage('news-and-press') || !sel || !/^filter(Month|Source)$/.test(sel.id)) return;
     afterFilter('.article-card:not(.hidden)', function (n) {
       send('news_filter', { filter_type: sel.id === 'filterMonth' ? 'month' : 'source', value: sel.value, results: n });
