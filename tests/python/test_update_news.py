@@ -894,3 +894,96 @@ class ParseJsonObjectLoggingTest(unittest.TestCase):
                 self.assertLogs(un.log, "ERROR"):
             self.assertFalse(un.update_synthesis("", "2026-10-11"))
         self.assertIn("<p>old</p>", index.read_text(encoding="utf-8"))
+
+
+class QuietWeekTest(unittest.TestCase):
+    """When nothing new turns up, the pop-up and the run summary say so instead
+    of showing a ten-day-old range as "This Week" (Oct 11, 2026)."""
+
+    @staticmethod
+    def art(mon, day, year="2026"):
+        return {"mon": mon, "day": day, "year": year}
+
+    def test_fresh_news_keeps_this_week_and_range(self):
+        arts = [self.art("Oct", "1"), self.art("Sep", "27")]
+        self.assertEqual(un.digest_header(arts, "2026-10-07"), (
+            "This Week in the Fight for Park History",
+            "Sep 27 &ndash; Oct 1, 2026 &middot; 2 new developments"))
+
+    def test_week_old_news_says_nothing_new(self):
+        arts = [self.art("Oct", "1"), self.art("Sep", "27")]
+        self.assertEqual(un.digest_header(arts, "2026-10-08"), (
+            "Latest in the Fight for Park History",
+            "No new developments since Oct 1 &middot; last checked Oct 8, 2026"))
+        self.assertEqual(un.digest_header(arts, "2026-10-11")[1],
+                         "No new developments since Oct 1 &middot; last checked Oct 11, 2026")
+
+    def test_stale_across_new_year_names_the_year(self):
+        arts = [self.art("Dec", "20", "2025")]
+        self.assertEqual(un.digest_header(arts, "2026-01-05")[1],
+                         "No new developments since Dec 20, 2025 &middot; last checked Jan 5, 2026")
+
+    def test_unreadable_date_falls_back_to_range(self):
+        self.assertEqual(un.digest_header([self.art("Sept", "x")], "2026-12-31")[0],
+                         "This Week in the Fight for Park History")
+
+    def test_real_index_flips_to_stale_and_back(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        index = Path(tmp.name) / "index.html"
+        index.write_text((ROOT / "index.html").read_text(encoding="utf-8"), encoding="utf-8")
+        news = (ROOT / "news-and-press.html").read_text(encoding="utf-8")
+        newest = un._recent_articles_from_html(news, limit=1)[0]
+        from datetime import date, timedelta
+        pub = date(int(newest["year"]), un._MONTHS[newest["mon"]], int(newest["day"]))
+
+        def header():
+            out = index.read_text(encoding="utf-8")
+            return (re.search(r'<div class="nd-header[^"]*">\s*<h2>([^<]*)</h2>', out).group(1),
+                    re.search(r'<div class="nd-daterange">([^<]+)</div>', out).group(1))
+
+        with mock.patch.object(un, "INDEX_FILE", index):
+            un.update_news_digest(news, (pub + timedelta(days=10)).isoformat())
+            h2, line = header()
+            self.assertEqual(h2, "&#128240; Latest in the Fight for Park History")
+            self.assertTrue(line.startswith(f'No new developments since {newest["mon"]} {newest["day"]}'), line)
+            un.update_news_digest(news, (pub + timedelta(days=2)).isoformat())
+            h2, line = header()
+            self.assertEqual(h2, "&#128240; This Week in the Fight for Park History")
+            self.assertTrue(line.endswith("&middot; 5 new developments"), line)
+        self.assertEqual(index.read_text(encoding="utf-8").count("in the Fight for Park History"), 1)
+
+    def test_summary_nothing_found(self):
+        st = un.CurationStats(searches=12, stop_reason="end_turn")
+        self.assertEqual(un.no_news_status(st, 0, 0), [
+            "- Status: **Nothing new** — 12 web search(es) found no qualifying articles. Banner date updated."])
+
+    def test_summary_all_filtered(self):
+        st = un.CurationStats(searches=9, listed=4, dropped=1)
+        (line,) = un.no_news_status(st, 2, 1)
+        self.assertIn("the model listed 4 article(s) from 9 web search(es), none new "
+                      "(2 already tracked, 1 repeated, 1 malformed)", line)
+
+    def test_summary_failed_search_is_not_nothing_new(self):
+        st = un.CurationStats(searches=3, error="the reply was not valid JSON")
+        (line,) = un.no_news_status(st, 0, 0)
+        self.assertTrue(line.startswith("- Status: **Search failed** — the reply was not valid JSON"), line)
+        self.assertNotIn("Nothing new", line)
+
+    def test_summary_flags_early_stop(self):
+        lines = un.no_news_status(un.CurationStats(searches=15, stop_reason="pause_turn"), 0, 0)
+        self.assertEqual(len(lines), 2)
+        self.assertIn("ended early (stop_reason=pause_turn)", lines[1])
+
+    def test_stats_filled_from_reply(self):
+        mk = CurationReplyLoggingTest()
+        good = dict(CurationReplyLoggingTest.ARTICLE)
+        bad = {**good, "url": "https://t.example/b", "date": "soon"}
+        st = un.CurationStats()
+        with self.assertLogs(un.log, "INFO"):
+            un.articles_from_response(mk.resp(json.dumps({"articles": [good, bad]}), searches=4), st)
+        self.assertEqual((st.searches, st.listed, st.dropped, st.error), (4, 2, 1, None))
+        st = un.CurationStats()
+        with self.assertLogs(un.log, "ERROR"):
+            un.articles_from_response(mk.resp("no json here"), st)
+        self.assertEqual(st.error, "the reply was not valid JSON")

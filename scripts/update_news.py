@@ -257,7 +257,18 @@ EXISTING_URLS (do not duplicate):
 """
 
 
-def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
+@dataclass
+class CurationStats:
+    """What one curation call did, for the run summary: lets a quiet news week
+    be told apart from a search that broke."""
+    searches: int = 0
+    listed: int = 0
+    dropped: int = 0
+    stop_reason: str | None = None
+    error: str | None = None
+
+
+def call_claude(since_date: str, urls: Iterable[str], stats: CurationStats | None = None) -> list[Article]:
     client = anthropic.Anthropic()
     now = datetime.now()
     prompt = CURATION_PROMPT.format(
@@ -313,12 +324,15 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         log.error("All candidate models failed; last error: %s", last_err)
         sys.exit(1)
 
-    return articles_from_response(resp)
+    return articles_from_response(resp, stats)
 
 
-def articles_from_response(resp) -> list[Article]:
+def articles_from_response(resp, stats: CurationStats | None = None) -> list[Article]:
     """Parse the curation reply into Articles, logging enough to tell an empty
-    search apart from a reply that was cut short, unparseable, or dropped."""
+    search apart from a reply that was cut short, unparseable, or dropped.
+    Fills ``stats`` (when given) with the same counts for the run summary."""
+    if stats is None:
+        stats = CurationStats()
     # Claude responses with tools include a mix of text and tool_use/tool_result
     # blocks. We want the final assistant text block.
     final_text = ""
@@ -336,6 +350,7 @@ def articles_from_response(resp) -> list[Article]:
                     search_titles[url_key(r.url)] = r.title
 
     stop_reason = getattr(resp, "stop_reason", None)
+    stats.searches, stats.stop_reason = searches, stop_reason
     log.info(
         "Curation reply: stop_reason=%s, %d web search(es), %d distinct result(s)",
         stop_reason, searches, len(search_titles),
@@ -348,6 +363,7 @@ def articles_from_response(resp) -> list[Article]:
 
     if not final_text:
         log.warning("No text block in Claude response")
+        stats.error = "the reply had no text"
         return []
 
     # Strip common junk
@@ -367,11 +383,13 @@ def articles_from_response(resp) -> list[Article]:
     except json.JSONDecodeError as e:
         log.error("Claude returned non-JSON output: %s", e)
         log.error("Raw output (first 1000 chars): %s", final_text[:1000])
+        stats.error = "the reply was not valid JSON"
         return []
 
     raw_articles = data.get("articles") if isinstance(data, dict) else None
     if not isinstance(raw_articles, list):
         log.error("Curation reply has no \"articles\" list; first 500 chars: %s", reply_text[:500])
+        stats.error = "the reply had no article list"
         return []
     log.info("Model listed %d article(s) before validation", len(raw_articles))
     if not raw_articles:
@@ -379,6 +397,7 @@ def articles_from_response(resp) -> list[Article]:
 
     parsed = [parse_article(a, search_titles) for a in raw_articles if a]
     kept = [a for a in parsed if a is not None]
+    stats.listed, stats.dropped = len(raw_articles), len(raw_articles) - len(kept)
     if len(kept) < len(raw_articles):
         log.warning(
             "Dropped %d of %d listed article(s) as malformed or empty",
@@ -738,6 +757,31 @@ def _tag_css_class(tag: str) -> str:
     return f"nd-tag-{tag}" if tag in TAG_LABELS else "nd-tag-order"
 
 
+DIGEST_HEADING_FRESH = "This Week in the Fight for Park History"
+DIGEST_HEADING_STALE = "Latest in the Fight for Park History"
+_DIGEST_HEADING_RE = re.compile(
+    r'(<div class="nd-header[^"]*">\s*<h2>[^<]*?)(?:This Week|Latest) in the Fight for Park History(</h2>)'
+)
+
+
+def digest_header(articles: list[dict], today_iso: str) -> tuple[str, str]:
+    """Heading and date line for the home pop-up. Once the newest article is a
+    week or more old, it says so instead of implying "this week" has news."""
+    first, newest = articles[-1], articles[0]
+    newest_iso = None
+    if newest["mon"] in _MONTHS and newest["day"].isdigit() and newest["year"].isdigit():
+        newest_iso = f'{newest["year"]}-{_MONTHS[newest["mon"]]:02d}-{int(newest["day"]):02d}'
+    today = datetime.strptime(today_iso, "%Y-%m-%d").date()
+    if newest_iso and _days_between(newest_iso, today_iso) >= WEEKLY_INTERVAL_DAYS:
+        since = f'{newest["mon"]} {newest["day"]}'
+        if newest["year"] != str(today.year):
+            since += f', {newest["year"]}'
+        checked = f'{today.strftime("%b")} {today.day}, {today.year}'
+        return DIGEST_HEADING_STALE, f"No new developments since {since} &middot; last checked {checked}"
+    date_range = f'{first["mon"]} {first["day"]} &ndash; {newest["mon"]} {newest["day"]}, {newest["year"]}'
+    return DIGEST_HEADING_FRESH, f"{date_range} &middot; {len(articles)} new developments"
+
+
 def update_news_digest(news_html: str, today_iso: str) -> None:
     """Regenerate the news digest pop-up inside index.html using the latest
     articles from the news page."""
@@ -773,13 +817,7 @@ def update_news_digest(news_html: str, today_iso: str) -> None:
         )
     articles_block = "\n".join(art_lines)
 
-    # Build date range string
-    if articles:
-        first = articles[-1]
-        last_art = articles[0]
-        date_range = f'{first["mon"]} {first["day"]} &ndash; {last_art["mon"]} {last_art["day"]}, {last_art["year"]}'
-    else:
-        date_range = today_iso
+    heading, date_line = digest_header(articles, today_iso)
 
     # Replace the articles section: from its opening div up to its closing
     # div, which is followed by the next pop-up block (the newsletter signup,
@@ -802,10 +840,11 @@ def update_news_digest(news_html: str, today_iso: str) -> None:
 
     new_idx = idx_html[:start_idx] + new_articles_section + idx_html[end_idx:]
 
-    # Update date range in header
+    # Update heading and date line in the header
+    new_idx = _DIGEST_HEADING_RE.sub(lambda m: m.group(1) + heading + m.group(2), new_idx, count=1)
     new_idx = re.sub(
         r'(<div class="nd-daterange">)[^<]+(</div>)',
-        rf'\g<1>{date_range} &middot; {len(articles)} new developments\2',
+        lambda m: m.group(1) + date_line + m.group(2),
         new_idx,
         count=1,
     )
@@ -1686,6 +1725,29 @@ def emit_github_summary(lines: list[str]) -> None:
         f.write("\n".join(lines) + "\n")
 
 
+def no_news_status(stats: CurationStats, already: int, repeated: int) -> list[str]:
+    """Run-summary lines for a run that added nothing, saying plainly whether
+    the search found nothing new or failed."""
+    if stats.error:
+        lines = [f"- Status: **Search failed** — {stats.error}; no articles could be read. See the log."]
+    elif stats.listed == 0:
+        lines = [
+            f"- Status: **Nothing new** — {stats.searches} web search(es) found no qualifying "
+            "articles. Banner date updated."
+        ]
+    else:
+        parts = [f"{n} {label}" for n, label in (
+            (already, "already tracked"), (repeated, "repeated"), (stats.dropped, "malformed")) if n]
+        lines = [
+            f"- Status: **Nothing new** — the model listed {stats.listed} article(s) from "
+            f"{stats.searches} web search(es), none new ({', '.join(parts) or 'all filtered'}). "
+            "Banner date updated."
+        ]
+    if stats.stop_reason in ("max_tokens", "pause_turn"):
+        lines.append(f"- ⚠️ The reply ended early (stop_reason={stats.stop_reason}); results may be incomplete.")
+    return lines
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="NPS news daily updater")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing")
@@ -1726,18 +1788,22 @@ def main() -> int:
     since = (datetime.now().date().toordinal() - 21)
     since_date = datetime.fromordinal(since).strftime("%Y-%m-%d")
     existing = existing_urls(html)
-    articles = call_claude(since_date, existing)
+    stats = CurationStats()
+    articles = call_claude(since_date, existing, stats)
     # Dedup any returned-but-already-present URLs, AND any duplicates within
     # the same response (e.g. canonical + mirror of one CNN article).
     seen: set[str] = set()
     deduped = []
+    already = repeated = 0
     for a in articles:
         c = canonical_url(a.url)
         if c in existing:
             log.info("Already tracked, skipping: %s", a.url)
+            already += 1
             continue
         if c in seen:
             log.info("Repeated in this reply, skipping: %s", a.url)
+            repeated += 1
             continue
         seen.add(c)
         deduped.append(a)
@@ -1760,7 +1826,7 @@ def main() -> int:
         emit_github_summary([
             "## NPS News Daily Update",
             f"- Date: **{today_iso}**",
-            "- Status: **No new articles**. Banner date updated.",
+            *no_news_status(stats, already, repeated),
             *([] if args.dry_run else weekly),
         ])
         return 0
