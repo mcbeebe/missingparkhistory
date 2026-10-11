@@ -21,7 +21,8 @@
      park_source_click      a news source or park-history source link (section, link_domain)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
    and the Take Action steps via taTrack(). park_photo_open (park, gallery,
-   photo_index, photos) is sent by photo-viewer.js when it opens a park-page gallery. */
+   photo_index, photos) is sent by photo-viewer.js when it opens a park-page gallery;
+   it also sends photo_zoom and photo_nav for both the map and park pages. */
 (function () {
   if (window.mphGaEvents) return;
   window.mphGaEvents = true;
