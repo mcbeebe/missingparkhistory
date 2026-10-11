@@ -17,11 +17,11 @@
      map_park_page_click    a link from the map to a parks/ page (park_slug)
    Park pages (parks/*.html) and any page with the share bar:
      share                  share bar button (method, content_type, item_id)
-     park_photo_open        an entry photo is opened
      park_map_click         View on map / Open Interactive Map (location)
      park_source_click      a news source or park-history source link (section, link_domain)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
-   and the Take Action steps via taTrack(). */
+   and the Take Action steps via taTrack(). park_photo_open (park, gallery,
+   photo_index, photos) is sent by park-photos.js when its viewer opens. */
 (function () {
   if (window.mphGaEvents) return;
   window.mphGaEvents = true;
@@ -178,8 +178,6 @@
       return send('share', { method: method, content_type: park ? 'park_page' : 'page', item_id: park || location.pathname });
     }
     if (!park) return;
-    var photo = t.closest('a[href*="/images/"]');
-    if (photo) return send('park_photo_open', { park: park, link_url: photo.href });
     var mapLink = t.closest('.view-map-link, .cta-btn');
     if (mapLink) return send('park_map_click', { park: park, location: mapLink.classList.contains('cta-btn') ? 'cta' : 'view-on-map' });
     var src = t.closest('.news-source-item, .park-history-section a[href^="http"]');

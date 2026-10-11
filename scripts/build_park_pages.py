@@ -78,6 +78,21 @@ def photo_src(eid: str, p: dict) -> str:
 
 # --------------------------------------------------------------------------- fragments
 
+def photo_links(gallery: str, photos: list[tuple[str, dict]], visible: int, cls: str, fallback: str) -> str:
+    """Thumbnails for the first `visible` photos plus hidden links for the rest, all in one
+    data-gallery so park-photos.js can page through them. Without JS each link opens the file."""
+    out = []
+    for n, (eid, p) in enumerate(photos):
+        src, alt = esc(photo_src(eid, p)), esc(p.get("name") or fallback)
+        attrs = f'href="{src}" target="_blank" rel="noopener" data-gallery="{esc(gallery)}" data-caption="{alt}"'
+        if n < visible:
+            klass = f' class="{cls}"' if cls else ""
+            out.append(f'<a{klass} {attrs}><img src="{src}" alt="{alt}" loading="lazy"></a>')
+        else:
+            out.append(f'<a {attrs} hidden></a>')
+    return "\n".join(out) + "\n"
+
+
 def status_label(rec: dict) -> str:
     return str(rec.get("status", "FLAGGED FOR REVIEW"))
 
@@ -136,10 +151,10 @@ def entry_card(code: str, eid: str, r: dict, manifest: dict) -> str:
              f'<div class="entry-meta">\n<span>{esc(media)}</span>\n<span>{len(photos)} {"photo" if len(photos) == 1 else "photos"}</span>\n</div>\n']
     if photos:
         parts.append('<div class="entry-photos">\n')
-        for p in photos[:2]:
-            parts.append(f'<div class="entry-photo"><img src="{esc(photo_src(eid, p))}" alt="{esc(p.get("name") or media)}" loading="lazy"></div>\n')
+        parts.append(photo_links(f"entry-{eid}", [(eid, p) for p in photos], 2, "entry-photo", media))
         if len(photos) > 2:
-            parts.append(f'<div class="entry-photo-more">+{len(photos) - 2} more</div>\n')
+            parts.append(f'<a class="entry-photo-more" href="{esc(photo_src(eid, photos[2]))}" target="_blank" rel="noopener" '
+                         f'data-gallery-open="entry-{esc(eid)}" data-index="2">+{len(photos) - 2} more</a>\n')
         parts.append('</div>\n')
     if r.get("flagNote"):
         parts.append(f'<div class="entry-flagged"><strong>Note</strong>{esc(r["flagNote"])}</div>\n')
@@ -199,9 +214,10 @@ def archive_photos(legacy_ids: list[str], manifest: dict) -> str:
     photos = photos_for(legacy_ids, manifest)
     if not photos:
         return ""
-    shown = photos[:18]
-    items = "".join(f'<a href="{esc(photo_src(i, p))}" target="_blank" rel="noopener"><img src="{esc(photo_src(i, p))}" alt="{esc(p.get("name") or "Archived photograph")}" loading="lazy"></a>' for i, p in shown)
-    more = f'<div class="more">+{len(photos) - len(shown)} more</div>' if len(photos) > len(shown) else ""
+    shown = 18
+    items = photo_links("archive", photos, shown, "", "Archived photograph")
+    more = (f'<a class="more" href="{esc(photo_src(*photos[shown]))}" target="_blank" rel="noopener" data-gallery-open="archive" '
+            f'data-index="{shown}">+{len(photos) - shown} more</a>') if len(photos) > shown else ""
     return (f'<div class="section-heading">Archive Photographs ({len(photos)})</div>\n'
             '<p style="font-size:13px;color:#888;font-family:-apple-system,sans-serif;margin-bottom:12px">Photographs attached to this park\'s records in the leaked NPS review database.</p>\n'
             f'<div class="archive-photos">{items}{more}</div>\n')
