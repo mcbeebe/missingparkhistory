@@ -506,22 +506,59 @@ const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matc
   requestAnimationFrame(tick);
 })();
 
+// -- Shared data: map entries (park name -> code) and the park-page registry (code -> slug) --
+const parkDataP = fetch('data/parkData.json').then(r => r.json());
+const parkPagesP = fetch('data/park_pages.json').then(r => r.json()).then(d => d.pages || {}).catch(() => ({}));
+
+// Quote park names that the map lists under a different name.
+const QUOTE_PARK_ALIASES = {
+  'brown v. board of education national historical park': 'BRVB',
+  'harriet tubman national historical park': 'WORI,HART',
+  'reconstruction era national historical park': 'REER',
+  'african burial ground national monument': 'CACL,GOIS,AFBG',
+};
+
+// Where a quote's park name should link: its park page if one exists, else the park on
+// the map, else nowhere (the name is shown as plain text).
+function parkLinker(parkData, pages) {
+  const codeByName = {};
+  for (const k in parkData) {
+    const p = parkData[k];
+    if (p && p.park && p.code) {
+      const key = normalizeParkName(p.park);
+      if (!(key in codeByName)) codeByName[key] = p.code;
+    }
+  }
+  return name => {
+    const code = QUOTE_PARK_ALIASES[name.toLowerCase()] || codeByName[normalizeParkName(name)];
+    if (!code) return null;
+    const withPage = code.split(',').find(c => pages[c] && pages[c].slug);
+    if (withPage) return { href: `/parks/${pages[withPage].slug}.html`, kind: 'park_page' };
+    return { href: `/?park=${encodeURIComponent(code)}`, kind: 'map' };
+  };
+}
+
 // -- #5 river: load curated quotes and inject two copies for seamless loop --
 function loadRiver() {
-  return fetch('data/voices_curated_quotes.json')
-    .then(r => r.json())
-    .then(quotes => {
+  return Promise.all([
+    fetch('data/voices_curated_quotes.json').then(r => r.json()),
+    parkDataP.catch(() => ({})),
+    parkPagesP,
+  ]).then(([quotes, parkData, pages]) => {
       const track = document.getElementById('riverTrack');
+      const linkFor = parkLinker(parkData, pages);
+      const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       const render = q => {
         const primaryTheme = (q.themes && q.themes[0]) || '';
         const themeClass = primaryTheme ? `theme-${primaryTheme}` : '';
-        const parkSlug = q.park.toLowerCase()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-|-$/g, '');
         const text = q.text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const link = linkFor(q.park);
+        const park = link
+          ? `<a href="${link.href}" data-dest="${link.kind}"${link.kind === 'map' ? ` title="See ${esc(q.park)} on the map"` : ''}>${esc(q.park)}</a>`
+          : esc(q.park);
         return `<blockquote class="${themeClass}">
           "${text}"
-          <cite>— <a href="/parks/${parkSlug}.html">${q.park}</a>, ${q.date}</cite>
+          <cite>— ${park}, ${q.date}</cite>
         </blockquote>`;
       };
       track.innerHTML = [...quotes, ...quotes].map(render).join('');
@@ -643,7 +680,7 @@ function initMap() {
 
   Promise.all([
     fetch('data/voices_park_counts.json').then(r => r.json()),
-    fetch('data/parkData.json').then(r => r.json()),
+    parkDataP,
   ]).then(([voices, parkData]) => {
     // Build normalized-name → coordinates lookup from parkData
     const pdByName = {};
