@@ -80,7 +80,7 @@ def photo_src(eid: str, p: dict) -> str:
 
 def photo_links(gallery: str, photos: list[tuple[str, dict]], visible: int, cls: str, fallback: str) -> str:
     """Thumbnails for the first `visible` photos plus hidden links for the rest, all in one
-    data-gallery so park-photos.js can page through them. Without JS each link opens the file."""
+    data-gallery so photo-viewer.js can page through them. Without JS each link opens the file."""
     out = []
     for n, (eid, p) in enumerate(photos):
         src, alt = esc(photo_src(eid, p)), esc(p.get("name") or fallback)
