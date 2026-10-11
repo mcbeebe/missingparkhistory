@@ -203,7 +203,8 @@ def sos_photos(entries: list[tuple[str, dict]]) -> str:
     if not pairs:
         return ""
     cards = "".join(
-        f'<div class="sos-pair"><img src="/{esc(path)}" alt="{esc(title)} &mdash; {label}" loading="lazy"><div class="sos-pair-title">{esc(title)}</div>'
+        f'<div class="sos-pair"><a href="/{esc(path)}" target="_blank" rel="noopener" data-gallery="sos" data-caption="{esc(title)} &mdash; {label}">'
+        f'<img src="/{esc(path)}" alt="{esc(title)} &mdash; {label}" loading="lazy"></a><div class="sos-pair-title">{esc(title)}</div>'
         f'<span class="sos-label sos-label-{label}" style="margin-bottom:10px">{label}</span></div>' for title, label, path in pairs)
     return ('<div class="section-heading">Signs Documented by Save Our Signs</div>\n'
             f'<div class="sos-pairs">{cards}</div>\n'
