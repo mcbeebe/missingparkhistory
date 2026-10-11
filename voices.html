@@ -674,7 +674,12 @@ function initMap() {
         iconAnchor: [30, 11],
       });
       const m = L.marker([pd.lat, pd.lon], { icon: badge }).addTo(map);
-      m.on('click', () => renderSidePanel(name, info));
+      m.on('click', () => {
+        renderSidePanel(name, info);
+        if (typeof gtag === 'function') {
+          gtag('event', 'voices_park_open', { park: name, comments: info.count, rank: info.rank, location: 'voices_page' });
+        }
+      });
       placed++;
     }
     console.log(`[voices map] placed ${placed} parks, ${unmatched} unmatched`);

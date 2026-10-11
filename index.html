@@ -741,6 +741,7 @@ function phSelectTopic(name){
   var DEFAULT_LABEL=toggle?toggle.innerHTML:'';
 
   function showPanel(name,info){
+    gaEv("voices_park_open",{park:name,comments:info.count,rank:info.rank,location:"map_layer"});
     var pills=(info.top_themes||[]).map(function(t){return '<span class="vp-pill">'+esc(THEME_LABELS[t]||t)+'</span>';}).join('');
     var quote=info.sample_quote
       ? '<div class="vp-quote">&ldquo;'+esc(info.sample_quote)+'&rdquo;<span class="qd">&mdash; '+esc(info.sample_quote_date||'')+'</span></div>'
@@ -799,6 +800,7 @@ function phSelectTopic(name){
     else { if(voicesLayer&&typeof map!=='undefined'&&map.hasLayer(voicesLayer)) map.removeLayer(voicesLayer); window.closeVoicesPanel(); }
   }
   function onToggle(){
+    gaEv("voices_layer_toggle",{state:(!voicesReady||!layerOn)?"on":"off"});
     if(!voicesReady){
       if(toggle) toggle.textContent='⏳ Loading…';
       ensureLayer().then(function(){ if(toggle) toggle.innerHTML=DEFAULT_LABEL; setToggle(true); })

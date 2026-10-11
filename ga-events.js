@@ -19,6 +19,12 @@
      share                  share bar button (method, content_type, item_id)
      park_map_click         View on map / Open Interactive Map (location)
      park_source_click      a news source or park-history source link (section, link_domain)
+   Voices:
+     voices_link_click      a link to /voices.html from another page (location)
+     voices_river_pause     Pause/Resume on the quote river (state: paused|resumed)
+     voices_quote_click     a park link inside a river quote (park_slug)
+     voices_cta_click       Methodology / Back to the map / About buttons (link_text)
+     (voices_park_open and voices_layer_toggle are sent from voices.html / index.html)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
    and the Take Action steps via taTrack(). park_photo_open (park, gallery,
    photo_index, photos) is sent by photo-viewer.js when it opens a park-page gallery;
@@ -114,6 +120,7 @@
     }
 
     if (isHome()) mapClick(e.target);
+    if (onPage('voices')) voicesClick(e.target);
     if (parkSlug() || e.target.closest('.share-bar')) parkClick(e.target);
 
     var sub = e.target.closest('.sub-btn, a[href*="subscribe=1"]');
@@ -128,6 +135,8 @@
       send('volunteer_signup_click', { location: label(a) || 'unlabeled', link_url: href });
     } else if (/^https?:\/\/shop\.missingparkhistory\.org/i.test(href)) {
       send('shop_click', { location: placement(a), link_url: href });
+    } else if (a.origin === location.origin && /\/voices(\.html)?$/.test(a.pathname) && !onPage('voices')) {
+      send('voices_link_click', { location: placement(a) });
     } else if (a.origin === location.origin && /\/help(\.html)?$/.test(a.pathname) && !isHelpPage()) {
       send('help_click', { location: placement(a), link_text: text(a) });
     }
@@ -166,6 +175,22 @@
       var slugM = pl.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
       if (slugM) send('map_park_page_click', { park_slug: slugM[1] });
     }
+  }
+
+  function voicesClick(t) {
+    var pause = t.closest('#riverPause');
+    if (pause) {
+      return afterFilter('body', function () {
+        send('voices_river_pause', { state: pause.getAttribute('aria-pressed') === 'true' ? 'paused' : 'resumed' });
+      });
+    }
+    var quote = t.closest('#riverTrack a[href*="/parks/"]');
+    if (quote) {
+      var m = quote.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
+      return send('voices_quote_click', { park_slug: m ? m[1] : '' });
+    }
+    var cta = t.closest('.cta-links a');
+    if (cta) send('voices_cta_click', { link_text: text(cta) });
   }
 
   var SHARE_METHODS = { tw: 'twitter', bs: 'bluesky', fb: 'facebook', rd: 'reddit', cl: 'copy_link' };
