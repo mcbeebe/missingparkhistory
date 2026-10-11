@@ -6,7 +6,10 @@
      volunteer_signup_click link to the volunteer-monitor Google Form
      subscribe_click        a Subscribe button or ?subscribe=1 link (opens the signup box)
      help_click             any link to the Help page (location: nav, footer, or the button)
-     help_action            a call-to-action button on the Help page itself */
+     help_action            a call-to-action button on the Help page itself
+     shop_click             any link to shop.missingparkhistory.org
+   Take Action panel steps (take_action_open, _zip_lookup, _contact_click, ...)
+   are sent by taTrack() in index.html, not here. */
 (function () {
   if (window.mphGaEvents) return;
   window.mphGaEvents = true;
@@ -39,6 +42,7 @@
     if (label(el)) return label(el);
     if (el.closest('nav, .topnav, .topnav-links')) return 'nav';
     if (el.closest('footer, .page-footer, .footer')) return 'footer';
+    if (el.closest('#taOverlay')) return 'take-action-panel';
     return slug(text(el)) || 'unlabeled';
   }
 
@@ -72,6 +76,8 @@
       send('kofi_click', { location: label(a) || 'unlabeled', link_url: href });
     } else if (/docs\.google\.com\/forms\//i.test(href)) {
       send('volunteer_signup_click', { location: label(a) || 'unlabeled', link_url: href });
+    } else if (/^https?:\/\/shop\.missingparkhistory\.org/i.test(href)) {
+      send('shop_click', { location: placement(a), link_url: href });
     } else if (a.origin === location.origin && /\/help(\.html)?$/.test(a.pathname) && !isHelpPage()) {
       send('help_click', { location: placement(a), link_text: text(a) });
     }
