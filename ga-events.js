@@ -22,7 +22,7 @@
    Voices:
      voices_link_click      a link to /voices.html from another page (location)
      voices_river_pause     Pause/Resume on the quote river (state: paused|resumed)
-     voices_quote_click     a park link inside a river quote (park_slug)
+     voices_quote_click     a park link inside a river quote (park, park_slug, destination park_page|map)
      voices_cta_click       Methodology / Back to the map / About buttons (link_text)
      (voices_park_open and voices_layer_toggle are sent from voices.html / index.html)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
@@ -184,10 +184,12 @@
         send('voices_river_pause', { state: pause.getAttribute('aria-pressed') === 'true' ? 'paused' : 'resumed' });
       });
     }
-    var quote = t.closest('#riverTrack a[href*="/parks/"]');
+    var quote = t.closest('#riverTrack cite a');
     if (quote) {
       var m = quote.pathname.match(/\/parks\/([^\/]+?)(\.html)?$/);
-      return send('voices_quote_click', { park_slug: m ? m[1] : '' });
+      return send('voices_quote_click', {
+        park: text(quote), park_slug: m ? m[1] : '', destination: quote.getAttribute('data-dest') || 'park_page'
+      });
     }
     var cta = t.closest('.cta-links a');
     if (cta) send('voices_cta_click', { link_text: text(cta) });
