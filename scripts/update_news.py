@@ -313,26 +313,46 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         log.error("All candidate models failed; last error: %s", last_err)
         sys.exit(1)
 
+    return articles_from_response(resp)
+
+
+def articles_from_response(resp) -> list[Article]:
+    """Parse the curation reply into Articles, logging enough to tell an empty
+    search apart from a reply that was cut short, unparseable, or dropped."""
     # Claude responses with tools include a mix of text and tool_use/tool_result
     # blocks. We want the final assistant text block.
     final_text = ""
     search_titles: dict[str, str] = {}
+    searches = 0
     for block in resp.content:
         btype = getattr(block, "type", None)
         if btype == "text":
             final_text = block.text  # keep last text block
+        elif btype == "server_tool_use":
+            searches += 1
         elif btype == "web_search_tool_result" and isinstance(block.content, list):
             for r in block.content:
                 if getattr(r, "url", None) and getattr(r, "title", None):
                     search_titles[url_key(r.url)] = r.title
+
+    stop_reason = getattr(resp, "stop_reason", None)
+    log.info(
+        "Curation reply: stop_reason=%s, %d web search(es), %d distinct result(s)",
+        stop_reason, searches, len(search_titles),
+    )
+    if stop_reason in ("max_tokens", "pause_turn"):
+        log.warning(
+            "Curation reply ended early (stop_reason=%s); its article list may be missing or cut off",
+            stop_reason,
+        )
 
     if not final_text:
         log.warning("No text block in Claude response")
         return []
 
     # Strip common junk
-    final_text = final_text.strip()
-    final_text = re.sub(r"^```(?:json)?\s*", "", final_text)
+    reply_text = final_text.strip()
+    final_text = re.sub(r"^```(?:json)?\s*", "", reply_text)
     final_text = re.sub(r"\s*```$", "", final_text)
 
     # Claude sometimes prefaces the JSON with prose ("Based on my searches...").
@@ -349,8 +369,22 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         log.error("Raw output (first 1000 chars): %s", final_text[:1000])
         return []
 
-    parsed = [parse_article(a, search_titles) for a in data.get("articles", []) if a]
-    return [a for a in parsed if a is not None]
+    raw_articles = data.get("articles") if isinstance(data, dict) else None
+    if not isinstance(raw_articles, list):
+        log.error("Curation reply has no \"articles\" list; first 500 chars: %s", reply_text[:500])
+        return []
+    log.info("Model listed %d article(s) before validation", len(raw_articles))
+    if not raw_articles:
+        log.info("Model's reply when it listed none (first 500 chars): %s", reply_text[:500])
+
+    parsed = [parse_article(a, search_titles) for a in raw_articles if a]
+    kept = [a for a in parsed if a is not None]
+    if len(kept) < len(raw_articles):
+        log.warning(
+            "Dropped %d of %d listed article(s) as malformed or empty",
+            len(raw_articles) - len(kept), len(raw_articles),
+        )
+    return kept
 
 
 def is_iso_date(value: str) -> bool:
@@ -977,13 +1011,17 @@ def _parse_json_object(text: str) -> dict | None:
     text = re.sub(r"\s*```$", "", text)
     fb, lb = text.find("{"), text.rfind("}")
     if fb == -1 or lb <= fb:
+        log.error("Model reply has no JSON object; first 500 chars: %s", text[:500])
         return None
     try:
         data = json.loads(text[fb : lb + 1])
     except json.JSONDecodeError as e:
         log.error("Model returned non-JSON: %s; first 500 chars: %s", e, text[:500])
         return None
-    return data if isinstance(data, dict) else None
+    if not isinstance(data, dict):
+        log.error("Model reply is JSON but not an object; first 500 chars: %s", text[:500])
+        return None
+    return data
 
 
 def _gather_weekly_articles(news_html: str, last_iso: str | None, today_iso: str) -> tuple[str, list[dict]]:
@@ -1695,7 +1733,11 @@ def main() -> int:
     deduped = []
     for a in articles:
         c = canonical_url(a.url)
-        if c in existing or c in seen:
+        if c in existing:
+            log.info("Already tracked, skipping: %s", a.url)
+            continue
+        if c in seen:
+            log.info("Repeated in this reply, skipping: %s", a.url)
             continue
         seen.add(c)
         deduped.append(a)

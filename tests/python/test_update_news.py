@@ -794,3 +794,103 @@ class StatusBoardTest(unittest.TestCase):
         self.assertRegex(real, un._STATUS_SYNTH_RE)
         self.assertRegex(real, un._STATUS_TIME_RE)
         self.assertIsNotNone(un.read_stamp(real, un.STATUS_STAMP))
+
+
+class CurationReplyLoggingTest(unittest.TestCase):
+    """The daily run must say why it found nothing: an empty search, a reply cut
+    short, unparseable JSON, or articles dropped as malformed (Oct 2026: runs
+    logged only "0 qualifying new article(s)")."""
+
+    ARTICLE = {"date": "2026-10-09", "source_name": "Src", "source_key": "npr", "tag": "court",
+               "tag_label": "Court Ruling", "url": "https://t.example/a", "headline": "H",
+               "summary_html": "Summary."}
+
+    def resp(self, text, stop_reason="end_turn", searches=2):
+        from types import SimpleNamespace as NS
+        content = [NS(type="server_tool_use") for _ in range(searches)]
+        content.append(NS(type="web_search_tool_result",
+                          content=[NS(url="https://t.example/a", title="Found Title")]))
+        content.append(NS(type="text", text=text))
+        return NS(content=content, stop_reason=stop_reason)
+
+    def test_logs_stop_reason_search_count_and_listed_count(self):
+        with self.assertLogs(un.log, "INFO") as cm:
+            arts = un.articles_from_response(self.resp(json.dumps({"articles": [self.ARTICLE]})))
+        self.assertEqual([a.url for a in arts], ["https://t.example/a"])
+        out = "\n".join(cm.output)
+        self.assertIn("stop_reason=end_turn, 2 web search(es), 1 distinct result(s)", out)
+        self.assertIn("Model listed 1 article(s)", out)
+        self.assertNotIn("WARNING", out)
+
+    def test_empty_list_logs_the_models_reply(self):
+        reply = 'I found nothing new since Oct 1.\n{"articles": []}'
+        with self.assertLogs(un.log, "INFO") as cm:
+            self.assertEqual(un.articles_from_response(self.resp(reply)), [])
+        out = "\n".join(cm.output)
+        self.assertIn("Model listed 0 article(s)", out)
+        self.assertIn("I found nothing new since Oct 1.", out)
+
+    def test_early_stop_is_a_warning(self):
+        for reason in ("max_tokens", "pause_turn"):
+            with self.subTest(reason=reason), self.assertLogs(un.log, "WARNING") as cm:
+                un.articles_from_response(self.resp('{"articles": []}', stop_reason=reason))
+            self.assertIn(f"ended early (stop_reason={reason})", "\n".join(cm.output))
+
+    def test_dropped_articles_are_counted(self):
+        bad = {**self.ARTICLE, "url": "https://t.example/b", "date": "October 2026"}
+        with self.assertLogs(un.log, "WARNING") as cm:
+            arts = un.articles_from_response(self.resp(json.dumps({"articles": [self.ARTICLE, bad]})))
+        self.assertEqual(len(arts), 1)
+        self.assertIn("Dropped 1 of 2 listed article(s)", "\n".join(cm.output))
+
+    def test_missing_headline_still_recovered_from_search_results(self):
+        raw = {**self.ARTICLE, "headline": ""}
+        with mock.patch.object(un, "fetch_page_title") as fetch:
+            arts = un.articles_from_response(self.resp(json.dumps({"articles": [raw]})))
+        fetch.assert_not_called()
+        self.assertEqual(arts[0].headline, "Found Title")
+
+    def test_reply_without_articles_list_is_an_error(self):
+        for reply in ('{"items": []}', '{"articles": "none"}', "[]"):
+            with self.subTest(reply=reply), self.assertLogs(un.log, "ERROR"):
+                self.assertEqual(un.articles_from_response(self.resp(reply)), [])
+
+    def test_non_json_reply_is_an_error(self):
+        with self.assertLogs(un.log, "ERROR"):
+            self.assertEqual(un.articles_from_response(self.resp("Sorry, no results.")), [])
+
+
+class ParseJsonObjectLoggingTest(unittest.TestCase):
+    """Every way _parse_json_object returns None must be logged: the weekly
+    synthesis failed silently on 2026-10-11 when one path was not."""
+
+    def test_prose_only_reply_is_logged(self):
+        with self.assertLogs(un.log, "ERROR") as cm:
+            self.assertIsNone(un._parse_json_object("No major developments this week."))
+        self.assertIn("No major developments this week.", "\n".join(cm.output))
+
+    def test_bad_json_and_non_object_are_logged(self):
+        for text in ('{"paragraph": }', "[1, 2]"):
+            with self.subTest(text=text), self.assertLogs(un.log, "ERROR"):
+                self.assertIsNone(un._parse_json_object(text))
+
+    def test_fenced_object_parses(self):
+        self.assertEqual(un._parse_json_object('```json\n{"a": 1}\n```'), {"a": 1})
+
+    def test_synthesis_skip_on_prose_reply_is_logged(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        index = Path(tmp.name) / "index.html"
+        index.write_text(
+            '<div class="nd-badge-row">\n<span class="nd-badge">x</span>\n      </div>\n    </div>\n'
+            '<div class="nd-synthesis"><p>old</p></div>\n    <div class="nd-articles">\n',
+            encoding="utf-8",
+        )
+        arts = [{"date": "2026-10-0%d" % i, "source": "S", "tag": "t", "headline": "H",
+                 "summary": "s", "url": "https://t.example/%d" % i} for i in (1, 2)]
+        with mock.patch.object(un, "INDEX_FILE", index), \
+                mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-01", arts)), \
+                mock.patch.object(un, "_complete", return_value="Nothing new to add."), \
+                self.assertLogs(un.log, "ERROR"):
+            self.assertFalse(un.update_synthesis("", "2026-10-11"))
+        self.assertIn("<p>old</p>", index.read_text(encoding="utf-8"))
