@@ -20,6 +20,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 import os
@@ -30,6 +31,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
+from urllib.request import Request, urlopen
 
 import anthropic
 
@@ -240,7 +242,7 @@ first character of your output must be `{{` and the last must be `}}`.
       "tag": "one of: order|removal|resistance|lawsuit|leak|court",
       "tag_label": "Short display label (e.g. 'Court Victory', 'Removal', 'State Coalition')",
       "url": "https://...",
-      "headline": "Article headline",
+      "headline": "Article headline (REQUIRED — never omit this field)",
       "summary_html": "2-4 sentence paraphrased summary. Wrap key terms in <strong>...</strong>. NEVER quote the source article directly — paraphrase. Include specific names, dates, and numbers."
     }}
   ]
@@ -314,9 +316,15 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
     # Claude responses with tools include a mix of text and tool_use/tool_result
     # blocks. We want the final assistant text block.
     final_text = ""
+    search_titles: dict[str, str] = {}
     for block in resp.content:
-        if getattr(block, "type", None) == "text":
+        btype = getattr(block, "type", None)
+        if btype == "text":
             final_text = block.text  # keep last text block
+        elif btype == "web_search_tool_result" and isinstance(block.content, list):
+            for r in block.content:
+                if getattr(r, "url", None) and getattr(r, "title", None):
+                    search_titles[url_key(r.url)] = r.title
 
     if not final_text:
         log.warning("No text block in Claude response")
@@ -341,7 +349,7 @@ def call_claude(since_date: str, urls: Iterable[str]) -> list[Article]:
         log.error("Raw output (first 1000 chars): %s", final_text[:1000])
         return []
 
-    parsed = [parse_article(a) for a in data.get("articles", []) if a]
+    parsed = [parse_article(a, search_titles) for a in data.get("articles", []) if a]
     return [a for a in parsed if a is not None]
 
 
@@ -356,7 +364,43 @@ def is_iso_date(value: str) -> bool:
     return True
 
 
-def parse_article(raw: dict) -> Article | None:
+def url_key(url: str) -> str:
+    """Loose URL match: ignore scheme, www., query string and trailing slash."""
+    u = re.sub(r"^https?://(www\.)?", "", url.strip().lower())
+    return u.split("?")[0].split("#")[0].rstrip("/")
+
+
+def fetch_page_title(url: str) -> str:
+    """Best-effort headline from the article page (og:title, else <title>).
+    Returns "" when the page can't be fetched, which also screens out URLs
+    the model made up."""
+    try:
+        req = Request(url, headers={"User-Agent": "Mozilla/5.0 (NPS News Bot)"})
+        with urlopen(req, timeout=15) as resp:
+            page = resp.read(300_000).decode("utf-8", errors="replace")
+    except Exception as e:
+        log.warning("Could not fetch %s for its headline: %s", url, e)
+        return ""
+    m = (re.search(r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)', page, re.I)
+         or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:title', page, re.I)
+         or re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S))
+    if not m:
+        return ""
+    title = re.sub(r"\s+", " ", html.unescape(m.group(1))).strip()
+    # Drop a trailing " | Site Name" suffix from <title> tags.
+    return re.split(r"\s+[|\u2013\u2014]\s+", title)[0].strip()
+
+
+def parse_article(raw: dict, search_titles: dict[str, str] | None = None) -> Article | None:
+    # The model sometimes leaves out the headline even though it found a real
+    # article; recover it from the web search results (or, failing that, the
+    # page itself) rather than dropping the story.
+    url = str(raw.get("url") or "").strip()
+    if not str(raw.get("headline") or "").strip() and url:
+        title = (search_titles or {}).get(url_key(url)) or fetch_page_title(url)
+        if title:
+            log.info("Recovered missing headline: %s", title)
+            raw = {**raw, "headline": html.escape(title, quote=False)}
     # A single malformed article from the model must not abort the whole run.
     # Skip (with a warning) any entry missing a required field.
     required = ("date", "source_name", "url", "headline", "summary_html")
