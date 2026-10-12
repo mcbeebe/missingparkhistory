@@ -914,6 +914,9 @@ Return ONLY this JSON. The very first character of your response MUST be
 SYNTHESIS_MIN_WORDS = 80
 SYNTHESIS_MAX_WORDS = 100
 SYNTHESIS_HARD_MAX_WORDS = 130
+# Reply token limit, raised from 2000 after a reply came back cut off
+# mid-paragraph on 2026-10-11.
+SYNTHESIS_MAX_TOKENS = 4000
 
 _SYN_TAG_RE = re.compile(r"<(/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>")
 
@@ -1038,6 +1041,11 @@ def _complete(prompt: str, max_tokens: int) -> str | None:
         except anthropic.AnthropicError as e:
             log.error("API call failed: %s", e)
             return None
+        stop_reason = getattr(resp, "stop_reason", None)
+        out_tokens = getattr(getattr(resp, "usage", None), "output_tokens", None)
+        log.info("Reply: stop_reason=%s, %s output token(s) of %d allowed", stop_reason, out_tokens, max_tokens)
+        if stop_reason == "max_tokens":
+            log.warning("Reply hit the %d-token limit and was cut off", max_tokens)
         text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", None) == "text")
         return text or None
     log.error("All candidate models failed; last error: %s", last_err)
@@ -1049,13 +1057,19 @@ def _parse_json_object(text: str) -> dict | None:
     text = re.sub(r"^```(?:json)?\s*", "", text.strip())
     text = re.sub(r"\s*```$", "", text)
     fb, lb = text.find("{"), text.rfind("}")
-    if fb == -1 or lb <= fb:
+    if fb == -1:
         log.error("Model reply has no JSON object; first 500 chars: %s", text[:500])
+        return None
+    if lb <= fb:
+        log.error("Model reply was cut off before its JSON closed; first 500 chars: %s", text[:500])
         return None
     try:
         data = json.loads(text[fb : lb + 1])
     except json.JSONDecodeError as e:
-        log.error("Model returned non-JSON: %s; first 500 chars: %s", e, text[:500])
+        if not text.endswith("}"):
+            log.error("Model reply was cut off before its JSON closed (%s); first 500 chars: %s", e, text[:500])
+        else:
+            log.error("Model returned non-JSON: %s; first 500 chars: %s", e, text[:500])
         return None
     if not isinstance(data, dict):
         log.error("Model reply is JSON but not an object; first 500 chars: %s", text[:500])
@@ -1132,7 +1146,7 @@ def update_synthesis(news_html: str, today_iso: str) -> bool:
         max_words=SYNTHESIS_MAX_WORDS,
     )
 
-    text = _complete(prompt, max_tokens=2000)
+    text = _complete(prompt, max_tokens=SYNTHESIS_MAX_TOKENS)
     if not text:
         log.warning("No text in synthesis response")
         return False
