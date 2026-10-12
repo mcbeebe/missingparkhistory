@@ -1,10 +1,12 @@
 <!--
-  Weekly Watch email template (sent by the "Weekly nps news digest" Routine via the Gmail connector).
+  Weekly Watch email template. scripts/send_newsletter.py fills it every Monday and sends it to
+  subscribers through Buttondown (.github/workflows/weekly-newsletter.yml). The script strips this
+  comment and the EDITOR NOTES row, and swaps the LOGO block for the hosted email-logo.png.
 
-  How to use: copy everything from the first <table> down, replace each {{PLACEHOLDER}}, and send it
+  Manual use: copy everything from the first <table> down, replace each {{PLACEHOLDER}}, and send it
   as the HTML body. Do not change the styles.
 
-  Gmail-connector rules (verified by test drafts on 2026-10-05):
+  Historical note, from the earlier Gmail-connector send (verified by test drafts on 2026-10-05):
     - KEEPS: bgcolor="..." attributes, background-color:..., borders, border-radius, colors, fonts.
     - STRIPS: the `background:` shorthand, gradients, and every <img> (linked or inline CID).
     So: colors only via bgcolor + background-color; the logo is drawn with table cells, not an image.
