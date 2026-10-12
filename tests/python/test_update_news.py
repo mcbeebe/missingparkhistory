@@ -987,3 +987,76 @@ class QuietWeekTest(unittest.TestCase):
         with self.assertLogs(un.log, "ERROR"):
             un.articles_from_response(mk.resp("no json here"), st)
         self.assertEqual(st.error, "the reply was not valid JSON")
+
+
+class TruncatedReplyTest(unittest.TestCase):
+    """The weekly synthesis was cut off at its token limit on 2026-10-11 and the
+    log blamed "no JSON object". Cut-off replies must be called that, and
+    _complete must log why each reply ended."""
+
+    # The real reply's opening, as logged by run #195.
+    CUT = ('{\n  "paragraph": "Interior&rsquo;s plan to abolish the Park Service&rsquo;s '
+           '<strong>seven regional directors</strong> and roughly 1,100 regional positions')
+
+    def complete(self, stop_reason, text="{}", output_tokens=42, max_tokens=4000):
+        from types import SimpleNamespace as NS
+        resp = NS(stop_reason=stop_reason, usage=NS(output_tokens=output_tokens),
+                  content=[NS(type="text", text=text)])
+        client = mock.MagicMock()
+        client.messages.create.return_value = resp
+        with mock.patch.object(un.anthropic, "Anthropic", return_value=client):
+            return un._complete("prompt", max_tokens=max_tokens), client
+
+    def test_reply_with_no_closing_brace_is_called_cut_off(self):
+        with self.assertLogs(un.log, "ERROR") as cm:
+            self.assertIsNone(un._parse_json_object(self.CUT))
+        self.assertIn("cut off before its JSON closed", "\n".join(cm.output))
+        self.assertNotIn("no JSON object", "\n".join(cm.output))
+
+    def test_reply_cut_off_inside_the_badges_is_called_cut_off(self):
+        text = '{"paragraph": "Text.", "badges": [{"emoji": "x", "label": "A"}, {"emoji": "y", "lab'
+        with self.assertLogs(un.log, "ERROR") as cm:
+            self.assertIsNone(un._parse_json_object(text))
+        self.assertIn("cut off before its JSON closed", "\n".join(cm.output))
+
+    def test_prose_and_malformed_json_keep_their_own_messages(self):
+        with self.assertLogs(un.log, "ERROR") as cm:
+            un._parse_json_object("No major developments this week.")
+        self.assertIn("no JSON object", "\n".join(cm.output))
+        with self.assertLogs(un.log, "ERROR") as cm:
+            un._parse_json_object('{"paragraph": }')
+        self.assertIn("returned non-JSON", "\n".join(cm.output))
+
+    def test_complete_logs_stop_reason_and_tokens(self):
+        with self.assertLogs(un.log, "INFO") as cm:
+            text, _ = self.complete("end_turn", text='{"a": 1}', output_tokens=310)
+        self.assertEqual(text, '{"a": 1}')
+        out = "\n".join(cm.output)
+        self.assertIn("stop_reason=end_turn, 310 output token(s) of 4000 allowed", out)
+        self.assertNotIn("WARNING", out)
+
+    def test_complete_warns_when_cut_off(self):
+        with self.assertLogs(un.log, "WARNING") as cm:
+            text, _ = self.complete("max_tokens", text=self.CUT, output_tokens=2000, max_tokens=2000)
+        self.assertEqual(text, self.CUT)
+        self.assertIn("hit the 2000-token limit and was cut off", "\n".join(cm.output))
+
+    def test_synthesis_asks_for_the_higher_limit(self):
+        self.assertGreaterEqual(un.SYNTHESIS_MAX_TOKENS, 4000)
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        index = Path(tmp.name) / "index.html"
+        index.write_text(
+            '<div class="nd-badge-row">\n<span class="nd-badge">x</span>\n      </div>\n    </div>\n'
+            '<div class="nd-synthesis"><p>old</p></div>\n    <div class="nd-articles">\n',
+            encoding="utf-8",
+        )
+        arts = [{"date": "2026-10-0%d" % i, "source": "S", "tag": "t", "headline": "H",
+                 "summary": "s", "url": "https://t.example/%d" % i} for i in (1, 2)]
+        with mock.patch.object(un, "INDEX_FILE", index), \
+                mock.patch.object(un, "_gather_weekly_articles", return_value=("2026-10-01", arts)), \
+                mock.patch.object(un, "_complete", return_value=self.CUT) as c, \
+                self.assertLogs(un.log, "ERROR"):
+            self.assertFalse(un.update_synthesis("", "2026-10-11"))
+        self.assertEqual(c.call_args.kwargs["max_tokens"], un.SYNTHESIS_MAX_TOKENS)
+        self.assertIn("<p>old</p>", index.read_text(encoding="utf-8"))
