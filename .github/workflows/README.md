@@ -81,8 +81,15 @@ you want a hard cap.
 
 ## Troubleshooting
 
-- **Workflow didn't fire at 8 AM sharp** — GitHub cron can delay up to ~15
-  minutes under load. This is normal.
+- **Workflow didn't fire on time** — GitHub treats schedules as best-effort.
+  The old on-the-hour cron (`0 15`) started 2.5–7 hours late every day in
+  Sep–Oct 2026, so the cron now sits at `23 14` (7:23 AM PDT). Late starts are
+  still possible; nothing downstream depends on the exact time.
+- **Weekly Watch didn't send** — check the "Weekly Watch Newsletter" run log.
+  It needs `BUTTONDOWN_API_KEY` and `ANTHROPIC_API_KEY` repository secrets
+  (every automatic run warns if the Buttondown key is missing). It runs Monday
+  6:47 AM and 11:47 AM PDT, Tuesday 6:47 AM as a catch-up, and after each news
+  bot run; each issue covers the previous Monday–Sunday and is never sent twice.
 - **`ANTHROPIC_API_KEY` not set** — double-check the secret name (exact match,
   no typos, no trailing whitespace).
 - **Push fails with 403** — check repo *Settings → Actions → General* has

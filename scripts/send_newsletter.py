@@ -19,7 +19,10 @@ Environment:
 
 Usage:
   python scripts/send_newsletter.py --mode preview
-  python scripts/send_newsletter.py --mode send --only-on-monday
+  python scripts/send_newsletter.py --mode send --scheduled
+
+Each issue covers the previous full Monday–Sunday week, so every card lands in
+exactly one issue however late GitHub starts the run.
 """
 
 from __future__ import annotations
@@ -292,24 +295,40 @@ def already_sent(subject: str, key: str) -> bool:
 
 # ---------------------------------------------------------------------------
 
+# Scheduled runs send on Monday; Tuesday is a catch-up if Monday's runs all failed.
+# The "already sent" check (same subject) keeps any retry from sending twice.
+SEND_WEEKDAYS = (0, 1)
+
+
+def last_full_week(today: date) -> tuple[date, date]:
+    """The most recent complete Monday–Sunday week before `today`."""
+    end = today - timedelta(days=today.weekday() + 1)
+    return end - timedelta(days=6), end
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--mode", choices=["preview", "draft", "send"], default="preview")
-    ap.add_argument("--only-on-monday", action="store_true",
-                    help="Exit quietly unless today is Monday in Pacific time (for the post-bot trigger).")
+    ap.add_argument("--scheduled", action="store_true",
+                    help="Automatic run: exit quietly unless it's Monday (or Tuesday catch-up) in Pacific time.")
     args = ap.parse_args()
 
+    key = os.environ.get("BUTTONDOWN_API_KEY", "")
+    if args.scheduled and not key:
+        # Shows on every automatic run, so a missing secret is visible before Monday.
+        print("::warning::BUTTONDOWN_API_KEY is not set; the Weekly Watch cannot send. "
+              "Add it under Settings > Secrets and variables > Actions.")
+
     today = datetime.now(PT).date()
-    if args.only_on_monday and today.weekday() != 0:
-        log.info("Not Monday in Pacific time (%s); nothing to send.", today)
+    if args.scheduled and today.weekday() not in SEND_WEEKDAYS:
+        log.info("Not a send day in Pacific time (%s); nothing to send.", today)
         return 0
 
-    start = today - timedelta(days=6)
-    window = f"{start:%b %-d} – {today:%b %-d, %Y}"
+    start, end = last_full_week(today)
+    window = f"{start:%b %-d} – {end:%b %-d, %Y}"
     window_html = window.replace("–", "&ndash;")
     subject = f"MPH Weekly Watch — {window}"
 
-    key = os.environ.get("BUTTONDOWN_API_KEY", "")
     if args.mode != "preview":
         if not key:
             log.error("BUTTONDOWN_API_KEY is not set; add it as a repository secret.")
@@ -321,7 +340,7 @@ def main() -> int:
             log.info("'%s' was already sent or queued in Buttondown; skipping.", subject)
             return 0
 
-    cards = cards_this_week(NEWS_FILE.read_text(encoding="utf-8"), start, today)
+    cards = cards_this_week(NEWS_FILE.read_text(encoding="utf-8"), start, end)
     log.info("Window %s: %d article(s)", window, len(cards))
     for c in cards:
         log.info("  %s  %s — %s", c.date, c.source, c.headline)

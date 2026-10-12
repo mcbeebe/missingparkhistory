@@ -2,9 +2,10 @@ name: Daily NPS News Update
 
 on:
   schedule:
-    # 8:00 AM Pacific. GitHub cron is UTC — this is 15:00 UTC (PDT) and will
-    # effectively run at 7 AM Pacific during Standard Time; acceptable drift.
-    - cron: "0 15 * * *"
+    # 7:23 AM Pacific (PDT; 6:23 AM in Standard Time). GitHub cron is UTC. Kept
+    # off the top of the hour: on-the-hour schedules started 2.5-7 hours late
+    # in Sep-Oct 2026. GitHub still treats schedules as best-effort.
+    - cron: "23 14 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

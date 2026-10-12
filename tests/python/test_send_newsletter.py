@@ -65,6 +65,29 @@ class CardsThisWeekTest(unittest.TestCase):
             self.assertGreaterEqual(c.date, date(2026, 9, 22), c.headline)
 
 
+class LastFullWeekTest(unittest.TestCase):
+    def test_every_weekday_maps_to_previous_monday_sunday(self):
+        # Mon Oct 12 .. Sun Oct 18, 2026 all map to Mon Oct 5 - Sun Oct 11.
+        for day in range(12, 19):
+            self.assertEqual(sn.last_full_week(date(2026, 10, day)), (date(2026, 10, 5), date(2026, 10, 11)), day)
+        self.assertEqual(sn.last_full_week(date(2026, 10, 19)), (date(2026, 10, 12), date(2026, 10, 18)))
+
+    def test_window_is_monday_to_sunday(self):
+        start, end = sn.last_full_week(date(2026, 12, 29))
+        self.assertEqual((start.weekday(), end.weekday(), (end - start).days), (0, 6, 6))
+
+    def test_across_year_end(self):
+        self.assertEqual(sn.last_full_week(date(2027, 1, 4)), (date(2026, 12, 28), date(2027, 1, 3)))
+
+    def test_consecutive_weeks_do_not_overlap_or_gap(self):
+        a = sn.last_full_week(date(2026, 10, 12))
+        b = sn.last_full_week(date(2026, 10, 19))
+        self.assertEqual((b[0] - a[1]).days, 1)
+
+    def test_send_days_are_monday_and_tuesday(self):
+        self.assertEqual(sn.SEND_WEEKDAYS, (0, 1))
+
+
 class CapArticlesTest(unittest.TestCase):
     def test_cap(self):
         cards = list(range(20))
