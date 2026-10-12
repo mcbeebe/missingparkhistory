@@ -48,6 +48,12 @@ PREVIEW_FILE = REPO_ROOT / "newsletter-preview.html"
 PT = ZoneInfo("America/Los_Angeles")
 BUTTONDOWN_API = "https://api.buttondown.com/v1/emails"
 LOGO_URL = "https://missingparkhistory.org/email-logo.png"
+# A card counts as this week's news only if it was also published recently: bulk
+# imports stamp old cards with today's data-added, and those must not flood an issue.
+MAX_PUB_AGE_DAYS = 14
+# Keeps the email under Gmail's ~102 KB clipping limit (each item is ~1 KB of HTML).
+MAX_ARTICLES = 15
+NEWS_URL = "https://missingparkhistory.org/news-and-press.html"
 MONTHS = {m: i + 1 for i, m in enumerate(
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
 
@@ -75,8 +81,10 @@ def _text(fragment: str) -> str:
 
 
 def cards_this_week(news_html: str, start: date, end: date) -> list[Card]:
-    """Cards added in [start, end]. Uses data-added when present (the bot stamps
-    new cards), otherwise the article's displayed date."""
+    """Cards added in [start, end], newest first. Uses data-added when present (the
+    bot stamps new cards), otherwise the article's displayed date. A stamped card
+    published more than MAX_PUB_AGE_DAYS before `start` is skipped as a backfill."""
+    oldest_pub = start - timedelta(days=MAX_PUB_AGE_DAYS)
     out = []
     for c in re.findall(r'<article class="article-card"[^>]*>.*?</article>', news_html, re.S):
         md = re.search(r'<div class="month-day">([^<]+)</div>', c)
@@ -92,11 +100,39 @@ def cards_this_week(news_html: str, start: date, end: date) -> list[Card]:
         pub = date(int(yr.group(1)), MONTHS[tok[0][:3]], int(tok[1]))
         added = re.search(r'data-added="(\d{4}-\d{2}-\d{2})"', c)
         when = date.fromisoformat(added.group(1)) if added else pub
-        if start <= when <= end:
+        if start <= when <= end and pub >= oldest_pub:
             out.append(Card(_text(src.group(1)), pub, _text(link.group(2)),
                             link.group(1).strip(), _text(summ.group(1)) if summ else ""))
     out.sort(key=lambda k: k.date, reverse=True)
     return out
+
+
+# Words whose trailing period doesn't end a sentence ("since Sept. 26", "Rep. Smith").
+_ABBREVIATIONS = {
+    "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec",
+    "mr", "mrs", "ms", "dr", "st", "mt", "ft", "rep", "reps", "sen", "sens", "gov", "govs",
+    "gen", "lt", "col", "sgt", "capt", "jr", "sr", "vs", "etc", "inc", "co", "corp", "dept", "u.s", "d.c",
+}
+
+
+def first_sentence(text: str) -> str:
+    """First sentence of `text`, ending in a period. Ignores periods after common
+    abbreviations and single initials, so "since Sept. 26" isn't cut short."""
+    text = text.strip()
+    for m in re.finditer(r'[.!?][\"\u201d\u2019)]*(?=\s+[A-Z0-9\"\u201c\u2018(])', text):
+        word = re.search(r"(?:^|[\s(\[\"\u201c\u2018])([\w.]+)$", text[:m.start()])  # whole word, so "MLB’s." still ends
+        token = word.group(1).lower() if word else ""
+        if text[m.start()] == "." and (token in _ABBREVIATIONS or (len(token) == 1 and token.isalpha())):
+            continue
+        return text[:m.end()].strip()
+    if not text or re.search(r'[.!?][\"\u201d\u2019)]*$', text):
+        return text
+    return text + "."
+
+
+def cap_articles(cards: list[Card], limit: int = MAX_ARTICLES) -> tuple[list[Card], int]:
+    """Keep the first `limit` cards (newest first); return them and how many were dropped."""
+    return cards[:limit], max(0, len(cards) - limit)
 
 
 def synthesis_text(index_html: str) -> str:
@@ -144,7 +180,7 @@ def write_copy(cards: list[Card], synthesis: str, window: str) -> dict:
         return {
             "brief_html": "[Preview without ANTHROPIC_API_KEY: the weekly brief is written here.]",
             "take_action_html": "Urge your representatives to <strong>oppose Secretary&rsquo;s Order 3431</strong>.",
-            "summaries": [c.summary.split(". ")[0].rstrip(".") + "." for c in cards],
+            "summaries": [first_sentence(c.summary) for c in cards],
         }
     import anthropic  # only needed when actually writing copy
     sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -172,7 +208,7 @@ def write_copy(cards: list[Card], synthesis: str, window: str) -> dict:
     sums = list(data.get("summaries") or [])
     if len(sums) != len(cards):
         log.warning("Got %d summaries for %d articles; falling back to card text", len(sums), len(cards))
-        sums = [c.summary.split(". ")[0].rstrip(".") + "." for c in cards]
+        sums = [first_sentence(c.summary) for c in cards]
     return {"brief_html": data["brief_html"], "take_action_html": data["take_action_html"], "summaries": sums}
 
 
@@ -193,10 +229,19 @@ def article_item(c: Card, summary: str) -> str:
     )
 
 
+def more_item(n: int) -> str:
+    """Closing line pointing to the site when the issue was capped at MAX_ARTICLES."""
+    noun = "story" if n == 1 else "stories"
+    return ('<div style="padding:14px 0;font-size:14px;color:#4a5248">'
+            f'Plus {n} more {noun} this week &mdash; '
+            f'<a href="{NEWS_URL}" style="font-weight:bold;color:#2D6A4F;text-decoration:none">see all coverage &rarr;</a></div>')
+
+
 EMPTY_STATE = '<div style="padding:14px 0;font-size:14px;color:#4a5248">No new qualifying articles this week.</div>'
 
 
-def build_issue(cards: list[Card], copy: dict, window_html: str) -> str:
+def build_issue(cards: list[Card], copy: dict, window_html: str, more: int = 0) -> str:
+    """Fill the email template. `more` is how many articles were left out by the cap."""
     t = TEMPLATE_FILE.read_text(encoding="utf-8")
     t = re.sub(r"^\s*<!--.*?-->\s*", "", t, count=1, flags=re.S)  # instructions comment
     # Subscriber send: drop the editor-notes row, use the real logo image (Buttondown keeps images).
@@ -206,6 +251,8 @@ def build_issue(cards: list[Card], copy: dict, window_html: str) -> str:
                'style="display:block;border:0;background-color:#ffffff;border-radius:6px;padding:4px">',
                t, flags=re.S)
     items = "".join(article_item(c, s) for c, s in zip(cards, copy["summaries"])) or EMPTY_STATE
+    if more > 0:
+        items += more_item(more)
     fills = {
         "DATE_RANGE": window_html,
         "BRIEF_HTML": _safe_inline(copy["brief_html"]),
@@ -278,9 +325,12 @@ def main() -> int:
     log.info("Window %s: %d article(s)", window, len(cards))
     for c in cards:
         log.info("  %s  %s — %s", c.date, c.source, c.headline)
+    cards, more = cap_articles(cards)
+    if more:
+        log.warning("Capping the issue at %d articles; %d more are linked to the site.", MAX_ARTICLES, more)
 
     copy = write_copy(cards, synthesis_text(INDEX_FILE.read_text(encoding="utf-8")), window)
-    body = build_issue(cards, copy, window_html)
+    body = build_issue(cards, copy, window_html, more)
     PREVIEW_FILE.write_text(body, encoding="utf-8")
     log.info("Wrote %s (%d bytes)", PREVIEW_FILE.name, len(body))
 
