@@ -30,6 +30,14 @@
                             link_text, link_domain); section is verdict, stats, lane:<x>, case:<x>,
                             this_week, info_box, cta or other
      status_section_view    once per section as it scrolls into view (section, position)
+   President's House (presidents-house.html = main, presidents-house-update.html = update):
+     ph_photo_open          a panel photo is opened (page, panel, version before|after|restored|stripped|
+                            original|proposed)
+     ph_link_click          a link in the page body (page, link_type footnote|internal|external, link_text,
+                            link_domain, footnote)
+     ph_popup_close         update page intro popup dismissed (method close_button|backdrop|escape|
+                            read_full|take_action)
+     ph_take_action_click   update page Take Action button (location popup|page)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
    and the Take Action steps via taTrack(). park_photo_open (park, gallery,
    photo_index, photos) is sent by photo-viewer.js when it opens a park-page gallery;
@@ -127,6 +135,7 @@
     if (isHome()) mapClick(e.target);
     if (onPage('voices')) voicesClick(e.target);
     if (onPage('status')) statusClick(e.target);
+    if (phPage()) phClick(e.target);
     if (parkSlug() || e.target.closest('.share-bar')) parkClick(e.target);
 
     var sub = e.target.closest('.sub-btn, a[href*="subscribe=1"]');
@@ -249,6 +258,59 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watchStatusSections);
   else watchStatusSections();
+
+  function phPage() {
+    return onPage('presidents-house') ? 'main' : onPage('presidents-house-update') ? 'update' : '';
+  }
+
+  // "Oney Escapes - before removal" / "Original panel: Oney Escapes!, telling ..."
+  function phPhoto(alt) {
+    var m = alt.match(/^(Original|Proposed)[^:]*:\s*([^,]+)/i);
+    if (m) return { panel: m[2].trim(), version: m[1].toLowerCase() };
+    m = alt.match(/^(.*?)\s+-\s+(\w+)/);
+    return m ? { panel: m[1].trim(), version: m[2].toLowerCase() } : { panel: alt.slice(0, 80), version: '' };
+  }
+
+  function phPopupOpen() {
+    var o = document.getElementById('popupOverlay');
+    return !!(o && o.classList.contains('active'));
+  }
+
+  function phClick(t) {
+    var page = phPage();
+    var img = t.closest('.image-container img, .photo-card img');
+    if (img) {
+      var info = phPhoto(img.getAttribute('alt') || '');
+      return send('ph_photo_open', { page: page, panel: info.panel, version: info.version });
+    }
+    if (page === 'update' && phPopupOpen()) {
+      var method = t.closest('#popupClose') ? 'close_button'
+        : t.id === 'popupOverlay' ? 'backdrop'
+        : t.closest('.popup-btn-primary') ? 'read_full'
+        : t.closest('[onclick*="openTakeAction"]') ? 'take_action' : '';
+      if (method) send('ph_popup_close', { method: method });
+    }
+    var ta = t.closest('[onclick*="openTakeAction"]');
+    if (ta) return send('ph_take_action_click', { page: page, location: ta.closest('#popupOverlay') ? 'popup' : 'page' });
+    var a = t.closest('a[href]');
+    if (!a || a.closest('nav, .topnav, footer, .page-footer') || a.getAttribute('href') === '#') return;
+    if (/ko-fi\.com/i.test(a.href)) return;   // kofi_click covers these
+    var cite = a.classList.contains('cite-link') || /^#fn\d+/.test(a.getAttribute('href'));
+    send('ph_link_click', {
+      page: page,
+      link_type: cite ? 'footnote' : a.origin === location.origin ? 'internal' : 'external',
+      link_text: text(a), link_domain: cite ? '' : a.hostname,
+      footnote: cite ? a.getAttribute('href').slice(1) : ''
+    });
+  }
+
+  // Esc on the update page closes the intro popup (when the photo lightbox isn't open).
+  window.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape' || phPage() !== 'update' || !phPopupOpen()) return;
+    var lb = document.getElementById('lightbox');
+    if (lb && lb.classList.contains('active')) return;
+    send('ph_popup_close', { method: 'escape' });
+  }, true);
 
   var SHARE_METHODS = { tw: 'twitter', bs: 'bluesky', fb: 'facebook', rd: 'reddit', cl: 'copy_link' };
 
