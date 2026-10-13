@@ -288,6 +288,24 @@ def more_item(n: int) -> str:
 EMPTY_STATE = '<div style="padding:14px 0;font-size:14px;color:#4a5248">No new qualifying articles this week.</div>'
 
 
+_A_TAG = re.compile(r'<a\b([^>]*?)style="([^"]*)"([^>]*)>(.*?)</a>', re.S)
+
+
+def lock_link_colors(body: str) -> str:
+    """Keep each link's own color in clients and senders that restyle links
+    (Buttondown turned every link blue, including white button text): mark the
+    inline color !important and repeat it on a <span> inside the link."""
+    def fix(m: re.Match) -> str:
+        pre, style, post, inner = m.groups()
+        color = re.search(r"(?:^|;)\s*color:\s*(#[0-9a-fA-F]{3,6})", style)
+        if not color or inner.startswith('<span style="color:'):
+            return m.group(0)
+        c = color.group(1)
+        style = re.sub(r"((?:^|;)\s*color:\s*#[0-9a-fA-F]{3,6})(?!\s*!important)", r"\1 !important", style, count=1)
+        return f'<a{pre}style="{style}"{post}><span style="color:{c} !important">{inner}</span></a>'
+    return _A_TAG.sub(fix, body)
+
+
 def build_issue(cards: list[Card], copy: dict, window_html: str, more: int = 0) -> str:
     """Fill the email template. `more` is how many articles were left out by the cap."""
     t = TEMPLATE_FILE.read_text(encoding="utf-8")
@@ -309,6 +327,7 @@ def build_issue(cards: list[Card], copy: dict, window_html: str, more: int = 0) 
     }
     for k, v in fills.items():
         t = t.replace("{{" + k + "}}", v)
+    t = lock_link_colors(t)
     leftover = re.findall(r"\{\{\w+\}\}", t)
     if leftover:
         raise ValueError(f"Unfilled placeholders: {leftover}")
