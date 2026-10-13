@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { test, expect, ANALYTICS_URL, type Page } from './fixtures';
+import { publicPages } from './pages';
 
 // Test runs must never count as visitors. Two layers keep them out:
 //   1. tests/fixtures.ts blocks analytics requests in every test;
@@ -81,6 +82,15 @@ test.describe('analytics stay out of test runs', () => {
     // Guards against the scan silently matching nothing.
     expect(ga).toBeGreaterThan(100);
     expect(umami).toBeGreaterThan(100);
+  });
+
+  test('every public page carries both GA and Umami', () => {
+    // publicPages() leaves out redirect stubs, which would double-count a visit.
+    for (const path of publicPages()) {
+      const html = readFileSync(join(ROOT, path), 'utf8');
+      expect(html.includes(GA_GUARD), `${path}: missing the GA tag`).toBe(true);
+      expect(html.includes('src="https://cloud.umami.is/script.js"'), `${path}: missing the Umami tag`).toBe(true);
+    }
   });
 
   for (const path of ['/about.html', '/index.html']) {
