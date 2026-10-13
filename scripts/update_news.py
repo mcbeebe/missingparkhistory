@@ -31,6 +31,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 import anthropic
@@ -238,7 +239,7 @@ first character of your output must be `{{` and the last must be `}}`.
     {{
       "date": "YYYY-MM-DD",
       "source_name": "Display name (e.g. 'Washington Blade')",
-      "source_key": "one of: wapo|npr|nbc|pbs|newsweek|thehill|outside|sfgate|inquirer|bostonglobe|npca|demforward|sierraclub|oah|govexec|notus|calmatters|hcn|senate|house|congress|other",
+      "source_key": "one of: {source_keys}",
       "tag": "one of: order|removal|resistance|lawsuit|leak|court",
       "tag_label": "Short display label (e.g. 'Court Victory', 'Removal', 'State Coalition')",
       "url": "https://...",
@@ -272,6 +273,7 @@ def call_claude(since_date: str, urls: Iterable[str], stats: CurationStats | Non
     client = anthropic.Anthropic()
     now = datetime.now()
     prompt = CURATION_PROMPT.format(
+        source_keys="|".join(source_keys_for_prompt()),
         since_date=since_date,
         current_month_year=now.strftime("%B %Y"),
         current_year=now.year,
@@ -546,16 +548,68 @@ def sort_articles_desc(articles: list[Article]) -> list[Article]:
     return sorted(articles, key=lambda a: a.date, reverse=True)
 
 
-def coerce_unlisted_sources(articles: list[Article], html: str) -> None:
-    """File any article whose source_key has no option in the page's Source
-    filter (#filterSource) under 'other', so every card stays filterable."""
+# Hostnames that unambiguously identify a publication the Source filter already
+# offers. A key is used only if the page actually has that option, so this never
+# invents a filter. Affiliates (WHYY, NBC stations) are deliberately absent.
+DOMAIN_SOURCE_KEYS = {
+    "washingtonpost.com": "wapo", "npr.org": "npr", "nbcnews.com": "nbc",
+    "cnn.com": "cnn", "pbs.org": "pbs", "newsweek.com": "newsweek",
+    "thehill.com": "thehill", "outsideonline.com": "outside",
+    "sfgate.com": "sfgate", "inquirer.com": "inquirer",
+    "bostonglobe.com": "bostonglobe", "npca.org": "npca",
+    "democracyforward.org": "demforward", "sierraclub.org": "sierraclub",
+    "oah.org": "oah", "govexec.com": "govexec",
+}
+
+
+def offered_source_keys(html: str) -> list[str] | None:
+    """The values in the page's Source filter (#filterSource), minus 'all', in
+    page order; None if the filter isn't on the page."""
     m = re.search(r'<select[^>]*id="filterSource"[^>]*>(.*?)</select>', html, re.DOTALL)
     if not m:
+        return None
+    return [k for k in re.findall(r'<option value="([^"]+)"', m.group(1)) if k != "all"]
+
+
+def source_keys_for_prompt() -> list[str]:
+    """Allowed source_key values for the curation prompt, read from the live
+    page so the prompt cannot drift from the filter; 'other' always last."""
+    try:
+        keys = offered_source_keys(HTML_FILE.read_text(encoding="utf-8"))
+    except OSError:
+        keys = None
+    keys = [k for k in (keys or sorted(set(DOMAIN_SOURCE_KEYS.values()))) if k != "other"]
+    return keys + ["other"]
+
+
+def source_key_for_url(url: str) -> str | None:
+    """Filter key for a URL whose host is (a subdomain of) a known publication."""
+    host = (urlparse(url).hostname or "").lower()
+    for domain, key in DOMAIN_SOURCE_KEYS.items():
+        if host == domain or host.endswith("." + domain):
+            return key
+    return None
+
+
+def coerce_unlisted_sources(articles: list[Article], html: str) -> None:
+    """Make every article's source_key a real option in the page's Source
+    filter. A missing or 'other' key is first resolved from the article's URL
+    host; anything still without an option is filed under 'other', so every
+    card stays filterable."""
+    offered = offered_source_keys(html)
+    if offered is None:
         log.warning("Source filter (#filterSource) not found; leaving source keys as-is")
         return
-    offered = set(re.findall(r'<option value="([^"]+)"', m.group(1))) - {"all"}
+    offered_set = set(offered)
     for a in articles:
-        if a.source_key not in offered:
+        if a.source_key in offered_set and a.source_key != "other":
+            continue
+        inferred = source_key_for_url(a.url)
+        if inferred in offered_set:
+            if inferred != a.source_key:
+                log.info("Filing %s under %r by its URL host (model said %r)", a.url, inferred, a.source_key)
+            a.source_key = inferred
+        elif a.source_key not in offered_set:
             log.info("No Source filter option for %r (%s); coercing to 'other'", a.source_key, a.source_name)
             a.source_key = "other"
 
@@ -1831,7 +1885,8 @@ def main() -> int:
         if args.dry_run:
             log.info("[dry-run] Would bump banner date only.")
         else:
-            archive(today_iso)
+            # No archive copy: only the banner date changed, and git history
+            # already holds this page; a full copy per quiet day is ~240 KB.
             write_html(new_html)
             update_news_digest(new_html, today_iso)
             weekly = run_weekly_jobs(new_html, today_iso, force_weekly)
