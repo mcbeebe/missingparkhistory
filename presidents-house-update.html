@@ -19,6 +19,7 @@
   }
 </script>
 <script src="/ga-events.js" defer></script>
+<script src="/photo-viewer.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UPDATE: Sanitized Replacement Panels Revealed at President's House | Missing Park History</title>
   <meta name="description" content="On April 8, 2026, the administration's proposed replacement panels for the President's House were revealed. Historians say they whitewash Washington's role as an enslaver.">
@@ -332,58 +333,6 @@
       .photo-compare { grid-template-columns: 1fr; }
     }
 
-    /* LIGHTBOX */
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 5000;
-      background: rgba(0, 0, 0, 0.88);
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      cursor: zoom-out;
-    }
-    .lightbox.active { display: flex; }
-    .lightbox img {
-      max-width: 92vw;
-      max-height: 90vh;
-      border-radius: 6px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
-      object-fit: contain;
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 1rem;
-      right: 1.5rem;
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3);
-      color: #fff;
-      font-size: 1.3rem;
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .lightbox-close:hover { background: rgba(255,255,255,0.25); }
-    .lightbox-caption {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0,0,0,0.7);
-      color: #ddd;
-      font-family: -apple-system, sans-serif;
-      font-size: 13px;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      max-width: 80vw;
-      text-align: center;
-    }
-
     /* ENDNOTES */
     .endnotes {
       margin-top: 2.5rem;
@@ -562,7 +511,8 @@
       .popup-stats { flex-direction: column; }
       .compare-table { font-size: 0.8rem; }
     }
-  </style>
+  .photo-card img:focus-visible{outline:3px solid #2563b4;outline-offset:2px}
+</style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a" data-domains="missingparkhistory.org,www.missingparkhistory.org"></script>
 </head>
 <body class="standalone">
@@ -921,13 +871,6 @@
   <p style="margin-top:0.4rem;">This data belongs to the American people.</p>
 </footer>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose">&times;</button>
-  <img id="lightboxImg" src="" alt="">
-  <div class="lightbox-caption" id="lightboxCaption"></div>
-</div>
-
 <script>
   // === Popup overlay ===
   document.getElementById('popupClose').addEventListener('click', function() {
@@ -937,41 +880,33 @@
     if (e.target === this) this.classList.remove('active');
   });
 
-  // === Lightbox for photo cards ===
-  var lightbox = document.getElementById('lightbox');
-  var lightboxImg = document.getElementById('lightboxImg');
-  var lightboxCaption = document.getElementById('lightboxCaption');
-
-  document.querySelectorAll('.photo-card img').forEach(function(img) {
+  // === Photo cards open in the shared viewer (/photo-viewer.js) as one set ===
+  var photoImgs = document.querySelectorAll('.photo-card img');
+  photoImgs.forEach(function(img, i) {
+    img.tabIndex = 0;   // keyboard users can open photos too (Enter / Space)
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Enlarge photo: ' + img.alt);
+    img.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); img.click(); }
+    });
     img.addEventListener('click', function() {
-      lightboxImg.src = this.src;
-      lightboxImg.alt = this.alt;
-      var caption = this.closest('.photo-card').querySelector('.photo-caption');
-      lightboxCaption.textContent = caption ? caption.textContent : '';
-      lightbox.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      if (!window.PhotoViewer) return;
+      var photos = [].map.call(photoImgs, function(el) {
+        var card = el.closest('.photo-card');
+        var label = card.querySelector('.photo-label');
+        var caption = card.querySelector('.photo-caption');
+        return {
+          src: el.currentSrc || el.src,
+          caption: (label ? label.textContent.trim() + ': ' : '') + (caption ? caption.textContent.trim() : el.alt)
+        };
+      });
+      PhotoViewer.open(photos, i, { from: img, gallery: 'ph-update' });
     });
   });
 
-  function closeLightbox() {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', function(e) {
-    if (e.target === this) closeLightbox();
-  });
-
-  // === Escape key closes whichever is open ===
+  // === Escape closes the intro popup (the viewer handles its own Escape) ===
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      if (lightbox.classList.contains('active')) {
-        closeLightbox();
-      } else {
-        document.getElementById('popupOverlay').classList.remove('active');
-      }
-    }
+    if (e.key === 'Escape') document.getElementById('popupOverlay').classList.remove('active');
   });
 
   // === Skip popup if ?standalone ===

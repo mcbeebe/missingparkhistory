@@ -304,12 +304,13 @@
     });
   }
 
-  // Esc on the update page closes the intro popup (when the photo lightbox isn't open).
+  // Esc on the update page: count it only if it actually closed the intro popup (an Esc
+  // that closes the photo viewer stops there and leaves the popup open).
   window.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape' || phPage() !== 'update' || !phPopupOpen()) return;
-    var lb = document.getElementById('lightbox');
-    if (lb && lb.classList.contains('active')) return;
-    send('ph_popup_close', { method: 'escape' });
+    setTimeout(function () {
+      if (!phPopupOpen()) send('ph_popup_close', { method: 'escape' });
+    }, 0);
   }, true);
 
   var SHARE_METHODS = { tw: 'twitter', bs: 'bluesky', fb: 'facebook', rd: 'reddit', cl: 'copy_link' };

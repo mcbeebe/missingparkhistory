@@ -1,4 +1,5 @@
-/* Shared photo viewer for the map (index.html) and the park pages (parks/*.html).
+/* Shared photo viewer for the map (index.html), the park pages (parks/*.html) and the
+   President's House pages.
    One file: markup and styles are created here on first use.
 
    Script API (used by the map):
@@ -14,7 +15,7 @@
    Zoom 100-500%: +/- buttons or keys, wheel (toward the cursor), double-click, pinch;
    drag to pan. At 100% a horizontal swipe changes photo. Esc, x or the backdrop closes.
 
-   GA4 (all with viewer: map|park_page, gallery, photo_index, photos):
+   GA4 (all with viewer: map|park_page|<page name>, gallery, photo_index, photos):
      photo_zoom  first zoom past 100% on a photo (method: button|key|wheel|double_click|pinch)
      photo_nav   moving to another photo (direction: next|prev, method: button|key|swipe) */
 (function () {
@@ -258,7 +259,9 @@
 
   function track(name, params) {
     if (typeof window.gtag !== 'function') return;
-    params.viewer = /\/parks\//.test(location.pathname) ? 'park_page' : 'map';
+    var path = location.pathname;
+    params.viewer = /\/parks\//.test(path) ? 'park_page'
+      : /^\/(index\.html)?$/.test(path) ? 'map' : path.replace(/^\/|\.html$/g, '');
     params.gallery = gallery;
     params.photo_index = idx;
     params.photos = photos.length;
