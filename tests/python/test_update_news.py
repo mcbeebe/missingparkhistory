@@ -493,6 +493,57 @@ class YearHeadingTest(unittest.TestCase):
         un.coerce_unlisted_sources(arts, html)
         self.assertEqual([a.source_key for a in arts], ["npr", "senate", "other", "other"])
 
+    FILTER_HTML = ('<select class="filter-select" id="filterSource">\n'
+                   '<option value="all">All Publications</option><option value="npr">NPR</option>\n'
+                   '<option value="cnn">CNN</option><option value="other">Other</option>\n</select>')
+
+    def test_offered_source_keys_reads_the_page_filter_in_order(self):
+        self.assertEqual(un.offered_source_keys(self.FILTER_HTML), ["npr", "cnn", "other"])
+        self.assertIsNone(un.offered_source_keys("<html></html>"))
+
+    def test_prompt_source_keys_match_the_live_page_filter(self):
+        # The prompt used to hard-code a list that omitted 'cnn' and named
+        # keys the page has no option for; it must now track the page.
+        page = (un.HTML_FILE).read_text(encoding="utf-8")
+        offered = un.offered_source_keys(page)
+        prompt_keys = un.source_keys_for_prompt()
+        self.assertEqual(prompt_keys, [k for k in offered if k != "other"] + ["other"])
+        self.assertIn("cnn", prompt_keys)
+        self.assertEqual(prompt_keys[-1], "other")
+
+    def test_known_host_is_filed_under_its_filter_even_if_model_said_other(self):
+        arts = [
+            un.parse_article(self.raw(source_key="other", url="https://www.cnn.com/2026/06/28/x")),
+            un.parse_article(self.raw(source_key="calmatters", url="https://us.cnn.com/y")),
+            un.parse_article(self.raw(source_key="other", url="https://whyy.org/z")),
+            un.parse_article(self.raw(source_key="other", url="https://notcnn.com/z")),
+        ]
+        un.coerce_unlisted_sources(arts, self.FILTER_HTML)
+        self.assertEqual([a.source_key for a in arts], ["cnn", "cnn", "other", "other"])
+
+    def test_host_fallback_never_invents_a_filter_the_page_lacks(self):
+        html = ('<select id="filterSource"><option value="all">All</option>'
+                '<option value="other">Other</option></select>')
+        arts = [un.parse_article(self.raw(source_key="cnn", url="https://www.cnn.com/a"))]
+        un.coerce_unlisted_sources(arts, html)
+        self.assertEqual(arts[0].source_key, "other")
+
+    def test_a_listed_key_is_left_alone_even_if_the_host_suggests_another(self):
+        arts = [un.parse_article(self.raw(source_key="npr", url="https://www.cnn.com/a"))]
+        un.coerce_unlisted_sources(arts, self.FILTER_HTML)
+        self.assertEqual(arts[0].source_key, "npr")
+
+    def test_no_published_card_is_filed_other_when_its_host_has_a_filter(self):
+        page = un.HTML_FILE.read_text(encoding="utf-8")
+        offered = set(un.offered_source_keys(page))
+        misfiled = []
+        for m in re.finditer(r'<article class="article-card"[^>]*data-source="other"[^>]*>(.*?)</article>', page, re.S):
+            link = re.search(r'<h3><a href="(https?://[^"]+)"', m.group(1))
+            key = un.source_key_for_url(link.group(1)) if link else None
+            if key in offered:
+                misfiled.append(link.group(1))
+        self.assertEqual(misfiled, [])
+
     def test_resort_files_cards_without_data_month_by_their_visible_date(self):
         html = ('<section class="timeline-section">\n'
                 '<div class="year-marker"><h2>2026</h2></div>\n' + card("Jan 20", "2026", "https://a/2026")
