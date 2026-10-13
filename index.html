@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EK392KLRFB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EK392KLRFB', { allow_google_signals: false, allow_ad_personalization_signals: false });
+  // Only the live site loads GA, so local servers and CI test runs never report.
+  if (location.hostname === 'missingparkhistory.org' || location.hostname === 'www.missingparkhistory.org') {
+    (function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-EK392KLRFB';
+      document.head.appendChild(s);
+    })();
+    gtag('js', new Date());
+    gtag('config', 'G-EK392KLRFB', { allow_google_signals: false, allow_ad_personalization_signals: false });
+  }
 </script>
 <script src="/ga-events.js" defer></script>
 <script src="/photo-viewer.js" defer></script>
@@ -20,7 +28,7 @@
 <link rel="canonical" href="https://missingparkhistory.org/">
 <meta name="theme-color" content="#0a0a0f">
 <meta name="google-site-verification" content="YhzXsWLZcbjTGY3KjRwu7wU8XvD2wyF3vx3-D1NN92U" />
-<script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a" data-domains="missingparkhistory.org,www.missingparkhistory.org"></script>
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <!-- Open Graph -->
 <meta property="og:type" content="website">

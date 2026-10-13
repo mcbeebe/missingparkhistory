@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
 // The home page's news pop-up opens on every visit. Its headline wraps with the
 // viewport, so check that no line of it ever runs under the close (×) button.

@@ -33,6 +33,12 @@ don't add per-page hamburger CSS or buttons.
 on every PR (`.github/workflows/layout-tests.yml`). Run it before opening a PR
 that touches layout or the header.
 
+Specs import `test`/`expect` from `./fixtures`, never `@playwright/test`: the
+fixture blocks GA and Umami so test runs don't show up as site visitors.
+On the pages, GA only loads and the Umami tag (`data-domains`) only reports on
+`missingparkhistory.org`; keep both guards on new pages.
+`tests/analytics.spec.ts` enforces all of this.
+
 ## News bot
 
 `scripts/update_news.py` (daily GitHub Action) adds news cards, and weekly

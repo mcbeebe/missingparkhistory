@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 
 // The home page floats its buttons, comments strip, filters and legend over the
 // map. At every width none of them may cover the title box's text or each other.

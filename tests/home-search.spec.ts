@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 
 // The home page search box on phones: it must not trigger iOS Safari's focus zoom
 // (any text box under 16px does), and its results must sit above the floating

@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 import { headerPages } from './pages';
 
 /** Bounding rects of the nav bar's links, toggle and brand, plus collapse state. */
