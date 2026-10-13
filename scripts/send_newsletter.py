@@ -177,6 +177,65 @@ def _safe_inline(s: str) -> str:
     return re.sub(r"&lt;(/?)(strong|em)&gt;", r"<\1\2>", s)
 
 
+# Current Sonnet models think by default, and thinking tokens count toward max_tokens:
+# at 1500 the 2026-10-13 send spent the whole budget thinking and returned no text.
+COPY_MAX_TOKENS = 16000
+COPY_ATTEMPTS = 2
+
+
+def parse_copy_reply(resp) -> dict | None:
+    """The copy JSON from one Messages API response, or None (with the reason logged)
+    if it was refused, cut off, empty or not the expected JSON object."""
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    from update_news import _parse_json_object
+
+    stop = getattr(resp, "stop_reason", None)
+    out_tokens = getattr(getattr(resp, "usage", None), "output_tokens", None)
+    log.info("Copy reply: stop_reason=%s, %s output token(s) of %d allowed", stop, out_tokens, COPY_MAX_TOKENS)
+    if stop == "refusal":
+        details = getattr(resp, "stop_details", None)
+        log.error("Model declined the request (category=%s)", getattr(details, "category", None))
+        return None
+    if stop == "max_tokens":
+        log.warning("Copy reply hit the %d-token limit", COPY_MAX_TOKENS)
+    text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", None) == "text").strip()
+    if not text:
+        log.error("Copy reply has no text (content block types: %s)",
+                  [getattr(b, "type", None) for b in resp.content])
+        return None
+    data = _parse_json_object(text)
+    if data is None:
+        return None
+    missing = [k for k in ("brief_html", "take_action_html") if not isinstance(data.get(k), str) or not data[k].strip()]
+    if missing:
+        log.error("Copy reply is missing %s", missing)
+        return None
+    return data
+
+
+def request_copy(client, prompt: str, models: list[str], not_found: type[Exception],
+                 attempts: int = COPY_ATTEMPTS) -> dict:
+    """Ask for the copy JSON, falling back through `models` when one isn't available
+    and retrying a bad reply up to `attempts` times. Raises if no usable reply."""
+    for attempt in range(1, attempts + 1):
+        last = None
+        for model in models:
+            try:
+                resp = client.messages.create(model=model, max_tokens=COPY_MAX_TOKENS,
+                                              messages=[{"role": "user", "content": prompt}])
+                break
+            except not_found as e:
+                last = e
+                continue
+        else:
+            raise RuntimeError(f"No available model: {last}")
+        data = parse_copy_reply(resp)
+        if data is not None:
+            return data
+        log.warning("Attempt %d of %d to write the copy failed", attempt, attempts)
+    raise RuntimeError(f"No usable copy from the model after {attempts} attempt(s); see the log above.")
+
+
 def write_copy(cards: list[Card], synthesis: str, window: str) -> dict:
     if not os.environ.get("ANTHROPIC_API_KEY"):
         log.warning("ANTHROPIC_API_KEY not set; using placeholder copy (preview only)")
@@ -193,21 +252,7 @@ def write_copy(cards: list[Card], synthesis: str, window: str) -> dict:
         f"{i}. [{c.date:%b %-d}] {c.source} — {c.headline}\n   {c.summary[:600]}"
         for i, c in enumerate(cards, 1)) or "(none this week)"
     prompt = WRITE_PROMPT.format(window=window, synthesis=synthesis or "(unavailable)", articles=listing)
-    client = anthropic.Anthropic()
-    last = None
-    for model in MODEL_CANDIDATES:
-        try:
-            resp = client.messages.create(model=model, max_tokens=1500,
-                                          messages=[{"role": "user", "content": prompt}])
-            break
-        except anthropic.NotFoundError as e:
-            last = e
-            continue
-    else:
-        raise RuntimeError(f"No available model: {last}")
-    text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
-    text = text[text.find("{"): text.rfind("}") + 1]
-    data = json.loads(text)
+    data = request_copy(anthropic.Anthropic(), prompt, MODEL_CANDIDATES, anthropic.NotFoundError)
     sums = list(data.get("summaries") or [])
     if len(sums) != len(cards):
         log.warning("Got %d summaries for %d articles; falling back to card text", len(sums), len(cards))
