@@ -19,6 +19,7 @@
   }
 </script>
 <script src="/ga-events.js" defer></script>
+<script src="/photo-viewer.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>President's House: 30 Panels Documenting Slavery Removed | Missing Park History</title>
 <meta name="description" content="The President's House Site at Independence National Historical Park: 30 interpretive panels removed January 22, 2026. 13 panels restored by court order February 19, 2026. 17 panels remain missing.">
@@ -114,11 +115,6 @@ body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2
 .image-container img{width:100%;height:auto;border-radius:8px;border:1px solid #e0e0e0;cursor:pointer;transition:all 0.2s}
 .image-container img:hover{border-color:#2563b4;transform:scale(1.02)}
 .image-label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;margin-top:6px;font-family:-apple-system,sans-serif;letter-spacing:0.5px}
-.modal{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;padding:20px}
-.modal.active{display:flex}
-.modal-content{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px}
-.modal-close{position:fixed;top:20px;right:20px;background:#fff;border:none;font-size:28px;cursor:pointer;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.modal-close:hover{background:#f0f0f0}
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
 .stat-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:24px 20px;text-align:center}
 .stat-card .stat-num{font-size:32px;font-weight:700;font-family:Georgia,serif;line-height:1}
@@ -168,6 +164,7 @@ body{font-family:Georgia,'Times New Roman',serif;background:#fafafa;color:#2d2d2
 .stat-card .stat-num{font-size:20px}
 .prose{font-size:16px}
 }
+.image-container img:focus-visible{outline:3px solid #2563b4;outline-offset:2px}
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="855b6647-f973-4b49-8d4f-48decbd11f3a" data-domains="missingparkhistory.org,www.missingparkhistory.org"></script>
 <link rel="stylesheet" href="/site-nav.css">
@@ -800,33 +797,28 @@ Photos courtesy Save Our Signs Removal Tracker (public domain). Before photos do
 <p style="margin-top:12px;font-size:11px;">This site uses Umami Analytics to track page interactions while respecting your privacy.</p>
 </footer>
 
-<div id="imageModal" class="modal">
-<button class="modal-close" onclick="closeModal()" data-umami-event="modal-close">&times;</button>
-<img class="modal-content" id="modalImage">
-</div>
 
 <script>
-function openModal(src) {
-  const modal = document.getElementById('imageModal');
-  const img = document.getElementById('modalImage');
-  img.src = src;
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-  const modal = document.getElementById('imageModal');
-  modal.classList.remove('active');
-  document.body.style.overflow = 'auto';
-}
-
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal();
-});
-
-document.querySelectorAll('.image-container img').forEach(img => {
-  img.addEventListener('click', function() {
-    openModal(this.src);
+// Panel photos open in the shared viewer (/photo-viewer.js) as one set, in page order.
+document.querySelectorAll('.image-container img').forEach(function (img, i, all) {
+  img.tabIndex = 0;   // keyboard users can open photos too (Enter / Space)
+  img.setAttribute('role', 'button');
+  img.setAttribute('aria-label', 'Enlarge photo: ' + img.alt);
+  img.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); img.click(); }
+  });
+  img.addEventListener('click', function () {
+    if (!window.PhotoViewer) return;
+    var photos = [].map.call(all, function (el) {
+      var card = el.closest('.panel-card');
+      var title = card && card.querySelector('.panel-title');
+      var label = el.closest('.image-container').querySelector('.image-label');
+      return {
+        src: el.currentSrc || el.src,
+        caption: title ? title.textContent.trim() + (label ? ' \u2014 ' + label.textContent.trim() : '') : el.alt
+      };
+    });
+    PhotoViewer.open(photos, i, { from: img, gallery: 'ph-main' });
   });
 });
 
