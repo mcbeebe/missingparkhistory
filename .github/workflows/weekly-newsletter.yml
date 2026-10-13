@@ -1,10 +1,14 @@
 name: Weekly Watch Newsletter
 
-# Sends the Weekly Watch to Buttondown subscribers.
-# Runs right after the daily news bot finishes, so Monday's new articles are
-# already on the page; the script exits unless it's Monday in Pacific time and
-# skips if this week's issue was already sent.
+# Sends the Weekly Watch to Buttondown subscribers. Each issue covers the previous
+# Monday–Sunday week. GitHub often starts scheduled jobs hours late, so there are
+# several chances: two Monday schedules, a Tuesday catch-up, and the run after each
+# daily news bot. The script exits on other days and skips if the issue already went.
 on:
+  schedule:
+    # UTC, off the top of the hour (less load). PDT: Mon 6:47 AM, Mon 11:47 AM, Tue 6:47 AM.
+    - cron: "47 13 * * 1,2"
+    - cron: "47 18 * * 1"
   workflow_run:
     workflows: ["Daily NPS News Update"]
     types: [completed]
@@ -49,8 +53,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_run" ]; then
-            python scripts/send_newsletter.py --mode send --only-on-monday
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            python scripts/send_newsletter.py --mode send --scheduled
           else
             python scripts/send_newsletter.py --mode "${{ inputs.mode }}"
           fi
