@@ -3,6 +3,7 @@ and the fallback one-sentence summaries.
 
 Run: python -m unittest discover -s tests/python
 """
+import re
 import sys
 import unittest
 from datetime import date
@@ -168,6 +169,40 @@ class LastFullWeekTest(unittest.TestCase):
 
     def test_send_days_are_monday_and_tuesday(self):
         self.assertEqual(sn.SEND_WEEKDAYS, (0, 1))
+
+
+class LockLinkColorsTest(unittest.TestCase):
+    BUTTON = '<a href="https://x.org" style="display:inline-block;color:#ffffff;text-decoration:none">Go &rarr;</a>'
+
+    def test_wraps_text_and_marks_important(self):
+        out = sn.lock_link_colors(self.BUTTON)
+        self.assertIn("color:#ffffff !important;", out)
+        self.assertIn('<span style="color:#ffffff !important">Go &rarr;</span></a>', out)
+
+    def test_idempotent(self):
+        once = sn.lock_link_colors(self.BUTTON)
+        self.assertEqual(sn.lock_link_colors(once), once)
+
+    def test_link_without_color_is_untouched(self):
+        a = '<a href="https://x.org" style="text-decoration:none">x</a>'
+        self.assertEqual(sn.lock_link_colors(a), a)
+
+    def test_background_color_is_not_mistaken_for_color(self):
+        a = '<a href="u" style="background-color:#000000;text-decoration:none">x</a>'
+        self.assertEqual(sn.lock_link_colors(a), a)
+
+    def test_every_link_in_a_built_issue_is_locked(self):
+        cards = [sn.Card("Src", date(2026, 10, 1), "H", "https://e.org/1", "S.")]
+        copy = {"brief_html": "B.", "take_action_html": "A.", "summaries": ["S."]}
+        body = sn.build_issue(cards, copy, "w", more=3)
+        links = re.findall(r"<a\b[^>]*>.*?</a>", body, re.S)
+        self.assertGreaterEqual(len(links), 8)
+        for a in links:
+            self.assertRegex(a, r'><span style="color:#[0-9a-fA-F]{3,6} !important">', a)
+
+    def test_subscribe_box_does_not_force_one_line(self):
+        body = sn.build_issue([], {"brief_html": "B.", "take_action_html": "A.", "summaries": []}, "w")
+        self.assertNotIn("nowrap", body)
 
 
 class CapArticlesTest(unittest.TestCase):
