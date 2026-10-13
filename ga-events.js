@@ -25,6 +25,11 @@
      voices_quote_click     a park link inside a river quote (park, park_slug, destination park_page|map)
      voices_cta_click       Methodology / Back to the map / About buttons (link_text)
      (voices_park_open and voices_layer_toggle are sent from voices.html / index.html)
+   Status page:
+     status_link_click      a link in the page body (section, link_type source|internal|external|email,
+                            link_text, link_domain); section is verdict, stats, lane:<x>, case:<x>,
+                            this_week, info_box, cta or other
+     status_section_view    once per section as it scrolls into view (section, position)
    Sent from index.html itself: map_park_open, map_photo_open, share (copy_link),
    and the Take Action steps via taTrack(). park_photo_open (park, gallery,
    photo_index, photos) is sent by photo-viewer.js when it opens a park-page gallery;
@@ -121,6 +126,7 @@
 
     if (isHome()) mapClick(e.target);
     if (onPage('voices')) voicesClick(e.target);
+    if (onPage('status')) statusClick(e.target);
     if (parkSlug() || e.target.closest('.share-bar')) parkClick(e.target);
 
     var sub = e.target.closest('.sub-btn, a[href*="subscribe=1"]');
@@ -194,6 +200,55 @@
     var cta = t.closest('.cta-links a');
     if (cta) send('voices_cta_click', { link_text: text(cta) });
   }
+
+  function statusSection(el) {
+    var lane = el.closest('.lane[data-lane]');
+    if (lane) return 'lane:' + lane.getAttribute('data-lane');
+    var kase = el.closest('.case[data-case]');
+    if (kase) return 'case:' + kase.getAttribute('data-case');
+    if (el.closest('.nd-synthesis')) return 'this_week';
+    if (el.closest('.stats-grid')) return 'stats';
+    if (el.closest('.hero, .verdict')) return 'verdict';
+    if (el.closest('.info-box')) return 'info_box';
+    if (el.closest('.cta-section')) return 'cta';
+    return 'other';
+  }
+
+  function statusClick(t) {
+    var a = t.closest('.page-wrapper a[href]');
+    if (!a || a.closest('nav, .topnav, footer, .page-footer')) return;
+    var type = /^mailto:/i.test(a.href) ? 'email'
+      : a.classList.contains('src') ? 'source'
+      : a.origin === location.origin ? 'internal' : 'external';
+    send('status_link_click', {
+      section: statusSection(a), link_type: type, link_text: text(a),
+      link_domain: type === 'email' ? '' : a.hostname
+    });
+  }
+
+  // Status page: one status_section_view per section, when its top passes 60% of the viewport.
+  function watchStatusSections() {
+    if (!onPage('status') || !('IntersectionObserver' in window)) return;
+    var SECTIONS = [['.verdict', 'verdict'], ['.stats-grid', 'stats'], ['.lanes', 'four_fronts'],
+      ['.case-board', 'cases'], ['.nd-synthesis', 'this_week'], ['.cta-section', 'cta']];
+    var names = new Map();
+    SECTIONS.forEach(function (s, i) {
+      var el = document.querySelector(s[0]);
+      if (el) names.set(el, { section: s[1], position: i + 1 });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var info = names.get(en.target);
+        if (!en.isIntersecting || !info) return;
+        names.delete(en.target);   // once per section
+        io.unobserve(en.target);
+        send('status_section_view', Object.assign({}, info));
+      });
+    }, { rootMargin: '0px 0px -40% 0px' });
+    names.forEach(function (_, el) { io.observe(el); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watchStatusSections);
+  else watchStatusSections();
 
   var SHARE_METHODS = { tw: 'twitter', bs: 'bluesky', fb: 'facebook', rd: 'reddit', cl: 'copy_link' };
 
