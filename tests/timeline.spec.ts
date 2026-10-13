@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures';
 
 test.describe('timeline page', () => {
   test('events are newest first and all dated', async ({ page }) => {

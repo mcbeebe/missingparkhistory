@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 
 // The map modal's "Park History" section is built by buildParkHistoryHTML() from
 // data/parkHistory.json. Published parks get the sourced block; parks with only an
