@@ -1,3 +1,4 @@
+:where(img[width][height]){max-width:100%;height:auto}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,'Times New Roman',serif;background:#0a0a0f;color:#c8c8d0;line-height:1.8}
 .topnav{position:fixed;top:0;left:0;right:0;z-index:5000;background:rgba(10,10,15,0.97);border-bottom:1px solid #2a2a3a;backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px}

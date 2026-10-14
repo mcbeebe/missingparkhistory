@@ -55,6 +55,37 @@ class ParkPagesTest(unittest.TestCase):
             html = (ROOT / "parks" / f"{reg['slug']}.html").read_text()
             self.assertNotRegex(html, r"/images/\d+/images/")
 
+    def test_photo_links_emit_real_dimensions(self):
+        photos = [("1037", {"file": "images/1037/" + next((ROOT / "images" / "1037").glob("*.jpg")).name, "name": "x"})]
+        out = bpp.photo_links("g", photos, 1, "entry-photo", "fallback")
+        m = re.search(r'<img [^>]*width="(\d+)" height="(\d+)"', out)
+        self.assertIsNotNone(m, out)
+        self.assertGreater(int(m.group(1)), 0)
+        self.assertGreater(int(m.group(2)), 0)
+
+    def test_dim_attrs_skips_unreadable_files(self):
+        self.assertEqual(bpp.dim_attrs("/images/does-not-exist.jpg"), "")
+
+    def test_image_size_reads_png_and_jpeg(self):
+        from image_size import image_size
+        png = next((ROOT / "images").rglob("*.png"))
+        jpg = next((ROOT / "images").rglob("*.jpg"))
+        for f in (png, jpg):
+            w, h = image_size(f)
+            self.assertTrue(w > 0 and h > 0, f)
+
+    def test_generated_park_images_have_dimensions(self):
+        missing = []
+        for reg in self.data["registry"].values():
+            html = (ROOT / "parks" / f"{reg['slug']}.html").read_text()
+            for tag in re.findall(r"<img [^>]*>", html):
+                if "logo.svg" in tag or "width=" in tag:
+                    continue
+                src = re.search(r'src="/([^"]+)"', tag).group(1)
+                if bpp.dim_attrs("/" + src):
+                    missing.append(f"{reg['slug']}: {src}")
+        self.assertEqual(missing, [])
+
 
 if __name__ == "__main__":
     unittest.main()

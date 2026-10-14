@@ -30,6 +30,16 @@
 <meta property="og:url" content="https://missingparkhistory.org/voices.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://missingparkhistory.org/voices.html">
+<meta property="og:image" content="https://missingparkhistory.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Missing Park History">
+<meta name="twitter:title" content="The 35,700 Voices — Missing Park History">
+<meta name="twitter:description" content="Public comments submitted to the NPS in response to Executive Order 14253. 475 parks. June 2025 – January 2026.">
+<meta name="twitter:image" content="https://missingparkhistory.org/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The 35,700 Voices — Missing Park History","description":"What 35,700 Americans said to the National Park Service in response to Executive Order 14253. Public comments analyzed by park, theme, and date.","url":"https://missingparkhistory.org/voices.html","isPartOf":{"@type":"WebSite","name":"Missing Park History","url":"https://missingparkhistory.org/"}}</script>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="preload" href="data/voices_park_counts.json" as="fetch" crossorigin>
@@ -92,7 +102,7 @@ body {
   font-size: 12px; color: #b91c1c; font-weight: 700;
   margin-bottom: 12px;
 }
-h1.hero-h {
+.hero-h {
   font-size: 48px; line-height: 1.1; margin: 0 0 24px 0;
   color: #1a1a1a; font-weight: 700;
   max-width: 880px;
@@ -359,7 +369,7 @@ h1.hero-h {
   .topnav-links a { padding: 6px 10px; font-size: 12px; }
   .section { padding: 40px 20px; }
   .voices-hero { padding: 64px 20px 40px; }
-  h1.hero-h { font-size: 32px; }
+  .hero-h { font-size: 32px; }
   .hero-sub { font-size: 17px; }
   .compare-panel { padding: 24px 20px; }
   .bar-row .label { width: 130px; font-size: 13px; }
@@ -397,7 +407,7 @@ h1.hero-h {
 <!-- ═══ #5 — HERO COUNTER ═══ -->
 <section class="voices-hero">
   <div class="eyebrow">— What the public said —</div>
-  <h1 class="voices-counter" id="counter" aria-label="35,700 comments">0</h1>
+  <div class="voices-counter" id="counter" role="img" aria-label="35,700 comments">0</div>
   <p class="voices-tag">comments submitted to the National Park Service in response to <span class="hi">Executive Order 14253</span>.</p>
   <p class="voices-meta">From <strong>475 parks</strong> across the country &nbsp;·&nbsp; June 4, 2025 – January 14, 2026 &nbsp;·&nbsp; Released by NPS in early 2026</p>
 </section>
@@ -452,7 +462,7 @@ h1.hero-h {
 <section class="section map-section" style="max-width:none;padding-left:0;padding-right:0">
   <div class="map-shell">
     <div class="eyebrow">Explore by park</div>
-    <h1 class="hero-h" style="font-size:36px">Find your park. See what people said about it.</h1>
+    <h2 class="hero-h" style="font-size:36px">Find your park. See what people said about it.</h2>
     <p class="hero-sub">Every red badge is a park where 200 or more people submitted comments. Amber is 50–199. Blue is 1–49. Click any badge to read the top quotes for that park.</p>
 
     <div class="map-legend">
