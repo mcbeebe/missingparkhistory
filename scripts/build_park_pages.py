@@ -36,6 +36,7 @@ TEMPLATE = ROOT / "scripts" / "park_page_template.html"
 SITE = "https://missingparkhistory.org"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from image_size import image_size  # noqa: E402
 import build_park_history as bph  # noqa: E402
 
 SIGN_STATUS = {"removed": "removed", "restored": "restored", "partial": "partially restored",
@@ -76,6 +77,13 @@ def photo_src(eid: str, p: dict) -> str:
     return "/" + f.lstrip("/") if f.startswith("images/") else f"/images/{eid}/{f}"
 
 
+def dim_attrs(src: str) -> str:
+    """` width="W" height="H"` for a site-relative image path, or "" if it can't be read.
+    The attributes reserve layout space (no shift while lazy-loading); CSS still sets the rendered size."""
+    size = image_size(ROOT / src.lstrip("/"))
+    return f' width="{size[0]}" height="{size[1]}"' if size else ""
+
+
 # --------------------------------------------------------------------------- fragments
 
 def photo_links(gallery: str, photos: list[tuple[str, dict]], visible: int, cls: str, fallback: str) -> str:
@@ -87,7 +95,7 @@ def photo_links(gallery: str, photos: list[tuple[str, dict]], visible: int, cls:
         attrs = f'href="{src}" target="_blank" rel="noopener" data-gallery="{esc(gallery)}" data-caption="{alt}"'
         if n < visible:
             klass = f' class="{cls}"' if cls else ""
-            out.append(f'<a{klass} {attrs}><img src="{src}" alt="{alt}" loading="lazy"></a>')
+            out.append(f'<a{klass} {attrs}><img src="{src}" alt="{alt}" loading="lazy"{dim_attrs(photo_src(eid, p))}></a>')
         else:
             out.append(f'<a {attrs} hidden></a>')
     return "\n".join(out) + "\n"
@@ -204,7 +212,7 @@ def sos_photos(entries: list[tuple[str, dict]]) -> str:
         return ""
     cards = "".join(
         f'<div class="sos-pair"><a href="/{esc(path)}" target="_blank" rel="noopener" data-gallery="sos" data-caption="{esc(title)} &mdash; {label}">'
-        f'<img src="/{esc(path)}" alt="{esc(title)} &mdash; {label}" loading="lazy"></a><div class="sos-pair-title">{esc(title)}</div>'
+        f'<img src="/{esc(path)}" alt="{esc(title)} &mdash; {label}" loading="lazy"{dim_attrs(path)}></a><div class="sos-pair-title">{esc(title)}</div>'
         f'<span class="sos-label sos-label-{label}" style="margin-bottom:10px">{label}</span></div>' for title, label, path in pairs)
     return ('<div class="section-heading">Signs Documented by Save Our Signs</div>\n'
             f'<div class="sos-pairs">{cards}</div>\n'
