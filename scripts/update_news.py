@@ -25,7 +25,6 @@ import json
 import logging
 import os
 import re
-import shutil
 import sys
 from dataclasses import dataclass
 from datetime import datetime
@@ -1773,10 +1772,37 @@ def run_weekly_jobs(news_html: str, today_iso: str, force: bool) -> list[str]:
     return lines
 
 
+ARCHIVE_ROBOTS = '<meta name="robots" content="noindex, follow">'
+ARCHIVE_CANONICAL = '<link rel="canonical" href="https://missingparkhistory.org/news-and-press.html">'
+
+
+def mark_archive_copy(html: str) -> str:
+    """Make a dated copy of the News & Press page safe to publish.
+
+    Archive copies are near-duplicates of the live page, so they carry
+    ``noindex, follow`` (search engines skip them but still follow their links)
+    and a canonical pointing at the live page. Any existing robots meta or
+    canonical link is replaced; if absent, both are inserted after ``<meta charset>``.
+
+    Args:
+        html: The full HTML of the copy.
+
+    Returns:
+        The HTML with exactly one archive robots meta and one canonical link.
+    """
+    html = re.sub(r'[ \t]*<meta\s+name="robots"[^>]*>\n?', "", html, flags=re.I)
+    html = re.sub(r'[ \t]*<link\s+rel="canonical"[^>]*>\n?', "", html, flags=re.I)
+    tags = f"  {ARCHIVE_ROBOTS}\n  {ARCHIVE_CANONICAL}\n"
+    m = re.search(r"<meta\s+charset[^>]*>\n?", html, flags=re.I) or re.search(r"<head[^>]*>\n?", html, flags=re.I)
+    if not m:
+        raise ValueError("archive copy has no <head> to tag")
+    return html[: m.end()] + tags + html[m.end():]
+
+
 def archive(today_iso: str) -> None:
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     dst = ARCHIVE_DIR / f"news-and-press_{today_iso.replace('-', '')}.html"
-    shutil.copy2(HTML_FILE, dst)
+    dst.write_text(mark_archive_copy(HTML_FILE.read_text(encoding="utf-8")), encoding="utf-8")
     log.info("Archived previous version to %s", dst.relative_to(REPO_ROOT))
 
 

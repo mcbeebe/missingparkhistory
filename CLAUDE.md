@@ -48,4 +48,8 @@ milestones to `timeline.html`. Timeline events must stay newest first and carry
 `data-source` that has an option in the page's Source filter (else `other`);
 `scripts/resort_cards.py`, run after the bot, orders cards newest first and
 rewrites the year headings. Unit tests: `python -m unittest discover -s tests/python`.
+The bot's daily copies in `News and Press/Archive/` are published, so `archive()`
+stamps each one `noindex, follow` with a canonical to `/news-and-press.html`
+(`mark_archive_copy`); `tests/seo.spec.ts` checks every copy, and fails if any
+published page links to a same-site address that doesn't exist.
 See `.github/workflows/README.md` for stamps and freeze markers.
