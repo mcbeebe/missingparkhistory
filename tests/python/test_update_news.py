@@ -657,9 +657,6 @@ class RealTimelineTest(unittest.TestCase):
         self.assertEqual(tl.read_text(encoding="utf-8"), html)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 # ---------------------------------------------------------------------------
 # Status page (status.html): synthesis mirror + weekly lanes/case board
@@ -1111,3 +1108,55 @@ class TruncatedReplyTest(unittest.TestCase):
             self.assertFalse(un.update_synthesis("", "2026-10-11"))
         self.assertEqual(c.call_args.kwargs["max_tokens"], un.SYNTHESIS_MAX_TOKENS)
         self.assertIn("<p>old</p>", index.read_text(encoding="utf-8"))
+
+
+class ArchiveCopyTest(unittest.TestCase):
+    """Dated News & Press copies are published, so they must not compete with the live page."""
+
+    LIVE = (
+        '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8" />\n'
+        '  <meta name="robots" content="index, follow">\n'
+        '  <link rel="canonical" href="https://missingparkhistory.org/news-and-press.html">\n'
+        "</head>\n<body>news</body>\n</html>\n"
+    )
+
+    def tags(self, html: str) -> tuple[list[str], list[str]]:
+        return (re.findall(r'<meta name="robots"[^>]*>', html), re.findall(r'<link rel="canonical"[^>]*>', html))
+
+    def test_live_tags_are_replaced_once(self):
+        robots, canonical = self.tags(un.mark_archive_copy(self.LIVE))
+        self.assertEqual(robots, [un.ARCHIVE_ROBOTS])
+        self.assertEqual(canonical, [un.ARCHIVE_CANONICAL])
+        self.assertIn('content="noindex, follow"', un.ARCHIVE_ROBOTS)
+        self.assertIn('href="https://missingparkhistory.org/news-and-press.html"', un.ARCHIVE_CANONICAL)
+
+    def test_tags_are_added_when_missing(self):
+        bare = '<html>\n<head>\n<meta charset="UTF-8">\n<title>t</title>\n</head><body></body></html>'
+        out = un.mark_archive_copy(bare)
+        self.assertEqual(self.tags(out), ([un.ARCHIVE_ROBOTS], [un.ARCHIVE_CANONICAL]))
+        self.assertLess(out.index(un.ARCHIVE_ROBOTS), out.index("<title>"))
+
+    def test_idempotent_and_body_untouched(self):
+        once = un.mark_archive_copy(self.LIVE)
+        self.assertEqual(un.mark_archive_copy(once), once)
+        self.assertIn("<body>news</body>", once)
+
+    def test_no_head_is_an_error(self):
+        with self.assertRaises(ValueError):
+            un.mark_archive_copy("<p>no head</p>")
+
+    def test_archive_writes_a_marked_copy(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            live = Path(tmp) / "news-and-press.html"
+            live.write_text(self.LIVE, encoding="utf-8")
+            with mock.patch.object(un, "HTML_FILE", live), \
+                    mock.patch.object(un, "ARCHIVE_DIR", Path(tmp) / "Archive"), \
+                    mock.patch.object(un, "REPO_ROOT", Path(tmp)):
+                un.archive("2026-10-15")
+            out = (Path(tmp) / "Archive" / "news-and-press_20261015.html").read_text(encoding="utf-8")
+            self.assertEqual(self.tags(out), ([un.ARCHIVE_ROBOTS], [un.ARCHIVE_CANONICAL]))
+            self.assertEqual(live.read_text(encoding="utf-8"), self.LIVE, "the live page keeps index, follow")
+
+
+if __name__ == "__main__":
+    unittest.main()
