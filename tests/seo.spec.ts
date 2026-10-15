@@ -76,6 +76,13 @@ test.describe('Search Console hygiene', () => {
     expect(broken).toEqual([]);
   });
 
+  test('Support links go to the project Ko-fi page, not a placeholder', () => {
+    const bad = trackedHtml()
+      .filter((f) => !UNPUBLISHED.test(f))
+      .filter((f) => /href="https?:\/\/(www\.)?buymeacoffee\.com/.test(readFileSync(join(ROOT, f), 'utf8')));
+    expect(bad).toEqual([]);
+  });
+
   test('the link check catches a broken link (guards against a scan that matches nothing)', () => {
     expect(served('about')).toBe(true);
     expect(served('about.html')).toBe(true);
