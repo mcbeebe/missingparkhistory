@@ -132,6 +132,13 @@
 <label for="searchInput" class="sr-only">Search parks, states, and topics</label><input type="text" id="searchInput" placeholder="Search parks, states, topics..." autocomplete="off" enterkeyhint="search"/>
 <div class="search-results" id="searchResults"></div>
 </div>
+<div class="fund-bar">
+<button type="button" class="fund-toggle" id="fundToggle" aria-pressed="false" data-umami-event="funding-layer-toggle">&#128181; Blocked funding ($25.9M)</button>
+<div class="fund-row" id="fundRow" hidden>
+<div class="fund-lens" role="group" aria-label="Which blocked agreements to show"><button type="button" class="fund-chip" data-lens="hist" aria-pressed="true" data-umami-event="funding-lens-history">History &amp; collections &middot; <span id="fundHistLbl">58 &middot; $12.7M</span></button><button type="button" class="fund-chip" data-lens="all" aria-pressed="false" data-umami-event="funding-lens-all">All <span id="fundAllLbl">133 &middot; $25.9M</span></button></div>
+<button type="button" class="fund-offmap" id="fundOffmap" data-umami-event="funding-offmap-open">+ <span id="fundOffLbl">$7.1M</span> not on the map</button>
+</div>
+</div>
 </div>
 <style>
 .topics-dropdown{position:fixed;top:60px;right:50px;z-index:4002}
@@ -171,6 +178,10 @@
 <div class="voices-panel" id="voicesPanel" aria-hidden="true" aria-live="polite">
 <button class="voices-panel-close" onclick="closeVoicesPanel()" aria-label="Close public comments panel">&times;</button>
 <div id="voicesPanelContent"></div>
+</div>
+<div class="fund-panel" id="fundPanel" aria-hidden="true" aria-live="polite">
+<button class="fund-panel-close" onclick="closeFundPanel()" aria-label="Close blocked funding panel">&times;</button>
+<div id="fundPanelContent"></div>
 </div>
 <div class="legend">
 <div class="legend-title">Status Legend</div>
@@ -829,6 +840,228 @@ function phSelectTopic(name){
     var saved=null; try{ saved=localStorage.getItem(LS_KEY); }catch(e){}
     if(saved==='on') setToggle(true);
   }).catch(function(){});
+})();
+</script>
+<!-- ═══ BLOCKED PARTNER FUNDING LAYER — Interior's Aug 7, 2026 disapprovals (data/blockedFunding.json) ═══ -->
+<style>
+.fund-toggle{background:rgba(20,20,40,0.95);border:1px solid #444;color:#aaa;padding:7px 14px;border-radius:20px;font-size:12px;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:-apple-system,sans-serif;display:flex;align-items:center;gap:5px}
+.fund-toggle:hover{border-color:#888;color:#ccc}
+.fund-toggle.active{background:rgba(8,51,68,0.96);border-color:#22d3ee;color:#67e8f9;font-weight:600}
+.fund-toggle.active{box-shadow:0 2px 12px rgba(0,0,0,0.4)}
+.fund-toggle:focus-visible,.fund-chip:focus-visible,.fund-offmap:focus-visible{outline:2px solid #6d9eeb;outline-offset:2px}
+.fund-bar{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;margin:6px 0 0;max-width:min(720px,94vw)}
+.fund-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.fund-row[hidden]{display:none}
+.fund-lens{display:flex;gap:4px;background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;border-radius:20px;padding:3px}
+.fund-chip{background:0;border:0;color:#aaa;padding:4px 11px;border-radius:16px;font-size:11.5px;cursor:pointer;white-space:nowrap;font-family:inherit}
+.fund-chip[aria-pressed="true"]{background:#22d3ee;color:#06222a;font-weight:700}
+.fund-offmap{background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;color:#9a9aab;padding:5px 11px;border-radius:20px;font-size:11.5px;cursor:pointer;white-space:nowrap;font-family:inherit}
+.fund-offmap:hover{color:#ddd;border-color:#444}
+.fund-panel{display:none;position:fixed;top:340px;right:16px;width:390px;max-width:calc(100vw - 32px);max-height:calc(100vh - 360px);overflow-y:auto;z-index:4200;background:linear-gradient(180deg,rgba(10,10,15,0.98),rgba(15,15,22,0.98));border:1px solid #2a2a3a;border-radius:14px;padding:22px 24px;box-shadow:0 8px 40px rgba(0,0,0,0.6);backdrop-filter:blur(8px);color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.fund-panel.active{display:block}
+.fund-panel-close{position:absolute;top:10px;right:14px;background:0;border:0;color:#888;font-size:24px;line-height:1;cursor:pointer;padding:0}
+.fund-panel-close:hover{color:#fff}
+.fund-panel .fp-label{text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:#888;margin-bottom:6px}
+.fund-panel h3{margin:0 0 4px;font-family:Georgia,serif;font-size:22px;color:#fff;line-height:1.2;padding-right:24px}
+.fund-panel .fp-meta{font-size:12.5px;color:#888;margin-bottom:14px}
+.fund-panel .fp-headline{font-family:Georgia,serif;font-size:15px;line-height:1.45;color:#e4e4ec;background:rgba(34,211,238,0.12);border-radius:8px;padding:10px 12px;margin:0 0 14px}
+.fund-panel .fp-stats{display:flex;gap:10px;margin-bottom:14px}
+.fund-panel .fp-stat{flex:1;min-width:0;background:rgba(255,255,255,0.04);border:1px solid #2a2a3a;border-radius:8px;padding:10px 12px}
+.fund-panel .fp-stat .n{font-family:Georgia,serif;font-size:20px;font-weight:700;color:#22d3ee;line-height:1;font-variant-numeric:tabular-nums}
+.fund-panel .fp-stat .l{font-size:10.5px;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+.fund-panel .fp-ag{border-top:1px solid #2a2a3a;padding:10px 0}
+.fund-panel .fp-ag summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 10px;align-items:baseline}
+.fund-panel .fp-ag summary::-webkit-details-marker{display:none}
+.fund-panel .fp-ag summary:focus-visible{outline:2px solid #6d9eeb;outline-offset:2px;border-radius:4px}
+.fund-panel .fp-ti{font-size:13.5px;color:#eee;line-height:1.35}
+.fund-panel .fp-usd{font-size:12.5px;font-weight:700;color:#22d3ee;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fund-panel .fp-pt{grid-column:1/-1;font-size:11.5px;color:#888}
+.fund-panel .fp-more{grid-column:1/-1;font-size:11.5px;color:#22d3ee}
+.fund-panel .fp-ag[open] .fp-more{display:none}
+.fund-panel .fp-imp{margin:8px 0 2px;padding:9px 11px;background:rgba(255,255,255,0.035);border-left:2px solid #22d3ee;font-size:13px;line-height:1.5;color:#d0d0da}
+.fund-panel .fp-imp i{display:block;font-style:normal;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#888;margin-bottom:3px}
+.fund-panel .fp-fold{border-top:1px solid #2a2a3a;padding:10px 0;font-size:13px}
+.fund-panel .fp-fold>summary{cursor:pointer;color:#c9c9d6}
+.fund-panel .fp-btn{display:inline-block;margin-top:10px;background:0;border:1px solid #444;color:#ddd;border-radius:20px;padding:6px 14px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.fund-panel .fp-btn:hover{border-color:#22d3ee;color:#22d3ee}
+.fund-panel .fp-src{margin-top:14px;padding-top:10px;border-top:1px solid #2a2a3a;font-size:11px;line-height:1.5;color:#888}
+.fund-panel .fp-src a{color:#22d3ee}
+.fund-panel .fp-off{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;font-size:13px;border-top:1px solid #2a2a3a;padding:8px 0}
+.fund-panel .fp-off span:last-child{color:#22d3ee;font-weight:700;font-variant-numeric:tabular-nums}
+.fund-panel .fp-off small{grid-column:1/-1;color:#888;font-size:11px}
+@media(max-width:600px){
+  .fund-bar{margin:2px 0 0;gap:4px}
+  .fund-toggle{padding:5px 12px;font-size:11px}
+  .fund-row{gap:4px}
+  .fund-chip{padding:3px 9px;font-size:10.5px}
+  .fund-offmap{padding:4px 9px;font-size:10.5px}
+  /* above the fixed Take Action / Subscribe / bottom-bar buttons (z-index 4500) */
+  .fund-panel{top:auto;bottom:0;right:0;left:0;width:100%;max-width:100%;max-height:72vh;border-radius:14px 14px 0 0;padding:20px 18px;z-index:4600}
+}
+body.embed-mode .fund-bar{display:none}
+</style>
+<script>
+/* Blocked partner funding layer: Interior disapproved NPS partner agreements on Aug 7, 2026.
+   Rings sized by dollars blocked; the "History & collections" lens is the default view.
+   Decoupled from the main app like the Voices layer — fetches its own JSON, shares the global `map`. */
+(function(){
+  var LS_KEY='mph-funding-layer', LS_LENS='mph-funding-lens';
+  var toggles=[document.getElementById('fundToggle')].filter(Boolean);
+  var row=document.getElementById('fundRow');
+  var panel=document.getElementById('fundPanel');
+  var panelContent=document.getElementById('fundPanelContent');
+  var DATA=null, layer=null, layerOn=false, lens='hist', buildPromise=null;
+  try{ if(localStorage.getItem(LS_LENS)==='all') lens='all'; }catch(e){}
+
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function money(n){
+    if(n>=1e6){ var m=n/1e6; return '$'+(m>=10?m.toFixed(1):m.toFixed(2)).replace(/\.?0+$/,'')+'M'; }
+    if(n>=1e3) return '$'+Math.round(n/1e3)+'K';
+    return '$'+n;
+  }
+  function full(n){ return '$'+n.toLocaleString('en-US'); }
+  var STATUS='Disapproved by Interior Aug 7, 2026 &middot; still disapproved Sep 9';
+
+  function sourceLine(){
+    return '<div class="fp-src">Source: National Park Service Financial Assistance Submission Tracker records, '+
+      'published by the <a href="'+esc(DATA.meta.source_url)+'" target="_blank" rel="noopener">Center for Western Priorities</a>. '+
+      'Titles and impact statements are NPS&rsquo;s own words. &ldquo;History &amp; collections&rdquo; is our classification of the agreements.</div>';
+  }
+  function agItem(it,open){
+    return '<details class="fp-ag"'+(open?' open':'')+'><summary>'+
+      '<span class="fp-ti">'+esc(it.title)+'</span><span class="fp-usd">'+money(it.usd)+'</span>'+
+      '<span class="fp-pt">'+esc(it.partner)+'</span><span class="fp-more">Show NPS&rsquo;s impact statement &#9662;</span></summary>'+
+      '<div class="fp-imp"><i>If not funded &middot; NPS&rsquo;s words</i>'+esc(it.impact)+'</div></details>';
+  }
+  function parkIdFor(code){
+    if(typeof parkData==='undefined') return null;
+    for(var k in parkData){ if(parkData[k]&&parkData[k].code===code) return k; }
+    return null;
+  }
+  function openPanelHtml(html){
+    if(window.closeVoicesPanel) window.closeVoicesPanel();
+    panelContent.innerHTML=html;
+    panel.classList.add('active');
+    panel.setAttribute('aria-hidden','false');
+    panel.scrollTop=0;
+  }
+  window.closeFundPanel=function(){ if(panel){ panel.classList.remove('active'); panel.setAttribute('aria-hidden','true'); } };
+
+  function showPark(code){
+    var p=DATA.parks[code]; if(!p) return;
+    gaEv('funding_park_open',{park_code:code,park:p.name,agreements:p.n,usd:p.usd,lens:lens});
+    var hist=p.items.filter(function(i){return i.hist;}), other=p.items.filter(function(i){return !i.hist;});
+    var body='';
+    if(lens==='hist'){
+      body+= hist.length
+        ? '<p class="fp-headline">'+(hist.length===p.n?(p.n===1?'The one agreement':'All '+p.n+' agreements'):hist.length+' of '+p.n+' agreements')+
+          ' blocked here '+(hist.length===1?'is':'are')+' history and collections work, worth '+full(p.hist_usd)+'.</p>'
+        : '<p class="fp-headline">None of the '+(p.n===1?'agreement':p.n+' agreements')+' blocked here is history work. '+(p.n===1?'It is':'They are')+' listed below.</p>';
+    }
+    body+='<div class="fp-stats"><div class="fp-stat"><div class="n">'+p.n+'</div><div class="l">Agreements</div></div>'+
+      '<div class="fp-stat"><div class="n">'+money(p.usd)+'</div><div class="l">Blocked</div></div>'+
+      '<div class="fp-stat"><div class="n">'+p.partners.length+'</div><div class="l">Partner'+(p.partners.length>1?'s':'')+'</div></div></div>';
+    if(lens==='hist'&&hist.length){
+      body+=hist.map(function(it,i){return agItem(it,i===0);}).join('');
+      if(other.length) body+='<details class="fp-fold"><summary>Also blocked here ('+other.length+') &middot; '+money(p.usd-p.hist_usd)+'</summary>'+other.map(function(it){return agItem(it,false);}).join('')+'</details>';
+    } else {
+      body+=p.items.map(function(it,i){return agItem(it,i===0);}).join('');
+    }
+    var pid=parkIdFor(code);
+    if(pid) body+='<button type="button" class="fp-btn" data-pid="'+esc(pid)+'">See what was flagged at this park &rarr;</button>';
+    openPanelHtml('<div class="fp-label">Blocked partner funding'+(lens==='hist'?' &middot; History &amp; collections':'')+'</div>'+
+      '<h3>'+esc(p.name)+'</h3><div class="fp-meta">'+STATUS+'</div>'+body+sourceLine());
+  }
+  function showOffmap(){
+    gaEv('funding_offmap_open',{usd:DATA.meta.offmap_usd});
+    var rows=DATA.offmap.map(function(o){
+      return '<div class="fp-off"><span>'+esc(o.name)+'</span><span>'+money(o.usd)+'</span><small>'+o.n+' agreement'+(o.n>1?'s':'')+' &middot; '+(o.type==='park unit'?'park not on our map':'regional or national office')+'</small></div>';
+    }).join('');
+    openPanelHtml('<div class="fp-label">Blocked partner funding</div><h3>Not on the map</h3>'+
+      '<div class="fp-meta">'+STATUS+'</div>'+
+      '<p class="fp-headline">'+DATA.meta.offmap_n+' of the '+DATA.meta.n+' agreements, worth '+full(DATA.meta.offmap_usd)+', belong to Park Service offices and one park that has no marker on this map. They are counted in the '+money(DATA.meta.usd)+' total.</p>'+
+      rows+sourceLine());
+  }
+
+  function ringStyle(p){
+    var v=lens==='hist'?p.hist_usd:p.usd, max=lens==='hist'?DATA._maxHist:DATA._maxAll;
+    if(!v) return {radius:5,color:'#0e7490',weight:1.5,opacity:.7,dashArray:'2 3',fillColor:'#22d3ee',fillOpacity:.08};
+    return {radius:6+26*Math.sqrt(v/max),color:'#0e7490',weight:2,opacity:1,dashArray:null,fillColor:'#22d3ee',fillOpacity:.32};
+  }
+  function restyle(){ if(layer) layer.eachLayer(function(m){ m.setStyle(ringStyle(DATA.parks[m._fundCode])); m.setRadius(ringStyle(DATA.parks[m._fundCode]).radius); }); }
+
+  function buildLayer(){
+    return fetch('data/blockedFunding.json').then(function(r){return r.json();}).then(function(d){
+      DATA=d;
+      var codes=Object.keys(d.parks);
+      d._maxAll=Math.max.apply(null,codes.map(function(c){return d.parks[c].usd;}));
+      d._maxHist=Math.max.apply(null,codes.map(function(c){return d.parks[c].hist_usd;}));
+      if(!map.getPane('fundPane')){ map.createPane('fundPane'); map.getPane('fundPane').style.zIndex=650; }
+      layer=L.layerGroup();
+      // Largest rings first so smaller ones sit on top and stay clickable.
+      codes.sort(function(a,b){return d.parks[b].usd-d.parks[a].usd;}).forEach(function(c){
+        var p=d.parks[c];
+        var m=L.circleMarker([p.lat,p.lon],Object.assign({pane:'fundPane',bubblingMouseEvents:false},ringStyle(p)));
+        m._fundCode=c;
+        m.bindTooltip(esc(p.name)+' &middot; '+money(p.usd)+' blocked',{direction:'top'});
+        m.on('click',function(){ showPark(c); });
+        layer.addLayer(m);
+      });
+      var hl=document.getElementById('fundHistLbl'), al=document.getElementById('fundAllLbl'), ol=document.getElementById('fundOffLbl');
+      if(hl) hl.innerHTML=d.meta.hist_n+' &middot; '+money(d.meta.hist_usd);
+      if(al) al.innerHTML=d.meta.n+' &middot; '+money(d.meta.usd);
+      if(ol) ol.textContent=money(d.meta.offmap_usd);
+      return layer;
+    });
+  }
+  function ensureLayer(){ if(!buildPromise){ buildPromise=buildLayer().catch(function(e){ console.error('[funding layer] build failed',e); buildPromise=null; throw e; }); } return buildPromise; }
+
+  function setLens(l){
+    lens=l;
+    try{ localStorage.setItem(LS_LENS,l); }catch(e){}
+    if(row) row.querySelectorAll('.fund-chip').forEach(function(b){ b.setAttribute('aria-pressed',String(b.getAttribute('data-lens')===l)); });
+    restyle();
+    window.closeFundPanel();
+  }
+  // The lens row changes the controls bar's height; on phones the map and the Take Action /
+  // Subscribe buttons are stacked below that bar, so re-run the page's layout.
+  function relayout(){
+    if(typeof adjustMapForMobile==='function') adjustMapForMobile();
+    else if(typeof placeTopControls==='function') placeTopControls();
+  }
+  function setOn(on){
+    layerOn=on;
+    toggles.forEach(function(t){ t.classList.toggle('active',on); t.setAttribute('aria-pressed',String(on)); });
+    if(row){ row.hidden=!on; relayout(); }
+    try{ localStorage.setItem(LS_KEY,on?'on':'off'); }catch(e){}
+    if(on){ if(layer&&!map.hasLayer(layer)) map.addLayer(layer); }
+    else { if(layer&&map.hasLayer(layer)) map.removeLayer(layer); window.closeFundPanel(); }
+  }
+  function onToggle(){
+    gaEv('funding_layer_toggle',{state:layerOn?'off':'on'});
+    if(layer){ setOn(!layerOn); return; }
+    ensureLayer().then(function(){ setOn(true); }).catch(function(){});
+  }
+
+  toggles.forEach(function(t){ t.addEventListener('click',onToggle); });
+  if(row){
+    row.querySelectorAll('.fund-chip').forEach(function(b){
+      b.addEventListener('click',function(){ var l=b.getAttribute('data-lens'); if(l!==lens){ gaEv('funding_lens',{lens:l}); setLens(l); } });
+    });
+    var off=document.getElementById('fundOffmap');
+    if(off) off.addEventListener('click',function(){ if(DATA) showOffmap(); });
+  }
+  panelContent.addEventListener('click',function(e){
+    var b=e.target.closest('.fp-btn'); if(!b) return;
+    var pid=b.getAttribute('data-pid');
+    window.closeFundPanel();
+    if(typeof openPanel==='function') openPanel(pid);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.closeFundPanel(); });
+
+  setLens(lens);
+  var saved=null; try{ saved=localStorage.getItem(LS_KEY); }catch(e){}
+  if(saved==='on') ensureLayer().then(function(){ setOn(true); }).catch(function(){});
 })();
 </script>
 </body>
