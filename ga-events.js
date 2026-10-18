@@ -25,6 +25,11 @@
      voices_quote_click     a park link inside a river quote (park, park_slug, destination park_page|map)
      voices_cta_click       Methodology / Back to the map / About buttons (link_text)
      (voices_park_open and voices_layer_toggle are sent from voices.html / index.html)
+   Blocked funding layer (sent from index.html):
+     funding_layer_toggle   the "Blocked funding" pill (state: on|off)
+     funding_lens           History & collections / All chip (lens: hist|all)
+     funding_park_open      a funding ring is clicked (park_code, park, agreements, usd, lens)
+     funding_offmap_open    the "not on the map" button (usd)
    Status page:
      status_link_click      a link in the page body (section, link_type source|internal|external|email,
                             link_text, link_domain); section is verdict, stats, lane:<x>, case:<x>,
