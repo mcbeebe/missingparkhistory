@@ -2,15 +2,240 @@
   "code": "TIMU",
   "name": "Timucuan Ecological & Historic Preserve",
   "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-B-2026-10-17",
+  "verifiedBy": "verifier-B-2026-10-17 (28 claims checked; 7 corrections)",
+  "summary": "<p>Where the St. Johns and Nassau rivers meet the Atlantic, Timucuan Ecological and Historic Preserve protects one of the largest remaining salt marsh estuaries on the Southeast coast: 46,000 acres of salt marsh, coastal dunes, hardwood hammocks and fresh, brackish and salt water inside the city limits of Jacksonville, with dolphins, migratory birds, manatees, wood storks and loggerhead sea turtles. More than 200 archeological sites, among them Archaic shell rings, record over 6,000 years of human habitation. Congress created the preserve in 1988 around Fort Caroline National Memorial, authorized in 1950; only 8,430 acres, 18 percent of the preserve, are federally owned. <a href=\"https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Fort Caroline recalls la Caroline, the colony of mostly Huguenot settlers that René de Laudonnière planted on the river’s south bank in 1564 — by the park brochure’s account the first French colony in what is now the United States. In September 1565 Spanish forces under Pedro Menéndez de Avilés captured it and massacred most of its defenders; the brochure calls the battles here the first time European nations fought for control of lands in what is now the United States. <a href=\"https://npshistory.com/publications/timu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On Fort George Island, Kingsley Plantation keeps a 1798 plantation house and the ruins of the tabby cabins where enslaved people lived; the foundation document calls it the oldest surviving example of an antebellum Spanish Colonial plantation. The preserve also includes American Beach on Amelia Island, which the same document calls the largest and most popular beach resort established by and for African Americans in the Jim Crow era. <a href=\"https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "title": "Foundation Document, Timucuan Ecological and Historic Preserve, Florida (NPS, 2012)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/timu/index.htm",
+      "title": "NPSHistory.com: Timucuan Ecological and Historic Preserve / Fort Caroline archive page — overview (NPS brochure texts) and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The preserve is named for the Timucua. Their ancestors lived along the St. Johns estuary for thousands of years and left the shell mounds found throughout the preserve. The people who met the French in 1562 under Chief Saturiwa were one of several Timucua-speaking groups of north and central Florida and southeastern Georgia; they fished, gathered oysters and clams, hunted, planted maize, squash and beans, and traveled in dugout canoes. They shared food with the colonists and helped build their fort, and later helped French forces recapture it in 1568. Spain then imposed tribute, forced them into missions, and European disease devastated them: from a population once in the tens of thousands, the park brochure says, only 550 were recorded in 1698, and no known Native people today call themselves Timucua. <a href=\"https://npshistory.com/publications/timu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The 2012 foundation document states they were extinct as a people by 1752. <a href=\"https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/timu/index.htm",
+          "title": "NPSHistory.com: Timucuan Ecological and Historic Preserve / Fort Caroline archive page — overview (NPS brochure texts) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+          "title": "Foundation Document, Timucuan Ecological and Historic Preserve, Florida (NPS, 2012)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Anta Majigeen Ndiaye was thirteen, the study says, when Kingsley bought her in Havana in 1806; the special history study, following Senegalese historian Abdou Cisse, identifies her as the daughter of a member of the royal lineage of Jolof, enslaved after her father’s failed challenge for the throne. The study describes Kingsley’s sexual exploitation of her; she was pregnant with his son when she reached his Laurel Grove plantation. Freed with her three children in 1811, Anna Kingsley managed his plantations in his absence. <a href=\"https://npshistory.com/publications/timu/shs-fort-george-island.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> She acquired land and enslaved people of her own; after Florida became a U.S. territory in 1821, oppressive new laws led Anna, her two sons and some former slaves to move to Haiti in 1837. She returned to Jacksonville and died in 1870. <a href=\"https://npshistory.com/publications/timu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The study also records Nansy, who in 1792 petitioned the Spanish governor that she and her husband had freed themselves during the Revolution; no further record of her petition survives. <a href=\"https://npshistory.com/publications/timu/shs-fort-george-island.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+          "title": "Amani T. Marshall, The Enslaved Communities on Fort George Island: A Special History Study for Timucuan Ecological & Historic Preserve (NPS/OAH, March 2022)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/timu/index.htm",
+          "title": "NPSHistory.com: Timucuan Ecological and Historic Preserve / Fort Caroline archive page — overview (NPS brochure texts) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Kingsley Plantation’s cabins are the largest concentration of tabby slave quarters in the United States, the foundation document says. <a href=\"https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Amani T. Marshall’s 2022 Park Service study traces the hundreds of enslaved people on Fort George Island. John McQueen, granted the island in 1791, had brought more than 300 enslaved people, many of whom considered themselves free and had likely been re-enslaved by him after the Revolution; slave trader Zephaniah Kingsley rented the island from 1814 and bought it in 1817. Laborers worked by the task system and could sell crops from their own plots. But stocks have been found in the main-house basement (staff are unsure whether they were used there), and after Kingsley’s death in 1843 his nephew Charles McNeill, at the San Jose plantation, flogged Romeo, and when Romeo ran away offered a reward for him “dead or alive.” Marshall concludes that the evidence contradicts Kingsley’s claims of mild discipline, and calls the violence torture. <a href=\"https://npshistory.com/publications/timu/shs-fort-george-island.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+          "title": "Foundation Document, Timucuan Ecological and Historic Preserve, Florida (NPS, 2012)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+          "title": "Amani T. Marshall, The Enslaved Communities on Fort George Island: A Special History Study for Timucuan Ecological & Historic Preserve (NPS/OAH, March 2022)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Most of the preserve is salt marsh. A 2024 U.S. Geological Survey fact sheet prepared with the Park Service estimates that about 81 percent of its non-water area is likely to be inundated by 2050 under an intermediate-low sea-level scenario, and about 88 percent by 2100 under an intermediate-high scenario, and it pictures Fort Caroline flooded after Hurricane Ian in September 2022. <a href=\"https://npshistory.com/publications/geology/fs/2024-3008.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The Park Service’s 2024 climate futures summary for Fort Caroline finds that the area has warmed at a rate of 6 °F per century since 1970, and that the amount of rain falling in the region’s heaviest storms has risen 37 percent since 1958. <a href=\"https://npshistory.com/publications/foca/climate-futures-sum.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/geology/fs/2024-3008.pdf",
+          "title": "USGS Fact Sheet 2024–3008, Projected Sea-Level Rise and High Tide Flooding at Timucuan Ecological and Historic Preserve, Florida (June 2024)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foca/climate-futures-sum.pdf",
+          "title": "NPS Climate Change Response Program, Fort Caroline National Memorial Climate Futures Summary (2024)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Where the St. Johns and Nassau rivers meet the Atlantic; one of the largest remaining salt marsh estuaries on the Southeast Coast",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Park Significance, p. 9"
+    },
+    {
+      "claim": "46,000 acres within Jacksonville city limits; salt marshes, coastal dunes, upland hardwood hammocks, salt/fresh/brackish waters; dolphins, migratory birds, loggerhead sea turtle, West Indian manatee, wood stork, bald eagle",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Brief Description, p. 7"
+    },
+    {
+      "claim": "Over 200 archeological sites; over 6,000 years of human habitation; Archaic shell ring sites",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Brief Description, p. 7; Significance, p. 9"
+    },
+    {
+      "claim": "Fort Caroline authorized 1950; preserve established by 1988 legislation; federal ownership 8,430 acres, 18%",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Brief Description, pp. 7–8"
+    },
+    {
+      "claim": "Laudonnière's 1564 expedition established the first French colony in what is now the U.S.; colonists mostly Huguenots; south bank of the river; September 1565 Menéndez captured la Caroline and massacred most defenders; first time European nations fought for control of lands in what is now the U.S.",
+      "sourceUrl": "https://npshistory.com/publications/timu/index.htm",
+      "locator": "overview, 2017 brochure, 'Fort de la Caroline'",
+      "interpretive": true
+    },
+    {
+      "claim": "Kingsley Plantation: 1798 plantation house, tabby cabin ruins, slave cemetery; oldest surviving example of an antebellum Spanish Colonial plantation; cabins the largest concentration of existing slave quarters constructed of tabby in the U.S.",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Brief Description p. 8; Significance p. 9"
+    },
+    {
+      "claim": "American Beach the largest and most popular beach resort established by and for African Americans during the Jim Crow era",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Significance, p. 10"
+    },
+    {
+      "claim": "Pre-Columbian people left shell mounds throughout the preserve; Timucua a number of cultural traditions defined by a shared language; dugout canoes; oysters and clams",
+      "sourceUrl": "https://npshistory.com/publications/timu/index.htm",
+      "locator": "overview, 2017 brochure, 'Who Were the Timucua?'"
+    },
+    {
+      "claim": "Timucuans under Chief Saturiwa met the French in 1562; one of several Timucua-speaking tribes of central and north Florida and southeastern Georgia; maize, squash, beans",
+      "sourceUrl": "https://npshistory.com/publications/timu/index.htm",
+      "locator": "overview, 'The Native Floridians'"
+    },
+    {
+      "claim": "Timucua helped build the fort; helped French forces under de Gourgues recapture the fort in 1568; Spain imposed tribute and forced them into missions; 550 in 1698 from tens of thousands; no known Native Americans today call themselves Timucua",
+      "sourceUrl": "https://npshistory.com/publications/timu/index.htm",
+      "locator": "overview, 'The Native Floridians' and 'Who Were the Timucua?'"
+    },
+    {
+      "claim": "Timucua 'extinct as a people by 1752' (foundation document wording)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/timu-fd-2012.pdf",
+      "locator": "Significance, p. 10"
+    },
+    {
+      "claim": "Special history study on hundreds of enslaved people on Fort George Island (Marshall, March 2022)",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "Introduction, p. 1"
+    },
+    {
+      "claim": "McQueen brought over three hundred enslaved people to Spanish Florida; granted Fort George Island November 1791; many considered themselves free and had likely been re-enslaved by McQueen after the Revolution",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 1, pp. 3–4"
+    },
+    {
+      "claim": "Zephaniah and Anna Kingsley rented 1814–1817, owned 1817–1839; Kingsley engaged in buying and selling enslaved people",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "Introduction p. 1; ch. 2 p. 27"
+    },
+    {
+      "claim": "Task system (a task: planting, hoeing or harvesting a quarter acre); enslaved people raised and sold their own crops (corn sold to overseer McNeill, 1845)",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 2, pp. 27–28"
+    },
+    {
+      "claim": "Stocks found in the basement of the main house; NPS staff unsure whether used there or stored; Marshall: Kingsley and other enslavers confined and tortured people on Fort George Island",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 2, p. 30, fn. 25",
+      "interpretive": true
+    },
+    {
+      "claim": "After Kingsley's death (1843), his nephew Charles McNeill managing the San Jose labor camp flogged Romeo, a leader of the resistance, who then ran away; twenty-dollar reward 'dead or alive'; McNeill's violence 'disproves' Kingsley's patriarchal description",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 2, p. 29, fns. 22–23",
+      "interpretive": true
+    },
+    {
+      "claim": "Anta Majigeen Ndiaye bought in Havana, arrived Laurel Grove October 1806; thirteen years old; Cisse identifies her as daughter of a member of the royal lineage of Jolof enslaved after father's failed challenge; pregnant with son George",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 1, pp. 11–12, fns. 22",
+      "interpretive": true
+    },
+    {
+      "claim": "Kingsley manumitted Anna and three children March 1811; entrusted her with management of his plantations",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 1, p. 12, fn. 23"
+    },
+    {
+      "claim": "Anna acquired land and slaves after 1811; 1821 U.S. territory; Anna, two sons and some former slaves moved to Haiti 1837 to escape oppressive laws; Anna returned to Jacksonville, died 1870",
+      "sourceUrl": "https://npshistory.com/publications/timu/index.htm",
+      "locator": "overview, 2017 brochure, 'Kingsley Plantation'"
+    },
+    {
+      "claim": "Nansy petitioned the governor in 1792 claiming she and her husband freed themselves in Charleston during the Revolution; no further record of her petition",
+      "sourceUrl": "https://npshistory.com/publications/timu/shs-fort-george-island.pdf",
+      "locator": "ch. 1, pp. 4, 7"
+    },
+    {
+      "claim": "Most of the park is salt marsh; ~81% of non-water area likely inundated (intermediate-low, 2050); ~88% (intermediate-high, 2100); Fort Caroline flooded after Hurricane Ian, September 2022",
+      "sourceUrl": "https://npshistory.com/publications/geology/fs/2024-3008.pdf",
+      "locator": "USGS FS 2024–3008, pp. 1–3 and Figure 3"
+    },
+    {
+      "claim": "Since 1970 FOCA warmed at 6 °F per century; 37% increase in rain falling during heavy storms in the region since 1958",
+      "sourceUrl": "https://npshistory.com/publications/foca/climate-futures-sum.pdf",
+      "locator": "Key messages; Historical climate change, p. 2"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/timu/fort-caroline-exhibit.jpg",
+      "caption": "The fort exhibit at Fort Caroline, which teaches visitors of the failed French colony in Florida",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/timu/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7B5019-1DD8-B71B-0B8694BFD33E8B3C.jpg",
+      "evidenceUrl": "https://www.nps.gov/timu/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1118,
+      "height": 676,
+      "bytes": 182517,
+      "note": "On-page caption (home-page slideshow): \"The fort exhibit at Fort Caroline teaches visitors of the failed French colony in Florida. NPS Photo\". Re-encoded JPEG, original dimensions.",
+      "verifiedBy": "verifier-B-2026-10-17 (credit 'NPS Photo' confirmed on evidence page; image src matched)"
+    },
+    {
+      "file": "images/history/timu/tabby-cabins.jpg",
+      "caption": "The tabby cabins at Kingsley Plantation, homes of many enslaved people",
+      "credit": "NPS Photo/Darryl Herring",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/timu/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7B4D58-1DD8-B71B-0B40B94C4363CBFB.jpg",
+      "evidenceUrl": "https://www.nps.gov/timu/index.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "slavery",
+      "width": 1100,
+      "height": 736,
+      "bytes": 202500,
+      "note": "On-page caption (home-page slideshow): \"The tabby cabins at Kingsley Plantation were the homes of many enslaved people. NPS Photo/Darryl Herring\". Resized from 1200x803.",
+      "verifiedBy": "verifier-B-2026-10-17 (credit 'NPS Photo/Darryl Herring' confirmed on evidence page; image src matched)"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/timu/index.htm",
     "adhiUrl": null,

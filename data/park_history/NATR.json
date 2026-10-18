@@ -2,15 +2,291 @@
   "code": "NATR",
   "name": "Natchez Trace Parkway",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>The Natchez Trace Parkway is a 444-mile scenic road that follows the approximate route of the historic Natchez Trace, an ancient travel corridor connecting Natchez, Mississippi, to Nashville, Tennessee. The original trace was used for thousands of years by Native Americans, including the Natchez, Chickasaw, and Choctaw nations, and became a major route for \"Kaintuck\" boatmen who floated goods down the Mississippi River to Natchez or New Orleans and then walked home overland. The trace's peak use was between 1785 and 1820, before steamboats made the return trip upriver practical. The parkway, administered by the National Park Service, was authorized in 1938 and substantially completed in 2005, passing through diverse landscapes from cypress swamps to Appalachian foothills.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-A-2026-10-17",
+  "verifiedBy": "verifier-A-2026-10-17 (64 claims checked; 16 corrections)",
+  "summary": "<p>The Natchez Trace Parkway runs 444 miles through Mississippi, Alabama and Tennessee, from the bluffs of the lower Mississippi River at Natchez to the Appalachian foothills near Nashville, along a corridor whose human use the Park Service dates to 8000 BCE. It began, the 2014 foundation document says, as animal trails, and became a human route because it followed high ground and easily passable topography; 180 segments of the original route survive, some worn into a sunken profile where foot, horse and wagon traffic cut into erodible loess soil. The corridor crosses the homelands of the Natchez, Chickasaw and Choctaw nations, links more than 350 archeological sites and 22 burial and ceremonial mounds, and protects more than 2,600 species across seven ecoregions. <a href=\"https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/natr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>By 1785 the Trace was a route for boatmen who floated down the Mississippi to sell their goods in Natchez and New Orleans. President Thomas Jefferson designated it a national post road in 1801, Meriwether Lewis died on it in 1809, and General Andrew Jackson moved militia and regular troops along it during the War of 1812. Stands, or inns, provided lodging, food and drink to travelers. Congress created the parkway in 1938 to commemorate the route; it took from a groundbreaking on September 16, 1937, to May 21, 2005, to finish. <a href=\"https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/natr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/natr/pr-v80n3-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>One of the foundation document’s interpretive themes, “Homelands in Transition,” holds that generations of American Indian occupation came to an end as Americans migrated westward; four sections of the Trail of Tears and parts of the Choctaw and Chickasaw removal routes cross the parkway. The document also records that interpretation had not focused on the message that mound sites are sacred, and that climate models predict heavier rainfall that could accelerate erosion and expose buried cultural resources along the corridor. <a href=\"https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "title": "Foundation Document, Natchez Trace Parkway, Mississippi-Alabama-Tennessee (NPS, October 2014)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/natr/index.htm",
+      "title": "NPSHistory.com: Natchez Trace Parkway archive page — overview and milepost guide (from the NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/natr/pr-v80n3-2016.pdf",
+      "title": "Davis, “The Road Is a Park, and the Park Is a Road,” Public Roads 80(3), Nov/Dec 2016 (Federal Highway Administration)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>A 1994 National Register nomination describes the Trace as interlocking Native paths running from the Cumberland settlements to the Chickasaw villages, on to the Choctaw towns, and from there to the villages of the Natchez on the Mississippi. Emerald Mound, an eight-acre ceremonial mound built between 1200 and 1730, is the nation’s second-largest, according to the foundation document. <a href=\"https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/natr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>At milepost 397.4 the Old Trace marks the boundary of Chickasaw lands ceded to the United States in 1805 and 1816. In 1811 Choctaw agent Silas Dinsmoor moved his agency to a site beside the road; travelers passing through the Choctaw Nation had to display a pass to him. In the 1820 Treaty of Doaks Stand the Choctaws gave up six million acres and agreed to move west; it took another ten years and a second treaty before they went. More than 20 tribes have an ancestral connection to the Trace and hold its mounds as sacred ground. <a href=\"https://npshistory.com/publications/natr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+          "title": "Brown, National Register nomination: Old Natchez Trace and Choctaw Agency Site (NPS Southeast Regional Office, 1994)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/natr/index.htm",
+          "title": "NPSHistory.com: Natchez Trace Parkway archive page — overview and milepost guide (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+          "title": "Foundation Document, Natchez Trace Parkway, Mississippi-Alabama-Tennessee (NPS, October 2014)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Mount Locust, at milepost 15.5, was a cotton plantation as well as a stand; the Park Service’s 2022 draft landscape inventory states that it ran on enslaved labor until after the Civil War. It counts 26 enslaved workers in Paulina Ferguson’s household in the 1820 census, 42 in 1830, and 53 in her 1849 estate appraisal, divided among her three surviving children. The 1860 Jefferson County slave census shows T. Chamberlain with 72 enslaved workers and 16 enslaved houses. Mount Locust’s slave dwellings have not been found; 1998 archeology mapped 42 regularly shaped depressions in their cemetery, on a wooded ridge northwest of the house; burials appear arranged by families. <a href=\"https://npshistory.com/publications/natr/cli-mount-locust.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In late 1811 Andrew Jackson, travelling to Natchez to obtain enslaved people, refused to show his pass at the Choctaw Agency and armed several of the enslaved people with him; agent Dinsmoor, himself an enslaver on the agency land, armed Indians and whites. No blood was shed. <a href=\"https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+          "title": "Cultural Landscapes Inventory: Mount Locust, Natchez Trace Parkway (NPS, 5/20/2022 draft)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+          "title": "Brown, National Register nomination: Old Natchez Trace and Choctaw Agency Site (NPS Southeast Regional Office, 1994)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Elizabeth Female Academy, at Washington, Mississippi, six miles east of Natchez, was chartered on February 17, 1818, on grounds that Elizabeth Roach donated to the Methodist Mississippi Conference, and opened on November 12 that year. Bishop Charles Galloway, writing in 1899, called it the first chartered institution for the higher education of young women in the South, if not in the United States; the park brochure calls it the first school for women chartered by Mississippi. It did collegiate work and conferred degrees, took 28 to 63 boarders a year between 1819 and 1829, and counted John James Audubon on its faculty. The capital’s move to Jackson, yellow fever epidemics and other causes forced it to suspend operation in 1845; by 1974 one brick wall stood. <a href=\"https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/natr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Up the road at Mount Locust, family tradition holds that Paulina Ferguson divorced James Chamberlain in 1816 and ran the house as a stand until around 1842. <a href=\"https://npshistory.com/publications/natr/cli-mount-locust.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf",
+          "title": "Cox, National Register nomination: Elizabeth Female Academy (No. 101-3X) (NPS, 1974)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/natr/index.htm",
+          "title": "NPSHistory.com: Natchez Trace Parkway archive page — overview and milepost guide (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+          "title": "Cultural Landscapes Inventory: Mount Locust, Natchez Trace Parkway (NPS, 5/20/2022 draft)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "444 miles; three states; established 1938; officially completed 2005",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "overview paragraph 2"
+    },
+    {
+      "claim": "Human use of the corridor dates to 8000 BCE; Trace began as animal trails, followed high ground; 180 segments of the original corridor still exist; sunken profile from foot, horse and wagon traffic on erodible loess soils",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 6, Fundamental Resources and Values, “The Old Natchez Trace”"
+    },
+    {
+      "claim": "From the bluffs of the lower Mississippi River to the southern Appalachian foothills of Tennessee",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "overview, “Today the Natchez Trace Parkway creates a greenway…”"
+    },
+    {
+      "claim": "Traverses homelands of the Natchez, Chickasaw and Choctaw; links more than 350 archeological sites and 22 burial and ceremonial mounds; seven ecoregions; more than 2,600 species",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 5 significance statements; p. 6"
+    },
+    {
+      "claim": "By 1785 the Old Natchez Trace was used as a transportation route for boatmen who floated down the Mississippi to sell their goods in Natchez and New Orleans; 1801 Jefferson designated it a US postal route; Lewis died 1809; Jackson moved volunteer militia and regular army troops during War of 1812",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 3 Brief Description"
+    },
+    {
+      "claim": "“Kaintucks” walked or rode home via the Old Trace; stands (inns) provided lodging, food and drink",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "overview paragraph 4"
+    },
+    {
+      "claim": "Stands provided lodging, food and drink (brochure); 61 steamboats on the Mississippi and Ohio by 1821, and new roads replaced the Trace (context; not used in prose)",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 p. 4"
+    },
+    {
+      "claim": "Created by Congress as a unit in 1938 to commemorate the Old Natchez Trace",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 3 Brief Description"
+    },
+    {
+      "claim": "Groundbreaking September 16, 1937, to completion of the final section May 21, 2005",
+      "sourceUrl": "https://npshistory.com/publications/natr/pr-v80n3-2016.pdf",
+      "locator": "p. 30 (Public Roads Nov/Dec 2016)"
+    },
+    {
+      "claim": "Homelands in Transition theme: generations of American Indian occupation came to an end as Americans migrated westward; tribal displacement",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 8 Interpretive Themes"
+    },
+    {
+      "claim": "Four sections of the Trail of Tears and sections of the Choctaw and Chickasaw Removal Routes cross the Parkway",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 12 FRV analysis, American Indian History and Culture, Conditions"
+    },
+    {
+      "claim": "Interpretation has not focused on messages that mound sites are sacred; climate models predict increases in precipitation that could accelerate erosion, exposing/damaging cultural resources",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 13 Threats"
+    },
+    {
+      "claim": "Native trail system: Nashville/Cumberland settlements to Chickasaw villages, linking to Choctaw towns, then to villages of the Natchez on the Mississippi; interlocking local paths",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 p. 1"
+    },
+    {
+      "claim": "Emerald Mound eight-acre ceremonial mound built between 1200 and 1730",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "milepost guide, MP 10.3"
+    },
+    {
+      "claim": "Emerald Mound the second-largest ceremonial mound in the United States",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 5 significance statements",
+      "interpretive": true
+    },
+    {
+      "claim": "MP 397.4 Old Trace: boundary of Chickasaw lands ceded to US in 1805 and 1816",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "milepost guide, MP 397.4"
+    },
+    {
+      "claim": "1811 Choctaw agent Silas Dinsmoor moved agency headquarters to a site adjacent to the road; agent required travelers to display a pass",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 pp. 2–3"
+    },
+    {
+      "claim": "1820 Treaty of Doaks Stand: Choctaws gave up six million acres and agreed to move west; another ten years and a second treaty before they moved",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 p. 3, footnote 5"
+    },
+    {
+      "claim": "More than 20 tribes have ancestral connection to the Trace; associated tribes maintain spiritual connection to mound sites as sacred ancestral ground",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 6 FRV American Indian History and Culture"
+    },
+    {
+      "claim": "Mount Locust at Milepost 15.5; operated as a frontier plantation using enslaved labor until after the Civil War; dependent on cotton",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 11 (Inventory Summary); Milepost 15.5 p. 17"
+    },
+    {
+      "claim": "1820 census 26 enslaved workers in Mrs. Ferguson’s household; 1830 42; 1849 estate appraisal 53, divided among three surviving children",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 68"
+    },
+    {
+      "claim": "1860 slave census for Jefferson County shows Mr. T. Chamberlain with 72 enslaved workers; census also indicates 16 enslaved houses (Young 1999) — T. Chamberlain’s county total, not stated as Mount Locust’s population",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 70"
+    },
+    {
+      "claim": "Dwellings of the enslaved workers have not been found",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 12"
+    },
+    {
+      "claim": "Cemetery for enslaved workers on a ridge top in a wooded area northwest of the main house; 1998 archeology mapped forty-two regularly shaped depressions (Garrow); burials appear arranged by families",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 128; p. 242"
+    },
+    {
+      "claim": "Late 1811 Jackson traveling to Natchez to obtain slaves refused to produce pass; Dinsmoor armed Indians and whites; Jackson armed several of his slaves; no blood shed",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 p. 3 (based on Elliott 1991 draft nomination)"
+    },
+    {
+      "claim": "Dinsmoor owned several slaves and the agency land became his personal plantation",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-old-natchez-trace-choctaw-agency-site.pdf",
+      "locator": "Section 8 p. 4"
+    },
+    {
+      "claim": "Elizabeth Female Academy chartered February 17, 1818; at Washington, six miles east of Natchez; Methodist; grounds donated by Mrs. Elizabeth Roach to the Mississippi Conference in 1818; opened November 12, 1818",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf",
+      "locator": "Statement of Significance"
+    },
+    {
+      "claim": "Galloway (1899) states it was the first chartered institution for the higher education of young women in the South, if not in the United States",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf",
+      "locator": "Statement of Significance; bibliography (Galloway 1899)",
+      "interpretive": true
+    },
+    {
+      "claim": "Brochure: founded in 1818, first school for women chartered by the state of Mississippi",
+      "sourceUrl": "https://npshistory.com/publications/natr/index.htm",
+      "locator": "milepost guide, MP 5.1"
+    },
+    {
+      "claim": "Did full collegiate work and conferred degrees; boarders 28 to 63 annually 1819–1829; Audubon on faculty; removal of capital to Jackson, yellow fever epidemics and other causes forced the academy to suspend operation in 1845",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf",
+      "locator": "Statement of Significance"
+    },
+    {
+      "claim": "Only one brick wall is standing at the site (1974 nomination); nps.gov photo caption “All that remains…”",
+      "sourceUrl": "https://npshistory.com/publications/natr/nr-elizabeth-female-academy.pdf",
+      "locator": "Section 7 description"
+    },
+    {
+      "claim": "Family tradition: Paulina divorced Chamberlain in 1816 and operated Mount Locust as a stand until around 1842",
+      "sourceUrl": "https://npshistory.com/publications/natr/cli-mount-locust.pdf",
+      "locator": "p. 67"
+    },
+    {
+      "claim": "Old Natchez Trace began as animal trails; evolved into a human route because it followed high ground and easily passable topography",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 6, FRV “The Old Natchez Trace”"
+    },
+    {
+      "claim": "Interpretive theme “Homelands in Transition”: generations of American Indian occupation came to an end as Americans migrated westward",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/natr-fd-2014.pdf",
+      "locator": "p. 8 Interpretive Themes"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/natr/old-trace-autumn.jpg",
+      "caption": "A section of the Old Trace in autumn fog. The historic trail still survives in segments.",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/natr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7FFFCC-1DD8-B71B-0B86D0A48B59ADCE.jpg",
+      "evidenceUrl": "https://www.nps.gov/natr/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 933,
+      "bytes": 229948,
+      "note": "On-page caption: \"The \\\"Old Trace,\\\" the historic trail commemorated by the Natchez Trace Parkway today, still survives in segments. The Old Trace was the main road through the Old Southwest, connecting Natchez to Nashville by going through Chickasaw and Choctaw lands. NPS Photo\"; alt text \"A foggy section of the Old Trace in autumn\". Resized from 1920x1280."
+    },
+    {
+      "file": "images/history/natr/elizabeth-female-academy.jpg",
+      "caption": "All that remains of the Elizabeth Female Academy, at milepost 5.1",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/places/elizabeth-female-academy.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/cropped_image/primary/29655F00-A69F-66AC-4E63F22E2EA0D5CB.jpg",
+      "evidenceUrl": "https://www.nps.gov/places/elizabeth-female-academy.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "women",
+      "width": 1400,
+      "height": 787,
+      "bytes": 241471,
+      "note": "On-page caption: \"All that remains of the Elizabeth Female Academy located at Milepost 5.1 NPS Photo\"; alt text \"The ruins, just a brick wall, stands amongst green trees.\" Resized from 1859x1045."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/natr/index.htm",
     "adhiUrl": "https://irma.nps.gov/DataStore/DownloadFile/481937",

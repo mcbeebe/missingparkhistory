@@ -1,16 +1,301 @@
 {
   "code": "CUGA",
-  "name": "Cumberland Gap NHP",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Cumberland Gap National Historical Park straddles the border of Kentucky, Virginia, and Tennessee at a natural pass through the Appalachian Mountains that has served as a major migration corridor for thousands of years. Herds of bison and Native American peoples — including Cherokee and Shawnee — used the gap long before European settlement. In 1775, Daniel Boone led a party to widen the trail through the gap into what became the Wilderness Road, and by 1810 an estimated 200,000 to 300,000 settlers had passed through Cumberland Gap heading west. The park was authorized by Congress in 1940 and encompasses over 24,000 acres of forested mountain terrain.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "name": "Cumberland Gap National Historical Park",
+  "entries": [
+    "621"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-E-2026-10-17",
+  "verifiedBy": "verifier-E-2026-10-17 (48 claims checked; 8 corrections)",
+  "summary": "<p>From Alabama to Canada the Appalachian Mountains rise in parallel ridges between the seaboard and the continent’s interior, and for anyone traveling by horse or on foot the crossing points were few. Cumberland Gap is one of them: a notch in the Cumberland Mountains (carved by wind and water, in the 2016 foundation document’s words; caused by a fault block cutting across the range, according to the 2024 historic resource study) that migrating bison used first and American Indians followed. Their Warrior’s Path ran through it. <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Dr. Thomas Walker, staking out an 800,000-acre grant beyond the Blue Ridge, explored the gap in 1750, and in 1775 the longhunter Daniel Boone was commissioned to blaze a road through it. Boone’s trace became the Wilderness Road, the primary way west until 1810. The 2008 park brochure counts 200,000 to 300,000 people crossing (dating the stream from 1780 in its text and 1776 in its timeline); the 2016 foundation document says nearly 300,000 between 1775 and 1810, and that some 40 million Americans can trace their history to the crossing. In the Civil War both sides thought the gap strategic; it changed hands several times but saw no major action. <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress authorized the park on June 11, 1940, and it was established in 1955. U.S. 25E then ran through the gap; the highway was moved into the Cumberland Gap Tunnel, opened in 1996, and the gap was restored toward its appearance around 1810. The park now covers 24,547 acres in three states, more than 14,000 of them recommended for wilderness. <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/cuga/index.htm",
+      "title": "NPSHistory.com: Cumberland Gap NHP archive page — overview (from the 2008 NPS brochure), timeline and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "title": "North Wind Resource Consulting, Historic Resource Study, Volume One: Cumberland Gap National Historical Park (NPS, September 2024)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "title": "Foundation Document, Cumberland Gap National Historical Park, Kentucky, Tennessee and Virginia (NPS, 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The park’s 2024 historic resource study puts human use of the region at more than 12,000 years, though only ten of nearly 90 sites known in the park by 2005 had prehistoric components. Cherokee, Chickasaw, Choctaw and Muscogee (Creek) peoples to the south and Shawnee, Wyandotte and Delaware to the north reached hunting grounds on a trail first worn by elk and bison, which the Shawnee called Athiamiowee, the Path of the Armed Ones (the brochure spells it Athawominee). In 1750 Walker saw crosses and figures carved by Indigenous people on laurel trees near the gap. <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In the 1774 Treaty of Camp Charlotte the Shawnee gave up their hunting grounds south of the Ohio, and in March 1775 a Cherokee council at Sycamore Shoals, despite opposition, most notably from Dragging Canoe, approved the sale of some 20 million acres. The study describes the wars of 1776–1794 as fighting against colonists who kept violating treaties protecting tribal lands. <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+          "title": "North Wind Resource Consulting, Historic Resource Study, Volume One: Cumberland Gap National Historical Park (NPS, September 2024)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuga/index.htm",
+          "title": "NPSHistory.com: Cumberland Gap NHP archive page — overview (from the 2008 NPS brochure), timeline and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>The people who crossed the gap, the foundation document notes, ranged from merchants and doctors to servants and enslaved people. Near the gap itself slavery took a different shape than in the lower South, according to the 2024 historic resource study: its small, self-sufficient farms were not heavily dependent on enslaved labor, most small farmers in the region enslaved fewer than five people, and the enslaved typically worked alongside their enslavers as farmers, craftspeople, cattle herders and merchants. A few large landowners — Robert Crockett, Daniel Huff and James Patterson — each held 20 to 30 enslaved people before the Civil War, and the 1850 census listed 33 slaveholders in or near the gap. When John G. Newlee took over the iron furnace at Cumberland Gap in 1841, he brought several enslaved Black workers who were employed in running it. <a href=\"https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+          "title": "Foundation Document, Cumberland Gap National Historical Park, Kentucky, Tennessee and Virginia (NPS, 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+          "title": "North Wind Resource Consulting, Historic Resource Study, Volume One: Cumberland Gap National Historical Park (NPS, September 2024)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>The 2024 historic resource study traces Black history in the towns beside the park, Cumberland Gap and Middlesboro. After the Civil War, freed people from the Cumberland Gap area settled at Tiprell, the former home of Confederate Maj. G. B. Cockrell, until his return forced them off the land. Many went back to Cumberland Gap and joined a Black community growing up around the old grist mill; the 1870 census counted 45 Black residents in the town. In industrializing Middlesboro, nearby, there were 447 Black residents at its 1890 charter, and in 1891 Berea College graduate George W. Bell opened the first school there for Black children, later Lincoln High School, where he taught with his wife, Elgetha. Later, the study finds, the region’s Black community declined as industrial jobs moved away and coal mining fell sharply in the 1920s, part of a wider exodus from the Appalachian coalfields to industrial centers such as Pittsburgh, Cleveland and Akron. <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+          "title": "North Wind Resource Consulting, Historic Resource Study, Volume One: Cumberland Gap National Historical Park (NPS, September 2024)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuga/index.htm",
+          "title": "NPSHistory.com: Cumberland Gap NHP archive page — overview (from the 2008 NPS brochure), timeline and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>The foundation document says modern travelers can hardly imagine what the men, women and children crossing the gap endured: hunger, cold, injury, disease, loneliness and uprooted families. A traveler’s 1803 journal quoted in the park brochure describes four or five hundred people on the road, many nearly naked and barefoot, with a single horse for two or three children. <a href=\"https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cuga/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>A century later, on Brush Mountain inside today’s park, the families of the Hensley Settlement lived what the 2024 historic resource study calls a primitive existence reminiscent of the region’s earliest settlers. In December 1903 Eunice “Nicey” Hensley and her husband Sherman became the first of the family to move there; at its peak in the 1930s about 120 people lived in the settlement. According to the 2024 historic resource study, women did most of its domestic labor — preserving food, making quilts and serving as midwives. Sherman Hensley was the last to leave, in 1951. <a href=\"https://npshistory.com/publications/cuga/hrs-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+          "title": "Foundation Document, Cumberland Gap National Historical Park, Kentucky, Tennessee and Virginia (NPS, 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuga/index.htm",
+          "title": "NPSHistory.com: Cumberland Gap NHP archive page — overview (from the 2008 NPS brochure), timeline and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+          "title": "North Wind Resource Consulting, Historic Resource Study, Volume One: Cumberland Gap National Historical Park (NPS, September 2024)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Appalachians rise in parallel ridges from Alabama to Canada; crossing points few and far between for travel by horse, boat or foot",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview, 'Crossing the Great Mountain Barrier' para. 1"
+    },
+    {
+      "claim": "HRS: notch caused by a fault block running perpendicular to the mountain chain's axis (FD instead says the gap was 'carved by wind and water')",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "Executive Summary, p. ii"
+    },
+    {
+      "claim": "First used by herds of bison, then followed by American Indians",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "locator": "Brief Description of the Park, p. 3; significance 'Transportation Corridor', p. 6"
+    },
+    {
+      "claim": "Warrior's Path (Athawominee, 'path of the armed ones') passed through the gap",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "'Cumberland Gap Timeline' intro"
+    },
+    {
+      "claim": "Dr. Thomas Walker hired to stake out an 800,000-acre grant beyond the Blue Ridge; gap explored by Walker and five companions in 1750",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview para. 3; timeline 1750"
+    },
+    {
+      "claim": "1775 longhunter Daniel Boone commissioned to blaze a road through the gap; trace evolved into the Wilderness Road; primary way to the West until 1810",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview paras. 3-4"
+    },
+    {
+      "claim": "Brochure: 1780-1810 between 200,000 and 300,000 people crossed (prose); timeline: 1776-1810, 200,000 to 300,000 settlers",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview para. 5; timeline 1776-1810"
+    },
+    {
+      "claim": "Nearly 300,000 people between 1775 and 1810; some 40 million Americans can trace their history to crossing through the Gap",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "locator": "significance 'Crossing the Great Appalachian Barrier', p. 6; interpretive themes, p. 10",
+      "interpretive": true
+    },
+    {
+      "claim": "Civil War: both sides considered the gap strategic; changed hands several times; no major action",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview para. 6; timeline 1861-65"
+    },
+    {
+      "claim": "Authorized by Congress June 11, 1940; established 1955",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "timeline 1940; Establishment block"
+    },
+    {
+      "claim": "U.S. 25E rerouted through Cumberland Gap Tunnel, opened 1996; gap restored to how it looked around 1810",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview para. 7; timeline 1996, 2002"
+    },
+    {
+      "claim": "Park encompasses 24,547 acres; more than 14,000 acres recommended for wilderness",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "locator": "Brief Description of the Park, p. 3"
+    },
+    {
+      "claim": "Prehistoric use of the region spans more than 12,000 years (Ahlman et al. 2005)",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, Precontact History, p. 15"
+    },
+    {
+      "claim": "As of 2005 nearly 90 archaeological sites documented in the park, only ten with prehistoric temporal affiliations",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 16"
+    },
+    {
+      "claim": "Southern tribes Cherokee, Choctaw, Chickasaw, Creek/Muskogee (Muscogee); north of the Ohio Shawnee, Wyandotte, Mingoe, Tuscarawnee, Delaware",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 15"
+    },
+    {
+      "claim": "Trail initially forged by migrating elk and buffalo; known to the Shawnee as Athiamiowee, the Path of the Armed Ones",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, pp. 15, 22"
+    },
+    {
+      "claim": "Walker noted laurel trees near the gap with crosses and figures carved by local Indigenous peoples",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 23"
+    },
+    {
+      "claim": "Treaty of Camp Charlotte, October 19, 1774: Shawnee relinquished ancestral hunting grounds south of the Ohio River",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 25"
+    },
+    {
+      "claim": "Grand Council of the Cherokee Nation at Sycamore Shoals approved sale of 20 million acres despite opposition from Dragging Canoe and others; treaty signed March 17, 1775",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 26"
+    },
+    {
+      "claim": "Cherokee American (Chickamauga) Wars 1776-1794 against colonists who continued to violate treaties protecting tribal lands",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 27",
+      "interpretive": true
+    },
+    {
+      "claim": "Travelers came from all walks of life: from merchants and doctors to servants and enslaved people; hardships hunger, cold, injury, disease, loneliness, uprooted families",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "locator": "Interpretive Themes, p. 10"
+    },
+    {
+      "claim": "Small self-sufficient farms near the Gap not heavily dependent on enslaved labor; most small farmers in the region enslaved fewer than five people; enslaved typically worked alongside enslavers as farmers, crafts persons, cattle herders and merchants",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, 'Black American Community Development', p. 40",
+      "interpretive": true
+    },
+    {
+      "claim": "Robert Crockett, Daniel Huff and James Patterson each had 20 to 30 enslaved people before the Civil War; 1850 census listed 33 enslavers in or near the Gap",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 40"
+    },
+    {
+      "claim": "1841 John G. Newlee assumed ownership of Beaty's iron furnace, accompanied by several enslaved Blacks employed in its operation",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 30"
+    },
+    {
+      "claim": "Freed people followed Gap Creek to Tiprell, former home of Confederate Maj. G. B. Cockrell, forced to vacate on his return; returned to a Black community around the old grist mill; 1870 census 45 Black residents in Cumberland Gap",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 41"
+    },
+    {
+      "claim": "Middlesboro 447 Black residents at its 1890 charter; 1891 George W. Bell, Berea graduate, established first school for Black children, later Lincoln High School; Bell taught there with his wife, Elgetha",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 41"
+    },
+    {
+      "claim": "Early 20th century the Black community in the Cumberland Gap region declined as industrial jobs moved away; coal mining declined sharply in the 1920s; part of a larger exodus from Appalachian coalfields; those leaving central Appalachia typically relocated to Pittsburgh, Cleveland, Akron",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 43"
+    },
+    {
+      "claim": "1803 journal (brochure attributes to Francis Ashby): four or five hundred crossing, men, women and children almost naked, barefoot; a horse for two or three children",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "overview, quotation following para. 7"
+    },
+    {
+      "claim": "December 1903 Eunice 'Nicey' Ann and Sherman Hensley first family members to move to the settlement; peak in 1930s about 120 people; Sherman Hensley last to leave in 1951",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, 'Hensley Settlement', p. 37"
+    },
+    {
+      "claim": "Women at Hensley Settlement performed most domestic labor: preserving food, making quilts, serving as midwives",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, p. 37"
+    },
+    {
+      "claim": "Brush Mountain, within the park; Hensley families lived a primitive existence reminiscent of the earliest settlers in the Cumberland Gap region",
+      "sourceUrl": "https://npshistory.com/publications/cuga/hrs-v1.pdf",
+      "locator": "ch. 2, 'Hensley Settlement', pp. 36-37",
+      "interpretive": true
+    },
+    {
+      "claim": "Carved by wind and water, Cumberland Gap forms a prominent break in the Appalachian chain",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuga-fd-2016.pdf",
+      "locator": "Brief Description of the Park, p. 3"
+    },
+    {
+      "claim": "Visitor center on U.S. 25E, 0.25 mile south of Middlesboro",
+      "sourceUrl": "https://npshistory.com/publications/cuga/index.htm",
+      "locator": "'Planning Your Visit'"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/cuga/pinnacle-overlook-view.jpg",
+      "caption": "View from the Pinnacle Overlook",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cuga/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C87BA5D-1DD8-B71B-0B9E79FC9A030567.jpg",
+      "evidenceUrl": "https://www.nps.gov/cuga/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1200,
+      "height": 800,
+      "bytes": 221061,
+      "note": "On-page figcaption (park homepage gallery): \"View from the Pinnacle Overlook\" with credit span \"NPS Photo\". Contemporary park photograph. Resized from 1500x1000."
+    },
+    {
+      "file": "images/history/cuga/hensley-settlement-cabins.jpg",
+      "caption": "Weathered log cabins at Hensley Settlement",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cuga/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C87BB9F-1DD8-B71B-0B03EA00319ED876.jpg",
+      "evidenceUrl": "https://www.nps.gov/cuga/index.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "women",
+      "width": 1200,
+      "height": 800,
+      "bytes": 182644,
+      "note": "On-page figcaption (park homepage gallery): \"Weathered log cabins greet visitors to Hensley Settlement\" with credit span \"NPS Photo\". Contemporary park photograph. Resized from 1500x1000. themeKey women because that section is about Hensley Settlement."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/cuga/index.htm",
     "adhiUrl": null,

@@ -1,21 +1,228 @@
 {
   "code": "SITK",
   "name": "Sitka National Historical Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Sitka National Historical Park in Sitka, Alaska, is the oldest federally designated park in Alaska, established as a public park in 1890 and redesignated a national monument in 1910 and a national historical park in 1972. The park preserves the site of the 1804 Battle of Sitka — the last major armed resistance by the Tlingit people against Russian colonization in Alaska. The battle occurred when Tlingit warriors defended a wooden fort (the Shís'gi Noow) against a combined Russian and Aleut force; after several days of fighting, the Tlingit withdrew in a strategic retreat. The park also houses the Southeast Alaska Indian Cultural Center, where Tlingit, Haida, and Tsimshian artists practice and demonstrate traditional carving, weaving, and other art forms, and maintains a renowned collection of totem poles along a temperate rainforest trail.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "1059"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-E-2026-10-17",
+  "verifiedBy": "verifier-E-2026-10-17 (44 claims checked; 6 corrections)",
+  "summary": "<p>Tlingit people had thrived for countless generations on the island they called Shee, in a land of forest, rivers and sea where a warm current keeps Sitka’s harbor free of ice all year. Salmon came in staggering numbers on the spawning runs; from cedar and other conifers of the rain forest they built multi-family plank houses and carved canoes up to 60 feet long. At the mouth of the Indian River, where the park now lies, the river, the ocean and the coastal rain forest meet in a habitat rich enough that pink salmon runs sometimes pack the river with more than 1.3 million fish. <a href=\"https://npshistory.com/publications/sitk/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Russian fur traders, called Anooshi by the Tlingit, pushed into Southeast Alaska under Alexander Baranov of the Russian-American Company. In 1802 Tlingits, especially the Kiks.ádi clan of Shee At’iká, attacked his new outpost north of Sitka and killed most of its Russian and Aleut inhabitants. In 1804 Baranov returned with Russians, Aleuts and the warship Neva; the Kiks.ádi, led by their war chief K’alyaan, held a fort at the mouth of the Indian River, repulsed a landing and wounded Baranov, then withdrew after a siege when their gunpowder ran out. Russia made Sitka the company’s headquarters, and in 1867 sold Alaska to the United States. <a href=\"https://npshistory.com/publications/sitk/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In 1890 the federal government reserved the Indian River site as a public park; it became Sitka National Monument in 1910, and in 1972 Public Law 92-510 enlarged it, added the Russian Bishop’s House and made it Sitka National Historical Park. The 2012 foundation document calls it the site of a major armed resistance of Alaska Native people to Russian colonization. <a href=\"https://npshistory.com/publications/sitk/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/sitk-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/sitk/index.htm",
+      "title": "NPSHistory.com: Sitka NHP archive page — overview (from the 2016 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/sitk-fd-2012.pdf",
+      "title": "Foundation Statement / Foundation Document, Sitka National Historical Park, Alaska (NPS, June 2012)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Thornton’s 1998 study for the Park Service describes the Indian River as Kiks.ádi territory: the clan possessed it and kept seasonal subsistence camps on the lower river until the late 1800s. Its 1804 fort, Shís’ḵ’i Noow (best translated “Green Wood Fort”), stood on a new kind of fort site, designed to defend against large Russian ships and their weaponry; shallow tidelands kept keeled vessels off. From the Kiks.ádi perspective, Thornton writes, the battle was an unwarranted attack on their sovereignty; memorials for the dead began perhaps as early as 1806, and the withdrawal is now retraced as the Kiks.ádi Survival March. The 1910 proclamation listed the graves of Russians killed in the battle but not Tlingit ones. The Alaska Native Brotherhood, founded in Sitka in 1912, proposed the Southeast Alaska Indian Cultural Center, opened in the park in 1969. Thornton concludes that Tlingit social and symbolic ties to the park remain strong, while subsistence ties have been largely severed. <a href=\"https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+          "title": "Thornton (with Hope), Traditional Tlingit Use of Sitka National Historical Park, final report to NPS (July 31, 1998)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>According to Herb Hope, as Thornton reports, women gathered kelp to make the green palisade logs slippery. Oral history handed down to Herman Kitka credits a woman interpreter, apparently married to a Russian officer, with warning Katlian (the brochure’s K’alyaan) that the Castle Hill fort would not stand up to cannon fire — the reason, in that account, the Kiks.ádi built in the forest at Indian River. In the 20th century Ellen Hope Lang (later Hayes), a Kiks.ádi woman and former resident of The Cottages, the Presbyterian Model Cottage Settlement, was a member of the Alaska Native Brotherhood, the craft center board and the park staff, eventually as superintendent; Thornton credits her with helping bring the cultural center to life. <a href=\"https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+          "title": "Thornton (with Hope), Traditional Tlingit Use of Sitka National Historical Park, final report to NPS (July 31, 1998)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2017 Park Service assessment found that the land at Sitka is rising through tectonic uplift, so relative sea level near the park is falling, about 2.29 millimeters a year by NOAA’s trend, and every park asset lies outside the projected 2050 sea-level rise zone. The hazard it singles out is tsunami: the park lies just east of the Fairweather fault system, which has tremendous potential to generate tsunamis. Across the five coastal hazards it scored, eight totem poles are the only structures rated highly vulnerable, and all four highly vulnerable transportation assets are trails, including the Totem Walk. In a separate tsunami case study, 65 percent of the park’s assets, worth over $26 million, have high tsunami vulnerability. <a href=\"https://npshistory.com/publications/sitk/coastal-haz-cc-vulnerability.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sitk/coastal-haz-cc-vulnerability.pdf",
+          "title": "Peek et al., Sitka NHP Coastal Hazards & Sea-Level Rise Asset Vulnerability Assessment & Tsunami Vulnerability Case Study (NPS 314/154045, December 2017)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Tlingits thrived on the island they called Shee for countless generations",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "overview, 'When They Tell the Story of Sitka'"
+    },
+    {
+      "claim": "Warm Japanese Current kept Sitka's harbor free of ice year-round; salmon available in staggering quantities during spawning runs",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'The Tlingit People' para. 1"
+    },
+    {
+      "claim": "Cedar and other conifers; multi-family dwellings of beams and split planks; canoes up to 60 feet long",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'The Tlingit People' para. 2"
+    },
+    {
+      "claim": "Convergence of Indian River, Pacific Ocean and coastal rain forest; pink salmon runs sometimes pack the Indian River with over 1.3 million fish",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'Who Lives Here?'"
+    },
+    {
+      "claim": "Russians called Anooshi by the Tlingits; Baranov head of the Russian-American Company",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'Coming of the Anooshi'"
+    },
+    {
+      "claim": "1802 Tlingits, especially the Kiks.ádi clan of Shee At'iká, attacked Redoubt St. Michael and killed most of its Russian and Aleut inhabitants",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'Resistance at Indian River' para. 1"
+    },
+    {
+      "claim": "1804 Baranov returned with Russians and Aleuts and the warship Neva; Kiks.ádi fort at mouth of the Indian River; war chief K'alyaan; repulsed attack, wounded Baranov; after seven days Kiks.ádi had run out of gunpowder and left during the night",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'Resistance at Indian River' paras. 1-2"
+    },
+    {
+      "claim": "Baranov made Shee At'iká the company headquarters (New Archangel, commonly Sitka); 1867 United States bought Alaska",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'New Archangel and American Sitka'"
+    },
+    {
+      "claim": "1890 federal reserve Indian River Park; Sitka National Monument 1910 (March 23, 1910 establishment block); Sitka NHP 1972",
+      "sourceUrl": "https://npshistory.com/publications/sitk/index.htm",
+      "locator": "'New Archangel and American Sitka'; Establishment block"
+    },
+    {
+      "claim": "Public Law 92-510 (Nixon, 1972) expanded the area, added the Russian Bishop's House, redesignated as Sitka National Historical Park",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sitk-fd-2012.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "Site of a significant major armed resistance of Alaska Native people to Russian colonization",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sitk-fd-2012.pdf",
+      "locator": "Significance statement 1, p. 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Kiks.ádi possessed the Indian River territory and maintained seasonal subsistence camps on the lower river until the late nineteenth century",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "Abstract, p. ii"
+    },
+    {
+      "claim": "Shís'ḵ'i Noow, best translated 'Green Wood Fort'; a new kind of fort site designed to defend against large Russian ships and their weaponry; shallow tidelands a buffer to keeled Russian vessels",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "pp. 40-41 (page images checked)"
+    },
+    {
+      "claim": "From the Kiks.ádi perspective the battle is seen as an unwarranted attack on Kiks.ádi sovereignty",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "p. 43",
+      "interpretive": true
+    },
+    {
+      "claim": "Commemorative events began perhaps as soon as the Tlingits returned to Indian River in spring 1806; withdrawal re-enacted as the 'Kiks.ádi Survival March'",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "pp. 43-44"
+    },
+    {
+      "claim": "1910 proclamation identified the graves of the Russians (but not the Tlingit) killed in the Battle of 1804",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "p. 48"
+    },
+    {
+      "claim": "Alaska Native Brotherhood founded in Sitka in 1912; ANB 1968 proposal led to the Southeast Alaska Indian Cultural Center opening in 1969",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "pp. 37, 49-51"
+    },
+    {
+      "claim": "Social and symbolic uses of the park remain strong and have been enhanced since the 1960s; subsistence and material connections largely severed",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "Abstract, p. ii",
+      "interpretive": true
+    },
+    {
+      "claim": "Kelp gathered by women made the green wood 'slippery' (Herb Hope)",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "p. 41"
+    },
+    {
+      "claim": "Tlingit oral history handed down to Herman Kitka: a woman interpreter, apparently married to a Russian officer, told Katlian the Castle Hill fort would not stand up to cannon fire; responsible for building the fort in the forest",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "p. 41",
+      "interpretive": true
+    },
+    {
+      "claim": "Ellen Hope Lang [now Hayes], local Kiks.ádi woman and former resident of The Cottages, member of the ANB, Craft Center Board and park staff (eventually superintendent), helped bring the Cultural Center to life",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "p. 51, fn. 8"
+    },
+    {
+      "claim": "SITK experiencing significant tectonic uplift, resulting in relative sea-level fall; NOAA trend 2.29 mm/year decrease",
+      "sourceUrl": "https://npshistory.com/publications/sitk/coastal-haz-cc-vulnerability.pdf",
+      "locator": "Unique Factors: Sea-Level Rise Data and Figure 2, p. 8; Exposure Results (all assets outside 2050 SLR projection)"
+    },
+    {
+      "claim": "Five coastal hazards evaluated; eight totem poles the only structural assets with high vulnerability; all four high-vulnerability transportation assets are trails, including the Totem Walk; tsunami case study: 65% of assets high tsunami vulnerability, combined value over $26 million",
+      "sourceUrl": "https://npshistory.com/publications/sitk/coastal-haz-cc-vulnerability.pdf",
+      "locator": "Executive Summary, p. 4"
+    },
+    {
+      "claim": "SITK lies immediately east of the Fairweather transform fault system, with tremendous potential to generate tsunamis",
+      "sourceUrl": "https://npshistory.com/publications/sitk/coastal-haz-cc-vulnerability.pdf",
+      "locator": "Tsunami Hazards & Data, p. 8"
+    },
+    {
+      "claim": "Model Cottage Settlement, a utopian colony founded by the Presbyterian church on a site now partly occupied by the park Visitors Center",
+      "sourceUrl": "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf",
+      "locator": "Abstract, p. ii"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/sitk/totem-trail.jpg",
+      "caption": "Mosquito Legend Pole on the Totem Trail",
+      "credit": "NPS Photo/Weston Kessler",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sitk/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7A8147-1DD8-B71B-0B9D9FA5E52A677B.jpg",
+      "evidenceUrl": "https://www.nps.gov/sitk/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 800,
+      "height": 1200,
+      "bytes": 244241,
+      "note": "On-page figcaption (park homepage gallery): \"See the Park's 18 Totem Poles with a walk along the Totem Trail.\" with credit span \"NPS Photo/Weston Kessler\". Contemporary park photograph (portrait). Resized from 1067x1600. Verifier: image shows a single pole; on-page alt text is \"Mosquito Legend Pole\", so caption changed from \"Totem poles along the Totem Trail\"."
+    },
+    {
+      "file": "images/history/sitk/indian-river-salmon-run.jpg",
+      "caption": "Salmon run in the Indian River",
+      "credit": "NPS Photo/Weston Kessler",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sitk/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7A7B91-1DD8-B71B-0B18105FF66D4FD4.jpg",
+      "evidenceUrl": "https://www.nps.gov/sitk/index.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "indigenous",
+      "width": 800,
+      "height": 1200,
+      "bytes": 215377,
+      "note": "On-page figcaption (park homepage gallery): \"Salmon run in the Indian River from mid-July until late September.\" with credit span \"NPS Photo/Weston Kessler\". Contemporary park photograph (portrait). Resized from 1067x1600. themeKey indigenous: section describes Kiks.ádi fishing camps on the lower Indian River."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/sitk/index.htm",
     "adhiUrl": "https://npshistory.com/publications/sitk/adhi.pdf",
     "hrsUrl": "https://npshistory.com/publications/sitk/russian_bishop.pdf",
-    "ethnoUrls": [],
+    "ethnoUrls": [
+      "https://npshistory.com/publications/sitk/traditional-tlingit-use.pdf"
+    ],
     "brochureUrls": [],
     "docCount": 52
   },

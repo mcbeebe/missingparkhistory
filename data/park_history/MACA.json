@@ -2,15 +2,234 @@
   "code": "MACA",
   "name": "Mammoth Cave National Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Mammoth Cave National Park in central Kentucky protects the world's longest known cave system, with over 420 miles of surveyed passageways — more than twice the length of any other known cave. The cave was formed over millions of years as mildly acidic water dissolved the park's thick limestone bedrock. Native Americans explored and mined minerals in the cave at least 4,000 years ago, and during the War of 1812, enslaved laborers were forced to mine calcium nitrate (saltpeter) from the cave for use in gunpowder. Enslaved men, most notably Stephen Bishop, served as the cave's first guides in the 1830s and 1840s, making major explorations and mapping discoveries. The park was established in 1941 and was designated a UNESCO World Heritage Site in 1981 and an International Biosphere Reserve in 1990.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-A-2026-10-17",
+  "verifiedBy": "verifier-A-2026-10-17 (48 claims checked; 6 corrections)",
+  "summary": "<p>Beneath the sandstone and shale ridges of Kentucky’s Edmonson, Hart and Barren counties lies the longest known cave system in the world: by 2014, the foundation document says, 400 miles had been surveyed (the park brochure gives over 365 miles), with underground rivers still carving new passages up to 450 feet below the surface. The cave holds one of the world’s most diverse cave ecosystems, and the Green River, running 27 miles through the park, is among the most biologically diverse rivers in North America. People have been drawn to this country for nearly 10,000 years. <a href=\"https://npshistory.com/publications/foundation-documents/maca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/maca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Mammoth Cave was a tourist attraction by 1816, older than any national park. Its saltpetre was mined for gunpowder before and during the War of 1812, and the park’s 2023 historic resource study says enslaved people played a major role in making the cave a successful business. The park was authorized in 1926, a year after caver Floyd Collins’s death in Sand Cave drew national attention, and it was fully established in 1941; it now covers 53,000 surface acres and became a World Heritage Site in 1981. The brochure warns that park status does not guarantee protection: the cave’s groundwater begins far beyond the boundary and carries agricultural runoff, human waste, highway spills and drilling waste into the cave streams. <a href=\"https://npshistory.com/publications/maca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/maca/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/maca-fd-2014.pdf",
+      "title": "Foundation Document, Mammoth Cave National Park, Kentucky (NPS, 2014)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/maca/index.htm",
+      "title": "NPSHistory.com: Mammoth Cave National Park archive page — overview (from the NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/maca/hrs.pdf",
+      "title": "Commonwealth Heritage Group, Mammoth Cave National Park Historic Resource Study (NPS, October 2023)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Paleo-Indians hunted in the Green River valley more than 10,000 years ago. Between about 5,000 and 1,500 years ago, the park’s 2021 ethnographic overview reports, people ventured more than a mile into Mammoth and Salts caves to live, explore, mine minerals, hold ceremonies and bury their dead; the caves preserved their textiles, torch material and plant remains, some of the best evidence of early plant domestication in Kentucky, from sunflower and goosefoot to squash. The park brochure gives a narrower span, 4,000 to 2,000 years ago, and notes cane reed torches preserved in drier passageways. Seven federally recognized tribes claim the area as ancestral land: the Eastern Band of Cherokee Indians, Cherokee Nation, United Keetoowah Band of Cherokee Indians, Absentee Shawnee Tribe, Eastern Shawnee Tribe, Shawnee Tribe and Chickasaw Nation. The overview notes the park has never systematically studied their oral histories of the place. <a href=\"https://npshistory.com/publications/maca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/maca/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/maca/index.htm",
+          "title": "NPSHistory.com: Mammoth Cave National Park archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/maca/eoa.pdf",
+          "title": "Applegate & Hudepohl, Ethnographic Overview and Assessment of Mammoth Cave National Park, Phase III Final Report (Western Kentucky University for NPS, May 2021)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>From the early 1790s through the War of 1812, the park’s 2023 historic resource study reports, an estimated 70 enslaved workers, many leased from surrounding counties, dug and hauled nitrate-bearing dirt by torchlight and stood in leaching vats stirring it; the cave produced 300 to 500 pounds of saltpetre a day. <a href=\"https://npshistory.com/publications/maca/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Enslaved men also became its renowned guides. From 1838 Stephen Bishop, guiding at 17, and Mat and Nick Bransford, owned or leased by the cave’s owners, led tours that could last up to 18 hours. Bishop was the first to cross the Bottomless Pit and drew a map of the cave from memory, published in 1845. Owner John Croghan’s will valued Bishop at $600, his wife Charlotte at $450 and their son Thomas at $100, freeing them seven years after his death; they gained freedom in 1856, and Bishop died the next year. <a href=\"https://npshistory.com/publications/maca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/maca/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/maca/hrs.pdf",
+          "title": "Commonwealth Heritage Group, Mammoth Cave National Park Historic Resource Study (NPS, October 2023)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/maca/index.htm",
+          "title": "NPSHistory.com: Mammoth Cave National Park archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>After emancipation Black guides kept working the cave, and the Bransfords and their descendants guided there for over 100 years, while other Black workers were limited to jobs such as porter, cook and laundress. Tours were almost completely segregated. In 1921 Matt and Zemmie Bransford opened a 14-room summer resort on Flint Ridge for Black travelers; the Kentucky National Park Commission bought it for $3,000 in December 1934 to make way for the park. <a href=\"https://npshistory.com/publications/maca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/maca/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>A Black CCC company, camp NP-1, spent 12,000 man-days on cave improvements, completing 24 miles of trails. Yet by the end of 1939 every Black guide had been forced to retire, and when the Park Service took over the tours none were rehired, including Clifton, Arthur, Eddie, Elzie and George Bransford, leaving an all-white guide force for the first time since 1838. <a href=\"https://npshistory.com/publications/maca/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/maca/index.htm",
+          "title": "NPSHistory.com: Mammoth Cave National Park archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/maca/hrs.pdf",
+          "title": "Commonwealth Heritage Group, Mammoth Cave National Park Historic Resource Study (NPS, October 2023)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Longest known cave system in the world with 400 miles surveyed to date (FD 2014); Edmonson, Hart and Barren counties",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/maca-fd-2014.pdf",
+      "locator": "p. 3 Brief Description"
+    },
+    {
+      "claim": "Beneath sandstone and shale ridges; cave streams forming passages at depths up to 450 feet; one of the world’s most diverse cave ecosystems; Green River 27 miles through the park, one of North America’s most biologically diverse rivers; humans drawn for nearly 10,000 years",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "overview paragraphs 1–3; “Caves Still Forming”"
+    },
+    {
+      "claim": "Became an attraction by 1816; predates all national parks",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "overview paragraph 5"
+    },
+    {
+      "claim": "Enslaved population played a major role in developing the cave into a successful financial endeavor",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "p. 75",
+      "interpretive": true
+    },
+    {
+      "claim": "Saltpetre mining in Mammoth Cave from the early 1790s through the War of 1812",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 75–76"
+    },
+    {
+      "claim": "Floyd Collins died in Sand Cave in 1925; publicity played a role in the park’s 1926 authorization",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“Human Use of the Cave”"
+    },
+    {
+      "claim": "Authorized 1926, fully established 1941; World Heritage Site 1981; (present) 53,000 surface acres",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“A World Heritage Site and Biosphere Reserve”"
+    },
+    {
+      "claim": "Groundwater originates far beyond the park; pollutants: human waste, agricultural runoff, hazardous spills on roadways, oil and gas drilling wastes",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“A World Heritage Site…” and “Caves Still Forming”"
+    },
+    {
+      "claim": "Paleo-Indians hunted in the Green River valley over 10,000 years ago",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“Human Use of the Cave and Its Resources”"
+    },
+    {
+      "claim": "Late Archaic (3,000–5,000 years ago) through Early–Middle Woodland (1,500–3,000 years ago) cave use: more than one mile into Mammoth and Salts caves; habitation, exploration, mineral mining, ceremony-ritual, burial; textiles, torch material, paleofecal and archeobotanical remains preserved; best evidence of early plant domestication in Kentucky (sunflower, goosefoot, maygrass, sumpweed, squash…)",
+      "sourceUrl": "https://npshistory.com/publications/maca/eoa.pdf",
+      "locator": "§ 3.1, p. 50 (PDF p. 51)"
+    },
+    {
+      "claim": "Cane reed torches preserved in drier passageways",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“Human Use of the Cave and Its Resources”"
+    },
+    {
+      "claim": "Brochure: prehistoric peoples explored the cave 4,000 years ago; exploration ceased 2,000 years ago (differs from EOA span)",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "overview paragraph 4; “Human Use of the Cave”"
+    },
+    {
+      "claim": "Seven federally recognized tribes claim the area as ancestral lands (list); no systematic study of their oral histories",
+      "sourceUrl": "https://npshistory.com/publications/maca/eoa.pdf",
+      "locator": "§ 3.1, pp. 50–51 (PDF pp. 51–52)"
+    },
+    {
+      "claim": "Estimated 70 enslaved workers; often leased from surrounding counties; 300 to 500 pounds of saltpetre a day; torchlight; shoveled and hauled dirt; stood in leaching vats stirring",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "p. 42; pp. 75–76"
+    },
+    {
+      "claim": "1838 Stephen Bishop and Mat and Nick Bransford, enslaved persons owned and leased by the cave’s owners, became guides; Bishop began at 17; first to cross Bottomless Pit",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“Human Use of the Cave”"
+    },
+    {
+      "claim": "Tours up to 18 hours; Bishop drew a map from memory (possibly during a Locust Grove visit), published 1845; Mat and Nick Bransford came to work in the cave around 1838",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 78–80"
+    },
+    {
+      "claim": "Croghan’s will: Stephen $600, Charlotte $450, Thomas $100; freed seven years after his death; freedom 1856; Bishop died 1857",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 78–79"
+    },
+    {
+      "claim": "Between 1816 and 1837 all known guides were white",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "p. 76"
+    },
+    {
+      "claim": "Bransfords and descendants guides for over 100 years",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "“Human Use of the Cave”"
+    },
+    {
+      "claim": "Post-emancipation Black workers limited to porters, waiters, cooks, housekeepers, laundresses, drivers; tour groups almost completely segregated",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 87–88"
+    },
+    {
+      "claim": "Bransford Summer Resort for Black travelers opened 1921 on Flint Ridge; 14 rooms; purchased by Kentucky National Park Commission for $3,000 in December 1934",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 88–89"
+    },
+    {
+      "claim": "CCC NP-1 African American camp; 12,000 man-days; 24 miles of trails",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 89–90"
+    },
+    {
+      "claim": "All Black guides forced to retire by end of 1939; none rehired (Clifton, Arthur, Eddie, Elzie, George Bransford); first all-white guides since 1838",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "p. 90"
+    },
+    {
+      "claim": "Brochure (2017): over 365 miles of surveyed passageways",
+      "sourceUrl": "https://npshistory.com/publications/maca/index.htm",
+      "locator": "overview paragraph 1"
+    },
+    {
+      "claim": "NP-1 figures (12,000 man-days, 24 miles of trails) reported by Acting Superintendent R. Taylor Hoskins in 1940",
+      "sourceUrl": "https://npshistory.com/publications/maca/hrs.pdf",
+      "locator": "pp. 89–90"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/maca/historic-entrance.jpg",
+      "caption": "The Historic Entrance to Mammoth Cave",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/maca/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/947D4300-ECE7-A506-8A6FF2BA4AECCFBB.jpg",
+      "evidenceUrl": "https://www.nps.gov/maca/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 800,
+      "height": 1000,
+      "bytes": 231151,
+      "note": "On-page caption: \"The Historic Entrance to Mammoth Cave has welcomed explorers for centuries. NPS Photo/ Thomas DiGiovannangelo\"; alt text \"A long staircase travels down a slope into the dark cave opening.\" Resized from 3024x3780."
+    },
+    {
+      "file": "images/history/maca/signature-pillar.jpg",
+      "caption": "A large stacked stone pillar reaching a flat ceiling covered with signatures, in a Mammoth Cave passage",
+      "credit": "NPS Photo/ Jackie Wheet",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/maca/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/958C8BC3-9657-7E73-D0697F507A869B69.jpg",
+      "evidenceUrl": "https://www.nps.gov/maca/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 933,
+      "bytes": 160528,
+      "note": "On-page caption: \"Over two hundred years of guided tours leads to the history of Mammoth Cave. NPS Photo/ Jackie Wheet\"; alt text \"A large stacked stone pillar reaches the flat ceiling containing signatures in a cave passage.\" Resized from 3888x2592."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/maca/index.htm",
     "adhiUrl": null,

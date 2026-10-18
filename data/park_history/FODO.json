@@ -1,16 +1,291 @@
 {
   "code": "FODO",
   "name": "Fort Donelson National Battlefield",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Fort Donelson National Battlefield in Dover, Tennessee, preserves the site of the first major Union victory in the Civil War. In February 1862, forces under Brigadier General Ulysses S. Grant captured the Confederate river fortification on the Cumberland River after a combined land and naval assault. The surrender of roughly 12,000 Confederate troops — the largest surrender of American forces up to that point — opened the door for Union control of middle and western Tennessee and earned Grant the nickname \"Unconditional Surrender\" Grant. The battlefield was established as a national military park in 1928 and redesignated a national battlefield in 1985.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "487"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-E-2026-10-17",
+  "verifiedBy": "verifier-E-2026-10-17 (55 claims checked; 9 corrections)",
+  "summary": "<p>In January 1862 a Union reconnaissance concluded that the weakest points in the Confederacy’s western defense line were two earthen forts guarding the Tennessee and Cumberland rivers. On February 6 Flag Officer Andrew Foote’s gunboats pounded Fort Henry into submission; almost 2,500 of its garrison escaped a dozen miles to Fort Donelson, on the Cumberland near Dover, Tennessee. There, on February 14, the Confederate river batteries drove off Foote’s ironclads in a 90-minute duel. A Confederate breakout the next day briefly opened an escape route before confused commanders ordered their men back to the trenches, and on February 16 Brigadier General Ulysses S. Grant answered a request for terms: no terms except an unconditional and immediate surrender. An estimated 13,000 Confederate soldiers were shipped north to prison camps. <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>It was the North’s first major victory of the war. The South gave up southern Kentucky and much of Middle and West Tennessee, and the rivers became Union supply lines into the Confederate heartland. The park’s foundation document adds that the campaign saw the war’s first use of inland ironclad gunboats and its first joint Army–Navy operation, and that the Union presence drew enslaved people to seek freedom, leading to Free State, which it calls one of the first freedmen’s communities in Tennessee, and perhaps the nation. Fort Donelson became a national military park on March 26, 1928, and a national battlefield on August 16, 1985. <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fodo-fd-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/fodo/index.htm",
+      "title": "NPSHistory.com: Fort Donelson NB archive page — overview (from the NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/fodo-fd-2021.pdf",
+      "title": "Foundation Document, Fort Donelson National Battlefield, Kentucky-Tennessee (NPS, 2020)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>Before the war, the iron furnace companies were Stewart County’s largest slaveholders. The park’s 2020 historic resource study reports that in December 1852 the iron makers on the Cumberland employed 1,395 white workers and 1,910 enslaved laborers, and in 1859 the owners of the Cumberland Iron Works, John and Jane Bell, held 417. Enslaved people made up nearly a quarter of Stewart County’s residents. When rumors of a revolt started at one or more of the furnaces around Christmas 1856 — reports the study calls full of inaccuracies — it was reported that eighty enslaved people were arrested; enslaved furnace workers were beaten to force confessions, and approximately six or seven, possibly more, were killed in Stewart County — though, the study notes, there was no proof of any rebellion. <a href=\"https://npshistory.com/publications/fodo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The fort itself was built by Confederate soldiers and enslaved laborers, who also built more than 400 log huts as the garrison’s winter quarters. <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fodo/hrs.pdf",
+          "title": "Brent, Spurlock, Heavrin & Poole, Historic Resource Study, Fort Donelson National Battlefield (Cultural Resource Analysts for NPS, March 2020)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fodo/index.htm",
+          "title": "NPSHistory.com: Fort Donelson NB archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>After the surrender, enslaved people from nearby plantations came into the Union lines. Ten days after it, Grant issued General Orders No. 14, which barred slaveholders from his lines; he would not return people to their enslavers, and he sought government work for those who had built the Confederate fort. Freedom seekers kept coming. Their settlement southwest of the Union fort became known as Free State, probably one and the same as the army’s contraband camp, whose men built the new Union Fort Donelson in 1863 and enlisted as United States Colored Troops; teachers from Indiana opened a school there in March 1864 that by May had 100 pupils. The brochure says an estimated 300 enslaved people wintered at Fort Donelson in 1864; the study quotes an 1867 description of Free State as numbering about 300. Free State lasted for decades and became an African American neighborhood of Dover. <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fodo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fodo/index.htm",
+          "title": "NPSHistory.com: Fort Donelson NB archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fodo/hrs.pdf",
+          "title": "Brent, Spurlock, Heavrin & Poole, Historic Resource Study, Fort Donelson National Battlefield (Cultural Resource Analysts for NPS, March 2020)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Enslaved women worked at the iron furnaces, cooking, cleaning, laundering and farming for the works, and the 2020 historic resource study notes that enslaved and free white women also did physically demanding work alongside men at the furnaces; the 417 people held at the Cumberland Iron Works in 1859 included 58 women. After the battle, the brochure notes, women like Mary Ann Bickerdyke nursed sick and wounded soldiers though they were not officially recognized as nurses. <a href=\"https://npshistory.com/publications/fodo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In the contraband camp, women commonly worked as cooks and laundresses, and in March 1864 two women teachers from Wayne County, Indiana, arrived with Ira B. Hutchens to open its school, teaching children and adults to read. <a href=\"https://npshistory.com/publications/fodo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fodo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fodo/hrs.pdf",
+          "title": "Brent, Spurlock, Heavrin & Poole, Historic Resource Study, Fort Donelson National Battlefield (Cultural Resource Analysts for NPS, March 2020)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fodo/index.htm",
+          "title": "NPSHistory.com: Fort Donelson NB archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>The park’s 2013 ethnographic overview places the Cumberland valley in a region that archeologists have posited was largely abandoned around 1450–1550; by the 1600s it was a borderland used by at least three tribal nations for hunting and seasonal camps. The Shawnee were among its first occupants, so many that the Cumberland was known as the Rivière des Chaouanons, the Shawnee River; Stewart County was likely a seasonal hunting ground. Around 1714–1715 the Cherokee and Chickasaw drove a large contingent of Shawnee out of the valley. The 1785 Treaty of Hopewell compelled the Cherokee to cede land south of the Cumberland, and in 1805 the Chickasaw reaffirmed a boundary on the ridge between the Cumberland and Tennessee rivers while the Cherokee ceded their lands north of it. By the end of the 1830s the Southeastern nations had been forced to cede their lands east of the Mississippi and remove to Indian Territory, where their governments remain. <a href=\"https://npshistory.com/publications/fodo/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fodo/eoa.pdf",
+          "title": "Lee, Greer & Lee, Fort Donelson National Battlefield: Ethnographic Overview and Assessment, Final Report (Earth Search for NPS, September 2013)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>Depression relief programs worked on the park itself. From December 1933 to April 1934, 398 Civil Works Administration laborers, among them African Americans and three women, worked on seven projects in the park, graveling roads, planting and controlling erosion. A crew of four Civilian Conservation Corps enrollees helped historian W. W. Luckett excavate a caved-in magazine at the water batteries; the restored magazine, completed in 1940, is a CCC-built interpretive reconstruction, and the 2020 historic resource study recommends that the park’s National Register listing stop describing it as an original feature. <a href=\"https://npshistory.com/publications/fodo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fodo/hrs.pdf",
+          "title": "Brent, Spurlock, Heavrin & Poole, Historic Resource Study, Fort Donelson National Battlefield (Cultural Resource Analysts for NPS, March 2020)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "A January reconnaissance convinced the Union command that Forts Henry and Donelson, earthen works guarding the Tennessee and Cumberland rivers, were the most vulnerable places in the Confederate western defense line",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "overview 'From Henry to Donelson' para. 1"
+    },
+    {
+      "claim": "Iron furnace companies were the largest owners of enslaved African Americans in Stewart County",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "pp. 34-35",
+      "interpretive": true
+    },
+    {
+      "claim": "February 6, 1862: Foote's gunboats pounded Fort Henry into submission; almost 2,500 escaped to Fort Donelson, a dozen miles away on the Cumberland",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "overview paras. 3-4"
+    },
+    {
+      "claim": "February 14: 90-minute duel; Confederates wounded Foote and forced the gunboats to retreat",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'The Battle of Fort Donelson' para. 1"
+    },
+    {
+      "claim": "February 15 breakout attempt toward Nashville; troops ordered back to entrenchments through confusion and indecision",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'The Battle of Fort Donelson' para. 2; 'Forge Road'"
+    },
+    {
+      "claim": "February 16: Grant's reply 'No terms except an unconditional and immediate surrender can be accepted'",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'The Battle of Fort Donelson' para. 3"
+    },
+    {
+      "claim": "An estimated 13,000 Confederate soldiers loaded onto transports to Northern prisoner-of-war camps",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'Dover Hotel' entry"
+    },
+    {
+      "claim": "North's first major victory; South forced to give up southern Kentucky and much of Middle and West Tennessee; rivers and railroads became Federal supply lines",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "overview para. 1; para. following Grant's promotion"
+    },
+    {
+      "claim": "First use of inland ironclad gunboats and first joint Army/Navy operation of the Civil War; Free State one of the first freedmen's communities in Tennessee, and perhaps the nation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fodo-fd-2021.pdf",
+      "locator": "Significance statements 2 and 5, p. 6",
+      "interpretive": true
+    },
+    {
+      "claim": "Fort Donelson National Military Park March 26, 1928; Fort Donelson National Battlefield August 16, 1985",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "December 1852: Cumberland River iron manufacturers employed 1,395 whites and 1,910 enslaved laborers",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 2, 'Enslaved labor at the iron furnaces', p. 34"
+    },
+    {
+      "claim": "1859 owners of the Cumberland Iron Works, John and Jane Erwin Yeatman Bell, owned 417 African American slaves including 58 women and 92 boys and girls",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "p. 35 (fn. 64)"
+    },
+    {
+      "claim": "Enslaved African Americans comprised nearly a quarter of Stewart County's residents",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "p. 35 (fn. 65)"
+    },
+    {
+      "claim": "Christmas 1856 insurrection panic: reports full of inaccuracies and rumors; no proof of rebellion; reported that eighty slaves were immediately arrested; slaves at furnaces beaten to induce confessions; approximately six or seven, possibly more, killed in Stewart County",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "p. 36"
+    },
+    {
+      "claim": "Confederate soldiers and slaves built the 15-acre earthen fort over seven months; soldiers and slaves built over 400 log huts as winter quarters",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'Fort Donelson' and 'Log Huts' entries"
+    },
+    {
+      "claim": "Many enslaved workers from nearby plantations came into Union lines after the 1862 victory; Grant chose to protect them and put them to work",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'National Cemetery' entry"
+    },
+    {
+      "claim": "Ten days after the surrender Grant issued General Orders No. 14 forbidding slave owners from coming into his lines; enslaved individuals who helped build the fort allowed to stay and given government employment",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, p. 177 (fns. 646, 649)"
+    },
+    {
+      "claim": "Free State located southwest of Union Fort Donelson; contraband camp probably the nucleus of Free State; Free State and the contraband camp most likely one and the same",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, pp. 180, 182, 188",
+      "interpretive": true
+    },
+    {
+      "claim": "June 1863: 120 men from the contraband camp employed constructing Union Fort Donelson; March 1864 report: able-bodied men 'enlisting as fast as they come in'; USCT recruiting station at Fort Donelson",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, pp. 182, 185-186"
+    },
+    {
+      "claim": "Ira B. Hutchens and two female teachers from Wayne County, Indiana (Indiana Quakers) arrived March 1864 to begin a new school; by May 1864 the school had 100 pupils",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, p. 188"
+    },
+    {
+      "claim": "Estimated 300 slaves wintered at Fort Donelson in 1864",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'National Cemetery' entry"
+    },
+    {
+      "claim": "By 1867 Free State described as a 'settlement of colored people, numbering in all about 300'; became a distinct neighborhood incorporated into Dover",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, p. 195 (fn. 705); p. 188"
+    },
+    {
+      "claim": "Enslaved women worked domestic chores and on farms raising food for the industry's workers; enslaved and free white women worked physically demanding tasks alongside men at the furnaces",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "pp. 34-35"
+    },
+    {
+      "claim": "Women like Mary Ann Bickerdyke, not officially recognized as nurses, cared for sick and wounded soldiers",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'The Battle of Fort Donelson' para. 4"
+    },
+    {
+      "claim": "Women commonly served as cooks and laundresses",
+      "sourceUrl": "https://npshistory.com/publications/fodo/index.htm",
+      "locator": "'National Cemetery' entry"
+    },
+    {
+      "claim": "Ira B. Hutchens and two female teachers from Wayne County, Indiana, arrived March 1864; teachers taught both children and adults; pupils learning to read",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 5, p. 188"
+    },
+    {
+      "claim": "Region within a Vacant Quarter abandoned ca. 1450-1550 (not universally accepted as devoid of population); by the 17th century a borderlands zone used by at least three tribal nations",
+      "sourceUrl": "https://npshistory.com/publications/fodo/eoa.pdf",
+      "locator": "Protohistoric through the Indian Removal Era, p. 13",
+      "interpretive": true
+    },
+    {
+      "claim": "Shawnee among the first indigenous people to occupy the Cumberland valley; river called Rivière des Chaouanons or Shawnee River; Stewart County most certainly a seasonal hunting area; ca. 1714-1715 large contingent of Shawnee driven out by Cherokee and Chickasaw",
+      "sourceUrl": "https://npshistory.com/publications/fodo/eoa.pdf",
+      "locator": "p. 16"
+    },
+    {
+      "claim": "28 November 1785 Treaty of Hopewell: Cherokee compelled to cede territory south of the Cumberland; 1805 Chickasaw treaty (1 July) and Treaty of Tellico (25 October) cessions; by end of 1830s Southeastern nations forced to cede territories east of the Mississippi and remove to Indian Territory where tribal people and governments remain today",
+      "sourceUrl": "https://npshistory.com/publications/fodo/eoa.pdf",
+      "locator": "p. 18"
+    },
+    {
+      "claim": "December 15, 1933-April 26, 1934: 398 CWA laborers including African Americans and three women on seven projects (planting, graveling roads, erosion control, roadside cleanup)",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 6, p. 224"
+    },
+    {
+      "claim": "W. W. Luckett, Junior Historian, investigated the caved-in water battery magazines with a crew of four CCC enrollees; restoration work completed in 1940",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "ch. 6, p. 225"
+    },
+    {
+      "claim": "Current nomination lists the Magazine as original; HRS recommends it be evaluated as a CCC-built reconstruction (interpretive structure)",
+      "sourceUrl": "https://npshistory.com/publications/fodo/hrs.pdf",
+      "locator": "Recommendations, p. 362",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/fodo/cumberland-river-upper-battery.jpg",
+      "caption": "A view of the Cumberland River from the Upper Artillery Battery",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fodo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/6903ED5B-1DD8-B71B-0B29CCAFAED7A0BF.jpg",
+      "evidenceUrl": "https://www.nps.gov/fodo/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 1050,
+      "bytes": 181683,
+      "note": "On-page figcaption (park homepage gallery): \"A commanding view of the Cumberland River from the Upper Artillery Battery\" with credit span \"NPS\". Contemporary park photograph. Resized from 1632x1224."
+    },
+    {
+      "file": "images/history/fodo/national-cemetery.jpg",
+      "caption": "Fort Donelson National Cemetery",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fodo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/695F97FC-1DD8-B71B-0B71DFE3E1403778.jpg",
+      "evidenceUrl": "https://www.nps.gov/fodo/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 960,
+      "height": 720,
+      "bytes": 221374,
+      "note": "On-page figcaption (park homepage gallery): \"The Fort Donelson National Cemetery, final resting place for Soldiers who fell in battle during the Civil War, the Spanish-American War, World War I, and World War II.\" with credit span \"NPS Photo\". Contemporary park photograph; original dimensions, re-encoded. No themeKey: the cemetery adjoins the Free State site but the photo does not show it."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/fodo/index.htm",
     "adhiUrl": "https://npshistory.com/publications/fodo/adhi.pdf",

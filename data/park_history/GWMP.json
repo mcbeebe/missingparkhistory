@@ -2,15 +2,239 @@
   "code": "GWMP",
   "name": "George Washington Memorial Parkway",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>George Washington Memorial Parkway preserves the natural scenery along the Potomac River and connects significant historic sites from Mount Vernon, George Washington's estate in Virginia, through the nation's capital. The parkway was authorized by Congress in 1930 as a memorial to the first president and was designed as a scenic and recreational corridor. The park system encompasses over 7,000 acres across multiple sites in Virginia, Maryland, and the District of Columbia, including Great Falls Park, Theodore Roosevelt Island, the Claude Moore Colonial Farm site, and the historic town of Glen Echo. The parkway itself follows part of the route Washington traveled between his Mount Vernon plantation and what would become the federal city.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-B-2026-10-17",
+  "verifiedBy": "verifier-B-2026-10-17 (33 claims checked; 10 corrections)",
+  "summary": "<p>George Washington Memorial Parkway runs along the Potomac River through Virginia, Maryland and the District of Columbia, protecting the river’s landscape and natural shoreline while offering scenic vistas of Washington, D.C., and the Great Falls of the Potomac. Congress established it on May 29, 1930, through the Capper-Cramton Act. Its first leg, the Mount Vernon Memorial Highway, opened in 1932, the bicentennial of Washington’s birth; the 2014 foundation document calls it the first comprehensively designed modern motorway built by the federal government, a pioneer of limited access, grade-separated intersections and cloverleaf interchanges. The northern section was completed in 1962, and the Maryland side was renamed Clara Barton Parkway in 1989. <a href=\"https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/gwmp/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park covers 7,600 acres by the park brochure’s count (7,374 in the foundation document) and more than 25 sites. <a href=\"https://npshistory.com/publications/gwmp/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> At Great Falls, the largest waterfall on the Potomac, the river rushes over jagged rocks into Mather Gorge beside the remnants of the Patowmack Canal, whose construction Washington presided over; the 15-mile Potomac Gorge is, in the foundation document’s words, one of the most biologically diverse natural areas in the national park system. Fort Hunt Park, once part of the Mount Vernon estate, had batteries that defended the river during the Spanish-American War; in World War II, as the site of P.O. Box 1142, it served as a prisoner-of-war camp and the interrogation center for many high-profile German prisoners. <a href=\"https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The parkway’s lands hold prehistoric American Indian sites, and it also manages Theodore Roosevelt Island, a Civil War training area for the Union Army that included the first United States Colored Troops, and Clara Barton National Historic Site at Glen Echo. <a href=\"https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/gwmp/index.htm",
+      "title": "NPSHistory.com: George Washington Memorial Parkway archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "title": "Foundation Document, George Washington Memorial Parkway, District of Columbia–Maryland–Virginia (NPS, 2014)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Theodore Roosevelt Island lies in a stretch of the Potomac valley that people have used for over 15,000 years, a Park Service history of the island explains. Projectile points about 9,000 years old are its earliest archeological record; people came to fish, hunt, gather shellfish and nuts, and, archeologists suspect, revisited such camps over generations. Around 4,000 years ago people of the Savannah River Culture brought soapstone bowls, and settlement on the island peaked in the Middle Woodland period (700 B.C.E.–1000 C.E.). By the Late Woodland the region’s tribes included the Powhatan coalition in Virginia and the Piscataway and Nanticoke in Maryland, and John Smith’s map of 1607–08 records the nearby settlements of Namoraughquend and Nacotchtanck. English encroachment disrupted the economies and social structures of Virginia tribes, the history notes, yet many Native people still live in the Potomac valley. <a href=\"https://www.nps.gov/this/learn/historyculture/native-american-life.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The foundation document records American Indian archeological sites along the parkway, including on the bluff at Clara Barton’s house. <a href=\"https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/this/learn/historyculture/native-american-life.htm",
+          "title": "NPS, A History of Native American Life on Theodore Roosevelt Island (nps.gov/this, last updated May 23, 2024)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+          "title": "Foundation Document, George Washington Memorial Parkway, District of Columbia–Maryland–Virginia (NPS, 2014)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Clara Barton’s house at Glen Echo, Maryland, went up in 1891 on land given by developers Edward and Edwin Baltzley, who also supplied the labor and some of the materials, hoping her fame would sell lots around their Chautauqua. Barton — Civil War nurse, women’s rights suffragist, and founder and first president of the American Red Cross — lived there briefly in 1891 and again from 1897 until her death in 1912, kept a small farm of cows, horses, chickens and goats, and presided over the Chautauqua’s Women’s Executive Committee. <a href=\"https://npshistory.com/publications/gwmp/cli-glen-echo-park-clara-barton-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The house was the Red Cross’s first permanent headquarters from 1897 to 1904. The foundation document notes that Barton won international recognition at a time when women were not given the same opportunities as men, and that the site, established in 1974, was one of the first national historic sites dedicated to the accomplishments of an American woman. <a href=\"https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gwmp/cli-glen-echo-park-clara-barton-house.pdf",
+          "title": "Cultural Landscapes Inventory: Glen Echo Park–Clara Barton House (NPS, 2011)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+          "title": "Foundation Document, George Washington Memorial Parkway, District of Columbia–Maryland–Virginia (NPS, 2014)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>In 1863 the island, then called Analostan or Mason’s Island, became Camp Greene, where the 1st Regiment of United States Colored Troops was mustered. The Emancipation Proclamation had opened Union enlistment to African Americans that January, but Black soldiers could not rise to officer rank and were paid seven dollars a month against thirteen for white soldiers of equal rank. The District of Columbia mustered the regiment in May 1863, and some 3,500 Black men from the District enlisted by the war’s end. Walt Whitman visited and called it the pleasantest camp he had yet seen. On July 30, 1863, the regiment left the island for the siege of Richmond and Petersburg, later fought at Wilmington, and lost 185 enlisted men before it was decommissioned in 1865. <a href=\"https://www.nps.gov/this/learn/historyculture/camp-greene.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+          "title": "NPS, Camp Greene (nps.gov/this, last updated May 23, 2024)",
+          "type": "nps"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>In May 1933 about 3,000 delegates to a second Bonus March of World War I veterans were bused to Fort Hunt, where Eleanor Roosevelt visited them; when Franklin Roosevelt offered places in the new Civilian Conservation Corps, 2,657 enrolled. CCC Camp NP-6 opened there on October 17, 1933, with 200 enrollees of Company 1241 from New York and Virginia, who cleared dead timber, built bridle paths and landscaped the capital’s parks. A third march camped at Fort Hunt in May 1934, including 270 African American delegates, and 565 more veterans joined the Corps. Company 2387, which replaced it in 1937, planted trees and shrubs along the parkway, and between 1933 and 1938 some 20 enrollees built relief maps and models of parks in Fort Hunt’s “Model Laboratory.” <a href=\"https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> On Theodore Roosevelt Island, CCC crews from 1935 graded paths and, with the Historic American Buildings Survey, excavated the Mason House foundation in 1936. <a href=\"https://www.nps.gov/this/learn/historyculture/civilian-conservation-corps-at-theodore-roosevelt-island.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+          "title": "Matthew R. Laird, “By the River Potomac”: An Historic Resource Study of Fort Hunt Park (NPS, August 2000), ch. 5",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/this/learn/historyculture/civilian-conservation-corps-at-theodore-roosevelt-island.htm",
+          "title": "NPS, Civilian Conservation Corps at Theodore Roosevelt Island (nps.gov/this, last updated May 23, 2024)",
+          "type": "nps"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Established by Congress May 29, 1930, Public Law 71-284, the Capper-Cramton Act; runs along the Potomac through Virginia, Maryland and D.C.; protects landscape and natural shoreline; scenic vistas of Washington, D.C. and the Great Falls of the Potomac; manages five legislated units including Clara Barton NHS and Theodore Roosevelt Island",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Brief Description, p. 6"
+    },
+    {
+      "claim": "Mount Vernon Memorial Highway first comprehensively designed modern motorway built by the federal government; pioneered limited access, grade-separated intersections, cloverleaf interchanges (FD gives construction 1929–1932 in significance and \"begun in 1928\" in description; draft states only the 1932 opening)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Park Significance, p. 9; Brief Description, p. 6",
+      "interpretive": true
+    },
+    {
+      "claim": "1932 bicentennial of Washington's birth: Mount Vernon Memorial Highway opened from Arlington Memorial Bridge to the estate",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/index.htm",
+      "locator": "overview, paragraph 2"
+    },
+    {
+      "claim": "Northern section completed 1962; Maryland parkway renamed Clara Barton Parkway in 1989",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Brief Description, p. 6"
+    },
+    {
+      "claim": "7,600-acre park area; over 25 sites (brochure)",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/index.htm",
+      "locator": "overview, paragraph 3"
+    },
+    {
+      "claim": "7,374 acres (foundation document)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Fundamental Resources, Biodiversity of Natural Communities, p. 13"
+    },
+    {
+      "claim": "Great Falls the largest waterfall on the Potomac; river rushes over steep jagged rocks into Mather Gorge; Patowmack Canal construction presided over by Washington, completed 1802",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Great Falls Park and the Patowmack Canal, p. 8; significance p. 10"
+    },
+    {
+      "claim": "15-mile Potomac Gorge one of the most biologically diverse natural areas in the national park system",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Park Significance, p. 9",
+      "interpretive": true
+    },
+    {
+      "claim": "Fort Hunt Park originally part of Mount Vernon estate; batteries defended the Potomac during the Spanish-American War; site of P.O. Box 1142; in WWII a prisoner-of-war camp and the interrogation center for many high-profile German prisoners",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "pp. 7, 10, 13"
+    },
+    {
+      "claim": "Prehistoric American Indian sites in park; Theodore Roosevelt Island a training area for the first United States Colored Troops; Clara Barton bluff previously inhabited by American Indians",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "pp. 13, 22, 26"
+    },
+    {
+      "claim": "Potomac River Valley used by people for over 15,000 years; projectile points about 9,000 years old the island's first archeological record; fishing, hunting deer and turkey, shellfish, forest nuts; archeologists suspect settlements revisited over generations as part of seasonal subsistence",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/native-american-life.htm",
+      "locator": "paragraphs 1, 3"
+    },
+    {
+      "claim": "Savannah River Culture migrated into the valley around 2000 B.C.E. (about 4,000 years ago) with soapstone bowls; peak population at the island in the Middle Woodland Period (700 B.C.E. to 1000 C.E.)",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/native-american-life.htm",
+      "locator": "paragraphs 4–5"
+    },
+    {
+      "claim": "Late Woodland tribes included the Powhatan coalition in Virginia and the Piscataway and Nanticoke in Maryland; John Smith's 1607–1608 map records Namoraughquend and Nacotchtanck near the island",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/native-american-life.htm",
+      "locator": "paragraphs 6–7"
+    },
+    {
+      "claim": "English encroachment disrupted economies and social structures of Virginia tribes; many native people still live in the Potomac valley",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/native-american-life.htm",
+      "locator": "final paragraph",
+      "interpretive": true
+    },
+    {
+      "claim": "1863 Analostan (Mason's) Island the location of Camp Greene where the 1st USCT was mustered",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+      "locator": "paragraph 1"
+    },
+    {
+      "claim": "Emancipation Proclamation January 1863 cleared enlistment; law forbade officer rank; pay seven dollars a month vs. thirteen for equally ranked white servicemen",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+      "locator": "paragraph 3"
+    },
+    {
+      "claim": "District of Columbia mustered its first regiment May 1863; some 3,500 Black men from D.C. enlisted by war's end",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+      "locator": "paragraph after Civil War Artifacts"
+    },
+    {
+      "claim": "Walt Whitman visited: 'the pleasantest camp I have yet seen'",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+      "locator": "Whitman 1863 quotation"
+    },
+    {
+      "claim": "July 30, 1863 1st USCT left Analostan; siege of Richmond and Petersburg; Siege of Wilmington; 185 enlisted members lost; decommissioned 1865",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/camp-greene.htm",
+      "locator": "final paragraph"
+    },
+    {
+      "claim": "Baltzley brothers gifted land to Clara Barton in 1891 and supplied the labor and some of the materials for the house, hoping her fame would encourage lot purchases",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/cli-glen-echo-park-clara-barton-house.pdf",
+      "locator": "Inventory Unit Description, p. 2 (PDF p. 5)"
+    },
+    {
+      "claim": "Barton: Civil War nurse, active women's rights suffragette, founder and first president of the American Red Cross; lived there briefly in 1891 and from 1897 until death in 1912; miniature farm with cows, horses, chickens, goats; president of the Chautauqua's Women's Executive Committee",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/cli-glen-echo-park-clara-barton-house.pdf",
+      "locator": "pp. 2, 22 (PDF pp. 5, 25)"
+    },
+    {
+      "claim": "First permanent Red Cross headquarters 1897–1904; established October 26, 1974; one of the first national historic sites dedicated to recognizing the accomplishments of a female American; 'in an era when women were not given the same opportunities as men'",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/gwmp-fd-2014.pdf",
+      "locator": "Clara Barton NHS purpose, significance and FRVs, pp. 21–22",
+      "interpretive": true
+    },
+    {
+      "claim": "May 1933: approximately 3,000 bonus convention delegates housed at Fort Hunt; Eleanor Roosevelt visited May 16; 2,657 of roughly 3,000 enrolled in the CCC",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+      "locator": "ch. 5, pp. 72–74, fns. 17–22"
+    },
+    {
+      "claim": "CCC Camp NP-6 first occupied October 17, 1933; 200 enrollees of Company 1241 from New York and Virginia; clearing dead timber, bridle paths, landscaping in the National Capital Parks",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+      "locator": "ch. 5, pp. 75–76, fn. 26"
+    },
+    {
+      "claim": "May 1934 third Bonus March at Fort Hunt, including 270 African-American representatives; nearly 600 applied to the CCC, 565 accepted",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+      "locator": "ch. 5, p. 76, fns. 28–29"
+    },
+    {
+      "claim": "Company 2387 (replaced Co. 1241 in October 1937) planted and maintained trees and shrubs along the parkway; between 1933 and 1938 some 20 enrollees built relief maps and models at Fort Hunt's 'Model Laboratory'",
+      "sourceUrl": "https://npshistory.com/publications/gwmp/hrs-fort-hunt-park.pdf",
+      "locator": "ch. 5, p. 79, fn. 31"
+    },
+    {
+      "claim": "CCC work on Theodore Roosevelt Island started 1935; grading walking paths; Mason House foundation excavation began 1936 with HABS",
+      "sourceUrl": "https://www.nps.gov/this/learn/historyculture/civilian-conservation-corps-at-theodore-roosevelt-island.htm",
+      "locator": "paragraph 2"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/gwmp/great-falls.jpg",
+      "caption": "The Potomac River rushes down the Great Falls on the Virginia-Maryland border",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grfa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C85E2E1-1DD8-B71B-0BD052D2CE78598E.jpg",
+      "evidenceUrl": "https://www.nps.gov/grfa/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1129,
+      "height": 635,
+      "bytes": 191886,
+      "note": "On-page caption (Great Falls Park home-page slideshow): \"The Potomac River rushes down the Great Falls on the Virginia-Maryland border. NPS\". Contemporary park photograph. Re-encoded JPEG, original dimensions.",
+      "verifiedBy": "verifier-B-2026-10-17 (credit 'NPS' confirmed on evidence page; image src matched)"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/gwmp/index.htm",
     "adhiUrl": "https://npshistory.com/publications/gwmp/adhi.pdf",

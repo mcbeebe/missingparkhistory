@@ -1,0 +1,222 @@
+{
+  "code": "PAIS",
+  "name": "Padre Island National Seashore",
+  "entries": [
+    "112"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-18",
+  "author": "author-C-2026-10-17",
+  "verifiedBy": "verifier-C-2026-10-17 (17 ledger claims plus all prose sentences checked; 10 corrections)",
+  "summary": "<p>A few miles off the south Texas coast, Padre Island National Seashore protects what its 2015 brochure calls the world’s longest undeveloped stretch of barrier island: 70 miles of sand-and-shell beaches, wind-sculpted dunes, grasslands and tidal flats between the Gulf and the Laguna Madre, one of only six hypersaline lagoons in the world. Wind, waves and storms keep reshaping it, and the whole island is slowly moving toward the mainland. Around 380 bird species — almost 45 percent of those in North America — have been recorded here, and it is the nation’s prime nesting beach for the endangered Kemp’s ridley sea turtle. <a href=\"https://npshistory.com/publications/pais/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People used the island long before Europeans: the park’s 2016 foundation document dates its cultural resources first to the Karankawa, who used it for food and refuge, and says Spanish troops bound for Mexico and shipwreck victims visited only infrequently from Spanish discovery into the early 19th century. <a href=\"https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> The 1999 administrative history records an ill-fated 1554 Spanish expedition and says the Balli family — a priest and his nephew who received a Spanish grant — began ranching the island and gave it its name; from 1879 Patrick Dunn, the “Duke of Padre,” ranched here into the 1920s. <a href=\"https://npshistory.com/publications/pais/adhi/summary.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> The foundation document says ranching lasted until 1970 and that the park also holds a Mexican-American War campsite and artifacts from the island’s World War II use as a bombing area. <a href=\"https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>After Senator Ralph Yarborough introduced the first park bill in 1958, Congress passed the seashore bill and President John F. Kennedy signed it on September 28, 1962. <a href=\"https://npshistory.com/publications/pais/adhi/summary.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> Lady Bird Johnson dedicated the park on April 8, 1968. <a href=\"https://npshistory.com/publications/pais/adhi/chap11.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/pais/index.htm",
+      "title": "NPSHistory.com: Padre Island National Seashore archive page — overview (from the 2015 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+      "title": "Foundation Document, Padre Island National Seashore, Texas (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/pais/adhi/summary.htm",
+      "title": "Jones, An Administrative History, Padre Island National Seashore (NPS, 1999), Executive Summary",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/pais/adhi/chap11.htm",
+      "title": "Jones, Administrative History (1999), ch. 11",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The park’s website (last updated 2021) estimates the island formed 3,000 to 5,000 years ago and says Native American points found here indicate it has probably been visited, if not inhabited, since it formed. The peoples who most recently inhabited the South Texas coast, it says, were the Karankawa, who ranged between Corpus Christi Bay and Galveston, and Coahuiltecan bands ranging south into Mexico, among them the Malaquites, for whom Malaquite Beach is named. <a href=\"https://www.nps.gov/pais/learn/historyculture/native-americans.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> The park’s 1971 historic resource study reports about 20 Karankawa campsites found in the island’s first twenty miles, visited seasonally and probably in summer. <a href=\"https://npshistory.com/publications/pais/hrs/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a> The 1999 administrative history says the Karankawa survived well into the nineteenth century <a href=\"https://npshistory.com/publications/pais/adhi/chap2.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[7]</a>; the 2021 web page says they “existed as a people in Texas until about 1850.” <a href=\"https://www.nps.gov/pais/learn/historyculture/native-americans.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> The 2016 foundation document lists seven traditionally associated tribes: the Alabama-Coushatta, Apache Tribe of Oklahoma, Comanche, Fort Sill Apache, Kiowa, Mescalero Apache and Tonkawa. <a href=\"https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/pais/learn/historyculture/native-americans.htm",
+          "title": "NPS, Padre Island National Seashore: Native Americans (nps.gov, last updated October 2, 2021)",
+          "type": "nps.gov"
+        },
+        {
+          "url": "https://npshistory.com/publications/pais/hrs/chap1.htm",
+          "title": "Sheire, Historic Resource Study: Padre Island National Seashore (NPS, 1971), ch. 1, Indians and an Island",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/pais/adhi/chap2.htm",
+          "title": "Jones, Administrative History (1999), ch. 2, Early History and Use of Padre Island",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+          "title": "Foundation Document, Padre Island National Seashore (2016), Appendix C",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>At a Senate subcommittee hearing on the seashore bill, Esther Goodrich of the Texas Conservation Council argued for a larger seashore with a roadless center, warning that parks once thought ample for generations were already crowded. <a href=\"https://npshistory.com/publications/pais/adhi/chap4.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[8]</a> In 1986 biological technician Donna Shaver took charge of the park’s sea turtle work; that year, under her guidance, staff and volunteers began beach patrols for nesting turtles, and in May 1996 she and others documented the first return of a head-started Kemp’s ridley to the seashore, a turtle from the 1987 class that laid 83 eggs. Her incubation research helped raise the park’s hatch success to 90 percent and was shared with scientists at Rancho Nuevo, Mexico. The 1999 administrative history says the Kemp’s ridley project “may be considered” one of the park administration’s most successful natural resource programs. <a href=\"https://npshistory.com/publications/pais/adhi/chap8.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[9]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/pais/adhi/chap4.htm",
+          "title": "Jones, Administrative History (1999), ch. 4, Legislative History",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/pais/adhi/chap8.htm",
+          "title": "Jones, Administrative History (1999), ch. 8, Kemp's Ridley Sea Turtle Project",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The 2016 foundation document warns that rising seas, more frequent or intense storms and more extreme heat projected for the region could damage sea turtle nests and eggs, shift hatchling sex ratios, and disrupt oxygen exchange in eggs through saltwater intrusion. <a href=\"https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> A 2017 Park Service vulnerability assessment of 43 structures and 44 roads, parking lots and other transportation assets, looking ahead to 2050, found most assets had low or moderate exposure, in part because of relatively high elevations and an accreting shoreline — yet 38 percent were highly vulnerable to coastal hazards and sea-level rise, including 61 percent of transportation assets; the most valuable among them include sections of Park Road, the Bird Island Basin waterfront and the Malaquite visitor center parking. Those highly vulnerable assets were worth about $64.5 million, roughly three-quarters of the value assessed. <a href=\"https://npshistory.com/publications/pais/coastal-haz-cc-vulnerability.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[10]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+          "title": "Foundation Document, Padre Island National Seashore (2016), Analysis of Fundamental Resources — Sea Turtles",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/pais/coastal-haz-cc-vulnerability.pdf",
+          "title": "Peek et al., Padre Island National Seashore Coastal Hazards & Sea-Level Rise Asset Vulnerability Assessment (NPS 613/154046, July 2017)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "World's longest undeveloped stretch of barrier island; 70 miles of beaches; Laguna Madre one of only six hypersaline lagoons in the world; nation's prime nesting beach for Kemp's ridley",
+      "sourceUrl": "https://npshistory.com/publications/pais/index.htm",
+      "locator": "Brochure (2015), opening paragraphs"
+    },
+    {
+      "claim": "Winds and storms reshape the island; entire island slowly moves toward the mainland",
+      "sourceUrl": "https://npshistory.com/publications/pais/index.htm",
+      "locator": "Brochure, 'Profile of a Barrier Island' para. 2"
+    },
+    {
+      "claim": "Around 380 bird species, almost 45 percent of all those in North America, recorded",
+      "sourceUrl": "https://npshistory.com/publications/pais/index.htm",
+      "locator": "Brochure, 'Profile of a Barrier Island' para. 4"
+    },
+    {
+      "claim": "Cultural resources first dating to the Karankawa Indians' use of the island as a source of food and refuge; between Spanish discovery (1509) and the early 19th century Spanish troops en route to Mexico and shipwreck victims infrequently visited",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Ill-fated 1554 Spanish expedition; Padre Nicholas Balli and nephew Juan Jose Balli received a Spanish grant; Ballis established first cattle ranching and the name 'Padre Island'; Patrick Dunn 'Duke of Padre' leased part of the island from 1879, expanding through the 1920s",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/summary.htm",
+      "locator": "Executive Summary, para. 3 (note: grant dates differ — summary says 'by 1820', FD p. 4 says initial land grant 1804, HRS ch. 2 'about 1800'; draft gives no grant date)"
+    },
+    {
+      "claim": "Island used for ranching and cattle grazing until 1970; park protects a campsite from the Mexican-American war and plane wrecks and other artifacts from WWII bombing-area use",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+      "locator": "p. 4; Fundamental Resources, 'Collective History', p. 8"
+    },
+    {
+      "claim": "Yarborough first bill 1958; Kennedy signed September 28, 1962",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/summary.htm",
+      "locator": "Executive Summary, paras. 5–6"
+    },
+    {
+      "claim": "Dedication April 8, 1968, Lady Bird Johnson principal speaker",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/chap11.htm",
+      "locator": "ch. 11, 'Dedication of Padre Island National Seashore, April 8, 1968'"
+    },
+    {
+      "claim": "Island age best estimate 3,000–5,000 years; points indicate the island has probably been visited, if not inhabited, since its formation; peoples who most recently inhabited the coast of South Texas were the Coahuiltecans and Karankawas; Karankawa ranged between Corpus Christi Bay and Galveston, Coahuiltecans from Corpus Christi Bay south into Mexico; Malaquites a Coahuiltecan band for whom Malaquite beach is named",
+      "sourceUrl": "https://www.nps.gov/pais/learn/historyculture/native-americans.htm",
+      "locator": "Native Americans page, paras. 1, 3, 5 (last updated October 2, 2021)"
+    },
+    {
+      "claim": "Disciplined archeological investigations revealed approximately 20 Karankawa camp sites within the first twenty miles of the north end; visits seasonal and probably in summer, three to four weeks per camp",
+      "sourceUrl": "https://npshistory.com/publications/pais/hrs/chap1.htm",
+      "locator": "Sheire, HRS (1971), ch. 1, 'The Karankawas', fn. 20"
+    },
+    {
+      "claim": "Karankawa survived well into the nineteenth century (the chapter also repeats colonial-era descriptors, not used here)",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/chap2.htm",
+      "locator": "Jones, Administrative History (1999), ch. 2, 'Native American Inhabitants', fn. 11"
+    },
+    {
+      "claim": "\"More is known of the Karankawa, who existed as a people in Texas until about 1850\" (page wording, last updated October 2, 2021)",
+      "sourceUrl": "https://www.nps.gov/pais/learn/historyculture/native-americans.htm",
+      "locator": "Native Americans page, para. 6"
+    },
+    {
+      "claim": "Appendix C lists seven traditionally associated tribes: Alabama-Coushatta Tribe of Texas, Apache Tribe of Oklahoma, Comanche Nation of Oklahoma, Fort Sill Apache Tribe of Oklahoma, Kiowa Indian Tribe of Oklahoma, Mescalero Apache Tribe, Tonkawa Tribe of Indians of Oklahoma",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+      "locator": "Appendix C, p. 47"
+    },
+    {
+      "claim": "Esther Goodrich, Texas Conservation Council, testified for larger seashore with central roadless region; first parks once seemed ample, now overcrowded",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/chap4.htm",
+      "locator": "ch. 4, 'Second Subcommittee Hearings: 1961–62', fns. 70–72"
+    },
+    {
+      "claim": "1986 Donna Shaver assumed responsibility for sea turtle projects; 1986 under her guidance staff and volunteers began beach patrols; May 1996 Shaver and others documented first return of a head-started turtle (1987 class, 83 eggs); her data improved incubation to 90 percent hatch success and assisted Rancho Nuevo scientists; project 'may be considered one of the park administration's most successful natural resource programs'",
+      "sourceUrl": "https://npshistory.com/publications/pais/adhi/chap8.htm",
+      "locator": "ch. 8, 'Kemp's Ridley Sea Turtle Project', fns. 37–41",
+      "interpretive": true
+    },
+    {
+      "claim": "Increases in sea level, storm frequency/intensity, mean annual temperature and extreme heat projected for the region could impact sea turtles through physical damage to nests and eggs, changes in turtle gender, disruption of oxygen exchange via saltwater intrusion",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/pais-fd-2016.pdf",
+      "locator": "Analysis of FRVs, Sea Turtles, p. 20"
+    },
+    {
+      "claim": "2017 assessment: 43 structures and 44 transportation assets; 2050 horizon; 46% low and 31% moderate exposure, due in part to relatively high elevations and an accreting shoreline; 38% of assets highly vulnerable; 61% of transportation assets; high-vulnerability CRV ~$64.5 million, ~76% of total; eight of ten most valuable transportation assets highly vulnerable, incl. Park Road sections, Bird Island Basin Waterfront, Malaquite VC parking",
+      "sourceUrl": "https://npshistory.com/publications/pais/coastal-haz-cc-vulnerability.pdf",
+      "locator": "Executive Summary, p. 3 (Peek et al., July 2017)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/pais/malaquite-dunes.jpg",
+      "caption": "Yellow flowers bloom in the dunes along Malaquite Beach",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/pais/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/F771AB23-E1E9-0B08-C7765B725C3EB41F.jpg",
+      "evidenceUrl": "https://www.nps.gov/pais/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 1050,
+      "bytes": 216296,
+      "note": "On-page caption (home page slideshow): \"Yellow flowers bloom in the dunes along Malaquite Beach.\" credit \"NPS Photo/ Thomas DiGiovannangelo\". Resized from 4032x3024."
+    },
+    {
+      "file": "images/history/pais/hatchling-release.jpg",
+      "caption": "Kemp’s ridley hatchlings make their way to the Gulf at a public hatchling release at Padre Island National Seashore",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/pais/learn/nature/seaturtles.htm",
+      "imageUrl": "https://www.nps.gov/pais/learn/images/hatchling-release-at-dawn.jpg",
+      "evidenceUrl": "https://www.nps.gov/pais/learn/nature/seaturtles.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1300,
+      "height": 975,
+      "bytes": 224521,
+      "note": "On-page figcaption: \"Kemp's ridley hatchlings make their way to the Gulf of America at a public hatchling release at Padre Island National Seashore.\" figcredit \"NPS Photo.\" Resized from 2016x1512."
+    }
+  ],
+  "photoStatus": "complete",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/pais/index.htm",
+    "adhiUrl": "https://npshistory.com/publications/pais/adhi/index.htm",
+    "hrsUrl": "https://npshistory.com/publications/pais/hrs.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 62
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/pais/index.htm"
+  },
+  "corrections": []
+}
