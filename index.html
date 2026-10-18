@@ -985,8 +985,8 @@ body.embed-mode .fund-bar{display:none}
 
   function ringStyle(p){
     var v=lens==='hist'?p.hist_usd:p.usd, max=lens==='hist'?DATA._maxHist:DATA._maxAll;
-    if(!v) return {radius:5,color:'#0e7490',weight:1.5,opacity:.7,dashArray:'2 3',fillColor:'#22d3ee',fillOpacity:.08};
-    return {radius:6+26*Math.sqrt(v/max),color:'#0e7490',weight:2,opacity:1,dashArray:null,fillColor:'#22d3ee',fillOpacity:.32};
+    if(!v) return {radius:16,color:'#0e7490',weight:1.5,opacity:.7,dashArray:'2 3',fillColor:'#22d3ee',fillOpacity:.08};
+    return {radius:16+24*Math.sqrt(v/max),color:'#0e7490',weight:2,opacity:1,dashArray:null,fillColor:'#22d3ee',fillOpacity:.32};
   }
   function restyle(){ if(layer) layer.eachLayer(function(m){ m.setStyle(ringStyle(DATA.parks[m._fundCode])); m.setRadius(ringStyle(DATA.parks[m._fundCode]).radius); }); }
 
@@ -996,12 +996,16 @@ body.embed-mode .fund-bar{display:none}
       var codes=Object.keys(d.parks);
       d._maxAll=Math.max.apply(null,codes.map(function(c){return d.parks[c].usd;}));
       d._maxHist=Math.max.apply(null,codes.map(function(c){return d.parks[c].hist_usd;}));
-      if(!map.getPane('fundPane')){ map.createPane('fundPane'); map.getPane('fundPane').style.zIndex=650; }
+      // Rings sit below the park markers (markerPane is 600) and draw with SVG, so only the
+      // rings themselves take clicks: a canvas here would cover the whole map and swallow
+      // every marker click. Rings start at 16px so they show around a 28px park marker.
+      if(!map.getPane('fundPane')){ map.createPane('fundPane'); map.getPane('fundPane').style.zIndex=450; }
+      var renderer=L.svg({pane:'fundPane'});
       layer=L.layerGroup();
       // Largest rings first so smaller ones sit on top and stay clickable.
       codes.sort(function(a,b){return d.parks[b].usd-d.parks[a].usd;}).forEach(function(c){
         var p=d.parks[c];
-        var m=L.circleMarker([p.lat,p.lon],Object.assign({pane:'fundPane',bubblingMouseEvents:false},ringStyle(p)));
+        var m=L.circleMarker([p.lat,p.lon],Object.assign({pane:'fundPane',renderer:renderer,bubblingMouseEvents:false},ringStyle(p)));
         m._fundCode=c;
         m.bindTooltip(esc(p.name)+' &middot; '+money(p.usd)+' blocked',{direction:'top'});
         m.on('click',function(){ showPark(c); });
