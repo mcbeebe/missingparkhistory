@@ -2,15 +2,277 @@
   "code": "FOSU",
   "name": "Fort Sumter and Fort Moultrie NHP",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Fort Sumter and Fort Moultrie National Historical Park in Charleston Harbor, South Carolina, preserves the sites of the opening and closing engagements of the Civil War. On April 12, 1861, Confederate forces fired on the Union-held Fort Sumter, beginning the four-year conflict that would cost over 600,000 American lives. Fort Moultrie, on nearby Sullivan's Island, has an even longer military history — Patriot forces there repelled a British naval attack in 1776 during the Revolutionary War in one of the first decisive American victories. The park also interprets the role of Charleston Harbor as the main port of entry for enslaved Africans brought to North America, with an estimated 40 percent of all enslaved people entering the country passing through these waters.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-A-2026-10-17",
+  "verifiedBy": "verifier-A-2026-10-17 (52 claims checked; 11 corrections)",
+  "summary": "<p>Fort Sumter rises from a human-made island at the mouth of Charleston Harbor: a five-sided, three-tiered masonry fort begun in 1829, after the War of 1812 exposed the weakness of American coastal defenses, and designed for 135 guns and 650 men behind 5-foot walls nearly 55 feet above low water. Enslaved laborers and craftsmen were among those who built it. It was still unfinished when Maj. Robert Anderson moved his garrison there from Fort Moultrie (two companies, 85 men, by the 2013 park brochure’s count) the day after Christmas 1860, six days after South Carolina seceded; the state’s secession declaration objected to a president “whose opinions and purposes are hostile to slavery.” <a href=\"https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fosu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Confederate batteries opened fire before dawn on April 12, 1861, and after 34 hours Anderson surrendered; no one on either side had been killed. From 1863 Federal guns hurled seven million pounds of metal at the fort over 20 months, and the foundation document calls it the most heavily bombarded location of the entire war, yet its Confederate garrison held until evacuating on February 17, 1865. Across the channel on Sullivan’s Island, the palmetto-log first Fort Moultrie had driven off a British fleet on June 28, 1776; a fort was maintained there until 1947. Congress made Fort Sumter a national monument on April 28, 1948, and redesignated the combined sites a national historical park in 2019. <a href=\"https://npshistory.com/publications/fosu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fosu/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>The park also holds ground where enslaved Africans entered America, and the foundation document says the legacy of their suffering, survival and struggle for freedom continues to define what civil rights and equality mean. <a href=\"https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "title": "Foundation Document, Fort Sumter National Monument, South Carolina (NPS, January 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/fosu/index.htm",
+      "title": "NPSHistory.com: Fort Sumter and Fort Moultrie NHP archive page — overview (from the 2013 Fort Sumter and Fort Moultrie NPS brochures) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "title": "Administrative History, Fort Sumter and Fort Moultrie National Historical Park, Charleston, SC (NPS, 2020)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>Charleston was one of North America’s largest slave ports. The park’s Liberty Square visitor center stands on the site of Gadsden’s Wharf, where thousands of enslaved Africans were brought ashore; others landed at quarantine stations on Sullivan’s Island. The 2016 foundation document says roughly 40 percent of all enslaved Africans transported to America disembarked at these sites; the 2020 administrative history reports Charleston historian Nic Butler’s view that the figure is too high for Sullivan’s Island alone, though it may hold for Charleston Harbor as a whole. Arrivals were quarantined in the island’s “pest house,” an average of twelve days, until sold at Charleston’s market. <a href=\"https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/fosu/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In 1863 Confederate laborers and slaves inside Fort Sumter worked day and night with cotton bales and sand to buttress the walls facing Federal guns. Fort Moultrie opened its African Passages exhibit on the Middle Passage and slavery in 2009, the year after the Toni Morrison Society placed its first “Bench by the Road” there. <a href=\"https://npshistory.com/publications/fosu/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/fosu/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+          "title": "Foundation Document, Fort Sumter National Monument, South Carolina (NPS, January 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fosu/adhi.pdf",
+          "title": "Administrative History, Fort Sumter and Fort Moultrie National Historical Park, Charleston, SC (NPS, 2020)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fosu/index.htm",
+          "title": "NPSHistory.com: Fort Sumter and Fort Moultrie NHP archive page — overview (from the 2013 Fort Sumter and Fort Moultrie NPS brochures) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>When Major Anderson returned to raise the U.S. flag over Fort Sumter on April 14, 1865, three thousand African Americans watched, according to the park’s 2020 administrative history. Among them were the son of Denmark Vesey, executed in 1822 after being accused of trying to lead a slave rebellion in Charleston, and Robert Smalls, with the former Confederate ship he had commandeered and sailed past the fort in 1862, taking his family and other slaves to freedom. <a href=\"https://npshistory.com/publications/fosu/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>John Tucker, writing in 2002 and quoting historian Thomas J. Pressly, recounts that at the April 1961 centennial in Charleston a Black woman on New Jersey’s centennial commission was denied a room at the headquarters hotel; at the President’s insistence the national assembly moved to the non-segregated naval base, and South Carolina’s commission seceded from the national body and met separately. The fort museum added a section in 1995 on African Americans in the war, highlighting the 54th Massachusetts on nearby Morris Island. <a href=\"https://npshistory.com/publications/fosu/tucker.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fosu/adhi.pdf",
+          "title": "Administrative History, Fort Sumter and Fort Moultrie National Historical Park, Charleston, SC (NPS, 2020)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/fosu/tucker.pdf",
+          "title": "Tucker, “Interpreting Slavery and Civil Rights at Fort Sumter National Monument,” The George Wright Forum 19(4), 2002",
+          "type": "journal"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>Fort Moultrie holds the grave of Osceola, leader of resistance in the Second Seminole War, who was captured when he went to negotiate under what he believed was a flag of truce and was imprisoned at the fort until his death in January 1838. He was buried without his head. After a man broke into the grave in 1966 meaning to carry the bones to Florida, Park Service historians exhumed it before a crowd of two hundred, found a headless body and the bones of an unidentified infant, displayed the remains for the newspaper and reinterred them in a concrete vault. The park’s 2020 administrative history judges that the publicity surrounding the exhumation suggested a lack of sensitivity to Seminole history. <a href=\"https://npshistory.com/publications/fosu/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fosu/adhi.pdf",
+          "title": "Administrative History, Fort Sumter and Fort Moultrie National Historical Park, Charleston, SC (NPS, 2020)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2016 Park Service assessment of the park’s 21 structures and 10 roads, parking lots and docks, looking ahead to 2050, found 90 percent of them highly exposed to coastal hazards and sea-level rise. Every asset at Fort Sumter and Liberty Square lies in FEMA’s VE flood zone. Almost two-thirds rated highly vulnerable and only two low; the highly vulnerable assets, Fort Sumter itself among them, carry a replacement value of over $1.1 billion. Three Fort Moultrie assets set on artificial hills received more favorable exposure scores. <a href=\"https://npshistory.com/publications/fosu/cc-vulnerability.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/fosu/cc-vulnerability.pdf",
+          "title": "Peek et al., Fort Sumter National Monument Coastal Hazards & Sea-Level Rise Asset Vulnerability Assessment Protocol (NPS 392/154056, May 2016)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Human-made island; five-sided, three-tiered masonry; designed for 135 guns and 650 men; 5-foot walls nearly 55 feet above low water",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "pp. 3–4 Brief Description"
+    },
+    {
+      "claim": "War of 1812 showed lack of coastal defenses; construction of Fort Sumter began in 1829",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 3"
+    },
+    {
+      "claim": "Enslaved laborers and craftsmen were among those who worked on the fort",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "Fort Sumter brochure, opening paragraph"
+    },
+    {
+      "claim": "Brochure (2013): Anderson commanded two companies, 85 men, at Fort Moultrie and moved his 85-man garrison into the unfinished fort the day after Christmas 1860; six days after South Carolina seceded (December 20, 1860). (The admin history, p. 6, reports a 1950s park account of 129 US troops at Fort Sumter; not used.)",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "Fort Sumter brochure, opening paragraph and “Fort Sumter and the Coming of the Civil War”"
+    },
+    {
+      "claim": "South Carolina Declaration: “whose opinions and purposes are hostile to slavery”",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "“Fort Sumter and the Coming of the Civil War” paragraph 1"
+    },
+    {
+      "claim": "Fire opened April 12, 1861 (3:20 a.m. warning, signal shell an hour later); defended Sumter for 34 hours; no one killed during the engagement",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "Fort Sumter brochure, bombardment narrative"
+    },
+    {
+      "claim": "Federal guns hurled seven million pounds of metal over 20 months; Confederate evacuation February 17, 1865",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "“Confederate Stronghold, 1863–1865”"
+    },
+    {
+      "claim": "Most heavily bombarded location of the entire American Civil War",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 6 significance statement 6",
+      "interpretive": true
+    },
+    {
+      "claim": "First fort on Sullivan’s Island attacked June 28, 1776, ships forced to retire; palmetto-log walls; Fort Moultrie defended the harbor until maintained to 1947",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "Fort Moultrie brochure, “Guardian at the Straits”, “Revolutionary War”, “Moultrie I”"
+    },
+    {
+      "claim": "Established April 28, 1948",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 5 Park Purpose"
+    },
+    {
+      "claim": "Congress passed legislation in 2019 redesignating the site Fort Sumter and Fort Moultrie National Historical Park (establishment block: March 12, 2019)",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "ch. 6 overview, p. 183"
+    },
+    {
+      "claim": "Legacy of suffering, survival and struggle for freedom continue to define what civil rights and equality mean",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 11 Interpretive Themes",
+      "interpretive": true
+    },
+    {
+      "claim": "Charleston one of North America’s largest slave ports; economy relied heavily on enslaved labor",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 11 Interpretive Themes"
+    },
+    {
+      "claim": "Liberty Square once the site of Gadsden’s Wharf; thousands of enslaved Africans brought in there",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 4; Liberty Square FRV conditions"
+    },
+    {
+      "claim": "Quarantine stations on Sullivan’s Island checked every person entering the harbor, including enslaved Africans",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 6 significance 4 (and nps.gov/fosu History & Culture)"
+    },
+    {
+      "claim": "FD: approximately 40% of all enslaved Africans transported to America disembarked at Gadsden’s Wharf and Sullivan’s Island quarantine sites",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/fosu-fd-2016.pdf",
+      "locator": "p. 6 significance statement 4"
+    },
+    {
+      "claim": "Nic Butler finds 40 percent an overestimate for Sullivan’s Island but possibly accurate for Charleston Harbor as a whole",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "Introduction p. xviii, fn. 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Slave traders quarantined newly arrived slaves an average of twelve days in the pest house until sold at Charleston’s market",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "Introduction p. xviii, fn. 2 (citing Morgan, Slave Counterpoint)"
+    },
+    {
+      "claim": "1863: Confederate laborers and slaves inside Fort Sumter worked day and night with cotton bales and sand to buttress the walls",
+      "sourceUrl": "https://npshistory.com/publications/fosu/index.htm",
+      "locator": "“Confederate Stronghold, 1863–1865”"
+    },
+    {
+      "claim": "Fort Moultrie opened African Passage(s) exhibit in 2009 covering the Middle Passage and slavery",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "p. 183"
+    },
+    {
+      "claim": "July 2008 Toni Morrison Society “Bench by the Road” installed at Fort Moultrie, the inaugural bench",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "p. 185"
+    },
+    {
+      "claim": "April 14, 1865: Anderson returned to raise the US flag over the fort before three thousand African Americans; son of Denmark Vesey (executed 1822 after being accused of trying to lead a slave rebellion) present; Robert Smalls present with the former Confederate ship he commandeered past Fort Sumter in 1862, taking his family and other slaves to freedom",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "ch. 1, p. 7"
+    },
+    {
+      "claim": "April 1961 centennial (Tucker quoting Pressly): Negro woman member of New Jersey commission denied room at headquarters hotel; at the President’s insistence meeting transferred to non-segregated naval base; South Carolina commission seceded from national Commission; separate meeting at hotel",
+      "sourceUrl": "https://npshistory.com/publications/fosu/tucker.pdf",
+      "locator": "pp. 16–17 (quoting Pressly)"
+    },
+    {
+      "claim": "Museum completed 1995 added section on African American participation, highlighting the 54th Massachusetts on Morris Island",
+      "sourceUrl": "https://npshistory.com/publications/fosu/tucker.pdf",
+      "locator": "p. 19"
+    },
+    {
+      "claim": "Osceola leader of resistance in the Second Seminole War, captured going to negotiate under what he believed was a flag of truce",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "p. 94"
+    },
+    {
+      "claim": "Osceola imprisoned and died at the fort in January 1838; buried without his head",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "p. 81 (PDF p. 111); p. 88"
+    },
+    {
+      "claim": "1966 break-in to take bones to Florida; exhumation by Bearss and Dobrovny before crowd of two hundred; headless body and unidentified infant; bones displayed for newspaper; reinterred in concrete vault",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "pp. 94–95"
+    },
+    {
+      "claim": "Administrative history: publicity surrounding the exhumation and re-interment suggested a lack of sensitivity to Seminole history",
+      "sourceUrl": "https://npshistory.com/publications/fosu/adhi.pdf",
+      "locator": "p. 95",
+      "interpretive": true
+    },
+    {
+      "claim": "21 structures and 10 transportation assets assessed; 35-year horizon to 2050; 90% high exposure",
+      "sourceUrl": "https://npshistory.com/publications/fosu/cc-vulnerability.pdf",
+      "locator": "pp. 3, 6 (Table 2)"
+    },
+    {
+      "claim": "All Liberty Square and Fort Sumter area assets in the FEMA VE zone; three Fort Moultrie assets (SPAWARS building, its parking lot, HECP building) on artificial hills given more favorable exposure scores",
+      "sourceUrl": "https://npshistory.com/publications/fosu/cc-vulnerability.pdf",
+      "locator": "p. 6"
+    },
+    {
+      "claim": "Almost two-thirds high vulnerability; only 2 low; high-vulnerability assets replacement value over $1.1 billion including Fort Sumter itself",
+      "sourceUrl": "https://npshistory.com/publications/fosu/cc-vulnerability.pdf",
+      "locator": "p. 3 Executive Summary"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/fosu/fort-sumter.jpg",
+      "caption": "Fort Sumter, on an island in Charleston Harbor, reachable only by boat",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fosu/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/5940E3D9-BA8F-CC70-B7721D361AA47CC3.jpg",
+      "evidenceUrl": "https://www.nps.gov/fosu/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 190455,
+      "note": "On-page caption: \"Fort Sumter is located on an island in Charleston Harbor and is only accessible by boat. NPS Photo\"; alt text \"Fort Sumter with a US flag flying above the fort with dock in the foreground\". Resized from 5184x3456."
+    },
+    {
+      "file": "images/history/fosu/fort-moultrie.jpg",
+      "caption": "A row of cannon with Fort Moultrie behind; the fort spans 171 years, 1776–1947",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/fosu/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/E989D519-950E-C3AC-84F007692983681A.jpg",
+      "evidenceUrl": "https://www.nps.gov/fosu/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 214724,
+      "note": "On-page caption: \"Fort Moultrie spans 171 years from 1776-1947 NPS Photo\"; alt text \"A row of cannon with Fort Moultrie in the background. A US flag is flying in the fort.\" Resized from 5184x3456."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/fosu/index.htm",
     "adhiUrl": "https://npshistory.com/publications/fosu/adhi.pdf",

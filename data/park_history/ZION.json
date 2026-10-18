@@ -1,0 +1,204 @@
+{
+  "code": "ZION",
+  "name": "Zion National Park",
+  "entries": [],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-D-2026-10-17",
+  "verifiedBy": "verifier-D-2026-10-17 (18 claims checked; 7 corrections)",
+  "summary": "<p>In Zion Canyon the North Fork of the Virgin River has cut a gorge whose sandstone walls rise 2,000 to 3,000 feet above the canyon floor. The park’s Navajo sandstone cliffs, among the highest in the world, expose remnants of the largest known sand-dune system, and springs seeping from the rock feed hanging gardens. Zion sits where the Colorado Plateau, Mojave Desert and Great Basin meet, and its elevations, from 3,600 to 8,700 feet, hold desert tortoise and honey mesquite in the low canyons and fir, aspen and elk on the plateaus; the rare Zion snail lives only in its hanging gardens. <a href=\"https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/zion/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People have lived here for thousands of years — hunters who tracked mammoths and camels, the farmers now known as Ancestral Puebloans, and the Southern Paiute people who followed. Mormon pioneers came in the 1860s and farmed the river terraces. On July 31, 1909, President William H. Taft set aside 15,200 acres as Mukuntuweap National Monument; it was enlarged and renamed Zion National Monument in 1918, made a national park in 1919, and joined by the Kolob Canyons in 1956. The park now covers 148,733 acres, 84 percent of it designated wilderness in 2009. <a href=\"https://npshistory.com/publications/zion/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s own brochure says Zion is beautiful but not pristine: 150 years of farming, grazing and recreation have changed it, and exotic tamarisk and cheatgrass are replacing native willow and grasses. Flash floods that once destroyed towns and droughts that burned crops, it adds, are threats that still exist today. <a href=\"https://npshistory.com/publications/zion/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf",
+      "title": "NPS, Foundation Document, Zion National Park (2013)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/zion/index.htm",
+      "title": "NPSHistory.com: Zion National Park archive page — NPS brochure text and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Southern Paiute time here, the park’s ethnographic overview (1997, revised 2013) reports, began when the people were created and given the right to use and the obligation to protect these lands. Most, it says, believe they were, or are related by marriage to, the people archaeologists call the Virgin River Anasazi — a relationship still debated. Tony Tillahash told a 1936 researcher that Muhuntuweap, the name for lower Zion Canyon, meant the land of his maternal grandfather Muhun. <a href=\"https://npshistory.com/publications/zion/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The overview’s chronology records depopulation of up to 90 percent for local groups after European diseases arrived, raids for Paiute children, and new diseases causing losses of up to 75 percent between 1847 and 1862, the years Mormon colonists occupied key irrigable lands and waters. An 1865 treaty negotiated with a handful of Utah Paiutes was never ratified, leaving Paiutes without treaty rights. Congress terminated four Utah Paiute bands in 1954; the Paiute Indian Tribe of Utah regained federal recognition in 1980. <a href=\"https://npshistory.com/publications/zion/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/zion/eoa.pdf",
+          "title": "Stoffle, Austin, Halmo & Phillips, Ethnographic Overview and Assessment: Zion National Park and Pipe Spring National Monument (1997, revised 2013)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2025 Park Service science report found that by the end of its 2000–2019 study period the growing season across Zion’s vegetation was starting 5.8 days later and ending 7.6 days later, with peak growth 7.4 days later; the best multivariable indicator of plant production was three years of precipitation. A 2018 Park Service brief projected that under a high-emissions pathway suitable summer climate would cease to occur for 32 bird species by mid-century, potentially extirpating them from the park, while it would become suitable for 15 species not found there today — placing Zion in the high-turnover group of parks. <a href=\"https://npshistory.com/publications/zion/sr-2025-287.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/zion/rb-birds-cc-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/zion/sr-2025-287.pdf",
+          "title": "Thoma, Landscape Phenology, Vegetation Condition, and Relations with Climate at Zion National Park, 2000–2019 (NPS/SR—2025/287)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/zion/rb-birds-cc-2018.pdf",
+          "title": "NPS, Resource Brief: Birds and Climate Change, Zion National Park (2018)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>From 1933 to 1942 Civilian Conservation Corps enrollees were stationed at Zion, working under Park Service landscape architects and engineers. They built and maintained trails, quarried and dressed stone, rehabilitated irrigation ditches and built the Temple of Sinawava parking lot. On the river, after 1933 CCC crews temporarily rerouted the Virgin River and stacked quarried sandstone into heavy wire baskets, building revetments that straightened the channel and protected park facilities from flooding; such revetments were built into the 1960s. Many revetments were later expanded or altered, but much CCC stonework survives; the 2006 landscape inventory cites the retaining walls of Walter’s Wiggles on the West Rim Trail. Southern Paiute adults, the ethnographic overview notes, also joined CCC Indian camps and worked on the highways near Zion. <a href=\"https://npshistory.com/publications/zion/cli-zion-canyon.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/zion/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/zion/cli-zion-canyon.pdf",
+          "title": "NPS, Cultural Landscapes Inventory: Zion Canyon, Zion National Park (2006)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/zion/eoa.pdf",
+          "title": "Stoffle et al., Ethnographic Overview and Assessment (1997, rev. 2013), Table 1.1",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "North Fork of the Virgin River carved gorge through Zion Canyon; sandstone walls rise 2,000 to 3,000 feet above the canyon floor",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf",
+      "locator": "Brief Description of the Park, p. 3"
+    },
+    {
+      "claim": "Navajo sandstone cliffs among the highest in the world; remnants of the largest known sand dune system; canyon springs create hanging gardens; juncture of Colorado Plateau, Mojave Desert, Great Basin",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf",
+      "locator": "Park Significance, p. 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Elevations 3,600–8,700 ft; fir, ponderosa pine, aspen in highcountry; elk; desert tortoise and honey mesquite at lowest elevations; rare Zion snail lives only in Zion's isolated hanging gardens",
+      "sourceUrl": "https://npshistory.com/publications/zion/index.htm",
+      "locator": "brochure text, 'The Nature of Sanctuary'"
+    },
+    {
+      "claim": "First residents tracked mammoths, camels; Ancestral Puebloans; Southern Paiute people who followed; Mormon pioneers in the 1860s farmed river terraces",
+      "sourceUrl": "https://npshistory.com/publications/zion/index.htm",
+      "locator": "brochure text, 'In a Haven of Habitats'"
+    },
+    {
+      "claim": "July 31, 1909, Taft proclamation set aside 15,200 acres as Mukuntuweap NM; 1918 enlarged to 76,800 acres and renamed Zion NM; national park 1919; Kolob Canyons NM 1937, added 1956; 148,733 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf",
+      "locator": "Brief Description, p. 3; Establishment block on archive page"
+    },
+    {
+      "claim": "March 30, 2009 Omnibus Public Land Management Act designated 124,462 acres (84%) wilderness",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/zion-fd-2013.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "'This national park is beautiful but not pristine'; 150 years of farming, grazing, recreation; tamarisk and cheatgrass replace native willow and grasses; flash floods destroyed towns and drought burned crops; 'the same threats exist today'",
+      "sourceUrl": "https://npshistory.com/publications/zion/index.htm",
+      "locator": "brochure text, 'In a Haven of Habitats' and 'The Nature of Sanctuary' final paragraph",
+      "interpretive": true
+    },
+    {
+      "claim": "Southern Paiute times here began when the people were created and given the right to use and the obligation to protect these lands and resources; most believe they were or are related by marriage to the Virgin River Anasazi; anthropological debate ongoing (since the 1940s)",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Ch. 1.7, pp. 15–16 (Stoffle et al., 1997 rev. 2013)",
+      "interpretive": true
+    },
+    {
+      "claim": "Tony Tillahash, raised at Shivwits: Mukuntuweap applied to lower Parunuweap Canyon; Muhuntuweap to lower Zion Canyon, meaning the land of Muhun, his maternal grandfather (Presnall 1936)",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Ch. 5.2, p. 97–98"
+    },
+    {
+      "claim": "Chronology Table 1.1: 1520–1750+ depopulation up to 90% for local groups; 1750–1855 raiding for children; 1847–1862 Mormon colonization of irrigable lands and waters, up to 75 percent loss in local populations (table presents colonization and disease losses in the same period; no causal link stated)",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Table 1.1, pp. 16–17"
+    },
+    {
+      "claim": "September 1865 negotiations; treaty never ratified by the Senate, Paiutes left without treaty rights",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Ch. 3.2, p. 49"
+    },
+    {
+      "claim": "September 1, 1954 termination of Shivwits, Kanosh, Koosharem, Indian Peaks bands (PL 83-762); April 3, 1980 PITU restored to federal recognition (PL 96-227)",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Ch. 3.2.1, pp. 50–51"
+    },
+    {
+      "claim": "1933–1953 period: Southern Paiute adults join CCC Indian camps and work on Kaibab Paiute Reservation and on highways near Zion",
+      "sourceUrl": "https://npshistory.com/publications/zion/eoa.pdf",
+      "locator": "Table 1.1, p. 18"
+    },
+    {
+      "claim": "1933–1942 CCC enrollees stationed at Zion under NPS (Western Field Office) landscape architects and engineers; trails, quarrying and dressing stone, revetments straightening the Virgin River and protecting facilities from flooding, irrigation ditches; last CCC camp closed July 1942",
+      "sourceUrl": "https://npshistory.com/publications/zion/cli-zion-canyon.pdf",
+      "locator": "Statement of Significance, 'The Era of Public Works', pp. 21–22"
+    },
+    {
+      "claim": "After 1933 CCC provided many men for river stabilization; temporarily rerouting the river, stacking quarried sandstone into heavy-gauge wire baskets; revetments built into the 1960s; Temple of Sinawava parking lot built by CCC 1934–35",
+      "sourceUrl": "https://npshistory.com/publications/zion/cli-zion-canyon.pdf",
+      "locator": "Chronology, p. 38"
+    },
+    {
+      "claim": "Many CCC revetments greatly expanded or altered; Walter's Wiggles a prime example of surviving handiwork",
+      "sourceUrl": "https://npshistory.com/publications/zion/cli-zion-canyon.pdf",
+      "locator": "p. 22"
+    },
+    {
+      "claim": "By the end of the 2000–2019 study period growing season starting 5.8 days later, ending 7.6 days later, peak growth 7.4 days later; best multivariable indicator three years of precipitation",
+      "sourceUrl": "https://npshistory.com/publications/zion/sr-2025-287.pdf",
+      "locator": "Executive Summary, Key findings, p. xviii (Thoma 2025, NPS/SR—2025/287)"
+    },
+    {
+      "claim": "High-emissions pathway: suitable summer climate ceases for 32 species (potential extirpation); becomes suitable for 15 species not found today; Zion in the high turnover group",
+      "sourceUrl": "https://npshistory.com/publications/zion/rb-birds-cc-2018.pdf",
+      "locator": "Results, p. 1; Management Implications, p. 2"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/zion/watchman.jpg",
+      "caption": "The Watchman towers over the Zion Canyon visitor center and South Entrance",
+      "credit": "NPS Photo / Shane Carte",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/zion/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg",
+      "evidenceUrl": "https://www.nps.gov/zion/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 933,
+      "bytes": 198523,
+      "note": "On-page caption (park header gallery, slide 1): \"The Watchman greets visitors to Zion Canyon as it towers over the visitor center and South Entrance.\" credit \"NPS Photo / Shane Carte\". Resized from 3000x2000."
+    },
+    {
+      "file": "images/history/zion/kolob-canyons.jpg",
+      "caption": "Kolob Canyons, in the northwest corner of the park",
+      "credit": "NPS Photo / Wil Marischen",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/zion/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/06BF5AAF-C83A-7BBD-C5AD8452D6564FBD.jpg",
+      "evidenceUrl": "https://www.nps.gov/zion/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 933,
+      "bytes": 133902,
+      "note": "On-page caption (park header gallery, slide 5): \"Kolob Canyons is located in the northwest corner of the park, near Cedar City. Multiple trails and scenic overlooks explore the unique geology of this area.\" credit \"NPS Photo / Wil Marischen\". Resized from 3600x2401."
+    }
+  ],
+  "photoStatus": "complete",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/zion/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [
+      "https://npshistory.com/publications/zion/eoa.pdf"
+    ],
+    "brochureUrls": [],
+    "docCount": 266
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/zion/index.htm"
+  },
+  "corrections": []
+}

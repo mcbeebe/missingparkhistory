@@ -1,16 +1,180 @@
 {
   "code": "PIRO",
   "name": "Pictured Rocks National Lakeshore",
-  "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "195"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-E-2026-10-17",
+  "verifiedBy": "verifier-E-2026-10-17 (31 claims checked; 4 corrections)",
+  "summary": "<p>Sandstone cliffs streaked ochre, tan and brown, with bands of white and green, rise 50 to 200 feet out of Lake Superior along the Upper Peninsula of Michigan. The colors come from groundwater seeping through cracks and leaving iron, manganese, copper and other minerals on the rock face; the cliffs themselves are largely 500-million-year-old Cambrian sandstone under a harder cap rock, carved by the lake into arches. The last glacier, which began retreating about 10,000 years ago, left kettle lakes and wetlands, and created the four-square-mile perched dune of the Grand Sable Banks. <a href=\"https://npshistory.com/publications/piro/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/piro/adhi/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People have come here since the ice withdrew. Archaic and Woodland peoples made summer camps along the coast, and later Anishinaabe people (the brochure’s Anishinaabek) hunted and fished here, as their descendants still do. The French fur trader Pierre Esprit Radisson, the first documented visitor to the Pictured Rocks, passed in 1658 and called the coast most delightful and wonderful. In the late 1800s boomtowns on the south shore supported large logging operations and blast furnaces making pig iron for the railroads, and the Life-Saving Service and Lighthouse Service built stations to help ships past the treacherous rock reef. <a href=\"https://npshistory.com/publications/piro/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/piro/adhi/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On October 15, 1966, President Lyndon Johnson signed the law creating the first national lakeshore here. It hugs more than 40 miles of shoreline, and with its Inland Buffer Zone of federal, state and private land covers nearly 73,000 acres. Historian Theodore Karamanski argues that the buffer zone and scenic drive were the law’s most controversial features, born of a consensus that masked deep divisions and later sharpened bitterness between local people and the Park Service. <a href=\"https://npshistory.com/publications/piro/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/piro/adhi/chap3.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/piro/index.htm",
+      "title": "NPSHistory.com: Pictured Rocks NL archive page — overview (from the 2018 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "title": "Karamanski, The Pictured Rocks: An Administrative History of Pictured Rocks National Lakeshore (NPS, 1995), ch. 1, Images of the Pictured Rocks",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/piro/adhi/chap3.htm",
+      "title": "Karamanski, The Pictured Rocks (NPS, 1995), ch. 3, Creation of Pictured Rocks National Lakeshore",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/piro-fd-2016.pdf",
+      "title": "Foundation Document, Pictured Rocks National Lakeshore, Michigan (NPS, 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>This shore was part of the land of the Ojibwe (Ojibwa in Karamanski’s 1995 administrative history). In 1658 Radisson’s Indian companions called the cliffs Nauitouchsinagoit, which he took to mean “the likeness of the devil,” and left an offering of tobacco there; Karamanski reads this as consistent with Ojibwe belief in a world alive with spirits. The Grand Sable Dunes, Negouwatchi or the Sandy Mountain, also received tobacco from Ojibwe travelers. Karamanski judges that the lakeshore itself was not heavily used for living or subsistence, but that it served as a place of burial, at Sand Point and the Grand Sable Dunes, and is frequently mentioned in Ojibwe lore. <a href=\"https://npshistory.com/publications/piro/adhi/chap1.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s 2016 foundation document calls Chapel, Little Beaver and Beaver lakes, the high cliffs, promontories and creek mouths of its wilderness study area especially important to the Ojibwe of the region, and notes that traditional ceremonies and plant gathering take place infrequently, mostly off-season. <a href=\"https://npshistory.com/publications/foundation-documents/piro-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+          "title": "Karamanski, The Pictured Rocks: An Administrative History of Pictured Rocks National Lakeshore (NPS, 1995), ch. 1, Images of the Pictured Rocks",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/piro-fd-2016.pdf",
+          "title": "Foundation Document, Pictured Rocks National Lakeshore, Michigan (NPS, 2016)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Sandstone cliffs ochre, tan, brown with layers of white and green tower 50 to 200 feet above the water",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "overview, 'Stories in Sand' para. 1"
+    },
+    {
+      "claim": "Streaks from groundwater oozing out of cracks carrying iron, manganese, limonite, copper and other minerals",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Colorful Cliffs' para. 1"
+    },
+    {
+      "claim": "Cliffs of 500-million-year-old Cambrian sandstone of the Munising Formation; capped by harder 400-million-year-old Au Train Formation; lake sculpted arches",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Colorful Cliffs' para. 2; 'Icy Architects'"
+    },
+    {
+      "claim": "Last glacier began retreating about 10,000 years ago; kettle lakes; wetlands",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Icy Architects' paras. 2-3"
+    },
+    {
+      "claim": "Grand Sable Banks a dramatic four square mile perched dune created 10,000 years ago by the last glaciation; cliffs stretch fifteen miles",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1, para. 2"
+    },
+    {
+      "claim": "Archaic and Woodland Indians made summer camps along the coast between Munising and Grand Marais; later Anishinaabek hunted and fished here, as their descendants still do",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Living with Lake and Land'"
+    },
+    {
+      "claim": "Pierre Esprit Radisson, first documented visitor to the Pictured Rocks, penetrated the Lake Superior basin in 1658; 'most delightful and wonderful'",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1, paras. 1 and 3 (fns. 5, 7)"
+    },
+    {
+      "claim": "Late 1800s logging of white pine, beech, maple; blast furnaces produced pig iron; Life Saving Service and Lighthouse Service built stations along the shore",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Booming Commerce' (boomtowns along the southern shore; pig iron for the railroad industry); 'The Life-Saving Era' (treacherous rock reef)"
+    },
+    {
+      "claim": "October 15, 1966 Lyndon Johnson signed Public Law 89-668 creating the first National Lakeshore at the Pictured Rocks",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap3.htm",
+      "locator": "ch. 3, final section (fn. 117)"
+    },
+    {
+      "claim": "Hugs Lake Superior's shoreline for over 40 miles; Lakeshore Zone and Inland Buffer Zone together nearly 73,000 acres",
+      "sourceUrl": "https://npshistory.com/publications/piro/index.htm",
+      "locator": "'Stories in Sand' para. 2"
+    },
+    {
+      "claim": "Inland buffer zone and scenic drive the enabling legislation's two most controversial features; consensus masked deep-seated divisions and later bitterness between local people and the NPS",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap3.htm",
+      "locator": "ch. 3, para. following Kennedy's Duluth speech (fn. 66)",
+      "interpretive": true
+    },
+    {
+      "claim": "Pictured Rocks region part of the land of the Ojibwa",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1 (fn. 8)"
+    },
+    {
+      "claim": "Radisson's Indian companions called the rocks 'Nauitouchsinagoit', which Radisson took to mean 'the likeness of the devil', and left an offering of tobacco",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1 (fn. 7)"
+    },
+    {
+      "claim": "Consistent with Ojibwa belief in a world shaped by spirits; spectacular features could command dread or veneration",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1 (fn. 8)",
+      "interpretive": true
+    },
+    {
+      "claim": "Grand Sable Dunes, Negouwatchi or the Sandy Mountain, honored with tobacco by Ojibwa travelers",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1 (fn. 8)"
+    },
+    {
+      "claim": "Pictured Rocks area does not seem to have been heavily used for subsistence or habitation, but served for burial (Sand Point and Grand Sable Dunes) and is frequently mentioned in Ojibwa lore",
+      "sourceUrl": "https://npshistory.com/publications/piro/adhi/chap1.htm",
+      "locator": "ch. 1 (fn. 8)",
+      "interpretive": true
+    },
+    {
+      "claim": "Wilderness study area: Chapel, Little Beaver and Beaver Lakes, high cliffs, rock promontories and creek mouths especially important to the Ojibwe of the region",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/piro-fd-2016.pdf",
+      "locator": "Wilderness section, p. 64"
+    },
+    {
+      "claim": "Traditional American Indian ceremonies and plant gathering take place infrequently and mostly during the park's off-season",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/piro-fd-2016.pdf",
+      "locator": "FRV analysis, Maritime Heritage/Cultural Resources table, p. 27"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/piro/sandstone-cliffs-lake-superior.jpg",
+      "caption": "The sandstone cliffs of Pictured Rocks rise out of Lake Superior",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/piro/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/B502655F-03A4-E3C2-33CEA40037E6DC09.jpg",
+      "evidenceUrl": "https://www.nps.gov/piro/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 788,
+      "bytes": 186026,
+      "note": "On-page figcaption (park homepage gallery): \"The sandstone cliffs of Pictured Rocks rise out of Lake Superior\" with credit span \"NPS Photo\". Contemporary park photograph. Resized from 5103x2874."
+    },
+    {
+      "file": "images/history/piro/grand-sable-dunes.jpg",
+      "caption": "The Grand Sable Dunes, a perched dune ecosystem",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/piro/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/67BB28A7-9CFA-5005-CA2524D3E72B2528.jpg",
+      "evidenceUrl": "https://www.nps.gov/piro/index.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "indigenous",
+      "width": 1400,
+      "height": 892,
+      "bytes": 193961,
+      "note": "On-page figcaption (park homepage gallery): \"The Grand Sable Dunes are one of the best known examples of a perched dune ecosystem in the world\" with credit span \"NPS Photo\". Contemporary park photograph. Resized from 4285x2732. themeKey indigenous: the section discusses the dunes (Negouwatchi) as an Ojibwe offering and burial place."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/piro/index.htm",
     "adhiUrl": "https://npshistory.com/publications/piro/adhi/index.htm",

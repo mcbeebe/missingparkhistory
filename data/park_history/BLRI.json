@@ -2,15 +2,226 @@
   "code": "BLRI",
   "name": "Blue Ridge Parkway",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>The Blue Ridge Parkway stretches 469 miles along the crest of the Blue Ridge Mountains, connecting Shenandoah National Park in Virginia to Great Smoky Mountains National Park in North Carolina. Construction began in 1935 as a New Deal public works project and was not completed until 1987 with the opening of the Linn Cove Viaduct. Designed as a recreational motor road with no commercial vehicles allowed, the parkway passes through some of the oldest mountains in the world — the southern Appalachians — and features over 200 overlooks with sweeping views of the Blue Ridge. It is consistently the most-visited unit of the National Park System, drawing over 15 million recreational visitors annually.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-B-2026-10-17",
+  "verifiedBy": "verifier-B-2026-10-17 (31 claims checked; 11 corrections)",
+  "summary": "<p>The Blue Ridge Parkway is a continuous 469-mile motor road through the central and southern Appalachians, linking Shenandoah and Great Smoky Mountains national parks. <a href=\"https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> For 355 miles it follows the Blue Ridge, the eastern rampart of the Appalachians; then it skirts the Black Mountains and weaves through the Craggies, the Pisgahs and the Balsams to the Great Smokies, ranging from 649 to 6,047 feet past tulip trees, dogwood, spruce and fir and dense thickets of catawba rhododendron. <a href=\"https://npshistory.com/publications/blri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The 2016 foundation document calls it the longest road planned as a single park unit in the United States, a road through 29 counties that is frequently the most heavily visited unit of the national park system. <a href=\"https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>It was a Depression public works project. Congress allocated the first construction funds on June 16, 1933, under the National Industrial Recovery Act, and gave the Park Service its management on June 30, 1936. <a href=\"https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> New York landscape architect Stanley Abbott was hired to oversee the project, and construction began September 11, 1935, near Cumberland Knob, North Carolina — mostly by private contractors, with Works Progress Administration, Emergency Relief Administration and Civilian Conservation Corps crews as well. The last link, the Linn Cove Viaduct, opened in 1987, completing the continuous route. <a href=\"https://www.nps.gov/blri/learn/historyculture/construction.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Along the way the parkway conserves what the foundation document calls examples of 19th- and 20th-century lifeways of the mountain communities — among them Mabry Mill, run by E.B. Mabry from 1910 to 1935, and the Blue Ridge Music Center, which celebrates the region’s music. <a href=\"https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/blri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> It was also built in the Jim Crow South, and the Park Service’s 2009 historic resource study documents how segregation was planned into it. <a href=\"https://npshistory.com/publications/blri/hrs-african-americans.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/blri/index.htm",
+      "title": "NPSHistory.com: Blue Ridge Parkway archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf",
+      "title": "Foundation Document, Blue Ridge Parkway, North Carolina–Virginia (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://www.nps.gov/blri/learn/historyculture/construction.htm",
+      "title": "NPS, Construction of the Parkway (nps.gov/blri, last updated February 9, 2017)",
+      "type": "nps"
+    },
+    {
+      "url": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "title": "Rebecca Jones, Historic Resource Study: African Americans and the Blue Ridge Parkway (NPS, August 2009)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "black": {
+      "html": "<p>Segregated bathrooms appear in the parkway’s 1936 master plans for Bluff Park, Rocky Knob and Smart View, Rebecca Jones’s 2009 historic resource study finds. After an April 26, 1939 Washington conference with W. J. Trent, the Secretary’s adviser on Negro affairs, Superintendent Stanley Abbott’s annual report set out “provisions for Negroes”: shared gas stations and lunch counters, separate dining rooms, separate toilets, and separate cabin, camping and picnic areas in the large parks. At Cumberland Knob, a 1940 memo had rangers direct Black visitors to a five-unit picnic area, with “no sign” for direction. In August 1941 a Black family complained to NPS Director Newton Drury after a confrontation when they insisted on using the white area at Bluff Park. By 1941 Pine Spur, a 300-acre park for Black visitors near Roanoke, was well under construction, with 25 picnic units installed; it was never opened, and by the study’s account only a few curb stones and rotting outhouses remain. <a href=\"https://npshistory.com/publications/blri/hrs-african-americans.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+          "title": "Rebecca Jones, Historic Resource Study: African Americans and the Blue Ridge Parkway (NPS, August 2009)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>The parkway passes a few African American communities, where folklorist Patrick Mullen identified families with roots in slavery. Lizzie Price, born enslaved in 1845, farmed at Pine Spur and sold her land to the parkway; Abbott later recalled bringing her the check, and the study records that she lived to 108. Graves believed to be of enslaved or free Black people lie at Meadows of Dan, near the graves of the Langhorne family, one of five slaveholding families there; by a 1960s account, above the Peaks of Otter visitor center; and in the Pine Spur cemetery. Mount Jefferson was once called “Negro Mountain” because, as the overlook sign says, runaway slaves supposedly hid there; in 1947 Superintendent Sam Weems, relaying information from Alfred Percy of Madison Heights, Virginia, wrote that stone fences at Humpback Mountain were built by enslaved people. <a href=\"https://npshistory.com/publications/blri/hrs-african-americans.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The parkway’s own cemeteries page notes that its burial grounds hold the graves of enslaved African Americans. <a href=\"https://www.nps.gov/blri/learn/historyculture/cemeteries.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+          "title": "Rebecca Jones, Historic Resource Study: African Americans and the Blue Ridge Parkway (NPS, August 2009)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/blri/learn/historyculture/cemeteries.htm",
+          "title": "NPS, Cemeteries — Blue Ridge Parkway (nps.gov/blri)",
+          "type": "nps"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>Abbott asked for nine Civilian Conservation Corps camps in 1937 and was granted four — Rocky Knob, Kelso and a camp near Galax in Virginia, and Laurel Springs in North Carolina — whose enrollees landscaped, controlled erosion, installed guard rails and worked on fire prevention. The Galax camp, NP-29, was a segregated company of Black enrollees that began work in December 1940; a June 1941 inspection counted 180 men, with classes four nights a week and a library of 856 books. That same month a memo reported that a subaltern’s “abusive tactics” had created a situation “bordering on insurrection,” and a separate June 4 disturbance between a cook and an officer led to three discharges. The camp closed in May 1942. The study found Black construction workers hard to trace because private contractors built the road; in December 1942 Abbott reported no permanent Black personnel and one Black temporary laborer. <a href=\"https://npshistory.com/publications/blri/hrs-african-americans.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+          "title": "Rebecca Jones, Historic Resource Study: African Americans and the Blue Ridge Parkway (NPS, August 2009)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Folklorist Patrick Mullen identified families with roots in slavery in African American communities the parkway passes through",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Executive Summary, pp. 5–6"
+    },
+    {
+      "claim": "469 miles along the crests of the southern Appalachians; links Shenandoah and Great Smoky Mountains national parks",
+      "sourceUrl": "https://npshistory.com/publications/blri/index.htm",
+      "locator": "overview, opening line"
+    },
+    {
+      "claim": "Follows the Blue Ridge, eastern rampart of the Appalachians, for 355 miles; remaining 114 miles skirt the Black Mountains and weave through the Craggies, Pisgahs, Balsams to the Great Smokies",
+      "sourceUrl": "https://npshistory.com/publications/blri/index.htm",
+      "locator": "overview, 'The parkway follows the Appalachian Mountain chain' paragraph"
+    },
+    {
+      "claim": "Elevation range 649 to 6,047 feet; tulip trees, dogwood, spruce, fir; catawba rhododendron, flame azalea",
+      "sourceUrl": "https://npshistory.com/publications/blri/index.htm",
+      "locator": "overview, 'Trees are everywhere' and 'Flowering shrubs' paragraphs"
+    },
+    {
+      "claim": "Continuous 469-mile motor road through the central and southern Appalachians connecting Shenandoah and Great Smoky Mountains NPs; longest road planned as a single park unit in the U.S.; links 29 counties; frequently the most heavily visited unit of the national park system",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf",
+      "locator": "Brief Description of the Parkway, p. 3"
+    },
+    {
+      "claim": "Funds allocated June 16, 1933 under the National Industrial Recovery Act; NPS authorized to administer June 30, 1936",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf",
+      "locator": "Brief Description of the Parkway, p. 3"
+    },
+    {
+      "claim": "Stanley Abbott, New York landscape architect, oversaw the project; construction began September 11, 1935 near Cumberland Knob, NC",
+      "sourceUrl": "https://www.nps.gov/blri/learn/historyculture/construction.htm",
+      "locator": "paragraphs 2 and 4"
+    },
+    {
+      "claim": "Most construction by private contractors; WPA, ERA and CCC also employed; Linn Cove Viaduct opened 1987 completing the continuous 469-mile route",
+      "sourceUrl": "https://www.nps.gov/blri/learn/historyculture/construction.htm",
+      "locator": "paragraphs 5 and 7"
+    },
+    {
+      "claim": "Parkway conserves historically significant examples of 19th and 20th century lifeways of central and southern Appalachian communities",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/blri-fd-2016.pdf",
+      "locator": "Park Significance, statement 4, p. 5"
+    },
+    {
+      "claim": "Mabry Mill run by E.B. Mabry 1910–1935; Blue Ridge Music Center (mile 213) celebrates Blue Ridge music and musicians",
+      "sourceUrl": "https://npshistory.com/publications/blri/index.htm",
+      "locator": "overview, Parkway Highlights in Virginia, miles 176.1 and 213"
+    },
+    {
+      "claim": "Segregated bathrooms in 1936 Master Plans for Doughton (Bluff) Park, Rocky Knob and Smart View",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Executive Summary, p. 3; Section I, pp. 10–11"
+    },
+    {
+      "claim": "April 26, 1939 conference with W.J. Trent, Advisor to the Secretary on Negro Affairs, Acting Director Demaray, Thomas Vint; Abbott's 30 June 1939 annual report 'Provisions for Negroes': no division at gasoline and sandwich/lunch counters; separate dining rooms; separate toilets in shared buildings; separate cabin, camping, picnic areas in large parks",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section I, pp. 6–7"
+    },
+    {
+      "claim": "Cumberland Knob: five-unit picnic area for Negroes; ranger to direct them; 'No sign is to be placed for direction' (Abbott memo 28 June 1940)",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section I, p. 9"
+    },
+    {
+      "claim": "August 1941 complaint by an African American family to NPS Director Newton Drury about a confrontation when the family insisted on using the white area at Bluff Park",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section I, p. 9"
+    },
+    {
+      "claim": "Pine Spur: 300-acre park well under construction per 1941 annual report, 25 picnic units installed; never opened; today only a few curb stones and rotting outhouses remain (Quin, cited in the study)",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section I, pp. 9–10"
+    },
+    {
+      "claim": "Lizzie Price born a slave in 1845; moved to Pine Spur to farm; sold land to the parkway; Abbott's 1958 recollection of bringing the check; lived to 108 (Lord, 1981, as cited in the study)",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Executive Summary p. 5; Section III, p. 22"
+    },
+    {
+      "claim": "Meadows of Dan cemetery (8–10 burials) beside the Langhorne family, one of five slaveholding families in the area; cemeteries at Peaks of Otter (above the visitor center) and Pine Spur believed to hold graves of slaves or free blacks",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section III, pp. 22–23"
+    },
+    {
+      "claim": "Mount Jefferson formerly called Negro Mountain because runaway slaves supposedly hid there (overlook sign text)",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section III, pp. 21–22"
+    },
+    {
+      "claim": "Weems letter, 3 February 1947: Humpback Mountain stone fences 'built by slaves', information from Alfred Percy",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section III, p. 22",
+      "interpretive": true
+    },
+    {
+      "claim": "Parkway cemeteries hold graves of enslaved African-Americans",
+      "sourceUrl": "https://www.nps.gov/blri/learn/historyculture/cemeteries.htm",
+      "locator": "page body, paragraph 1"
+    },
+    {
+      "claim": "Abbott requested nine CCC camps in 1937, granted four: Rocky Knob NP-14, Kelso NP-15, NP-29 near Galax (VA), NP-21 near Laurel Springs (NC); work on landscaping, erosion control, guard rails, fire prevention, forest conservation",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section II, p. 14"
+    },
+    {
+      "claim": "NP-29 an African American company starting work December 1940; 5 June 1941 inspection: 180 enrollees; four nights of classes weekly; library of 856 books",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Executive Summary p. 4; Section II, p. 15"
+    },
+    {
+      "claim": "3 June 1941 memo: subaltern William P. Wynn 'has created a situation bordering on insurrection' from 'abusive tactics'; separate June 4, 1941 cook–officer disturbance (Abare report, 5 June 1941) resulted in discharge of three men; camp closed May 1942",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Executive Summary p. 4; Section II, p. 16"
+    },
+    {
+      "claim": "Black construction workers difficult to document because built by private contractors; Abbott memo 3 December 1942: no permanent negro personnel, one temporary unskilled laborer",
+      "sourceUrl": "https://npshistory.com/publications/blri/hrs-african-americans.pdf",
+      "locator": "Section I, p. 13"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/blri/mabry-mill.jpg",
+      "caption": "Mabry Mill, in Virginia’s Plateau district",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/blri/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C80E68A-1DD8-B71B-0B6752AF1737BF62.jpg",
+      "evidenceUrl": "https://www.nps.gov/blri/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 933,
+      "bytes": 232527,
+      "note": "On-page caption (home-page slideshow): \"Located in Virginia's Plateau district, picturesque Mabry Mill is one of the most iconic features of the Blue Ridge Parkway NPS Photo\". Resized from 5616x3744.",
+      "verifiedBy": "verifier-B-2026-10-17 (credit 'NPS Photo' confirmed on evidence page; image src matched)"
+    },
+    {
+      "file": "images/history/blri/music-center-breezeway.jpg",
+      "caption": "Musicians at the Blue Ridge Music Center",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/blri/learn/historyculture/blue-ridge-music.htm",
+      "imageUrl": "https://www.nps.gov/blri/learn/historyculture/images/pickingon-the-breezeway-sm.jpg",
+      "evidenceUrl": "https://www.nps.gov/blri/learn/historyculture/blue-ridge-music.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 757,
+      "bytes": 232135,
+      "note": "On-page caption: \"The Blue Ridge Music Center hosts a wide range of musicians every afternoon during the season. Artists also perform in the outdoor amphitheater as part of the summer concert series. NPS Photo\". Resized from 2218x1200.",
+      "verifiedBy": "verifier-B-2026-10-17 (credit 'NPS Photo' confirmed on evidence page; image src matched)"
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/blri/index.htm",
     "adhiUrl": null,

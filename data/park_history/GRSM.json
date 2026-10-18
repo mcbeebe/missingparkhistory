@@ -2,15 +2,232 @@
   "code": "GRSM",
   "name": "Great Smoky Mountains National Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Great Smoky Mountains National Park, straddling the border of Tennessee and North Carolina, is the most visited national park in the United States, drawing over 12 million recreational visits annually. Established in 1934, the park protects 522,427 acres of old-growth temperate forest — one of the largest blocks of hardwood forest remaining in North America. The park's biodiversity is extraordinary: it is home to over 19,000 documented species and is often called the \"Salamander Capital of the World\" for its 30-plus salamander species. The Cherokee people inhabited the region for thousands of years before forced removal along the Trail of Tears in 1838; members of the Eastern Band of Cherokee Indians still reside on the adjacent Qualla Boundary. The park was designated a UNESCO World Heritage Site in 1983 and an International Biosphere Reserve in 1976.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-A-2026-10-17",
+  "verifiedBy": "verifier-A-2026-10-17 (55 claims checked; 12 corrections)",
+  "summary": "<p>Great Smoky Mountains National Park spreads across more than 800 square miles of ancient mountains on the North Carolina–Tennessee line, from 850 feet to 6,643 feet at Clingmans Dome. More than 19,000 species have been documented there, and the park brochure counts more tree species than in northern Europe. The Cherokee called these mountains shaconage, “blue, like smoke.” People have lived in and around them for more than 9,000 years. The 2016 foundation document counted about 11 million visitors a year, up from about 9 million for most of the preceding decade. <a href=\"https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grsm/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Amid alarm at commercial logging threats to the forests, Congress authorized the park on May 22, 1926; it was established in 1934, among the first national parks assembled from private lands, bought with money from North Carolina, Tennessee, private citizens and groups, and schools. The cost fell on the people who lived there. Theodore Catton’s 2008 administrative history calls it the largest displacement of resident people in national park history: historian Margaret Brown estimated 5,665 people left some 1,133 farms between the late 1920s and early 1940s, and other estimates run as high as 6,000 to 7,000. A myth born in park circles held that none of the land was condemned; Catton calls it false: both states’ park commissions and the federal government used eminent domain, most often as a threat and sometimes in court. <a href=\"https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grsm/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/grsm/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "title": "Foundation Document, Great Smoky Mountains National Park, North Carolina-Tennessee (NPS, October 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/grsm/index.htm",
+      "title": "NPSHistory.com: Great Smoky Mountains National Park archive page — overview (from the NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "title": "Catton, A Gift for All Time: Great Smoky Mountains National Park Administrative History (2008)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The Cherokee farmed the land, built log homes and used fire to create farmland and improve browse for game; the park brochure says the newcomers took their land, and most members of today’s Eastern Band of Cherokee descend from those not forcibly removed in the 1830s. Catton traces that survival to the Qualla, a band that dissented from the 1835 Treaty of New Echota and resisted removal, and in 1836 entrusted their “white chief,” William Thomas, to win them the right to stay in North Carolina; they received federal recognition as the Eastern Band two years after becoming federal wards in 1868. About 2,200 strong when the park was established in the 1930s, the tribe had about 13,400 enrolled members, on a reservation of some 56,000 acres bordering the park, when Catton wrote in 2008. A park–tribe land exchange first raised in 1931 was concluded only in 1940. <a href=\"https://npshistory.com/publications/grsm/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grsm/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grsm/index.htm",
+          "title": "NPSHistory.com: Great Smoky Mountains National Park archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/grsm/adhi.pdf",
+          "title": "Catton, A Gift for All Time: Great Smoky Mountains National Park Administrative History (2008)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>The Civilian Conservation Corps in the park was segregated: in March 1935 all 17 CCC companies in the park were white, and Catton writes that it appears no Black company was deployed there. In the fall of 1941, with campground checking stations recording about 200 African American visitors a year, Superintendent J. R. Eakin proposed a separate campground and picnic area for them; Catton reads the aim as keeping the other campgrounds white. The regional director refused, the campgrounds were never segregated, and Catton credits Interior Secretary Harold Ickes, who wanted non-segregation extended to southern parks. In the early 1960s, when nearly every motel and restaurant in Gatlinburg refused Black customers, Superintendent Overly told local owners to open their doors or the government would build a hotel at Sugarlands. The 2016 foundation document still found the park’s interpretation of the African American story inadequate and listed research on that history as a need. <a href=\"https://npshistory.com/publications/grsm/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grsm/adhi.pdf",
+          "title": "Catton, A Gift for All Time: Great Smoky Mountains National Park Administrative History (2008)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+          "title": "Foundation Document, Great Smoky Mountains National Park, North Carolina-Tennessee (NPS, October 2016)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>In March 1933 there were 75 men on relief work in the park; within a year and a half there were 4,350, most of them Civilian Conservation Corps enrollees. The park eventually had 22 main CCC camps, more than twice as many as any other unit in the system. Most enrollees were from the South and many from the local area, a substantial number of them mountaineers who lived within the park, and some foremen came from Cades Cove and Smokemont. Crews removed dead chestnut trees, built hundreds of miles of foot and horse trails, campgrounds, a fish hatchery, footbridges and fire lookouts; stone bridges at Sugarlands and the Oconaluftee Ranger Station survive. Some 500 Eastern Band Cherokee sought work in the separate CCC-Indian Division and about 100 found it, mostly on erosion control on Qualla Boundary lands. <a href=\"https://npshistory.com/publications/grsm/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grsm/adhi.pdf",
+          "title": "Catton, A Gift for All Time: Great Smoky Mountains National Park Administrative History (2008)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The balsam woolly adelgid, an insect from Europe, killed most mature Fraser firs in the park within 45 years, in a park once home to 75 percent of all Fraser firs in the world; the hemlock woolly adelgid has infested and is killing hemlocks throughout the park. A 2010 Park Service briefing reported some of the highest measured air pollution of any national park: 264 unhealthy ozone days since 1997 under the older 85 ppb standard, visible ozone damage on over 30 plant species, worst-day visibility near 15 miles against a natural 77, and twelve Tennessee-side streams listed as impaired for low pH from acid deposition. The 2016 foundation document records a 50-year warming trend, earlier spring warming and later frost, and warns that climate change may shrink the range of some vegetation communities. <a href=\"https://npshistory.com/publications/grsm/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/grsm/briefs/air-quality-2010.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/grsm/index.htm",
+          "title": "NPSHistory.com: Great Smoky Mountains National Park archive page — overview (from the NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/grsm/briefs/air-quality-2010.pdf",
+          "title": "NPS Briefing Statement: Air Quality Issues, Great Smoky Mountains National Park (April 26, 2010)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+          "title": "Foundation Document, Great Smoky Mountains National Park, North Carolina-Tennessee (NPS, October 2016)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "More than 800 square miles; elevations 850 to 6,643 feet at Clingmans Dome; more than 19,000 species documented; more than 9 million visitors annually (p. 3) / approximately 11 million, up from approximately 9 million for most of the last decade (p. 44)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "locator": "p. 3 Brief Description; p. 44 Key Issues"
+    },
+    {
+      "claim": "More tree species than in northern Europe",
+      "sourceUrl": "https://npshistory.com/publications/grsm/index.htm",
+      "locator": "overview paragraph 1"
+    },
+    {
+      "claim": "Cherokee described these mountains as shaconage, “blue, like smoke”",
+      "sourceUrl": "https://npshistory.com/publications/grsm/index.htm",
+      "locator": "overview paragraph 2"
+    },
+    {
+      "claim": "Humans have lived in and around the park for more than 9,000 years",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "locator": "p. 5 significance, Vestiges of Human History"
+    },
+    {
+      "claim": "Alarmed at commercial logging threats to the forests; Congress authorized the park in 1926; established 1934; among first national parks assembled from private lands; NC, TN, private citizens and groups, and schools contributed money",
+      "sourceUrl": "https://npshistory.com/publications/grsm/index.htm",
+      "locator": "overview paragraph 3"
+    },
+    {
+      "claim": "Enabling legislation signed May 22, 1926",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "locator": "p. 4 Park Purpose"
+    },
+    {
+      "claim": "Largest displacement of resident people in national park history; Brown estimated 5,665 people from 1,133 farms × 5; estimates as high as 6,000–7,000; exodus late 1920s to early 1940s",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 18, p. 291, fn. 961",
+      "interpretive": true
+    },
+    {
+      "claim": "Myth born in park circles that the land base was secured without condemnation was false; Tennessee and North Carolina park commissions and the federal government all used eminent domain, most often as a threat, sometimes as a legal proceeding",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 18, pp. 291–292"
+    },
+    {
+      "claim": "Cherokee farmed, built log homes; newcomers took their land; Eastern Band most members descendants of those not forcibly removed in the 1830s; Cherokee used fire to create farmland and improve wildlife browse",
+      "sourceUrl": "https://npshistory.com/publications/grsm/index.htm",
+      "locator": "overview paragraph 2; “Fire Dependence”"
+    },
+    {
+      "claim": "Qualla dissented from New Echota Treaty of 1835, resisted removal; 1836 entrusted their white chief William Thomas to negotiate right to remain in North Carolina; 1868 federal wards; two years later federal recognition as Eastern Band",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 19, p. 310 (PDF p. 314)"
+    },
+    {
+      "claim": "About 2,200 in the 1930s; enrollment about 13,400; reservation approximately 56,000 acres (as of 2008)",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 19, p. 310 (PDF p. 314)"
+    },
+    {
+      "claim": "Land exchange discussions opened March 1931; came to fruition in 1940",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 19, p. 311 (PDF p. 315)"
+    },
+    {
+      "claim": "March 1935 all 17 companies in the park were white; appears no black companies were deployed",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 4, p. 67, fn. 211"
+    },
+    {
+      "claim": "About 200 African American visitors a year late 1930s–early 1940s; Eakin fall 1941 proposed separate campground and picnic area; Catton: real purpose to make Chimneys and Smokemont campgrounds exclusively white",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "p. 176 (PDF p. 180)",
+      "interpretive": true
+    },
+    {
+      "claim": "Regional Director Allen refused; Drury May 1942; campgrounds never segregated; credit to Ickes",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "pp. 176–177 (PDF pp. 180–181)",
+      "interpretive": true
+    },
+    {
+      "claim": "Early 1960s: blacks refused service by nearly every motel and restaurant in Gatlinburg; Overly threatened a Sugarlands hotel",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "p. 177 (PDF p. 181)"
+    },
+    {
+      "claim": "Inadequate interpretation of the Cherokee and African American stories; research on African American history listed as a data need",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "locator": "pp. 31–32"
+    },
+    {
+      "claim": "75 men in March 1933 swelled to 4,350 in the next year and a half; 22 main CCC camps, more than twice as many as any other unit",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "ch. 4, pp. 65–66"
+    },
+    {
+      "claim": "Most enrollees from the South, many from the local area, substantial number mountaineers living within the park; a few foremen were park residents of Cades Cove and Smokemont",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "p. 67"
+    },
+    {
+      "claim": "Crews felled dead chestnut trees, built hundreds of miles of foot and horse trails, campgrounds, a fish hatchery, foot bridges, fire lookouts; surviving stone bridges at Sugarlands and Oconaluftee Ranger Station",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "p. 69"
+    },
+    {
+      "claim": "Some 500 Eastern Band Cherokee sought work in CCC-Indian Division, about 100 employed, mostly erosion control on Qualla Boundary",
+      "sourceUrl": "https://npshistory.com/publications/grsm/adhi.pdf",
+      "locator": "p. 67, fn. 212"
+    },
+    {
+      "claim": "Balsam woolly adelgid from Europe killed most mature Fraser firs in 45 years; park once home to 75 percent of all Fraser firs; hemlock woolly adelgid has infested hemlocks throughout the park, killing them",
+      "sourceUrl": "https://npshistory.com/publications/grsm/index.htm",
+      "locator": "overview, “Balsam Woolly Adelgid” and “Hemlock Woolly Adelgid”"
+    },
+    {
+      "claim": "Some of the highest measured air pollution of any national park; 264 unhealthy ozone days since 1997 (85 ppb); over 30 species with foliar damage; worst-day visibility ~15 miles vs natural 77; twelve Tennessee-side streams listed impaired for low pH",
+      "sourceUrl": "https://npshistory.com/publications/grsm/briefs/air-quality-2010.pdf",
+      "locator": "p. 1 Background"
+    },
+    {
+      "claim": "50 year warming trend, earlier spring warming, later frost; climate change may reduce range of some vegetation communities",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/grsm-fd-2016.pdf",
+      "locator": "p. 20 Trends"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/grsm/fall-forest-fog.jpg",
+      "caption": "Fall leaves in fog in the Great Smoky Mountains",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/grsm/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C80F1CC-1DD8-B71B-0B784AC1BCA74166.jpg",
+      "evidenceUrl": "https://www.nps.gov/grsm/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 929,
+      "bytes": 235678,
+      "note": "On-page caption: \"Fall leaf season is one of the busiest times of year in the park. NPS Photo\"; alt text \"Bright gold and red leaves shine through the fog in a forest.\" Resized from 3200x2125. Other homepage slides are credited to named non-NPS photographers and were not used."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/grsm/index.htm",
     "adhiUrl": "https://npshistory.com/publications/grsm/adhi.pdf",

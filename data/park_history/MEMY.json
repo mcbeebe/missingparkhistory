@@ -2,15 +2,219 @@
   "code": "MEMY",
   "name": "Medgar and Myrlie Evers Home National Monument",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Medgar and Myrlie Evers Home National Monument in Jackson, Mississippi, preserves the modest ranch-style house where civil rights leader Medgar Evers lived with his wife Myrlie and their three children. Evers served as the NAACP's first field secretary in Mississippi, organizing voter registration drives, economic boycotts, and investigations into racial violence during the height of the civil rights movement. On June 12, 1963, Evers was assassinated in his driveway by white supremacist Byron De La Beckwith — a murder that galvanized the civil rights movement and contributed to the passage of the Civil Rights Act of 1964. The site was designated a national monument by President Barack Obama in 2020. Myrlie Evers-Williams went on to become a prominent civil rights leader in her own right, serving as chair of the NAACP.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-D-2026-10-17",
+  "verifiedBy": "verifier-D-2026-10-17 (26 claims checked; 2 corrections)",
+  "summary": "<p>Shortly after midnight on June 12, 1963, Medgar Evers was shot in the carport of the house in Jackson, Mississippi, that he shared with his wife Myrlie and their three young children. The Park Service describes his death as the first murder of a nationally significant leader of the civil rights movement; it heightened public awareness of civil rights and became a catalyst for passage of the Civil Rights Act of 1964. <a href=\"https://npshistory.com/publications/memy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The house itself records the danger the family lived with. Built in 1956, it stands in the Elraine Subdivision, the first post–World War II subdivision created for middle-class African Americans in Mississippi, developed by Black entrepreneur Winston J. Thompson with most houses built by Black builder Leroy Burnett. The couple turned down a corner lot they thought too exposed, chose a side entrance under the carport instead of a front door, and set furniture before the windows to block gunfire; Medgar taught the children to crawl infantry-style to the bathroom if they heard strange noises. The house also served as an extension of the NAACP office, where the couple hosted civil rights workers and sheltered African Americans threatened by white supremacists. <a href=\"https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/memy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Myrlie Evers moved to California in 1964, rented the house out for thirty years and donated it in 1993 to Tougaloo College, which has operated it as a museum. It was designated a National Historic Landmark on December 23, 2016, authorized as a national monument on March 12, 2019, and established as a unit of the National Park System on November 9, 2020. The park’s foundation document calls the violation of the home a solemn reminder of the danger of unchecked racism and discrimination, which it says the country still struggles to eradicate. <a href=\"https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/memy/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/memy/index.htm",
+      "title": "NPSHistory.com: Medgar and Myrlie Evers Home archive page — overview (NPS website text, 2018) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "title": "Baughn, Medgar and Myrlie Evers House, National Historic Landmark nomination (December 2015; designated December 23, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+      "title": "NPS, Foundation Document Overview, Medgar and Myrlie Evers Home National Monument (undated, map dated October 2022)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "black": {
+      "html": "<p>Medgar Evers, born in Decatur in 1925, served in segregated Army units in Europe during World War II. Refused admission to the University of Mississippi law school in 1954, he became the NAACP’s first field secretary in Mississippi, its first salaried post in the state, in January 1955, according to the landmark nomination; the foundation document gives 1954. He investigated racially motivated killings — in 1955 alone those of Emmett Till, the Rev. George Lee and Lamar Smith — took reporters to the crime scenes, and helped James Meredith enter the University of Mississippi in 1962. <a href=\"https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/memy/learn/historyculture/campaigns-and-causes.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On May 28, 1963, a Molotov cocktail was thrown onto the carport. On June 12 a sniper fired from about 200 feet away. Byron De La Beckwith, whom the park describes as a white supremacist and a member of the segregationist White Citizens’ Council, was tried twice in 1964 before all-white, all-male juries that deadlocked; he was convicted of murder in 1994. <a href=\"https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/memy/learn/historyculture/people.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+          "title": "Baughn, Medgar and Myrlie Evers House NHL nomination (2015), pp. 8–22",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/memy/learn/historyculture/campaigns-and-causes.htm",
+          "title": "NPS, Medgar and Myrlie Evers Home NM, “Campaigns and Causes” (last updated June 10, 2024)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+          "title": "NPS, Foundation Document Overview, Medgar and Myrlie Evers Home NM",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/memy/learn/historyculture/people.htm",
+          "title": "NPS, Medgar and Myrlie Evers Home NM, “People” (last updated June 13, 2022)",
+          "type": "nps"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>The foundation document calls Medgar and Myrlie Evers committed and equal partners. Myrlie served as his secretary during his first two years as field secretary, then chose to stay home, where much of her time went to hosting civil rights leaders, often overnight, and sheltering Black victims of abuse and threats. After the assassination she became a national speaker for the NAACP, received its Spingarn Medal in July 1963 and testified at both of Beckwith’s 1964 trials. In California she earned a sociology degree from Pomona College in 1968, became the first African American woman on the Los Angeles Board of Public Works, chaired the NAACP board from 1995 to 1998, and in 2013 became the first woman to deliver a presidential inaugural invocation. <a href=\"https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+          "title": "NPS, Foundation Document Overview, Medgar and Myrlie Evers Home NM — significance statements",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+          "title": "Baughn, Medgar and Myrlie Evers House NHL nomination (2015), pp. 8–9, 21–22",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Shortly after midnight June 12, 1963, Medgar Evers assassinated in the carport of the home he shared with Myrlie and their three young children in Jackson; first murder of a nationally significant civil rights leader; heightened awareness; catalyst for Civil Rights Act of 1964",
+      "sourceUrl": "https://npshistory.com/publications/memy/index.htm",
+      "locator": "overview, paragraph 1 (Source: NPS Website 2018)",
+      "interpretive": true
+    },
+    {
+      "claim": "Built 1956; Elraine Subdivision first post-WWII subdivision created for middle-class African Americans in Mississippi",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "Section 7, p. 4"
+    },
+    {
+      "claim": "Winston J. Thompson, a black entrepreneur, developed the subdivision; Leroy Burnett, a black builder, built a majority of the houses",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "Section 7, p. 4"
+    },
+    {
+      "claim": "Rejected an available corner lot they considered too exposed; side entrance under the carport rather than a front door, almost certainly a security measure",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 19, fn. 47"
+    },
+    {
+      "claim": "Furniture placed in front of windows to block gunfire; Evers taught his children to crawl infantry-style to the bathroom if they heard strange noises",
+      "sourceUrl": "https://npshistory.com/publications/memy/index.htm",
+      "locator": "overview, final paragraph"
+    },
+    {
+      "claim": "House was an extension of the NAACP office; hosted civil rights workers, sheltered African Americans threatened by white supremacists",
+      "sourceUrl": "https://npshistory.com/publications/memy/index.htm",
+      "locator": "overview, paragraph 4"
+    },
+    {
+      "claim": "Myrlie Evers moved to California in summer 1964; rented the house for thirty years; donated to Tougaloo College in 1993 (February 1993), which operates it as a museum",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 4; p. 9"
+    },
+    {
+      "claim": "Designated a National Historic Landmark December 23, 2016",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "cover page"
+    },
+    {
+      "claim": "Authorized March 12, 2019; established November 9, 2020",
+      "sourceUrl": "https://npshistory.com/publications/memy/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Foundation document: violation of the home a solemn reminder of the danger inherent in unchecked racism and discrimination which our country still struggles to eradicate",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+      "locator": "Interpretive Themes, bullet 'The violation of the home…'",
+      "interpretive": true
+    },
+    {
+      "claim": "Medgar Evers born Decatur, Mississippi, July 2, 1925; joined Army 1943, serving in segregated units in England, Belgium and France",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 9, Early Years"
+    },
+    {
+      "claim": "Applied to University of Mississippi law school February 1954, denied admission (park website: on a technicality)",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 10"
+    },
+    {
+      "claim": "Denied admission on a technicality, not on merit",
+      "sourceUrl": "https://www.nps.gov/memy/learn/historyculture/campaigns-and-causes.htm",
+      "locator": "School Desegregation section",
+      "interpretive": true
+    },
+    {
+      "claim": "January 1955: moved to Jackson; field secretary of Mississippi Conference of NAACP Branches, the organization's first salaried staff position in the state; first Mississippi field secretary. Foundation document overview gives 1954; NPSHistory overview text gives 1955",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 8 Introduction; p. 11 'NAACP Field Secretary'"
+    },
+    {
+      "claim": "Foundation Document Overview: named first field secretary for NAACP in Mississippi in 1954",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+      "locator": "Description, paragraph 2"
+    },
+    {
+      "claim": "In 1955 alone Evers investigated the murders of Emmett Till, Rev. George Lee and Lamar Smith; dragged reporters and photographers to crime scenes",
+      "sourceUrl": "https://www.nps.gov/memy/learn/historyculture/campaigns-and-causes.htm",
+      "locator": "Investigations section"
+    },
+    {
+      "claim": "Helped James Meredith integrate the University of Mississippi in 1962",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+      "locator": "Description, paragraph 2"
+    },
+    {
+      "claim": "May 28, 1963, Molotov cocktail hurled onto the carport while Evers was at work",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 19, fn. 49"
+    },
+    {
+      "claim": "Sniper (Byron de la Beckwith of Greenwood) about 200 feet away across Missouri Street fired a single shot just after midnight",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 20, fn. 53"
+    },
+    {
+      "claim": "Park website: Beckwith a veteran, salesman, white supremacist, convicted assassin; member of the racist and segregationist White Citizens' Council",
+      "sourceUrl": "https://www.nps.gov/memy/learn/historyculture/people.htm",
+      "locator": "Byron De La Beckwith entry (last updated June 13, 2022)",
+      "interpretive": true
+    },
+    {
+      "claim": "Tried January 1964 and April 1964 with all-white, all-male juries that deadlocked; mistrials; convicted of murder 1994, sentenced to life",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 22"
+    },
+    {
+      "claim": "Foundation document: Medgar and Myrlie Evers were committed and equal partners in their civil rights work and private lives",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/memy-fd-overview.pdf",
+      "locator": "Significance, bullet 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Myrlie served as Medgar's secretary during his first two years as field secretary, then decided to stay home; a large part of her time at home was spent hosting civil rights leaders, often overnight, and sheltering black victims of abuse and threats",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "pp. 8–9"
+    },
+    {
+      "claim": "Myrlie Evers received the NAACP Spingarn Medal July 1963; spoke at NAACP events nationally; testified at both 1964 trials",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "pp. 21–22"
+    },
+    {
+      "claim": "Pomona College bachelor's in sociology 1968; first African-American female commissioner on LA Board of Public Works; NAACP board chair 1995–1998; first female and first non-clergy to present an inaugural invocation, January 21, 2013",
+      "sourceUrl": "https://npshistory.com/publications/memy/nr-medgar-myrlie-evers-house.pdf",
+      "locator": "p. 22"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/memy/evers-house.jpg",
+      "caption": "Medgar and Myrlie Evers Home National Monument",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/memy/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/A9FDD030-BEAF-C4EE-7688C55E2902CB09.jpg",
+      "evidenceUrl": "https://www.nps.gov/memy/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1400,
+      "height": 937,
+      "bytes": 174552,
+      "note": "On-page caption: \"Medgar and Myrlie Evers Home National Monument\" with credit \"NPS Photo\" (park header gallery); alt text \"A small ranch-style home, aqua in color with light brown brick accents, sits on a shaded lot.\" Resized from 3872x2592."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/memy/index.htm",
     "adhiUrl": null,

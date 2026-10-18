@@ -1,16 +1,211 @@
 {
   "code": "BRCA",
   "name": "Bryce Canyon National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Bryce Canyon National Park in southwestern Utah is renowned for its extraordinary collection of hoodoos — tall, thin spires of rock formed by frost weathering and stream erosion of the Claron Formation limestone. Despite its name, Bryce Canyon is not a true canyon but rather a series of natural amphitheaters carved into the eastern edge of the Paunsaugunt Plateau. The area was designated a national monument in 1923 and became a national park in 1928. The Paiute people, who inhabited the region for centuries before European contact, called the hoodoos \"red rocks standing like men in a bowl-shaped canyon\" in their oral tradition.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "873"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-C-2026-10-17",
+  "verifiedBy": "verifier-C-2026-10-17 (20 claims checked; 11 corrections)",
+  "summary": "<p>Bryce Canyon is not a canyon. Below the east rim of Utah’s Paunsaugunt Plateau, frost and rain have carved more than a dozen horseshoe-shaped amphitheaters into the colorful, weak limestone of the Claron Formation, leaving fins, windows and spires called hoodoos. <a href=\"https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> On about 180 days a year temperatures swing between freezing nights and warm afternoons, so meltwater freezes and expands in the cracks again and again; the park’s 2016 brochure says the forces of weathering and erosion never rest, not even for a day. Its Pink Cliffs are the top step of the Grand Staircase, a sequence of rock layers recording 525 million years. <a href=\"https://npshistory.com/publications/brca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>For thousands of years, the 2014 foundation document says, Native peoples passed through, and more recent groups such as the Southern Paiute drew sustenance from the area. <a href=\"https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Pioneer settlers followed: Ebenezer Bryce, who came to the Paria Valley settlement of Clifton in 1875 or 1876, dug a seven-mile irrigation ditch and built a timber road ending in the amphitheater locals called “Bryce’s Canyon,” then left for Arizona in 1880. In 1916 Forest Service supervisor J. W. Humphrey and his crew began publicizing the canyon, and Ruby and Minnie Syrett homesteaded nearby and began inviting friends from Panguitch to see it. <a href=\"https://npshistory.com/publications/brca/hrs-1985.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> Bryce Canyon became a national monument under the Forest Service on June 8, 1923, and a national park in 1928. <a href=\"https://npshistory.com/publications/brca/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The park covers about 35,835 acres between 6,600 and 9,100 feet, spanning three climate zones from pinyon-juniper to spruce-fir forest. The foundation document calls it one of the darkest publicly accessible places in North America, where views often extend more than 100 miles. <a href=\"https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "title": "Foundation Document, Bryce Canyon National Park, Utah (NPS, 2014)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/brca/index.htm",
+      "title": "NPSHistory.com: Bryce Canyon National Park archive page — overview (from the 2016 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "title": "Scrattish, Historic Resource Study: Bryce Canyon National Park (NPS, September 1985)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The 1985 historic resource study by Nicholas Scrattish, written in language now dated, says that as earlier peoples’ activity faded after A.D. 1200, Paiutes filtered into the area; their arrowheads and obsidian tools, found in relative abundance, imply hunting and gathering there. In 1936, by the study’s account, an elderly Paiute man of the Kaibab Reservation — recorded there as “Indian Dick” — told the Zion–Bryce park naturalist that before there were Indians the Legend People lived there; because they did something bad, Coyote turned them all into rocks, standing in rows, their faces still painted. The place, he said, is Angka-ku-wass-a-wits, translated by his nephew as “red painted faces.” He also said the Paiute never used a name for the canyon often cited as theirs. <a href=\"https://npshistory.com/publications/brca/hrs-1985.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> The 2014 foundation document names the Southern Paiute among those who drew sustenance from the area, and says descendants of those who came before still make cultural connections to the landscape. <a href=\"https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+          "title": "Scrattish, Historic Resource Study (1985), Prehistory and Paiute Place Names",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+          "title": "Foundation Document, Bryce Canyon National Park (2014), Brief Description",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>A 1994 National Register submission says Civilian Conservation Corps and relief crews were at work by October 1933 and that, with CCC labor, the park finished the last segments of the Rim Trail and part of the Fairyland Loop and completed the Under-the-Rim and Riggs Spring Loop trails. <a href=\"https://npshistory.com/publications/brca/nr-multiple-property.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> According to the 1985 historic resource study, Bryce’s own camp, NP-3, opened in May 1934 when CCC Company 962 moved over from Zion; in 1934–36 the company summered at Bryce and wintered at Zion. In its first season its more than 200 enrollees took on campground improvement, 18 miles of roadside cleanup, an 18.8-mile fire trail below the rim from Bryce Point to Rainbow Point and 325 log check dams. In 1935 they began the park’s first CCC buildings, among them the Sunset Point comfort station, and in 1936 crews felled and burned 1,617 Douglas firs and 890 ponderosa pines to fight a bark beetle outbreak. <a href=\"https://npshistory.com/publications/brca/hrs-1985.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/brca/nr-multiple-property.pdf",
+          "title": "National Register of Historic Places, Bryce Canyon National Park Multiple Property Submission (1994), Section E",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+          "title": "Scrattish, Historic Resource Study (1985), The Civilian Conservation Corps in Bryce Canyon",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Bryce’s long views depend on regional air quality, and the 2014 foundation document says air pollution comes principally from beyond the park’s boundaries, from regional sources; the park is a Class I area under the Clean Air Act, which gives the Park Service an affirmative responsibility to protect its visibility. From 2005 to 2009 average visibility was 3.7 deciviews above natural conditions, short of the park’s goal, and haze on the haziest days did not improve over 2000–2009. Temperature in the surrounding area rose significantly from 1901 to 2002, and the document warns that a warmer, drier climate could raise windblown dust and that more stagnant weather could increase ozone. <a href=\"https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> A 2025 assessment of the park’s East Creek water supply rated it moderately vulnerable to climate change; in a hot, dry future, runoff and recharge could fall by 41 percent, and the risk of severe wildfire is projected to increase. <a href=\"https://npshistory.com/publications/brca/water-for-people.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+          "title": "Foundation Document, Bryce Canyon National Park (2014), Analysis of Fundamental Resources — Clean Air",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/brca/water-for-people.pdf",
+          "title": "Cognac, Willi, Mothes, Gilkerson & Lawrence, Water for People: Climate Change Vulnerability Assessment for Water Supplies at Bryce Canyon National Park (NPS/CSU, 2025)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Approximately 35,835 acres; 6,600–9,100 feet; named after pioneer Ebenezer Bryce; national monument 1923, Utah NP 1924, Bryce Canyon NP 1928; not a canyon but more than a dozen horseshoe-shaped amphitheaters below east rim of the Paunsaugunt Plateau; frost-wedging and rainwater erode Claron Formation limestone into fins, windows, spires called hoodoos; three climatic zones (spruce/fir, ponderosa pine, pinyon/juniper)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Brief Description, p. 5"
+    },
+    {
+      "claim": "About 180 days a year temperatures swing between freezing nights and warm afternoons; frost-wedging; 'the forces of weathering and erosion never rest, not even for a day'",
+      "sourceUrl": "https://npshistory.com/publications/brca/index.htm",
+      "locator": "Brochure (2016), 'Poetry in Stone' and 'Lives of the Hoodoos'"
+    },
+    {
+      "claim": "Pink cliffs at Bryce are the top step of the Grand Staircase; rock record recounts 525 million years",
+      "sourceUrl": "https://npshistory.com/publications/brca/index.htm",
+      "locator": "Brochure (2016), 'Steps Through Time'"
+    },
+    {
+      "claim": "For thousands of years native peoples passed through; more recent tribal groups such as the Southern Paiute drew sustenance; descendants continue to make personal and cultural connections",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Brief Description, p. 6"
+    },
+    {
+      "claim": "Ebenezer Bryce came to Clifton in 1875 or 1876; moved to Henderson Valley (New Clifton); 1878–80 irrigation ditch 7 miles long from Paria Creek; built road; locals called the amphitheater 'Bryce's Canyon'; family left for Arizona in 1880",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "Scrattish, HRS (September 1985), 'Settlement' section, p. 19 (fn. 19)"
+    },
+    {
+      "claim": "J. W. Humphrey, Forest Service supervisor transferred to Panguitch July 1, 1915; Forest Service made first attempt to publicize Bryce Canyon in spring 1916 (Humphrey chose Mark Anderson to publicize the find; Humphrey dictated one of the first descriptive articles)",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, 'J. W. Humphrey' and 'Private Party — the Syretts', pp. 15–20"
+    },
+    {
+      "claim": "Spring 1916: Reuben (Ruby) and Clara Armeda (Minnie) Syrett homesteaded a quarter section near Bryce Canyon; in late summer 1916 began inviting friends in Panguitch to see the canyon",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, 'Private Party — the Syretts', p. 20, fns. 40–41"
+    },
+    {
+      "claim": "Bryce Canyon NM June 8, 1923 (USFS); Utah NP authorized June 7, 1924; Bryce Canyon NP authorized Feb 25, 1928, established Sept 15, 1928",
+      "sourceUrl": "https://npshistory.com/publications/brca/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "One of the darkest publicly accessible places in North America; outstanding views often extend more than 100 miles",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Significance statements 2–3, p. 8"
+    },
+    {
+      "claim": "HRS describes Paiutes (in its words 'primitive, peaceful, seminomadic') filtering in after post-Basket Maker activity faded after A.D. 1200; Paiute arrowheads and chipped obsidian tools found in relative abundance, implying hunting and gathering (prose labels the study's language as dated and does not repeat its descriptors)",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, 'Prehistory', pp. 6–7, fns. 5–6"
+    },
+    {
+      "claim": "1936: 'the legend of Bryce Canyon' told to the Zion-Bryce Park Naturalist by \"Indian Dick\" (the name as recorded in the 1985 HRS), elderly Paiute living on the Kaibab Reservation: Legend People turned into rocks by Coyote; place name Angka-ku-wass-a-wits; nephew Indian Johnnie translated 'red painted faces'; Indian Dick said Paiutes never referred to Bryce Canyon as 'Unka-timpe-wa-wince-pock-ich', a name 'often cited' as the Paiute name",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, 'Paiute Place Names', pp. 7–8, fns. 7–9"
+    },
+    {
+      "claim": "Between April 1933 and July 1942 CCC, NIRA and FERA funds; by October 1933 ERA and CCC crews began work; CCC labor completed final segments of the Rim Trail, one leg of the Fairyland Loop, the Under-the-Rim Trail and the Riggs Spring Loop Trail",
+      "sourceUrl": "https://npshistory.com/publications/brca/nr-multiple-property.pdf",
+      "locator": "NRHP Multiple Property Submission (1994), Section E, pp. 23–24, fns. 66–68"
+    },
+    {
+      "claim": "Bryce received CCC camp NP-3 in spring 1934; main contingent CCC Company No. 962 moved over from Zion the day after Langley's May 10, 1934 report; company returned to Zion for winters of 1934, 1935 and 1936; 1934 full complement of more than 200",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, 'The Civilian Conservation Corps in Bryce Canyon', pp. 153–156, fns. 430–445 (NR submission, Dec. 31, 1994, says CCC crews at work by Oct 1933 — both given with attribution)"
+    },
+    {
+      "claim": "1934 projects undertaken: campground development; roadside cleanup 18 miles; under-rim fire trail 18.8 miles Bryce Point to Rainbow Point (completed 1935); 325 check dams of peeled logs",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, pp. 154–155"
+    },
+    {
+      "claim": "1935 work season: three new projects undertaken — checking station, comfort station at Sunset Point, employee's cabin — the first CCC buildings in Bryce Canyon",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, p. 155"
+    },
+    {
+      "claim": "1936: CCC crews under entomologist Donald DeLeon felled and burned 1,617 Douglas firs and 890 ponderosa pines (bark beetle epidemic)",
+      "sourceUrl": "https://npshistory.com/publications/brca/hrs-1985.pdf",
+      "locator": "HRS, pp. 156–157, fn. 444"
+    },
+    {
+      "claim": "Resources depend on regional air quality (p. 6); air pollution principally comes from beyond the park's boundaries, sources regional; Class I area; 'affirmative responsibility to protect the air quality related values (including visibility)'",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Analysis of FRVs, Clean Air, p. 27"
+    },
+    {
+      "claim": "2005–2009 average visibility 3.7 dv above natural conditions, not meeting desired <2 dv; 2000–2009 clearest days improved, haziest days unchanged; 1901–2002 statistically significant temperature increase in the immediate area",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Clean Air, Conditions and Trends, p. 28"
+    },
+    {
+      "claim": "Increased temperature and decreased precipitation could dry soils and increase windblown dust; greenhouse gases could cause increased stagnation periods leading to increased ozone formation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/brca-fd-2014.pdf",
+      "locator": "Clean Air, Challenges, p. 29"
+    },
+    {
+      "claim": "East Creek water supply moderately vulnerable to climate change; in a Hot Dry future runoff and recharge could decrease significantly (41%); risk of severe wildfires projected to increase",
+      "sourceUrl": "https://npshistory.com/publications/brca/water-for-people.pdf",
+      "locator": "Cognac et al., Water for People (2025), Key Messages, p. 3"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/brca/bryce-amphitheater.jpg",
+      "caption": "Bryce Amphitheater, whose viewpoints line the first three miles of the park road",
+      "credit": "NPS Photo / Peter Densmore",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/brca/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg",
+      "evidenceUrl": "https://www.nps.gov/brca/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1300,
+      "height": 867,
+      "bytes": 186767,
+      "note": "On-page caption (home page slideshow): \"Viewpoints of the iconic Bryce Amphitheater are located along the first 3 miles of the park road and are a popular destination at sunrise.\" credit \"NPS Photo / Peter Densmore\". Resized from 7622x5084."
+    },
+    {
+      "file": "images/history/brca/winter-snow.jpg",
+      "caption": "At 8,000 feet, winter comes early and stays late at Bryce Canyon",
+      "credit": "NPS Photo / Keith Moore",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/brca/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg",
+      "evidenceUrl": "https://www.nps.gov/brca/index.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1300,
+      "height": 866,
+      "bytes": 187292,
+      "note": "On-page caption (home page slideshow): \"Here at 8,000' (2438 m) winter comes early and stays late. Snow transforms the landscape and requires seasonal closures in some areas and trails.\" credit \"NPS Photo / Keith Moore\". Resized from 6000x4000."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/brca/index.htm",
     "adhiUrl": null,

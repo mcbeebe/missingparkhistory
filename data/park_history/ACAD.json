@@ -1,16 +1,260 @@
 {
   "code": "ACAD",
   "name": "Acadia National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Acadia National Park was established in 1919 as Lafayette National Park — the first national park east of the Mississippi River — and renamed Acadia in 1929. Located on Mount Desert Island and surrounding areas along the Maine coast, the park protects roughly 49,000 acres of granite-peaked mountains, rocky shoreline, woodlands, and glacially carved lakes. George B. Dorr and Charles W. Eliot led the private land conservation effort that made the park possible, with John D. Rockefeller Jr. later financing the construction of 45 miles of carriage roads. The park's diverse ecosystems mark the overlap of northern boreal and eastern deciduous forests, supporting over 1,100 plant species and serving as a critical stopover for migratory birds along the Atlantic Flyway.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "391"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-17",
+  "author": "author-C-2026-10-17",
+  "verifiedBy": "verifier-C-2026-10-17 (31 claims checked; 9 corrections)",
+  "summary": "<p>Acadia National Park protects about 50,000 acres of the mid-coast of Maine — portions of Mount Desert Island, part of Isle au Haut, the tip of the Schoodic Peninsula and all or part of 16 smaller islands — and the tallest mountains on the U.S. eastern seaboard, Cadillac Mountain at their apex. <a href=\"https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Glacial ice shaped it: from Cadillac’s domed summit to the U-shaped valley of Bubble Pond, the ice scoured away older rock to reveal the granite beneath and left boulders strewn across the land. Spruce-fir forest dominated the park until 1947, when fire burned 10,000 acres. <a href=\"https://npshistory.com/publications/acad/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The 2011 park brochure says some artifacts from the island’s clam-shell heaps have been carbon-dated to 5,000 years; the 2016 foundation document says the park’s cultural resources span 5,000 years, and also that the landscape has drawn people for more than 10,000 years, beginning with the Wabanaki. Samuel Champlain named the island Isle des Monts Deserts in 1604; after 150 years of French–British war, English colonists settled permanently in 1761. In 1901 Harvard president Charles W. Eliot formed the Hancock County Trustees of Public Reservations, which acquired 5,000 acres of donated land; President Wilson proclaimed Sieur de Monts National Monument on July 8, 1916. Congress made it Lafayette National Park on February 26, 1919 — the first national park east of the Mississippi — and it became Acadia in 1929. <a href=\"https://npshistory.com/publications/acad/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The foundation document calls Acadia the first national park created from private lands gifted to the public. It receives an average of 2.5 million visits a year, and the document names climate change a key issue: a significant number of the park’s roads, trails, buildings and utilities sit directly beside shorelines, threatened by sea-level rise and the frequency and intensity of storms. <a href=\"https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/acad/index.htm",
+      "title": "NPSHistory.com: Acadia National Park archive page — overview (from the 2011 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "title": "Foundation Document, Acadia National Park, Maine (NPS, 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The park’s 2007 ethnographic overview, by Harald Prins and Bunny McBride, names five Wabanaki nations — Abenaki, Maliseet, Mi’kmaq, Passamaquoddy and Penobscot; the park’s website names four, without the Abenaki. <a href=\"https://npshistory.com/publications/acad/eoa-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://web.archive.org/web/20250118091429/https://www.nps.gov/acad/learn/historyculture/wabanaki.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a> Wabanaki guiding Champlain to the island in 1604 called it Pemetic, “range of mountains,” and the sakom (chief) Asticou’s invitation led to the 1613 Saint Sauveur mission at Somes Sound, destroyed by an English privateer from Virginia. Within a few decades, the authors write, diseases, firewater and firearms left up to 90 percent of the Wabanaki dead — what they call an American Indian holocaust. From the mid-1800s island Wabanaki encampments sold crafts to summer visitors; in 1970 a short-lived Wabanaki educational center, T.R.I.B.E., was founded within the park. <a href=\"https://npshistory.com/publications/acad/eoa-v1.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>The park says that for most of the last century the federal government barred Wabanaki people from harvesting sweetgrass inside Acadia; since 2015 the Park Service has worked toward renewed gathering by federally recognized tribes. <a href=\"https://web.archive.org/web/20250118091429/https://www.nps.gov/acad/learn/historyculture/wabanaki.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+          "title": "Prins & McBride, Asticou's Island Domain: Wabanaki Peoples at Mount Desert Island 1500–2000, Ethnographic Overview and Assessment, Vol. 1 (NPS, 2007), Executive Summary",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://web.archive.org/web/20250118091429/https://www.nps.gov/acad/learn/historyculture/wabanaki.htm",
+          "title": "NPS, Acadia National Park: Wabanaki (nps.gov, Wayback Machine snapshot of January 18, 2025; page last updated December 3, 2024), 'Sweetgrass Gathering'",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2014 Park Service resource brief compared recent decades with the record since 1901 and found six temperature measures at Acadia in the “extreme warm” range and three precipitation measures “extreme wet,” none extreme cold or dry: recent conditions, it concluded, are already moving beyond the historical range. <a href=\"https://npshistory.com/publications/acad/cc-exposure.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a> The park’s climate page puts numbers to it: annual average temperature up 3.4°F over the last century; the surrounding Gulf of Maine up about 3°F and among the fastest-warming parts of the global ocean; sea level up eight inches since 1950, with shorelines — Wabanaki heritage sites among them — eroding. A June 2021 storm dropped more than five inches of rain in under three hours and caused over $1.5 million in damage to carriage roads, trails, streams and paved roads. If sea-level rise continues unabated, the park says, Thunder Hole will very likely be covered. <a href=\"https://www.nps.gov/acad/learn/nature/climate-change.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/acad/cc-exposure.pdf",
+          "title": "Monahan & Fisichelli, Recent Climate Change Exposure of Acadia National Park (NPS Resource Brief, July 31, 2014)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+          "title": "NPS, Acadia National Park: Climate Change (nps.gov)",
+          "type": "nps.gov"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>Acadia’s administrators were among the first to apply for a Civilian Conservation Corps company. In May 1933 enrollees arrived at McFarland Hill — today’s park headquarters — and camps followed south of Great Pond in June and at Ellsworth in July. From 1933 to 1942 the three camps took on nearly 450 projects in forestry, watershed development, beautification, trail construction and facility development. Apart from two out-of-state contingents, the companies were Maine men; McFarland was the only camp in Maine, besides district headquarters, to run for the whole program. The park’s CCC study (final draft, 2009), drawing partly on interviews with 26 former enrollees, names the Perpendicular Trail, the Beech Cliffs Ladder Trail and much of the Ocean Trail as surviving CCC work, and Seawall and Blackwoods campgrounds, Sieur de Monts Spring and Sand Beach among enduring New Deal sites — stressing that the Corps was only one of several federal agencies involved. <a href=\"https://npshistory.com/publications/acad/ccc-2002.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[7]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+          "title": "Moreira, Dean, Dudley & Champney, The Civilian Conservation Corps at Acadia National Park (final draft, May 12, 2009)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Approximately 50,000 acres in Hancock and Knox Counties; portions of Mount Desert Island, a portion of Isle au Haut, the tip of the Schoodic Peninsula, most of or portions of 16 smaller outlying islands",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "Brief Description of the Park, p. 3"
+    },
+    {
+      "claim": "Tallest mountains on the eastern seaboard of the United States with Cadillac Mountain at its apex",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "Park Significance, statement 1, p. 6"
+    },
+    {
+      "claim": "From the domed summit of Cadillac to the U-shaped valley of Bubble Pond, landscape sculpted by glacial ice; ice scoured away older rock revealing the granite beneath; left boulders strewn across the landscape; shoreline erosion ever-present",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Brochure (2011), 'Shaping the Land' — Cadillac Mountain Granite, Glaciers, Shoreline Processes"
+    },
+    {
+      "claim": "Spruce-fir forest dominated the park until 1947, when fire burned 10,000 acres",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Brochure (2011), 'A Diversity of Life' — Woodlands"
+    },
+    {
+      "claim": "Some artifacts from clam shell heaps carbon dated to 5,000 years of age",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Brochure (2011), 'People of Mount Desert Island' para. 1"
+    },
+    {
+      "claim": "Cultural resources document human activities spanning 5,000 years (p. 4); landscape has attracted people for more than 10,000 years, beginning with the Wabanaki people (p. 6)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "p. 4 and Park Significance, statement 6, p. 6"
+    },
+    {
+      "claim": "Champlain named it Isle des Monts Deserts, 1604; 150 years of war between French and British; English colonists established first permanent settlement 1761",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Brochure (2011), 'People of Mount Desert Island' paras. 1–2 and Champlain quotation"
+    },
+    {
+      "claim": "1901: Charles W. Eliot formed the Hancock County Trustees of Public Reservations; Trustees acquired 5,000 acres in donated land; 1916 Wilson proclaimed Sieur de Monts National Monument; 1919 Congress redesignated it a national park, first east of the Mississippi",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Brochure (2011), 'People of Mount Desert Island' para. 4"
+    },
+    {
+      "claim": "Sieur de Monts NM July 8, 1916; Lafayette NP February 26, 1919; Acadia NP January 19, 1929",
+      "sourceUrl": "https://npshistory.com/publications/acad/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "First national park created from private lands gifted to the public",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "Park Significance, statement 3, p. 6",
+      "interpretive": true
+    },
+    {
+      "claim": "Average of 2.5 million visits per year",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "Climate change key issue: a significant number of roads, trails, buildings and utility infrastructure directly adjacent to shorelines, threatened by sea level rise and the frequency and intensity of storms",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/acad-fd-2016.pdf",
+      "locator": "Key Issues, 'Climate Change', p. 14"
+    },
+    {
+      "claim": "Wabanaki: tribal nations today distinguished as the Abenaki, Maliseet, Mi'kmaq, Passamaquoddy and Penobscot (overview's five-nation list); Wabanaki guiding Champlain in 1604 called the island Pemetic, 'range of mountains'",
+      "sourceUrl": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "locator": "Executive Summary, pp. i–ii"
+    },
+    {
+      "claim": "Today people from the four tribes — the Maliseet, Micmac, Passamaquoddy and Penobscot — collectively known as the Wabanaki",
+      "sourceUrl": "https://web.archive.org/web/20250118091429/https://www.nps.gov/acad/learn/historyculture/wabanaki.htm",
+      "locator": "Wabanaki page, introduction (Wayback snapshot 2025-01-18)"
+    },
+    {
+      "claim": "Asticou, sakom; French records show him welcoming the French to his summer village on the southeastern shore of Somes Sound; his invitation led to 1613 founding of Saint Sauveur mission, destroyed by an English privateer from Virginia",
+      "sourceUrl": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "locator": "Executive Summary, p. ii"
+    },
+    {
+      "claim": "Diseases, firewater and firearms; within a few decades up to 90 percent of the Wabanaki perished in 'this American Indian holocaust' (authors' term)",
+      "sourceUrl": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "locator": "Executive Summary, p. ii",
+      "interpretive": true
+    },
+    {
+      "claim": "Multi-ethnic Indian encampments on Mount Desert Island mid-1800s through early 1900s; island a prime place for marketing traditional crafts; marketing opportunities among summer visitors especially since the mid-1800s; 1970 founding of T.R.I.B.E., a short-lived Wabanaki educational center within and under auspices of Acadia NP",
+      "sourceUrl": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "locator": "Executive Summary, pp. iii–iv"
+    },
+    {
+      "claim": "Ethnographic overview by Harald E. L. Prins and Bunny McBride, 2007 (2nd printing December 2007)",
+      "sourceUrl": "https://npshistory.com/publications/acad/eoa-v1.pdf",
+      "locator": "title page; Executive Summary signature, p. iv"
+    },
+    {
+      "claim": "For most of the last century the federal government prohibited Wabanaki people from harvesting sweetgrass within Acadia; since 2015 NPS has worked toward renewed gathering by federally recognized tribes",
+      "sourceUrl": "https://web.archive.org/web/20250118091429/https://www.nps.gov/acad/learn/historyculture/wabanaki.htm",
+      "locator": "'Sweetgrass Gathering' section (Wayback snapshot 2025-01-18)"
+    },
+    {
+      "claim": "2014 resource brief: compared 2003–2012/1993–2012/1983–2012 with 1901–2012; six temperature variables extreme warm, three precipitation variables extreme wet, none extreme cold or dry; recent conditions already shifting beyond historical range of variability",
+      "sourceUrl": "https://npshistory.com/publications/acad/cc-exposure.pdf",
+      "locator": "p. 2, Results and key points (brief dated July 31, 2014)"
+    },
+    {
+      "claim": "Annual average temperature at Acadia risen 3.4°F over the last century; Gulf of Maine risen approximately 3°F, one of the fastest warming areas of the global ocean; sea levels risen eight inches since 1950; shorelines eroding including Wabanaki heritage sites",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "locator": "'Climate Change Impacts' — Changing Waters, Changing Landscapes"
+    },
+    {
+      "claim": "June 2021 storm: 5+ inches of rain in less than 3 hours; damaged carriage roads, trails, streams and paved roads; over $1.5M in infrastructure damage and repair costs",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "locator": "'Changing Skies' — More Intense Storms"
+    },
+    {
+      "claim": "If global warming and sea level rise continue unabated, very likely Thunder Hole will be covered",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "locator": "'What Do We Stand To Lose?' — Thunder Hole"
+    },
+    {
+      "claim": "Acadia administrators among the first to apply for a CCC company; McFarland Hill (current park HQ) construction contingent May 22, permanent company of Maine enrollees May 25, 1933; Great Pond camp men arrived June 1; Ellsworth camp established July 1",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "§1.2 Establishing the Camps, pp. 7–8"
+    },
+    {
+      "claim": "CCC presence 1933–1942 (nine years); three camps",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "Preface, p. 1"
+    },
+    {
+      "claim": "Three camps took nearly 450 projects (427 in research database); McFarland camp spanned the entire program, only camp in Maine other than district HQ to do so; five categories: forestry, watershed development, beautification, trail construction, facility development; fire hazard reduction",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "Conclusion, pp. 315–316"
+    },
+    {
+      "claim": "Apart from the first Ellsworth group and the last Great Pond group (out of state), all companies at Acadia consisted of men from Maine",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "Conclusion, p. 315"
+    },
+    {
+      "claim": "Report based on three primary sources, the first being ~45 hours of interviews with twenty-six former enrollees",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "Preface, p. 2"
+    },
+    {
+      "claim": "Remaining CCC work: Perpendicular Trail, Beech Cliffs Ladder Trail, much of the Ocean Trail, parts of Dorr Mt. Ladder Trail; enduring New Deal visitor sites: Seawall and Black Woods campgrounds, Sieur de Monts Spring, Kebo Mountain lookoff, Sand Beach; CCC only one of several federal agencies",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "Conclusion, pp. 316–317",
+      "interpretive": true
+    },
+    {
+      "claim": "The CCC study is a final draft dated May 12, 2009 (file name ccc-2002.pdf notwithstanding)",
+      "sourceUrl": "https://npshistory.com/publications/acad/ccc-2002.pdf",
+      "locator": "title page"
+    },
+    {
+      "claim": "Climate page last updated May 10, 2024 (unchanged since before January 2025, so cited live)",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "locator": "page footer"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/acad/bubble-rock.jpg",
+      "caption": "Bubble Rock, a glacial erratic",
+      "credit": "NPS/Kylie Caesar",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/geology.htm",
+      "imageUrl": "https://www.nps.gov/acad/learn/nature/images/IMG_5105_1.jpg",
+      "evidenceUrl": "https://www.nps.gov/acad/learn/nature/geology.htm",
+      "capturedAt": "2026-10-17",
+      "width": 1200,
+      "height": 911,
+      "bytes": 182247,
+      "note": "On-page figcaption: \"Bubble Rock, a glacial erratic.\" figcredit: \"NPS/Kylie Caesar\". Resized from 3392x2576."
+    },
+    {
+      "file": "images/history/acad/thunder-hole-storm.jpg",
+      "caption": "Thunder Hole on a stormy day",
+      "credit": "NPS photo by Kent Miller",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "imageUrl": "https://www.nps.gov/acad/learn/nature/images/33irf849pg801.jpg",
+      "evidenceUrl": "https://www.nps.gov/acad/learn/nature/climate-change.htm",
+      "capturedAt": "2026-10-17",
+      "themeKey": "climate",
+      "width": 1400,
+      "height": 933,
+      "bytes": 230846,
+      "note": "On-page figcaption: \"Thunder hole on a stormy day\" figcredit: \"NPS photo by Kent Miller\". Resized from 5472x3648."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/acad/index.htm",
     "adhiUrl": null,
