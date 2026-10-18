@@ -179,10 +179,6 @@
 <button class="voices-panel-close" onclick="closeVoicesPanel()" aria-label="Close public comments panel">&times;</button>
 <div id="voicesPanelContent"></div>
 </div>
-<div class="fund-panel" id="fundPanel" aria-hidden="true" aria-live="polite">
-<button class="fund-panel-close" onclick="closeFundPanel()" aria-label="Close blocked funding panel">&times;</button>
-<div id="fundPanelContent"></div>
-</div>
 <div class="legend">
 <div class="legend-title">Status Legend</div>
 <div class="legend-item"><div class="legend-dot" style="background:#dc2626"></div> Replace/Remove</div>
@@ -857,46 +853,42 @@ function phSelectTopic(name){
 .fund-chip[aria-pressed="true"]{background:#22d3ee;color:#06222a;font-weight:700}
 .fund-offmap{background:rgba(10,10,15,0.95);border:1px solid #2a2a3a;color:#9a9aab;padding:5px 11px;border-radius:20px;font-size:11.5px;cursor:pointer;white-space:nowrap;font-family:inherit}
 .fund-offmap:hover{color:#ddd;border-color:#444}
-.fund-panel{display:none;position:fixed;top:340px;right:16px;width:390px;max-width:calc(100vw - 32px);max-height:calc(100vh - 360px);overflow-y:auto;z-index:4200;background:linear-gradient(180deg,rgba(10,10,15,0.98),rgba(15,15,22,0.98));border:1px solid #2a2a3a;border-radius:14px;padding:22px 24px;box-shadow:0 8px 40px rgba(0,0,0,0.6);backdrop-filter:blur(8px);color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
-.fund-panel.active{display:block}
-.fund-panel-close{position:absolute;top:10px;right:14px;background:0;border:0;color:#888;font-size:24px;line-height:1;cursor:pointer;padding:0}
-.fund-panel-close:hover{color:#fff}
-.fund-panel .fp-label{text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:#888;margin-bottom:6px}
-.fund-panel h3{margin:0 0 4px;font-family:Georgia,serif;font-size:22px;color:#fff;line-height:1.2;padding-right:24px}
-.fund-panel .fp-meta{font-size:12.5px;color:#888;margin-bottom:14px}
-.fund-panel .fp-headline{font-family:Georgia,serif;font-size:15px;line-height:1.45;color:#e4e4ec;background:rgba(34,211,238,0.12);border-radius:8px;padding:10px 12px;margin:0 0 14px}
-.fund-panel .fp-stats{display:flex;gap:10px;margin-bottom:14px}
-.fund-panel .fp-stat{flex:1;min-width:0;background:rgba(255,255,255,0.04);border:1px solid #2a2a3a;border-radius:8px;padding:10px 12px}
-.fund-panel .fp-stat .n{font-family:Georgia,serif;font-size:20px;font-weight:700;color:#22d3ee;line-height:1;font-variant-numeric:tabular-nums}
-.fund-panel .fp-stat .l{font-size:10.5px;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
-.fund-panel .fp-ag{border-top:1px solid #2a2a3a;padding:10px 0}
-.fund-panel .fp-ag summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 10px;align-items:baseline}
-.fund-panel .fp-ag summary::-webkit-details-marker{display:none}
-.fund-panel .fp-ag summary:focus-visible{outline:2px solid #6d9eeb;outline-offset:2px;border-radius:4px}
-.fund-panel .fp-ti{font-size:13.5px;color:#eee;line-height:1.35}
-.fund-panel .fp-usd{font-size:12.5px;font-weight:700;color:#22d3ee;font-variant-numeric:tabular-nums;white-space:nowrap}
-.fund-panel .fp-pt{grid-column:1/-1;font-size:11.5px;color:#888}
-.fund-panel .fp-more{grid-column:1/-1;font-size:11.5px;color:#22d3ee}
-.fund-panel .fp-ag[open] .fp-more{display:none}
-.fund-panel .fp-imp{margin:8px 0 2px;padding:9px 11px;background:rgba(255,255,255,0.035);border-left:2px solid #22d3ee;font-size:13px;line-height:1.5;color:#d0d0da}
-.fund-panel .fp-imp i{display:block;font-style:normal;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#888;margin-bottom:3px}
-.fund-panel .fp-fold{border-top:1px solid #2a2a3a;padding:10px 0;font-size:13px}
-.fund-panel .fp-fold>summary{cursor:pointer;color:#c9c9d6}
-.fund-panel .fp-btn{display:inline-block;margin-top:10px;background:0;border:1px solid #444;color:#ddd;border-radius:20px;padding:6px 14px;font-size:12.5px;cursor:pointer;font-family:inherit}
-.fund-panel .fp-btn:hover{border-color:#22d3ee;color:#22d3ee}
-.fund-panel .fp-src{margin-top:14px;padding-top:10px;border-top:1px solid #2a2a3a;font-size:11px;line-height:1.5;color:#888}
-.fund-panel .fp-src a{color:#22d3ee}
-.fund-panel .fp-off{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;font-size:13px;border-top:1px solid #2a2a3a;padding:8px 0}
-.fund-panel .fp-off span:last-child{color:#22d3ee;font-weight:700;font-variant-numeric:tabular-nums}
-.fund-panel .fp-off small{grid-column:1/-1;color:#888;font-size:11px}
+.fund-view .fp-headline{font-family:Georgia,serif;font-size:18px;line-height:1.5;color:#e4e4ec;background:rgba(34,211,238,0.10);border-left:3px solid #22d3ee;border-radius:0 8px 8px 0;padding:14px 18px;margin:0 0 18px}
+.fund-view .fp-stats{display:flex;gap:12px;margin-bottom:6px}
+.fund-view .fp-stat{flex:1;min-width:0;background:rgba(255,255,255,0.04);border:1px solid #2a2a3a;border-radius:10px;padding:14px 16px}
+.fund-view .fp-stat .n{font-family:Georgia,serif;font-size:26px;font-weight:700;color:#22d3ee;line-height:1;font-variant-numeric:tabular-nums}
+.fund-view .fp-stat .l{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+.fund-view .fp-ag{border-top:1px solid #1f1f2e;padding:14px 0}
+.fund-view .fp-ag summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 10px;align-items:baseline}
+.fund-view .fp-ag summary::-webkit-details-marker{display:none}
+.fund-view .fp-ag summary:focus-visible{outline:2px solid #6d9eeb;outline-offset:2px;border-radius:4px}
+.fund-view .fp-ti{font-size:16px;font-weight:600;color:#eee;line-height:1.35}
+.fund-view .fp-usd{font-size:15px;font-weight:700;color:#22d3ee;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fund-view .fp-pt{grid-column:1/-1;font-size:13px;color:#888}
+.fund-view .fp-more{grid-column:1/-1;font-size:12.5px;color:#22d3ee}
+.fund-view .fp-ag[open] .fp-more{display:none}
+.fund-view .fp-imp{margin:10px 0 2px;padding:12px 16px;background:rgba(255,255,255,0.035);border-left:2px solid #22d3ee;font-size:14.5px;line-height:1.5;color:#d0d0da}
+.fund-view .fp-imp i{display:block;font-style:normal;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#888;margin-bottom:3px}
+.fund-view .fp-fold{border-top:1px solid #1f1f2e;padding:14px 0;font-size:14px}
+.fund-view .fp-fold>summary{cursor:pointer;color:#c9c9d6}
+.fund-view .fp-btn{display:inline-block;margin-top:16px;background:0;border:1px solid #444;color:#ddd;border-radius:20px;padding:6px 14px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.fund-view .fp-btn:hover{border-color:#22d3ee;color:#22d3ee}
+.fund-view .fp-src{font-size:12.5px;line-height:1.5;color:#888}
+.fund-view .fp-src a{color:#22d3ee}
+.fund-view .fp-off{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;font-size:15px;border-top:1px solid #2a2a3a;padding:8px 0}
+.fund-view .fp-off span:last-child{color:#22d3ee;font-weight:700;font-variant-numeric:tabular-nums}
+.fund-view .fp-off small{grid-column:1/-1;color:#888;font-size:12.5px}
+.fund-view .fund-badge{background:rgba(34,211,238,0.14);color:#67e8f9;border:1px solid rgba(34,211,238,0.45);text-transform:none;letter-spacing:.2px}
 @media(max-width:600px){
   .fund-bar{margin:2px 0 0;gap:4px}
   .fund-toggle{padding:5px 12px;font-size:11px}
   .fund-row{gap:4px}
   .fund-chip{padding:3px 9px;font-size:10.5px}
   .fund-offmap{padding:4px 9px;font-size:10.5px}
-  /* above the fixed Take Action / Subscribe / bottom-bar buttons (z-index 4500) */
-  .fund-panel{top:auto;bottom:0;right:0;left:0;width:100%;max-width:100%;max-height:72vh;border-radius:14px 14px 0 0;padding:20px 18px;z-index:4600}
+  .fund-view .fp-stats{gap:8px}
+  .fund-view .fp-stat{padding:10px}
+  .fund-view .fp-stat .n{font-size:20px}
+  .fund-view .fp-headline{font-size:16px}
 }
 body.embed-mode .fund-bar{display:none}
 </style>
@@ -908,8 +900,10 @@ body.embed-mode .fund-bar{display:none}
   var LS_KEY='mph-funding-layer', LS_LENS='mph-funding-lens';
   var toggles=[document.getElementById('fundToggle')].filter(Boolean);
   var row=document.getElementById('fundRow');
-  var panel=document.getElementById('fundPanel');
-  var panelContent=document.getElementById('fundPanelContent');
+  // Funding views open in the same full-size window as a park's dossier (#sidePanel).
+  var panel=document.getElementById('sidePanel');
+  var backdrop=document.getElementById('modalBackdrop');
+  var panelContent=document.getElementById('panelContent');
   var DATA=null, layer=null, layerOn=false, lens='hist', buildPromise=null;
   try{ if(localStorage.getItem(LS_LENS)==='all') lens='all'; }catch(e){}
 
@@ -938,14 +932,23 @@ body.embed-mode .fund-bar{display:none}
     for(var k in parkData){ if(parkData[k]&&parkData[k].code===code) return k; }
     return null;
   }
-  function openPanelHtml(html){
+  function openPanelHtml(title,html){
     if(window.closeVoicesPanel) window.closeVoicesPanel();
-    panelContent.innerHTML=html;
+    panelContent.innerHTML='<div class="fund-view">'+html+'</div>';
     panel.classList.add('active');
-    panel.setAttribute('aria-hidden','false');
+    if(backdrop) backdrop.classList.add('active');
     panel.scrollTop=0;
+    document.title=title+' \u2014 Blocked funding \u2014 Missing Park History';
   }
-  window.closeFundPanel=function(){ if(panel){ panel.classList.remove('active'); panel.setAttribute('aria-hidden','true'); } };
+  // Close the window only while it shows a funding view, never a park's dossier.
+  window.closeFundPanel=function(){
+    if(panel&&panel.classList.contains('active')&&panelContent.querySelector('.fund-view')&&typeof closePanel==='function') closePanel();
+  };
+  function header(name,sub){
+    return '<div class="panel-header"><div class="panel-title-row"><h2>'+esc(name)+'</h2></div>'+
+      '<div class="park-meta">'+sub+'</div>'+
+      '<div class="status-badge fund-badge">'+STATUS+'</div></div>';
+  }
 
   function showPark(code){
     var p=DATA.parks[code]; if(!p) return;
@@ -969,24 +972,23 @@ body.embed-mode .fund-bar{display:none}
     }
     var pid=parkIdFor(code);
     if(pid) body+='<button type="button" class="fp-btn" data-pid="'+esc(pid)+'">See what was flagged at this park &rarr;</button>';
-    openPanelHtml('<div class="fp-label">Blocked partner funding'+(lens==='hist'?' &middot; History &amp; collections':'')+'</div>'+
-      '<h3>'+esc(p.name)+'</h3><div class="fp-meta">'+STATUS+'</div>'+body+sourceLine());
+    openPanelHtml(p.name, header(p.name,'Blocked partner funding'+(lens==='hist'?' &middot; History &amp; collections':''))+
+      '<div class="panel-section">'+body+'</div><div class="panel-section">'+sourceLine()+'</div>');
   }
   function showOffmap(){
     gaEv('funding_offmap_open',{usd:DATA.meta.offmap_usd});
     var rows=DATA.offmap.map(function(o){
       return '<div class="fp-off"><span>'+esc(o.name)+'</span><span>'+money(o.usd)+'</span><small>'+o.n+' agreement'+(o.n>1?'s':'')+' &middot; '+(o.type==='park unit'?'park not on our map':'regional or national office')+'</small></div>';
     }).join('');
-    openPanelHtml('<div class="fp-label">Blocked partner funding</div><h3>Not on the map</h3>'+
-      '<div class="fp-meta">'+STATUS+'</div>'+
-      '<p class="fp-headline">'+DATA.meta.offmap_n+' of the '+DATA.meta.n+' agreements, worth '+full(DATA.meta.offmap_usd)+', belong to Park Service offices and one park that has no marker on this map. They are counted in the '+money(DATA.meta.usd)+' total.</p>'+
-      rows+sourceLine());
+    openPanelHtml('Not on the map', header('Not on the map','Blocked partner funding')+
+      '<div class="panel-section"><p class="fp-headline">'+DATA.meta.offmap_n+' of the '+DATA.meta.n+' agreements, worth '+full(DATA.meta.offmap_usd)+', belong to Park Service offices and one park that has no marker on this map. They are counted in the '+money(DATA.meta.usd)+' total.</p>'+
+      rows+'</div><div class="panel-section">'+sourceLine()+'</div>');
   }
 
   function ringStyle(p){
     var v=lens==='hist'?p.hist_usd:p.usd, max=lens==='hist'?DATA._maxHist:DATA._maxAll;
-    if(!v) return {radius:5,color:'#0e7490',weight:1.5,opacity:.7,dashArray:'2 3',fillColor:'#22d3ee',fillOpacity:.08};
-    return {radius:6+26*Math.sqrt(v/max),color:'#0e7490',weight:2,opacity:1,dashArray:null,fillColor:'#22d3ee',fillOpacity:.32};
+    if(!v) return {radius:16,color:'#0e7490',weight:1.5,opacity:.7,dashArray:'2 3',fillColor:'#22d3ee',fillOpacity:.08};
+    return {radius:16+24*Math.sqrt(v/max),color:'#0e7490',weight:2,opacity:1,dashArray:null,fillColor:'#22d3ee',fillOpacity:.32};
   }
   function restyle(){ if(layer) layer.eachLayer(function(m){ m.setStyle(ringStyle(DATA.parks[m._fundCode])); m.setRadius(ringStyle(DATA.parks[m._fundCode]).radius); }); }
 
@@ -996,12 +998,16 @@ body.embed-mode .fund-bar{display:none}
       var codes=Object.keys(d.parks);
       d._maxAll=Math.max.apply(null,codes.map(function(c){return d.parks[c].usd;}));
       d._maxHist=Math.max.apply(null,codes.map(function(c){return d.parks[c].hist_usd;}));
-      if(!map.getPane('fundPane')){ map.createPane('fundPane'); map.getPane('fundPane').style.zIndex=650; }
+      // Rings sit below the park markers (markerPane is 600) and draw with SVG, so only the
+      // rings themselves take clicks: a canvas here would cover the whole map and swallow
+      // every marker click. Rings start at 16px so they show around a 28px park marker.
+      if(!map.getPane('fundPane')){ map.createPane('fundPane'); map.getPane('fundPane').style.zIndex=450; }
+      var renderer=L.svg({pane:'fundPane'});
       layer=L.layerGroup();
       // Largest rings first so smaller ones sit on top and stay clickable.
       codes.sort(function(a,b){return d.parks[b].usd-d.parks[a].usd;}).forEach(function(c){
         var p=d.parks[c];
-        var m=L.circleMarker([p.lat,p.lon],Object.assign({pane:'fundPane',bubblingMouseEvents:false},ringStyle(p)));
+        var m=L.circleMarker([p.lat,p.lon],Object.assign({pane:'fundPane',renderer:renderer,bubblingMouseEvents:false},ringStyle(p)));
         m._fundCode=c;
         m.bindTooltip(esc(p.name)+' &middot; '+money(p.usd)+' blocked',{direction:'top'});
         m.on('click',function(){ showPark(c); });
@@ -1054,8 +1060,7 @@ body.embed-mode .fund-bar{display:none}
   panelContent.addEventListener('click',function(e){
     var b=e.target.closest('.fp-btn'); if(!b) return;
     var pid=b.getAttribute('data-pid');
-    window.closeFundPanel();
-    if(typeof openPanel==='function') openPanel(pid);
+    if(typeof openPanel==='function'){ openPanel(pid); panel.scrollTop=0; }
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') window.closeFundPanel(); });
 
