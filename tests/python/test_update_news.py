@@ -975,6 +975,19 @@ class QuietWeekTest(unittest.TestCase):
         self.assertEqual(un.digest_header([self.art("Sept", "x")], "2026-12-31")[0],
                          "This Week in the Fight for Park History")
 
+    def test_backdated_card_on_top_does_not_hide_newer_news(self):
+        # The bot inserts a back-dated card at the top of its year; the page is
+        # re-sorted only after the digest is built (Oct 17, 2026 regression).
+        def card(md, src):
+            return (f'<article class="article-card" data-tags="order"><div class="month-day">{md}</div>'
+                    f'<div class="date-detail">2026</div><span class="article-source">{src}</span>'
+                    f'<h3><a href="https://x/{src}">{src}</a></h3></article>\n')
+        news = card("Oct 1", "late") + card("Oct 12", "newest") + card("Oct 6", "mid")
+        arts = un._recent_articles_from_html(news)
+        self.assertEqual([a["source"] for a in arts], ["newest", "mid", "late"])
+        self.assertEqual(un.digest_header(arts, "2026-10-17")[0],
+                         "This Week in the Fight for Park History")
+
     def test_real_index_flips_to_stale_and_back(self):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)

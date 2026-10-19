@@ -50,7 +50,7 @@ MODEL_CANDIDATES = [
     "claude-sonnet-4-5",  # deprecated; retires 2026-11-30
 ]
 
-MAX_TOOL_USES = 15
+MAX_TOOL_USES = 25
 MAX_TOKENS = 8000
 
 VALID_TAGS = {"order", "removal", "resistance", "lawsuit", "leak", "court"}
@@ -164,6 +164,8 @@ Order 14253 and Secretary's Order 3431, and return them as strict JSON.
   national park funding cuts, or NPS staffing reductions
 - NPS budget cuts, staffing freezes, visitor center closures, or fee-free day
   changes tied to the current administration
+- NPS reorganization, blocked partner agreements or grants, and other
+  administration actions reshaping how national parks are run or interpreted
 - Books, commentary, or op-eds about national park history censorship,
   Indigenous erasure in parks, or climate science removal from parks
 - State-level resistance or co-management pushback against federal NPS
@@ -182,8 +184,17 @@ analysis.
 
 **Time window**: only articles published on or after {since_date}.
 
-**Searches to run** (use the web_search tool — run ALL of these; cast a wide
-net and vary your queries):
+**Searches to run** (use the web_search tool). Your search budget is
+limited, so run them IN ORDER: the major-outlet block first, then as many of
+the rest as you can. Vary your queries.
+
+Major national outlets (run ALL of these first; they are under-covered):
+- site:nytimes.com "national park" {current_month_year}
+- site:apnews.com "national park service" {current_month_year}
+- site:cnn.com "national park" {current_month_year}
+- site:washingtonpost.com "national park service" {current_month_year}
+- site:npr.org "national park" {current_month_year}
+- "national park service" (ABC News OR NBC News OR CBS News) {current_month_year}
 
 Core NPS censorship:
 - "NPS sign removal" OR "national park censorship" {current_month_year}
@@ -747,9 +758,16 @@ def _recent_articles_from_html(html: str, limit: int = 5) -> list[dict]:
             "url": m.group(5).strip(),
             "headline": m.group(6).strip(),
         })
-        if len(results) >= limit:
-            break
-    return results
+    # Newest first by the visible date, not page order: a back-dated card
+    # lands at the top of its year until resort_cards.py runs after this
+    # script, and the Oct 17, 2026 digest then said "No new developments
+    # since Oct 1" above Oct 6-12 coverage.
+    def _key(a: dict) -> tuple[int, int, int]:
+        y = int(a["year"]) if a["year"].isdigit() else 0
+        d = int(a["day"]) if a["day"].isdigit() else 0
+        return (y, _MONTHS.get(a["mon"][:3], 0), d)
+    results.sort(key=_key, reverse=True)
+    return results[:limit]
 
 
 _MONTHS = {m: i + 1 for i, m in enumerate(
