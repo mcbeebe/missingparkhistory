@@ -1,16 +1,245 @@
 {
   "code": "ARCH",
   "name": "Arches National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Arches National Park in eastern Utah protects over 2,000 natural stone arches — the densest concentration of such formations in the world — along with pinnacles, balanced rocks, and eroded sandstone fins. The landscape was shaped over 300 million years as salt deposits, sandstone layers, and erosion created the park's distinctive red-rock formations. Originally proclaimed a national monument by President Herbert Hoover in 1929, it was redesignated as a national park in 1971. Delicate Arch, the park's most iconic feature, has become a widely recognized symbol of Utah and appears on the state's license plates.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "757"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-D-2026-10-18",
+  "verifiedBy": "verifier-D-2026-10-18 (34 claims checked; 7 corrections)",
+  "summary": "<p>Water and ice, extreme temperatures and underground salt movement carved the red-rock country of Arches, which holds one of the world’s greatest densities of natural arches: more than 2,000 cataloged openings, from three-foot holes to Landscape Arch, 306 feet base to base. The salt bed beneath the park, thousands of feet thick in places, was laid down some 300 million years ago when a sea flooded the region and evaporated; most arches form in the salmon-colored Entrada Sandstone above it. The landscape is still changing. In 1991 a slab 60 feet long fell from the underside of Landscape Arch, and the park’s own brochure concedes that its geologic story is “probably” right, the evidence being largely circumstantial. <a href=\"https://npshistory.com/publications/arch/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Archaic peoples, and later ancestral Puebloan, Fremont and Ute peoples, used this country for thousands of years. Disabled Civil War veteran John Wesley Wolfe and his son Fred ranched here for over 20 years from the late 1800s. <a href=\"https://npshistory.com/publications/arch/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> After prospector Alex Ringhoffer brought the formations to the attention of a railroad official in 1923, President Herbert Hoover proclaimed Arches National Monument on April 12, 1929, withdrawing 4,520 acres; an estimated 500 people visited that year. The monument grew in 1938 to take in Delicate Arch and in 1969 to 82,953 acres before Congress made it a national park of 73,379 acres on November 12, 1971. <a href=\"https://npshistory.com/publications/arch/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Edward Abbey, a seasonal ranger here in 1956–57, drew on those seasons for <em>Desert Solitaire</em> (1968). Visitation passed 1.5 million in 2016, and the park’s 2019 administrative history describes Arches as approaching the threshold of its visitor carrying capacity. <a href=\"https://npshistory.com/publications/arch/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/arch/index.htm",
+      "title": "NPSHistory.com: Arches National Park archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/arch/adhi.pdf",
+      "title": "Purcell, An Administrative History of Arches National Park (Museum of Northern Arizona for NPS, April 30, 2019) — ch. 1 timeline, ch. 7",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>In a 2016 ethnographic study by Richard Stoffle and University of Arizona colleagues, representatives of the Pueblo of Zuni (A:shiwi), the Hopi Tribe, the Southern Ute Indian Tribe, the Ute Indian Tribe of the Uintah and Ouray Reservation, the Paiute Indian Tribe of Utah and the Kaibab Band of Paiute Indians visited five study areas in the park; each, the report says, regards Arches as a very powerful place. In their shared view the park was primarily a place of ceremony for the people who farmed Moab Valley; the arches are portals in space and time, and the hoodoos sentient beings. <a href=\"https://npshistory.com/publications/arch/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Hopi representatives call the region Pavayoykasi, the Place of Rainbows; Zuni representatives describe a clan migration through the park in their origin narrative; Ute representatives identified the park’s Purple Sage area as one of three known Ute gathering areas for that medicine in the Southwest. The report cautions that its summary is not an exact representation of their voices. <a href=\"https://npshistory.com/publications/arch/eoa.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arch/eoa.pdf",
+          "title": "Stoffle, Pickering, Brooks, Sittler & Van Vlack, Ethnographic Overview and Assessment for Arches National Park (University of Arizona BARA for NPS, June 2016), ch. 1 Executive Summary",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>In 1982 Sherma E. Bierhaus became unit manager of Arches, a post she held until 1986. Purcell’s 2019 administrative history calls her appointment the first time a woman filled the role of superintendent at any national park, a milestone, he notes, at a time when only 22 of 333 other Park Service units were headed by women. When the state worried in 1984 that a new boundary fence would cut 100 head of cattle off from a spring-fed pond 200 feet inside the park, she replied that, given the cliffs used in the fence line, the pond would remain open to them. During her illness for much of 1983, Anna M. Fender served as acting unit manager. <a href=\"https://npshistory.com/publications/arch/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arch/adhi.pdf",
+          "title": "Purcell, An Administrative History of Arches National Park (2019), ch. 1 timeline and ch. 3, Custodians, Superintendents, and Unit Managers",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>No funds were allocated for development at Arches until 1940, when a Civilian Conservation Corps camp of 200 men, NP-7-U, was built near the mouth of Moab Canyon for the monument’s exclusive use. Its crews began the entrance road up the Moab Fault, blasting the sandstone with large quantities of dynamite, and built most of the custodian’s stone residence, the Rock House (95 percent complete when the camp withdrew, by the custodian’s estimate), at a cost of 3,214 man-days and $5,830.20. <a href=\"https://npshistory.com/publications/arch/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The enrollees came from the Carolinas and other Deep South states and were unaccustomed to Utah’s climate. On December 18, 1940, they struck over what they felt were harsh working conditions in bad weather; the leaders were demoted, the camp telephone line was cut along some 40 poles, and the commanding officer resigned. The camp was withdrawn on May 31, 1942, with less than a mile of the scenic drive finished. <a href=\"https://npshistory.com/publications/arch/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arch/adhi.pdf",
+          "title": "Purcell, An Administrative History of Arches National Park (2019), ch. 3, Civilian Conservation Corps",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2025 NPS science report used satellite images to track the park’s vegetation from 2000 to 2019, which it calls a very dry period. Dry years and multi-year dry spells caused substantial declines in plant cover that largely rebounded by the study’s end, and by then the growing season was starting on average 11.9 days earlier and ending 10.2 days later. The report offers its findings as a guide to what, where and why vegetation may change as the climate does. <a href=\"https://npshistory.com/publications/arch/sr-2025-284.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/arch/sr-2025-284.pdf",
+          "title": "Landscape Phenology, Vegetation Condition, and Relations with Climate at Arches National Park, 2000–2019 (NPS Science Report NPS/SR—2025/284)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Water and ice, extreme temperatures, underground salt movement responsible for the scenery; one of the world's greatest densities of natural arches; over 2,000 cataloged arches from a three-foot opening to Landscape Arch, 306 feet base to base",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, paragraph 1"
+    },
+    {
+      "claim": "Salt bed thousands of feet thick in places, deposited 300 million years ago when a sea flowed in and evaporated; most arches form in salmon-colored Entrada Sandstone",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, \"The Story Geologists Tell\" paragraphs 1 and 3"
+    },
+    {
+      "claim": "1991: slab 60 ft long, 11 ft wide, 4 ft thick fell from underside of Landscape Arch",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, paragraph 2"
+    },
+    {
+      "claim": "\"This is Arches National Park's geologic story—probably. The evidence is largely circumstantial.\"",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, end of \"The Story Geologists Tell\""
+    },
+    {
+      "claim": "Archaic peoples and later ancestral Puebloan, Fremont and Ute peoples used the area for thousands of years",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, paragraph 3"
+    },
+    {
+      "claim": "Disabled Civil War veteran John Wesley Wolfe and son Fred settled in the late 1800s; operated the ranch for over 20 years",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "overview, paragraph 3"
+    },
+    {
+      "claim": "Ringhoffer discovered Klondike Bluffs Dec. 24, 1922 (possibly earlier in 1922); July 1923 letter to F. A. Wadleigh, Passenger Traffic Manager of the Denver and Rio Grande Western Railroad",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline, PDF p. 19 (doc p. 3)"
+    },
+    {
+      "claim": "April 12, 1929: Hoover signs proclamation withdrawing 4,520 acres in two areas; an estimated 500 visit in 1929",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline, PDF p. 20 (doc p. 4)"
+    },
+    {
+      "claim": "Nov. 25, 1938 Proclamation 2312 expands to 33,680 acres including Delicate Arch",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline, PDF p. 21 (doc p. 5)"
+    },
+    {
+      "claim": "Jan. 20, 1969 Proclamation 3887 expands to 82,953 acres; Nov. 12, 1971 Public Law 92-155 makes Arches a national park of 73,379 acres",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline, PDF p. 26 (doc p. 10)"
+    },
+    {
+      "claim": "Establishment: Arches National Monument April 12, 1929; Arches National Park November 12, 1971",
+      "sourceUrl": "https://npshistory.com/publications/arch/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Edward Abbey seasonal ranger 1956–1957; Desert Solitaire published 1968",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline, PDF pp. 23 and 25 (doc pp. 7, 9)"
+    },
+    {
+      "claim": "Visitation passed 1.5 million (1,585,718) in 2016; Arches approaching the threshold of exceeding its visitor carrying capacity",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 7 opening and \"Visitation, a Malthusian Curve\", PDF p. 351 (doc p. 335)",
+      "interpretive": true
+    },
+    {
+      "claim": "Participating tribes: Pueblo of Zuni (A:shiwi), Hopi Tribe, Southern Ute Indian Tribe, Ute Indian Tribe-Uintah and Ouray, Paiute Indian Tribe of Utah, Kaibab Band of Paiute Indians; five EOA study areas; each believes Arches a very powerful place",
+      "sourceUrl": "https://npshistory.com/publications/arch/eoa.pdf",
+      "locator": "ch. 1 Executive Summary, p. 1"
+    },
+    {
+      "claim": "Park primarily a place for ceremony for Indian people who lived and farmed in Moab Valley; arches portals in space and time; hoodoos living/sentient beings",
+      "sourceUrl": "https://npshistory.com/publications/arch/eoa.pdf",
+      "locator": "ch. 1, §1.1, pp. 1–2",
+      "interpretive": true
+    },
+    {
+      "claim": "Hopi name Pavayoykasi, Place of Rainbows; Zuni origin narrative clan migration passes through the park; Purple Sage TCP one of three known Ute gathering areas for this medicine in the Southwest",
+      "sourceUrl": "https://npshistory.com/publications/arch/eoa.pdf",
+      "locator": "ch. 1, §§1.1.1–1.1.3, pp. 2–3"
+    },
+    {
+      "claim": "Summary should not be considered an exact representation of the voices of the representatives",
+      "sourceUrl": "https://npshistory.com/publications/arch/eoa.pdf",
+      "locator": "ch. 1, end of §1.1.4, p. 4"
+    },
+    {
+      "claim": "1982 Sherma E. Bierhaus becomes unit manager; served 1982–1986; first time a woman filled the role of superintendent at any national park; only 22 of 333 other NPS units headed by women",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 1 timeline PDF p. 28 (doc p. 12); ch. 3 PDF p. 73 (doc p. 57), fn. 21; table PDF p. 72",
+      "interpretive": true
+    },
+    {
+      "claim": "Bierhaus ill much of 1983; Anna M. Fender acting unit manager Feb. 2–Sept. 27",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3 table of managers, PDF p. 72, note 5"
+    },
+    {
+      "claim": "1984: Utah State Lands manager Grosjean wrote Bierhaus that boundary fencing would exclude 100 head of cattle from a spring-fed pond 200 ft inside the boundary; Bierhaus replied that due to cliffs used in the fencing proposal the pond would remain accessible to cattle",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 4 Cattle, PDF pp. 178–179 (doc pp. 162–163), fns. 30–31"
+    },
+    {
+      "claim": "No funds for development until the CCC established a camp near Moab in 1940; camp of 200 men for exclusive use at Arches; Camp NP-7-U on a 10-acre site near the mouth of Moab Canyon",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3 \"Civilian Conservation Corps\", PDF pp. 104–105 (doc pp. 88–89), fns. 202, 204–205"
+    },
+    {
+      "claim": "Entrance road up the Moab Fault begun 1941 with CCC labor; construction required large quantities of dynamite (Jan. 1941 on hand: 8,779 lb of 20% and 18,666 lb of 40%)",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3, PDF pp. 104, 107 (doc pp. 88, 91), fns. 197, 221"
+    },
+    {
+      "claim": "Custodian's residence (Rock House) built 1941: 3,214 man-days, $5,830.20; red ashlar sandstone; Custodian Schmidt estimated it 95 percent complete when the CCC was disbanded and withdrew in 1942",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3, PDF pp. 105–106 (doc pp. 89–90), fns. 209–211"
+    },
+    {
+      "claim": "Enrollees drawn from the Carolinas and other Deep South states, unaccustomed to Utah climate; strike Dec. 18, 1940 over harsh conditions in inclement weather; leaders demoted; telephone line cut between approx. 40 poles; Capt. Pressley resigned effective Jan. 21",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3, PDF p. 106 (doc p. 90), fns. 215–216"
+    },
+    {
+      "claim": "CCC disbanded and camp withdrawn May 31, 1942; less than 1 mile of scenic drive completed, to Three Penguins",
+      "sourceUrl": "https://npshistory.com/publications/arch/adhi.pdf",
+      "locator": "ch. 3, PDF p. 106 (doc p. 90), fn. 219"
+    },
+    {
+      "claim": "2000–2019 study; since 2000 a very dry period; dry years and periods caused substantial declines in vegetation cover that largely rebounded by 2019",
+      "sourceUrl": "https://npshistory.com/publications/arch/sr-2025-284.pdf",
+      "locator": "Abstract, p. xiii"
+    },
+    {
+      "claim": "Growing season starting on average 11.9 days earlier and ending 10.2 days later by end of study period",
+      "sourceUrl": "https://npshistory.com/publications/arch/sr-2025-284.pdf",
+      "locator": "Executive Summary, Key findings, p. xv"
+    },
+    {
+      "claim": "Patterns can guide anticipation of what, where, when and why vegetation change may occur",
+      "sourceUrl": "https://npshistory.com/publications/arch/sr-2025-284.pdf",
+      "locator": "Executive Summary, Key findings, p. xv",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/arch/delicate-arch.jpg",
+      "caption": "Delicate Arch",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/arch/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7A0B2B-1DD8-B71B-0BE0E26B0740AA6B.jpg",
+      "evidenceUrl": "https://www.nps.gov/arch/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1068,
+      "bytes": 234041,
+      "note": "On-page caption: \"Delicate Arch is perhaps the most famous natural arch in the world. NPS Photo\"; alt text \"a stone arch\". Resized from 7360x4912."
+    },
+    {
+      "file": "images/history/arch/sandstone-fins.jpg",
+      "caption": "Sandstone fins near Sand Dune Arch",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/arch/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/CDAE20E4-9953-100C-20EAB60C6B24CCA1.jpg",
+      "evidenceUrl": "https://www.nps.gov/arch/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1068,
+      "bytes": 222088,
+      "note": "On-page caption: \"Sandstone fins near Sand Dune Arch NPS Photo\"; alt text \"Red sandstone fins glow in sunset lighting\". Resized from 2048x1367."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/arch/index.htm",
     "adhiUrl": "https://npshistory.com/publications/arch/adhi.pdf",

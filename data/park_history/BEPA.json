@@ -2,15 +2,171 @@
   "code": "BEPA",
   "name": "Belmont-Paul Women's Equality National Monument",
   "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-C-2026-10-18",
+  "verifiedBy": "verifier-C-2026-10-18 (34 claims checked; 7 corrections)",
+  "summary": "<p>A few blocks from the U.S. Capitol, at 144 Constitution Avenue NE, stands a brick federal-period house that the Park Service counts among the oldest residences in Washington, on land the Nacotchtank, or Anacostans, used for hunting and trading. Robert Sewall built the first house here in 1800, and Treasury Secretary Albert Gallatin rented it from 1801 to 1813. On August 24, 1814, British troops burned it after, by Sewall’s later claim to Congress, Commodore Joshua Barney’s men, retreating from the Battle of Bladensburg, fired on them from inside; the house standing today was rebuilt on the spot by 1820. <a href=\"https://npshistory.com/publications/bepa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In 1929 the National Woman’s Party, founded by Alice Paul in 1916–17, bought the house from Senator Porter Dale with the help of its president and benefactor Alva Belmont, and made it the party’s fifth and final headquarters. From here, the 2017 foundation document says, the party targeted more than 600 discriminatory laws and won more than 300 legislative changes — in marriage, divorce and custody law, jury service, property rights and contracts, the Fair Labor Standards Act of 1938 and the Civil Rights Act of 1964. Paul helped lead the party from the house until she retired in 1972. <a href=\"https://npshistory.com/publications/foundation-documents/bepa-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/bepa/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>The party fought to save the house when construction of the Hart Senate Office Building threatened it in the 1960s; it was listed on the National Register in 1972 and named a National Historic Landmark in 1974. On April 12, 2016, after the party donated the property, President Barack Obama designated it a national monument. <a href=\"https://npshistory.com/publications/bepa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/bepa/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/bepa/index.htm",
+      "title": "NPSHistory.com: Belmont-Paul Women's Equality National Monument archive page — overview (from the NPS website, 2020) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/bepa-fd-overview.pdf",
+      "title": "Foundation Document Overview, Belmont-Paul Women's Equality National Monument (NPS, 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "title": "Quinn Evans, Historic Resource Study, Belmont-Paul Women's Equality National Monument (NPS National Mall and Memorial Parks, January 2021)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "women": {
+      "html": "<p>On January 10, 1917, twelve party members began a silent vigil at the White House gates — reportedly the first people ever to picket it. After the United States entered World War I that April, spectators attacked the pickets; in June police began arresting them for obstructing traffic, and in July sixteen were sentenced to 60 days in Virginia’s Occoquan Workhouse. Officials abused the prisoners and held them in solitary confinement, the 2021 resource study records. Alice Paul, sentenced in October to seven months, the longest term, and Rose Winslow went on hunger strike and were force-fed. Publicity roused sympathy; the pickets were released in late November and their sentences invalidated in March 1918. <a href=\"https://npshistory.com/publications/bepa/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p><p>The party then pursued an Equal Rights Amendment, drafted by its officers and lawyers after 1921 and rewritten by Paul in 1943. Introduced in every session of Congress from 1923, it passed in 1972 but was three states short of ratification at the 1982 deadline. <a href=\"https://npshistory.com/publications/bepa/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/bepa/hrs.pdf",
+          "title": "Historic Resource Study, Belmont-Paul Women's Equality National Monument (NPS, 2021), preface and ch. 1, pp. 1-18 to 1-21",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>For the March 3, 1913, suffrage parade on the eve of Woodrow Wilson’s inauguration, Paul, fearing she would alienate southern white women, tried to segregate Black marchers in a section at the rear; the 2021 resource study says it is unclear whether any actually marched there. The NAACP’s journal The Crisis counted about 40 Black women in the march, among them 25 Howard University students; Ida B. Wells-Barnett, reportedly told she could not march with the white Illinois delegation, waited at the side until the Chicago delegation passed, then stepped into the line with it. The study quotes historian Mary Walton’s judgment that Paul’s failure to welcome Black marchers left a permanent stain on her reputation. Mary Church Terrell marched in 1913 and later joined the White House pickets, while remaining critical of white suffragists’ disinterest in issues that mattered to Black women. <a href=\"https://npshistory.com/publications/bepa/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/bepa/hrs.pdf",
+          "title": "Historic Resource Study, Belmont-Paul Women's Equality National Monument (NPS, 2021), ch. 1, pp. 1-12 to 1-13 and 1-18",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Brick federal-period house built on Capitol Hill in 1800, among the oldest residential properties in Washington; land used by the Nacotchtank, or Anacostans, for hunting and trading",
+      "sourceUrl": "https://npshistory.com/publications/bepa/index.htm",
+      "locator": "overview, 'History of the Alva Belmont House' para. 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Robert Sewall built the original house in 1800; Albert Gallatin, Treasury Secretary, lived there 1801–1813",
+      "sourceUrl": "https://npshistory.com/publications/bepa/index.htm",
+      "locator": "overview, 'History of the Alva Belmont House' para. 2"
+    },
+    {
+      "claim": "August 24, 1814 British burned the house; per Sewall's claim to Congress, a group of Barney's men retreating from the Battle of Bladensburg occupied the house and shot at British troops; rebuilt on the spot by 1820",
+      "sourceUrl": "https://npshistory.com/publications/bepa/index.htm",
+      "locator": "overview, 'History of the Alva Belmont House' para. 3"
+    },
+    {
+      "claim": "NWP founded 1916–1917; selected headquarters at 144 Constitution Ave NE in 1929; fifth and final headquarters; targeted more than 600 pieces of discriminatory legislation; more than 300 legislative changes incl. FLSA 1938 and Civil Rights Act 1964",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/bepa-fd-overview.pdf",
+      "locator": "Significance bullets 1 and 3"
+    },
+    {
+      "claim": "NWP purchased the house in 1929 from Senator Porter Dale with the help of Alva Belmont, president and benefactor",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "Preface, p. xvi"
+    },
+    {
+      "claim": "Paul helped lead the NWP from the Belmont House from 1929 until 1972, when she retired",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "Preface, p. xvii"
+    },
+    {
+      "claim": "Threat from Hart Senate Office Building in 1960s; NR listing 1972; NHL 1974; NWP donated the property in 2016",
+      "sourceUrl": "https://npshistory.com/publications/bepa/index.htm",
+      "locator": "overview, final paragraph of house history"
+    },
+    {
+      "claim": "April 12, 2016 President Barack Obama designated the monument",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "Preface, p. xiii"
+    },
+    {
+      "claim": "January 10, 1917, twelve NWP women began silent vigil at White House gates; reportedly first ever to picket the White House",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, p. 1-18"
+    },
+    {
+      "claim": "After US entry into WWI in April 1917 spectators attacked pickets; June arrests for obstruction of traffic; following month 16 women sentenced to 60 days at Occoquan Workhouse",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, p. 1-19"
+    },
+    {
+      "claim": "Prison officials abused prisoners physically and psychologically, solitary confinement; October Paul sentenced to seven months, the longest term; hunger strike with Rose Winslow; force-fed",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, pp. 1-20 to 1-21"
+    },
+    {
+      "claim": "Publicity roused sympathy; pickets released late November; sentences invalidated March 1918",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, p. 1-21"
+    },
+    {
+      "claim": "Party officers and lawyers began drafting ERA language after the 1921 convention (ch. 2 p. 2-13); Paul rewrote the ERA in 1943; introduced in every session of Congress from 1923 until passage in 1972; at June 30, 1982 deadline needed three more states",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "Preface, p. xvii; ch. 2, p. 2-13"
+    },
+    {
+      "claim": "March 3, 1913 parade on eve of Wilson's inauguration; Paul, fearing alienating southern White women, hoped to segregate Black women to a section at the rear; unclear if any Black women actually marched in a segregated section",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, pp. 1-11 to 1-12"
+    },
+    {
+      "claim": "The Crisis identified around 40 Black women in the march incl. 25 Howard University students; Ida B. Wells-Barnett reportedly told she could not march with the White Illinois delegation; waited at the side, stepped in with Chicago delegation",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, pp. 1-12 to 1-13"
+    },
+    {
+      "claim": "Mary Walton: Paul's failure to unreservedly welcome black marchers left a permanent stain on her reputation",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, p. 1-13",
+      "interpretive": true
+    },
+    {
+      "claim": "Mary Church Terrell marched in 1913 parade; among the pickets in 1917; critical of White suffragists' disinterest in issues relevant to Black women",
+      "sourceUrl": "https://npshistory.com/publications/bepa/hrs.pdf",
+      "locator": "ch. 1, pp. 1-13 and 1-18"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/bepa/belmont-paul-house.jpg",
+      "caption": "The Belmont-Paul Women’s Equality National Monument house",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/bepa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3633C5AF-D61B-67B4-5864030AB52C6217.jpg",
+      "evidenceUrl": "https://www.nps.gov/bepa/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1063,
+      "bytes": 239420,
+      "note": "On-page caption: \"411th Unit of the National Park Service NPS Photo\"; alt text \"Belmont-Paul Women's Equality NM House\". Resized from 1805x1200."
+    },
+    {
+      "file": "images/history/bepa/suffrage-banner.jpg",
+      "caption": "A suffrage banner calling out for women’s suffrage",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/bepa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/9D4A4DD0-1DD8-B71B-0BF6DF9405E5BC27.jpg",
+      "evidenceUrl": "https://www.nps.gov/bepa/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "women",
+      "width": 1066,
+      "height": 1600,
+      "bytes": 208915,
+      "note": "Contemporary NPS photograph of a suffrage banner. On-page caption: \"Calling out for Women Suffrage NPS Photo\"; alt text \"Suffrage Banner\". Caption limited to what the page says (no transcription of banner lettering, no date). Resized from 3744x5616."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/bepa/index.htm",
     "adhiUrl": null,

@@ -1,0 +1,175 @@
+{
+  "code": "DEWA",
+  "name": "Delaware Water Gap National Recreation Area",
+  "entries": [
+    "109"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-C-2026-10-18",
+  "verifiedBy": "verifier-C-2026-10-18 (30 claims checked; 4 corrections)",
+  "summary": "<p>At the Delaware Water Gap the river twists in a tight S-curve through Kittatinny Mountain, cutting a pass about 1,200 feet deep and a mile wide between New Jersey’s Mount Tammany and Pennsylvania’s Mount Minsi. The view made the gap a renowned resort area in the 1800s. Today the park covers 67,210 acres, by the foundation document’s count, and 40 miles of the Delaware, which the 2014 foundation document calls the longest undammed river in the eastern United States; it draws more than 5.2 million visits a year, largely from the New York and Philadelphia metropolitan areas. <a href=\"https://npshistory.com/publications/dewa/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>The park began as recreation land around a reservoir that was never built. After Hurricanes Connie and Diane in August 1955 — nearly 100 people died along Brodhead Creek alone — Congress asked the Army Corps of Engineers to study dams on the Delaware, including one at Tocks Island that would have backed up a reservoir roughly 40 miles long. Some 600 families and property owners were displaced, some from land their families had worked for centuries. Congress created the recreation area in 1965 around the planned reservoir. As costs rose and grassroots opposition grew, the Delaware River Basin Commission voted in 1975 to discontinue the project; the acquired land passed to the Park Service, 40 miles of free-flowing river were protected in 1978, and the dam was deauthorized in 1992. The foundation document credits the fight for a free-flowing Delaware with contributing to the movement that led to Earth Day and the National Environmental Policy Act. <a href=\"https://www.nps.gov/dewa/learn/historyculture/tocks-island-dam-controversy.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/dewa/index.htm",
+      "title": "NPSHistory.com: Delaware Water Gap National Recreation Area archive page — overview (from the 2008 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "title": "Foundation Document, Delaware Water Gap National Recreation Area and Middle Delaware National Scenic and Recreational River (NPS, 2014)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://www.nps.gov/dewa/learn/historyculture/tocks-island-dam-controversy.htm",
+      "title": "NPS, “Origin Story: The Tocks Island Dam Controversy,” Delaware Water Gap NRA (last updated November 21, 2024)",
+      "type": "nps"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The foundation document counts about 11,000 years of human use here and nearly 500 documented American Indian archeological sites — the best-preserved such complex in the Northeast, it says, with ongoing significance to American Indian tribes. The Park Service’s Lenape page says archeology begun in 1959, to salvage sites before the planned reservoir flooded the valley, revealed more than 10,000 years of history, consistent with Lenape oral traditions of living here since time immemorial. <a href=\"https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://www.nps.gov/dewa/learn/historyculture/native-american.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p><p>Minisink — a Delaware word translated as “Hilly Country” or “Island” — was, by its National Historic Landmark nomination, the most important Munsee Indian community for much of the 1600s and 1700s. Pennsylvanians claimed the entire west bank of the Delaware under the Walking Purchase of 1737, which the nomination calls still controversial; Munsee people who refused to move were ordered off their land in 1742 by Iroquois acting at Pennsylvania’s request. Most had left Minisink by 1755, when war broke out. <a href=\"https://npshistory.com/publications/dewa/nr-minisink-hd.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+          "title": "Foundation Document, Delaware Water Gap NRA (NPS, 2014), significance statement 6 and Rich Archeological Heritage",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/dewa/learn/historyculture/native-american.htm",
+          "title": "NPS, “Lenape in the Delaware River Valley,” Delaware Water Gap NRA (last updated September 28, 2023)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/dewa/nr-minisink-hd.pdf",
+          "title": "Minisink Historic District, National Historic Landmark nomination (NPS, undated; cites work through 1992)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "River twists in a tight S-curve through the ridge at Kittatinny Mountain; renowned resort area in the 1800s",
+      "sourceUrl": "https://npshistory.com/publications/dewa/index.htm",
+      "locator": "overview (NPS Brochure 2008), para. 1"
+    },
+    {
+      "claim": "Gap approximately 1,200 feet deep; one mile wide from Mount Tammany (NJ) to Mount Minsi (PA)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "67,210-acre park; Delaware River mainstem the longest undammed river in the eastern United States; 40 miles of free-flowing river added 1978",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "More than 5.2 million recreational visitors a year, much from NY/northern NJ and Philadelphia metro areas",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "August 1955 Hurricanes Connie and Diane; nearly 100 people died on the banks of Brodhead (page: 'Broadhead') Creek alone; Congress commissioned the Army Corps to study dams incl. one at Tocks Island; reservoir roughly 40 miles long",
+      "sourceUrl": "https://www.nps.gov/dewa/learn/historyculture/tocks-island-dam-controversy.htm",
+      "locator": "paras. 1–2"
+    },
+    {
+      "claim": "Some 600 families and property owners displaced; some had lived on and worked the land for centuries",
+      "sourceUrl": "https://www.nps.gov/dewa/learn/historyculture/tocks-island-dam-controversy.htm",
+      "locator": "para. 2"
+    },
+    {
+      "claim": "Established 1965 to provide recreation around the reservoir of the proposed Tocks Island Dam; costs rose, funding diminished, grassroots opposition; 1975 DRBC voted to discontinue; land transferred to NPS; 1992 dam deauthorized",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Effort to preserve a free-flowing Delaware contributed to the grass-roots environmental movement that led to Earth Day and NEPA",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Significance statement 9, p. 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Approximately 11,000 years of human use; most well-preserved concentration of known archeological sites in the Northeast; ongoing significance to American Indian tribes",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "Significance statement 6, p. 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Nearly 500 documented American Indian archeological sites; complex best preserved in the northeastern U.S.",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/dewa-fd-2014.pdf",
+      "locator": "FRV 'Rich Archeological Heritage', p. 6",
+      "interpretive": true
+    },
+    {
+      "claim": "Archeological surveys began 1959 because of the dam; revealed history over 10,000 years, lining up with Lenape oral traditions of inhabiting the area since time immemorial",
+      "sourceUrl": "https://www.nps.gov/dewa/learn/historyculture/native-american.htm",
+      "locator": "'Lenape in the Delaware River Valley', para. 1"
+    },
+    {
+      "claim": "Minisink, a Delaware word variously translated 'Hilly Country' and 'Island', the most important Munsee Indian community for much of the 17th and 18th century (FD significance 6: Minisink NHL District lies within DEWA)",
+      "sourceUrl": "https://npshistory.com/publications/dewa/nr-minisink-hd.pdf",
+      "locator": "Section 7, form p. 4",
+      "interpretive": true
+    },
+    {
+      "claim": "Pennsylvanians claiming the entire western bank of the Delaware under the terms of the still-controversial Walking Purchase of 1737; Munsee people refusing to move were ordered off their land by Iroquois acting at Pennsylvania's request in 1742 (prose goes no further than this)",
+      "sourceUrl": "https://npshistory.com/publications/dewa/nr-minisink-hd.pdf",
+      "locator": "form p. 8"
+    },
+    {
+      "claim": "Most Indian people moved away from Minisink just before the Seven Years War broke out in 1755",
+      "sourceUrl": "https://npshistory.com/publications/dewa/nr-minisink-hd.pdf",
+      "locator": "form p. 10"
+    },
+    {
+      "claim": "nps.gov pages cited live: Tocks Island page 'Last updated: November 21, 2024'; Lenape page 'Last updated: September 28, 2023' — both before 2025-01-19",
+      "sourceUrl": "https://www.nps.gov/dewa/learn/historyculture/native-american.htm",
+      "locator": "page footer (checked 2026-10-18)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/dewa/river-from-mount-tammany.jpg",
+      "caption": "The Delaware River seen from atop Mount Tammany",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/dewa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C79C832-1DD8-B71B-0BAACF8A16A81B90.jpg",
+      "evidenceUrl": "https://www.nps.gov/dewa/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1050,
+      "height": 1400,
+      "bytes": 198832,
+      "note": "On-page caption: \"High view of the Delaware River from atop Mount Tammany NPS Photo\"; alt text \"a snaking river view from a mountain top\". Resized from 2250x3000."
+    },
+    {
+      "file": "images/history/dewa/dingmans-falls.jpg",
+      "caption": "Dingmans Falls in summer, seen from the boardwalk",
+      "credit": "NPS Photo / Michael Cuff",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/dewa/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/47B1994C-1DD8-B71B-0BC5F687A7941034.jpg",
+      "evidenceUrl": "https://www.nps.gov/dewa/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1082,
+      "height": 1400,
+      "bytes": 227229,
+      "note": "On-page caption: \"Dingmans Falls in summer, as seen from the wheelchair and stroller accessible boardwalk NPS Photo / Michael Cuff\". Resized from 3840x4968."
+    }
+  ],
+  "photoStatus": "complete",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/dewa/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": "https://npshistory.com/publications/dewa/hrs-millbrook-village.pdf",
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 80
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/dewa/index.htm"
+  },
+  "corrections": []
+}

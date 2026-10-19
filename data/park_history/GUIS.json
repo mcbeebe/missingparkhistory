@@ -1,16 +1,219 @@
 {
   "code": "GUIS",
   "name": "Gulf Islands National Seashore",
-  "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "142"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (58 claims checked; 13 corrections)",
+  "summary": "<p>Gulf Islands National Seashore runs 160 miles along the northern Gulf of Mexico, from Cat Island in Mississippi to the eastern end of Santa Rosa Island in the Florida panhandle: barrier islands of white sand, bayous, salt marshes, live oaks and maritime forest, with more than 80 percent of the seashore under water. Over 400 fish species, 300 bird species and a dozen federally listed species live here, and Horn and Petit Bois islands are federally designated wilderness. Hurricanes, storms, sea-level rise and the drift of sand keep the islands moving. <a href=\"https://npshistory.com/publications/guis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>After the War of 1812 the nation chose Pensacola Bay for a navy yard and Third System forts, and the seashore now preserves five such sites, among them Fort Pickens, the largest, begun in 1829 and finished in 1834; Fort Barrancas, which incorporates the eighteenth-century Spanish Bateria de San Antonio; and Fort Massachusetts on Ship Island. Its artillery batteries span the Civil War to the end of World War II. Santa Rosa Island was first protected as a national monument in 1939, and Congress established the national seashore on January 8, 1971. <a href=\"https://npshistory.com/publications/guis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service’s own foundation document describes Fort Pickens and Fort Barrancas as monuments to the skill and toil of enslaved masons, carpenters and laborers who built them to protect the liberty of the United States while being denied their own. <a href=\"https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/guis/index.htm",
+      "title": "NPSHistory.com: Gulf Islands National Seashore archive page — overview (from the 2018 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+      "title": "NPS, Foundation Document, Gulf Islands National Seashore, Florida–Mississippi (June 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>Enslaved men built these forts. For Fort Pickens, engineer William H. Chase relied on the New Orleans firm Underhill and Strong, which owned about 100 enslaved men experienced in fort building, and on others he rented directly from slaveholders; the park says enslaved men also built Fort McRee, Fort Barrancas and part of Advanced Redoubt. Fort Pickens also drew people escaping slavery. On March 12, 1861, eight enslaved people reached Fort Pickens and were sent back; by that summer one or two arrived each day by canoe, skiff or plank and were no longer turned away. Peter Dyson, an enslaved man rented out as a mason in 1851, escaped across the bay with his wife Henrietta in 1861 and reached New York that October. In 2020 Fort Pickens was named to the Underground Railroad Network to Freedom. <a href=\"https://www.nps.gov/guis/learn/historyculture/fort-pickens.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://www.nps.gov/articles/peter-dyson.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/guis/learn/historyculture/fort-pickens.htm",
+          "title": "NPS, Gulf Islands NS, Fort Pickens (nps.gov, last updated March 1, 2022)",
+          "type": "nps"
+        },
+        {
+          "url": "https://www.nps.gov/articles/peter-dyson.htm",
+          "title": "NPS, Peter, Property, and Posterity (nps.gov article, last updated November 14, 2019)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+          "title": "Historic Structures Report: Fort Pickens and Battery Pensacola, Gulf Islands National Seashore (NPS, 2025)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Black soldiers served at these posts in the Civil War. Seven companies of the 2nd Louisiana Native Guards, raised among the free men of color of New Orleans in 1862, took station on Ship Island in January 1863, and on April 9, 1863, two companies raided East Pascagoula, Mississippi, making them, the park says, the first Black unit on the Gulf Frontier to meet Confederates in combat; by that summer most if not all of the officers of color had been purged by review boards or asked to resign. In July 1864 the 25th U.S. Colored Troops, about 1,000 men who volunteered at Camp William Penn in Philadelphia, arrived on Pensacola Bay and were split among Forts Pickens, Barrancas and Advanced Redoubt; more than 180 of them died during the war. Under Jim Crow, when Pensacola Beach was whites-only, Black residents went instead to the eastern end of Perdido Key, now Rosamond Johnson Beach. <a href=\"https://www.nps.gov/articles/2la-guard.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://www.nps.gov/articles/25-usct.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://www.nps.gov/guis/learn/historyculture/rosamond-johnson.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/articles/2la-guard.htm",
+          "title": "NPS, 2nd Louisiana Native Guards (nps.gov article, last updated October 29, 2018; drawn from Bearss, Ship Island HRS, 1984)",
+          "type": "nps"
+        },
+        {
+          "url": "https://www.nps.gov/articles/25-usct.htm",
+          "title": "NPS, 25th United States Colored Troops: The Sable Sons of Uncle Abe (nps.gov article, last updated December 9, 2019)",
+          "type": "nps"
+        },
+        {
+          "url": "https://www.nps.gov/guis/learn/historyculture/rosamond-johnson.htm",
+          "title": "NPS, Gulf Islands NS, Rosamond Johnson (nps.gov, last updated December 4, 2019)",
+          "type": "nps"
+        }
+      ]
+    },
+    "indigenous": {
+      "html": "<p>In October 1886, after lobbying by influential Pensacola citizens, Geronimo and other Chiricahua and Warm Springs Apache men captured at the end of the Apache Wars were sent to Fort Pickens as prisoners of war, the 2025 historic structures report records. Troops partitioned casemates along the south wall to hold them, and prisoners and guards repaired the fort. From February 1887 the Army let curious civilians into the fort to look at Geronimo. Wives and children joined the men in April 1887; fifteen men, twenty-one women and ten children lived in the fort until the War Department moved them to Mount Vernon Barracks near Mobile in April 1888. An etching on a steel beam in a casemate gallery still reads “ALIVE GERONIMO.” <a href=\"https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+          "title": "Historic Structures Report: Fort Pickens and Battery Pensacola, Gulf Islands National Seashore (NPS, 2025)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "japanese_american": {
+      "html": "<p>In late 1942 the Army selected Nisei soldiers of the 100th Infantry Battalion, Japanese Americans from Hawaii, for a top-secret training mission and sent them to Ship Island. Every day they boated six miles to Cat Island, where Swiss dog trainer William A. Prestre, who believed that Japanese people smell different than Americans, had them hide in the marshes while dogs tracked them. The park’s account explains that dogs tell people apart by diet, not ancestry, so the training failed; that Prestre ordered the Nisei, against their wishes, to hurt the dogs to create aggression; and that injuries were common, though protective gear prevented serious harm. The mission ended after four months and remained hidden for years after the war; the park calls it a brutal mission and a misguided attempt at improving jungle warfare. <a href=\"https://www.nps.gov/articles/japaneseamericans_cat-island.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/articles/japaneseamericans_cat-island.htm",
+          "title": "NPS, Japanese Americans on Cat Island (nps.gov article, last updated April 14, 2020)",
+          "type": "nps"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>At its peak in 2005, Hurricane Katrina completely submerged the entire Mississippi–Alabama barrier island chain, temporarily cutting several islands apart. The 2016 foundation document reports that sea level has already risen and projects an additional 1.82 to 2.32 feet by 2100, with more intense storms and heat, more erosion and possible saltwater intrusion threatening land and ecosystems; rising seas may inundate many fortification sites, especially Fort Massachusetts and Fort McRee. A 2024 assessment prepared for the Park Service by Western Carolina University found 56 percent of the seashore’s 295 buildings, fortifications, roads and trails highly vulnerable to coastal hazards and sea-level rise. <a href=\"https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/guis/coastal-hazards-2025.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+          "title": "NPS, Foundation Document, Gulf Islands National Seashore, Florida–Mississippi (June 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/guis/coastal-hazards-2025.pdf",
+          "title": "Peek, Thompson, Tormey & Young, Coastal Hazards & Sea-Level Rise Asset Vulnerability Assessment for Gulf Islands National Seashore: Updated Summary of Results (NPS 635/194634, September 2024)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "160 miles from Cat Island (MS) to the eastern end of Santa Rosa Island (FL); more than 80% marine habitat and open water; hurricanes, tropical storms, sea level rise, climate change and sand transport drivers of change; Horn and Petit Bois federally designated wilderness; established January 8, 1971; Fort Pickens begun 1829, completed 1834, the largest; Fort Barrancas includes 18th-century Spanish Bateria de San Antonio (NHL); batteries from Civil War to end of WWII",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+      "locator": "Brief Description of the Park, PDF p. 7"
+    },
+    {
+      "claim": "Over 400 fish species, 300 bird species, a dozen federally listed species; Third System after War of 1812; Pensacola Bay chosen for a navy yard; park preserves five sites; Fort Massachusetts on Ship Island; Santa Rosa Island National Monument May 17, 1939",
+      "sourceUrl": "https://npshistory.com/publications/guis/index.htm",
+      "locator": "overview and Establishment block (2018 brochure)"
+    },
+    {
+      "claim": "Fort Pickens and Fort Barrancas are monuments to the skill and toil of slave masons, carpenters and laborers who built these forts to protect the liberty of the United States, even as they were denied that liberty",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+      "locator": "Fundamental Resources and Values, Location and Legacy, PDF p. 13",
+      "interpretive": true
+    },
+    {
+      "claim": "Chase worked with Underhill and Strong of New Orleans, who owned about 100 enslaved men experienced in building forts, supported by enslaved men Chase rented directly from slaveholders; Chase and his enslaved laborers completed Fort Pickens in October 1834",
+      "sourceUrl": "https://www.nps.gov/guis/learn/historyculture/fort-pickens.htm",
+      "locator": "construction paragraphs"
+    },
+    {
+      "claim": "Enslaved men built Fort Pickens, Fort McRee, Fort Barrancas, Barrancas Barracks and part of Advanced Redoubt; Peter rented as a mason in 1851; escaped with wife Henrietta in the first summer of the war; reached New York City in October 1861",
+      "sourceUrl": "https://www.nps.gov/articles/peter-dyson.htm",
+      "locator": "paragraphs 3–4, 6–8"
+    },
+    {
+      "claim": "Eight enslaved people escaped to Fort Pickens (March 12, 1861) and were returned; summer 1861 one or two escaped enslaved people arrived each day by canoe, skiff and planks and were not turned away",
+      "sourceUrl": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+      "locator": "Developmental History pp. 20–21 (PDF p. 49); Network to Freedom section (PDF p. 277)"
+    },
+    {
+      "claim": "September 2020 Fort Pickens selected as one of twelve new Underground Railroad Network to Freedom listings",
+      "sourceUrl": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+      "locator": "Network to Freedom (PDF p. 277)"
+    },
+    {
+      "claim": "2nd Louisiana Native Guards organized October 1862 under Gen. Order 63 enlisting free men of color in New Orleans; Companies B, C, D, F, G, I and K to Ship Island mid-January 1863; April 9, 1863 two companies raided East Pascagoula; first black unit on the Gulf Frontier to meet Confederates in combat; by summer 1863 most if not all non-white officers purged by review boards or asked to resign",
+      "sourceUrl": "https://www.nps.gov/articles/2la-guard.htm",
+      "locator": "paragraphs 1–5"
+    },
+    {
+      "claim": "25th USCT: around 1,000 men volunteered at Camp William Penn, Philadelphia; arrived Pensacola Bay July 1864; split between Forts Pickens, Barrancas and Advanced Redoubt; over 180 perished during the war",
+      "sourceUrl": "https://www.nps.gov/articles/25-usct.htm",
+      "locator": "paragraphs 4, 6, 14"
+    },
+    {
+      "claim": "Pensacola Beach designated whites only under Jim Crow; eastern end of Perdido Key a refuge for Black citizens; named Rosamond Johnson Beach (Johnson killed in Korea July 26, 1950, age 17)",
+      "sourceUrl": "https://www.nps.gov/guis/learn/historyculture/rosamond-johnson.htm",
+      "locator": "paragraphs 2–4"
+    },
+    {
+      "claim": "Geronimo and other Chiricahua and Warm Springs Apache men transferred to Fort Pickens October 1886 after lobbying by influential Pensacola citizens; casemates along south wall divided into housing; civilians admitted from February 1887; wives and children April 1887; fifteen men, twenty-one women, ten children; moved to Mt. Vernon Barracks near Mobile April 1888",
+      "sourceUrl": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+      "locator": "Developmental History p. 24 (PDF p. 53)"
+    },
+    {
+      "claim": "Steel beam etching in casemate gallery reads “ALIVE GERONIMO”",
+      "sourceUrl": "https://npshistory.com/publications/guis/hsr-fort-pickens-battery-pensacola.pdf",
+      "locator": "Physical description, Figure 139"
+    },
+    {
+      "claim": "Late 1942 Army selected Nisei from the 100th Infantry Battalion (Japanese Americans from Hawaii) for a top-secret training mission; traveled to Ship Island; boated six miles daily to Cat Island; trainer William A. Prestre believed Japanese people smell different than Americans; Nisei hid in marshy lands while dogs tracked them; dogs differentiate by diet, not ancestry, so training failed; Prestre ordered Nisei to hurt dogs to create aggression, against the men's desires; injuries common, protective gear prevented serious harm; ended after four months; hidden for years after WWII; “brutal mission”, “misguided attempt at improving jungle warfare”",
+      "sourceUrl": "https://www.nps.gov/articles/japaneseamericans_cat-island.htm",
+      "locator": "paragraphs 2–6",
+      "interpretive": true
+    },
+    {
+      "claim": "Hurricane Katrina (2005) at its peak completely submerged the entire barrier island chain, temporarily segmenting several islands",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+      "locator": "Wilderness character appendix, PDF p. 52"
+    },
+    {
+      "claim": "Sea level rise has increased and projected additional 1.82–2.32 ft by 2100; climate change threats; sea level rise may inundate fortification sites, especially Fort Massachusetts and Fort McRee; possible salt water intrusion",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guis-fd-2016.pdf",
+      "locator": "FRV analysis, PDF pp. 19, 21"
+    },
+    {
+      "claim": "Peek et al. (Western Carolina University for NPS), Sept. 2024: 56% of 295 assets (147 buildings/structures incl. fortifications, 148 transportation incl. roads and trails) high vulnerability to coastal hazards and SLR",
+      "sourceUrl": "https://npshistory.com/publications/guis/coastal-hazards-2025.pdf",
+      "locator": "Executive Summary, p. 1"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/guis/fort-pickens-sunset.jpg",
+      "caption": "The sun sets over historic Fort Pickens",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/guis/learn/historyculture/fort-pickens.htm",
+      "imageUrl": "https://www.nps.gov/guis/learn/historyculture/images/FortPickensHeader.jpg",
+      "evidenceUrl": "https://www.nps.gov/guis/learn/historyculture/fort-pickens.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 694,
+      "note": "Figcaption: \"The sun sets over historic Fort Pickens.\" figcredit \"NPS Photo\". Page last updated March 1, 2022. Resized from 2700x1171.",
+      "bytes": 208079
+    },
+    {
+      "file": "images/history/guis/fort-barrancas-water-battery.jpg",
+      "caption": "The Spanish water battery, in white, on the south-facing walls of Fort Barrancas",
+      "credit": "NPS/Everitt",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/guis/learn/historyculture/fort-barrancas.htm",
+      "imageUrl": "https://www.nps.gov/guis/learn/historyculture/images/FortBarrancasHeader.jpg",
+      "evidenceUrl": "https://www.nps.gov/guis/learn/historyculture/fort-barrancas.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "slavery",
+      "width": 1600,
+      "height": 363,
+      "note": "Figcaption: \"The Spanish water battery in white on the south facing walls of Fort Barrancas.\" figcredit \"NPS/Everitt\" (contemporary photograph, EXIF 2018). Page last updated April 2, 2020. Resized from 5184x1176.",
+      "bytes": 135606
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/guis/index.htm",
     "adhiUrl": null,

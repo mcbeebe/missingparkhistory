@@ -1,16 +1,202 @@
 {
   "code": "CANY",
   "name": "Canyonlands National Park",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Canyonlands National Park in southeastern Utah preserves 337,598 acres of dramatic desert landscape carved by the Colorado and Green Rivers into countless canyons, mesas, and buttes. Established as a national park in 1964 through the efforts of Secretary of the Interior Stewart Udall, Canyonlands is divided into four distinct districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. The region's geological record spans over 300 million years, and archaeological evidence shows human presence dating back at least 10,000 years, including ancestral Puebloan granaries and Fremont rock art.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "768"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-D-2026-10-18",
+  "verifiedBy": "verifier-D-2026-10-18 (30 claims checked; 10 corrections)",
+  "summary": "<p>Canyonlands is a wilderness of rock at the heart of the Colorado Plateau, where water and gravity have cut flat layers of sedimentary stone into hundreds of canyons, mesas, buttes, fins, arches and spires across 527 square miles. The Green and Colorado rivers divide it into Island in the Sky, The Maze and The Needles; below their confluence the combined river rushes 14 miles through the rapids of Cataract Canyon. John Wesley Powell, floating through in 1869, called it a strange, weird, grand region. When the park was established, the brochure notes, only Native Americans, cowboys, river explorers and uranium prospectors had dared enter it, and its roads are still mostly unpaved and its rivers free-flowing. <a href=\"https://npshistory.com/publications/cany/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Its path to protection was long. The Park Service proposed an Escalante National Monument of more than 6,000 square miles here in 1936; the plan drew harsh criticism in Utah, and a scaled-back version, repackaged as a recreation area, died in congressional committees in 1940. In April 1961 Interior Secretary Stewart Udall flew over the basin, responding to its beauty while Reclamation chief Floyd Dominy described the virtues of another dam site, what Samuel Schmieding’s 2008 administrative history calls a profound historical irony. Udall’s first concept was a one-million-acre park; after a three-year fight with Utah Republicans, President Lyndon Johnson signed a bill on September 12, 1964, creating the nation’s 31st national park at 257,400 acres. A 1965 master plan called for paved roads and deluxe lodging, and an aerial tramway was even considered for The Needles; the plan was shelved, and in 1971 the park grew by 87,000 acres, taking in The Maze, to 337,540 acres. <a href=\"https://npshistory.com/publications/cany/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/cany/index.htm",
+      "title": "NPSHistory.com: Canyonlands National Park archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/cany/adhi.pdf",
+      "title": "Schmieding, From Controversy to Compromise to Cooperation: The Administrative History of Canyonlands National Park (NPS, 2008) — Chronology and Introduction",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>People have occupied or passed through Canyonlands intermittently for about 12,000 years, according to a 2021 synthesis of park archeology by Alan Schroedl and Nancy Coulam. Seeds drew Archaic people here; their staples were cheno-ams, dropseed and Indian rice grass. Late Archaic people painted the Barrier Canyon Style figures of Horseshoe Canyon, life-sized forms the brochure dates to more than 2,000 years ago. Mesa Verde Anasazi farmers, Ancestral Puebloans, arrived after AD 1170, built masonry dwellings in The Needles and granaries elsewhere in the park, and by AD 1300 had left, probably moving south to join Pueblo IV villages. The authors reject a 1962 assertion that Fremont and Anasazi cultures came together here: none of the park’s structures were built by the Fremont. <a href=\"https://npshistory.com/publications/cany/cap-5.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cany/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Around AD 1600, the authors find some evidence, ancestors of the Southern Paiute or Ute, or possibly the Navajo, came into the park for resources such as salt. <a href=\"https://npshistory.com/publications/cany/cap-5.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cany/cap-5.pdf",
+          "title": "Schroedl & Coulam, Archaic Foragers and Ancestral Puebloans of Canyonlands National Park (Canyonlands Archeological Project Report No. 5, P-III Associates, November 2021) — Part 2 synopsis and Final Summary",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cany/index.htm",
+          "title": "NPSHistory.com: Canyonlands archive page overview (The Maze, The Needles)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>A 2023 NPS report used satellite images to follow vegetation in and near the park from 2000 to 2019. Multiple indicators, it says, suggest plant production rose across 58 percent of the area studied and fell across 2 percent; increases in annual precipitation may have caused some of the gain. By the end of the period the growing season was starting 12.6 days earlier and ending 11.2 days later, nearly 24 days longer on average. The report offers its findings to help managers plan for what it calls transitions imposed by climate change. <a href=\"https://npshistory.com/publications/cany/nrr-2023-2535.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cany/nrr-2023-2535.pdf",
+          "title": "Landscape Phenology, Vegetation Condition, and Relations with Climate at Canyonlands National Park, 2000–2019 (NPS/NCPN/NRR—2023/2535), Executive Summary",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Wilderness of rock at the heart of the Colorado Plateau; water and gravity cut flat layers of sedimentary rock into hundreds of canyons, mesas, buttes, fins, arches, spires; Green and Colorado rivers; Island in the Sky, The Maze, The Needles; 527 square miles",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "overview, \"A Wilderness of Rock\""
+    },
+    {
+      "claim": "Below the confluence a 14-mile rush through Cataract Canyon rapids",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "overview, \"The Rivers\" paragraph 2"
+    },
+    {
+      "claim": "Powell 1869: \"a strange, weird, grand region\"",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "overview, \"The Rivers\" paragraph 1"
+    },
+    {
+      "claim": "When the park was established in 1964 only Native Americans, cowboys, river explorers and uranium prospectors had dared enter; roads mostly unpaved, rivers free-flowing",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "overview, \"A Wilderness of Rock\""
+    },
+    {
+      "claim": "1935 NPS earmarked the region for an Escalante National Monument; 1936 first concept covered more than 6,000 square miles, harshly criticized in Utah; 1938 second concept 2,450 sq mi; 1940 second concept repackaged as a recreation area, bills died in congressional committees",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Chronology pp. xi–xii; Introduction p. 1"
+    },
+    {
+      "claim": "April 1961 Udall overflight on return from Rainbow Bridge with Reclamation chief Floyd Dominy, who described another dam site — Schmieding calls it a \"profound historical irony\"",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Introduction p. 2; Chronology p. xii",
+      "interpretive": true
+    },
+    {
+      "claim": "Udall initially conceived a one-million-acre park; stiff resistance from Utah Republicans (Sen. Wallace Bennett, Gov. George Clyde)",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Introduction p. 2"
+    },
+    {
+      "claim": "1964 bill for 257,400 acres passed after three-year political tussle; signed Sept. 12, 1964 by Lyndon Johnson; nation's 31st national park",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Chronology p. xii; Introduction p. 1"
+    },
+    {
+      "claim": "Establishment: Canyonlands National Park September 12, 1964",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "1965 Master Plan: paved roads front- and backcountry, state-of-the-art visitor centers, deluxe lodging; an aerial tramway was even considered for the Needles District; Master Plan shelved",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Introduction p. 3; Chronology p. xii"
+    },
+    {
+      "claim": "1971 enlarged by 87,000 acres including the Maze, Land of Standing Rocks, Davis and Lavender canyons, total 337,540 acres",
+      "sourceUrl": "https://npshistory.com/publications/cany/adhi.pdf",
+      "locator": "Chronology p. xiii"
+    },
+    {
+      "claim": "Prehistoric people intermittently occupied or passed through the park for about 12,000 years",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Part 2 Introduction, p. 42"
+    },
+    {
+      "claim": "Seeds one of the primary natural resources that attracted Archaic people to the park; Archaic staples seeds of cheno-ams (Chenopodium-Amaranthus), dropseed, Indian rice grass",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Paleoindian and Archaic Periods, pp. 43–44"
+    },
+    {
+      "claim": "Late Archaic people created the Barrier Canyon Style anthropomorphic rock art found in the Horseshoe Canyon Detached Unit",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Final Summary, p. 58"
+    },
+    {
+      "claim": "Great Gallery pictographs include life-sized figures left by hunter-gatherers over 2,000 years ago",
+      "sourceUrl": "https://npshistory.com/publications/cany/index.htm",
+      "locator": "overview, \"The Maze\" paragraph 2"
+    },
+    {
+      "claim": "Mesa Verde Anasazi did not arrive until after AD 1170; dry-land farmers; masonry habitation sites in Needles District and granaries elsewhere after about AD 1170; by AD 1300 abandoned canyon country, probably moving south to join Pueblo IV villages",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Final Summary, p. 58",
+      "interpretive": true
+    },
+    {
+      "claim": "Pierson (1962) asserted the park encompassed an area where the Fremont and Anasazi Formative cultures came together; now known incorrect; none of the structures were built by the Fremont",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Formative Occupation in the Park, p. 45",
+      "interpretive": true
+    },
+    {
+      "claim": "Around AD 1600 some evidence that ancestors of the Numic-speaking Southern Paiute or Ute or possibly the Navajo came into the park to obtain resources like salt",
+      "sourceUrl": "https://npshistory.com/publications/cany/cap-5.pdf",
+      "locator": "Final Summary, p. 58",
+      "interpretive": true
+    },
+    {
+      "claim": "2000–2019 satellite study; multiple indicators suggest production increased in 58% and decreased in 2% of the area analyzed in and near the park",
+      "sourceUrl": "https://npshistory.com/publications/cany/nrr-2023-2535.pdf",
+      "locator": "Executive Summary, Key findings, p. xiii"
+    },
+    {
+      "claim": "Growing-season production most strongly correlated with annual precipitation and soil moisture; increases in precipitation may have caused some of the increase",
+      "sourceUrl": "https://npshistory.com/publications/cany/nrr-2023-2535.pdf",
+      "locator": "Executive Summary, Key findings, p. xiv",
+      "interpretive": true
+    },
+    {
+      "claim": "Growing season starting 12.6 days earlier and ending 11.2 days later; 23.8 days longer on average",
+      "sourceUrl": "https://npshistory.com/publications/cany/nrr-2023-2535.pdf",
+      "locator": "Executive Summary, Key findings, p. xiv"
+    },
+    {
+      "claim": "Report intended to help manage park resources through \"transitions imposed by climate change\"",
+      "sourceUrl": "https://npshistory.com/publications/cany/nrr-2023-2535.pdf",
+      "locator": "Executive Summary, p. xiii"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/cany/needles-chesler-park.jpg",
+      "caption": "The Needles, pinnacles of Cedar Mesa Sandstone, seen in Chesler Park",
+      "credit": "NPS/Neal Herbert",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cany/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7A5677-1DD8-B71B-0BD6CF7287668A78.jpg",
+      "evidenceUrl": "https://www.nps.gov/cany/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1271,
+      "bytes": 198657,
+      "note": "On-page caption: \"The Needles, pinnacles of Cedar Mesa Sandstone, are visible in many parts of the Needles District, including this view in Chesler Park. NPS/Neal Herbert\". Resized from 10512x8353."
+    },
+    {
+      "file": "images/history/cany/great-gallery.jpg",
+      "caption": "Pictographs from the Great Gallery, Horseshoe Canyon Unit",
+      "credit": "NPS/Neal Herbert",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cany/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/D0E228D4-CA7B-885D-3D690601FDA15669.jpg",
+      "evidenceUrl": "https://www.nps.gov/cany/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "indigenous",
+      "width": 1600,
+      "height": 1090,
+      "bytes": 207287,
+      "note": "On-page caption: \"Pictographs from the Great Gallery, Horseshoe Canyon Unit NPS/Neal Herbert\". Resized from 2615x1782."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/cany/index.htm",
     "adhiUrl": "https://npshistory.com/publications/cany/adhi.pdf",

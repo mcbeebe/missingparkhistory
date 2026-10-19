@@ -2,15 +2,287 @@
   "code": "STRI",
   "name": "Stones River NB",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Stones River National Battlefield near Murfreesboro, Tennessee, preserves the site of the Battle of Stones River (also known as the Battle of Murfreesboro), fought from December 31, 1862, to January 2, 1863. The battle was among the bloodiest of the Civil War, with roughly 23,000 combined casualties — a casualty rate comparable to the Battle of Antietam. The Union victory under Major General William S. Rosecrans secured central Tennessee for the Union and provided a critical morale boost following the Confederate victory at Fredericksburg. The Stones River National Cemetery, established in 1865 at the battlefield, is the oldest national cemetery in the country established during the Civil War. The site was established as a national battlefield in 1927.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-B-2026-10-18",
+  "verifiedBy": "verifier-B-2026-10-18 (36 claims checked; 9 corrections)",
+  "summary": "<p>In the cedar woods, rocks and cotton fields outside Murfreesboro, Tennessee, armies totaling 81,000 men fought from December 31, 1862, through January 2, 1863, in one of the Civil War’s bloodiest encounters. Each side lost nearly one-third of its men: 13,249 Union and 10,266 Confederate casualties. On the last afternoon, 57 Union cannon massed above McFadden’s Ford killed or wounded more than 1,800 Confederates in less than an hour, and the Confederate army limped away. The victory, the park brochure says, together with the Emancipation Proclamation that took effect on January 1, shifted the war’s aims from restoring the Union to remaking the nation. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Union soldiers and hundreds of formerly enslaved men then built Fortress Rosecrans, a 200-acre fort and supply depot ringed by three miles of earthworks — one of the largest Civil War earthen fortifications, in the 2014 foundation document’s words — and Murfreesboro stayed under Union occupation until 1877. Hazen’s brigade raised its monument on the field in 1863, one of the oldest intact Civil War monuments, the foundation document says, and more than 6,100 Union soldiers, 2,500 of them unknown, lie in the national cemetery. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress created Stones River National Military Park on March 3, 1927; it became Stones River National Battlefield on April 22, 1960. It preserves a small part of the original battlefield, in six separate parcels, along with cedar glades whose plant community is found only in Rutherford County, including the endangered Pyne’s ground plum. Its 2014 foundation document also names as part of the park’s significance the freedmen’s settlement called Cemetery, built on the battlefield after the war; the park brochure says the park’s creation in 1927 uprooted many of its residents. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/stri/index.htm",
+      "title": "NPSHistory.com: Stones River National Battlefield archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "title": "Foundation Document, Stones River National Battlefield, Tennessee (NPS, 2014)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "slavery": {
+      "html": "<p>In 1860 Rutherford County had 27,918 people, nearly half of them enslaved, the park’s 2004 historic resource study reports. The Nashville &amp; Chattanooga Railroad, which ran through the battlefield, was permitted by law to own slaves, and enslaved workers together with Irish immigrant labor built its line through the county. Elmwood, the Hord house on the Nashville Pike that Union forces used as a hospital, was built in 1842 of bricks made by people Thomas Hord enslaved; after the battle Union officers impressed Hord’s slaves to help build Fortress Rosecrans. <a href=\"https://npshistory.com/publications/stri/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Around Murfreesboro, family farms worked by white and enslaved Black people raised hogs, horses, corn, wheat and cotton. Once Union troops held Murfreesboro, enslaved people flocked to their camps to seize their freedom, leaving hundreds of farms untended, and more than 20,000 formerly enslaved men from Tennessee went on to fight in the U.S. Colored Troops. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/stri/hrs.pdf",
+          "title": "Styles, Stones River National Battlefield Historic Resource Study (NPS Southeast Region, February 2004)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/stri/index.htm",
+          "title": "NPSHistory.com: Stones River National Battlefield archive page — overview (NPS brochure text) and establishment block",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>In 1865 soldiers of the 111th U.S. Colored Infantry began reburying the Union dead in the new national cemetery; afterward veterans such as William Holland and other freed people built homes, a school, churches and a store around it, a community named Cemetery. In the section called the Cedars, Rebecca Conard’s 2016 history finds, blacksmith Sam Grisham bought 40 acres in 1872 and in 1875 Holland bought three acres beside the Hazen monument. By 1910 about 80 people lived there in 17 households. Cemetery School, built on donated land in 1874, taught children through eighth grade until 1962. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/stri/history-cemetery-community.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://www.nps.gov/stri/learn/historyculture/cemeterycommunity.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s web page says that after Congress approved the military park in 1927, African Americans, who owned more than half the land, were forced to sell; Conard dates the forced sales in the Cedars to 1929. The displacement and erasure of their history created resentment and distrust, the page says; partnerships with the Black community are slowly rebuilding trust. <a href=\"https://www.nps.gov/stri/learn/historyculture/cemeterycommunity.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/stri/history-cemetery-community.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/stri/index.htm",
+          "title": "NPSHistory.com: Stones River National Battlefield archive page — overview (NPS brochure text) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/stri/history-cemetery-community.pdf",
+          "title": "Conard, Cemetery Community: A Brief History (Middle Tennessee State University, February 2016)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/stri/learn/historyculture/cemeterycommunity.htm",
+          "title": "NPS, The Cemetery Community — Stones River National Battlefield (nps.gov, last updated July 31, 2024)",
+          "type": "nps"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>In Murfreesboro, women formed a soldiers’ relief society to support the hospital at Union University and carried food, clothing and medicine to the front lines. <a href=\"https://npshistory.com/publications/stri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> During the battle Elmwood, the home of Thomas and Mildred Amelia Gilmer Hord, was taken so suddenly for a hospital that the family could not move the carpets or furniture; Amelia Hord helped care for the wounded despite being far along in pregnancy. In 1911 the family was awarded part of its $60,000 claim for property seized or destroyed by Union forces. <a href=\"https://npshistory.com/publications/stri/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/stri/index.htm",
+          "title": "NPSHistory.com: Stones River National Battlefield archive page — overview (NPS brochure text) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/stri/hrs.pdf",
+          "title": "Styles, Stones River National Battlefield Historic Resource Study (NPS Southeast Region, February 2004)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Opposing armies totaling 81,000 men; one of the Civil War's bloodiest encounters; battle December 31, 1862 – January 2, 1863; each side lost nearly one-third of its men; Confederates limped away",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Rivers and Railroads' para 3; 'Touring Stones River' para 2"
+    },
+    {
+      "claim": "13,249 Union and 10,266 Confederate casualties",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, January 2, 1863 section, closing paragraph"
+    },
+    {
+      "claim": "57 Union cannon above McFadden's Ford killed or wounded over 1,800 men in less than an hour; the battle's final action",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, January 2, 1863; tour stop 'McFadden Farm'"
+    },
+    {
+      "claim": "Cedar woods, cotton field, rocks on the field (Slaughter Pen, Cotton Field)",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, tour stops 'Slaughter Pen' (rocks), 'Cotton Field'; 'Touring' para 1 (cedar woods/thickets)"
+    },
+    {
+      "claim": "Victory and the Emancipation Proclamation shifted the war's aims from restoring the Union to remaking the nation (brochure's interpretation)",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Rivers and Railroads' para 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Emancipation Proclamation went into effect January 1, 1863; victory strengthened political support for Lincoln and the proclamation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "locator": "p. 6, significance statement 2",
+      "interpretive": true
+    },
+    {
+      "claim": "In 1863 Rosecrans's army and hundreds of formerly enslaved men built Fortress Rosecrans; three miles of earthworks; 200-acre fort",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'A Fortress Like No Other'"
+    },
+    {
+      "claim": "Fortress Rosecrans one of the largest Civil War earthen fortifications (FD significance wording, attributed to the FD in the text; brochure and FD p. 4 call it the largest)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "locator": "p. 6, significance statement 4"
+    },
+    {
+      "claim": "Union occupation of Murfreesboro lasted beyond war's end to 1877",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Life in Murfreesboro' para 3; timeline 1877"
+    },
+    {
+      "claim": "Hazen's men built the monument in 1863 (brochure); one of the oldest intact Civil War monuments (FD, attributed in text)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "locator": "p. 6, significance statement 3; brochure 'Hazen Brigade Monument'"
+    },
+    {
+      "claim": "Over 6,100 Union soldiers buried in Stones River National Cemetery, 2,500 unknown",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Stones River National Cemetery'"
+    },
+    {
+      "claim": "Stones River National Military Park March 3, 1927; Stones River National Battlefield April 22, 1960",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Park preserves a small part of the original battlefield",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Touring Stones River National Battlefield'"
+    },
+    {
+      "claim": "Six noncontiguous parcels; cedar glades featuring an indigenous plant community found only in Rutherford County; Pyne's ground plum endangered",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "locator": "p. 4, park description"
+    },
+    {
+      "claim": "Significance statement: freedmen's settlement known as Cemetery established after the war on the battlefield, existed until the 1927 designation and beyond",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/stri-fd-2014.pdf",
+      "locator": "p. 6, significance statement 6"
+    },
+    {
+      "claim": "Rutherford County 1860 aggregate population 27,918, nearly half slaves",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "ch. 3, Stones River on the Eve of the Battle, p. 28, fn. 17"
+    },
+    {
+      "claim": "Nashville & Chattanooga permitted by law to own slaves; that work force supplemented by Irish immigrant labor completed the railroad through Rutherford County",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "ch. 3, p. 28, fn. 16"
+    },
+    {
+      "claim": "Union line defended the Nashville Pike and railroad (vital supply lines)",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Touring' para 3; December 31, 1862"
+    },
+    {
+      "claim": "Hord House (Elmwood) on the Nashville Pike built 1842 with bricks produced by slaves owned by Thomas Hord; Union forces used it as a hospital during the battle",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "ch. 3, Historic Structures Outside NPS Ownership, p. 49, fn. 79"
+    },
+    {
+      "claim": "Union officials impressed Hord family slaves to help construct Fortress Rosecrans",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "p. 50, fn. 82"
+    },
+    {
+      "claim": "Family farms worked by whites and enslaved blacks produced hogs, horses, corn, wheat and cotton",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'In the Midst of Cotton'"
+    },
+    {
+      "claim": "Slaves flocked to Union camps to seize their freedom, leaving hundreds of farms untended",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Life in Murfreesboro' para 3"
+    },
+    {
+      "claim": "Over 20,000 formerly enslaved men from Tennessee chose to fight (USCT); several units formed or served at Murfreesboro",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Black Men in Blue Uniforms'"
+    },
+    {
+      "claim": "In 1865 soldiers of the 111th US Colored Infantry began reburying Union dead in the new national cemetery",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Stones River National Cemetery'"
+    },
+    {
+      "claim": "111th USCI soldiers including William Holland and other formerly enslaved people built homes, a school, churches and a store; community named Cemetery",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'The Community of Cemetery'"
+    },
+    {
+      "claim": "Sam Grisham (also Gresham), blacksmith, bought 40 acres in 1872 north of Wilkinson Pike; 1875 superintendent L.S. Doolittle sold three acres adjacent to the Hazen Brigade Monument to William Holland, USCT veteran",
+      "sourceUrl": "https://npshistory.com/publications/stri/history-cemetery-community.pdf",
+      "locator": "p. 2, para 1"
+    },
+    {
+      "claim": "In 1910 approximately 80 people in 17 households in the Cedars",
+      "sourceUrl": "https://npshistory.com/publications/stri/history-cemetery-community.pdf",
+      "locator": "p. 2, para 2"
+    },
+    {
+      "claim": "Cemetery School built on donated land in 1874; 1st–8th grade until 1962",
+      "sourceUrl": "https://www.nps.gov/stri/learn/historyculture/cemeterycommunity.htm",
+      "locator": "'Cemetery School' paragraph"
+    },
+    {
+      "claim": "Congress approved the military park in 1927; African Americans owned more than half the land and were forced to sell; displacement and erasure created resentment and distrust; partnerships slowly rebuilding trust",
+      "sourceUrl": "https://www.nps.gov/stri/learn/historyculture/cemeterycommunity.htm",
+      "locator": "final two paragraphs",
+      "interpretive": true
+    },
+    {
+      "claim": "In 1929 landowners in the Cedars were forced to sell to the U.S. government for the park",
+      "sourceUrl": "https://npshistory.com/publications/stri/history-cemetery-community.pdf",
+      "locator": "p. 1, final paragraph"
+    },
+    {
+      "claim": "Murfreesboro women formed a soldier's relief society to support the hospital at Union University; women took food, clothing, medicine to the front lines",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'Women Do Their Part'"
+    },
+    {
+      "claim": "Thomas and Mildred Amelia Gilmer Hord lived at Elmwood; house unexpectedly and suddenly taken for a hospital, no time to remove carpets or furniture; Amelia Hord assisted in caring for the wounded despite advanced pregnancy",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "pp. 49–50, fns. 79–81"
+    },
+    {
+      "claim": "Hord family submitted a $60,000 claim for property confiscated or destroyed by Union forces; in 1911 awarded a portion",
+      "sourceUrl": "https://npshistory.com/publications/stri/hrs.pdf",
+      "locator": "p. 50, fn. 85"
+    },
+    {
+      "claim": "Community named Cemetery endured until 1927 when creation of the park uprooted many residents (brochure)",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'The Community of Cemetery'"
+    },
+    {
+      "claim": "200-acre fort; built as depot and fort to distribute weapons, food and supplies",
+      "sourceUrl": "https://npshistory.com/publications/stri/index.htm",
+      "locator": "overview, 'A Fortress Like No Other'"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/stri/artillery-line-mcfadden-farm.jpg",
+      "caption": "The line from which fifty-seven Union cannons fired on January 2, 1863, ending the Battle of Stones River",
+      "credit": "NPS Photo / Buddy Secor",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/stri/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/7433C5A9-1DD8-B71B-0B8D22CB43F53B7C.jpg",
+      "evidenceUrl": "https://www.nps.gov/stri/index.htm",
+      "capturedAt": "2026-10-18",
+      "note": "On-page caption: \"On January 2, 1863, fifty-seven Union cannons fired from this line ending the Battle of Stones River by killing or wounding more than 1,800 Confederates in less than an hour. NPS Photo / Buddy Secor\". Alt text: a cannon in a green field at sunrise. Resized from 10800 px original.",
+      "width": 1200,
+      "height": 800,
+      "bytes": 220368
+    },
+    {
+      "file": "images/history/stri/national-cemetery.jpg",
+      "caption": "Stones River National Cemetery, where more than 6,100 Union soldiers lie",
+      "credit": "NPS Photo / Diana Anderson",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/stri/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/7541BA2B-1DD8-B71B-0B930C916C418995.jpg",
+      "evidenceUrl": "https://www.nps.gov/stri/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "black",
+      "note": "On-page caption: \"More than 6,100 Union soldiers lie in Stones River National Cemetery. NPS Photo / Diana Anderson\". Placed in the black section, which describes the 111th U.S. Colored Infantry reburying the dead in this cemetery. Resized from 2736x3648.",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 244057
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/stri/index.htm",
     "adhiUrl": "https://npshistory.com/publications/stri/adhi.pdf",

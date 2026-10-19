@@ -1,16 +1,203 @@
 {
   "code": "MUWO",
   "name": "Muir Woods National Monument",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Muir Woods National Monument in Marin County, California, protects 554 acres of old-growth coast redwood forest in a sheltered valley on the Pacific coast just north of San Francisco. The monument was established by President Theodore Roosevelt in 1908 after Congressman William Kent and his wife Elizabeth Thacher Kent purchased the land to save it from logging and donated it to the federal government. Kent requested that the monument be named in honor of naturalist John Muir, who called it \"the best tree-lovers monument that could possibly be found in all the forests of the world.\" Some of the redwood trees in the monument are over 250 feet tall and more than 1,000 years old. The monument is part of the Golden Gate National Recreation Area and was designated a UNESCO World Heritage Site component in the Redwood National and State Parks serial nomination.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "389"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-D-2026-10-18",
+  "verifiedBy": "verifier-D-2026-10-18 (26 claims checked; 7 corrections)",
+  "summary": "<p>In a narrow canyon on the southern slope of Mount Tamalpais, a few miles north of San Francisco, Redwood Creek runs beneath one of the last old-growth coast redwood forests in the Bay Area. The canyon was never logged because it was hard to get to. In Bohemian and Cathedral groves, one tree stands 252 feet tall and another is 14 feet wide. Most mature trees are 500 to 800 years old; the brochure says some are at least 1,000, the Foundation Document Overview nearly 1,000. Before fire suppression began in the 19th century, wildfire occurred here every 20 to 50 years, and coho salmon and steelhead still climb the creek each winter to spawn. <a href=\"https://npshistory.com/publications/muwo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In 1905 William Kent and his wife, Elizabeth Thacher Kent, bought the canyon for $45,000. When a water company moved in 1907 to condemn part of it for a reservoir, the Kents gave the forest to the federal government, and on January 9, 1908, President Theodore Roosevelt proclaimed it the tenth national monument under the Antiquities Act, the first near a major city and the first made of formerly private land. <a href=\"https://npshistory.com/publications/muwo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Roosevelt suggested naming it for Kent; Kent chose John Muir, who called it the best tree-lover’s monument in all the forests of the world. The 2006 Historic Resource Study notes what might at first seem a contradiction: Kent strongly supported the Hetch Hetchy dam project that Muir opposed and, after becoming a congressman in 1910, played an active, influential role in its success. The 2017 Foundation Document Overview counts more than a million visitors a year. <a href=\"https://npshistory.com/publications/muwo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/muwo/index.htm",
+      "title": "NPSHistory.com: Muir Woods National Monument archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf",
+      "title": "Foundation Document Overview, Muir Woods National Monument, California (NPS, 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "title": "Auwaerter & Sears, Historic Resource Study for Muir Woods National Monument (Olmsted Center for Landscape Preservation for NPS, 2006)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Redwood Canyon lies in the homeland of the Coast Miwok, whose earliest known sites in Marin, along the shores of San Francisco and San Pablo bays, date back 7,000 years. The Huimen were the Coast Miwok tribe of the Redwood Creek watershed. The Miwok called the redwoods cho-lay; the name Tamalpais is most probably Miwok, and they held its summit to be a dangerous place inhabited by spirits. No archeological evidence of habitation has been found within or near the monument, the 2006 study says, but the Coast Miwok most likely hunted, fished and gathered there. <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>After Mission San Rafael was founded about 1817, the Miwok were decimated by disease and forcibly relocated, and the mission lands meant for them were sold to speculators and ranchers; by 1840 Marin’s Miwok population had fallen by an estimated 90 percent. The Coast Miwok survived, and today, with people of Southern Pomo descent, form the federally recognized Federated Indians of Graton Rancheria. <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+          "title": "Auwaerter & Sears, Historic Resource Study for Muir Woods NM (2006), Introduction (fn. 3) and ch. 1, The Coast Miwok; European Settlement: Missions and Ranchos",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>In the fall of 1933 a Civilian Conservation Corps camp, NM-3, went up beside the monument, joined that November by 126 men, mostly from New York. The following April they left for Idaho and were replaced by a company made up mainly of veterans aged 35 to 64. Averaging about 200 men, the CCC rebuilt trails, built log footbridges and benches and a new entrance gate, and replanted ferns trampled by hikers and picnickers; Custodian J. Barton Herschler called 1933–34 the greatest period of development the monument had seen. <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The last major project of the CCC era, the 1940 Administration-Concession Building, was the largest building yet at Muir Woods. In the postwar Mission 66 era the Park Service removed many CCC features, including the main gate, signs, bridges and comfort stations. <a href=\"https://npshistory.com/publications/muwo/hrs-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+          "title": "Auwaerter & Sears, Historic Resource Study for Muir Woods NM (2006), Introduction and Part II, The Civilian Conservation Corps and Park Development",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Redwood Canyon on the southern slope of Mount Tamalpais; Redwood Creek; last significant remaining stand of coastal redwoods within a short distance of San Francisco",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Part II, Kent's Gift, p. 277"
+    },
+    {
+      "claim": "One of the last remaining ancient redwood forests in the Bay Area; a few miles north of San Francisco; more than 1 million visitors per year; coho salmon and steelhead in Redwood Creek",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "Forest spared from logging because it was hard to get to; canyon never logged",
+      "sourceUrl": "https://npshistory.com/publications/muwo/index.htm",
+      "locator": "overview, \"William Kent's Legacy\"; \"California Redwoods\""
+    },
+    {
+      "claim": "Bohemian and Cathedral groves: one tree 252 ft tall and one 14 ft wide; some at least 1,000 years old (brochure); most mature trees 500 to 800 years old",
+      "sourceUrl": "https://npshistory.com/publications/muwo/index.htm",
+      "locator": "overview, \"Coast Redwoods: Tallest Living Things\""
+    },
+    {
+      "claim": "Until fire suppression begun in the 19th century, wildfire occurred every 20 to 50 years",
+      "sourceUrl": "https://npshistory.com/publications/muwo/index.htm",
+      "locator": "overview, \"Roles of Fog and Fire\""
+    },
+    {
+      "claim": "Steelhead and silver (coho) salmon migrate up Redwood Creek in winter to spawn",
+      "sourceUrl": "https://npshistory.com/publications/muwo/index.htm",
+      "locator": "overview, \"Life of the Redwood Forest\""
+    },
+    {
+      "claim": "In 1905 William Kent and Elizabeth Thacher Kent bought land for $45,000 (HRS: by summer 1905 agreed to purchase; 611.57/612-acre parcel; brochure says 295 acres and styles Kent \"Congressman\" — acreage and title omitted from prose because sources disagree / title anachronistic in 1905)",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "HRS ch. 2 p. 52 and Part II p. 278; brochure overview \"William Kent's Legacy\""
+    },
+    {
+      "claim": "Late fall 1907 North Coast Water Company began condemnation proceedings to obtain the property for a reservoir; Kent deeded the land Dec. 26, 1907",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Introduction pp. 9; Part II pp. 278–279"
+    },
+    {
+      "claim": "Roosevelt proclaimed the monument Jan. 9, 1908 under the Antiquities Act",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Introduction p. 9; Part II p. 277"
+    },
+    {
+      "claim": "10th national monument designated under the Antiquities Act, first in proximity to a major city, first to consist of formerly privately owned lands",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "Roosevelt suggested naming the area after Kent; Kent wanted it named for John Muir; Muir: \"the best tree-lover's monument that could possibly be found in all the forests of the world\"",
+      "sourceUrl": "https://npshistory.com/publications/muwo/index.htm",
+      "locator": "overview, \"William Kent's Legacy\" and Muir quotation"
+    },
+    {
+      "claim": "\"At first glance, it might seem to be a contradiction that Kent not only strongly supported the Hetch Hetchy project, but also played an active, influential role in its eventual success after his election to Congress\"; \"After Kent became a congressman in 1910\"; Muir's \"opposition to the Hetch Hetchy dam project\"",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Part II, Hetch-Hetchy vs. Muir Woods, pp. 310–311",
+      "interpretive": true
+    },
+    {
+      "claim": "Marin Peninsula homeland of the Coast Miwok; earliest evidence of Coast Miwok habitation in Marin along San Francisco and San Pablo Bays dates back 7,000 years",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "ch. 1, The Coast Miwok, pp. 24–25"
+    },
+    {
+      "claim": "Huimen = Coast Miwok tribe of the Redwood Creek watershed; the Miwok called redwoods cho-lay; Tamalpais most probably of Miwok origin (\"coast mountain\"); Miwok believed summit a dangerous place inhabited by spirits",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "ch. 1, The Coast Miwok, pp. 24–25, fns. 21, 24"
+    },
+    {
+      "claim": "No archeological evidence of Coast Miwok habitation within Muir Woods; most likely used the forest for hunting, fishing, gathering",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "ch. 1, The Coast Miwok, p. 25",
+      "interpretive": true
+    },
+    {
+      "claim": "Mission San Rafael c.1817; mission lands supposed to go to the Miwok but sold to speculators and ranchers; Miwok decimated by disease and forcibly relocated; by 1840 population reduced an estimated 90 percent",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "ch. 1, European Settlement, p. 26; Introduction p. 8"
+    },
+    {
+      "claim": "Coast Miwok survived; today with people of Southern Pomo descent make up the federally recognized Federated Indians of Graton Rancheria",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Introduction, endnote 3, p. 12"
+    },
+    {
+      "claim": "CCC camp NM-3 sponsored by Muir Woods; 126 men, mostly from New York, joined in November 1933; April 1934 replaced by group mainly of veterans aged 35 to 64; CCC averaged around 200 men",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Part II, The CCC and Park Development, p. 329, fns. 184–187"
+    },
+    {
+      "claim": "In Muir Woods the CCC rebuilt trails, built log benches and footbridges, new entrance gate and sign, replanted ferns destroyed by hikers and picnickers",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Part II p. 330, fns. 190–191; Introduction p. 10"
+    },
+    {
+      "claim": "Herschler: Oct. 1, 1933–June 30, 1934 \"the greatest period of development ever experienced in Muir Woods\"",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Part II p. 330, fn. 192"
+    },
+    {
+      "claim": "1940 Administration-Concession Building completed by the CCC, largest building at Muir Woods to date; last major CCC project",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Introduction p. 10; ch. 4, Wartime Maintenance, PDF p. 201"
+    },
+    {
+      "claim": "Mission 66 era: park removed many CCC features including comfort stations, signs, bridges and the main gate",
+      "sourceUrl": "https://npshistory.com/publications/muwo/hrs-2006.pdf",
+      "locator": "Introduction p. 11"
+    },
+    {
+      "claim": "Some of the redwoods are nearly 1,000 years old and reach heights of more than 250 feet",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/muwo-fd-overview.pdf",
+      "locator": "Description"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/muwo/old-growth-redwoods.jpg",
+      "caption": "Old-growth coast redwood forest at Muir Woods",
+      "credit": "NPS/ Jace Ritchey",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/muwo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/7961FEFE-AD2A-61A1-2CB953E4FDBD749D.jpg",
+      "evidenceUrl": "https://www.nps.gov/muwo/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 242650,
+      "note": "On-page caption: \"This 550-acre park protects an old-growth forest of coast redwoods (Sequoia sempervirens), the tallest type of tree in the world. Named for famed American naturalist John Muir, the National Monument occupies the homelands of the Coast Miwok people. NPS/ Jace Ritchey\". Resized from 5472x3648."
+    },
+    {
+      "file": "images/history/muwo/redwood-trail.jpg",
+      "caption": "A trail through the old-growth redwood forest",
+      "credit": "NPS/ Alison Taggart Barone",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/muwo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/7745C111-9E23-429A-C061BBA62D7476FE.jpg",
+      "evidenceUrl": "https://www.nps.gov/muwo/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1200,
+      "height": 800,
+      "bytes": 199155,
+      "note": "On-page caption: \"At Muir Woods, visitors can enjoy miles of trail meandering through the old-growth coast-redwood forest. Trail features include boardwalks & benches to ensure access for visitors with various mobility needs. NPS/ Alison Taggart Barone\". Resized from 7201x4801."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/muwo/index.htm",
     "adhiUrl": null,

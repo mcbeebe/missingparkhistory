@@ -1,16 +1,160 @@
 {
   "code": "SUCR",
   "name": "Sunset Crater Volcano National Monument",
-  "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "414"
+  ],
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-D-2026-10-18",
+  "verifiedBy": "verifier-D-2026-10-18 (24 claims checked; 5 corrections)",
+  "summary": "<p>Sunset Crater is the youngest of some 600 volcanoes in northern Arizona’s San Francisco Volcanic Field, a 1,000-foot cinder cone that the Foundation Document calls the Colorado Plateau’s most recent eruption and the only series of eruptions in the Southwest indisputably witnessed by local peoples. The monument protects 3,040 acres of lava flows and cinder fields where small islands of pine and aspen, desert shrubs and wildflowers grow and life is slowly returning. <a href=\"https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The brochure dates the eruption to sometime between 1040 and 1100, and a 2018 National Register nomination to the late 1080s. In the brochure’s account, molten rock sprayed from a crack in the ground and fell as bombs and cinders, ash dusted 800 square miles of northern Arizona, and the Kana-a and Bonito lava flows destroyed all living things in their path. The red and yellow cinders on the rim, glowing like a sunset, gave the volcano its name. <a href=\"https://npshistory.com/publications/sucr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/sucr/nr-apollo-mission-testing-training-hd.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>In 1928 filmmakers who wanted to stage a landslide on the cone prompted activists to push for its protection, and President Herbert Hoover proclaimed Sunset Crater National Monument on May 26, 1930; it took its present name in 1990. After thousands of climbers scarred it, the cone was closed to climbing. <a href=\"https://npshistory.com/publications/sucr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> From 1964 to 1972 the U.S. Geological Survey used the Bonito Lava Flow and nearby Cinder Lake, where it built replicas of lunar crater fields, to test equipment and train Apollo astronauts; Apollo 17’s crew practiced here in November 1972. <a href=\"https://npshistory.com/publications/sucr/nr-apollo-mission-testing-training-hd.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/sucr/index.htm",
+      "title": "NPSHistory.com: Sunset Crater Volcano National Monument archive page — overview (joint Wupatki/Sunset Crater NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "title": "Foundation Document, Sunset Crater Volcano National Monument, Arizona (NPS, 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/sucr/nr-apollo-mission-testing-training-hd.pdf",
+      "title": "National Register of Historic Places nomination: Sunset Crater–Cinder Lake Apollo Mission Testing and Training Historic District (2018), Section 7 summary",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The eruption, the brochure says, forced the farmers living just northeast of today’s Flagstaff off land they had cultivated for 400 years; a few generations later families returned to farm at nearby Wupatki and Walnut Canyon, and the memory of the eruption lived on in the stories of Indigenous Southwest peoples. <a href=\"https://npshistory.com/publications/sucr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The 2015 Foundation Document lists 13 traditionally associated tribes and says the volcano remains significant to contemporary American Indian tribes. <a href=\"https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Drawing partly on 80 interviews with Pai, Southern Paiute, Zuni and Western Apache representatives from a 2004 NPS study, researchers Richard Stoffle and Kathleen Van Vlack wrote in 2022 that Native Americans have come to perceive volcanoes as earth navels, places where the earth is reborn. The authors argue that the new volcano drew pilgrims and led to the ceremonial communities around Wupatki. Participants in their NPS studies agreed that the Park Service need not accept Native beliefs as true but should tell both stories side by side. <a href=\"https://npshistory.com/publications/sucr/l-v11-2022.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sucr/index.htm",
+          "title": "NPSHistory.com: Sunset Crater archive page overview — \"Life in a Changing Landscape\" (NPS brochure)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+          "title": "Foundation Document, Sunset Crater Volcano NM (2015) — significance statements and Appendix C, Tribes Traditionally Associated",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sucr/l-v11-2022.pdf",
+          "title": "Stoffle & Van Vlack, Talking with a Volcano: Native American Perspectives on the Eruption of Sunset Crater, Arizona, Land 11(2):196 (2022) — abstract and §§3.1–4.1",
+          "type": "journal"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Youngest of 600 volcanoes within the San Francisco Volcanic Field; erupted roughly 900 years ago",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "locator": "Monument Significance, p. 5"
+    },
+    {
+      "claim": "Protects 3,040 acres representing the Colorado Plateau's most recent volcanic eruption; the only series of eruptions in the Southwest indisputably witnessed by local peoples; small islands of pine and aspen, desert shrubs, wildflowers; life slowly returning",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "locator": "Brief Description of the Monument, p. 3",
+      "interpretive": true
+    },
+    {
+      "claim": "1,000-foot-high cinder cone (purpose statement)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "locator": "Monument Purpose, p. 4"
+    },
+    {
+      "claim": "Erupting sometime between 1040 and 1100; molten rock sprayed from a crack, fell as bombs or cinders; ash dusted 800 square miles of northern Arizona; Kana-a and Bonito lava flows destroyed all living things in their path; red and yellow oxidized cinders reminded people of a sunset, giving the name",
+      "sourceUrl": "https://npshistory.com/publications/sucr/index.htm",
+      "locator": "overview, \"Sunset Crater: Birth of a Mountain\""
+    },
+    {
+      "claim": "Eruption of Sunset Crater in the late 1080s CE",
+      "sourceUrl": "https://npshistory.com/publications/sucr/nr-apollo-mission-testing-training-hd.pdf",
+      "locator": "Section 7, Summary Paragraph, p. 1 (PDF p. 4)"
+    },
+    {
+      "claim": "1928 filmmakers wishing to create a landslide inadvertently created a national monument; activists pushed for protection; Hoover established Sunset Crater NM in 1930; later renamed; closed to climbers after thousands of visitors",
+      "sourceUrl": "https://npshistory.com/publications/sucr/index.htm",
+      "locator": "overview, \"Life in a Changing Landscape\" paragraph 4"
+    },
+    {
+      "claim": "Established by presidential proclamation May 26, 1930",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "locator": "Monument Purpose, p. 4"
+    },
+    {
+      "claim": "Establishment: Sunset Crater Volcano NM — November 16, 1990; Sunset Crater NM — May 26, 1930",
+      "sourceUrl": "https://npshistory.com/publications/sucr/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Period of significance 1964–1972; USGS Branch of Astrogeology used the Bonito Lava Flow (Surveyor camera testing; road excavated 1964) and built two simulated lunar crater fields at Cinder Lake (replicas of a NASA-designated landing site); USGS and NASA personnel used the features for testing and training; Apollo 17 simulated EVA exercises November 2–3, 1972",
+      "sourceUrl": "https://npshistory.com/publications/sucr/nr-apollo-mission-testing-training-hd.pdf",
+      "locator": "Section 7, pp. 1–4 (PDF pp. 4–7)"
+    },
+    {
+      "claim": "Lava flows and cinders forced farmers to vacate lands cultivated for 400 years; a few generations later families returned at Wupatki and Walnut Canyon; memory of the eruption lived only in the stories of indigenous Southwest people",
+      "sourceUrl": "https://npshistory.com/publications/sucr/index.htm",
+      "locator": "overview, \"Life in a Changing Landscape\" paragraph 1",
+      "interpretive": true
+    },
+    {
+      "claim": "13 tribes listed as traditionally associated (Fort McDowell Yavapai Nation, Havasupai, Hopi, Hualapai, Kaibab Band of Paiute Indians, Navajo Nation, San Carlos Apache, San Juan Southern Paiute, Tonto Apache, White Mountain Apache, Yavapai-Apache Nation, Yavapai-Prescott, Zuni); volcano continues to be significant to contemporary American Indian tribes",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sucr-fd-2015.pdf",
+      "locator": "Appendix C, p. 29; Significance \"Community\", p. 5"
+    },
+    {
+      "claim": "2004 NPS-funded study: 80 ethnographic interviews with representatives of six Native American ethnic groups composed of 12 tribes and pueblos; field representatives Pai, Southern Paiute, Zuni, Western Apache; Hopi Tribe and Navajo Nation unable to join field visits but contributed written materials",
+      "sourceUrl": "https://npshistory.com/publications/sucr/l-v11-2022.pdf",
+      "locator": "Abstract; §3.2 Data Gathering Methods, pp. 10–11"
+    },
+    {
+      "claim": "Native Americans perceive volcanoes as earth navels, places where the earth is reborn; emergence of Sunset Crater drew pilgrims and resulted in construction of ceremonial and support communities surrounding Wupatki",
+      "sourceUrl": "https://npshistory.com/publications/sucr/l-v11-2022.pdf",
+      "locator": "Abstract, p. 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Participants agreed it is not necessary for NPS to accept as true what Native Americans believe, but essential to tell both stories side by side with equal accuracy",
+      "sourceUrl": "https://npshistory.com/publications/sucr/l-v11-2022.pdf",
+      "locator": "Abstract, p. 1",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/sucr/sunset-crater-cinders.jpg",
+      "caption": "Sunset Crater Volcano, named for the color of the rusty red cinders near its peak",
+      "credit": "NPS Photo / Elliot Schultz",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sucr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7E279C-1DD8-B71B-0BBF86870A971E2B.jpg",
+      "evidenceUrl": "https://www.nps.gov/sucr/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1080,
+      "height": 720,
+      "bytes": 240186,
+      "note": "On-page caption: \"Sunset Crater Volcano is named for the color of the rusty red cinders near its peak. NPS Photo / Elliot Schultz\". Original 1080x720, re-encoded."
+    },
+    {
+      "file": "images/history/sucr/bonito-lava-flow.jpg",
+      "caption": "The Bonito Lava Flow",
+      "credit": "NPS Photo / Elliot Schultz",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sucr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7E2952-1DD8-B71B-0B586C9F9029F687.jpg",
+      "evidenceUrl": "https://www.nps.gov/sucr/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1080,
+      "height": 720,
+      "bytes": 187689,
+      "note": "On-page caption: \"Three trails allow visitors to explore the Bonito Lava Flow. NPS Photo / Elliot Schultz\". Original 1080x720, re-encoded."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/sucr/index.htm",
     "adhiUrl": null,

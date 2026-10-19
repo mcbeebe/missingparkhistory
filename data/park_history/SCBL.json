@@ -2,15 +2,222 @@
   "code": "SCBL",
   "name": "Scotts Bluff National Monument",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Scotts Bluff National Monument in western Nebraska preserves a prominent natural landmark along the North Platte River that served as a major waypoint on the Oregon Trail, California Trail, and Mormon Trail during the great westward migrations of the 19th century. The bluff, rising 800 feet above the river valley, was visible for miles and marked the passage through a gap in the series of steep bluffs that forced travelers to find specific routes through the terrain. An estimated 250,000 emigrants passed through Mitchell Pass at the base of the bluff between the 1840s and 1860s, and deep wagon wheel ruts are still visible today. The monument was established in 1919 and includes a museum with one of the finest collections of watercolors by pioneer artist William Henry Jackson.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-E-2026-10-18",
+  "verifiedBy": "verifier-E-2026-10-18 (33 claims checked; 13 corrections)",
+  "summary": "<p>Scotts Bluff towers 800 feet over the North Platte River valley floor in the Nebraska Panhandle, a sandstone and siltstone landmark that wind and water are dismantling grain by grain. The monument’s 3,003 acres of prairie, bluffs and badlands protect Scotts Bluff, South Bluff, Mitchell Pass and remnants of the Oregon-California Trail. The valley has been a prairie pathway for at least 10,000 years, leading American Indians to places where bison came to drink, and the bluff’s size and badlands gave it the name Me-a-pa-te, “hill that is hard to go around.” <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/scbl/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>It takes its present name from Hiram Scott, a fur trader who died on an 1828 journey east from the Rockies; how he died remains a mystery. In 1850 anonymous laborers filled gullies and built ramps through Mitchell Pass, and from 1851 it was the main route, cutting about eight miles. In 1852, the peak year, up to 50,000 people passed. Travelers called the bluff “a Nebraska Gibraltar.” The Pony Express and the transcontinental telegraph later used the same gap; the railroad’s completion in 1869 greatly reduced emigrant travel. <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/scbl/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Local leaders petitioned for protection, and President Woodrow Wilson proclaimed the monument on December 12, 1919 — according to the 2015 foundation document, the first time the Antiquities Act was used to preserve a landscape based on the westward expansion movement. That document warns that the prairie is changing rapidly: cheatgrass occupies most of the monument, and the region is projected to warm 4 to 5 °F by 2050, with more intense storms and more heat waves. <a href=\"https://npshistory.com/publications/scbl/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/scbl/index.htm",
+      "title": "NPSHistory.com: Scotts Bluff National Monument archive page — overview (NPS brochure, 2015) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "title": "Foundation Document, Scotts Bluff National Monument, Nebraska (NPS, 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "title": "Emily Greenwald, “A Nebraska Gibraltar”: Historic Resource Study, Scotts Bluff National Monument (NPS, 2012)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>In the early 1990s archeologist Caven P. Clark identified another 51 sites here, all but two prehistoric, with finds ranging from perhaps 8,000 years before present to 1450; he concluded its springs were “of undoubted significance to the prehistoric settlement system.” From perhaps the 1500s to the early 1800s the region was a favorite bison hunting ground of the Lakota, Cheyenne and Arapaho. <a href=\"https://npshistory.com/publications/scbl/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Plains peoples traded game, moccasins and bison robes to emigrants for flour, cloth and tobacco, and acted as paid guides. But emigrant livestock, Indian herds and an 1848–1862 drought depleted the corridor’s grasses; that decline and increased hunting drove bison from between the Platte and Arkansas rivers, and the tribes, Greenwald writes, drawing on Elliott West, became more dependent on the United States for food. After the 1868 Fort Laramie Treaty, the foundation document says, the Pawnee, Cheyenne and Sioux were forcibly removed to reservations. The foundation document notes that the 10 affiliated tribes are all off site. <a href=\"https://npshistory.com/publications/scbl/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/scbl/hrs.pdf",
+          "title": "Greenwald, “A Nebraska Gibraltar” HRS (2012), ch. 2 American Indian Habitation and Use; ch. 5 Human and Environmental Change in the Platte River Corridor",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+          "title": "Foundation Document, Scotts Bluff National Monument (2015), Brief Description and appendix D",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>The visitor center, Summit Road and administrative buildings were primarily built in the 1930s by the Works Progress Administration and the Civilian Conservation Corps, the foundation document says. <a href=\"https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> In 1935, CCC Company 762 — 200 men whose orders to the Ozarks were changed at the last minute — set up Camp NM-1 in the badlands between the bluff and the river, raising barracks of adobe bricks they made on site. Enrollees built the first unit of the Oregon Trail Museum, worked on the Summit Road, which opened September 19, 1937, laid a water system and fences, and in 1936 cleaned and restored Scotts Spring, by then a muddy cattle water hole. An NPS landscape architect explained in 1936 that Chief Architect Vint recommended adobe not because it was appropriate for the area but because it was the only way to build comparatively long-lasting headquarters under Emergency Conservation Work limits. The CCC left in 1938. <a href=\"https://npshistory.com/publications/scbl/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/scbl/hrs.pdf",
+          "title": "Greenwald, “A Nebraska Gibraltar” HRS (2012), ch. 7, New Deal Construction, 1933–1939",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+          "title": "Foundation Document, Scotts Bluff National Monument (2015), Brief Description",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Massive 800-foot high Scotts Bluff",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 4 (brochure also says the bluff 'towered 800 feet over the valley floor')"
+    },
+    {
+      "claim": "Sandstone and siltstone formation; wind and water dismantling the rock grain by grain",
+      "sourceUrl": "https://npshistory.com/publications/scbl/index.htm",
+      "locator": "brochure, opening paragraph"
+    },
+    {
+      "claim": "3,003 acres of prairie and bluff habitat in the Panhandle of western Nebraska; preserves Scotts Bluff, South Bluff, Mitchell Pass, remnants of the Oregon-California Trail; badlands formations",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "North Platte valley a prairie pathway for at least 10,000 years; led American Indians to places where bison stopped to drink; name Me-a-pa-te, 'hill that is hard to go around'",
+      "sourceUrl": "https://npshistory.com/publications/scbl/index.htm",
+      "locator": "brochure, 'A Sentinel on the Plains' para 1"
+    },
+    {
+      "claim": "Hiram Scott, fur trader, died on an 1828 journey eastward out of the Rockies; remains found 1829; circumstances remain a mystery",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 4 (brochure: 'According to legend' Scott died near the bluff in 1828)"
+    },
+    {
+      "claim": "Main route south through Robidoux Pass until 1851; in 1850 anonymous laborers filled gullies and built earthen ramps in Mitchell Pass; primary route 1851; cut approximately 8 miles; 1852 peak year up to 50,000 people",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Travelers called it 'a Nebraska Gibraltar' (brochure)",
+      "sourceUrl": "https://npshistory.com/publications/scbl/index.htm",
+      "locator": "brochure, 'Milepost for the Great Migration' para 4"
+    },
+    {
+      "claim": "Pony Express and transcontinental telegraph used the route; railway completed 1869",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Local leaders in Gering and Scottsbluff petitioned Mather in 1918; Barber: coordinated local efforts, not federal initiative",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 7 Creation of the National Monument, p. 62",
+      "interpretive": true
+    },
+    {
+      "claim": "Proclamation No. 1547, December 12, 1919, President Woodrow Wilson",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 7, p. 62; Establishment block on archive page"
+    },
+    {
+      "claim": "First time the Antiquities Act used to preserve a landscape based on the westward expansion movement (2015 foundation document)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 3",
+      "interpretive": true
+    },
+    {
+      "claim": "Prairie changing rapidly due to nonnative and invasive species; cheatgrass has occupied most of the monument; climate projections +4.0 to 5.0 °F by 2050, increased storm intensity and frequency, more heat waves",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Key Issues, p. 27"
+    },
+    {
+      "claim": "Caven P. Clark's early-1990s survey identified another 51 sites, all but two prehistoric; prehistoric finds ranged from perhaps 8,000 BP to 1450; springs 'were of undoubted significance to the prehistoric settlement system' (checked against page image)",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 2 Archeology at Scotts Bluff NM, p. 17",
+      "interpretive": true
+    },
+    {
+      "claim": "From perhaps the 1500s to the early 1800s the region was a favorite bison hunting ground for the Lakota, Cheyenne and Arapaho",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Plains Indians exchanged game for bread and flour, sought tobacco, sugar, coffee; emigrants brought cloth, beads; Indians offered moccasins and bison robes; acted as paid guides and gave trail information",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 5 American Indian-Emigrant Relations, pp. 45–46"
+    },
+    {
+      "claim": "Livestock grazing and trampling, Indian herds, and a drought phase 'between 1848 and 1862' (page image; OCR unreliable) depleted grasses; decline of grasslands plus hunting pressure drove bison out of the area between the Platte and Arkansas; Indians became more dependent on the United States for food (section relies on Elliott West, fn. 195)",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 5 Environmental Changes in the Platte River Corridor, pp. 46–48",
+      "interpretive": true
+    },
+    {
+      "claim": "Pawnee, Cheyenne and Sioux inhabited western Nebraska until their forced removal to reservations following the Fort Laramie Treaty of 1868",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "The 10 affiliated tribes are all off site",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Key Issues, p. 27; appendix D lists ten traditionally associated tribes, p. 39"
+    },
+    {
+      "claim": "In 1935 CCC Company 762 at Red Cloud, Nebraska, due to relocate to the Ozarks; last-minute change sent the unit of 200 men here (newspaper report); Camp #NM-1 in the badlands between the bluff and the North Platte; barracks of adobe bricks fabricated on site completed August 1935 (page images pp. 71–72)",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "ch. 7 New Deal Construction, pp. 69–72"
+    },
+    {
+      "claim": "CCC enrollees built the Oregon Trail Museum (designed by Howard W. Baker), first unit",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "p. 72"
+    },
+    {
+      "claim": "CCC continued Summit Road work in 1935; built water supply system, boundary fences, picnic area; Summit Road opened September 19, 1937",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "p. 73"
+    },
+    {
+      "claim": "1936 restoration of Scotts Spring, formerly trampled into a mud puddle by cattle",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "p. 76"
+    },
+    {
+      "claim": "Assistant Landscape Architect S. Serrano (letter June 23, 1936): Chief Architect Vint recommended adobe not because appropriate for the area but because it was the only way comparatively long lasting headquarters could be built under existing E.C.W. limitations",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "pp. 74–75"
+    },
+    {
+      "claim": "The CCC departed in 1938",
+      "sourceUrl": "https://npshistory.com/publications/scbl/hrs.pdf",
+      "locator": "p. 72, fn. 325"
+    },
+    {
+      "claim": "Facilities primarily designed and built by the WPA and CCC in the 1930s and expanded by Mission 66",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/scbl-fd-2015.pdf",
+      "locator": "Brief Description, p. 4"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/scbl/scotts-bluff-from-north-platte.jpg",
+      "caption": "Scotts Bluff as seen from the north side of the North Platte River",
+      "credit": "NPS/Brian Poffenberger",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/scbl/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/5397668D-EE2B-ECA5-E20D3909770F55A1.jpg",
+      "evidenceUrl": "https://www.nps.gov/scbl/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1400,
+      "height": 933,
+      "bytes": 164982,
+      "note": "On-page figcaption: \"Scotts Bluff as seen from the north side of the North Platte River NPS/Brian Poffenberger\"; alt \"A pink sky and dramatic bluff are seen reflected in water.\" Resized from 8688x5792."
+    },
+    {
+      "file": "images/history/scbl/wagon-eagle-rock.jpg",
+      "caption": "A covered wagon in front of Eagle Rock, which thousands of covered wagons rolled by in the mid-nineteenth century",
+      "credit": "NPS Photo / Wesley Gant",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/scbl/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7AB9C7-1DD8-B71B-0BE8539018DE86B3.jpg",
+      "evidenceUrl": "https://www.nps.gov/scbl/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1400,
+      "height": 933,
+      "bytes": 232523,
+      "note": "On-page figcaption: \"Thousands of covered wagons rolled by Eagle Rock in the mid nineteenth century. NPS Photo / Wesley Gant\"; alt \"Conestoga wagon in front of Eagle Rock\". The wagon shown is a modern display (HRS fig. 4.2 describes replica emigrant wagons at the monument). Resized from 3504x2336."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/scbl/index.htm",
     "adhiUrl": "https://npshistory.com/publications/scbl/adhi-1983.pdf",

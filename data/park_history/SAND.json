@@ -2,15 +2,223 @@
   "code": "SAND",
   "name": "Sand Creek Massacre National Historic Site",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Sand Creek Massacre National Historic Site in southeastern Colorado preserves the location where, on November 29, 1864, approximately 675 U.S. volunteer soldiers attacked a peaceful encampment of Cheyenne and Arapaho people, killing an estimated 150 to 200 men, women, children, and elders. The village, led by Chiefs Black Kettle and Left Hand, had been assured of safety by U.S. military officials, and an American flag and a white flag of surrender flew over the camp during the attack. The massacre was condemned by some contemporaries, including a Congressional investigation, but no perpetrators were prosecuted. The site was designated a national historic site in 2007 after extensive consultation with descendants of the Cheyenne and Arapaho victims, who participated in identifying the massacre location.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "reviewed",
+  "lastReviewed": "2026-10-18",
+  "author": "author-E-2026-10-18",
+  "verifiedBy": "verifier-E-2026-10-18 (32 claims checked; 6 corrections)",
+  "summary": "<p>Sand Creek Massacre National Historic Site lies on the grassland plains of southeastern Colorado, about 170 miles southeast of Denver. In winter, Big Sandy Creek offered firewood, shelter and water; people of many tribes paused here on the Smoky Hill Lodgepole Trail. At dawn on November 29, 1864, approximately 675 soldiers of the 1st and 3rd Regiments, Colorado Volunteer Cavalry, under Col. John M. Chivington attacked a village of Southern Cheyenne and Arapaho people who believed they were safe on their 1861 treaty lands; a U.S. flag and a white flag flew at Peace Chief Black Kettle’s lodge. Over seven hours the soldiers killed more than 230 people. Women, children and elders fled up the dry creek channel with soldiers following, shooting, and dug pits and trenches along the streambed. Afterward the troops mutilated the dead and took body parts as trophies. <a href=\"https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/sand/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Capt. Silas Soule and Lt. Joseph Cramer ordered their companies to stand down, and their written accounts shocked national and military leaders. An Army judge condemned the “cowardly cold-blooded slaughter,” yet Chivington was never formally charged. In the 1865 Little Arkansas Treaty the United States took responsibility for the massacre and promised reparations to survivors; the NPS brochure says they have never been fulfilled. The 2017 foundation document finds that by eliminating most Cheyenne advocates for peace, the massacre hardened resistance and escalated warfare on the plains. <a href=\"https://npshistory.com/publications/sand/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Site-location research sought to reconcile Cheyenne and Arapaho history and cultural authority, historic documentation and archeology, and gathered oral histories from massacre descendants. Congress authorized the site on November 7, 2000; it was established effective April 27, 2007. Of its 3,025 acres, 1,465 are held in trust for the Cheyenne and Arapaho Tribes. Its stated purpose includes helping to minimize the chances of similar incidents in the future. <a href=\"https://npshistory.com/publications/sand/adhi-v2.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/sand/index.htm",
+      "title": "NPSHistory.com: Sand Creek Massacre National Historic Site archive page — overview (NPS brochure, 2017) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "title": "Foundation Document, Sand Creek Massacre National Historic Site, Colorado (NPS, 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "title": "Laura A. Miller, ed., Sand Creek Massacre National Historic Site Administrative History, Volume II (2007–2017) (NPS, June 2024)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>For the Cheyenne and Arapaho, the NPS brochure says, even speaking of the massacre is sacred, and the site is forever hallowed because the spirits and blood of the victims are intermingled with the earth. The site’s 2024 administrative history explains that the tribes do not consider the interment of returned ancestors here a reburial but the first burial, since the dead were not buried after the massacre. Interments in the site’s repatriation area began on June 8, 2008, with ancestors returned by the Denver Museum of Nature and Science, History Colorado and the University of Nebraska; tribal members keep an all-night vigil before each burial. <a href=\"https://npshistory.com/publications/sand/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/sand/adhi-v2.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In November 1999 Laforce “Lee” Lone Bear, a Northern Cheyenne descendant of survivors, organized a 173-mile run from the massacre site to the Colorado State Capitol. The Northern Cheyenne still coordinate the Spiritual Healing Run with the Northern Arapaho and the Southern Cheyenne and Arapaho. <a href=\"https://npshistory.com/publications/sand/adhi-v2.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sand/index.htm",
+          "title": "NPSHistory.com: Sand Creek archive page — NPS brochure (2017), ‘A Sacred Place, A Spiritual People’",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+          "title": "Miller, ed., Sand Creek Massacre NHS Administrative History, Vol. II (2024), pp. 43, 123–125, 145–146",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The cottonwoods along Big Sandy Creek are part of the massacre landscape, and individual trees, living and dead, carry cultural and spiritual significance for their association with the encampments and the massacre. A 2006 tree-ring study of some 110 trees dated none definitively to 1864, though the evidence suggests several were alive then as seedlings or saplings; most of the main gallery forest took root in 1949–1960, and very few trees have established since 1965. <a href=\"https://npshistory.com/publications/sand/lukas-woodhouse-2006.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>A 2013 Park Service climate brief found mean annual temperature at nearby Eads rising 0.18 °F per decade from 1895 to 2011, fastest in winter and spring, and projected a further 4–5 °F by mid-century; summer precipitation may decrease 10 to 15 percent. <a href=\"https://npshistory.com/publications/sand/climate-change-trends-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sand/lukas-woodhouse-2006.pdf",
+          "title": "Jeff Lukas and Connie Woodhouse, Riparian Forest Age Structure and Past Hydroclimatic Variability, Sand Creek Massacre NHS, Final Report (INSTAAR for NPS, October 2006)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sand/climate-change-trends-2013.pdf",
+          "title": "Nicholas Fisichelli, Climate Change Trends for Planning at Sand Creek Massacre National Historic Site (NPS Climate Change Response Program, April 18, 2013)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Grassland plains of southeast Colorado; about 170 miles southeast of Denver; Big Sandy Creek and Sand Creek synonymous",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Brief Description of the Park, pp. 3–4"
+    },
+    {
+      "claim": "Creek locales offered firewood, shelter from winds, drinking water in winter; Big Sandy Creek one such place; people of many tribes paused here traveling the Smoky Hill Lodgepole Trail",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'Path to Tragedy' para 1"
+    },
+    {
+      "claim": "November 29, 1864, at dawn, approximately 675 soldiers of the 1st and 3rd Regiments, Colorado Volunteer (U.S.) Cavalry; killed more than 230 Cheyenne and Arapaho over seven hours; Col. John M. Chivington led",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Brief Description, p. 3. (Village size differs: FD 'about 700', brochure 'over 750' — omitted)"
+    },
+    {
+      "claim": "Village believed it was safe within the 1861 Fort Wise Treaty lands; US flag and white flag of truce at Black Kettle's tipi",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'Attack at Dawn' paras 1–2"
+    },
+    {
+      "claim": "Noncombatant women, children and elderly fled up the dry creek channel; soldiers followed shooting; people dug pits and trenches",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Soldiers committed atrocities on the dead, taking body parts as trophies; departed December 1 with 600 captured horses",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Capt. Silas Soule and Lt. Joseph Cramer ordered their companies (D and K) to stand down; their written accounts shocked national and military leaders",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'Attack at Dawn' and 'The Massacre Reverberates'"
+    },
+    {
+      "claim": "Army judge condemned the 'cowardly cold-blooded slaughter'; Chivington never formally charged nor tried",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'Path to Tragedy' closing paragraph"
+    },
+    {
+      "claim": "1865 Little Arkansas Treaty: US took responsibility and promised reparations to survivors; 'The promised reparations have never been fulfilled' (2017 brochure)",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'The Massacre Reverberates' para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "By eliminating most Cheyenne advocates for peace, the massacre hardened resistance to white expansion and escalated warfare between the U.S. Army and the Cheyenne, Arapaho and Sioux",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Significance statement 6, p. 6",
+      "interpretive": true
+    },
+    {
+      "claim": "Site-location research 'worked to reconcile Cheyenne and Arapaho history and cultural authority, historic documentation, and archeology'; Alexa Roberts collected oral histories from massacre descendants",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "Background, pp. 37–38"
+    },
+    {
+      "claim": "Authorized November 7, 2000 (Establishment Act, PL 106-465)",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "Background, p. 38; FD Park Purpose p. 5"
+    },
+    {
+      "claim": "Established effective April 27, 2007",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "Background, p. 39; Establishment block on archive page; FD p. 4"
+    },
+    {
+      "claim": "3,025 acres; about 1,560 NPS-owned; 1,465 held in trust for the Cheyenne and Arapaho Tribes",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Purpose includes assisting in minimizing the chances of similar incidents in the future",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sand-fd-2017.pdf",
+      "locator": "Park Purpose, p. 5"
+    },
+    {
+      "claim": "Tribes believe even speaking of the massacre is sacred; site forever hallowed because the spirits and blood of the victims are intermingled with the earth",
+      "sourceUrl": "https://npshistory.com/publications/sand/index.htm",
+      "locator": "brochure, 'A Sacred Place, A Spiritual People' para 2",
+      "interpretive": true
+    },
+    {
+      "claim": "Tribes do not consider interment of ancestors in the repatriation area a reburial but the first burial, since bodies were not buried after the massacre",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "p. 43",
+      "interpretive": true
+    },
+    {
+      "claim": "Interments began June 8, 2008, with five of the six ancestors repatriated under NAGPRA; returned by Denver Museum of Nature and Science, History Colorado, University of Nebraska; sixth given by a Ute tribal member to Chief Laird Cometsevah",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "Interments in the Repatriation Area, p. 124"
+    },
+    {
+      "claim": "Evening before burial, tribal members stay up all night holding a vigil over the ancestor's remains",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "p. 124"
+    },
+    {
+      "claim": "November 1999: Laforce 'Lee' Lone Bear, Northern Cheyenne descendant of massacre survivors, organized a 173-mile run from the massacre site to the state capitol in Denver",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "The Sand Creek Massacre Spiritual Healing Run, p. 145"
+    },
+    {
+      "claim": "Run still coordinated by the Northern Cheyenne in partnership with the Northern Arapaho and the Southern Cheyenne and Arapaho",
+      "sourceUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
+      "locator": "p. 146"
+    },
+    {
+      "claim": "Riparian cottonwood forests critical element of cultural landscape; individual trees living and dead have cultural and spiritual significance through association with Indian encampments and the massacre",
+      "sourceUrl": "https://npshistory.com/publications/sand/lukas-woodhouse-2006.pdf",
+      "locator": "Section 2.1, Rationale"
+    },
+    {
+      "claim": "Some 110 trees sampled; none definitively dated to 1864, collective evidence suggests multiple trees alive then as seedlings or saplings; age classes 1865–1885, 1908–1925, 1949–1960 (last comprises most of main gallery forest); very little establishment since 1965",
+      "sourceUrl": "https://npshistory.com/publications/sand/lukas-woodhouse-2006.pdf",
+      "locator": "Abstract; Section 2.3"
+    },
+    {
+      "claim": "Eads station, 1895–2011: mean annual temperature +0.18 °F per decade; strongest in winter (+0.34) and spring (+0.23)",
+      "sourceUrl": "https://npshistory.com/publications/sand/climate-change-trends-2013.pdf",
+      "locator": "Historical climate trends (1895–2011)"
+    },
+    {
+      "claim": "Projected +4–5 °F by mid-century vs 1971–1999; annual precipitation 'may decrease', greatest decrease in summer (−10 to −15%)",
+      "sourceUrl": "https://npshistory.com/publications/sand/climate-change-trends-2013.pdf",
+      "locator": "Future climate projections; Table 1"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/sand/trees-along-sand-creek.jpg",
+      "caption": "The setting sun on trees along Sand Creek",
+      "credit": "NPS Photo/Jeff Campbell",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sand/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C8414E1-1DD8-B71B-0B762D9224F24C9B.jpg",
+      "evidenceUrl": "https://www.nps.gov/sand/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1400,
+      "height": 933,
+      "bytes": 240616,
+      "note": "On-page figcaption (park home page gallery): \"The setting sun highlights trees along Sand Creek, forming a hauntingly beautiful landscape NPS Photo/Jeff Campbell\"; alt \"The uppermost branches of leafless trees in a grassy plain are lit by the setting sun.\" Resized from 4272x2848. Verifier note: the park's Nature page credits a different photo 'Courtesy of Jeff Campbell'; this image's own credit reads NPS Photo/Jeff Campbell."
+    },
+    {
+      "file": "images/history/sand/cheyenne-arapaho-lodges.jpg",
+      "caption": "Cheyenne and Arapaho lodges erected in commemoration of the 150th year of the Sand Creek Massacre",
+      "credit": "NPS Photo/Shawn G. Gillette",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sand/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C841052-1DD8-B71B-0B0333C9B2FBE609.jpg",
+      "evidenceUrl": "https://www.nps.gov/sand/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "indigenous",
+      "width": 1400,
+      "height": 933,
+      "bytes": 162375,
+      "note": "On-page figcaption: \"Cheyenne and Arapaho Lodges erected in commemoration of the 150th Year of the Sand Creek Massacre NPS Photo/Shawn G. Gillette\"; alt \"Four white Indian lodges on a grassy plain.\" Resized from 3888x2592."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/sand/index.htm",
     "adhiUrl": "https://npshistory.com/publications/sand/adhi-v2.pdf",
