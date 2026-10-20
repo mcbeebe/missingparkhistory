@@ -1,16 +1,164 @@
 {
   "code": "EVER",
   "name": "Everglades NP",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Everglades National Park, established in 1947, protects 1.5 million acres of tropical and subtropical wetlands at the southern tip of Florida — the largest subtropical wilderness in the United States. It was the first national park created to protect a biological ecosystem rather than scenic grandeur. The park's \"River of Grass,\" as described by Marjory Stoneman Douglas in her influential 1947 book, is a slow-moving sheet of water that flows southward from Lake Okeechobee to Florida Bay. The Everglades provides habitat for 36 federally listed threatened or endangered species, including the Florida panther, American crocodile, and West Indian manatee. It is designated as a UNESCO World Heritage Site, an International Biosphere Reserve, and a Wetland of International Importance.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "681"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (42 claims checked; 12 corrections)",
+  "summary": "<p>The Everglades is a river so gently sloping that no point in the park stands more than eight feet above sea level: a shallow, 50-mile-wide flow of fresh water that historically began in Lake Okeechobee and still moves slowly toward Florida Bay and the Gulf of Mexico. Marjory Stoneman Douglas named it the River of Grass in the 1940s. The park’s 1.5 million acres hold freshwater sloughs and prairies, pine rocklands, tropical hardwood hammocks, mangrove estuaries and the seagrass meadows of Florida Bay, more than 400 bird species, and the largest legislated wilderness east of the Rocky Mountains. It is the only place in the United States that is at once an International Biosphere Reserve, a World Heritage Site and a Wetland of International Importance. <a href=\"https://npshistory.com/publications/ever/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Its archeological and historic sites span about 6,000 years. Congress authorized the park in 1934, but the land had to be donated, and President Harry S Truman did not dedicate it until December 6, 1947. It was the first national park set aside for its biological resources rather than its scenery or history. <a href=\"https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/ever/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Park Service’s 2014 brochure describes what has happened since. Canals and levees shunt off water before it reaches the park, agricultural runoff and mercury pollute it, and wading birds nesting in southern Everglades colonies have declined 93 percent since the 1930s, from 265,000 to about 18,500. Congress has authorized the Comprehensive Everglades Restoration Plan, which the brochure calls the world’s largest environmental restoration project. <a href=\"https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/ever/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/ever/index.htm",
+      "title": "NPSHistory.com: Everglades National Park archive page — overview (from the 2014 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+      "title": "NPS, Foundation Document, Everglades National Park, Florida (October 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/ever/adhi.pdf",
+      "title": "Blythe, Wilderness on the Edge: A History of Everglades National Park (NPS / Organization of American Historians, September 2017)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>The Spanish met the Calusa, a chiefdom built on fishing, hunting and gathering rather than farming, and the Tequesta. Disease, war and upheaval took a horrendous toll, Blythe’s 2017 park history says; many historians believe the last of them left for Cuba with the Spanish in 1764, though some may have stayed. Most of the people who became known as Seminoles were Muskogee-tradition people from farther north. In the Second Seminole War (1835–1842) soldiers killed Chekika at a hammock now inside the park and strung up his body; almost 3,000 Indians and associated Black people were removed west. After the Third Seminole War, 100 to 150 people held out, ancestors of all of today’s Seminole and Miccosukee in Florida. Officials then agreed to replace a 99,200-acre Seminole reservation inside the proposed park with land elsewhere; Blythe found no evidence the Indians were consulted. The 2017 foundation document recognizes the park as ancestral territory of Florida tribes. <a href=\"https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/ever/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/ever/adhi.pdf",
+          "title": "Blythe, Wilderness on the Edge: A History of Everglades National Park (NPS / Organization of American Historians, September 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+          "title": "NPS, Foundation Document, Everglades National Park, Florida (October 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>The Florida Federation of Women’s Clubs, led from 1914 by May Mann Jennings, won 960 acres of Royal Palm Hammock from the legislature in 1915, added a 960-acre exchange of land donated by Henry Flagler’s widow, and opened Florida’s first state park in 1916, running it with limited state funding until 1947. Marjory Stoneman Douglas, a writer and early park supporter, published The Everglades: River of Grass in November 1947, a month before the dedication, drawing on U.S. Geological Survey scientist Garald Parker; the first printing of 7,500 copies sold out by Christmas. During the fight against a proposed jetport she became president of the new Friends of the Everglades. In 1997 Congress renamed the park’s wilderness the Marjory Stoneman Douglas Wilderness; she was 106. <a href=\"https://npshistory.com/publications/ever/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/ever/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/ever/adhi.pdf",
+          "title": "Blythe, Wilderness on the Edge: A History of Everglades National Park (NPS / Organization of American Historians, September 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The park’s 2017 foundation document reports sea-level rise already evident in estuarine and freshwater wetland gauges and saltwater intrusion and sea-level rise increasing, at a rate it says is rising because of climate change. It warns that rising seas and salt water could accelerate peat collapse and the loss of Everglades soils and marsh elevation, turning wetlands into open estuary; that stronger storm surges could overtop the marl ridge and threaten the Cape Sable wetlands; and that rising seas and larger storms threaten the park’s cultural resources. An earlier Park Service climate brochure noted that two-thirds of the park lies below three feet in elevation, and that under some sea-level scenarios the park’s pinelands, which hold most of South Florida’s remaining pineland habitat, could disappear. <a href=\"https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/ever/so-fl-climate-change.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+          "title": "NPS, Foundation Document, Everglades National Park, Florida (October 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/ever/so-fl-climate-change.pdf",
+          "title": "NPS South Florida Natural Resources Center, Climate Change and South Florida’s National Parks: portrait of a changing landscape (undated, after the 2005 hurricane season)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "No park elevation tops eight feet above sea level; “River of Grass” name given by Marjory Stoneman Douglas in the 1940s; river flows slowly toward bay and gulf; wading birds nesting in southern Everglades colonies declined 93 percent since the 1930s (265,000 to 18,500); canals and levees shunt off water; agricultural runoff, mercury; CERP the world’s largest environmental restoration project",
+      "sourceUrl": "https://npshistory.com/publications/ever/index.htm",
+      "locator": "overview (2014 brochure): Saving the Glades; Impact on Plants and Animals"
+    },
+    {
+      "claim": "Authorized 1934; land by donation; Truman dedicated December 6, 1947 in Everglades City; first national park set aside solely for biological resources; 1,509,000 acres; largest legislated wilderness east of the Rocky Mountains; Florida Bay ~393,000 acres; pine rocklands, hammocks, mangroves, seagrass",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+      "locator": "Brief Description of the Park, PDF pp. 7–8"
+    },
+    {
+      "claim": "Only place in the U.S. jointly designated International Biosphere Reserve, World Heritage Site and Wetland of International Importance; more than 400 bird species; archeological and historical resources spanning approximately 6,000 years; ancestral territory of American Indian tribes of Florida",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+      "locator": "Park Significance 2, 7, 8, 9, PDF p. 12"
+    },
+    {
+      "claim": "Calusa a chiefdom not based on field agriculture but on fishing, hunting and gathering",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 1, p. 14 (PDF p. 52)"
+    },
+    {
+      "claim": "Disease, warfare and social upheaval took a horrendous toll; 1764 Spanish took fewer than 300 Indians to Cuba; many historians conclude these included the last survivors of the Calusa and Tequesta, but some may have remained",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 1, p. 22 (PDF p. 60)",
+      "interpretive": true
+    },
+    {
+      "claim": "Great majority of Seminoles were people of the Muskogee tradition from farther north",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 1, p. 23 (PDF p. 61)"
+    },
+    {
+      "claim": "Second Seminole War 1835–1842; Chekika killed, corpse strung up; Chekika’s Hammock within the park; almost 3,000 Indians and associated blacks removed west; after Third Seminole War 100–150 remained; all of today’s Seminole and Miccosukee in Florida descend from them",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 1, pp. 24–26 (PDF pp. 62–64)"
+    },
+    {
+      "claim": "1917 Florida legislature established a 99,200-acre Seminole reservation in Monroe County; 1937 Florida cabinet abrogated it for a Broward County tract; no evidence the Indians were consulted on the swap; the NPS, Office of Indian Affairs and state officials decided early on to replace the Monroe County reservation, which lay within the proposed park boundary",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 19, pp. 495–496, 498 (PDF pp. 533–534, 536)",
+      "interpretive": true
+    },
+    {
+      "claim": "FFWC organized 1895; May Mann Jennings president November 1914; June 2, 1915 law granted 960 acres; November 1915 Flagler exchange made the park 1,920 acres; first state park 1916; federation ran it with limited state funding until 1947",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 2, pp. 50–51 (PDF pp. 89–90); Introduction (PDF p. 25)"
+    },
+    {
+      "claim": "River of Grass published early November 1947, the month before the dedication; Douglas consulted USGS scientist Garald Parker; first printing of 7,500 copies sold out by Christmas",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 5, pp. 145–146 (PDF pp. 184–185)"
+    },
+    {
+      "claim": "Friends of the Everglades born by November 1969 with Douglas as president, arising from the jetport fight (nps.gov Douglas page gives 1970; year omitted in prose)",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 9 (PDF p. 297)"
+    },
+    {
+      "claim": "1997 Congress redesignated the wilderness as the Marjory Stoneman Douglas Wilderness; Douglas was 106",
+      "sourceUrl": "https://npshistory.com/publications/ever/adhi.pdf",
+      "locator": "ch. 10 (PDF p. 331)"
+    },
+    {
+      "claim": "Saltwater intrusion and sea level rise increasing, the rate is increasing due to climate change; SLR evident in estuarine and freshwater wetland gauges; could accelerate loss of soils, marsh elevation, peat collapse, conversion to open estuary; storm surges overtopping marl ridge threatening Cape Sable wetlands; cultural resources threatened by rising seas and storms",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/ever-fd-2017.pdf",
+      "locator": "FRV analysis, PDF pp. 20–21, 27–28, 30"
+    },
+    {
+      "claim": "Two-thirds of Everglades NP below 3 ft elevation; ENP contains most remaining South Florida pineland habitat, projected to disappear under some SLR scenarios",
+      "sourceUrl": "https://npshistory.com/publications/ever/so-fl-climate-change.pdf",
+      "locator": "pp. 1–2"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/ever/sawgrass-to-florida-bay-aerial.jpg",
+      "caption": "An aerial view of the landscape transition from sawgrass to Florida Bay",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/ever/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C85E70B-1DD8-B71B-0B7C75649CCDB907.jpg",
+      "evidenceUrl": "https://www.nps.gov/ever/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1064,
+      "note": "Homepage header gallery figcaption: \"An aerial view of the landscape transition from Sawgrass to Florida Bay.\" credit span \"NPS Photo\". Resized from 3008x2000.",
+      "bytes": 196006
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/ever/index.htm",
     "adhiUrl": null,

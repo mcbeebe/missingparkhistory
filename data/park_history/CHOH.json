@@ -2,15 +2,235 @@
   "code": "CHOH",
   "name": "C&O Canal NHP",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>The Chesapeake and Ohio Canal National Historical Park preserves the 184.5-mile towpath and canal route that runs from Georgetown in Washington, D.C. to Cumberland, Maryland, paralleling the Potomac River. Constructed between 1828 and 1850, the C&O Canal was conceived as a transportation route to connect the eastern seaboard with the Ohio River valley, but competition from the Baltimore and Ohio Railroad ultimately limited the canal's commercial success. The canal ceased operations in 1924 after a devastating flood, and a campaign led by Supreme Court Justice William O. Douglas in 1954 helped save the corridor from being converted into a highway. It was designated a national historical park in 1971.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-C-2026-10-18",
+  "verifiedBy": "verifier-C-2026-10-18 (45 claims checked; 7 corrections)",
+  "summary": "<p>The Chesapeake and Ohio Canal runs 184.5 miles along the Potomac River from Georgetown in Washington, D.C., to Cumberland, Maryland. Its 74 lift locks raised boats from near sea level to 605 feet, and works like the hand-built, 3,118-foot Paw Paw Tunnel and the Monocacy Aqueduct survive among more than 1,300 historic structures — by the 2013 foundation document’s account, one of the largest collections of 19th-century canal features in the park system. The park also preserves archeological evidence of 13,000 years of human habitation along the river, including prehistoric American Indian rock art. <a href=\"https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>President John Quincy Adams broke ground on Independence Day, 1828, for a waterway meant to reach the Ohio River. By the time construction ended at Cumberland in 1850, the park brochure says, canals were obsolete; the Baltimore & Ohio Railroad completed the link to the West while the canal stopped far short of the Ohio. It survived as a carrier of coal until floods and debt ended it, and a major flood in 1924 finally stopped operations. The Park Service took over in 1938. In the early 1950s Supreme Court Justice William O. Douglas led a march to save the towpath from becoming a parkway, which he called “a long stretch of quiet and peace.” It became a national monument in 1961 and a national historical park on January 8, 1971. <a href=\"https://npshistory.com/publications/choh/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "title": "Foundation Document, Chesapeake and Ohio Canal National Historical Park (NPS, 2013)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/choh/index.htm",
+      "title": "NPSHistory.com: Chesapeake and Ohio Canal NHP archive page — overview (from the 2011 NPS brochure) and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "labor_ccc": {
+      "html": "<p>Thousands of immigrants found work building the canal. In August 1832 cholera reached the work camps near Harpers Ferry; a newspaper account quoted in Harlan Unrau’s historic resource study described the dead and dying lying together in crowded shanties, workers fleeing, and laborers who were “chiefly Irishmen.” Rivalries between Irish factions turned violent: on January 24, 1834, several hundred Longfords routed about 300 Corkonians near Dam No. 5 above Williamsport, and many of those overtaken in the pursuit were killed. <a href=\"https://npshistory.com/publications/choh/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/choh/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>A century later the Civilian Conservation Corps did the heavy work of converting the canal’s first 22 miles into a recreational park. Josh Howard’s 2017 study notes that every enrollee in the two canal camps at Cabin John was an African American man, when, as of mid-1938, only one Black CCC camp existed in Maryland; by January 1942 the two companies had logged 83,800 and 74,900 man-days of work. <a href=\"https://npshistory.com/publications/choh/our-only-alma-mater.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/choh/hrs.pdf",
+          "title": "Harlan D. Unrau, Historic Resource Study: Chesapeake & Ohio Canal (NPS, prepared by Karen M. Gray, August 2007), monograph 3, Labor Force, pp. 123–130",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/choh/our-only-alma-mater.pdf",
+          "title": "Josh Howard, “Our Only Alma Mater”: The Civilian Conservation Corps and the C&O Canal — Special History Study, final draft (NPS, December 2017), Introduction",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/choh/index.htm",
+          "title": "NPSHistory.com: C&O Canal archive page overview (2011 NPS brochure)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>In June 1830 the canal company’s directors and stockholders rejected President Charles Fenton Mercer’s request to purchase an enslaved workforce, but Sabrina Romain’s 2021 Park Service study finds that Black laborers, free and enslaved, were contracted to work on the canal throughout its construction, and by 1842 the company was relying on such contracts to cut costs. The canal also became a route out of slavery: Ben Addison, hired out to work in Georgetown, escaped on December 18, 1829; Charles Ringold, a blacksmith who had worked a long time on the canal, fled on April 30, 1838. <a href=\"https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p><p>At Ferry Hill Plantation, part of the park’s historic district, John Blackford held eighteen people in slavery when he died in 1839 — six men, four women and eight children; most were sold at his estate sale to unknown buyers. <a href=\"https://npshistory.com/publications/choh/hrs-ferry-hill-plantation.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[6]</a> <a href=\"https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+          "title": "Sabrina Romain, “Difficulty on the Chesapeake and Ohio Canal”: The Struggles and Successes of Black Laborers and Freedom Seekers along the Canal (NPS, June 2021), pp. 9–18",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/choh/hrs-ferry-hill-plantation.pdf",
+          "title": "Max L. Grivno, Historic Resource Study: Ferry Hill Plantation (NPS, August 2007), ch. 5, Slavery at Ferry Hill Plantation, pp. 37–38",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+          "title": "Foundation Document, Chesapeake and Ohio Canal NHP (NPS, 2013), Historic Districts – Historic Structures – Archeology",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Black workers were on the canal from its first months: in December 1828 John Stubblefield, a free Black man, lost his left arm in a blasting accident and received $2 a month for a year. A company rule of 1857 barred Black boat captains, yet the boat register of January 1, 1878, lists at least four, among them Louis Roberson and Wilson Middleton; Andrew Jenkins captained boats from 1910 to 1923. <a href=\"https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[5]</a></p><p>A 2022 study prepared for the Park Service on the communities along the canal’s first 20 miles traces Black communities such as Herring Hill in Georgetown, St. Phillips Hill, Gibson Grove and Tobytown, and finds that the canal’s construction displaced African Americans, including the multiracial community of Sugar Hill in Georgetown. It notes that 1940, when the Park Service opened the canal as parkland, recurs as an end date for several Black enclaves, and asks what role the Service played in the displacement that followed. <a href=\"https://npshistory.com/publications/choh/hrs-african-american-communities.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[7]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+          "title": "Romain, “Difficulty on the Chesapeake and Ohio Canal” (NPS, 2021), pp. 13 and 44–45",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/choh/hrs-african-american-communities.pdf",
+          "title": "WSP USA, Historic Resources Study: African American Communities Along the Chesapeake & Ohio Canal, Washington, D.C., and Lower Montgomery County, Maryland (NPS, October 2022), Executive Summary",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "74 lift locks raised boats from near sea level to 605 feet at Cumberland; hand-built 3,118-foot Paw Paw tunnel; Monocacy aqueduct",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Towpath 184.5 miles",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "FRV 'Towpath', p. 7"
+    },
+    {
+      "claim": "More than 1,300 historic structures, one of the largest collections of 19th-century canal features and buildings in the NPS",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "Significance 2, p. 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Archeological evidence of 13,000 years of human habitation; prehistoric American Indian rock art documented at several locations",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "Significance 3, p. 5; FRV Historic Districts, p. 7"
+    },
+    {
+      "claim": "Adams broke ground Independence Day 1828; by the time construction ended in 1850 canals were obsolete; B&O completed the link to the West while the canal stopped far short of the Ohio",
+      "sourceUrl": "https://npshistory.com/publications/choh/index.htm",
+      "locator": "overview (NPS Brochure 2011), 'A Historic Waterway to the West'"
+    },
+    {
+      "claim": "Conduit of eastern coal; flooding and financial ruin; Douglas quote 'a long stretch of quiet and peace' (1954)",
+      "sourceUrl": "https://npshistory.com/publications/choh/index.htm",
+      "locator": "overview, paras. 1 and 4–5"
+    },
+    {
+      "claim": "Major flood in 1924 ultimately caused the Canal Company to cease operation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "FRV Hydrologic Resources, p. 10"
+    },
+    {
+      "claim": "NPS jurisdiction 1938; early 1950s Douglas led march to save canal and towpath from a parkway; national monument 1961; 1971 PL 91-664",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "NHP established January 8, 1971",
+      "sourceUrl": "https://npshistory.com/publications/choh/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "From 1828 to 1850 thousands of immigrants found work building the canal",
+      "sourceUrl": "https://npshistory.com/publications/choh/index.htm",
+      "locator": "overview, 'A Historic Waterway to the West' para. 3"
+    },
+    {
+      "claim": "Late August 1832 Asiatic cholera appeared near Harpers Ferry; Niles' Register: dead and dying in shanties, laborers fled; 'The laborers are chiefly Irishmen'",
+      "sourceUrl": "https://npshistory.com/publications/choh/hrs.pdf",
+      "locator": "Monograph 3, Labor Force, p. 126"
+    },
+    {
+      "claim": "January 24, 1834: 300 Longfords joined by 300–400 more met about 300 Corkonians near Dam No. 5 above Williamsport; fugitives put to death; casualties all Corkonian; 'many of the fugitives that were over taken were savagely put to death'",
+      "sourceUrl": "https://npshistory.com/publications/choh/hrs.pdf",
+      "locator": "Monograph 3, p. 130"
+    },
+    {
+      "claim": "All CCC enrollees at the canal camps were African American men; first twenty-two miles; Camps NP-1 and NP-2 at Cabin John (Companies 325 and 333); 83,800 and 74,900 man-days as of January 1, 1942",
+      "sourceUrl": "https://npshistory.com/publications/choh/our-only-alma-mater.pdf",
+      "locator": "Introduction, pp. 1–3"
+    },
+    {
+      "claim": "Only one African American CCC camp existed in Maryland as of mid-1938",
+      "sourceUrl": "https://npshistory.com/publications/choh/our-only-alma-mater.pdf",
+      "locator": "Introduction, p. 4"
+    },
+    {
+      "claim": "Mercer requested the purchase or hiring out of an enslaved labor force; directors and stockholders rejected the purchase request at their June 1830 meeting",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "Pre-Civil War, p. 9"
+    },
+    {
+      "claim": "Black laborers free and enslaved contracted throughout construction; by 1842 company relied on hired-out enslaved labor to cut costs",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "pp. 9 and 13"
+    },
+    {
+      "claim": "Ben Addison hired out in Georgetown from about October 1829, ran away December 18, 1829",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "p. 17"
+    },
+    {
+      "claim": "Charles Ringold, 'good blacksmith, butcher, and fiddler', 'worked a long time on the canal', absconded April 30, 1838",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "p. 18"
+    },
+    {
+      "claim": "Ferry Hill Plantation within the park's historic district",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/choh-fd-2013.pdf",
+      "locator": "FRV Historic Districts – Historic Structures – Archeology, p. 7"
+    },
+    {
+      "claim": "Blackford's slaveholding at his death in 1839: eighteen — six adult men, four adult women, eight children; bulk sold at estate sale to unknown parties",
+      "sourceUrl": "https://npshistory.com/publications/choh/hrs-ferry-hill-plantation.pdf",
+      "locator": "ch. 5, pp. 37–38"
+    },
+    {
+      "claim": "John Stubblefield, free Black man, lost left arm; $2 per month for a year after December 1828 blasting",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "p. 13"
+    },
+    {
+      "claim": "1857 board policy banning Black captains; January 1, 1878 Register of Boats shows at least four Black captains incl. Louis Roberson, Wilson Middleton; Andrew Jenkins captain 1910–1923",
+      "sourceUrl": "https://npshistory.com/publications/choh/black-laborers-freedom-seekers.pdf",
+      "locator": "Black Boat Captains, pp. 44–45"
+    },
+    {
+      "claim": "Canal construction displaced African Americans (George Pointer, Sugar Hill); communities Herring Hill, St. Phillips Hill, Gibson Grove, Tobytown; 1940 recurs as end date; question of NPS role in displacement; study covers first 20 miles",
+      "sourceUrl": "https://npshistory.com/publications/choh/hrs-african-american-communities.pdf",
+      "locator": "Executive Summary, pp. viii–ix",
+      "interpretive": true
+    },
+    {
+      "claim": "Howard study is dated 12/16/2017, 'Special History Study, Final Draft'; Romain study dated June 2021; WSP USA study for NPS dated October 27, 2022",
+      "sourceUrl": "https://npshistory.com/publications/choh/our-only-alma-mater.pdf",
+      "locator": "title pages"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/choh/lockhouse-16.jpg",
+      "caption": "Lockhouse 16 atop a stone outcropping above the lock",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/choh/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7EC45C-1DD8-B71B-0B4EDFD56A427891.jpg",
+      "evidenceUrl": "https://www.nps.gov/choh/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1203,
+      "height": 843,
+      "bytes": 235752,
+      "note": "On-page caption: \"Lockhouse 16 sits atop a stone outcropping above the lock. NPS photo\"; alt text \"A whitewashed lockhouse sits above a stone lock with wooden crib.\" Re-encoded JPEG, original dimensions."
+    },
+    {
+      "file": "images/history/choh/paw-paw-tunnel.jpg",
+      "caption": "The path leading to the Paw Paw Tunnel",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/choh/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/D33B47EC-92CE-FCC7-052E5E8842465771.jpg",
+      "evidenceUrl": "https://www.nps.gov/choh/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1400,
+      "height": 933,
+      "bytes": 223791,
+      "note": "Contemporary park photograph. On-page caption: \"Paw Paw Tunnel NPS\"; alt text \"A path leads up to a large stone tunnel carved into a mountain\". Resized from 1683x1122."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/choh/index.htm",
     "adhiUrl": "https://npshistory.com/publications/choh/adhi-2022.pdf",

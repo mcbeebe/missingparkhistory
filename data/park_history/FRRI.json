@@ -2,15 +2,155 @@
   "code": "FRRI",
   "name": "Freedom Riders National Monument",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Freedom Riders National Monument in Anniston, Alabama, was designated by President Barack Obama in 2017 to preserve two sites associated with the 1961 Freedom Rides — the former Greyhound Bus Station in Anniston and the site outside the city where a mob firebombed a Greyhound bus carrying Freedom Riders on May 14, 1961. The Freedom Riders were interracial groups of civil rights activists who rode interstate buses into the segregated South to challenge the non-enforcement of Supreme Court rulings that declared segregated public buses unconstitutional. The brutal attacks in Anniston and Birmingham generated national and international outrage and ultimately led the Interstate Commerce Commission to enforce desegregation of interstate travel facilities.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-E-2026-10-18",
+  "verifiedBy": "verifier-E-2026-10-18 (27 claims checked; 6 corrections)",
+  "summary": "<p>Freedom Riders National Monument has two units in and near Anniston, Alabama: the former Greyhound bus depot at 1031 Gurnee Avenue downtown, with the adjacent Mural Building, and the Bus Burning Site almost six miles west of central Anniston, 5.86 acres around the spot on the Old Birmingham Highway where a Greyhound bus was set on fire in front of Forsyth &amp; Son Grocery. President Barack Obama proclaimed the monument on January 12, 2017; its stated purpose is to foster reconciliation and racial healing. <a href=\"https://npshistory.com/publications/frri/clr.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>In the spring of 1961, small interracial bands of Freedom Riders set out to test whether bus stations in the Deep South were obeying Supreme Court decisions — Morgan v. Virginia (1946) and Boynton v. Virginia (1960) — against segregation in interstate travel. On Mother’s Day, May 14, a mob that included Ku Klux Klan members met the Greyhound in Anniston, broke its windows and slashed its tires. Some six miles out of town the tires gave out, and someone threw a firebomb inside. The attackers held the door shut; the riders escaped after a detective on board drew his revolver, and at Anniston Memorial Hospital many of the injured were refused treatment. Photographs of the burning bus appeared in hundreds of newspapers the next morning. <a href=\"https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frri/clr.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>More than 400 Freedom Riders followed. On May 29, 1961, Attorney General Robert Kennedy petitioned the Interstate Commerce Commission, which ordered bus carriers and terminals serving interstate travel integrated by November 1, 1961. <a href=\"https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/frri/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/frri/index.htm",
+      "title": "NPSHistory.com: Freedom Riders National Monument archive page — overview (NPS website, 2019) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "title": "Foundation Document, Freedom Riders National Monument, Alabama (NPS, October 2018)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/frri/clr.pdf",
+      "title": "Laura L. Knott, Cultural Landscape Report: Freedom Riders National Monument (NPS, May 2023)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "black": {
+      "html": "<p>The seven Freedom Riders on the Greyhound were four Black and three White volunteers sponsored by the Congress of Racial Equality. They included CORE field secretary Joe Perkins, Jimmy McDonald, a Black folk singer from New York, and Hank Thomas, recruited by his Howard University roommate. <a href=\"https://npshistory.com/publications/frri/clr.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>After White men fired shotguns into the homes of two Black families and into St. John’s Methodist Church on Mother’s Day 1963, the city created a Human Relations Council; by that September “White” and “Colored” signs had come down from fountains and restroom doors, but two Black ministers who tried to integrate the public library were met by a mob of Klansmen; Rev. Reynolds was beaten. Willie Brewster was shot on his way home from the Anniston Pipe Foundry and died; the conviction of Hubert Damon Strange was, the 2023 landscape report says, “the first time during the civil rights era that a White person was convicted of killing a Black person in Alabama.” <a href=\"https://npshistory.com/publications/frri/clr.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/frri/clr.pdf",
+          "title": "Knott, Cultural Landscape Report: Freedom Riders NM (2023), ch. 2 Site History, pp. 2-16–2-17, 2-26–2-27",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Genevieve Hughes, a White CORE field secretary, rode the Greyhound from Washington; Mae Frances Moultrie, a student at historically Black Morris College, joined the riders in Sumter, South Carolina. As riders lay choking from smoke on May 14, 12-year-old Janie Forsyth, a daughter of grocer Richard Forsyth, brought cups and buckets of water and tended to the injured, while attackers’ families in their Sunday clothes stood and watched. Decades later, as Janie Forsyth McKinney, she joined Freedom Riders Hank Thomas, Charles Person and Bill Harbour at the public meeting on the proposed monument, which drew more than 450 people. <a href=\"https://npshistory.com/publications/frri/clr.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/frri/clr.pdf",
+          "title": "Knott, Cultural Landscape Report: Freedom Riders NM (2023), ch. 2 Site History, pp. 2-16–2-17, 2-21, 2-31–2-32",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Bus Depot at 1031 Gurnee Avenue (0.17-acre lot) and adjacent 0.06-acre Mural Building at 1029 Gurnee; Bus Burning Site three parcels totaling 5.86 acres around the site where the bus was burned in front of Forsyth & Son Grocery, Old Birmingham Highway / State Route 202",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Management Summary, Historical Summary (PDF p. 25); note proclamation gives 5.79 acres vs actual 5.86"
+    },
+    {
+      "claim": "Established by presidential proclamation (No. 9566) January 12, 2017",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Park Purpose, p. 5; Establishment block on archive page"
+    },
+    {
+      "claim": "Purpose: fosters reconciliation and racial healing",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Park Purpose, p. 5"
+    },
+    {
+      "claim": "Spring 1961 small interracial bands; test compliance with Morgan v. Virginia (1946) and Boynton v. Virginia (1960)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "May 14, 1961 (Mother's Day): mob incl. KKK members attacked the bus in Anniston, threw rocks, broke windows, slashed tires; approx. 6 miles out the tires gave out; flaming rags/firebomb thrown in",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "Attackers held the bus door shut; riders escaped after a detective (Ell Cowling) brandished his revolver; 'Several victims were taken to Anniston Memorial Hospital, where many were refused treatment'",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Historical Summary, p. 2-2; Site History p. 2-20"
+    },
+    {
+      "claim": "Photographs of the burning bus appeared in hundreds of newspapers on Monday morning",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Brief Description, p. 3"
+    },
+    {
+      "claim": "More than 400 Freedom Riders; May 29, 1961 AG Kennedy petitioned the ICC; ICC decreed integration of interstate bus carriers and terminals by November 1, 1961",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/frri-fd-2018.pdf",
+      "locator": "Brief Description, p. 4"
+    },
+    {
+      "claim": "Greyhound Riders were four Black and three White passengers; CORE-sponsored",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Historical Summary (PDF p. 25)"
+    },
+    {
+      "claim": "Joe Perkins, Black CORE field secretary; Jimmy McDonald, young Black folk singer from New York; Hank Thomas recruited by his Howard roommate John Moody",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, pp. 2-16–2-17"
+    },
+    {
+      "claim": "Mother's Day, May 12, 1963: White men fired shotguns into homes of two Black families and St. John's Methodist Church; Human Relations Council created May 16",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-26"
+    },
+    {
+      "claim": "By September 1963 'White' and 'Colored' signs removed from drinking fountains and bathroom doors; September 15 two local Black ministers attempting to integrate the library met by Klansmen, Rev. Reynolds beaten",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-26"
+    },
+    {
+      "claim": "Willie Brewster, 38, shot on way home from the Anniston Pipe Foundry, died after three days in the hospital; Hubert Damon Strange convicted — 'the first time during the civil rights era that a White person was convicted of killing a Black person in Alabama' (CLR's claim, attributed and quoted)",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-27",
+      "interpretive": true
+    },
+    {
+      "claim": "Genevieve Hughes, White woman, CORE field secretary",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-16"
+    },
+    {
+      "claim": "Mae Frances Moultrie, student from historically Black Morris College and CORE activist, joined the Greyhound Riders in Sumter, SC",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-17"
+    },
+    {
+      "claim": "12-year-old Janie Forsyth, a daughter of grocer Richard Forsyth, brought cups and buckets of water to the Riders and tended the injured; attackers' families in Sunday clothes stood around to watch",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, p. 2-21"
+    },
+    {
+      "claim": "Public meeting at First United Methodist Church (Oct. 2016, during Sec. Jewell's visit): Freedom Riders Hank Thomas, Charles Person and Bill Harbour and Janie Forsyth McKinney present; over 450 people",
+      "sourceUrl": "https://npshistory.com/publications/frri/clr.pdf",
+      "locator": "Site History, pp. 2-31–2-32 (fn. 150)"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/frri/anniston-greyhound-depot.jpg",
+      "caption": "The Anniston Greyhound Bus Depot, site of an attack on Freedom Riders in May 1961",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/frri/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/088175F5-E687-659C-7A4E06FD56ADAF52.jpg",
+      "evidenceUrl": "https://www.nps.gov/frri/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1200,
+      "height": 900,
+      "bytes": 177600,
+      "note": "On-page figcaption: \"The Anniston Greyhound Bus Depot at Freedom Riders National Monument in Anniston AL, site of an attack on Freedom Riders in May of 1961. NPS Photo\"; alt \"street view of a yellow brick bus depot, with a black awning and NPS sign, and an alley entrance.\" Contemporary park photograph. Resized from 4032x3024. The home page's Greyhound mural photo was not used (artwork)."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/frri/index.htm",
     "adhiUrl": null,

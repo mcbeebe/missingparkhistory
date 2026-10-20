@@ -1,0 +1,127 @@
+{
+  "code": "VICR",
+  "name": "Virgin Islands Coral Reef National Monument",
+  "entries": [
+    "915"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (31 claims checked; 8 corrections)",
+  "summary": "<p>Virgin Islands Coral Reef National Monument lies underwater, in the submerged lands off St. John. Its 2001 proclamation says it contains all the elements of a Caribbean tropical marine ecosystem, among them mangroves, seagrass beds, coral reefs, octocoral hardbottom and algal plains, and describes the platform St. John rises from, which runs several miles out before plunging to the Anegada trough to the south and the Puerto Rican trench to the north. Humpback and pilot whales, four species of dolphins, brown pelicans, roseate and least terns, and hawksbill, leatherback and green sea turtles use its waters. <a href=\"https://npshistory.com/publications/vicr/proclamation-7399.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>At Hurricane Hole are mangroves the Park Service’s 2016 foundation document calls the most extensive and pristine remaining in the U.S. and British Virgin Islands. More than 30 coral species grow there, among them rare ones; spiny lobster, queen conch and Nassau grouper settle in its shallows as juveniles before moving out to deeper reefs, and vessels use it as a storm mooring in hurricane season. A new genus and species of polychaete worm was identified in its waters in 2014. <a href=\"https://npshistory.com/publications/vicr/proclamation-7399.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>President Bill Clinton proclaimed the monument on January 17, 2001, from about 12,708 acres of federal submerged lands, extending the protection of Virgin Islands National Park, created in 1956 and enlarged with 5,650 acres of offshore waters in 1962. The proclamation barred anchoring and all extractive uses except permitted bait fishing in Hurricane Hole and blue runner line fishing south of St. John. Together the park and monument now protect more than 18,000 acres of underwater habitat The park brochure notes that the fastest-growing corals grow only two to three inches a year and that large brain corals are hundreds of years old. <a href=\"https://npshistory.com/publications/vicr/proclamation-7399.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/vicr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/vicr/index.htm",
+      "title": "NPSHistory.com: Virgin Islands Coral Reef National Monument archive page — overview (from the 2019 NPS brochure for Virgin Islands National Park and the monument) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/vicr/proclamation-7399.pdf",
+      "title": "Presidential Proclamation 7399, Establishment of the Virgin Islands Coral Reef National Monument (January 17, 2001), 66 Fed. Reg. 7364",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "title": "NPS, Foundation Document, Virgin Islands National Park / Virgin Islands Coral Reef National Monument (December 2016)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "climate": {
+      "html": "<p>Rafe Boulon, chief of resource management for the park and monument, told a 2007 EPA workshop (report published in 2014) that Jack Randall’s team began monitoring Lameshur Bay in 1958. He reported that in 2005 reefs throughout the U.S. Virgin Islands bleached severely amid record-high seawater temperatures; monitored reefs lost 41 to 79 percent of their live stony coral cover, elkhorn coral bleached for the first time on record there, and an unprecedented regional outbreak of coral disease, mostly white plague, followed. The 2016 foundation document reports an average 60 percent decline in coral cover on some reefs within the park from 2005 to 2007, primarily from disease, though elkhorn coral was increasing in some areas by 2015. It expects warmer seas to bring more bleaching and disease, along with ocean acidification and larger storms, and notes that Hurricane Hole is being studied for how its corals respond to a changing climate. <a href=\"https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/vicr/coral-reef-mon-needs-2007.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/vicr/coral-reef-mon-needs-2007.pdf",
+          "title": "U.S. EPA, Coral Reef Monitoring Needs Assessment Workshop, September 11–13, 2007, St. Croix, USVI (EPA/600/R-14/368, 2014), App. F presentation by NPS resource chief Rafe Boulon",
+          "type": "usgov"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+          "title": "NPS, Foundation Document, Virgin Islands National Park / Virgin Islands Coral Reef National Monument (December 2016)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Monument in submerged lands off St. John; contains all elements of a Caribbean tropical marine ecosystem; mangroves, sea grass beds, coral reefs, octocoral hardbottom, sand, algal plains; platform extends several miles before plunging to the Anegada trough (south) and Puerto Rican trench (north)",
+      "sourceUrl": "https://npshistory.com/publications/vicr/proclamation-7399.pdf",
+      "locator": "66 Fed. Reg. 7364, paras 1–2"
+    },
+    {
+      "claim": "Humpback whales, pilot whales, four species of dolphins, brown pelicans, roseate terns, least terns, hawksbill, leatherback and green sea turtles use portions of the monument",
+      "sourceUrl": "https://npshistory.com/publications/vicr/proclamation-7399.pdf",
+      "locator": "66 Fed. Reg. 7364, para 3"
+    },
+    {
+      "claim": "Hurricane Hole: most extensive and pristine remaining mangrove habitats in the entire U.S. and British Virgin Islands; more than 30 coral species including some rare; nursery; ongoing research on coral responses to changing climate; new genus and species of polychaete worm identified 2014; serves as storm mooring for vessels during hurricane season",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Fundamental Resources, Hurricane Hole, PDF p. 12"
+    },
+    {
+      "claim": "Spiny lobster, queen conch and Nassau grouper transform from larvae to juveniles in Hurricane Hole shallows, then move to deeper reefs",
+      "sourceUrl": "https://npshistory.com/publications/vicr/proclamation-7399.pdf",
+      "locator": "66 Fed. Reg. 7364, Hurricane Hole paragraph"
+    },
+    {
+      "claim": "Proclaimed January 17, 2001 by William J. Clinton; approx. 12,708 marine acres; anchoring prohibited; all extractive uses prohibited except permits for bait fishing at Hurricane Hole and blue runner line fishing south of St. John; park created 1956 and expanded 1962",
+      "sourceUrl": "https://npshistory.com/publications/vicr/proclamation-7399.pdf",
+      "locator": "66 Fed. Reg. 7364–7365"
+    },
+    {
+      "claim": "Park established 1956; 5,650 acres of submerged lands added 1962; NPS manages more than 18,000 acres of offshore underwater habitat",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Brief Description of the Parks, PDF p. 7"
+    },
+    {
+      "claim": "Fastest growing corals grow only two to three inches per year; large brain corals hundreds of years old",
+      "sourceUrl": "https://npshistory.com/publications/vicr/index.htm",
+      "locator": "overview, Coral Reefs section (2019 brochure)"
+    },
+    {
+      "claim": "Jack Randall and team began monitoring in Lameshur Bay in 1958 (Boulon presentation, Sept. 2007 workshop; EPA report Dec. 2014)",
+      "sourceUrl": "https://npshistory.com/publications/vicr/coral-reef-mon-needs-2007.pdf",
+      "locator": "App. F, Boulon presentation, p. 58 (PDF p. 68)"
+    },
+    {
+      "claim": "Boulon presentation: 2005 reefs throughout USVI bleached severely in association with record-high seawater temperatures; monitored reefs lost 41–79% live stony coral cover; Acropora palmata bleached for first time on record in USVI; unprecedented regional outbreak of coral disease, mostly white plague",
+      "sourceUrl": "https://npshistory.com/publications/vicr/coral-reef-mon-needs-2007.pdf",
+      "locator": "App. F, 2005 Coral Bleaching Event, pp. 59–60 (PDF pp. 69–70)"
+    },
+    {
+      "claim": "Some reefs within the park experienced an average 60% decline in coral cover 2005–2007, primarily from coral disease; elkhorn increasing in some areas, coral cover stable or increasing at long-term sites as of 2015; more bleaching and disease expected; increases in sea surface temperature, ocean heat content, acidification; large storms likely to increase under climate change; increases in ocean temperature expected to increase bleaching events and disease prevalence",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/viis-fd-2016.pdf",
+      "locator": "Marine Ecosystems FRV, Conditions/Trends/Threats, PDF pp. 20–21"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/vicr/monument-waters.jpg",
+      "caption": "NPS photograph shown, uncaptioned, on the monument’s NPSHistory.com archive page",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://npshistory.com/publications/vicr/index.htm",
+      "imageUrl": "https://npshistory.com/publications/vicr/index.jpg",
+      "evidenceUrl": "https://npshistory.com/publications/vicr/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1200,
+      "height": 350,
+      "note": "NPSHistory.com park hero image; on-page credit div reads \"NPS photo\". No location caption on the page, so the caption names no specific bay. Re-encoded at original 1200x350. nps.gov/vicr pages offered only a partner-credited homepage image (Susanna Pershern, no NPS credit) and an \"All Rights Reserved\" image, both rejected.",
+      "bytes": 92516
+    }
+  ],
+  "photoStatus": "complete",
+  "npshistory": {
+    "indexUrl": "https://npshistory.com/publications/vicr/index.htm",
+    "adhiUrl": null,
+    "hrsUrl": null,
+    "ethnoUrls": [],
+    "brochureUrls": [],
+    "docCount": 11
+  },
+  "wayback": {
+    "main": "https://web.archive.org/web/20250119/https://www.nps.gov/vicr/index.htm"
+  },
+  "corrections": []
+}

@@ -1,16 +1,224 @@
 {
   "code": "CUIS",
   "name": "Cumberland Island National Seashore",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Cumberland Island National Seashore protects Georgia's largest and southernmost barrier island — an 18-mile-long island encompassing over 36,000 acres of maritime forest, salt marshes, tidal creeks, and undeveloped beaches. The island has a layered human history stretching from the Timucuan people through Spanish missions, British colonial settlement, and the plantation era. After the Civil War, formerly enslaved people established the First African Baptist Church on the island, which still stands today. In the late 19th century, industrialist Thomas Carnegie and his wife Lucy built several grand estates on the island. The national seashore was established in 1972 to protect the island's natural and cultural resources from development.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "266"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (52 claims checked; 6 corrections)",
+  "summary": "<p>Cumberland Island is the largest and southernmost of Georgia’s barrier islands: 17.5 miles long, up to 3 miles wide and 36,415 acres, nearly half of it salt marsh, mudflat and tidal creek. Live oak forest draped in Spanish moss gives way to interdune meadows, freshwater ponds where alligators bellow in spring, rear dunes up to 45 feet high at the north end and almost 18 miles of beach, where loggerhead sea turtles nest in the most significant numbers on the Georgia coast. The ocean is the dominant force here, constantly building and eroding the shore. <a href=\"https://npshistory.com/publications/cuis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>People have used the island for more than 4,000 years, and the brochure lists what they left: shell middens, Spanish pot shards from the mid-1500s, a standing row of slave cabin chimneys, and the ruins of mansions. Revolutionary War general Nathanael Greene bought land here in 1783; his widow Catherine built the four-story tabby house called Dungeness; and from 1881 Thomas Carnegie and his wife Lucy acquired most of the island for winter estates. Carnegie family members, government officials, conservation groups and the Park Service worked together to create the national seashore on October 23, 1972, and Congress designated wilderness on the island in 1984, now the largest designated wilderness on any East Coast barrier island. <a href=\"https://npshistory.com/publications/cuis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/cuis/index.htm",
+      "title": "NPSHistory.com: Cumberland Island National Seashore archive page — overview (from the 2012 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "title": "NPS, Foundation Document, Cumberland Island National Seashore, Georgia (2014)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>Shell middens across the island are, in the 2014 foundation document’s words, the most conspicuous clues to a complex American Indian population that once prospered here. Indians knew the island by names including Tacatacuru, according to the 1977 historic resource study, whose author calls its people Timucuans. In 1587 the Franciscan Baltasar López founded the mission of San Pedro de Mocama, probably at the south end (Mocama meant “on the sea” in Timucua), and a second mission, San Pedro y San Pablo de Porturiba, followed in the north, probably after 1595. In 1602 López counted 792 Christian Indians on the island. <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The missions did not last. As the English pushed south from Carolina, Creek allies of the English struck missions as far south as Jekyll Island in 1680; amid revolts and an exodus of Indians to the English, Spain’s governor ordered all missions north of Amelia Island removed in 1686, and those on Cumberland were abandoned. <a href=\"https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+          "title": "NPS, Foundation Document, Cumberland Island National Seashore, Georgia (2014)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+          "title": "Torres, Historic Resource Study, Cumberland Island National Seashore, and Historic Structure Report, Historical Data Section of the Dungeness Area (NPS, November 1977)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>By the late 1700s, the foundation document says, a plantation system built on enslaved Africans had taken root on Cumberland. After Nathanael Greene’s death in 1789, Catherine Greene and her second husband Phineas Miller sold live oak timber for the first ships of the U.S. Navy, and sea island cotton became the island’s most profitable crop. The number of enslaved Africans rose from about 200 in 1835 to 455 in 1850 as cotton production grew, while the white population probably never exceeded 60; by 1860 the island had about 13 plantations. <a href=\"https://npshistory.com/publications/cuis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>At Robert Stafford’s plantation, famous for sea island cotton, the slave quarters stood about a kilometer east of the main house. A 2003 Park Service report counts the remains of 26 chimneys of tabby and brick there, 19 still standing. After the Civil War, according to writers the 1977 study cites, Stafford burned the quarters and sent away the freedpeople who had returned. <a href=\"https://npshistory.com/publications/cuis/car-slave-chimneys.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cuis/index.htm",
+          "title": "NPSHistory.com: Cumberland Island National Seashore archive page — overview (from the 2012 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+          "title": "NPS, Foundation Document, Cumberland Island National Seashore, Georgia (2014)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuis/car-slave-chimneys.pdf",
+          "title": "NPS, Condition Assessment Report: Historic Plantation Slave Community Chimneys, Cumberland Island National Seashore (September 2003)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+          "title": "Torres, Historic Resource Study, Cumberland Island National Seashore, and Historic Structure Report, Historical Data Section of the Dungeness Area (NPS, November 1977)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Union forces occupied Cumberland Island on March 2, 1862. Island tradition, recorded in a 1978 National Register nomination, holds that freedpeople driven off the Stafford, Rayfield and Dungeness plantations settled at the north end as squatters. In 1890 Mason Burbank, part-owner of the High Point hotel, bought five acres at Half Moon Bluff, divided them into 42 lots, and sold them to Black residents, some of them former slaves or their descendants; the nomination suggests the hotel owners wanted assurance of long-term employees. A log building serving as church and school went up in 1893, and the present First African Baptist Church was built in 1937. The foundation document describes the Settlement as home to several African American families who staffed the island’s hotels and estates. <a href=\"https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/cuis/nr-martins-half-moon-bluff.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+          "title": "Torres, Historic Resource Study, Cumberland Island National Seashore, and Historic Structure Report, Historical Data Section of the Dungeness Area (NPS, November 1977)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/cuis/nr-martins-half-moon-bluff.pdf",
+          "title": "National Register nomination, High Point–Half Moon Bluff Historic District (Martin’s Half Moon Bluff Tract/High Point), Cumberland Island (NPS Southeast Regional Office, January 1978)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+          "title": "NPS, Foundation Document, Cumberland Island National Seashore, Georgia (2014)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The 2014 foundation document expects climate change to bring more frequent and intense storms and rising seas, likely causing more shoreline erosion and the loss of archeological resources, and projects significant effects on coastal areas from inundation and higher temperatures. A 2004 U.S. Geological Survey assessment of nearly 30 kilometers of the island’s shoreline rated 22 percent at very high vulnerability to sea-level rise and 28 percent at high vulnerability; the nearby Fernandina Beach tide gauge had recorded relative sea-level rise of about 2 millimeters a year over 103 years. <a href=\"https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://pubs.usgs.gov/of/2004/1196/images/pdf/CUIS.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+          "title": "NPS, Foundation Document, Cumberland Island National Seashore, Georgia (2014)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://pubs.usgs.gov/of/2004/1196/images/pdf/CUIS.pdf",
+          "title": "Pendleton, Thieler & Williams, Coastal Vulnerability Assessment of Cumberland Island National Seashore (CUIS) to Sea-Level Rise, USGS Open-File Report 2004-1196",
+          "type": "usgov"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Largest and southernmost of Georgia’s barrier islands; 17.5 miles long, 0.5–3 miles wide; 36,415 acres of which 16,850 marsh, mud flats and tidal creeks; 9,886 acres designated wilderness; rear dunes up to 45 feet; loggerhead nesting population most significant along the Georgia coast; ocean the dominant force of change",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Brief Description of the Park, PDF pp. 7–8"
+    },
+    {
+      "claim": "Live oak forest, Spanish moss, interdune meadows, freshwater ponds, booming of bull alligators in spring; standing row of slave cabin chimneys; occasional Spanish pot shard indicating soldiers and missionaries in mid-1500s; crumbling walls of mansions; Greene purchased land 1783; Catherine Greene built four-story tabby home Dungeness; Plum Orchard 1898; established October 23, 1972",
+      "sourceUrl": "https://npshistory.com/publications/cuis/index.htm",
+      "locator": "overview (2012 brochure) and Establishment block"
+    },
+    {
+      "claim": "Almost 18 miles of pristine beach; largest designated wilderness area on an East Coast barrier island; 4,000 years of human habitation",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Park Significance 2–4, PDF p. 11"
+    },
+    {
+      "claim": "Thomas Carnegie, and later Lucy, began acquiring most of the island from 1881; 1972 Carnegie family, officials, environmental organizations and NPS worked to set aside the seashore; wilderness designated 1984",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Brief Description, PDF p. 8"
+    },
+    {
+      "claim": "Shell middens most conspicuous clues to a complex American Indian population that once prospered; more than 4,000 years; missions San Pedro de Mocama and San Pedro y San Pablo de Porturiba",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Brief Description, PDF p. 8",
+      "interpretive": true
+    },
+    {
+      "claim": "Indian names Missoe, Wissoe, Tacatacuru; Spanish San Pedro; early inhabitants Timucuans (1977 terminology)",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "ch. I, pp. 2–3 (PDF p. 16)"
+    },
+    {
+      "claim": "San Pedro de Mocama established by Father Baltasar Lopez in 1587; Mocama meant “on the sea” in Timucuan; probably at the southern end; Porturiba founded probably after 1595 at the northern end",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "ch. I, pp. 10–11 (PDF pp. 22–23)"
+    },
+    {
+      "claim": "792 Christian Indians on San Pedro in 1602 (Father Lopez report)",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "p. 13 (PDF p. 25)"
+    },
+    {
+      "claim": "1680 Creek Indians allied with the English struck missions as far south as Jekyll Island; by 1686 Governor Cabrera ordered all missions north of Amelia Island removed; San Pedro missions abandoned",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "p. 16 (PDF p. 28)"
+    },
+    {
+      "claim": "Plantation system based on enslaved Africans by late 1700s; Greene died 1789; Catherine and Phineas Miller sold live oak lumber for first U.S. Navy ships; sea island cotton most profitable; white population probably never greater than 60; enslaved Africans about 200 in 1835 to 455 in 1850; approximately 13 plantations by 1860",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Brief Description, PDF p. 8"
+    },
+    {
+      "claim": "Stafford plantation famous for Sea Island cotton; slave complex one kilometer east of main house; remains of 26 chimneys; nineteen remain standing",
+      "sourceUrl": "https://npshistory.com/publications/cuis/car-slave-chimneys.pdf",
+      "locator": "Executive Summary, p. 7 (PDF p. 5)"
+    },
+    {
+      "claim": "“According to some writers,” Stafford burned all the slave quarters, sending away freedmen who had returned",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "p. 154 (PDF p. 159)"
+    },
+    {
+      "claim": "March 2, 1862 Cumberland Island completely overrun by Union forces",
+      "sourceUrl": "https://npshistory.com/publications/cuis/hrs-hsr-hds.pdf",
+      "locator": "p. 150 (PDF p. 154)"
+    },
+    {
+      "claim": "Tradition: freedmen ran off Stafford, Rayfield and Dungeness plantations settled the north end as squatters; 1890 Martin sold 5 acres to Mason T. Burbank (part interest in High Point hotel), divided into 42 lots sold to blacks, some former slaves or descendants; log church/school 1893; present First African Baptist Church built 1937; hotel owners securing long-term employees",
+      "sourceUrl": "https://npshistory.com/publications/cuis/nr-martins-half-moon-bluff.pdf",
+      "locator": "Item 7 p. 2 and Item 8 pp. 1–2 (PDF pp. 3, 11)",
+      "interpretive": true
+    },
+    {
+      "claim": "Settlement (Half Moon Bluff) where several African American families lived while staffing the island hotels and estates",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "Brief Description, PDF p. 8"
+    },
+    {
+      "claim": "Climate change effects (storm frequency/intensity, sea-level rise) likely to cause more shoreline erosion and loss of archeological resources; inundation, higher temperatures, increased storm intensity",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cuis-fd-2014.pdf",
+      "locator": "FRV analysis, Archeological Resources (PDF p. 16) and Natural Resources tables"
+    },
+    {
+      "claim": "Nearly 30 km of shoreline evaluated; 22% very high, 28% high vulnerability; Fernandina Beach relative sea-level rise 2.04 ± 0.12 mm/yr over 103 years",
+      "sourceUrl": "https://pubs.usgs.gov/of/2004/1196/images/pdf/CUIS.pdf",
+      "locator": "Results p. 9; Relative sea-level change p. 7"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/cuis/undeveloped-beach.jpg",
+      "caption": "Nearly 18 miles of undeveloped beach, nesting area for birds and sea turtles",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cuis/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C804293-1DD8-B71B-0B3C50A212C19199.jpg",
+      "evidenceUrl": "https://www.nps.gov/cuis/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1600,
+      "height": 1066,
+      "note": "Homepage header gallery figcaption: \"Cumberland Island National Seashore encompasses nearly 18 miles of undeveloped beach offering recreation for visitors and essential nesting area for birds and sea turtles.\" credit span \"NPS Photo\". Page last updated July 30, 2024. Resized from 5184x3456.",
+      "bytes": 233401
+    },
+    {
+      "file": "images/history/cuis/first-african-baptist-church.jpg",
+      "caption": "The First African Baptist Church at the Settlement on the island’s north end",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cuis/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C8065C5-1DD8-B71B-0B3CC16BCC695D70.jpg",
+      "evidenceUrl": "https://www.nps.gov/cuis/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "black",
+      "width": 1600,
+      "height": 1066,
+      "note": "Homepage header gallery figcaption: \"The remote north end of the island is home to the First African Baptist Church and The Settlement, where African American residents were able to purchase their first deeded property on the island at the end of the 1800s.\" credit span \"NPS Photo\". Resized from 4752x3168.",
+      "bytes": 237048
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/cuis/index.htm",
     "adhiUrl": null,

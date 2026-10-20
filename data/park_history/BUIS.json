@@ -1,16 +1,248 @@
 {
   "code": "BUIS",
   "name": "Buck Island Reef National Monument",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Buck Island Reef National Monument protects a small uninhabited island and its surrounding coral reef ecosystem located 1.5 miles off the northeast coast of St. Croix in the U.S. Virgin Islands. President John F. Kennedy established the monument in 1961, and it was expanded by President Bill Clinton in 2001 to encompass 19,015 acres of submerged lands. The monument's barrier reef — one of the finest in the Caribbean — includes an underwater snorkeling trail established by the National Park Service. The island itself supports dry tropical forest and serves as nesting habitat for endangered hawksbill and green sea turtles.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "449"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (48 claims checked; 9 corrections)",
+  "summary": "<p>Buck Island rises out of the Caribbean a mile and a half off the northeast side of St. Croix: an uninhabited island of uplifted volcanic ash, two-thirds of it ringed by an elkhorn coral barrier reef whose branching corals push to 30-foot heights, with patch reefs shaped like haystacks rising nearly to the surface from as much as 40 feet below. Brown pelicans, least terns and hawksbill, leatherback and green sea turtles nest here. Today the 176-acre island and more than 18,000 acres of submerged reef and seafloor make up the monument. <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/buis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The island was not always wild. Its tropical hardwoods, lignum vitae above all, were logged for timber and charcoal, and goats and sheep grazed it into the first quarter of the twentieth century; the 2012 management plan says that by 1948 grazing had reduced it to dry forest and desert scrub. Mongoose and rats brought by people may have eradicated the St. Croix ground lizard, the brochure says; the Park Service reintroduced the lizard in 2007, and the island is now its most secure refuge. <a href=\"https://npshistory.com/publications/buis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The Virgin Islands government made Buck Island and its reefs a territorial park in 1948. President John F. Kennedy proclaimed the national monument on December 28, 1961, to protect a reef area the Park Service describes as one of the finest marine gardens in the Caribbean Sea, and on January 17, 2001, President Bill Clinton added 18,135 marine acres. The whole monument is now closed to fishing and collecting, one of only a few fully protected no-take marine areas in the national park system. <a href=\"https://npshistory.com/publications/buis/proclamation-7392.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://www.nps.gov/buis/learn/historyculture/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/buis/index.htm",
+      "title": "NPSHistory.com: Buck Island Reef National Monument archive page — overview (from the 2004 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "title": "NPS, Foundation Document, Buck Island Reef National Monument (August 2017)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "title": "NPS, Draft General Management Plan/Environmental Impact Statement, Buck Island Reef National Monument (March 2012), ch. 3 cultural resources",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+      "title": "NPS, Buck Island Reef NM, History & Culture (nps.gov, last updated April 6, 2018)",
+      "type": "nps"
+    },
+    {
+      "url": "https://npshistory.com/publications/buis/proclamation-7392.pdf",
+      "title": "Presidential Proclamation 7392, Boundary Enlargement and Modifications of the Buck Island Reef National Monument (January 17, 2001), 66 Fed. Reg. 7335",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>By about A.D. 400, according to the park’s history page, Amerindians living on St. Croix, who had come into the region through the Lesser Antilles from the lower Orinoco River and the Guyana coast, began to visit Buck Island to fish, catch lobsters and land crabs, gather conch and possibly collect turtle and bird eggs. They camped in the beach forest and left behind pottery and hearths. Charcoal and shell from hearths at West Beach have given two calibrated radiocarbon ranges, A.D. 410–600 and 510–700, and the pottery found on the island runs from Late Saladoid through Ostionoid styles. The 2017 foundation document reports that eroding shorelines are causing the loss of important archeological sites, among them the north shore Amerindian site. <a href=\"https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://www.nps.gov/buis/learn/historyculture/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+          "title": "NPS, Buck Island Reef NM, History & Culture (nps.gov, last updated April 6, 2018)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+          "title": "NPS, Draft General Management Plan/Environmental Impact Statement, Buck Island Reef National Monument (March 2012), ch. 3 cultural resources",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+          "title": "NPS, Foundation Document, Buck Island Reef National Monument (August 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Johann Diedrich (the park’s history page spells it Deidrich), Christiansted’s town clerk, controlled Buck Island from 1754 to 1773; between six and twelve enslaved Africans lived there at a time during his tenure, and three were listed in 1772. An 1841 Danish tax list names enslaved Africans there. Island-wide, the 2012 plan reports, enslaved people were more than 90 percent of St. Croix’s population before 1800, and in 1812 its 175 sugar plantations held 26,000 enslaved people. Emancipation came in 1848. <a href=\"https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://www.nps.gov/buis/learn/historyculture/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The 2001 proclamation records two slave ships under Liverpool captains wrecked in the waters it added: the Mary in March 1797, with 240 enslaved people, and the General Abercrombie in March 1803, with 339; both groups were brought to Christiansted. Such wrecks are rare in U.S. waters, the proclamation notes, and remnants lie in the monument. The Slave Wrecks Project, an NPS–Smithsonian partnership with universities, has drawn attention to them, the foundation document says. <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/buis/proclamation-7392.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+          "title": "NPS, Buck Island Reef NM, History & Culture (nps.gov, last updated April 6, 2018)",
+          "type": "nps"
+        },
+        {
+          "url": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+          "title": "NPS, Draft General Management Plan/Environmental Impact Statement, Buck Island Reef National Monument (March 2012), ch. 3 cultural resources",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/buis/proclamation-7392.pdf",
+          "title": "Presidential Proclamation 7392, Boundary Enlargement and Modifications of the Buck Island Reef National Monument (January 17, 2001), 66 Fed. Reg. 7335",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+          "title": "NPS, Foundation Document, Buck Island Reef National Monument (August 2017)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>The 2004 brochure warned that coral reefs worldwide are fast disappearing and that biologists see their plight as a planetary danger signal. The 2017 foundation document gives Buck Island figures: in the 1960s, 70 percent of corals were considered healthy; in the 1970s white band disease left only 5 to 10 percent of the elkhorn coral alive; and monitoring from the 1990s to 2016 found 2 to 5 percent live cover on two reefs. It counts bleaching, rising seas and ocean acidification among the threats and says climate change is likely to worsen the threat from storms. <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/buis/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>A 2023 study led by U.S. Geological Survey scientists, with Park Service co-authors, found bioerosion dominant at 91 percent of reef sites surveyed in 2016, but concluded that significant elkhorn coral restoration, if successful, could let the reef crest keep pace with the roughly half-meter of sea-level rise expected by 2100 with moderate emissions cuts. <a href=\"https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/buis/nc-v14-2023.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/buis/index.htm",
+          "title": "NPSHistory.com: Buck Island Reef National Monument archive page — overview (from the 2004 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+          "title": "NPS, Foundation Document, Buck Island Reef National Monument (August 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/buis/nc-v14-2023.pdf",
+          "title": "Toth et al., The potential for coral reef restoration to mitigate coastal flooding as sea levels rise, Nature Communications 14:2313 (2023)",
+          "type": "journal"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Island 1½ miles off the northeast side of St. Croix; uninhabited; uplifted and tilted volcanic ash; two-thirds surrounded by elkhorn coral barrier reef; elkhorn corals to 30-foot heights; haystack patch reefs rising nearly to the surface from as much as 40 feet",
+      "sourceUrl": "https://npshistory.com/publications/buis/index.htm",
+      "locator": "overview paras 1, 3 (2004 NPS brochure)"
+    },
+    {
+      "claim": "Brown pelican, least tern, hawksbill, leatherback and green sea turtles live and nest here",
+      "sourceUrl": "https://npshistory.com/publications/buis/index.htm",
+      "locator": "overview para 1"
+    },
+    {
+      "claim": "176-acre island; monument more than 19,000 acres mostly submerged; 2001 expansion by more than 18,000 marine acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Brief Description of the Park, PDF p. 7"
+    },
+    {
+      "claim": "Lignum vitae and other valuable timber stripped; by 1948 goat grazing had reduced the island to dry forest/desert-scrub; grazing discontinued in the 1950s",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 1, cultural landscapes, p. 1-22"
+    },
+    {
+      "claim": "Forests cleared for lumber in the Danish period; goats and sheep remained through the first quarter of the twentieth century; lignum vitae logged for timber, export and charcoal",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 3, vegetation, p. 3-7 (PDF p. 108)"
+    },
+    {
+      "claim": "Human introduction of mongoose and rat may have eradicated the St. Croix ground lizard",
+      "sourceUrl": "https://npshistory.com/publications/buis/index.htm",
+      "locator": "overview, Fragile and Endangered"
+    },
+    {
+      "claim": "St. Croix ground lizard translocated and reintroduced in 2007; Buck Island now the most secure island refuge for it",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Fundamental Resources, Terrestrial and Marine Wildlife, PDF p. 11"
+    },
+    {
+      "claim": "1948: Government of the Virgin Islands established Buck Island and its surrounding reefs as a territorial park; 1961 proclamation No. 3443 by President Kennedy; Jan 17, 2001 Clinton expanded by 18,135 acres",
+      "sourceUrl": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+      "locator": "History of creation of the park paragraph"
+    },
+    {
+      "claim": "Established December 28, 1961 (Proclamation 3443); 2001 proclamation describes the area as considered one of the finest marine gardens in the Caribbean Sea; 2001 enlargement approx. 18,135 marine acres; all extractive uses prohibited",
+      "sourceUrl": "https://npshistory.com/publications/buis/proclamation-7392.pdf",
+      "locator": "66 Fed. Reg. 7335–7336"
+    },
+    {
+      "claim": "All extractive uses prohibited; first and one of only a few fully protected no-take marine protected areas in the national park system",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Brief Description, PDF p. 7"
+    },
+    {
+      "claim": "By ca. A.D. 400 Amerindians living on St. Croix, who arrived via the Lesser Antilles and the lower Orinoco/Guyana coast, visited Buck Island to fish, hunt lobsters and land crabs, gather conch, possibly turtle and bird eggs; camped in the beach forest, leaving pottery and hearths",
+      "sourceUrl": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+      "locator": "paragraph 1"
+    },
+    {
+      "claim": "Buck Island site BUIS-2: Late Saladoid through Ostionoid pottery; radiometric dates from West Beach hearths Cal AD 410–600 and Cal AD 510–700 (Hardy 2006)",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 3, Prehistory: Buck Island, p. 3-50 (PDF p. 151)"
+    },
+    {
+      "claim": "Eroding shorelines resulting in loss of important archeological sites such as the north shore Amerindian site",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Maritime Heritage Resources threats, PDF p. 29"
+    },
+    {
+      "claim": "Johann Deidrich (nps.gov spelling), town clerk of Christiansted, ran the island 1754–1773; between 6 and 12 enslaved Africans lived there at a time during his tenure; three listed in 1772; 1841 Danish tax list names enslaved Africans on Buck Island",
+      "sourceUrl": "https://www.nps.gov/buis/learn/historyculture/index.htm",
+      "locator": "paragraph 4 and tax-list figure caption"
+    },
+    {
+      "claim": "GMP spelling Johann Diedrich, controlled the island 1754–1773; between six and 12 slaves lived there",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 3, History: Buck Island, p. 3-52 (PDF p. 153)"
+    },
+    {
+      "claim": "Before 1800 slaves over 90 percent of St. Croix population; 1812: 175 sugar plantations with 26,000 slaves; emancipation 1848",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 3, History: The Virgin Islands, pp. 3-51 (PDF p. 152)"
+    },
+    {
+      "claim": "Slave ship Mary (Capt. James Hunter of Liverpool) sank March 1797, 240 slaves saved and brought to Christiansted; General Abercrombie (Capt. James Booth of Liverpool) wrecked March 1803, 339 slaves brought to Christiansted; slave shipwrecks in U.S. waters are rare; monument contains remnants; wrecks in the 2001 expansion area",
+      "sourceUrl": "https://npshistory.com/publications/buis/proclamation-7392.pdf",
+      "locator": "66 Fed. Reg. 7335, final paragraph"
+    },
+    {
+      "claim": "Transatlantic Slave Trade / Slave Wrecks Project: NPS, Smithsonian, George Washington University, University of the Virgin Islands and partners; has brought attention to the monument",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Maritime Heritage Resources, Trends, PDF p. 28"
+    },
+    {
+      "claim": "Coral reefs fast disappearing worldwide; vulnerable to pollution, sedimentation, overfishing, warming seas, boat damage; biologists see their plight as a planetary danger signal",
+      "sourceUrl": "https://npshistory.com/publications/buis/index.htm",
+      "locator": "overview, Fragile and Endangered"
+    },
+    {
+      "claim": "1960s 70% of corals healthy; 1970s white band disease left only 5–10% of elkhorn alive; 1990s–2016 monitoring of South Fore Reef and Western Spur and Groove 2–5% live cover; threats include bleaching, sea level rise, increased sea surface temperatures, ocean acidification; storm threat likely to be exacerbated by climate change",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/buis-fd-2017.pdf",
+      "locator": "Coral Reef Communities, Conditions and Threats, PDF pp. 18–19"
+    },
+    {
+      "claim": "2016 carbonate-budget census at 54 sites: bioerosion dominant at 91% of sites; significant restoration of A. palmata (+30% cover), if successful, could allow reefs to keep pace with ~0.5 m sea-level rise expected by 2100 with moderate emissions reductions; authors from USGS, NPS (Christiansted), Deltares, Florida Institute of Technology",
+      "sourceUrl": "https://npshistory.com/publications/buis/nc-v14-2023.pdf",
+      "locator": "abstract and Results, pp. 1–2",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/buis/green-sea-turtle-hatchlings.jpg",
+      "caption": "Green sea turtle hatchlings, Buck Island",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/buis/learn/nature/index.htm",
+      "imageUrl": "https://www.nps.gov/buis/learn/nature/images/Green-hatchlingsDSC_2061.jpg",
+      "evidenceUrl": "https://www.nps.gov/buis/learn/nature/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 960,
+      "height": 640,
+      "note": "On-page figcaption: \"Green sea turtle hatchlings, Buck Island.\" figcredit \"NPS photo\". Page last updated April 6, 2018. Re-encoded JPEG at original 960x640.",
+      "bytes": 99084
+    },
+    {
+      "file": "images/history/buis/elkhorn-coral-underwater-trail.jpg",
+      "caption": "Elkhorn coral at the Underwater Trail, Buck Island Reef National Monument",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/buis/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/9166F458-AD79-8637-97F62EDA1485FF6A.jpg",
+      "evidenceUrl": "https://www.nps.gov/buis/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "climate",
+      "width": 1600,
+      "height": 1064,
+      "note": "Contemporary park photograph in the homepage header gallery. Figcaption: \"Snorkelers may view Elkhorn Coral at the Underwater Trail, Buck Island Reef NM\" with credit span \"NPS\"; alt \"Snorkeler swimming by Elkhorn Coral at Buck Island Reef NM.\" Resized from 4256x2832.",
+      "bytes": 214219
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/buis/index.htm",
     "adhiUrl": null,

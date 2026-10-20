@@ -2,15 +2,247 @@
   "code": "MONO",
   "name": "Monocacy National Battlefield",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Monocacy National Battlefield near Frederick, Maryland, preserves the site of the Battle of Monocacy, fought on July 9, 1864 — often called \"The Battle That Saved Washington.\" When Confederate General Jubal Early led an army toward the Union capital, a hastily assembled force of Union soldiers under General Lew Wallace (later the author of \"Ben-Hur\") delayed Early's advance for an entire day at the Monocacy River crossing. Although the Union forces were defeated, the delay allowed reinforcements to reach Washington's defenses in time to prevent the capital's capture. The battlefield was established as a national battlefield in 1934 and preserves 1,647 acres of agricultural landscape and historic structures.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-B-2026-10-18",
+  "verifiedBy": "verifier-B-2026-10-18 (30 claims checked; 12 corrections)",
+  "summary": "<p>On July 9, 1864, south of Frederick, Maryland, the third and final Confederate invasion of the North ran into a makeshift Union army at Monocacy Junction, where the road to Washington and the Baltimore and Ohio Railroad crossed the Monocacy River. Gen. Lew Wallace had 6,600 men — 3,200 troops, mostly new or short-term recruits, and 3,400 veterans sent by Grant — against a force under Jubal Early that outnumbered him more than two to one. The heaviest fighting raged across the wheat and corn fields of the Thomas Farm; by evening Wallace was retreating toward Baltimore, leaving some 1,300 men dead, wounded, missing or captured. But Early had lost as many as 900 men and a precious day. When he reached Fort Stevens on July 11, reinforcements from Grant were filing into the capital’s defenses, and on July 12 he turned back to Virginia. Wallace’s troops, the park brochure concludes, had lost the battle but saved Washington. <a href=\"https://npshistory.com/publications/mono/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The battle was fought across farms; the Worthington House, the Best Farm and the Thomas Farm still stand. <a href=\"https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The Worthington family sheltered in their cellar while six-year-old Glenn Worthington watched through a boarded-up window; he later wrote a book, Fighting for Time, urging Congress to establish a national military park. <a href=\"https://npshistory.com/publications/mono/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Congress authorized one on June 21, 1934, but set up no way to buy the land, and most of the battlefield stayed in private hands and was actively farmed. A 1976 act provided for buying the land, and since the 1980s the park has acquired the Best, Thomas, Worthington, Baker and Lewis farms and Gambrill Mill. <a href=\"https://npshistory.com/publications/mono/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The park’s 2015 foundation document counts 52 historic structures, and says L’Hermitage, the Best Farm, holds the intact archeological record of one of the largest known slave village sites in Maryland. <a href=\"https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/mono/index.htm",
+      "title": "NPSHistory.com: Monocacy National Battlefield archive page — overview (NPS brochure text) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/mono/adhi.pdf",
+      "title": "Paula S. Reed & Associates, Monocacy National Battlefield, Frederick, Maryland: An Administrative History (NPS National Capital Region, December 2019)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+      "title": "Foundation Document, Monocacy National Battlefield, Maryland (NPS, 2015)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>American Indians have been present in the Monocacy battlefield area since the earliest human occupation of North America, and occupations spanning more than 10,000 years, from the early Archaic to the late Woodland periods, have been documented on the Best, Thomas and Worthington farms. <a href=\"https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The park’s 2003 cultural landscapes inventory describes Woodland-period villages growing maize, beans and squash, and later Native settlements set in clearings with houses inside palisades. Native groups probably left the Piedmont in the 1630s, and returned or new groups migrated in toward the end of the century; one of the first Europeans to claim land along the river bought a license to it from the Native Americans living at the fork of the Potomac and Monocacy. Native trails became the main north–south routes through the valley; the inventory reports, citing a 1981 study, that by the 1730s only small numbers of Native people remained in the region. <a href=\"https://npshistory.com/publications/mono/cli-battlefield.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+          "title": "Foundation Document, Monocacy National Battlefield, Maryland (NPS, 2015)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/mono/cli-battlefield.pdf",
+          "title": "Cultural Landscapes Inventory: Monocacy National Battlefield (NPS, 2003)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Before it was the Best Farm it was L’Hermitage, established in 1794 by refugees from the slave rebellion in Saint-Domingue (Haiti). <a href=\"https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Victoire Vincendière had arrived in 1793, at 17, with her mother and her cousin Payen Boisneuf. Maryland let refugee households bring up to five personal servants, though planter refugees, the 2019 administrative history says, seem to have ignored or circumvented the law. From 1795 through at least 1810 about 90 people were enslaved on L’Hermitage, housed in quarters set in front of the main house in the French Caribbean pattern. Courts found Boisneuf guilty of cruelly beating an enslaved man named Shadrack and of not sufficiently feeding and clothing the people he held; in 1798 a jury found Pierre Louis, brought from Saint-Domingue as a slave, entitled to his freedom, though the case went on to arbitration. In 1825 Vincendière sold 17 people, among them children aged 1 to 15, to a Louisiana buyer for $2,925. <a href=\"https://npshistory.com/publications/mono/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+          "title": "Foundation Document, Monocacy National Battlefield, Maryland (NPS, 2015)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/mono/adhi.pdf",
+          "title": "Paula S. Reed & Associates, Monocacy National Battlefield, Frederick, Maryland: An Administrative History (NPS National Capital Region, December 2019)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Slavery on the Monocacy farms lasted until Maryland freed all remaining enslaved people in November 1864. In 1860 David Best of the Best Farm sold John, Ann Eliza and Elias Combash — Ann Eliza and Elias, and probably John, children of Dinah, who had been manumitted in 1832 on terms that left her future children enslaved — into terms of service of six to twelve years; the Combash children had been mortgaged twice as collateral for Best’s loans. John Combash was soon resold to a Baltimore man and, in 1863, enlisted in the 1st U.S. Colored Infantry. After freedom some formerly enslaved people stayed on as farm hands and domestics, the 2019 administrative history finds, and some may have moved to free Black communities such as Hope Hill, Sunnyside, Pleasant View and Mt. Ephraim. <a href=\"https://npshistory.com/publications/mono/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/mono/adhi.pdf",
+          "title": "Paula S. Reed & Associates, Monocacy National Battlefield, Frederick, Maryland: An Administrative History (NPS National Capital Region, December 2019)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>The 1934 act authorized $50,000, but the Depression precluded development, and the still-undeveloped battlefield did not benefit directly from the Civilian Conservation Corps and other work programs that improved parks across the nation, the 2019 administrative history finds. In 1940 the Park Service worked up a plan for vantage points linked by a road, and the Park Service’s Conrad Wirth wrote that some of the proposed road work could be done by a side camp from the CCC camp at the Catoctin Recreational Demonstration Project. By October Demaray was hedging: CCC work was only “possible,” the CCC could not build the needed bridge over Bush Creek, and defense spending might keep the Bureau of the Budget from approving the money. During the war Park Service appropriations were drastically curtailed, and Monocacy waited again. <a href=\"https://npshistory.com/publications/mono/adhi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/mono/adhi.pdf",
+          "title": "Paula S. Reed & Associates, Monocacy National Battlefield, Frederick, Maryland: An Administrative History (NPS National Capital Region, December 2019)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "July 9, 1864, south of Frederick, MD; third and final Confederate invasion of the North",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "overview, 'The Battle that Saved Washington, DC'"
+    },
+    {
+      "claim": "Monocacy Junction: Georgetown Pike to Washington and B&O Railroad crossed the Monocacy",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "overview, 'Third Confederate Invasion' para 4"
+    },
+    {
+      "claim": "Wallace assembled 3,200 troops, mostly new or short-term recruits; 3,400 veterans sent by Grant arrived, force 6,600; Early outnumbered Wallace more than two to one",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "overview, 'Third Confederate Invasion' paras 3–5"
+    },
+    {
+      "claim": "Heaviest fighting across the wheat and corn fields of the Thomas Farm; Wallace retreated toward Baltimore leaving some 1,300 men dead, wounded, missing or captured",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "overview, 'The Armies Clash at Monocacy'"
+    },
+    {
+      "claim": "Confederates lost as many as 900 men and a precious day; reached Fort Stevens July 11; Grant's two divisions moving into defenses; July 12 withdrew; 'lost the battle, but they had saved Washington'",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "overview, 'Significance of the Battle'",
+      "interpretive": true
+    },
+    {
+      "claim": "Worthington family sheltered in cellar; six-year-old Glenn Worthington watched through a boarded-up window; later wrote Fighting for Time encouraging Congress to establish a national military park",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "'Worthington House' sidebar"
+    },
+    {
+      "claim": "Glenn Worthington referred to as Judge Worthington; published Fighting for Time in 1932",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "ch. 2, p. 72–73, fn. 218"
+    },
+    {
+      "claim": "Authorized by Congress June 21, 1934; no framework for acquisition or maintenance; most of the battlefield remained private and actively farmed; 1976 act authorized preservation and purchase; since the 1980s acquired the Best, Thomas, Worthington, Baker and Lewis farms and Gambrill Mill",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "Introduction, p. xv"
+    },
+    {
+      "claim": "Monocacy National Military Park June 21, 1934; Monocacy National Battlefield October 21, 1976",
+      "sourceUrl": "https://npshistory.com/publications/mono/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Fifty-two historic structures; L'Hermitage (Best Farm) contains the intact archaeological record of one of the largest known slave village sites in Maryland",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+      "locator": "pp. 5–6, significance statement 5; FRV 'Historic Structures'"
+    },
+    {
+      "claim": "American Indians present since the earliest human occupation of North America; occupations spanning more than 10,000 years, early Archaic to late Woodland, documented at the Best, Thomas and Worthington farms",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+      "locator": "Appendix, 'Prehistory' (excerpted from 2010 GMP/EIS), p. 43"
+    },
+    {
+      "claim": "Woodland Period (500 BC–AD 1600): agriculture with maize, beans and squash, stockading; early-18th-century Native settlements in clearings with houses inside palisades",
+      "sourceUrl": "https://npshistory.com/publications/mono/cli-battlefield.pdf",
+      "locator": "Physical History, '1715 and Before', pp. 31–32"
+    },
+    {
+      "claim": "Native groups probably left the piedmont in the 1630s and returned or new groups migrated in toward the end of the 17th century; an early European purchased a 'Lycence' from Native Americans residing at the fork of the Potomac and Monocacy; by the 1730s only small numbers remained (Kessel 1981); Native trails became primary north–south routes",
+      "sourceUrl": "https://npshistory.com/publications/mono/cli-battlefield.pdf",
+      "locator": "Physical History, '1715 and Before', p. 32"
+    },
+    {
+      "claim": "L'Hermitage established in 1794 by refugees from the Saint-Domingue (Haitian) slave rebellion",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+      "locator": "p. 5, significance statement 5"
+    },
+    {
+      "claim": "Victoire Vincendiere came to Frederick County in 1793 at 17 as a refugee with her mother, cousin Payen Boisneuf and siblings; Maryland allowed refugee households up to five personal servants (single men three); planter refugees seem to have ignored or circumvented the law (general statement, attributed)",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "ch. 1, Enslaved Workers at Monocacy, p. 34, fns. 93–94",
+      "interpretive": true
+    },
+    {
+      "claim": "Enslaved population on the Hermitage around 90 from 1795 through at least 1810; slave housing in front of the main house, French Caribbean pattern (contemporary accounts and archeology)",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "p. 39"
+    },
+    {
+      "claim": "Boisneuf found guilty for cruelly beating his slave Shadrack and for not providing sufficient meat and clothing (Dec 1796 / March 1797 court records)",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "p. 37, fns. 99–105"
+    },
+    {
+      "claim": "Pierre Louis, declared by Boisneuf in 1793, sued for freedom; March 31, 1798 jury verdict entitled to freedom (case continued on appeal for arbitration; he appears to have eventually gained his freedom)",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "pp. 37–38, fns. 101, 106–108"
+    },
+    {
+      "claim": "June 13, 1825 Vincendiere sold to Nicholas Wilson of Iberville Parish, Louisiana, 17 slaves for life (ages listed include 1 to 15 among others); price $2,925",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "pp. 38–39, fn. 112"
+    },
+    {
+      "claim": "By November 1864 any remaining enslaved persons freed according to Maryland law",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "p. 40"
+    },
+    {
+      "claim": "1860 David Best sold John N. Combash (to serve until 1866), Ann Eliza (until 1868) and Elias (until 1872) to John Sinn; Ann Eliza and Elias, and probably John, children of Dinah, manumitted 1832 but future children enslaved; Combash children mortgaged twice (1842, 1846); freedom came in 1864",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "pp. 41–42, fns. 116–121"
+    },
+    {
+      "claim": "John Combash soon sold to Moses Hinde of Baltimore; in 1863 joined the USCT 1st Infantry, Co. F",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "p. 41, fn. 116"
+    },
+    {
+      "claim": "Some formerly enslaved remained as farm hands and domestics; some may have moved to communities of free African Americans such as Hope Hill, Sunnyside, Pleasant View and Mt. Ephraim",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "p. 41",
+      "interpretive": true
+    },
+    {
+      "claim": "1934 act authorized $50,000; Depression precluded development; still undeveloped, the battlefield did not benefit directly from the CCC/WPA programs",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "ch. 3, pp. 73–74"
+    },
+    {
+      "claim": "1940: plan for vantage points and connecting road; Wirth (April 1940): some proposed road work 'can be done by a side camp from the CCC camp at the Catoctin Recreational Demonstration Project'; October 1940 Demaray hedged: CCC involvement 'possible', CCC cannot be used for the Bush Creek bridge; national defense expenditures might deter Budget Bureau; WWII drastically curtailed NPS appropriations",
+      "sourceUrl": "https://npshistory.com/publications/mono/adhi.pdf",
+      "locator": "ch. 3, pp. 86–88, fns. 251, 258–261"
+    },
+    {
+      "claim": "Worthington House, Best Farm (L'Hermitage) and Thomas Farm were important landmarks on the battlefield that still stand today",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/mono-fd-2015.pdf",
+      "locator": "FRV 'Historic Structures'"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/mono/worthington-house.jpg",
+      "caption": "The Worthington House, one of the most iconic locations on the battlefield",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/mono/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C80BC8B-1DD8-B71B-0B7C449D99556A3F.jpg",
+      "evidenceUrl": "https://www.nps.gov/mono/index.htm",
+      "capturedAt": "2026-10-18",
+      "note": "On-page caption: \"The Worthington House is one of the most iconic locations on the battlefield. NPS Photo\". Contemporary park photograph; original 750x503 re-encoded.",
+      "width": 750,
+      "height": 503,
+      "bytes": 200864
+    },
+    {
+      "file": "images/history/mono/best-farm-secondary-house.jpg",
+      "caption": "The Secondary House on the Best Farm, built in the 1790s and one of the first structures in the park",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/mono/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C80C0D1-1DD8-B71B-0B447286D8182A2A.jpg",
+      "evidenceUrl": "https://www.nps.gov/mono/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "slavery",
+      "note": "On-page caption: \"Built in the 1790s this house was one of the first structures in the park. NPS Photo\"; alt text identifies it as \"the historic Secondary House on the Best Farm\". Placed in the slavery section, which describes L'Hermitage (the Best Farm). Resized from 3072x2304.",
+      "width": 1400,
+      "height": 1050,
+      "bytes": 124811
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/mono/index.htm",
     "adhiUrl": "https://npshistory.com/publications/mono/adhi.pdf",

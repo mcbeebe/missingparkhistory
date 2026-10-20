@@ -1,16 +1,220 @@
 {
   "code": "SARI",
   "name": "Salt River Bay National Historical Park and Ecological Preserve",
-  "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Salt River Bay National Historical Park and Ecological Preserve on the island of St. Croix in the U.S. Virgin Islands is the only known site where members of a Columbus expedition set foot on what is now U.S. territory. On November 14, 1493, during Columbus's second voyage, a landing party encountered the Kalinago (Carib) people in Salt River Bay — the encounter turned violent and is considered the first documented armed conflict between Europeans and Native Americans. The site also preserves a ceremonial ball court and village site of the Taino people, who inhabited the island before European contact. Established as a national historical park in 1992, Salt River Bay protects one of the largest remaining mangrove forests in the Virgin Islands and a rich marine ecosystem including coral reefs, seagrass beds, and a submarine canyon.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "entries": [
+    "428"
+  ],
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-A-2026-10-18",
+  "verifiedBy": "verifier-A-2026-10-18 (44 claims checked; 13 corrections)",
+  "summary": "<p>On the north coast of St. Croix, an upland watershed drains into Salt River Bay, a bay fringed with some of the largest mangrove forests left in the Virgin Islands and with coral reefs, opening onto a submarine canyon as deep as 350 feet, carved by an ancestral river 30,000 years ago when the sea stood 300 feet lower. Beyond it the seafloor falls away into the Virgin Islands Trough. The bay’s waters were designated a National Natural Landmark in 1980 and are home to 27 species listed as rare, threatened or endangered. <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Congress created the 1,015-acre park on February 24, 1992, to be managed jointly by the National Park Service and the Government of the Virgin Islands. Its foundation document calls it a confirmed site where members of Columbus’s second voyage landed on what is now U.S. territory in 1493, and the scene of the earliest recorded armed resistance by Amerindians to European colonization. Fort Salé, first built in 1641 to guard the inlet, is in its words one of the earliest and few surviving European earthen fortifications in the New World. <a href=\"https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s own account is that every major period of human habitation in the Virgin Islands is represented here, from several South American Indian cultures, among them the Taíno and Island Caribs, through the 1493 encounter, European colonization and enslaved West Africans and their descendants, a story revealed by more than a dozen major archeological investigations since 1880 and by historical research. <a href=\"https://www.nps.gov/sari/learn/historyculture/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/sari/index.htm",
+      "title": "NPSHistory.com: Salt River Bay NHP & Ecological Preserve archive page — overview (from the 2006 NPS brochure) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf",
+      "title": "NPS, Foundation Document, Salt River Bay National Historical Park and Ecological Preserve (2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://www.nps.gov/sari/learn/historyculture/index.htm",
+      "title": "NPS, Salt River Bay NHP & EP, History & Culture (nps.gov, last updated May 17, 2022)",
+      "type": "nps"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>South American hunter-gatherers reached the Virgin Islands about 4,500 years ago, the 2006 brochure says; by 2,000 years ago the first of three pottery-making peoples lived at Salt River Bay, and after 700 the Taíno gradually absorbed the Igneri. Their ball court, unearthed in 1923, is the only one known in the Lesser Antilles, the brochure says. The Taíno called the island Ay; the Kalinago (the brochure’s Caribs) called it Cibuqueira. <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/sari/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On November 14, 1493, over twenty armed men from Columbus’s fleet visited a Kalinago village and seized enslaved Taíno women and children they claimed to have liberated, then fought villagers in a canoe; each side lost a man, and Columbus named the place Cape of the Arrows. The brochure reports a 1512 Spanish royal decree ordering the extermination of St. Croix’s Caribs, and disease helping depopulate the island by 1590; the park’s website now calls this the Spanish capture and removal of Amerindian peoples. <a href=\"https://npshistory.com/publications/sari/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://www.nps.gov/sari/learn/historyculture/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sari/index.htm",
+          "title": "NPSHistory.com: Salt River Bay NHP & Ecological Preserve archive page — overview (from the 2006 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sari/cli-2021.pdf",
+          "title": "NPS, Cultural Landscapes Inventory: Salt River Bay National Historical Park and Ecological Preserve (2021)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://www.nps.gov/sari/learn/historyculture/index.htm",
+          "title": "NPS, Salt River Bay NHP & EP, History & Culture (nps.gov, last updated May 17, 2022)",
+          "type": "nps"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Denmark ruled St. Croix from 1733 to 1917 and made it a major sugar-producing island; the Danish West Indies Company built sugar and cotton plantations and a trade that included enslaved people transported from West Africa. Colonists cleared the dense forest around the bay for cotton, tobacco and sugar, and the Danish period left at least six sugar plantations in the Salt River Bay area. A brick and coral-block well tower, built about 1780–1800 for Estate Morningstar, used wind to draw water to irrigate the estate’s crop lands. In 1788 the Danes built a customs post to stop sugar, molasses and rum being smuggled out through the bay. <a href=\"https://npshistory.com/publications/sari/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Across St. Croix, enslaved people made up more than 90 percent of the population before 1800, and in 1812, the peak year, 175 sugar plantations held 26,000 enslaved people, according to a 2012 Park Service plan for nearby Buck Island; emancipation came in 1848. <a href=\"https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sari/cli-2021.pdf",
+          "title": "NPS, Cultural Landscapes Inventory: Salt River Bay National Historical Park and Ecological Preserve (2021)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sari/index.htm",
+          "title": "NPSHistory.com: Salt River Bay NHP & Ecological Preserve archive page — overview (from the 2006 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+          "title": "NPS, Draft General Management Plan/EIS, Buck Island Reef National Monument (March 2012), ch. 3 St. Croix history, pp. 3-51–3-52",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "climate": {
+      "html": "<p>Salt River ran year-round when Columbus anchored here; it now flows only after heavy or sustained rain, which the brochure attributes to centuries of land use and regional climatic change. The bay’s mangroves are still recovering from Hurricane Hugo in 1989, and the 2021 landscape inventory lists sea-level rise, coastal erosion and hurricanes among the natural stressors on them; Hurricane Maria damaged park buildings in 2017. The 2015 foundation document projects sea level at the park rising 0.33 to 1.57 feet by 2050 and 0.59 to 4.92 feet by 2100, which, with stronger storms, could threaten the park’s archeological and historic sites. <a href=\"https://npshistory.com/publications/sari/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/sari/cli-2021.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[n]</a> <a href=\"https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/sari/index.htm",
+          "title": "NPSHistory.com: Salt River Bay NHP & Ecological Preserve archive page — overview (from the 2006 NPS brochure) and establishment block",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/sari/cli-2021.pdf",
+          "title": "NPS, Cultural Landscapes Inventory: Salt River Bay National Historical Park and Ecological Preserve (2021)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf",
+          "title": "NPS, Foundation Document, Salt River Bay National Historical Park and Ecological Preserve (2015)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "Upland watershed feeds a bay fringed with mangroves and coral reefs; some of the largest remaining mangrove forests in the Virgin Islands; undersea canyon as deep as 350 feet carved by an ancestral river 30,000 years ago when sea level was 300 feet lower; Virgin Islands Trough; water acreage a National Natural Landmark (1980), 27 rare/threatened/endangered species",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: A Living Museum; Where the Sea Meets the Land (2006 brochure)"
+    },
+    {
+      "claim": "Established February 24, 1992 by P.L. 102-247; co-management with Government of the Virgin Islands; 1,015 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf",
+      "locator": "Brief Description of the Park, PDF p. 7"
+    },
+    {
+      "claim": "Confirmed site where members of Columbus’s second voyage (1493) landed on what is now U.S. territory; earliest recorded armed resistance by Amerindians to European colonization; guarding the inlet, Fort Salé first constructed 1641, one of the earliest and few surviving European earthen fortifications in the New World",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf",
+      "locator": "Park Significance, PDF p. 9",
+      "interpretive": true
+    },
+    {
+      "claim": "Every major period of human habitation in the Virgin Islands represented: South American Indian cultures incl. Taino and Island Caribs, 1493 encounter, Spanish capture and removal of the island’s Amerindian peoples, European colonization, enslaved West Africans and descendants; over a dozen major archeological investigations since 1880",
+      "sourceUrl": "https://www.nps.gov/sari/learn/historyculture/index.htm",
+      "locator": "page text, paragraph 1",
+      "interpretive": true
+    },
+    {
+      "claim": "Hunter-gatherers from South America to the Virgin Islands 4,500 years ago; by 2,000 years ago first of three pottery-making peoples at Salt River Bay; Igneri until 700, then Taino gradually absorbed them; Caribs conquered and enslaved the Taino about 1425",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: Igneri, Taino, and Carib Peoples (2006 brochure)"
+    },
+    {
+      "claim": "Ball court unearthed 1923, only such court known in the Lesser Antilles; FD 2015 likewise: only known ceremonial stone-lined ballcourt/plaza in the Lesser Antilles (FD Park Significance, PDF p. 9); CLI 2021: stone-lined ball court with petroglyphs",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: Ceremonial Ball Court"
+    },
+    {
+      "claim": "Taino name Ay; Kalinago name Cibuqueira",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Summary, p. 2 (PDF p. 6)"
+    },
+    {
+      "claim": "November 14, 1493: boat with more than twenty armed men visited a Kalinago village; captured several enslaved Taino women and children they claimed to have liberated; skirmish with canoe of armed villagers, a fatality on each side; named Cabo de las Flechas (Cape of the Arrows)",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Summary, p. 3 (PDF p. 7)"
+    },
+    {
+      "claim": "Spanish royal decree in 1512 ordering extermination of the Caribs on St. Croix; diseases contributed to depopulation of the island by 1590",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: Igneri, Taino, and Carib Peoples (2006 brochure)"
+    },
+    {
+      "claim": "Denmark ruled St. Croix 1733–1917, major sugar-producing island; Danes built a customs post in 1788 to thwart smuggling of sugar, molasses and rum",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: European Struggles for Control"
+    },
+    {
+      "claim": "Danish West Indies Company (1733) established sugar and cotton plantations and a center of trade that included enslaved people transported from West Africa",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Regional Landscape Context, p. 41 (PDF p. 45)"
+    },
+    {
+      "claim": "At least six sugar plantations in the Salt River Bay area during the Danish colonial period (Barnes NHL documentation, 1996, quoted)",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Statement of Significance, p. 47 (PDF p. 51)"
+    },
+    {
+      "claim": "Landscape covered with dense forest at European contact; colonists removed forest for cotton, tobacco and sugar",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Vegetation, PDF p. 61"
+    },
+    {
+      "claim": "Danish Well Tower: stone, Danish yellow brick and coral block, constructed circa 1780–1800, wind-operated water-drawing structure associated with Estate Morningstar; drew water to irrigate crop lands and support the sugar plantation",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Summary, p. 4 (PDF p. 8); Land Use (PDF p. 125)"
+    },
+    {
+      "claim": "St. Croix: slaves over 90 percent of population before 1800; 1812 peak year 175 sugar plantations with 26,000 slaves; emancipation 1848",
+      "sourceUrl": "https://npshistory.com/publications/buis/draft-gmp-eis-2012.pdf",
+      "locator": "ch. 3, History: The Virgin Islands, p. 3-51 (PDF p. 152)"
+    },
+    {
+      "claim": "Salt River year-round in 1493, intermittent now because of centuries of land use and regional climatic change",
+      "sourceUrl": "https://npshistory.com/publications/sari/index.htm",
+      "locator": "overview: Where the Sea Meets the Land",
+      "interpretive": true
+    },
+    {
+      "claim": "Mangroves continue to recover from Hurricane Hugo (1989); natural stressors include sea-level rise, coastal erosion, hypersalinity and hurricanes; visitor contact station damaged by Hurricane Maria (Sept. 2017); a sign destroyed in Irma and Maria",
+      "sourceUrl": "https://npshistory.com/publications/sari/cli-2021.pdf",
+      "locator": "Mangrove, PDF p. 62; Summary pp. 4–5 (PDF pp. 8–9)"
+    },
+    {
+      "claim": "Sea level projected to rise 0.33 to 1.57 ft by 2050 and 0.59 to 4.92 ft by 2100; with projected storm intensity could threaten archeological and historic resources",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/sari-fd-2015.pdf",
+      "locator": "Archeological and Historic Resources FRV, Threats, PDF p. 16"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/sari/salt-river-bay-aerial.jpg",
+      "caption": "An aerial view of the Salt River Bay area",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sari/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/D0F89B5B-1DD8-B71B-0B5DE91ED465970E.jpg",
+      "evidenceUrl": "https://www.nps.gov/sari/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1200,
+      "height": 1075,
+      "note": "Homepage header gallery figcaption: \"An aerial view of the Salt River Bay area.\" credit span \"NPS Photo\". Resized from 2100x1882.",
+      "bytes": 195095
+    },
+    {
+      "file": "images/history/sari/well-tower.jpg",
+      "caption": "Brick and coral block masonry well tower that used wind power to move water from Salt River to neighboring plantation estates",
+      "credit": "NPS photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/sari/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/D17B78F2-1DD8-B71B-0B5DD6FEDBAD5A65.jpg",
+      "evidenceUrl": "https://www.nps.gov/sari/index.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "slavery",
+      "width": 996,
+      "height": 1200,
+      "note": "Homepage header gallery figcaption: \"This brick and coral block masonry tower, built in the 1790s, used the power of wind to move water from Salt River to neighboring plantation estates.\" credit span \"NPS photo.\" (The 2021 CLI dates the tower circa 1780–1800, so the caption omits the decade.) Resized from 2932x3530.",
+      "bytes": 220799
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/sari/index.htm",
     "adhiUrl": null,

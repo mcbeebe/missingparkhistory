@@ -2,15 +2,243 @@
   "code": "GUCO",
   "name": "Guilford Courthouse National Military Park",
   "entries": [],
-  "reviewStatus": "draft",
-  "lastReviewed": "2026-10-07",
-  "author": "",
-  "verifiedBy": "",
-  "summary": "",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-B-2026-10-18",
+  "verifiedBy": "verifier-B-2026-10-18 (27 claims checked; 7 corrections)",
+  "summary": "<p>On the clear, cold morning of March 15, 1781, some 4,400 American troops waited in the damp woods west of Guilford Courthouse, the hub of an isolated farming community on the main road through North Carolina. Nathanael Greene had chosen the ground: a line of North Carolina militia behind a rail fence at the edge of cornfields, Virginia militia in the forest behind them, and his Continentals on an open hill before the courthouse. Charles, Earl Cornwallis’s regiments came into sight about 12:30, and after more than two hours of fighting, much of it in tangled woods, Greene withdrew. The British held the field, but their losses were overwhelming; within days Cornwallis was retreating toward Wilmington, and seven months later he surrendered at Yorktown. <a href=\"https://npshistory.com/publications/guco/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The park’s 2014 foundation document calls the battle one of the most intense engagements of the Revolutionary War, so costly to the British that Cornwallis changed his whole southern strategy. The county courthouse that gave the battle its name was built in 1775 near the Great Salisbury Wagon Road; George Washington visited in 1791, the county seat moved six miles south in 1808, and nothing remains of the building or of the town later named Martinville. The 2015 ethnographic overview reports sound archaeological evidence for the first and second battle lines, but the courthouse’s location remains hypothetical. <a href=\"https://npshistory.com/publications/guco/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/guco-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Judge David Schenck and the Guilford Battle Ground Company began preserving the field in 1887, raising monuments and marking locations. Congress established the national military park on March 2, 1917 — the first Revolutionary War battlefield protected by the federal government, the foundation document notes. It protects about 250 of the roughly 1,000 acres of the battlefield, in what is now the northern part of Greensboro. <a href=\"https://npshistory.com/publications/guco/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/foundation-documents/guco-fd-2014.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/guco/index.htm",
+      "title": "NPSHistory.com: Guilford Courthouse National Military Park archive page — overview (NPS brochure text, 2012) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/guco-fd-2014.pdf",
+      "title": "Foundation Document, Guilford Courthouse National Military Park, North Carolina (NPS, 2014)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "title": "Griffith et al., An Ethnographic Overview of the Guilford Courthouse National Military Park (East Carolina University for NPS, January 28, 2015)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>When the English first explored the North Carolina backcountry in the late 1600s, the Great Trading Path, or Occaneechi Path, was one of many Native American trails — not a single path but a braided network linking the many small villages of the Piedmont. That network laid the groundwork for colonial towns, and the road through the battlefield, now New Garden Road, probably grew from an existing trade path between Salisbury and Hillsborough, the park’s 2017 historic resource study finds. <a href=\"https://npshistory.com/publications/guco/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The 2015 ethnographic overview notes that the most recent archaeological overview (Prentice, 2014) recommends more survey and excavation to determine Native American prehistoric occupation of the site, and that its researchers tried without success to interview Native Americans for the study. <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/guco/hrs.pdf",
+          "title": "Historic Resource Study, Guilford Courthouse National Military Park (The Jaeger Company for NPS, 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/guco/eo-2015.pdf",
+          "title": "Griffith et al., An Ethnographic Overview of the Guilford Courthouse National Military Park (East Carolina University for NPS, January 28, 2015)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>Small farms, not large plantations, dominated Guilford County, the 2015 ethnographic overview reports. In the 1790 census, 180 of its 1,188 households (15 percent) held people in bondage, against 55 percent in New Hanover County on the Lower Cape Fear; nearly 40 percent of Guilford’s slaveholding households enslaved one person, though some held nearly 30. David Caldwell, the Presbyterian preacher honored with a statue in the park, was listed as enslaving eight. <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Local Quakers often recount the boy Levi Coffin confronting the elderly Caldwell over his plan to send an enslaved woman away from her husband and children as a gift to his son; in the version a Quaker historian gave the 2015 ethnographic overview, the family hid in the New Garden woods, Coffin walked five miles to Caldwell’s farm, and Caldwell relented. Quakers interviewed for the study described Greensboro as the southernmost point of the Underground Railroad. <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/guco/eo-2015.pdf",
+          "title": "Griffith et al., An Ethnographic Overview of the Guilford Courthouse National Military Park (East Carolina University for NPS, January 28, 2015)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>African Americans took part on both sides of the battle, and the park’s interpretive materials have discussed their role since the 1970s, the 2015 ethnographic overview reports — but no monument marks it. Of the park’s 28 monuments, 26 commemorate white men. The park film portrays two Black soldiers, one fighting for the British and one, Ned Griffin, for the Americans, though the overview notes recent documentary evidence that Griffin enlisted after the battle. Most of the nine African Americans interviewed for the study said the park does not do enough to profile African American contributions to the Revolution, which, they noted, promised equality but left slavery intact. <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/guco/eo-2015.pdf",
+          "title": "Griffith et al., An Ethnographic Overview of the Guilford Courthouse National Military Park (East Carolina University for NPS, January 28, 2015)",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "women": {
+      "html": "<p>Of the park’s 28 monuments, the two to women honor Kerrenhappuch Norman Turner and Martha McFarland McGhee Bell. The Guilford Battle Ground Company raised Turner’s statue in 1902, its first to a woman; by oral tradition she rode on horseback to her badly wounded son after the battle and nursed him back to health, and the statue shows her holding a cup of water and a towel. Company president Joseph M. Morehead, her descendant, claimed it as the first monument to a Revolutionary heroine erected in the United States. Bell’s monument came in 1929, raised by a Daughters of the American Revolution chapter. <a href=\"https://npshistory.com/publications/guco/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> The 2015 ethnographic overview recounts that Bell, a widow, ran her late husband’s mill and trading business, and that Cornwallis occupied her farm and mill after the battle. Quaker women, it adds, tended the wounded of both armies. <a href=\"https://npshistory.com/publications/guco/eo-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/guco/hrs.pdf",
+          "title": "Historic Resource Study, Guilford Courthouse National Military Park (The Jaeger Company for NPS, 2017)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/guco/eo-2015.pdf",
+          "title": "Griffith et al., An Ethnographic Overview of the Guilford Courthouse National Military Park (East Carolina University for NPS, January 28, 2015)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "March 15, 1781 clear and cold; damp woods west of Guilford Courthouse, hub of an isolated little farming community on the main road through North Carolina; some 4,400 American troops",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "overview, paras 1–2"
+    },
+    {
+      "claim": "Greene chose the ground; first line NC militia behind rail fence at cornfields; Virginia militia second line in woods; Continentals on open hill in front of courthouse",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "overview, 'The courthouse at Guilford stood…' paragraph"
+    },
+    {
+      "claim": "British marched into sight about 12:30; engagement lasted over two hours; fighting in heavy underbrush; Greene ordered disengagement",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "overview, para 2; 'A British Victory Dearly Bought'"
+    },
+    {
+      "claim": "Greene's losses relatively light, Cornwallis's overwhelming; a few days later Cornwallis began retreat toward Wilmington; surrendered at Yorktown October 19, 1781, seven months after Guilford",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "overview, final battle paragraphs"
+    },
+    {
+      "claim": "One of the most intense engagements of the Revolutionary War, so costly that Cornwallis changed his whole southern strategy (FD significance statement)",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guco-fd-2014.pdf",
+      "locator": "p. 5, significance statement 1",
+      "interpretive": true
+    },
+    {
+      "claim": "First county courthouse built in 1775 near the Great Salisbury Wagon Road; Washington visited 1791; decision in 1808 to move county seat six miles south; nothing remains of the building or the town later named Martinville",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "tour stop 6, 'Guilford Courthouse and the Third Line'"
+    },
+    {
+      "claim": "Sound evidence for first and second battle lines; location of Guilford Courthouse remains hypothetical (EO 2015, attributed in text)",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "ch. 1/2 archaeology summary, p. 33; Executive Summary item 5, p. 8"
+    },
+    {
+      "claim": "In 1887 David Schenck and the Guilford Battle Ground Company began preserving the battlefield, built memorials and marked locations",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "tour stop 5, 'Battlefield Preservation'"
+    },
+    {
+      "claim": "Enabling legislation signed March 2, 1917; first Revolutionary War battlefield protected by the federal government (FD significance statement 5, attributed); 250 of approximately 1,000 acres",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/guco-fd-2014.pdf",
+      "locator": "pp. 3–5, park description, purpose, significance statement 5"
+    },
+    {
+      "claim": "Park located in the northern part of Greensboro (surrounded by the city — paraphrase; brochure: six miles north of downtown Greensboro)",
+      "sourceUrl": "https://npshistory.com/publications/guco/index.htm",
+      "locator": "'Getting Here'; EO Executive Summary p. 4"
+    },
+    {
+      "claim": "Great Trading Path / Occaneechi Path one of many Native American trails when English explored the backcountry in the late 1600s; braided network of paths linking small villages across the Piedmont; network of Indian paths laid groundwork for towns; Great Salisbury Road probably established from an existing trade path between Salisbury and Hillsborough",
+      "sourceUrl": "https://npshistory.com/publications/guco/hrs.pdf",
+      "locator": "ch. 2, Colonial Roads and Early Settlement, pp. 21–22, fns. 1–8"
+    },
+    {
+      "claim": "Prentice (2014) recommends more archaeological survey and excavation to determine Native American prehistoric occupation of the site",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "p. 33"
+    },
+    {
+      "claim": "Researchers attempted to contact Native Americans without luck; single Native American organization in Guilford County would not be interviewed",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "p. 113, note 24"
+    },
+    {
+      "claim": "1790 census: 180 of 1,188 Guilford County households (15.15%) enslaved people vs 55% in New Hanover; nearly 40% of enslaving households enslaved only one; some nearly 30; David Caldwell (statue in the park) listed as enslaving eight",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "ch. 1, p. 19"
+    },
+    {
+      "claim": "Quaker story (told by a local Quaker historian) of young Levi Coffin confronting the elderly David Caldwell over sending an enslaved woman as a gift to his son, breaking up her family; family hid in New Garden woods; Coffin walked five miles; Caldwell relented",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "ch. 3, pp. 59–60",
+      "interpretive": true
+    },
+    {
+      "claim": "According to Quakers interviewed, Greensboro was the southernmost point of the Underground Railroad",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "p. 60",
+      "interpretive": true
+    },
+    {
+      "claim": "Park interpretive materials have included the role of African Americans in the battle since the 1970s; no monument; 26 of 28 monuments commemorate white men, two white women",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary items 8 and 10, pp. 8–9"
+    },
+    {
+      "claim": "Park video Another Such Victory portrays two African Americans, one for the British and Ned Griffin for the Americans; recent documentary evidence suggests Griffin enlisted after the battle",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary item 9, p. 9"
+    },
+    {
+      "claim": "Majority of nine African Americans interviewed believe the park does not do enough to profile African American contributions; Revolution promised equality but left slavery intact",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary item 8, p. 8",
+      "interpretive": true
+    },
+    {
+      "claim": "1902: GBGC's first monument honoring a woman, Mrs. Kerrenhappuch Norman Turner; oral tradition she rode on horseback to her gravely injured son and nursed him; statue holds a cup of water and a towel; sponsored by the Moreheads, her descendants; Joseph M. Morehead claimed first monument to a Revolutionary heroine in the U.S.",
+      "sourceUrl": "https://npshistory.com/publications/guco/hrs.pdf",
+      "locator": "ch. 3, Monuments Honoring Women, pp. 73–74, fns. 107–108",
+      "interpretive": true
+    },
+    {
+      "claim": "1929: Alexander Martin Chapter DAR (High Point) erected a monument to Martha McFarland McGhee Bell during War Department management",
+      "sourceUrl": "https://npshistory.com/publications/guco/hrs.pdf",
+      "locator": "p. 73"
+    },
+    {
+      "claim": "Martha Bell a widow who took over her late husband's grist mill and trading business; Cornwallis occupied her farm and mill after the battle",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary item 10, pp. 9–10"
+    },
+    {
+      "claim": "Quakers participated in treating the wounded; Quaker women tended the wounded of both armies (New Garden)",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary item 11, p. 10; ch. 3, p. 60"
+    },
+    {
+      "claim": "Small farms dominated Guilford County, unlike the larger plantations of eastern NC",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "Executive Summary item 9, p. 9"
+    },
+    {
+      "claim": "The park film accurately depicts that African Americans participated on both sides of the battle",
+      "sourceUrl": "https://npshistory.com/publications/guco/eo-2015.pdf",
+      "locator": "ch. 2, p. 50"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/guco/new-garden-road.jpg",
+      "caption": "The historic New Garden Road, a colonial highway and the location of the artillery during the Battle of Guilford Courthouse",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/guco/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/F66087A6-0A7E-1630-1074B30166FC2711.jpg",
+      "evidenceUrl": "https://www.nps.gov/guco/index.htm",
+      "capturedAt": "2026-10-18",
+      "note": "On-page caption: \"The Historic New Garden Road was a colonial highway and the location of the artillery during the Battle of Guilford Courthouse NPS Photo\". Contemporary park photograph. Resized from 960x1280.",
+      "width": 825,
+      "height": 1100,
+      "bytes": 235755
+    },
+    {
+      "file": "images/history/guco/greene-monument.jpg",
+      "caption": "The General Greene Monument, a focal point of commemoration on the battlefield",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/guco/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/F649327B-9F59-A88D-E8A82709DC7B2970.jpg",
+      "evidenceUrl": "https://www.nps.gov/guco/index.htm",
+      "capturedAt": "2026-10-18",
+      "note": "On-page caption: \"The General Greene Monument is a focal point of commemoration on the battlefield NPS Photo\". Contemporary park photograph; re-encoded at original 960x640.",
+      "width": 960,
+      "height": 640,
+      "bytes": 212256
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/guco/index.htm",
     "adhiUrl": "https://npshistory.com/publications/guco/adhi.pdf",

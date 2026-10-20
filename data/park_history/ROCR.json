@@ -2,15 +2,218 @@
   "code": "ROCR",
   "name": "Rock Creek Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>Rock Creek Park in Washington, D.C., is one of the largest and oldest urban parks in the United States. Established by an act of Congress in 1890 — just two years after Yellowstone — the park preserves nearly 1,800 acres of forested valley along Rock Creek and its tributaries in the heart of the nation's capital. The park was created to protect the creek's watershed and provide a natural retreat for city residents during the rapid urbanization of late 19th-century Washington. Rock Creek Park includes the Civil War-era Fort DeRussy, Peirce Mill (a 19th-century grist mill), and significant archaeological sites with evidence of Native American habitation dating back thousands of years. The park's forests, trails, and Nature Center make it a vital green space in one of the country's most densely developed metropolitan areas.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-C-2026-10-18",
+  "verifiedBy": "verifier-C-2026-10-18 (44 claims checked; 6 corrections)",
+  "summary": "<p>Rock Creek Park follows a 9.6-mile stretch of Rock Creek from the Maryland line to the National Zoo, a forested valley of deciduous woods, meadows, wetlands and floodplains inside the capital where 180 species of birds have been recorded. Congress established it on September 27, 1890, as a public park or “pleasure ground” whose timber, animals and curiosities were to be kept as nearly as possible in their natural condition; the 2015 foundation document calls it one of the first federal park units and, among them, unique for lying beside a city. Today the park administers 2,749 acres in 99 areas, among them the Rock Creek and Potomac Parkway, the Old Stone House, Meridian Hill Park and nine of the Civil War Defenses of Washington, including Fort Stevens. <a href=\"https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/rocr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Peirce Mill, rebuilt in 1820 by Isaac Peirce and his stonemason son Abner with granite quarried nearby, was the last of eight mills in the valley; its main shaft broke in 1897, ending the milling there. Two years after the park was created the government condemned the mill property, and in 1934 Interior Secretary Harold Ickes proposed restoring it as part of the Depression-era improvements to the park. <a href=\"https://npshistory.com/publications/rocr/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "title": "Foundation Document, Rock Creek Park, District of Columbia (NPS, 2015)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/rocr/index.htm",
+      "title": "NPSHistory.com: Rock Creek Park archive page — NPS brochure texts (park brochure, undated; Peirce Mill brochure) and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>William Bushong’s 1990 historic resource study says human occupation of what is now the District probably dates back 10,000 to 20,000 years; fluted spear points found in Anacostia and northwest Washington have been dated to between 9,000 and 9,500 B.C. Inside the park, the Piney Branch quartzite quarry was, archeologists interpret, a work site for extracting stone for tools and weapons between about 3,000 and 1,100 B.C.; the foundation document notes that it supplied important evidence in the debate over the history of human presence in the Americas. Park Service archeologists found two more sites along Rock Creek in 1985, hunting base camps where people processed meat and nuts, worked hides and made stone tools. Nearby, on the Anacostia’s east bank, lived the Nacostins (anglicized as Anacostians); when the English trader Henry Fleet sought a Potomac fur monopoly in the early 1630s, Bushong writes, they were already the middlemen in the beaver trade with interior tribes. <a href=\"https://npshistory.com/publications/rocr/hrs-1990.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+          "title": "William Bushong, Historic Resource Study: Rock Creek Park (NPS, August 1990), ch. 1, pp. 7–12",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+          "title": "Foundation Document, Rock Creek Park (NPS, 2015), Brief Description",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "slavery": {
+      "html": "<p>The Peirce family, who built Peirce Mill, held people in slavery. Bushong’s historic resource study, which spells the name Pierce, reads Isaac Pierce’s wealth in the census: the 1820 count, Bushong suggests, shows two enslaved families who worked as house servants, mill workers and field hands, and by 1840, a year before his death, he enslaved fourteen people, many of them children. His son Abner, who inherited the farm in 1842, also held enslaved people; the 1850 census Bushong cites lists nine children among them. Abner’s nephew Pierce Shoemaker, the next owner, held twenty people in slavery before Congress abolished slavery in the District of Columbia on April 16, 1862. <a href=\"https://npshistory.com/publications/rocr/hrs-1990.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+          "title": "Bushong, Historic Resource Study: Rock Creek Park (NPS, 1990), pp. 28–29",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "black": {
+      "html": "<p>Meridian Hill Park, an 11.88-acre park managed by Rock Creek Park and colloquially called Malcolm X Park, sits on land with a long Black history. Elise Elder’s 2019 Park Service study reports that during the Civil War the Union Army’s Camp Cameron there offered food, shelter and work to freedmen and people escaping slavery, and that a Black community grew up afterward along today’s 15th Street. When the government acquired the land for the park, most of those homes were condemned, and by 1912 all of the residents had been forced to move; Black laborers were then hired to build the park. In the 1960s Black activist groups held rallies there, and after Malcolm X was assassinated in 1965 Black Washingtonians began a drum circle in his memory that the study, in 2019, called a weekend fixture ever since. <a href=\"https://npshistory.com/publications/rocr/srs-mehi.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[4]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/rocr/srs-mehi.pdf",
+          "title": "Elise Elder, Meridian Hill Park — African American Experiences Since the Civil War: A Special Resource Study (NPS National Capital Region with the Organization of American Historians, September 2019), Executive Summary, pp. 1–4",
+          "type": "npshistory"
+        }
+      ]
+    },
+    "labor_ccc": {
+      "html": "<p>Bushong calls the 1930s an important transitional decade for the park. Between 1934 and 1938, Public Works Administration grants paid for new bridges and buildings, the restoration of Peirce Mill, the completion of Piney Branch Parkway and the paving of park roads; in May 1934 an average of 136 laborers and 3 stonemasons a day were building the parkway and its retaining walls. Civilian Conservation Corps crews riprapped the creek, planted trees, built two miles of bridle trails and demolished the old Brightwood Reservoir. In September 1938 a CCC camp, NP-14, opened just north of Fort DeRussy with 154 enrollees; it closed when the program ended in 1942. <a href=\"https://npshistory.com/publications/rocr/hrs-1990.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+          "title": "Bushong, Historic Resource Study: Rock Creek Park (NPS, 1990), New Deal chapter, pp. 133–144",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "9.6-mile segment of Rock Creek; Maryland line to the National Zoo; deciduous forests, meadows, wetlands, floodplains; 180 species of birds",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "locator": "Brief Description of Rock Creek Park and Associated Sites, p. 4"
+    },
+    {
+      "claim": "Enabling legislation: 'public park or pleasure ground'; timber, animals and curiosities in natural condition as nearly as possible",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "locator": "p. 4"
+    },
+    {
+      "claim": "One of the first designated federal park units; unique among early parks due to proximity to an urban center",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "locator": "p. 4",
+      "interpretive": true
+    },
+    {
+      "claim": "Rock Creek Park established September 27, 1890",
+      "sourceUrl": "https://npshistory.com/publications/rocr/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Administers 2,749 acres and 99 areas incl. Rock Creek and Potomac Parkway, Old Stone House, Meridian Hill Park; nine CWDW features incl. Fort Stevens",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "locator": "pp. 3–5"
+    },
+    {
+      "claim": "Peirce Mill rebuilt 1820 by Isaac Peirce and stonemason son Abner with blue granite from Broad Branch area; last of eight mills; 1897 main shaft broke; 1892 government condemned the property; 1934 Ickes suggested restoration",
+      "sourceUrl": "https://npshistory.com/publications/rocr/index.htm",
+      "locator": "Peirce Mill brochure text, 'The Peirce Family' and 'Today at Peirce Mill'"
+    },
+    {
+      "claim": "Human occupation of D.C. area probably dates 10,000–20,000 years; fluted points dated 9,000–9,500 B.C. found at Anacostia and NW Washington",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "ch. 1, pp. 7–8",
+      "interpretive": true
+    },
+    {
+      "claim": "Piney Branch quartzite quarry interpreted as work site 3,000–1,100 B.C.; two base camps found by NPS archeologists in 1985; meat, nuts, hide work, stone tool production",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "ch. 1, p. 9"
+    },
+    {
+      "claim": "Piney Branch Quarry provided important evidence in debate over history of human presence in the Americas",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rocr-fd-2015.pdf",
+      "locator": "p. 4",
+      "interpretive": true
+    },
+    {
+      "claim": "Nacostins (often anglicized as Anacostians) lived on the east bank of the Anacostia; at the time of Fleet's 1631 fur-monopoly expedition the Nacostins already were the middlemen for the beaver trade with interior tribes",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "ch. 1, pp. 10–12"
+    },
+    {
+      "claim": "Isaac Pierce: slave families worked as house servants, mill workers, field hands; 1840 fourteen slaves, many children (1820 count omitted: HRS gives 'eleven' but lists 16 by age/sex)",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 28"
+    },
+    {
+      "claim": "Abner Pierce inherited farm January 1842; 1850 census: 'fourteen slaves: four male and two female adults and nine children' (breakdown sums to 15 — prose gives only 'nine children'; total omitted)",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 28"
+    },
+    {
+      "claim": "Pierce Shoemaker owned twenty slaves before the act of Congress of April 16, 1862 abolished slavery in D.C.; HRS spells the family name 'Pierce' throughout (brochure/FD: 'Peirce')",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 29"
+    },
+    {
+      "claim": "Meridian Hill Park 11.88 acres, managed by ROCR, colloquially Malcolm X Park",
+      "sourceUrl": "https://npshistory.com/publications/rocr/srs-mehi.pdf",
+      "locator": "Executive Summary, p. 1"
+    },
+    {
+      "claim": "Camp Cameron offered food, shelter, and work to freedmen and escaped enslaved African Americans; post-war African American community along Columbia Avenue (modern 15th Street)",
+      "sourceUrl": "https://npshistory.com/publications/rocr/srs-mehi.pdf",
+      "locator": "Executive Summary, p. 2"
+    },
+    {
+      "claim": "Homes primarily condemned; by 1912 all had been forced to move; African American laborers hired to construct the park",
+      "sourceUrl": "https://npshistory.com/publications/rocr/srs-mehi.pdf",
+      "locator": "Executive Summary, p. 3"
+    },
+    {
+      "claim": "1960s black activist groups held rallies; drumming circle formed after Malcolm X's assassination in 1965, since a weekend fixture (study dated September 2019: 'has since been a weekend fixture')",
+      "sourceUrl": "https://npshistory.com/publications/rocr/srs-mehi.pdf",
+      "locator": "Executive Summary, p. 4"
+    },
+    {
+      "claim": "1934–1938 PWA grants: bridges, buildings, Pierce Mill restoration, Piney Branch Parkway, road paving",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "ch. on 1930s, p. 134"
+    },
+    {
+      "claim": "May 28, 1934 report: daily average 136 laborers and 3 stone masons on Piney Branch Parkway",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 143"
+    },
+    {
+      "claim": "CCC riprapped creek, planted trees and shrubs, built two miles of equestrian trails, demolished Brightwood Reservoir",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 143"
+    },
+    {
+      "claim": "CCC camp NP-14 opened September 1938 north of Fort DeRussy with 154 enrollees; program terminated 1942",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "pp. 143–144"
+    },
+    {
+      "claim": "The 1930s was an important transitional decade in the history of Rock Creek Park",
+      "sourceUrl": "https://npshistory.com/publications/rocr/hrs-1990.pdf",
+      "locator": "p. 144",
+      "interpretive": true
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/rocr/rock-creek-autumn.jpg",
+      "caption": "Rock Creek in autumn",
+      "credit": "NPS Photo/ K. Cain",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/rocr/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/55F58D72-A55D-7573-6D04AFFB2E33F50F.jpg",
+      "evidenceUrl": "https://www.nps.gov/rocr/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 933,
+      "height": 1400,
+      "bytes": 228177,
+      "note": "On-page caption: \"Rock Creek in Autumn NPS Photo/ K. Cain\"; alt text \"Water swirls around large boulders in a creek. Trees in autumn colors line the bank\". Resized from 3648x5472."
+    },
+    {
+      "file": "images/history/rocr/meridian-hill-fountains.jpg",
+      "caption": "Visitors by the fountains at Meridian Hill Park",
+      "credit": "NPS / Tony DeYoung",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/places/meridian-hill-park.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/cropped_image/primary/2D1750B5-0526-3A23-7209F67495904CE8.jpg",
+      "evidenceUrl": "https://www.nps.gov/places/meridian-hill-park.htm",
+      "capturedAt": "2026-10-18",
+      "themeKey": "black",
+      "width": 1400,
+      "height": 787,
+      "bytes": 204721,
+      "note": "On-page caption: \"Visitors by the fountains at Meridian Hill Park. NPS / Tony DeYoung\". Resized from 2784x1566."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/rocr/index.htm",
     "adhiUrl": "https://npshistory.com/publications/rocr/adhi.pdf",

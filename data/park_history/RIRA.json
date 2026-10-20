@@ -2,15 +2,158 @@
   "code": "RIRA",
   "name": "River Raisin National Battlefield Park",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>River Raisin National Battlefield Park in Monroe, Michigan, preserves the site of the January 1813 battles that were among the deadliest engagements of the War of 1812 on American soil. On January 22, 1813, a combined British and Native American force defeated a larger American army along the River Raisin, and the following day, wounded American prisoners were killed in what became known as the River Raisin Massacre — the deadliest single event for U.S. forces in the war. The rallying cry \"Remember the Raisin!\" became a powerful recruiting tool for the American war effort. The park was designated a national battlefield park in 2010, making it the 392nd unit of the National Park System and the only national battlefield park dedicated to the War of 1812.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-B-2026-10-18",
+  "verifiedBy": "verifier-B-2026-10-18 (18 claims checked; 4 corrections)",
+  "summary": "<p>The River Raisin — Nmézibe, the Sturgeon River, to the Bodéwadmi (Potawatomi) — winds across a level plain to the western shore of Lake Erie, between the Maumee and Detroit river corridors that open onto much of the continent. Before it was engineered in the late 1800s, its lower course ran through oak woodland, hardwood forest, prairie, marsh and lagoon, and its sturgeon fishery, the 2019 historic resource study suggests, likely dates to the Late Archaic period. By the early 1800s French-speaking habitants had built Frenchtown along its banks, one of the only French ribbon-farm settlements founded in U.S. territory after the Revolution, near villages that were mostly Bodéwadmi, Odawa (Ottawa) and Wyandot. <a href=\"https://npshistory.com/publications/rira/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>On January 18, 1813, U.S. forces drove a British garrison out of Frenchtown. Four days later a British force of 1,200, half of them Native Americans, routed the Americans; on January 23 Native warriors killed wounded American prisoners left in the town — taking revenge, the park brochure says, for William Henry Harrison’s depredations on their people, homes and crops. “Remember the Raisin!” became the American rallying cry. <a href=\"https://npshistory.com/publications/rira/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Approximately one of every five U.S. soldiers killed during the battles of the War of 1812 died at Frenchtown, the 2012 foundation document says, and the second battle was the last major victory of the intertribal alliance formed by Tecumseh. <a href=\"https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>Frenchtown never fully recovered. The River Raisin Paper Company, established in 1910, built on portions of the battlefield, and its mill expanded until it covered most of the battle site by the mid-20th century; it was largely abandoned in 1995. <a href=\"https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/rira/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> As the mill was demolished, legislation creating the park was signed into law in March 2009, and River Raisin National Battlefield Park was established on October 22, 2010. <a href=\"https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/rira/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/rira/hrs.pdf",
+      "title": "Spence, Native Ground, Middle Ground, Battle Ground: The River Raisin, the War of 1812, and the Course of North American History — A Historic Resource Study of River Raisin National Battlefield Park (NPS, 2019)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/rira/index.htm",
+      "title": "NPSHistory.com: River Raisin National Battlefield Park archive page — overview (NPS brochure text, 2013) and establishment block",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "title": "Foundation Document, River Raisin National Battlefield Park, Michigan (NPS, December 2012)",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "indigenous": {
+      "html": "<p>For the confederated nations allied with Britain, Mark David Spence’s 2019 historic resource study argues, the war turned on territory, culture and autonomy; he calls the January battles a high-water mark for the Native Confederacy organized around the Shawnee brothers Tecumseh and Tenskwatawa. <a href=\"https://npshistory.com/publications/rira/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Warriors came from the Wyandot, Sac and Fox, Potawatomi, Odawa and Ojibwa nations. <a href=\"https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> Within a few years came more than a dozen land-cession treaties and, after 1830, removal. Maumee Odawa who did not leave for Canada were removed to present-day Kansas in 1837–39, journeys that proved deadly for half of them; of 664 Wyandot who left Ohio in 1843, about 100 died within months. Others stayed: the Pokagon Potawatomi avoided removal in 1833, and the Nottawaseppi Huron and Match-E-Be-Nash-She-Wish bands persisted in their homeland and reestablished treaty relationships in the 1990s. Many Native people, Spence writes, remember the losses that followed the River Raisin as direct precursors to removal. <a href=\"https://npshistory.com/publications/rira/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/rira/hrs.pdf",
+          "title": "Spence, Native Ground, Middle Ground, Battle Ground: The River Raisin, the War of 1812, and the Course of North American History — A Historic Resource Study of River Raisin National Battlefield Park (NPS, 2019)",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+          "title": "Foundation Document, River Raisin National Battlefield Park, Michigan (NPS, December 2012)",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "River Raisin known to the Bodéwadmi (Potawatomi) as Nmézibe, 'Sturgeon River'; sturgeon fishery likely first established in the Late Archaic and persisted into historic times",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 1, p. 26, fn. 40",
+      "interpretive": true
+    },
+    {
+      "claim": "Gently flowing river draining a level plain; nearby Lake Erie shore; central location between the Maumee and Detroit river corridors; before late-19th-century engineering the lower river flowed through oak woodlands, hardwood forests, prairies, swamps, marshes, lagoons",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 1, pp. 11–12"
+    },
+    {
+      "claim": "Frenchtown one of the only French ribbon farm settlements established within U.S. territory after the Revolutionary War; first established mid-1780s, French-speaking Catholic habitants",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "Introduction, pp. 1, 4"
+    },
+    {
+      "claim": "Nearby multi-ethnic villages of mostly Bodéwadmi (Potawatomi) to the west and northwest, mostly Odawa (Ottawa) to the south, mostly Wyandot to the north",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "Introduction, p. 5"
+    },
+    {
+      "claim": "January 18, 1813 US forces drove out the British garrison; January 22 British force of 1,200, half Native Americans; Americans routed",
+      "sourceUrl": "https://npshistory.com/publications/rira/index.htm",
+      "locator": "overview, opening paragraph and 'January 22, 1813'"
+    },
+    {
+      "claim": "January 23 Native Americans killed wounded US prisoners (brochure: 30 to 60), 'take revenge for Harrison's depredations on their people, homes, and crops' (brochure wording, attributed in text); 'Remember the Raisin!'",
+      "sourceUrl": "https://npshistory.com/publications/rira/index.htm",
+      "locator": "overview, 'Defeat of US Forces on January 22 Leads to Horror on January 23'",
+      "interpretive": true
+    },
+    {
+      "claim": "Approximately one of every five U.S. soldiers killed during the battles of the War of 1812 died at Frenchtown; second battle the last major victory of Tecumseh's intertribal alliance",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "locator": "p. 3, Description"
+    },
+    {
+      "claim": "Frenchtown never fully recovered; River Raisin Paper Company established 1910 and built on portions of the battlefield",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "locator": "p. 4, Description"
+    },
+    {
+      "claim": "Paper mill first buildings 1911; expanded until it covered most of the battle site by the mid-20th century; in use until 1995, when largely abandoned",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 10, An Industrial City, p. 317, fn. 41"
+    },
+    {
+      "claim": "Former paper mill demolished; Dingell and Levin legislation signed into law March 2009",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "locator": "p. 5, Description"
+    },
+    {
+      "claim": "River Raisin National Battlefield Park established October 22, 2010",
+      "sourceUrl": "https://npshistory.com/publications/rira/index.htm",
+      "locator": "Establishment block"
+    },
+    {
+      "claim": "Spence: for the confederacy allied with the British, conflict related to existential questions of territory, culture and autonomy; British hoped to foster an independent Indian territory; battles a high-water mark for the Native Confederacy (Tecumseh and Tenskwatawa)",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "Introduction, pp. 1, 5–6",
+      "interpretive": true
+    },
+    {
+      "claim": "Warriors from the Wyandot, Sac and Fox, Pottawatomi, Odawa and Ojibwa tribes in Tecumseh's alliance",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "locator": "p. 3, Description"
+    },
+    {
+      "claim": "Within a few years more than a dozen treaties ceded vast tracts; Indian Removal Act 1830; to many American Indians the losses that followed the River Raisin are remembered as direct precursors to removal",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "Introduction, p. 8, fn. 15",
+      "interpretive": true
+    },
+    {
+      "claim": "About half of the Maumee Odawa left for Upper Canada in the 1830s; the rest removed 1837–1839 in three stages to present-day Kansas; journeys deadly for half of these forced migrants",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 9, p. 283, fn. 29"
+    },
+    {
+      "claim": "Wyandot removal 1843: approximately 100 of the 664 people who left Ohio died within months",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 9, p. 289, fn. 42"
+    },
+    {
+      "claim": "Pokégnek Bodéwadmi (Pokagon Potawatomi) avoided removal at the 1833 Chicago council; Nottawaseppi Huron Band (related to Bodéwadmi who sold land on the lower River Raisin) and Match-E-Be-Nash-She-Wish Band persisted and reestablished a treaty relationship with the U.S. in the 1990s",
+      "sourceUrl": "https://npshistory.com/publications/rira/hrs.pdf",
+      "locator": "ch. 9, pp. 282–283, fns. 27–28"
+    },
+    {
+      "claim": "Some tribal allies killed Americans who remained in Frenchtown and were too wounded to be taken to Fort Malden",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/rira-fd-2012.pdf",
+      "locator": "p. 4, Description"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/rira/period-gardens.jpg",
+      "caption": "Period gardens and trails in River Raisin National Battlefield Park",
+      "credit": "NPS Photo",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/rira/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/3C7C4C01-1DD8-B71B-0BB2F4AEFEEF5943.jpg",
+      "evidenceUrl": "https://www.nps.gov/rira/index.htm",
+      "capturedAt": "2026-10-18",
+      "note": "On-page caption: \"Visitors enjoy the period gardens and trails in the Park NPS Photo\"; alt text \"period gardens\". Contemporary park photograph. Resized. The other nps.gov home-page images are a painting by Tim Kurtz and a photo by William Saul (not NPS-credited), so not used.",
+      "width": 1200,
+      "height": 674,
+      "bytes": 218514
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/rira/index.htm",
     "adhiUrl": null,

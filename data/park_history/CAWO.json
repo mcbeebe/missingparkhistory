@@ -2,15 +2,166 @@
   "code": "CAWO",
   "name": "Carter G. Woodson Home National Historic Site",
   "entries": [],
-  "reviewStatus": "legacy-unsourced",
-  "lastReviewed": "2026-10-07",
-  "author": "parks-page-legacy",
-  "verifiedBy": "",
-  "summary": "<p>The Carter G. Woodson Home National Historic Site in Washington, D.C., preserves the residence and workplace of Dr. Carter G. Woodson (1875–1950), the scholar known as the \"Father of Black History.\" Woodson, the second African American to earn a Ph.D. from Harvard University (after W.E.B. Du Bois), founded the Association for the Study of Negro Life and History in 1915, established the Journal of Negro History in 1916, and created Negro History Week in 1926 — which later became Black History Month. He lived and worked in the Shaw neighborhood rowhouse from 1922 until his death in 1950. The site was designated a national historic site in 2006.</p>",
-  "themes": {},
-  "facts": [],
-  "photos": [],
-  "photoStatus": "none-yet",
+  "reviewStatus": "published",
+  "lastReviewed": "2026-10-19",
+  "author": "author-C-2026-10-18",
+  "verifiedBy": "verifier-C-2026-10-18 (31 claims checked; 6 corrections)",
+  "summary": "<p>At 1538 Ninth Street NW, in Washington’s Shaw neighborhood, stands a three-story brick row house, one of a block of nine with originally identical Victorian Italianate fronts. The foundation document and historian Pero Gaglo Dagbovie’s 2012 resource study date the row to 1872–74; an undated park brochure says the 1890s and dates Woodson’s residence from 1915. <a href=\"https://npshistory.com/publications/cawo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> By the foundation document’s account, from 1922 until his death in 1950 it was the home and workplace of Dr. Carter G. Woodson, known as the Father of Black History, and headquarters of the Association for the Study of Negro Life and History, which he founded in 1915 (now the Association for the Study of African American Life and History). Here, in 1926, he created Negro History Week, which became Black History Month. <a href=\"https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> <a href=\"https://npshistory.com/publications/cawo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>Woodson bought the house in July 1922 for $8,000. He lived on the third floor; the floors below held the association’s offices and the Associated Publishers, Inc., which the foundation document counts among the first publishers to print and distribute the works of African Americans, women and minorities. In 1923 he hung an 11½-foot sign out front reading “THE ASSOCIATED PUBLISHERS, INC.” Dagbovie calls this “office home” crucial to the early Black history movement. Woodson died there on April 3, 1950. <a href=\"https://npshistory.com/publications/cawo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p><p>The house became a National Historic Landmark on May 11, 1976. Public Law 108-192, of December 19, 2003, authorized the Park Service to acquire it; it did so from the association in 2005, and the site became a park unit in 2006. The foundation document describes the home and two adjoining row houses, 1540 and 1542 Ninth Street, as undergoing rehabilitation for a visitor center and exhibits. <a href=\"https://npshistory.com/publications/cawo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a> <a href=\"https://npshistory.com/publications/cawo/index.htm\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[3]</a> <a href=\"https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a></p>",
+  "sources": [
+    {
+      "url": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "title": "Foundation Document Overview, Carter G. Woodson Home National Historic Site, District of Columbia (NPS, 2016)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "title": "Pero Gaglo Dagbovie, “Willing to Sacrifice”: Carter G. Woodson, the Father of Black History, and the Carter G. Woodson Home — Historic Resource Study (NPS National Capital Region, April 2012)",
+      "type": "npshistory"
+    },
+    {
+      "url": "https://npshistory.com/publications/cawo/index.htm",
+      "title": "NPSHistory.com: Carter G. Woodson Home National Historic Site archive page — overview, Woodson time line and establishment block",
+      "type": "npshistory"
+    }
+  ],
+  "themes": {
+    "black": {
+      "html": "<p>Woodson was born December 19, 1875, in New Canton, Virginia, to the formerly enslaved James Henry and Eliza Riddle. In 1892 he went to work in the coal mines of Fayette County, West Virginia, where a Black Civil War veteran, Oliver Jones, introduced him to books by self-trained Black historians. His 1912 Harvard Ph.D. made him only the second African American to earn one there, after W. E. B. Du Bois (1895), the foundation document notes. <a href=\"https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[1]</a> During the “Red Summer” of 1919, when more than twenty-five major race riots swept U.S. cities, Woodson was in Washington for its July 20 riot and gave an affidavit about it. <a href=\"https://npshistory.com/publications/cawo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p><p>He timed the first Negro History Week, in February 1926, to the birthdays of Frederick Douglass and Abraham Lincoln. Race prejudice stemmed from the notion that Black people had contributed nothing of worth to world civilization, Woodson argued, Dagbovie writes; set the record straight in schools, and racism would be abolished. <a href=\"https://npshistory.com/publications/cawo/hrs.pdf\" target=\"_blank\" rel=\"noopener\" class=\"cite\">[2]</a></p>",
+      "sources": [
+        {
+          "url": "https://npshistory.com/publications/cawo/hrs.pdf",
+          "title": "Dagbovie, “Willing to Sacrifice” — Historic Resource Study, Carter G. Woodson Home NHS (NPS, 2012), preface, chs. 1 and 3, Appendix B chronology",
+          "type": "npshistory"
+        },
+        {
+          "url": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+          "title": "Foundation Document Overview, Carter G. Woodson Home National Historic Site (NPS, 2016), Description",
+          "type": "npshistory"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "claim": "House at 1538 Ninth Street NW in the Shaw area; one of a block of nine row houses with originally identical Victorian Italianate facades; constructed 1872–1874; HRS ch. 2 p. 40 also gives 'between 1872 and 1874'. The undated NPS brochure on the NPSHistory archive page says 'built in the 1890's' and dates his residence from 1915 — both noted in prose with attribution",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "locator": "Description; HRS ch. 2 p. 40; archive page brochure text (undated)"
+    },
+    {
+      "claim": "Woodson's home from 1922 until his death in 1950; headquarters of the association; created Negro History Week there in 1926, later Black History Month",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "locator": "Description; Significance 1 and 3"
+    },
+    {
+      "claim": "ASNLH founded 1915; now Association for the Study of African American Life and History",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "locator": "Significance 4"
+    },
+    {
+      "claim": "Associated Publishers one of the first publishers to print and distribute works of African Americans, women and minorities",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "locator": "Significance 5",
+      "interpretive": true
+    },
+    {
+      "claim": "Purchased July 1922 for $8,000 (HRS gives July 18 on p. 40 and July 22 on p. 28; prose uses month only)",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "ch. 2, p. 40; ch. 1, p. 28"
+    },
+    {
+      "claim": "1923 sign 11½ ft wide reading THE ASSOCIATED PUBLISHERS, INC.",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "ch. 2, p. 40"
+    },
+    {
+      "claim": "Woodson lived on the third floor; died there; died April 3, 1950 of a heart attack",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Preface p. vi; ch. 1, p. 34"
+    },
+    {
+      "claim": "The 'office home' was crucial to the success of his early black history movement (Dagbovie 2012)",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Preface, p. vi",
+      "interpretive": true
+    },
+    {
+      "claim": "NHL designation May 11, 1976; Public Law 108-192 of December 19, 2003 authorized NPS acquisition",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Introduction, p. 2"
+    },
+    {
+      "claim": "2005 NPS acquired the home from ASALH; 2006 became a unit of the National Park System",
+      "sourceUrl": "https://npshistory.com/publications/cawo/index.htm",
+      "locator": "Woodson Time Line, 2005 and 2006 entries"
+    },
+    {
+      "claim": "Site includes adjoining row houses at 1540 and 1542 Ninth Street NW; rehabilitation for visitor center and exhibits",
+      "sourceUrl": "https://npshistory.com/publications/foundation-documents/cawo-fd-overview.pdf",
+      "locator": "Description"
+    },
+    {
+      "claim": "Born December 19, 1875, New Canton, Virginia, to former slaves James Henry and Eliza Riddle",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Preface, p. iii"
+    },
+    {
+      "claim": "1892 moved to Fayette County, WV, to work in coal mines; met Civil War veteran Oliver Jones who introduced him to books by self-trained black historians",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Preface, p. iv; ch. 1, p. 13"
+    },
+    {
+      "claim": "Harvard Ph.D. 1912, only the second African American to do so after W. E. B. DuBois (FD); Du Bois earned his Ph.D. from Harvard in 1895 (HRS)",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "FD Description; HRS ch. 1, p. 17 (pdf p. 28)"
+    },
+    {
+      "claim": "Red Summer 1919: more than twenty-five major race riots; Woodson in Washington during July 20 race riot; provided an affidavit",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "Appendix A chronology, 1919, p. 227"
+    },
+    {
+      "claim": "First Negro History Week second week of February 1926 commemorating Douglass's and Lincoln's birthdays; Woodson argued race prejudice, from segregation to violence, resulted from notion black people contributed nothing; if the record were set straight in schools racism would be abolished",
+      "sourceUrl": "https://npshistory.com/publications/cawo/hrs.pdf",
+      "locator": "ch. 3, p. 81",
+      "interpretive": true
+    },
+    {
+      "claim": "PL 108-192 authorized NPS to acquire the home; 2005 NPS acquired it from ASALH",
+      "sourceUrl": "https://npshistory.com/publications/cawo/index.htm",
+      "locator": "Woodson Time Line, 2003 and 2005"
+    }
+  ],
+  "photos": [
+    {
+      "file": "images/history/cawo/woodson-home.jpg",
+      "caption": "The Carter G. Woodson Home, a red brick townhouse",
+      "credit": "NPS / Tim Ervin",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cawo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/1FF8B5CC-0DCA-01D4-1133CE75A7BD049E.jpg",
+      "evidenceUrl": "https://www.nps.gov/cawo/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 1067,
+      "height": 1600,
+      "bytes": 221461,
+      "note": "On-page caption: \"Carter G. Woodson Home NPS / Tim Ervin\"; alt text \"A red brick townhouse\". Resized from 1201x1800."
+    },
+    {
+      "file": "images/history/cawo/ninth-street-facades.jpg",
+      "caption": "The restored facades of the Carter G. Woodson Home National Historic Site, seen from across the street",
+      "credit": "NPS",
+      "license": "PD-USGov-NPS",
+      "sourceUrl": "https://www.nps.gov/cawo/index.htm",
+      "imageUrl": "https://www.nps.gov/common/uploads/structured_data/93C3FA3C-028F-9E45-D5C31B4A283F60AC.jpg",
+      "evidenceUrl": "https://www.nps.gov/cawo/index.htm",
+      "capturedAt": "2026-10-18",
+      "width": 866,
+      "height": 960,
+      "bytes": 164406,
+      "note": "Contemporary park photograph. On-page caption: \"The view from across the street of the facades of the Carter G. Woodson Home National Historic Site. NPS\"; alt text \"The restored facades of three historic Victorian row-homes on an urban street in Washington, DC\". Original dimensions."
+    }
+  ],
+  "photoStatus": "complete",
   "npshistory": {
     "indexUrl": "https://npshistory.com/publications/cawo/index.htm",
     "adhiUrl": null,
