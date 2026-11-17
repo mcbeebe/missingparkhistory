@@ -92,7 +92,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/sos_tracker_watch.py          # overwrites data/sos_tracker_snapshot.json
+          # Overwrites data/sos_tracker_snapshot.json. Exit 3 means "changes found",
+          # which is why we're here; under bash -e it would end the step before the
+          # issue is filed (every run Oct 26 - Nov 16, 2026 failed this way).
+          python scripts/sos_tracker_watch.py || [ $? -eq 3 ]
           TODAY=$(date +%Y-%m-%d)
           BRANCH="sos-tracker/$TODAY"
           git config user.name "NPS News Bot"
